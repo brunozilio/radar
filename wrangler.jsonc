@@ -1,0 +1,76 @@
+// Configuração do ambiente público recuperado. Os identificadores abaixo não
+// são segredos; credenciais permanecem armazenadas somente na Cloudflare.
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "sofik-monitoramento-taquari",
+  "main": "cloudflare/index.js",
+  "compatibility_date": "2026-07-29",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "radar.brunozilio.com",
+      "custom_domain": true
+    }
+  ],
+  "keep_vars": true,
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "sofik-monitoramento-media"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "PUSH_DB",
+      "database_name": "sofik-monitoramento-push",
+      "database_id": "2012f280-5d99-4d34-b2c9-dde9b4bb5a34"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MONITORAMENTO",
+        "class_name": "MonitoramentoContainer"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["MonitoramentoContainer"]
+    }
+  ],
+  "containers": [
+    {
+      "name": "sofik-monitoramento-taquari-monitoramentocontainer",
+      "class_name": "MonitoramentoContainer",
+      "image": "./Dockerfile",
+      "image_build_context": ".",
+      "instance_type": "basic",
+      "max_instances": 1
+    }
+  ],
+  "vars": {
+    "HYDRO_PERSIST_URL": "https://radar.brunozilio.com/api/internal/river-readings",
+    "PUSH_DISPATCH_URL": "https://radar.brunozilio.com/api/push/dispatch",
+    "VAPID_SUBJECT": "https://radar.brunozilio.com"
+  },
+  "secrets": {
+    "required": [
+      "PUSH_INTERNAL_SECRET",
+      "VAPID_PRIVATE_KEY",
+      "VAPID_PUBLIC_KEY"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    }
+  }
+}
