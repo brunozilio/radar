@@ -9,9 +9,15 @@ import sharp from "sharp";
 import { createWorker, OEM } from "tesseract.js";
 import WebSocket, { WebSocketServer } from "ws";
 import {
+  extractDefenseCivilAlertCandidates,
   extractDefenseCivilImage,
-  parseDefenseCivilAlerts,
+  isDefenseCivilAlertRelevant,
+  parseDefenseCivilArticle,
 } from "../lib/alerts.ts";
+import {
+  INMET_MUCUM_GEOCODE,
+  parseInmetAlerts,
+} from "../lib/inmet-alerts.ts";
 import {
   ASSET_DIRECTORY,
   DATA_DIRECTORY,
@@ -67,6 +73,8 @@ mkdirSync(tesseractCache, { recursive: true });
 const radarOcrWorker = createWorker("eng", OEM.LSTM_ONLY, {
   cachePath: tesseractCache,
 });
+let ocrQueue: Promise<void> = Promise.resolve();
+const defenseCivilCardTextCache = new Map<string, string>();
 
 const RADAR_BASE =
   "https://statics.climatempo.com.br/radar_poa/pngs/latest";
@@ -89,6 +97,8 @@ const EPAGRI_RADAR_VIEW_EXTENT = {
 const EPAGRI_RADAR_WIDTH = 859;
 const EPAGRI_RADAR_HEIGHT = 758;
 const INMET_API = "https://apisat.inmet.gov.br";
+const INMET_ALERTS_SOURCE =
+  "https://apiprevmet3.inmet.gov.br/avisos/ativos";
 const INMET_SATELLITE_PRODUCT = "TN";
 const INMET_SATELLITE_KIND = "satellite-enhanced";
 const CPTEC_SATELLITE_LOGS =
@@ -117,12 +127,22 @@ const PUSH_DISPATCH_URL = process.env.PUSH_DISPATCH_URL || "";
 const PUSH_INTERNAL_SECRET = process.env.PUSH_INTERNAL_SECRET || "";
 const MAX_PDF_BYTES = 30 * 1024 * 1024;
 const MAX_ALERT_IMAGE_BYTES = 12 * 1024 * 1024;
+let d1MutationQueue: Promise<void> = Promise.resolve();
 
 type D1Parameter = string | number | null;
 type D1Command = {
   sql: string;
   params?: D1Parameter[];
 };
+
+async function withD1Mutation<T>(job: () => Promise<T>) {
+  const task = d1MutationQueue.then(job);
+  d1MutationQueue = task.then(
+    () => undefined,
+    () => undefined,
+  );
+  return task;
+}
 
 async function runD1Batch(commands: D1Command[]) {
   if (!DATABASE_STORAGE_URL || !commands.length) {
@@ -526,7 +546,7 @@ const hasMediaId = database.prepare(
   "SELECT 1 FROM media_frames WHERE id = ? LIMIT 1",
 );
 const storedAssetByOwner = database.prepare(`
-  SELECT id, file_path
+  SELECT id, file_path, source_url
   FROM stored_assets
   WHERE owner_type = ? AND owner_id = ?
   LIMIT 1
@@ -757,11 +777,14 @@ type StoredAssetResult = {
 async function existingStoredAsset(
   ownerType: StoredAssetOwner,
   ownerId: string,
+  expectedSourceUrl?: string,
 ) {
   const stored = storedAssetByOwner.get(ownerType, ownerId) as
-    | { id: string; file_path: string }
+    | { id: string; file_path: string; source_url: string }
     | undefined;
-  return stored && (await storedObjectExists(stored.file_path))
+  return stored &&
+    (!expectedSourceUrl || stored.source_url === expectedSourceUrl) &&
+    (await storedObjectExists(stored.file_path))
     ? stored
     : null;
 }
@@ -779,7 +802,11 @@ async function downloadStoredAsset({
   kind: "image" | "pdf";
   referer?: string;
 }): Promise<StoredAssetResult | null> {
-  const existing = await existingStoredAsset(ownerType, ownerId);
+  const existing = await existingStoredAsset(
+    ownerType,
+    ownerId,
+    sourceUrl,
+  );
   if (existing) return { id: existing.id, created: false };
 
   try {
@@ -908,10 +935,12 @@ async function ensureBulletinPdf(id: string, href: string) {
   });
 }
 
-async function ensureAlertImage(id: string, href: string) {
-  const existing = await existingStoredAsset("alert-image", id);
-  if (existing) return { id: existing.id, created: false };
-
+async function ensureAlertImage(
+  id: string,
+  href: string,
+  articleHtml?: string,
+  knownImageUrl?: string | null,
+) {
   const pageUrl = new URL(href);
   if (
     pageUrl.protocol !== "https:" ||
@@ -920,10 +949,12 @@ async function ensureAlertImage(id: string, href: string) {
     return null;
   }
   try {
-    const imageUrl = extractDefenseCivilImage(
-      await fetchText(pageUrl.toString(), 10_000, true),
-      pageUrl.toString(),
-    );
+    const imageUrl =
+      knownImageUrl ||
+      extractDefenseCivilImage(
+        articleHtml || (await fetchText(pageUrl.toString(), 10_000, true)),
+        pageUrl.toString(),
+      );
     if (!imageUrl) return null;
     return downloadStoredAsset({
       ownerType: "alert-image",
@@ -1067,6 +1098,63 @@ const upsertAlert = database.prepare(`
     severity = excluded.severity,
     href = excluded.href
 `);
+const upsertSourceStatus = database.prepare(`
+  INSERT INTO source_status (source, status, checked_at, message)
+  VALUES (?, ?, ?, ?)
+  ON CONFLICT(source) DO UPDATE SET
+    status = excluded.status,
+    checked_at = excluded.checked_at,
+    message = excluded.message
+`);
+
+type AlertSourceId = "defesa-civil" | "inmet";
+
+function recordAlertSourceStatus(
+  source: AlertSourceId,
+  status: "ok" | "error",
+  message: string | null = null,
+) {
+  upsertSourceStatus.run(
+    source,
+    status,
+    nowIso(),
+    message ? message.slice(0, 500) : null,
+  );
+}
+
+async function reconcileSourceAlerts(
+  source: AlertSourceId,
+  knownIds: string[],
+) {
+  const uniqueIds = [...new Set(knownIds)];
+  // O gateway interno do D1 aceita no máximo 32 parâmetros por comando.
+  if (uniqueIds.length > 31) {
+    console.warn(
+      `[worker] reconciliação ${source}: muitos IDs; mantendo registros existentes`,
+    );
+    return;
+  }
+  await withD1Mutation(async () => {
+    const sourcePredicate =
+      source === "inmet" ? "id LIKE 'inmet:%'" : "id NOT LIKE 'inmet:%'";
+    const placeholders = uniqueIds.map(() => "?").join(", ");
+    const sql = `
+      DELETE FROM alerts
+      WHERE ${sourcePredicate}
+        AND valid_until > ?
+        ${uniqueIds.length ? `AND id NOT IN (${placeholders})` : ""}
+    `;
+    const params = [nowIso(), ...uniqueIds];
+    database.prepare(sql).run(...params);
+    const results = await runD1Batch([{ sql, params }]);
+    if (
+      DATABASE_STORAGE_URL &&
+      (results.length !== 1 || !results[0].success)
+    ) {
+      throw new Error(`reconciliação ${source} não foi confirmada no D1`);
+    }
+  });
+}
 
 type PersistentTableName =
   | "river_readings"
@@ -1257,7 +1345,7 @@ function rowsCreatedSince<T extends Record<string, unknown>>(
     .all(d1SyncWatermarks[table]) as T[];
 }
 
-async function synchronizePersistentDatabase() {
+async function synchronizePersistentDatabaseUnlocked() {
   if (!DATABASE_STORAGE_URL) return;
   const riverRows = rowsCreatedSince<{
     station: string;
@@ -1477,6 +1565,10 @@ async function synchronizePersistentDatabase() {
   }
 }
 
+async function synchronizePersistentDatabase() {
+  return withD1Mutation(synchronizePersistentDatabaseUnlocked);
+}
+
 async function fetchText(
   url: string,
   timeout = 10_000,
@@ -1500,6 +1592,93 @@ async function fetchText(
   return response.text();
 }
 
+async function recognizeText(bytes: Buffer, whitelist = "") {
+  const recognition = ocrQueue.then(async () => {
+    const worker = await radarOcrWorker;
+    await worker.setParameters({ tessedit_char_whitelist: whitelist });
+    const result = await worker.recognize(bytes);
+    return result.data.text;
+  });
+  ocrQueue = recognition.then(
+    () => undefined,
+    () => undefined,
+  );
+  return recognition;
+}
+
+async function readDefenseCivilCardText(
+  alertId: string,
+  imageUrl: string,
+  referer: string,
+) {
+  const cacheKey = `${alertId}\0${imageUrl}`;
+  const cached = defenseCivilCardTextCache.get(cacheKey);
+  if (cached) return cached;
+
+  try {
+    const url = new URL(imageUrl);
+    if (
+      url.protocol !== "https:" ||
+      !["defesacivil.rs.gov.br", "www.defesacivil.rs.gov.br"].includes(
+        url.hostname,
+      )
+    ) {
+      return "";
+    }
+    const response = await fetch(url, {
+      cache: "no-store",
+      headers: {
+        accept: "image/png,image/jpeg,image/webp",
+        referer,
+        "user-agent": "Monitoramento-Rio-Taquari-Worker/1.0",
+      },
+      signal: AbortSignal.timeout(12_000),
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const declaredLength = Number(response.headers.get("content-length") || 0);
+    if (declaredLength > MAX_ALERT_IMAGE_BYTES) {
+      throw new Error("imagem acima do limite");
+    }
+    const bytes = Buffer.from(await response.arrayBuffer());
+    if (!bytes.length || bytes.length > MAX_ALERT_IMAGE_BYTES) {
+      throw new Error("imagem vazia ou acima do limite");
+    }
+
+    const metadata = await sharp(bytes).metadata();
+    if (!metadata.width || !metadata.height) throw new Error("imagem inválida");
+    const top = Math.floor(metadata.height * 0.67);
+    const crop = await sharp(bytes)
+      .extract({
+        left: 0,
+        top,
+        width: Math.max(1, Math.floor(metadata.width * 0.62)),
+        height: Math.max(1, Math.min(
+          metadata.height - top,
+          Math.floor(metadata.height * 0.24),
+        )),
+      })
+      .grayscale()
+      .normalize()
+      .resize({ width: 1_300 })
+      .png()
+      .toBuffer();
+    const text = (
+      await recognizeText(
+        crop,
+        "0123456789/ aAVIGENCIvigencia-",
+      )
+    ).trim();
+    if (text) defenseCivilCardTextCache.set(cacheKey, text);
+    return text;
+  } catch (error) {
+    console.error(
+      `[worker] OCR alerta ${alertId}:`,
+      error instanceof Error ? error.message : error,
+    );
+    return "";
+  }
+}
+
 async function radarTimestamp(bytes: Buffer) {
   const metadata = await sharp(bytes).metadata();
   if (!metadata.width || !metadata.height) return null;
@@ -1515,12 +1694,9 @@ async function radarTimestamp(bytes: Buffer) {
     .resize({ width: 1_300 })
     .png()
     .toBuffer();
-  const worker = await radarOcrWorker;
-  await worker.setParameters({
-    tessedit_char_whitelist: "0123456789/: ",
-  });
-  const recognition = await worker.recognize(crop);
-  return parseRadarTimestampText(recognition.data.text);
+  return parseRadarTimestampText(
+    await recognizeText(crop, "0123456789/: "),
+  );
 }
 
 async function ingestRadar() {
@@ -2133,7 +2309,7 @@ async function ingestBulletins() {
   await Promise.allSettled(notifications.map(dispatchPush));
 }
 
-async function ingestAlerts() {
+async function ingestDefenseCivilAlerts() {
   const params = new URLSearchParams({
     id: "7064",
     templatename: "pagina.listapagina.padrao",
@@ -2155,27 +2331,90 @@ async function ingestAlerts() {
     signal: AbortSignal.timeout(10_000),
   });
   if (!response.ok) throw new Error(`Alertas: HTTP ${response.status}`);
-  const payload = (await response.json()) as { body?: string };
-  const alerts = parseDefenseCivilAlerts(payload.body || "");
-  const storedImages = await Promise.all(
-    alerts.map(async (alert) => {
+  const payload = (await response.json()) as { body?: unknown };
+  if (
+    typeof payload.body !== "string" ||
+    !/<article\b/i.test(payload.body)
+  ) {
+    throw new Error("listagem da Defesa Civil em formato inesperado");
+  }
+  const allCandidates = extractDefenseCivilAlertCandidates(payload.body);
+  if (!allCandidates.length) {
+    throw new Error("nenhum artigo reconhecido na listagem da Defesa Civil");
+  }
+  const recentCutoff = Date.now() - 14 * 24 * 60 * 60 * 1_000;
+  const candidates = allCandidates
+    .filter((candidate) => Date.parse(candidate.publishedAt) >= recentCutoff);
+  const processed = await Promise.allSettled(
+    candidates.map(async (candidate) => {
+      const articleHtml = await fetchText(candidate.href, 10_000, true);
+      const combined = `${candidate.title} ${candidate.summary} ${articleHtml}`;
+      if (!isDefenseCivilAlertRelevant(combined)) return null;
+
+      const imageUrl = extractDefenseCivilImage(articleHtml, candidate.href);
+      const cardText = imageUrl
+        ? await readDefenseCivilCardText(
+            candidate.id,
+            imageUrl,
+            candidate.href,
+          )
+        : "";
+      const alert = parseDefenseCivilArticle(
+        articleHtml,
+        candidate,
+        Date.now(),
+        cardText,
+      );
+      if (!alert) {
+        const expiredAlert = parseDefenseCivilArticle(
+          articleHtml,
+          candidate,
+          0,
+          cardText,
+        );
+        if (expiredAlert) return null;
+        throw new Error(`${candidate.id}: vigência não reconhecida`);
+      }
+
+      const publishedAt = new Date(alert.publishedAt).toISOString();
+      const validUntil = new Date(alert.validUntil).toISOString();
       upsertAlert.run(
         alert.id,
         alert.title,
         alert.summary,
-        alert.publishedAt,
-        alert.validUntil,
+        publishedAt,
+        validUntil,
         alert.severity,
-        alert.href,
+        alert.sourceUrl,
         nowIso(),
       );
-      return ensureAlertImage(alert.id, alert.href);
+      const storedImage = await ensureAlertImage(
+        alert.id,
+        alert.sourceUrl,
+        articleHtml,
+        alert.imageUrl,
+      );
+      return {
+        alert: { ...alert, publishedAt, validUntil },
+        storedImage,
+      };
     }),
   );
-  const storedImageCount = storedImages.filter(
-    (asset) => asset?.created,
+  const failures = processed.filter(
+    (result): result is PromiseRejectedResult => result.status === "rejected",
+  );
+  for (const failure of failures) {
+    console.error(
+      "[worker] artigo da Defesa Civil:",
+      failure.reason instanceof Error ? failure.reason.message : failure.reason,
+    );
+  }
+  const alerts = processed.flatMap((result) =>
+    result.status === "fulfilled" && result.value ? [result.value] : [],
+  );
+  const storedImageCount = alerts.filter(
+    ({ storedImage }) => storedImage?.created,
   ).length;
-  if (alerts.length) broadcast("alerts", { count: alerts.length });
   if (storedImageCount) {
     console.log(
       `[worker] alertas: ${storedImageCount} nova(s) imagem(ns) armazenada(s) ` +
@@ -2183,7 +2422,7 @@ async function ingestAlerts() {
     );
   }
   await Promise.allSettled(
-    alerts.map((alert) =>
+    alerts.map(({ alert }) =>
       dispatchPush({
         type: "alert",
         id: alert.id,
@@ -2194,6 +2433,179 @@ async function ingestAlerts() {
       }),
     ),
   );
+  if (failures.length) {
+    throw new Error(
+      `${failures.length} artigo(s) recente(s) da Defesa Civil não puderam ser analisados`,
+    );
+  }
+  await reconcileSourceAlerts(
+    "defesa-civil",
+    candidates.map((candidate) => candidate.id),
+  );
+  return { activeCount: alerts.length, storedImageCount };
+}
+
+function validInmetGeocodeField(value: unknown): boolean {
+  if (typeof value === "string" || typeof value === "number") return true;
+  return Array.isArray(value) && value.every(validInmetGeocodeField);
+}
+
+function inmetGeocodeFieldIncludes(value: unknown, expected: string): boolean {
+  if (Array.isArray(value)) {
+    return value.some((item) => inmetGeocodeFieldIncludes(item, expected));
+  }
+  if (typeof value !== "string" && typeof value !== "number") return false;
+  return String(value).match(/\d+/g)?.includes(expected) ?? false;
+}
+
+async function ingestInmetAlerts() {
+  const response = await fetch(INMET_ALERTS_SOURCE, {
+    cache: "no-store",
+    headers: {
+      accept: "application/json",
+      "cache-control": "no-cache, no-store",
+      pragma: "no-cache",
+      "user-agent": "Monitoramento-Rio-Taquari-Worker/1.0",
+    },
+    signal: AbortSignal.timeout(10_000),
+  });
+  if (!response.ok) throw new Error(`INMET: HTTP ${response.status}`);
+
+  const payload = await response.json();
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    throw new Error("resposta do INMET em formato inesperado");
+  }
+  const feed = payload as { hoje?: unknown; futuro?: unknown };
+  if (!Array.isArray(feed.hoje) || !Array.isArray(feed.futuro)) {
+    throw new Error("listas de avisos do INMET ausentes");
+  }
+  const rawAlerts = [...feed.hoje, ...feed.futuro];
+  const validFeedShape = rawAlerts.every(
+    (item) => {
+      if (item === null || typeof item !== "object" || Array.isArray(item)) {
+        return false;
+      }
+      const alert = item as Record<string, unknown>;
+      return (
+        (typeof alert.id === "string" || typeof alert.id === "number") &&
+        String(alert.id).trim().length > 0 &&
+        typeof alert.inicio === "string" &&
+        typeof alert.fim === "string" &&
+        typeof alert.descricao === "string" &&
+        typeof alert.severidade === "string" &&
+        validInmetGeocodeField(alert.geocodes)
+      );
+    },
+  );
+  if (!validFeedShape) {
+    throw new Error("avisos do INMET em formato inesperado");
+  }
+
+  const expectedMucumIds = new Set(
+    rawAlerts.flatMap((item) => {
+      const alert = item as Record<string, unknown>;
+      return inmetGeocodeFieldIncludes(
+        alert.geocodes,
+        INMET_MUCUM_GEOCODE,
+      )
+        ? [`inmet:${String(alert.id).trim()}`]
+        : [];
+    }),
+  );
+  const parsedAlerts = parseInmetAlerts(payload);
+  const parsedIds = new Set(parsedAlerts.map((alert) => alert.id));
+  const unparsedMucumIds = [...expectedMucumIds].filter(
+    (id) => !parsedIds.has(id),
+  );
+  if (unparsedMucumIds.length) {
+    throw new Error(
+      `${unparsedMucumIds.length} aviso(s) do INMET para Muçum não puderam ser analisados`,
+    );
+  }
+
+  const now = Date.now();
+  const alerts = parsedAlerts.map((alert) => ({
+    ...alert,
+    publishedAt: new Date(alert.publishedAt).toISOString(),
+    validUntil: new Date(alert.validUntil).toISOString(),
+  }));
+  for (const alert of alerts) {
+    upsertAlert.run(
+      alert.id,
+      alert.title,
+      alert.summary,
+      alert.publishedAt,
+      alert.validUntil,
+      alert.severity,
+      alert.sourceUrl,
+      nowIso(),
+    );
+  }
+  await reconcileSourceAlerts(
+    "inmet",
+    alerts.map((alert) => alert.id),
+  );
+
+  const activeAlerts = alerts.filter(
+    (alert) =>
+      Date.parse(alert.publishedAt) <= now &&
+      Date.parse(alert.validUntil) > now,
+  );
+  await Promise.allSettled(
+    activeAlerts.map((alert) =>
+      dispatchPush({
+        type: "alert",
+        id: alert.id,
+        title: "Novo alerta do INMET",
+        body: alert.title,
+        url: "/",
+        severity: alert.severity,
+      }),
+    ),
+  );
+  return { activeCount: activeAlerts.length, storedCount: alerts.length };
+}
+
+async function trackAlertSource<T>(
+  source: AlertSourceId,
+  job: () => Promise<T>,
+) {
+  try {
+    const result = await job();
+    recordAlertSourceStatus(source, "ok");
+    return result;
+  } catch (error) {
+    recordAlertSourceStatus(
+      source,
+      "error",
+      error instanceof Error ? error.message : String(error),
+    );
+    throw error;
+  }
+}
+
+async function ingestAlerts() {
+  const sources = await Promise.allSettled([
+    trackAlertSource("defesa-civil", ingestDefenseCivilAlerts),
+    trackAlertSource("inmet", ingestInmetAlerts),
+  ]);
+  for (const [index, result] of sources.entries()) {
+    if (result.status === "rejected") {
+      console.error(
+        `[worker] alertas ${index === 0 ? "Defesa Civil" : "INMET"}:`,
+        result.reason instanceof Error ? result.reason.message : result.reason,
+      );
+    }
+  }
+  if (sources.every((result) => result.status === "rejected")) {
+    throw new Error("Defesa Civil e INMET indisponíveis");
+  }
+  const activeCount = sources.reduce(
+    (count, result) =>
+      count + (result.status === "fulfilled" ? result.value.activeCount : 0),
+    0,
+  );
+  broadcast("alerts", { count: activeCount });
 }
 
 async function ingestCeran() {

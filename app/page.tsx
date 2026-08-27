@@ -9,6 +9,7 @@ import {
   Database,
   Download,
   Eye,
+  ExternalLink,
   FileText,
   Maximize2,
   Plus,
@@ -274,14 +275,22 @@ type ActiveAlert = {
   publishedAt: string;
   validUntil: string;
   severity: "yellow" | "orange" | "red";
-  href: string;
+  source: "INMET" | "Defesa Civil RS";
+  sourceUrl: string;
+  imageUrl: string | null;
 };
+
+type AlertsLoadState = "loading" | "ready" | "error";
 
 const ALERT_SEVERITY_LABEL: Record<ActiveAlert["severity"], string> = {
   yellow: "Atenção",
   orange: "Risco alto",
   red: "Risco severo",
 };
+
+function alertDisplayTitle(title: string) {
+  return title.replace(/^(?:Defesa Civil|INMET) alerta:\s*/i, "");
+}
 
 type SatelliteFrame = {
   id: string;
@@ -1770,7 +1779,14 @@ export default function Home() {
   const [rainHours, setRainHours] = useState<WindowHours>(24);
   const [stations, setStations] = useState<Station[]>([]);
   const [alerts, setAlerts] = useState<ActiveAlert[]>([]);
+  const [alertsLoadState, setAlertsLoadState] =
+    useState<AlertsLoadState>("loading");
+  const [alertsStatusMessage, setAlertsStatusMessage] =
+    useState<string | null>(null);
   const [selectedAlert, setSelectedAlert] = useState<ActiveAlert | null>(null);
+  const alertDialogRef = useRef<HTMLElement | null>(null);
+  const alertCloseButtonRef = useRef<HTMLButtonElement | null>(null);
+  const alertTriggerRef = useRef<HTMLButtonElement | null>(null);
   const [bulletins, setBulletins] = useState<Bulletin[]>([]);
   const [liveVersions, setLiveVersions] = useState<Record<LiveTopic, number>>({
     radar: 0,
@@ -2555,17 +2571,50 @@ export default function Home() {
 
   useEffect(() => {
     let active = true;
-    const refreshAlerts = () => {
-      fetch("/api/alerts", { cache: "no-store" })
-        .then((response) => response.json())
-        .then((payload) => {
-          if (active) setAlerts(payload.alerts || []);
-        })
-        .catch(() => {
-          // Mantém alertas já recebidos durante falhas transitórias.
-        });
+    const refreshAlerts = async () => {
+      try {
+        const response = await fetch("/api/alerts", { cache: "no-store" });
+        const payload = (await response.json()) as {
+          alerts?: ActiveAlert[];
+          message?: string;
+          status?: "ok" | "checking" | "degraded";
+          sources?: Array<{
+            name: string;
+            status: "ok" | "checking" | "error";
+          }>;
+        };
+        if (!response.ok || !Array.isArray(payload.alerts)) {
+          throw new Error(payload.message || "Alertas indisponíveis");
+        }
+        if (active) {
+          setAlerts(payload.alerts);
+          const failedSources = (payload.sources || [])
+            .filter((source) => source.status === "error")
+            .map((source) => source.name);
+          setAlertsLoadState(
+            payload.status === "degraded"
+              ? "error"
+              : payload.status === "checking"
+                ? "loading"
+                : "ready",
+          );
+          setAlertsStatusMessage(
+            failedSources.length
+              ? `Falha temporária na consulta: ${failedSources.join(" e ")}.`
+              : null,
+          );
+        }
+      } catch {
+        if (active) {
+          setAlertsLoadState("error");
+          setAlertsStatusMessage(
+            "Não foi possível consultar os alertas oficiais agora.",
+          );
+        }
+        // Mantém alertas já recebidos durante falhas transitórias.
+      }
     };
-    refreshAlerts();
+    void refreshAlerts();
     const poller = window.setInterval(refreshAlerts, 60_000);
     return () => {
       active = false;
@@ -2576,14 +2625,37 @@ export default function Home() {
   useEffect(() => {
     if (!selectedAlert) return;
     const previousOverflow = document.body.style.overflow;
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setSelectedAlert(null);
+    const trigger = alertTriggerRef.current;
+    const handleDialogKeys = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedAlert(null);
+        return;
+      }
+      if (event.key !== "Tab" || !alertDialogRef.current) return;
+      const focusable = [...alertDialogRef.current.querySelectorAll<HTMLElement>(
+        "a[href], button:not([disabled]), [tabindex]:not([tabindex='-1'])",
+      )].filter((element) => element.getClientRects().length > 0);
+      const first = focusable.at(0);
+      const last = focusable.at(-1);
+      if (!first || !last) return;
+      if (!alertDialogRef.current.contains(document.activeElement)) {
+        event.preventDefault();
+        first.focus();
+      } else if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
     document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", closeOnEscape);
+    window.addEventListener("keydown", handleDialogKeys);
+    alertCloseButtonRef.current?.focus();
     return () => {
       document.body.style.overflow = previousOverflow;
-      window.removeEventListener("keydown", closeOnEscape);
+      window.removeEventListener("keydown", handleDialogKeys);
+      trigger?.focus();
     };
   }, [selectedAlert]);
 
@@ -2750,29 +2822,49 @@ export default function Home() {
             <span>Alertas ativos</span>
           </div>
           <div className="alerts-list">
-            {alerts.length ? (
+            {alertsLoadState === "loading" && !alerts.length ? (
+              <p>Consultando Defesa Civil e INMET…</p>
+            ) : alerts.length ? (
               alerts.map((alert) => (
                 <button
                   type="button"
                   className={`alert-item ${alert.severity}`}
                   key={alert.id}
-                  onClick={() => setSelectedAlert(alert)}
+                  onClick={(event) => {
+                    alertTriggerRef.current = event.currentTarget;
+                    setSelectedAlert(alert);
+                  }}
                   aria-haspopup="dialog"
                 >
                   <span className="alert-copy">
-                    <span className="alert-severity">
-                      {ALERT_SEVERITY_LABEL[alert.severity]}
+                    <span className="alert-meta">
+                      <span className="alert-severity">
+                        {ALERT_SEVERITY_LABEL[alert.severity]}
+                      </span>
+                      <span className="alert-source">{alert.source}</span>
                     </span>
                     <span className="alert-title">
-                      {alert.title.replace(/^Defesa Civil alerta:\s*/i, "")}
+                      {alertDisplayTitle(alert.title)}
                     </span>
                   </span>
                   <time>Válido até {formatDate(alert.validUntil)}</time>
                   <Eye className="alert-open-icon" size={17} aria-hidden="true" />
                 </button>
               ))
+            ) : alertsLoadState === "error" ? (
+              <p role="alert">
+                {alertsStatusMessage ||
+                  "Não foi possível consultar os alertas oficiais agora."} A
+                coleta tentará novamente automaticamente.
+              </p>
             ) : (
-              <p>Nenhum alerta ativo para Muçum.</p>
+              <p>Nenhum alerta ativo para Muçum nas fontes consultadas.</p>
+            )}
+            {alertsLoadState === "error" && alerts.length > 0 && (
+              <p role="status">
+                {alertsStatusMessage || "A atualização falhou"} Os últimos
+                alertas recebidos continuam visíveis.
+              </p>
             )}
           </div>
         </section>
@@ -2818,6 +2910,7 @@ export default function Home() {
             onMouseDown={() => setSelectedAlert(null)}
           >
             <section
+              ref={alertDialogRef}
               className="alert-modal"
               role="dialog"
               aria-modal="true"
@@ -2826,14 +2919,18 @@ export default function Home() {
             >
               <header>
                 <div>
-                  <span className={`alert-severity ${selectedAlert.severity}`}>
-                    {ALERT_SEVERITY_LABEL[selectedAlert.severity]}
+                  <span className="alert-modal-badges">
+                    <span className={`alert-severity ${selectedAlert.severity}`}>
+                      {ALERT_SEVERITY_LABEL[selectedAlert.severity]}
+                    </span>
+                    <span className="alert-source">{selectedAlert.source}</span>
                   </span>
                   <h2 id="alert-modal-title">
-                    {selectedAlert.title.replace(/^Defesa Civil alerta:\s*/i, "")}
+                    {alertDisplayTitle(selectedAlert.title)}
                   </h2>
                 </div>
                 <button
+                  ref={alertCloseButtonRef}
                   type="button"
                   onClick={() => setSelectedAlert(null)}
                   aria-label="Fechar alerta"
@@ -2841,15 +2938,43 @@ export default function Home() {
                   <X size={20} />
                 </button>
               </header>
-              <div className="alert-image">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={selectedAlert.href}
-                  alt={`Imagem oficial: ${selectedAlert.title.replace(/^Defesa Civil alerta:\s*/i, "")}`}
-                />
-              </div>
+              {selectedAlert.imageUrl ? (
+                <div className="alert-image">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={selectedAlert.imageUrl}
+                    alt={`Imagem oficial: ${alertDisplayTitle(selectedAlert.title)}`}
+                  />
+                </div>
+              ) : (
+                <div className="alert-no-image">
+                  <AlertTriangle size={34} aria-hidden="true" />
+                  <p>
+                    Este aviso do {selectedAlert.source} não possui uma imagem
+                    oficial. Consulte os detalhes diretamente na fonte.
+                  </p>
+                  <a
+                    href={selectedAlert.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Abrir aviso oficial
+                    <ExternalLink size={14} aria-hidden="true" />
+                  </a>
+                </div>
+              )}
               <footer>
-                <p>{selectedAlert.summary}</p>
+                <div className="alert-modal-summary">
+                  <p>{selectedAlert.summary}</p>
+                  <a
+                    href={selectedAlert.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Fonte: {selectedAlert.source}
+                    <ExternalLink size={12} aria-hidden="true" />
+                  </a>
+                </div>
                 <time>Válido até {formatDate(selectedAlert.validUntil)}</time>
               </footer>
             </section>

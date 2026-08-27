@@ -36,6 +36,18 @@ npm run build
 npm start
 ```
 
+## Fontes de alertas
+
+Os alertas ativos para Muçum são coletados de duas fontes oficiais:
+
+- avisos meteorológicos do INMET, filtrados pelo geocódigo IBGE `4312609`;
+- avisos da Defesa Civil do RS, analisados pelo conteúdo completo da publicação
+  e pela vigência exibida no card oficial quando necessário.
+
+A indisponibilidade de uma fonte não interrompe a coleta da outra. A API
+identifica a origem, preserva o link oficial e só oferece imagem quando ela foi
+armazenada para aquele aviso.
+
 ## Cloudflare
 
 O `wrangler.jsonc` descreve o Worker público, o Container e os bindings D1/R2

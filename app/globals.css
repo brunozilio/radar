@@ -284,6 +284,13 @@ input:focus-visible {
   min-width: 0;
 }
 
+.alert-meta,
+.alert-modal-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
 .alert-severity {
   flex: 0 0 auto;
   padding: 4px 7px;
@@ -300,6 +307,13 @@ input:focus-visible {
 .alert-severity.yellow { --alert-accent: #a97800; }
 .alert-severity.orange { --alert-accent: #c45a18; }
 .alert-severity.red { --alert-accent: #b62d35; }
+.alert-source {
+  color: color-mix(in srgb, var(--text) 72%, var(--muted));
+  font: 650 9px var(--font-geist-mono), monospace;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 .alert-title { font-size: 12px; font-weight: 620; line-height: 1.4; }
 .alert-item time {
   color: var(--muted);
@@ -328,7 +342,8 @@ input:focus-visible {
 }
 
 .alert-modal {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: min(720px, 100%);
   max-height: calc(100vh - 64px);
   background: var(--surface);
@@ -383,6 +398,40 @@ input:focus-visible {
   object-fit: contain;
 }
 
+.alert-no-image {
+  display: grid;
+  min-height: 230px;
+  padding: 34px 24px;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--surface) 88%, var(--line));
+  text-align: center;
+  place-content: center;
+  justify-items: center;
+}
+
+.alert-no-image > p {
+  max-width: 440px;
+  margin: 14px 0 18px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.alert-no-image > a,
+.alert-modal-summary > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.alert-no-image > a:hover,
+.alert-modal-summary > a:hover {
+  text-decoration: underline;
+}
+
 .alert-modal > footer {
   display: grid;
   align-items: end;
@@ -399,6 +448,21 @@ input:focus-visible {
   line-height: 1.5;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.alert-modal-summary {
+  display: grid;
+  min-width: 0;
+  gap: 8px;
+}
+
+.alert-modal > footer .alert-modal-summary > p {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .alert-modal > footer time {

@@ -15,7 +15,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "lint": "eslint . --ignore-pattern .next",
     "cloudflare:dry-run": "wrangler deploy --config ./wrangler.jsonc --dry-run --strict --keep-vars",
-    "cloudflare:deploy": "wrangler deploy --config ./wrangler.jsonc --strict --keep-vars --containers-rollout=immediate --message \"Corrige feed CPRM/SGB dos níveis dos rios\""
+    "cloudflare:deploy": "wrangler deploy --config ./wrangler.jsonc --strict --keep-vars --containers-rollout=immediate --message \"Integra alertas do INMET e atualiza Defesa Civil\""
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",

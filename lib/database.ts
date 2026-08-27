@@ -126,6 +126,13 @@ const SCHEMA = `
   );
   CREATE INDEX IF NOT EXISTS alerts_validity
     ON alerts(valid_until DESC);
+
+  CREATE TABLE IF NOT EXISTS source_status (
+    source TEXT PRIMARY KEY,
+    status TEXT NOT NULL,
+    checked_at TEXT NOT NULL,
+    message TEXT
+  );
 `;
 
 export function openWriterDatabase() {
