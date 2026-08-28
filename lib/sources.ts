@@ -29,6 +29,9 @@ export const CERAN_PLANT_SOURCES = {
   },
 } as const;
 
+export const EPAGRI_RADAR_BASE =
+  "https://sifap.defesacivil.sc.gov.br/radarsc/rest/radar";
+
 export type CeranPlantId = keyof typeof CERAN_PLANT_SOURCES;
 
 export function parseRadarTimestampText(text: string) {
@@ -138,8 +141,41 @@ export function epagriRadarTimestamp(fileName: string) {
   const match = fileName.match(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/);
   if (!match) return null;
   const [, year, month, day, hour, minute, second] = match;
+  const components = [year, month, day, hour, minute, second].map(Number);
   const timestamp = new Date(
-    `${year}-${month}-${day}T${hour}:${minute}:${second}.000Z`,
+    Date.UTC(
+      components[0],
+      components[1] - 1,
+      components[2],
+      components[3],
+      components[4],
+      components[5],
+    ),
   );
-  return Number.isNaN(timestamp.getTime()) ? null : timestamp.toISOString();
+  const normalized = [
+    timestamp.getUTCFullYear(),
+    timestamp.getUTCMonth() + 1,
+    timestamp.getUTCDate(),
+    timestamp.getUTCHours(),
+    timestamp.getUTCMinutes(),
+    timestamp.getUTCSeconds(),
+  ];
+  return components.every((component, index) => component === normalized[index])
+    ? timestamp.toISOString()
+    : null;
+}
+
+export function parseEpagriRadarFiles(value: unknown) {
+  if (!Array.isArray(value)) return [];
+  return [
+    ...new Set(
+      value.filter(
+        (fileName): fileName is string =>
+          typeof fileName === "string" &&
+          fileName.length <= 160 &&
+          /^\d{14,16}[A-Za-z0-9._-]+\.png$/.test(fileName) &&
+          Boolean(epagriRadarTimestamp(fileName)),
+      ),
+    ),
+  ];
 }

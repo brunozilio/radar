@@ -54,9 +54,11 @@ import { extractRealtimeLevel } from "../lib/realtime.ts";
 import {
   CERAN_PLANT_SOURCES,
   cptecSatelliteTimestamp,
+  EPAGRI_RADAR_BASE,
   epagriRadarTimestamp,
   inmetSatelliteTimestamp,
   parseCeranTable,
+  parseEpagriRadarFiles,
   parseRadarTimestampText,
   parseSaceBulletins,
 } from "../lib/sources.ts";
@@ -78,8 +80,6 @@ const defenseCivilCardTextCache = new Map<string, string>();
 
 const RADAR_BASE =
   "https://statics.climatempo.com.br/radar_poa/pngs/latest";
-const EPAGRI_RADAR_BASE =
-  "https://ciram.epagri.sc.gov.br/radar/rest/radar";
 const EPAGRI_RADAR_KIND = "radar-concordia";
 const EPAGRI_RADAR_CODE = "CHP";
 const EPAGRI_RADAR_PRODUCT = "0";
@@ -1862,7 +1862,10 @@ async function ingestEpagriRadar() {
   if (!listResponse.ok) {
     throw new Error(`Radar SC respondeu HTTP ${listResponse.status}`);
   }
-  const files = (await listResponse.json()) as string[];
+  const files = parseEpagriRadarFiles(await listResponse.json());
+  if (!files.length) {
+    throw new Error("Radar SC não retornou nomes de imagem válidos");
+  }
   const baseMap = await epagriBaseMap();
   let changes = 0;
 

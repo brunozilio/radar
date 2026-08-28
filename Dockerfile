@@ -40,6 +40,8 @@ COPY --chown=node:node app ./app
 COPY --chown=node:node lib ./lib
 COPY --chown=node:node public ./public
 COPY --chown=node:node scripts ./scripts
+COPY --chown=node:node certs/lets-encrypt-gen-y-rsa-chain.pem ./certs/lets-encrypt-gen-y-rsa-chain.pem
+ENV NODE_EXTRA_CA_CERTS=/app/certs/lets-encrypt-gen-y-rsa-chain.pem
 COPY --chown=node:node next.config.ts ./next.config.ts
 COPY --chown=node:node tsconfig.json ./tsconfig.json
 

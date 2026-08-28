@@ -48,6 +48,14 @@ A indisponibilidade de uma fonte não interrompe a coleta da outra. A API
 identifica a origem, preserva o link oficial e só oferece imagem quando ela foi
 armazenada para aquele aviso.
 
+## Radar de Concórdia
+
+As imagens do radar `CHP` são obtidas do SIFAP da Defesa Civil de Santa
+Catarina. Como o servidor oficial não entrega toda a cadeia TLS, o Container
+inclui apenas os certificados intermediários públicos da Let’s Encrypt
+necessários para completar e validar essa cadeia. A validação TLS permanece
+ativa; nenhuma conexão usa `NODE_TLS_REJECT_UNAUTHORIZED=0`.
+
 ## Cloudflare
 
 O `wrangler.jsonc` descreve o Worker público, o Container e os bindings D1/R2
