@@ -1,0 +1,562 @@
+{
+  "pre_fit_gate_passed": true,
+  "fitting_performed": false,
+  "prediction_performed": false,
+  "registered_rule": "numpy.round(decimals=8), columns45:120 only, canonical positive zero, after admission masks",
+  "checks": [
+    {
+      "name": "fixed_precision_and_columns",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:shape",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:copy",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:source_unmodified",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:nonrain_bits_exact",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:NaNmask_exact",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:finite_mask_exact",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:complete24_exact",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:saved_complete24",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:base_truth_times_unchanged",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:rain_positive_zero",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:idempotent",
+      "passed": true
+    },
+    {
+      "name": "original2025_2026:perturbation_bound",
+      "passed": true
+    },
+    {
+      "name": "added2020:shape",
+      "passed": true
+    },
+    {
+      "name": "added2020:copy",
+      "passed": true
+    },
+    {
+      "name": "added2020:source_unmodified",
+      "passed": true
+    },
+    {
+      "name": "added2020:nonrain_bits_exact",
+      "passed": true
+    },
+    {
+      "name": "added2020:NaNmask_exact",
+      "passed": true
+    },
+    {
+      "name": "added2020:finite_mask_exact",
+      "passed": true
+    },
+    {
+      "name": "added2020:complete24_exact",
+      "passed": true
+    },
+    {
+      "name": "added2020:saved_complete24",
+      "passed": true
+    },
+    {
+      "name": "added2020:base_truth_times_unchanged",
+      "passed": true
+    },
+    {
+      "name": "added2020:rain_positive_zero",
+      "passed": true
+    },
+    {
+      "name": "added2020:idempotent",
+      "passed": true
+    },
+    {
+      "name": "added2020:perturbation_bound",
+      "passed": true
+    },
+    {
+      "name": "original2021:shape",
+      "passed": true
+    },
+    {
+      "name": "original2021:copy",
+      "passed": true
+    },
+    {
+      "name": "original2021:source_unmodified",
+      "passed": true
+    },
+    {
+      "name": "original2021:nonrain_bits_exact",
+      "passed": true
+    },
+    {
+      "name": "original2021:NaNmask_exact",
+      "passed": true
+    },
+    {
+      "name": "original2021:finite_mask_exact",
+      "passed": true
+    },
+    {
+      "name": "original2021:complete24_exact",
+      "passed": true
+    },
+    {
+      "name": "original2021:saved_complete24",
+      "passed": true
+    },
+    {
+      "name": "original2021:base_truth_times_unchanged",
+      "passed": true
+    },
+    {
+      "name": "original2021:rain_positive_zero",
+      "passed": true
+    },
+    {
+      "name": "original2021:idempotent",
+      "passed": true
+    },
+    {
+      "name": "original2021:perturbation_bound",
+      "passed": true
+    },
+    {
+      "name": "original2022:shape",
+      "passed": true
+    },
+    {
+      "name": "original2022:copy",
+      "passed": true
+    },
+    {
+      "name": "original2022:source_unmodified",
+      "passed": true
+    },
+    {
+      "name": "original2022:nonrain_bits_exact",
+      "passed": true
+    },
+    {
+      "name": "original2022:NaNmask_exact",
+      "passed": true
+    },
+    {
+      "name": "original2022:finite_mask_exact",
+      "passed": true
+    },
+    {
+      "name": "original2022:complete24_exact",
+      "passed": true
+    },
+    {
+      "name": "original2022:saved_complete24",
+      "passed": true
+    },
+    {
+      "name": "original2022:base_truth_times_unchanged",
+      "passed": true
+    },
+    {
+      "name": "original2022:rain_positive_zero",
+      "passed": true
+    },
+    {
+      "name": "original2022:idempotent",
+      "passed": true
+    },
+    {
+      "name": "original2022:perturbation_bound",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:shape",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:copy",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:source_unmodified",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:nonrain_bits_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:NaNmask_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:finite_mask_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:complete24_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:base_truth_times_unchanged",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:rain_positive_zero",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:idempotent",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2021:perturbation_bound",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:shape",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:copy",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:source_unmodified",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:nonrain_bits_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:NaNmask_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:finite_mask_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:complete24_exact",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:base_truth_times_unchanged",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:rain_positive_zero",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:idempotent",
+      "passed": true
+    },
+    {
+      "name": "reconstructed2022:perturbation_bound",
+      "passed": true
+    },
+    {
+      "name": "2021:normalized_original_reconstruction_exact",
+      "passed": true
+    },
+    {
+      "name": "2022:normalized_original_reconstruction_exact",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/experimento-radar-ausencias-nativas-runtime19-20260921/features.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/radar-matriz-observada-2020-20260921/features.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/features.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/features.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/verificacao-radar-matrizes-reservadas-2021-2022-20260922/reconstructed-2021.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/verificacao-radar-matrizes-reservadas-2021-2022-20260922/reconstructed-2022.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/experimento-radar-observado-120-20260921/training-masks.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:outputs/experimento-radar-historico-2020-20260921/training-masks.npz",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:docs/radar-numeric-stability-protocol.json",
+      "passed": true
+    },
+    {
+      "name": "frozen_input_unmodified:scripts/hydro_radar_numeric.py",
+      "passed": true
+    }
+  ],
+  "datasets": [
+    {
+      "dataset": "original2025_2026",
+      "source_shape": [
+        12928,
+        180
+      ],
+      "audited_shape": [
+        12928,
+        120
+      ],
+      "rain_cells": 969600,
+      "finite_rain_cells": 963723,
+      "nan_rain_cells": 5877,
+      "max_abs_perturbation": 4.999677227779387e-09,
+      "changed_finite_rain_cells": 590874,
+      "input_zeros": 310550,
+      "output_zeros": 310550,
+      "nonzero_to_zero": 0,
+      "input_negative_zero": 0,
+      "output_negative_zero": 0,
+      "coverage_point5_comparison_changes": 0,
+      "decimal_exact_binary_disagreement_cells": 0,
+      "decimal_short_repr_disagreement_cells": 0,
+      "decimal_exact_binary_disagreement_unique_values": 0,
+      "decimal_short_repr_disagreement_unique_values": 0,
+      "exact_binary_half_ties": 0,
+      "short_repr_half_ties": 0,
+      "max_numpy_vs_decimal_discrepancy": 0.0
+    },
+    {
+      "dataset": "added2020",
+      "source_shape": [
+        480,
+        120
+      ],
+      "audited_shape": [
+        480,
+        120
+      ],
+      "rain_cells": 36000,
+      "finite_rain_cells": 28439,
+      "nan_rain_cells": 7561,
+      "max_abs_perturbation": 4.997399827288973e-09,
+      "changed_finite_rain_cells": 22231,
+      "input_zeros": 4696,
+      "output_zeros": 4696,
+      "nonzero_to_zero": 0,
+      "input_negative_zero": 0,
+      "output_negative_zero": 0,
+      "coverage_point5_comparison_changes": 0,
+      "decimal_exact_binary_disagreement_cells": 0,
+      "decimal_short_repr_disagreement_cells": 0,
+      "decimal_exact_binary_disagreement_unique_values": 0,
+      "decimal_short_repr_disagreement_unique_values": 0,
+      "exact_binary_half_ties": 0,
+      "short_repr_half_ties": 0,
+      "max_numpy_vs_decimal_discrepancy": 0.0
+    },
+    {
+      "dataset": "original2021",
+      "source_shape": [
+        744,
+        120
+      ],
+      "audited_shape": [
+        744,
+        120
+      ],
+      "rain_cells": 55800,
+      "finite_rain_cells": 48835,
+      "nan_rain_cells": 6965,
+      "max_abs_perturbation": 4.997093863701174e-09,
+      "changed_finite_rain_cells": 32036,
+      "input_zeros": 13377,
+      "output_zeros": 13377,
+      "nonzero_to_zero": 0,
+      "input_negative_zero": 0,
+      "output_negative_zero": 0,
+      "coverage_point5_comparison_changes": 0,
+      "decimal_exact_binary_disagreement_cells": 0,
+      "decimal_short_repr_disagreement_cells": 0,
+      "decimal_exact_binary_disagreement_unique_values": 0,
+      "decimal_short_repr_disagreement_unique_values": 0,
+      "exact_binary_half_ties": 0,
+      "short_repr_half_ties": 0,
+      "max_numpy_vs_decimal_discrepancy": 0.0
+    },
+    {
+      "dataset": "original2022",
+      "source_shape": [
+        1464,
+        120
+      ],
+      "audited_shape": [
+        1464,
+        120
+      ],
+      "rain_cells": 109800,
+      "finite_rain_cells": 96398,
+      "nan_rain_cells": 13402,
+      "max_abs_perturbation": 4.997096639258736e-09,
+      "changed_finite_rain_cells": 69699,
+      "input_zeros": 18705,
+      "output_zeros": 18705,
+      "nonzero_to_zero": 0,
+      "input_negative_zero": 0,
+      "output_negative_zero": 0,
+      "coverage_point5_comparison_changes": 0,
+      "decimal_exact_binary_disagreement_cells": 0,
+      "decimal_short_repr_disagreement_cells": 0,
+      "decimal_exact_binary_disagreement_unique_values": 0,
+      "decimal_short_repr_disagreement_unique_values": 0,
+      "exact_binary_half_ties": 0,
+      "short_repr_half_ties": 0,
+      "max_numpy_vs_decimal_discrepancy": 0.0
+    },
+    {
+      "dataset": "reconstructed2021",
+      "source_shape": [
+        744,
+        120
+      ],
+      "audited_shape": [
+        744,
+        120
+      ],
+      "rain_cells": 55800,
+      "finite_rain_cells": 48835,
+      "nan_rain_cells": 6965,
+      "max_abs_perturbation": 4.9970947102462304e-09,
+      "changed_finite_rain_cells": 32031,
+      "input_zeros": 13377,
+      "output_zeros": 13377,
+      "nonzero_to_zero": 0,
+      "input_negative_zero": 0,
+      "output_negative_zero": 0,
+      "coverage_point5_comparison_changes": 0,
+      "decimal_exact_binary_disagreement_cells": 0,
+      "decimal_short_repr_disagreement_cells": 0,
+      "decimal_exact_binary_disagreement_unique_values": 0,
+      "decimal_short_repr_disagreement_unique_values": 0,
+      "exact_binary_half_ties": 0,
+      "short_repr_half_ties": 0,
+      "max_numpy_vs_decimal_discrepancy": 0.0
+    },
+    {
+      "dataset": "reconstructed2022",
+      "source_shape": [
+        1464,
+        120
+      ],
+      "audited_shape": [
+        1464,
+        120
+      ],
+      "rain_cells": 109800,
+      "finite_rain_cells": 96398,
+      "nan_rain_cells": 13402,
+      "max_abs_perturbation": 4.9970960702694356e-09,
+      "changed_finite_rain_cells": 69665,
+      "input_zeros": 18705,
+      "output_zeros": 18705,
+      "nonzero_to_zero": 0,
+      "input_negative_zero": 0,
+      "output_negative_zero": 0,
+      "coverage_point5_comparison_changes": 0,
+      "decimal_exact_binary_disagreement_cells": 0,
+      "decimal_short_repr_disagreement_cells": 0,
+      "decimal_exact_binary_disagreement_unique_values": 0,
+      "decimal_short_repr_disagreement_unique_values": 0,
+      "exact_binary_half_ties": 0,
+      "short_repr_half_ties": 0,
+      "max_numpy_vs_decimal_discrepancy": 0.0
+    }
+  ],
+  "original_vs_reconstructed": [
+    {
+      "year": 2021,
+      "shape": [
+        744,
+        120
+      ],
+      "normalized_exact_with_NaNs": true,
+      "nan_masks_exact": true,
+      "different_finite_cells": 0,
+      "max_abs_normalized_difference": 0.0
+    },
+    {
+      "year": 2022,
+      "shape": [
+        1464,
+        120
+      ],
+      "normalized_exact_with_NaNs": true,
+      "nan_masks_exact": true,
+      "different_finite_cells": 0,
+      "max_abs_normalized_difference": 0.0
+    }
+  ],
+  "normalization_mismatches": [],
+  "decimal_disagreement_rows": 0,
+  "decimal_interpretation": "Declared rule is NumPy binary floating rounding via scaling/nearest-even, not exact decimal arithmetic. Decimal.from_float tests the exact represented binary value; Decimal(str(value)) tests its shortest decimal text. Differences can occur at or near decimal half-way cases because scaling itself rounds. They do not silently replace the fixed NumPy rule.",
+  "limitations": [
+    "Complete independent reconstructed matrices exist for2021/2022 only.2020 prior verifier preserved code/results but no reconstructedNPZ;2025/26 lacks a full independent reconstructedNPZ here. Those two originals are audited for invariance/perturbation only.",
+    "No precision tuning, models, fitting, prediction, network or changes to frozen inputs.",
+    "Rounded values must not be used to recompute admission masks or coverage thresholds.",
+    "Passing this numerical gate alone is not forecast accuracy or promotion."
+  ],
+  "source_sha256": {
+    "docs/radar-numeric-stability-protocol.json": "705ebd2b7edc85d0be66d8e9dcf42deb8d1599ae8efbda5064bf2708a727f4c8",
+    "scripts/hydro_radar_numeric.py": "0ea3bef6b040dc27eb5ab995b216762d08497e3fdc35a08fee705a77243b7d95",
+    "outputs/experimento-radar-observado-120-20260921/training-masks.npz": "d5ac830a321549c46a2b418346f9c3d097ddf865cb6cc10a377f5e9bf8880851",
+    "outputs/experimento-radar-historico-2020-20260921/training-masks.npz": "3f54ff01f641386e49c0f992f1c09096dcebb4df02615a7d9d8b5c469a8b7776",
+    "outputs/experimento-radar-ausencias-nativas-runtime19-20260921/features.npz": "608eb4d58e34a240bdc6c13c365b21e6b2c4cd108200e25896a09ed3a0388b0c",
+    "outputs/radar-matriz-observada-2020-20260921/features.npz": "d69aa99cbec4351108a2ef3f07bbb9347ab1e9811f1a27cc6329cdbba53d2fde",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/features.npz": "895d33626e2248b86d4e01aca182895a37e75a6549b443fb99d6e09ae8594f77",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/features.npz": "a420bcb929ed6e6098d5ee97638f1b9cc0ef5336f2361878a7f4b910c2aeea36",
+    "outputs/verificacao-radar-matrizes-reservadas-2021-2022-20260922/reconstructed-2021.npz": "06c3a5e958885221659c1e2abf6f27e097c724a64992652d63bf3dd22e0fcfef",
+    "outputs/verificacao-radar-matrizes-reservadas-2021-2022-20260922/reconstructed-2022.npz": "05a37969842303b2537d713fce6ccc1cdb29adc5a3da7c657b51fdf86c60ef36"
+  },
+  "numpy_version": "2.5.3"
+}

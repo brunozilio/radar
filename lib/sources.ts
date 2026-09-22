@@ -165,6 +165,19 @@ export function epagriRadarTimestamp(fileName: string) {
     : null;
 }
 
+// NOAA filenames encode UTC as year, day of year, hour and minute.
+export function parseNoaaSatelliteFrames(html: string) {
+  const matches = html.matchAll(/https:\/\/cdn\.star\.nesdis\.noaa\.gov\/GOES19\/ABI\/SECTOR\/ssa\/13\/(\d{4})(\d{3})(\d{2})(\d{2})_GOES19-ABI-ssa-13-1800x1080\.jpg/g);
+  const frames = new Map<string, { sourceUrl: string; timestamp: string }>();
+  for (const match of matches) {
+    const [year, day, hour, minute] = match.slice(1).map(Number);
+    const date = new Date(Date.UTC(year, 0, day, hour, minute));
+    if (day < 1 || date.getUTCFullYear() !== year || hour > 23 || minute > 59) continue;
+    frames.set(match[0], { sourceUrl: match[0], timestamp: date.toISOString() });
+  }
+  return [...frames.values()];
+}
+
 export function parseEpagriRadarFiles(value: unknown) {
   if (!Array.isArray(value)) return [];
   return [

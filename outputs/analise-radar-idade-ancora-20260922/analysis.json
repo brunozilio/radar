@@ -1,0 +1,253 @@
+{
+  "source_manifest_sha256": "ba9eab5746c7537eb8d7bb923b034e223b998844a28982a7cbcd1ea200afdc74",
+  "contrasts": 864,
+  "summary": [
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "unchanged": 1,
+        "regressed": 10,
+        "improved": 1
+      },
+      "mae_horizons": {
+        "regressed": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "all",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 5,
+        "improved": 3,
+        "regressed": 4
+      },
+      "mae_horizons": {
+        "improved": 7,
+        "regressed": 2,
+        "unchanged": 3
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 6,
+        "unchanged": 1,
+        "regressed": 5
+      },
+      "mae_horizons": {
+        "improved": 5,
+        "regressed": 7
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 6,
+        "improved": 3,
+        "regressed": 3
+      },
+      "mae_horizons": {
+        "regressed": 6,
+        "improved": 3,
+        "unchanged": 3
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "regressed": 6,
+        "improved": 6
+      },
+      "mae_horizons": {
+        "regressed": 6,
+        "improved": 6
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "all",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 7,
+        "improved": 3,
+        "regressed": 2
+      },
+      "mae_horizons": {
+        "improved": 5,
+        "regressed": 4,
+        "unchanged": 3
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "unchanged": 2,
+        "improved": 4,
+        "regressed": 6
+      },
+      "mae_horizons": {
+        "regressed": 9,
+        "improved": 3
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 5,
+        "improved": 3,
+        "regressed": 4
+      },
+      "mae_horizons": {
+        "improved": 5,
+        "regressed": 4,
+        "unchanged": 3
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 3,
+        "regressed": 9
+      },
+      "mae_horizons": {
+        "regressed": 10,
+        "improved": 2
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "all",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 6,
+        "regressed": 4,
+        "improved": 2
+      },
+      "mae_horizons": {
+        "improved": 6,
+        "regressed": 2,
+        "unchanged": 4
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "unchanged": 3,
+        "improved": 7,
+        "regressed": 2
+      },
+      "mae_horizons": {
+        "improved": 9,
+        "regressed": 3
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 9,
+        "improved": 3
+      },
+      "mae_horizons": {
+        "improved": 4,
+        "regressed": 4,
+        "unchanged": 4
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 7,
+        "unchanged": 1,
+        "regressed": 4
+      },
+      "mae_horizons": {
+        "regressed": 7,
+        "improved": 5
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "all",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 6,
+        "improved": 4,
+        "regressed": 2
+      },
+      "mae_horizons": {
+        "improved": 6,
+        "regressed": 2,
+        "unchanged": 4
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "unchanged": 4,
+        "regressed": 5,
+        "improved": 3
+      },
+      "mae_horizons": {
+        "regressed": 10,
+        "improved": 2
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "primary_unaged",
+      "hit_horizons": {
+        "unchanged": 9,
+        "improved": 2,
+        "regressed": 1
+      },
+      "mae_horizons": {
+        "improved": 5,
+        "regressed": 3,
+        "unchanged": 4
+      }
+    }
+  ],
+  "independent_test": false,
+  "promoted": false,
+  "goal_achieved": false
+}

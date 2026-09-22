@@ -11,3 +11,11 @@
 !next.config.ts
 !postcss.config.mjs
 !tsconfig.json
+
+# Only product runtime scripts belong in the published image.
+scripts/**
+!scripts/run.mjs
+!scripts/worker.ts
+!scripts/seeds/**
+!scripts/hydro-hourly-requirements.txt
+!projection-runtime/**

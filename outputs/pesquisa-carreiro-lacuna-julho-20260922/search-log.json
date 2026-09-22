@@ -1,0 +1,23 @@
+{
+  "date_utc": "2026-09-22",
+  "mechanism": "web search tool; search results summarized here, not raw result-body archival",
+  "query_count": 4,
+  "queries": [
+    {"q": "site.sgb.gov.br \"Passo Carreiro\" \"2026\" \"julho\""},
+    {"q": "site.rs.gov.br \"Carreiro\" \"22/07/2026\" nível"},
+    {"q": "site.sace.sgb.gov.br \"86500000\""},
+    {"q": "\"Passo Carreiro\" \"Clima RS\"", "domains": ["rs.gov.br", "sgb.gov.br", "ana.gov.br"], "result": "No results returned"}
+  ],
+  "retained_primary_result": {
+    "url": "https://www3.estado.rs.gov.br/centro-de-monitoramento-da-defesa-civil-do-rs-atualiza-prognostico-de-resposta-hidrologica",
+    "title": "Centro de Monitoramento da Defesa Civil do RS atualiza prognóstico de resposta hidrológica",
+    "published_literal": "22/07/2026 às 08h41min",
+    "body_preserved": "raw/rs-bulletin.html",
+    "finding": "Discusses regional rainfall and Carreiro basin; no station86500000 timestamp/level/QC series or export link in the article."
+  },
+  "limits": [
+    "Combined search returned unrelated and nonofficial pages; these were not used as evidence for station measurements.",
+    "Absence from these four searches is not exhaustive absence from official publications.",
+    "The SIGMA station archive is a public republication explicitly allowed in the task; it is not independently government-owned primary measurement evidence."
+  ]
+}

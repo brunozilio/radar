@@ -1,0 +1,34 @@
+{
+  "executed_utc_note": "Search performed2026-09-22; exact retrieval time not exposed by web tool. This file timestamp is audit recording time, not source publication.",
+  "recorded_utc": "2026-09-22T06:45:15.742645+00:00",
+  "queries": [
+    "site.sgb.gov.br \"Taquari\" \"2024\" \"reinstalação\"",
+    "site.rigeo.sgb.gov.br \"relatório\" \"operação\" \"Taquari\" \"2024\"",
+    "site.gov.br/ana \"Muçum\" \"sensor\" \"2024\"",
+    "site.sgb.gov.br \"Muçum\" \"2024\" \"restabelecimento\""
+  ],
+  "response_file": "search-results.json",
+  "status": "NO_NEW_EXPLICIT_MAINTENANCE_DATUM_VALIDITY_EVIDENCE",
+  "returned_result_assessment": [
+    {
+      "url": "https://www.sgb.gov.br/documents/d/guest/iv-end-caderno-de-prog-1-",
+      "decision": "Conference program mentions mapped flood areas; no indication of station reinstatement tie. Not fetched."
+    },
+    {
+      "url": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/47fd06e6-391f-460c-9623-b305904f5d92/content",
+      "decision": "Search index title Ethan Frome and bibliography referring operational2020report. No displayed metadata justifying new download as station reinstatement document. Body not inspected; no claim about full contents."
+    },
+    {
+      "url": "https://sgb.gov.br/documents/d/guest/relatorio_anual_ouvidoria_2024-pdf",
+      "decision": "Index mentions Taquari data and stationÓbidos return, not86510000. Not fetched."
+    },
+    {
+      "url": "https://www.gov.br/secom/pt-br/arquivos/acao-federal-no-rs/240503_rs_relatorio-de-operacao-2.pdf",
+      "decision": "Federal operation bulletin May3, index generalSAH operations. Does not offer station-specific post-May restoration metadata. Not fetched."
+    },
+    {
+      "decision": "Other returned federal restoration funding/military operations, ferry services, municipal sensor reports and nonprimary pages are outside evidentiary scope. Not accepted; full search output preserved."
+    }
+  ],
+  "limits": "Four queries do not establish nonexistence of documents. Search returned unrelated/out-of-domain results despite textual site filters; these were not used as proof."
+}

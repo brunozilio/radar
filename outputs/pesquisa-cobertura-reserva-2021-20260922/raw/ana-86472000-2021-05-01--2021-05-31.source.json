@@ -1,0 +1,34 @@
+{
+  "station": "86472000",
+  "start": "2021-05-01",
+  "end": "2021-05-31",
+  "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=01%2F05%2F2021&dataFim=31%2F05%2F2021",
+  "parameters": {
+    "codEstacao": "86472000",
+    "dataInicio": "01/05/2021",
+    "dataFim": "31/05/2021"
+  },
+  "file": "raw/ana-86472000-2021-05-01--2021-05-31.xml",
+  "requested_at_utc": "2026-09-22T03:05:33.314701+00:00",
+  "status": "response_preserved",
+  "plan_sha256": "13e4728000767a87efa61a6ff28a62e7276cd2f37e40b2a6ba422dd2a71bf571",
+  "http_status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Tue, 22 Sep 2026 03:05:29 GMT",
+    "Content-Type": "text/xml; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Cache-Control": "private, max-age=0",
+    "X-AspNet-Version": "4.0.30319",
+    "X-Powered-By": "ASP.NET",
+    "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff"
+  },
+  "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=01%2F05%2F2021&dataFim=31%2F05%2F2021",
+  "collected_at_utc": "2026-09-22T03:05:33.916018+00:00",
+  "bytes": 2071877,
+  "sha256": "fcb8602f8649d39b9d84d4eb0fc4bd7fc8ad13536c823c0ed2960ea0850ccfa7",
+  "source_file": "outputs/pesquisa-cobertura-reserva-2021-20260922/raw/ana-86472000-2021-05-01--2021-05-31.xml"
+}

@@ -1,0 +1,12 @@
+{
+  "id":"component-downstream-v1",
+  "scope":"Prespecified continuation of conditional component-conflict diagnosis to Muçum levels; historical development only, no promotion.",
+  "baseline":"outputs/experimento-proxy-carreiro-20260921, July77 levels with frozen Carreiro53 and missing-flow proxies, PET3/tau6, exact15minuteH/Qanchor.",
+  "change":"Only futureJuly inference at origins selected by component-dependency rule. Read the already-frozen conditional upstream predictions. Do not change any rainfall, past upstream flows, Carreiro prediction/proxy, HGE state, rating, anchor or decay.",
+  "method":"July kernel has lags>=1, so anchor reconstructions atO-1/O are unchanged. Invert baseline stage with its exact anchor offset; add sum(weight_lag*(conditionalJuly[h-lag]-referenceJuly[h-lag])) for0<=h-lag, preserving otherflows. Convert back to stage. Negative resultingQ is a failure, not clipped. Unselected origins retain exact baseline value without roundtrip.",
+  "evaluation":"Retain all23538origin-targetrows, exact originaltargets and failures. Compare all/high>=7m in all12horizons, both individual and common coverage; save gained/lost hits using0.50m inclusive. No new tolerance, sample selection, threshold tuning or fit.",
+  "verification":"Confirm same upstreamreference77 predictions and source hashes, unchangedunselectedrows, and independent full-component reconstruction at affectedorigins from existing replay components where available. No claim of fullindependent rerun from inversion alone.",
+  "promotion":"Not allowed. The rule and alternative were motivated by previously examined July2026 inputs/errors. Validation of conflict branch in independent events and current source compatibility remain outstanding.",
+  "goal_achieved":false,
+  "live_issuance":false
+}

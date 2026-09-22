@@ -1,0 +1,793 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/docs/residual-autoregression-protocol.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/experimento-correcao-tau-6h-20260921/predictions.csv",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/experimento-correcao-tau-6h-20260921/modeled-carreiro-inputs.npz",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_residual_autoregression.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/experimento-correcao-tau-6h-20260921/proxy-training.csv",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/resultado.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_hge_dependencies.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:baseline-metric-verification.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:check_state_prefix.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_hge_dependencies.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_residual_autoregression.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydrological_model.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/run.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/test_hydro_residual_autoregression.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:decision.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:documentation-clarification.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:evaluation.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:execution.log",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:experiment.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:predictions.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:protocol.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:report.md",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:report.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:residual-series.npz",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:state-prefix-verification.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:tests.log",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:training.csv",
+      "passed": true
+    },
+    {
+      "name": "protocol_snapshot",
+      "passed": true
+    },
+    {
+      "name": "code_snapshot",
+      "passed": true
+    },
+    {
+      "name": "times_source",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12928,
+      "tolerance": 0
+    },
+    {
+      "name": "times_proxy",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12928,
+      "tolerance": 0
+    },
+    {
+      "name": "hourly_grid",
+      "passed": true
+    },
+    {
+      "name": "exact_raw_ANA_timestamps",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12928,
+      "tolerance": 0
+    },
+    {
+      "name": "positive_lags:julho",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_normalized_weights:julho",
+      "passed": true
+    },
+    {
+      "name": "positive_lags:carreiro",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_normalized_weights:carreiro",
+      "passed": true
+    },
+    {
+      "name": "routed_independent_sum",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12904,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "finalized_residual_raw_Q_minus_route_minus_saved_local",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12833,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "feature_alignment",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 51311,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "anchor_h_exact_source",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12821,
+      "tolerance": 0
+    },
+    {
+      "name": "anchor_q_exact_source",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12819,
+      "tolerance": 0
+    },
+    {
+      "name": "twelve_models",
+      "passed": true
+    },
+    {
+      "name": "mean_train_only_h1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h1",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h1",
+      "passed": true,
+      "relative_residual": 3.730496436601047e-15
+    },
+    {
+      "name": "mean_train_only_h2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h2",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h2",
+      "passed": true,
+      "relative_residual": 3.56603373233044e-15
+    },
+    {
+      "name": "mean_train_only_h3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h3",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h3",
+      "passed": true,
+      "relative_residual": 1.2956561028849407e-14
+    },
+    {
+      "name": "mean_train_only_h4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h4",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h4",
+      "passed": true,
+      "relative_residual": 4.758826872833846e-15
+    },
+    {
+      "name": "mean_train_only_h5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h5",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h5",
+      "passed": true,
+      "relative_residual": 4.34992766849574e-15
+    },
+    {
+      "name": "mean_train_only_h6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h6",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h6",
+      "passed": true,
+      "relative_residual": 6.629433804019764e-15
+    },
+    {
+      "name": "mean_train_only_h7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h7",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h7",
+      "passed": true,
+      "relative_residual": 2.571281736285301e-15
+    },
+    {
+      "name": "mean_train_only_h8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h8",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h8",
+      "passed": true,
+      "relative_residual": 4.911606927241485e-15
+    },
+    {
+      "name": "mean_train_only_h9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h9",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h9",
+      "passed": true,
+      "relative_residual": 5.497630014735327e-15
+    },
+    {
+      "name": "mean_train_only_h10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h10",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h10",
+      "passed": true,
+      "relative_residual": 7.220691808769986e-15
+    },
+    {
+      "name": "mean_train_only_h11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h11",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h11",
+      "passed": true,
+      "relative_residual": 3.7348494106371255e-15
+    },
+    {
+      "name": "mean_train_only_h12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "std_train_only_h12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 4,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "intercept_train_only_h12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "train_membership_h12",
+      "passed": true
+    },
+    {
+      "name": "ridge_normal_equation_no_refit_h12",
+      "passed": true,
+      "relative_residual": 3.62169378413773e-15
+    },
+    {
+      "name": "row_count",
+      "passed": true
+    },
+    {
+      "name": "identical_keys_targets_anchors",
+      "passed": true
+    },
+    {
+      "name": "unique_origin_horizon",
+      "passed": true
+    },
+    {
+      "name": "anchor_reproduction:reference",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 23250,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "baseline_level_components:reference",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 23250,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "preserved_baseline:reference",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 23250,
+      "tolerance": 0
+    },
+    {
+      "name": "correction_inference:reference",
+      "passed": true,
+      "max_abs_difference": 2.2737367544323206e-13,
+      "finite_values": 23022,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "candidate_recombination:reference",
+      "passed": true,
+      "max_abs_difference": 3.552713678800501e-15,
+      "finite_values": 23247,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "candidate_status:reference",
+      "passed": true
+    },
+    {
+      "name": "apply_flag:reference",
+      "passed": true
+    },
+    {
+      "name": "feature_target_anchor_times:reference",
+      "passed": true
+    },
+    {
+      "name": "fallback_reason:reference",
+      "passed": true
+    },
+    {
+      "name": "fallback_exact:reference",
+      "passed": true
+    },
+    {
+      "name": "invalid_flow_summary:reference",
+      "passed": true
+    },
+    {
+      "name": "anchor_reproduction:julho_levels",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 23250,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "baseline_level_components:julho_levels",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 23250,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "preserved_baseline:julho_levels",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 23250,
+      "tolerance": 0
+    },
+    {
+      "name": "correction_inference:julho_levels",
+      "passed": true,
+      "max_abs_difference": 2.2737367544323206e-13,
+      "finite_values": 23022,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "candidate_recombination:julho_levels",
+      "passed": true,
+      "max_abs_difference": 7.105427357601002e-15,
+      "finite_values": 23247,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "candidate_status:julho_levels",
+      "passed": true
+    },
+    {
+      "name": "apply_flag:julho_levels",
+      "passed": true
+    },
+    {
+      "name": "feature_target_anchor_times:julho_levels",
+      "passed": true
+    },
+    {
+      "name": "fallback_reason:julho_levels",
+      "passed": true
+    },
+    {
+      "name": "fallback_exact:julho_levels",
+      "passed": true
+    },
+    {
+      "name": "invalid_flow_summary:julho_levels",
+      "passed": true
+    },
+    {
+      "name": "apply_summary",
+      "passed": true
+    },
+    {
+      "name": "fallback_summary",
+      "passed": true
+    },
+    {
+      "name": "no_promotion",
+      "passed": true
+    }
+  ],
+  "source_experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-residuo-autoregressivo-20260921",
+  "rows": 23538,
+  "status_counts": {
+    "reference": {
+      "candidate_applied": 23019,
+      "baseline_missing": 288,
+      "fallback_original_tau6": 228,
+      "invalid_candidate_flow": 3
+    },
+    "julho_levels": {
+      "candidate_applied": 23019,
+      "baseline_missing": 288,
+      "fallback_original_tau6": 228,
+      "invalid_candidate_flow": 3
+    }
+  },
+  "model_computable_but_baseline_missing_rows": 0,
+  "target_missing_but_prediction_retained": {
+    "reference": 147,
+    "julho_levels": 147
+  },
+  "limitations": [
+    "No HGE rerun or refitting. local_q and anchor forecast-rain simulation checked by source review and preserved-baseline agreement; parent owns prefix-state verification.",
+    "Training residuals are in-sample to frozen pre-July components, not out-of-fold forecasts.",
+    "Finalized labels use subsequently known upstream/rain; correction is not full origin-issued forecast error.",
+    "Finalized rainfall includes archived-forecast fill of missing spatial coverage. Upstream grid may contain asof values; Carreiro may use frozen proxy.",
+    "Publication availability, legacy timezone and vertical reference remain unverified assumptions.",
+    "residual_model_applied denotes a computable correction, not necessarily an applied family forecast; inspect family status.",
+    "Already inspected development; no promotion or 98 percent claim."
+  ]
+}

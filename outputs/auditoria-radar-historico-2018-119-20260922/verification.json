@@ -1,0 +1,6430 @@
+{
+  "passed": true,
+  "checks_count": 1602,
+  "checks": [
+    {
+      "check": "protocol bound",
+      "passed": true
+    },
+    {
+      "check": "recorded local ordering",
+      "passed": true
+    },
+    {
+      "check": "runtime",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/docs/radar-2018-hourly-augmentation-119-protocol.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/features.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-08-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-08-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-09-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-09-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/feature-catalog.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/level-source-trace.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/rain-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/target-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/verificacao-radar-matrizes-2018-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_radar_2018_augmentation_119.py",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/verificacao-radar-matriz-recente-ancora-horaria-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "prepared hash training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "prepared hash training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "prepared hash feature-indices.npy",
+      "passed": true
+    },
+    {
+      "check": "prepared hash training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/docs/radar-2018-hourly-augmentation-119-protocol.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/features.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-08-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-08-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-09-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-09-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/feature-catalog.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/level-source-trace.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/rain-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/target-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/verificacao-radar-matrizes-2018-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_radar_2018_augmentation_119.py",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/verificacao-radar-matriz-recente-ancora-horaria-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "prepared hash training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "prepared hash training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "prepared hash feature-indices.npy",
+      "passed": true
+    },
+    {
+      "check": "prepared hash training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/evaluation.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/experiment.json",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/feature-indices.npy",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_control-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/pre-fit-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/predictions.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact experimento-radar-historico-2018-119-20260922/training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matriz-recente-ancora-horaria-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matriz-recente-ancora-horaria-20260922/features.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matriz-recente-ancora-horaria-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matriz-recente-ancora-horaria-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matriz-recente-ancora-horaria-20260922/quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/2018-08-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/2018-08-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/2018-09-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/2018-09-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/feature-catalog.json",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/level-source-trace.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/rain-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "artifact radar-matrizes-observadas-2018-20260922/target-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "48masks144vectors",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h1",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h1",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h1",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h1",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h2",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h2",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h2",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h2",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h3",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h3",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h3",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h3",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h4",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h4",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h4",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h4",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h5",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h5",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h5",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h5",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h6",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h6",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h6",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h6",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h7",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h7",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h7",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h7",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h8",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h8",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h8",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h8",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h9",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h9",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h9",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h9",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h10",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h10",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h10",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h10",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h11",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h11",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h11",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h11",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old0_h12",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask old1_h12",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask validation_h12",
+      "passed": true
+    },
+    {
+      "check": "failed attempt mask test_h12",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-1-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-1-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-1-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-1-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-1-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-1-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-1-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-1-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-1-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-1-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-1-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-1-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-2-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-2-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-2-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-2-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-2-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-2-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-2-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-2-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-2-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-2-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-2-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-2-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-3-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-3-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-3-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-3-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-3-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-3-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-3-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-3-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-3-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-3-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-3-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-3-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-4-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-4-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-4-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-4-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-4-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-4-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-4-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-4-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-4-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-4-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-4-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-4-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-5-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-5-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-5-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-5-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-5-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-5-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-5-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-5-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-5-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-5-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-5-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-5-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-6-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-6-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-6-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-6-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-6-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-6-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-6-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-6-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-6-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-6-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-6-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-6-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-7-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-7-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-7-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-7-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-7-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-7-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-7-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-7-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-7-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-7-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-7-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-7-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-8-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-8-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-8-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-8-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-8-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-8-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-8-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-8-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-8-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-8-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-8-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-8-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-9-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-9-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-9-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-9-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-9-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-9-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-9-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-9-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-9-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-9-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-9-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-9-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-10-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-10-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-10-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-10-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-10-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-10-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-10-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-10-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-10-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-10-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-10-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-10-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-11-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-11-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-11-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-11-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-11-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-11-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-11-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-11-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-11-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-11-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-11-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-11-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-12-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-12-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_control-12-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-12-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-12-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector validation-hourly_plus2018-12-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-12-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-12-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_control-12-target",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-12-response",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-12-weight",
+      "passed": true
+    },
+    {
+      "check": "failed attempt vector test-hourly_plus2018-12-target",
+      "passed": true
+    },
+    {
+      "check": "48plans unchanged",
+      "passed": true
+    },
+    {
+      "check": "fixed119projection",
+      "passed": true
+    },
+    {
+      "check": "upstream mapped",
+      "passed": true
+    },
+    {
+      "check": "3datasets structurally absent col1",
+      "passed": true
+    },
+    {
+      "check": "chronological datasets",
+      "passed": true
+    },
+    {
+      "check": "102084rows24groups",
+      "passed": true
+    },
+    {
+      "check": "unique keys",
+      "passed": true
+    },
+    {
+      "check": "48savedmodels",
+      "passed": true
+    },
+    {
+      "check": "old0h1mask",
+      "passed": true
+    },
+    {
+      "check": "old0h1targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h1mask",
+      "passed": true
+    },
+    {
+      "check": "old1h1targettime",
+      "passed": true
+    },
+    {
+      "check": "validation1 mask",
+      "passed": true
+    },
+    {
+      "check": "validation1strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation1schedule",
+      "passed": true
+    },
+    {
+      "check": "validation1target keys",
+      "passed": true
+    },
+    {
+      "check": "validation1truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation1upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 1",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-1failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-1failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test1 mask",
+      "passed": true
+    },
+    {
+      "check": "test1strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test1schedule",
+      "passed": true
+    },
+    {
+      "check": "test1target keys",
+      "passed": true
+    },
+    {
+      "check": "test1truthbase",
+      "passed": true
+    },
+    {
+      "check": "test1upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 1",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-1failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-1failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h2mask",
+      "passed": true
+    },
+    {
+      "check": "old0h2targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h2mask",
+      "passed": true
+    },
+    {
+      "check": "old1h2targettime",
+      "passed": true
+    },
+    {
+      "check": "validation2 mask",
+      "passed": true
+    },
+    {
+      "check": "validation2strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation2schedule",
+      "passed": true
+    },
+    {
+      "check": "validation2target keys",
+      "passed": true
+    },
+    {
+      "check": "validation2truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation2upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 2",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-2failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-2failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test2 mask",
+      "passed": true
+    },
+    {
+      "check": "test2strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test2schedule",
+      "passed": true
+    },
+    {
+      "check": "test2target keys",
+      "passed": true
+    },
+    {
+      "check": "test2truthbase",
+      "passed": true
+    },
+    {
+      "check": "test2upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 2",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-2failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-2failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h3mask",
+      "passed": true
+    },
+    {
+      "check": "old0h3targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h3mask",
+      "passed": true
+    },
+    {
+      "check": "old1h3targettime",
+      "passed": true
+    },
+    {
+      "check": "validation3 mask",
+      "passed": true
+    },
+    {
+      "check": "validation3strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation3schedule",
+      "passed": true
+    },
+    {
+      "check": "validation3target keys",
+      "passed": true
+    },
+    {
+      "check": "validation3truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation3upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 3",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-3failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-3failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test3 mask",
+      "passed": true
+    },
+    {
+      "check": "test3strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test3schedule",
+      "passed": true
+    },
+    {
+      "check": "test3target keys",
+      "passed": true
+    },
+    {
+      "check": "test3truthbase",
+      "passed": true
+    },
+    {
+      "check": "test3upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 3",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-3failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-3failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h4mask",
+      "passed": true
+    },
+    {
+      "check": "old0h4targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h4mask",
+      "passed": true
+    },
+    {
+      "check": "old1h4targettime",
+      "passed": true
+    },
+    {
+      "check": "validation4 mask",
+      "passed": true
+    },
+    {
+      "check": "validation4strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation4schedule",
+      "passed": true
+    },
+    {
+      "check": "validation4target keys",
+      "passed": true
+    },
+    {
+      "check": "validation4truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation4upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 4",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-4failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-4failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test4 mask",
+      "passed": true
+    },
+    {
+      "check": "test4strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test4schedule",
+      "passed": true
+    },
+    {
+      "check": "test4target keys",
+      "passed": true
+    },
+    {
+      "check": "test4truthbase",
+      "passed": true
+    },
+    {
+      "check": "test4upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 4",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-4failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-4failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h5mask",
+      "passed": true
+    },
+    {
+      "check": "old0h5targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h5mask",
+      "passed": true
+    },
+    {
+      "check": "old1h5targettime",
+      "passed": true
+    },
+    {
+      "check": "validation5 mask",
+      "passed": true
+    },
+    {
+      "check": "validation5strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation5schedule",
+      "passed": true
+    },
+    {
+      "check": "validation5target keys",
+      "passed": true
+    },
+    {
+      "check": "validation5truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation5upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 5",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-5failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-5failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test5 mask",
+      "passed": true
+    },
+    {
+      "check": "test5strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test5schedule",
+      "passed": true
+    },
+    {
+      "check": "test5target keys",
+      "passed": true
+    },
+    {
+      "check": "test5truthbase",
+      "passed": true
+    },
+    {
+      "check": "test5upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 5",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-5failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-5failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h6mask",
+      "passed": true
+    },
+    {
+      "check": "old0h6targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h6mask",
+      "passed": true
+    },
+    {
+      "check": "old1h6targettime",
+      "passed": true
+    },
+    {
+      "check": "validation6 mask",
+      "passed": true
+    },
+    {
+      "check": "validation6strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation6schedule",
+      "passed": true
+    },
+    {
+      "check": "validation6target keys",
+      "passed": true
+    },
+    {
+      "check": "validation6truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation6upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 6",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-6failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-6failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test6 mask",
+      "passed": true
+    },
+    {
+      "check": "test6strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test6schedule",
+      "passed": true
+    },
+    {
+      "check": "test6target keys",
+      "passed": true
+    },
+    {
+      "check": "test6truthbase",
+      "passed": true
+    },
+    {
+      "check": "test6upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 6",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-6failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-6failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h7mask",
+      "passed": true
+    },
+    {
+      "check": "old0h7targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h7mask",
+      "passed": true
+    },
+    {
+      "check": "old1h7targettime",
+      "passed": true
+    },
+    {
+      "check": "validation7 mask",
+      "passed": true
+    },
+    {
+      "check": "validation7strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation7schedule",
+      "passed": true
+    },
+    {
+      "check": "validation7target keys",
+      "passed": true
+    },
+    {
+      "check": "validation7truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation7upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 7",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-7failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-7failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test7 mask",
+      "passed": true
+    },
+    {
+      "check": "test7strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test7schedule",
+      "passed": true
+    },
+    {
+      "check": "test7target keys",
+      "passed": true
+    },
+    {
+      "check": "test7truthbase",
+      "passed": true
+    },
+    {
+      "check": "test7upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 7",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-7failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-7failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h8mask",
+      "passed": true
+    },
+    {
+      "check": "old0h8targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h8mask",
+      "passed": true
+    },
+    {
+      "check": "old1h8targettime",
+      "passed": true
+    },
+    {
+      "check": "validation8 mask",
+      "passed": true
+    },
+    {
+      "check": "validation8strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation8schedule",
+      "passed": true
+    },
+    {
+      "check": "validation8target keys",
+      "passed": true
+    },
+    {
+      "check": "validation8truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation8upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 8",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-8failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-8failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test8 mask",
+      "passed": true
+    },
+    {
+      "check": "test8strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test8schedule",
+      "passed": true
+    },
+    {
+      "check": "test8target keys",
+      "passed": true
+    },
+    {
+      "check": "test8truthbase",
+      "passed": true
+    },
+    {
+      "check": "test8upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 8",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-8failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-8failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h9mask",
+      "passed": true
+    },
+    {
+      "check": "old0h9targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h9mask",
+      "passed": true
+    },
+    {
+      "check": "old1h9targettime",
+      "passed": true
+    },
+    {
+      "check": "validation9 mask",
+      "passed": true
+    },
+    {
+      "check": "validation9strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation9schedule",
+      "passed": true
+    },
+    {
+      "check": "validation9target keys",
+      "passed": true
+    },
+    {
+      "check": "validation9truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation9upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 9",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-9failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-9failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test9 mask",
+      "passed": true
+    },
+    {
+      "check": "test9strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test9schedule",
+      "passed": true
+    },
+    {
+      "check": "test9target keys",
+      "passed": true
+    },
+    {
+      "check": "test9truthbase",
+      "passed": true
+    },
+    {
+      "check": "test9upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 9",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-9failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-9failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h10mask",
+      "passed": true
+    },
+    {
+      "check": "old0h10targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h10mask",
+      "passed": true
+    },
+    {
+      "check": "old1h10targettime",
+      "passed": true
+    },
+    {
+      "check": "validation10 mask",
+      "passed": true
+    },
+    {
+      "check": "validation10strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation10schedule",
+      "passed": true
+    },
+    {
+      "check": "validation10target keys",
+      "passed": true
+    },
+    {
+      "check": "validation10truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation10upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 10",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-10failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-10failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test10 mask",
+      "passed": true
+    },
+    {
+      "check": "test10strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test10schedule",
+      "passed": true
+    },
+    {
+      "check": "test10target keys",
+      "passed": true
+    },
+    {
+      "check": "test10truthbase",
+      "passed": true
+    },
+    {
+      "check": "test10upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 10",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-10failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-10failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h11mask",
+      "passed": true
+    },
+    {
+      "check": "old0h11targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h11mask",
+      "passed": true
+    },
+    {
+      "check": "old1h11targettime",
+      "passed": true
+    },
+    {
+      "check": "validation11 mask",
+      "passed": true
+    },
+    {
+      "check": "validation11strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation11schedule",
+      "passed": true
+    },
+    {
+      "check": "validation11target keys",
+      "passed": true
+    },
+    {
+      "check": "validation11truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation11upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 11",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-11failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-11failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test11 mask",
+      "passed": true
+    },
+    {
+      "check": "test11strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test11schedule",
+      "passed": true
+    },
+    {
+      "check": "test11target keys",
+      "passed": true
+    },
+    {
+      "check": "test11truthbase",
+      "passed": true
+    },
+    {
+      "check": "test11upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 11",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-11failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-11failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "old0h12mask",
+      "passed": true
+    },
+    {
+      "check": "old0h12targettime",
+      "passed": true
+    },
+    {
+      "check": "old1h12mask",
+      "passed": true
+    },
+    {
+      "check": "old1h12targettime",
+      "passed": true
+    },
+    {
+      "check": "validation12 mask",
+      "passed": true
+    },
+    {
+      "check": "validation12strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation12schedule",
+      "passed": true
+    },
+    {
+      "check": "validation12target keys",
+      "passed": true
+    },
+    {
+      "check": "validation12truthbase",
+      "passed": true
+    },
+    {
+      "check": "validation12upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 12",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_control-12failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12response",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12target",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12weights",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12cutoff",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12plan",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12configuration",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12same all params",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "validation-hourly_plus2018-12failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test12 mask",
+      "passed": true
+    },
+    {
+      "check": "test12strict cutoff",
+      "passed": true
+    },
+    {
+      "check": "test12schedule",
+      "passed": true
+    },
+    {
+      "check": "test12target keys",
+      "passed": true
+    },
+    {
+      "check": "test12truthbase",
+      "passed": true
+    },
+    {
+      "check": "test12upstream population",
+      "passed": true
+    },
+    {
+      "check": "config lead 12",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_control-12failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12response",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12target",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12weights",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12order/no duplicates",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12finite/allNaNcheck",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12cutoff",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12plan",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12recent unchanged appended",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12configuration",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12same all params",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12saved inference EXACT",
+      "passed": true
+    },
+    {
+      "check": "test-hourly_plus2018-12failures exactly base missing",
+      "passed": true
+    },
+    {
+      "check": "288metrics48applications",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 1, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 2, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 3, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 4, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 5, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 6, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 7, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 8, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 9, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 10, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 11, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('test', 12, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 1, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 2, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 3, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 4, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 5, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 6, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 7, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 8, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 9, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 10, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 11, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'full_schedule', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'full_schedule', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'complete_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'complete_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'missing_upstream18', 'all', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'missing_upstream18', 'level_ge_7m', 'hourly_control')",
+      "passed": true
+    },
+    {
+      "check": "metric ('validation', 12, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 1, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 1, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 1, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 1, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 1, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 1, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 2, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 2, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 2, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 2, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 2, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 2, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 3, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 3, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 3, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 3, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 3, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 3, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 4, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 4, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 4, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 4, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 4, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 4, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 5, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 5, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 5, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 5, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 5, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 5, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 6, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 6, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 6, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 6, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 6, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 6, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 7, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 7, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 7, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 7, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 7, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 7, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 8, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 8, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 8, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 8, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 8, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 8, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 9, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 9, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 9, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 9, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 9, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 9, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 10, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 10, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 10, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 10, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 10, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 10, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 11, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 11, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 11, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 11, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 11, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 11, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 12, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 12, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 12, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 12, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 12, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('test', 12, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 1, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 1, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 1, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 1, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 1, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 1, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 2, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 2, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 2, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 2, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 2, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 2, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 3, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 3, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 3, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 3, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 3, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 3, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 4, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 4, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 4, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 4, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 4, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 4, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 5, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 5, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 5, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 5, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 5, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 5, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 6, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 6, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 6, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 6, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 6, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 6, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 7, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 7, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 7, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 7, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 7, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 7, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 8, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 8, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 8, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 8, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 8, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 8, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 9, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 9, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 9, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 9, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 9, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 9, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 10, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 10, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 10, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 10, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 10, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 10, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 11, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 11, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 11, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 11, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 11, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 11, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 12, 'full_schedule', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 12, 'full_schedule', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 12, 'complete_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 12, 'complete_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 12, 'missing_upstream18', 'all', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "family common denominator ('validation', 12, 'missing_upstream18', 'level_ge_7m', 'hourly_plus2018')",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/experiment.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/pre-fit-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/docs/radar-2018-hourly-augmentation-119-protocol.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/features.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matriz-recente-ancora-horaria-20260922/quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-08-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-08-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-09-30-features.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/2018-09-30-quarter-hour.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/feature-catalog.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/feature-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/level-source-trace.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/preparation-plan.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/preparation.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/rain-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/radar-matrizes-observadas-2018-20260922/target-coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/verificacao-radar-matrizes-2018-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/scripts/hydro_radar_2018_augmentation_119.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/verificacao-radar-matriz-recente-ancora-horaria-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-20260922/training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/training-masks.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/training-plan.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/feature-indices.npy",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/training-vectors.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/evaluation.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_control-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/test-hourly_plus2018-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_control-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-1.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-10.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-11.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-12.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-2.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-3.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-4.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-5.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-6.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-7.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-8.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/models/validation-hourly_plus2018-9.joblib",
+      "passed": true
+    },
+    {
+      "check": "unchanged /Users/brunozilio/Documents/radar/outputs/experimento-radar-historico-2018-119-20260922/predictions.csv",
+      "passed": true
+    }
+  ],
+  "models": 48,
+  "exact_inference_applications": 48,
+  "scheduled_rows": 102084,
+  "metrics": 288,
+  "masks": 48,
+  "training_vectors": 144,
+  "estimator_features": 119,
+  "source_features": 120,
+  "fit_or_network": false,
+  "limits": [
+    "SavedHGB does not independently prove actual optimizer samples/weights; evidence is source+prefit vectors+reconstructed membership+hashes, no refit",
+    "All recent evaluation windows already development, not fresh prospective evidence",
+    "Computational timestamp/precedence conventions do not certify publication/datum/timezone",
+    "No promotion, no98percent claim",
+    "First120column failedattempt preserved separately;119projection fixed before completed fit"
+  ]
+}

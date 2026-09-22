@@ -1,0 +1,509 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "hourly_times",
+      "cells": 720,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86510000 raw exact",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86510000 delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86472000 raw exact",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86472000 delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86472600 raw exact",
+      "cells": 3168,
+      "max_abs": 0
+    },
+    {
+      "name": "86472600 delayed",
+      "cells": 3168,
+      "max_abs": 0
+    },
+    {
+      "name": "86500000 raw exact",
+      "cells": 3168,
+      "max_abs": 0
+    },
+    {
+      "name": "86500000 delayed",
+      "cells": 3168,
+      "max_abs": 0
+    },
+    {
+      "name": "base",
+      "cells": 720,
+      "max_abs": 0.0
+    },
+    {
+      "name": "truth exact",
+      "cells": 720,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoQ raw",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoQ delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoI raw",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoI delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteQ raw",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteQ delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteI raw",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteI delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroQ raw",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroQ delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroI raw",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroI delayed",
+      "cells": 3168,
+      "max_abs": 0.0
+    },
+    {
+      "name": "all45 level and ONS fields",
+      "cells": 32400,
+      "max_abs": 0.0
+    },
+    {
+      "name": "54000 rain cells independently integrated",
+      "cells": 54000,
+      "max_abs": 1.9895196601282805e-13
+    },
+    {
+      "name": "all120 columns",
+      "cells": 86400,
+      "max_abs": 1.9895196601282805e-13
+    }
+  ],
+  "shape": [
+    720,
+    120
+  ],
+  "nan_cells": 23799,
+  "finite_base": 506,
+  "finite_truth": 505,
+  "level_trace_rows": 2880,
+  "ons": [
+    {
+      "plant": "julho",
+      "field": "Q",
+      "finite_hourly": 717,
+      "literal_2359_selected": 30
+    },
+    {
+      "plant": "julho",
+      "field": "I",
+      "finite_hourly": 717,
+      "literal_2359_selected": 30
+    },
+    {
+      "plant": "monte",
+      "field": "Q",
+      "finite_hourly": 717,
+      "literal_2359_selected": 30
+    },
+    {
+      "plant": "monte",
+      "field": "I",
+      "finite_hourly": 717,
+      "literal_2359_selected": 30
+    },
+    {
+      "plant": "castro",
+      "field": "Q",
+      "finite_hourly": 717,
+      "literal_2359_selected": 30
+    },
+    {
+      "plant": "castro",
+      "field": "I",
+      "finite_hourly": 717,
+      "literal_2359_selected": 30
+    }
+  ],
+  "rain_stations": [
+    {
+      "station": "86060010",
+      "rows": 792,
+      "valid_intervals": 791,
+      "effective_delay_seconds": 25200
+    },
+    {
+      "station": "86099000",
+      "rows": 760,
+      "valid_intervals": 758,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86102000",
+      "rows": 760,
+      "valid_intervals": 758,
+      "effective_delay_seconds": 18000
+    },
+    {
+      "station": "86117000",
+      "rows": 760,
+      "valid_intervals": 758,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86125000",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 10800
+    },
+    {
+      "station": "86125050",
+      "rows": 760,
+      "valid_intervals": 758,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86160000",
+      "rows": 3128,
+      "valid_intervals": 2638,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86163000",
+      "rows": 642,
+      "valid_intervals": 638,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86200900",
+      "rows": 753,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 14400
+    },
+    {
+      "station": "86280500",
+      "rows": 763,
+      "valid_intervals": 761,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86298000",
+      "rows": 668,
+      "valid_intervals": 663,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86403000",
+      "rows": 760,
+      "valid_intervals": 758,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86410800",
+      "rows": 757,
+      "valid_intervals": 753,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86447000",
+      "rows": 153,
+      "valid_intervals": 152,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86448000",
+      "rows": 672,
+      "valid_intervals": 671,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86450000",
+      "rows": 147,
+      "valid_intervals": 145,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86471000",
+      "rows": 161,
+      "valid_intervals": 159,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86472000",
+      "rows": 2683,
+      "valid_intervals": 2680,
+      "effective_delay_seconds": 1800
+    },
+    {
+      "station": "86472600",
+      "rows": 16,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86479000",
+      "rows": 154,
+      "valid_intervals": 153,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86488000",
+      "rows": 257,
+      "valid_intervals": 255,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86493000",
+      "rows": 156,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86495500",
+      "rows": 752,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86500000",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 1800
+    },
+    {
+      "station": "86504900",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86505500",
+      "rows": 159,
+      "valid_intervals": 158,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86510000",
+      "rows": 2652,
+      "valid_intervals": 2636,
+      "effective_delay_seconds": 900
+    }
+  ],
+  "target_coverage": [
+    {
+      "horizon_h": 1,
+      "valid_pairs": 503,
+      "finite_targets": 504
+    },
+    {
+      "horizon_h": 2,
+      "valid_pairs": 501,
+      "finite_targets": 503
+    },
+    {
+      "horizon_h": 3,
+      "valid_pairs": 499,
+      "finite_targets": 502
+    },
+    {
+      "horizon_h": 4,
+      "valid_pairs": 497,
+      "finite_targets": 501
+    },
+    {
+      "horizon_h": 5,
+      "valid_pairs": 495,
+      "finite_targets": 500
+    },
+    {
+      "horizon_h": 6,
+      "valid_pairs": 493,
+      "finite_targets": 499
+    },
+    {
+      "horizon_h": 7,
+      "valid_pairs": 491,
+      "finite_targets": 498
+    },
+    {
+      "horizon_h": 8,
+      "valid_pairs": 489,
+      "finite_targets": 497
+    },
+    {
+      "horizon_h": 9,
+      "valid_pairs": 487,
+      "finite_targets": 496
+    },
+    {
+      "horizon_h": 10,
+      "valid_pairs": 485,
+      "finite_targets": 495
+    },
+    {
+      "horizon_h": 11,
+      "valid_pairs": 483,
+      "finite_targets": 494
+    },
+    {
+      "horizon_h": 12,
+      "valid_pairs": 481,
+      "finite_targets": 493
+    }
+  ],
+  "extra_h12": {
+    "old_pairs": 480,
+    "current_pairs": 481,
+    "extra_origins": [
+      "2023-09-01T00:00:00-03:00"
+    ],
+    "lost_origins": [],
+    "explanation": "New August warmup source contains exact approved base at August31 23:45. The extra pair is NOT caused by asof tolerance.",
+    "provenance": [
+      {
+        "CodEstacao": "86510000",
+        "DataHora": "2023-08-31 23:45:00",
+        "CQ_ChuvaAcumAdotada": "Dado aprovado",
+        "ChuvaAcumAdotada": "482.20",
+        "CQ_ChuvaFinal": "Dado aprovado",
+        "ChuvaFinal": "0.00",
+        "CQ_NivelSensor": "Dado aprovado",
+        "NivelSensor": "86.00",
+        "CQ_NivelDisplay": null,
+        "NivelDisplay": null,
+        "CQ_NivelManual": null,
+        "NivelManual": null,
+        "CQ_NivelFinal": "Dado aprovado",
+        "NivelFinal": "86.00",
+        "CQ_VazaoFinal": "Dado aprovado",
+        "VazaoFinal": "35.50",
+        "source_file": "outputs/radar-insumos-observados-2023-20260921/raw/ana-86510000-2023-08-29--2023-08-31.xml",
+        "source_sha256": "e0b5795d9e5d85e0b99e707a64d88fcb5a8e3cf0b14a16a86ed4e7d418b51d08",
+        "source_record_index": 1
+      },
+      {
+        "CodEstacao": "86510000",
+        "DataHora": "2023-09-01 12:00:00",
+        "CQ_ChuvaAcumAdotada": "Dado aprovado",
+        "ChuvaAcumAdotada": "482.20",
+        "CQ_ChuvaFinal": "Dado aprovado",
+        "ChuvaFinal": "0.00",
+        "CQ_NivelSensor": "Dado aprovado",
+        "NivelSensor": "143.00",
+        "CQ_NivelDisplay": null,
+        "NivelDisplay": null,
+        "CQ_NivelManual": null,
+        "NivelManual": null,
+        "CQ_NivelFinal": "Dado aprovado",
+        "NivelFinal": "143.00",
+        "CQ_VazaoFinal": "Dado aprovado",
+        "VazaoFinal": "96.80",
+        "source_file": "outputs/historico-cheia-setembro-2023/raw/ana-01-09-2023--04-09-2023.xml",
+        "source_sha256": "cb3d0f921425a3741ee09a9311f5848634e3ad6ac7673a35a416a803cfce6bdf",
+        "source_record_index": 328
+      }
+    ]
+  },
+  "limitations": [
+    "Historical publication delays assumed from 2026, not observed receipt logs in 2023.",
+    "ANA normalized all-QC source previously audited against XML; current audit verifies hashes and explicit extra-pair raw provenance.",
+    "No timezone, vertical datum or cross-year operational regime certification.",
+    "No training, new queries or promotion."
+  ],
+  "source_sha256": {
+    "outputs/radar-matriz-observada-2023-20260921/artifact-hashes.json": "fa0b12dfb2c0c04caa16ec46becf49527ac591839282589b6d751cf41ea1a2bb",
+    "outputs/radar-insumos-observados-2023-20260921/artifact-hashes.json": "6ee79c8c541a890e81ff12dbe91f777aacb307bb985e0563c567ccc5552cbff4",
+    "outputs/auditoria-latencias-chuva-20260921/artifact-hashes.json": "56d9866727adcc2a43634432569b4194448716dd66e63685000e3d6c7c4acb4d",
+    "outputs/radar-matriz-observada-2023-20260921/preparation.json": "d7ce68e37d12e52243762b703d10101cc1cf6430d342ce319c1529be7b44180a",
+    "outputs/radar-matriz-observada-2023-20260921/features.npz": "449602f0d426f853e5dc2caf45ed20627617fdf7df58a1b0457c3327e8c00a11",
+    "outputs/radar-matriz-observada-2023-20260921/quarter-hour.npz": "f9628d49ca10ac59437703e6e0e1f2db9537d02dd9163dae01e239e5f834ac02",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86510000-all-qc.jsonl": "573c58acb4cd21f6f0c7d189ad45885f735052a1e2beffe32d0a947c69d6ca01",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86472000-all-qc.jsonl": "55d3c5b1e576ed0c7a0c1f569a9131eba07ded05f84d8b98ca558a0a27836fbc",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86472600-all-qc.jsonl": "c23c47b3715d42303eb46b03507cf0de7ad09ae77af74cd0b13153afa771092d",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86500000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-matriz-observada-2023-20260921/level-source-trace.csv": "54f302e1511add12a010ea46de34782704d310f5f2584a5658ff28490636449a",
+    "outputs/radar-insumos-observados-2023-20260921/ons-references.json": "7e6f98947977226058e2a4b3d6a99caa8ad4696035b5db632411a1158303ff8d",
+    "outputs/historico-ceran-2023-complemento-20260921/ceran-source-values.csv": "5872ad456b5c436ce6591c996d80a62c0934ce22bad672da94f70939bf251c10",
+    "outputs/historico-cheia-setembro-2023/ons-ceran-source-values.csv": "318fb81567ad390a5a4d562f3509c141cd4d88fd482fb4e7a9d58584e2894d8c",
+    "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+    "outputs/auditoria-latencias-chuva-20260921/latencies.json": "f0182f5670b715890c4973324f066b66a6c12810cb5bd76ee39f130c5d47252e",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86060010-all-qc.jsonl": "1b1585eaa9d1534581f72ffae060dcaec2c4b5969ba0dabb06299dc7b65902de",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86099000-all-qc.jsonl": "fe4b262b4cc954f2f2665b67d0be4d8034b5badb00c4bb804d2d552601ac6f80",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86102000-all-qc.jsonl": "bbd3f8bc0f084f52ec4a778b084d2266480d81c4b00bfad93e14ba93958c6477",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86117000-all-qc.jsonl": "ee975e7007997a1f92ff90c8060871e822efb80a7a7340a4b99dcf070f8ac9b2",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86125000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86125050-all-qc.jsonl": "7fe35b5b791990ecf0cc50142ae67d5c8b5ad2270a2f7b6f91b000a3550c6b73",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86160000-all-qc.jsonl": "b659d2b76b5198596e72b0646186f235cb3fdc1fe1cee28ffa1a72c28500452e",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86163000-all-qc.jsonl": "4834a4799fca93e442327c435fd586f72d759e3bd283880183b998ef06ad3c19",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86200900-all-qc.jsonl": "3064b8bbb11411cb11e0e5db9e4efd9feff0ce978f8c69339ec57281dd4e2489",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86280500-all-qc.jsonl": "a6bac35f2a5138b60f8660ba6b52e12b515649ddce2bd8cb8847757cb3be8b69",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86298000-all-qc.jsonl": "d035f763519edfe209c12d799e45ba753d996e90b1e1f9e58f8b83f2970a90a6",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86403000-all-qc.jsonl": "b243c578c8efa4e382328a60cedd3a83b57ae7475b4f17847ef2ef4c52b52216",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86410800-all-qc.jsonl": "8908b7c96d6f37c7a3fb064e035abe0d381c59f5412c35dbf475796692fd42e8",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86447000-all-qc.jsonl": "1f5fd7a1cad6ee4ba58804c20497fc0276c23cfeb3d8007954c3569bd55e2c1a",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86448000-all-qc.jsonl": "9878e744a9ffca10f34f6c8b7895e7a07f5cfbf54c42a2e8c347967e1d34ea1e",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86450000-all-qc.jsonl": "c6b736bf28bfa285773afe9f35d0068c7489aecdff2c8ce1d379d2a9faa15d23",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86471000-all-qc.jsonl": "2d0f00f252bd3e7351414f282649f5526751d05bd2fc58780f0706dc179c4bc5",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86479000-all-qc.jsonl": "dc3035887b3b396fcc70dfd2938ac5fd3dd42b0b334d9db940767ea3bb7652f7",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86488000-all-qc.jsonl": "4f26ea47c308f265a9d2a2d55c0094653aeeafb575a1e057d513713c97027c30",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86493000-all-qc.jsonl": "1532a09d1778713576efa4061fbbd10728b912d268b79cef6e890977f0a1b1d2",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86495500-all-qc.jsonl": "924dd5476a9f6c1868e6d9f16cb60fd8654882b56cd4eb602235379428a1427e",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86504900-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-observados-2023-20260921/stations/ana-86505500-all-qc.jsonl": "bbf935e6ad731c59ee6575f2f2cfb8c294ab909d6533f04ad44d6e960af8006c",
+    "outputs/radar-matriz-observada-2023-20260921/target-coverage.csv": "21e834aeab15d6bc6b8f044e7e83961238ef4146fafa4fbb44aa2011dddfee50",
+    "outputs/viabilidade-historico-antigo-radar-20260921/potential-pairs.csv": "f20762dbd78291fc8eeddf23a00287ffa3c96229e6db47115cdda07add0fffd2"
+  }
+}

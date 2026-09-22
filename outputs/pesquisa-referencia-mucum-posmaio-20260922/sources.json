@@ -1,0 +1,140 @@
+{
+  "reviewed_utc": "2026-09-22T06:45:15.741721+00:00",
+  "new_gets": 0,
+  "new_searches": 4,
+  "sources": [
+    {
+      "path": "outputs/pesquisa-mucum-junho2024-20260922/raw/sgb-20240617-22.pdf",
+      "url": "https://www.sgb.gov.br/sace/boletins/Taquari/20240617_22-20240617%20-%20231329.pdf",
+      "page": 3,
+      "short_quotes": [
+        "até serem reinstalados",
+        "referência de nível local e arbitrária"
+      ],
+      "context": "Aviso genérico de perdas de sensores/PCDs em maio e restrição de previsões. Não identifica equipamento ou data efetiva de retorno de Muçum. A página1 publica nível1590cm.",
+      "resolution": "Does not certify station-specific reinstallation, sensor-zero tie, validity, or timezone.",
+      "sha256": "3b3a686916fd4eb6dae1bdb88822a203a9907e2846d6fe629ec6e5dd7eff1a6a",
+      "bytes": 582406,
+      "reused": true
+    },
+    {
+      "path": "outputs/pesquisa-mucum-junho2024-20260922/raw/sgb-20240620-07.pdf",
+      "url": "https://www.sgb.gov.br/sace/boletins/Taquari/20240620_07-20240620%20-%20091414.pdf",
+      "page": 3,
+      "short_quotes": [
+        "até serem reinstalados"
+      ],
+      "context": "Mantém aviso genérico; página1 publica879cm e Linha José Júlio em manutenção. Publicação de nível não certifica conclusão de reinstalação.",
+      "resolution": "No effective maintenance date or sensor identification.",
+      "sha256": "2a0d3428fda569d839b221a1d56115484502b8fc24b5158754562c8fa1d82dd9",
+      "bytes": 437370,
+      "reused": true
+    },
+    {
+      "path": "outputs/historico-cheias-mucum/documentation/sgb-zeros-ortometricos-v3-2026.pdf",
+      "url": "https://rigeo.sgb.gov.br/handle/doc/25578.3",
+      "page": 12,
+      "short_quotes": [
+        "MUÇUM 86510000 PA 008",
+        "33,985"
+      ],
+      "context": "Linha de tabela de zeros ortométricos, MAPGEO2015; edição março2026 não equivale a levantamento2026 nem vigência retroativa.",
+      "resolution": "Publishes geodetic ruler-zero reference, not dated sensor/ruler maintenance link.",
+      "sha256": "9a70c53699aba98a9f5ae695d27345f534d376635fa6f8b1e2c0782d09217bd0",
+      "bytes": 5757434,
+      "reused": true
+    },
+    {
+      "path": "outputs/historico-cheias-mucum/documentation/sgb-cheia2024-v19-2026.pdf",
+      "url": "https://rigeo.sgb.gov.br/handle/doc/24939.21",
+      "page": 19,
+      "short_quotes": [
+        "MCM (Ref. Réguas)",
+        "33,96"
+      ],
+      "context": "Tabela3 de marcas de maio2024, RN01/RN02 e referência da seção de réguas. Seção4.1 página18 trata do levantamento de marcas; não se apresenta como termo de reinstalação de sensor.",
+      "resolution": "33.96 versus33.985 difference not reconciled or assigned a physical offset.",
+      "sha256": "e26f952a1fcd4e2c84796bb51619e61732cda3e881c1f7bfaf7c1e3f563bb9cc",
+      "bytes": 15205028,
+      "reused": true
+    },
+    {
+      "path": "outputs/mucum-bacia-2026-09-21/raw/sgb-model-2025.pdf",
+      "url": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/162ce310-cb58-4f3d-ae86-e677203c5d1d/content",
+      "page": 2,
+      "short_quotes": [
+        "Abr/2015",
+        "Jul/2024"
+      ],
+      "context": "Tabela1 informa intervalo usado para Muçum atéjulho2024; descrição de conjunto para modelagem, não prova continuidade integral ou referência válida em todas as datas.",
+      "resolution": "Not station maintenance or calibration documentation.",
+      "sha256": "3a055cbb102c52577fb313e1d43609ac0226aa5bcc9723370c8d7a717d3a3b57",
+      "bytes": 784181,
+      "reused": true
+    },
+    {
+      "path": "outputs/pesquisa-mucum-reinstalacao-20260922T010222Z/sgb-boletim-20250618-17.pdf",
+      "url": "https://www.sgb.gov.br/sace/boletins/Taquari/20250618_17-20250618%20-%20183805.pdf",
+      "page": null,
+      "short_quotes": [],
+      "context": "Boletim2025 já analisado em pesquisa anterior: evidência pontual de publicação. Nenhum novo download nesta rodada.",
+      "resolution": "Not effective return date or sensor/ruler continuity certificate.",
+      "sha256": "85d21a6719df9f4a8c398e32d2476eb6bc6e9e7ec89d8a3f9126ffbb6bace506",
+      "bytes": 897647,
+      "reused": true
+    }
+  ],
+  "prior_investigation_files": [
+    {
+      "path": "outputs/historico-cheias-mucum/documentation/reference-investigation-report.md",
+      "sha256": "e5595d693d1d237f8a4300cd7e88f30199a0b0c3d8c0ef903fa164d344ef6def",
+      "bytes": 6632
+    },
+    {
+      "path": "outputs/historico-cheias-mucum/documentation/reference-investigation-manifest.json",
+      "sha256": "b50708bbf5b4e2dd81b85658003e471d5a1199f359c46f83be238a93acbe1e5e",
+      "bytes": 2642
+    },
+    {
+      "path": "outputs/historico-cheias-mucum/documentation/reference-latest-version-manifest.json",
+      "sha256": "d685015b25aa6d3c8e8da2c48097a4bb0d7b5202dadd46305c2545c7ab355350",
+      "bytes": 430
+    },
+    {
+      "path": "outputs/pesquisa-mucum-reinstalacao-20260922T010222Z/README.md",
+      "sha256": "ff6426c422664f1340e136be3af67583ce6081dda1a0effcf057c983ba4b254f",
+      "bytes": 1852
+    },
+    {
+      "path": "outputs/pesquisa-mucum-reinstalacao-20260922T010222Z/search-log.json",
+      "sha256": "3a4ef9f8a268bd223bdca9066dc357d7cf2fe577b3142a85f9c8173ce6029b04",
+      "bytes": 2640
+    },
+    {
+      "path": "outputs/pesquisa-mucum-reinstalacao-20260922T010222Z/source.json",
+      "sha256": "8652e802ab24892d8479a04e44f717a80c301dc85ec1742ab9286cd7198ec77c",
+      "bytes": 1062
+    },
+    {
+      "path": "outputs/pesquisa-mucum-manutencao-20260922T020248Z/README.md",
+      "sha256": "fb193b0d1a2987e2d495f00249c4c72f06c309af506d4168a74745400a4e26a3",
+      "bytes": 925
+    },
+    {
+      "path": "outputs/pesquisa-mucum-manutencao-20260922T020248Z/search-log.json",
+      "sha256": "81c6df1c17226f374e945a7815f01200eff3141a2b5405a1985aa276c13362d6",
+      "bytes": 2036
+    },
+    {
+      "path": "outputs/pesquisa-mucum-junho2024-20260922/source-manifest.json",
+      "sha256": "fcf48b38113bcd0dc23a361065fb05c707bd6d0aedb32bed61d1abfb9e109542",
+      "bytes": 3802
+    },
+    {
+      "path": "outputs/pesquisa-mucum-junho2024-20260922/summary.json",
+      "sha256": "469d6d24288e98ec14a420b8e46b69e2ddbe3efa3c4e84feeea6844785216eec",
+      "bytes": 7670
+    }
+  ],
+  "receipts_note": "Original acquisition timestamps/headers preserved in origin source and reference manifests; sources reused without new GET."
+}

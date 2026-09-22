@@ -1,0 +1,170 @@
+{
+  "created_at": "2026-09-21T21:41:19.205615+00:00",
+  "scope": "ONS2025-2026 levels only, review without masks",
+  "raw_rows": 38764,
+  "raw_files": 18,
+  "gap_mapping": "23:59->24:00 unverified; original timestamps preserved",
+  "jump_definition": "Adjacent originals59-61minutes; absolute delta thresholds1m and5m only review labels; top20 per series, no filtering",
+  "series": [
+    {
+      "plant": "JIUHCA",
+      "name": "CASTRO ALVES",
+      "rows": 12921,
+      "first_original": "2025-04-01 01:00:00",
+      "last_original": "2026-09-21 11:00:00",
+      "duplicate_rows": 0,
+      "invalid_timestamp_rows": 0,
+      "labels2359": 538,
+      "off_hour_after_hypothesis": 0,
+      "missing_hours_under_hypothesis": 2,
+      "variables": {
+        "val_nivelmontante": {
+          "finite": 12921,
+          "blank": 0,
+          "nonfinite_or_unparseable": 0,
+          "zero": 0,
+          "negative": 0,
+          "min_finite": 236.92,
+          "max_finite": 245.92,
+          "adjacent_hour_differences": 12918,
+          "absolute_delta_quantiles_m": {
+            "0.5": 0.010000000000019327,
+            "0.95": 0.06999999999999318,
+            "0.99": 0.14000000000001478,
+            "0.999": 0.35999999999998755,
+            "1": 1.0999999999999943
+          },
+          "delta_ge1m_count": 1,
+          "delta_ge5m_count": 0
+        },
+        "val_niveljusante": {
+          "finite": 12921,
+          "blank": 0,
+          "nonfinite_or_unparseable": 0,
+          "zero": 0,
+          "negative": 0,
+          "min_finite": 145.36,
+          "max_finite": 157.56,
+          "adjacent_hour_differences": 12918,
+          "absolute_delta_quantiles_m": {
+            "0.5": 0.04999999999998295,
+            "0.95": 0.23999999999998067,
+            "0.99": 0.6000000000000179,
+            "0.999": 1.120830000000009,
+            "1": 2.700000000000017
+          },
+          "delta_ge1m_count": 37,
+          "delta_ge5m_count": 0
+        }
+      }
+    },
+    {
+      "plant": "JIUHMC",
+      "name": "MONTE CLARO",
+      "rows": 12921,
+      "first_original": "2025-04-01 01:00:00",
+      "last_original": "2026-09-21 11:00:00",
+      "duplicate_rows": 0,
+      "invalid_timestamp_rows": 0,
+      "labels2359": 538,
+      "off_hour_after_hypothesis": 0,
+      "missing_hours_under_hypothesis": 2,
+      "variables": {
+        "val_nivelmontante": {
+          "finite": 12921,
+          "blank": 0,
+          "nonfinite_or_unparseable": 0,
+          "zero": 0,
+          "negative": 0,
+          "min_finite": 146.8,
+          "max_finite": 153.39,
+          "adjacent_hour_differences": 12919,
+          "absolute_delta_quantiles_m": {
+            "0.5": 0.03999999999999204,
+            "0.95": 0.18999999999999773,
+            "0.99": 0.3081999999999777,
+            "0.999": 0.5616400000000439,
+            "1": 1.0600000000000023
+          },
+          "delta_ge1m_count": 1,
+          "delta_ge5m_count": 0
+        },
+        "val_niveljusante": {
+          "finite": 12921,
+          "blank": 0,
+          "nonfinite_or_unparseable": 0,
+          "zero": 0,
+          "negative": 0,
+          "min_finite": 103.0,
+          "max_finite": 119.41,
+          "adjacent_hour_differences": 12919,
+          "absolute_delta_quantiles_m": {
+            "0.5": 0.03999999999999204,
+            "0.95": 0.539999999999992,
+            "0.99": 0.980000000000004,
+            "0.999": 1.832460000000063,
+            "1": 4.640000000000001
+          },
+          "delta_ge1m_count": 122,
+          "delta_ge5m_count": 0
+        }
+      }
+    },
+    {
+      "plant": "JIUHQJ",
+      "name": "14 DE JULHO",
+      "rows": 12922,
+      "first_original": "2025-04-01 01:00:00",
+      "last_original": "2026-09-21 11:00:00",
+      "duplicate_rows": 0,
+      "invalid_timestamp_rows": 0,
+      "labels2359": 538,
+      "off_hour_after_hypothesis": 0,
+      "missing_hours_under_hypothesis": 1,
+      "variables": {
+        "val_nivelmontante": {
+          "finite": 12921,
+          "blank": 1,
+          "nonfinite_or_unparseable": 1,
+          "zero": 0,
+          "negative": 0,
+          "min_finite": 97.21,
+          "max_finite": 108.15,
+          "adjacent_hour_differences": 12918,
+          "absolute_delta_quantiles_m": {
+            "0.5": 0.01999999999999602,
+            "0.95": 0.10000000000000853,
+            "0.99": 0.1700000000000017,
+            "0.999": 0.3299999999999983,
+            "1": 0.519999999999996
+          },
+          "delta_ge1m_count": 0,
+          "delta_ge5m_count": 0
+        },
+        "val_niveljusante": {
+          "finite": 12922,
+          "blank": 0,
+          "nonfinite_or_unparseable": 0,
+          "zero": 0,
+          "negative": 0,
+          "min_finite": 66.75,
+          "max_finite": 168.74,
+          "adjacent_hour_differences": 12920,
+          "absolute_delta_quantiles_m": {
+            "0.5": 0.030000000000001137,
+            "0.95": 0.6299999999999955,
+            "0.99": 1.2399999999999949,
+            "0.999": 1.989999999999996,
+            "1": 100.00000000000001
+          },
+          "delta_ge1m_count": 274,
+          "delta_ge5m_count": 2
+        }
+      }
+    }
+  ],
+  "ceran_same_clock_numeric_pairs": 240,
+  "ceran_max_abs_difference_m": 0.0,
+  "eligibility_changed": false,
+  "mask_applied": false
+}

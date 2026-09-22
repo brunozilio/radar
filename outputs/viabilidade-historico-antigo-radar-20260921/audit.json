@@ -1,0 +1,26 @@
+{
+  "potential_rows": 49302,
+  "trace_rows": 49536,
+  "summary_rows": 36,
+  "target_definition": "Exact approved Muçum level at O-15min and O+h, no interpolation or older finite fallback.",
+  "partial_input_definition": "Only current Q/I and U/D from three reservoirs, source timestamp literal,60min assumed delay plus90min age after lookup; not the entire204-feature matrix.",
+  "missing_other_inputs": "Other three ANA levels, regional rainfall and archived weather coverage not established by this script.",
+  "timezones_verified": false,
+  "datum_continuity_verified": false,
+  "historical_availability_verified": false,
+  "no_new_holdout": true,
+  "trained": false,
+  "allocated_to_training": false,
+  "promoted": false,
+  "goal_achieved": false,
+  "input_sha256": {
+    "outputs/viabilidade-historico-antigo-radar-20260921/audit.py": "81ba6971e68d8728236151e3da0c7d6c3b482f92bf756bdbefe321ffa594cb08",
+    "outputs/diagnostico-extremos-radar-20260921/training-response-ranges.csv": "6aab5afc36ba62a0dad5382b0a5613a9428502fa30756cd9149e4c2fa09cca85",
+    "outputs/historico-cheias-mucum/2020-jun-jul/levels-approved.csv": "14bb82a53731c1f95cf033f84559ba1151f36d8d5affff9f3ddccc3c09dd45d5",
+    "outputs/historico-vazoes-ceran/ceran-2020-07-source-values.csv": "5b58aeea332e4ec3e0482093415aceef928b41f65f91707cddcb346a9b13ac90",
+    "outputs/historico-cheia-setembro-2023/ana-mucum/levels-approved.csv": "7f660595ece6d1887b8401b270cce084ffad3edf5d9e2bca1d68ef7bc79cc186",
+    "outputs/historico-cheia-setembro-2023/ons-ceran-source-values.csv": "318fb81567ad390a5a4d562f3509c141cd4d88fd482fb4e7a9d58584e2894d8c",
+    "outputs/historico-cheias-mucum/2024-mar-mai/levels-approved.csv": "8127a105934fc53a096cf0a5137b171fc4166bca4eb89c1be9add974ec1cbf2d",
+    "outputs/historico-vazoes-ceran/ceran-2024-05-source-values.csv": "c1667adcc318862d1ab314da1c91033b7983513bc4a3766444519b8fbef822c8"
+  }
+}

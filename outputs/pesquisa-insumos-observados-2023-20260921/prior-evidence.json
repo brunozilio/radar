@@ -1,0 +1,109 @@
+{
+  "reference_hashes": {
+    "outputs/historico-cheia-setembro-2023/README.md": {
+      "sha256": "14640f493065d874278ee24eec87f798400a15f2b7ff676ef7d3e9a4e872fec3",
+      "bytes": 8335
+    },
+    "outputs/viabilidade-historico-antigo-radar-20260921/README.md": {
+      "sha256": "f15861b94a2915a300afcff3c58afab9a1aab837d0f7c1524b090dcf117ea3fc",
+      "bytes": 5957
+    },
+    "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json": {
+      "sha256": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+      "bytes": 2598
+    }
+  },
+  "existing_normalized_cache_inventory": [
+    {
+      "station": "86060010",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86060010.npz",
+      "sha256": "4e5e1282641c5db4391776b53555aebc682af1f4cf7a9b2a5a74e7686563bd4c",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1789988400.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86125050",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86125050.npz",
+      "sha256": "7f99b7e458802f8fc23f3229088bf9f48838ae2fb0e5b547ba979e95ac72462a",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790002800.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86160000",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86160000.npz",
+      "sha256": "736bb58c817bb81b43a9c80f41ff72da516612fbd0df9411683015c55ed318cb",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790005500.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86450000",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86450000.npz",
+      "sha256": "6c3570c197a50bae17d32740a6fd978ca6136e6485418bfb2676029d8fae1f79",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790005500.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86472000",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86472000.npz",
+      "sha256": "9d07e6c6bef19d26ea919d03623e5cf30193634646d1f43ecd791a97bcbbbc03",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790004600.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86472600",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86472600.npz",
+      "sha256": "9afa1998113823f7eee983f0e26e429c61813ad2e68e95ecf49dc53919a6f59d",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790005500.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86479000",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86479000.npz",
+      "sha256": "0c2bb2fdf15e7c10fb4ab1f409dc47273b74f59a01ae1c25a49fdf6cd8d2d2cf",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790002800.0,
+      "records_in_requested2023window": 0
+    },
+    {
+      "station": "86500000",
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86500000.npz",
+      "sha256": "373bebcb75e847ce1aaf7fc5af7ae681ce473c89f778f7b6cb7768b09c637f8b",
+      "min_epoch": 1743476400.0,
+      "max_epoch": 1790004600.0,
+      "records_in_requested2023window": 0
+    }
+  ],
+  "sampled_spatial_weight_upper_bounds": [
+    {
+      "group": "Baixo Antas",
+      "max_weight_in_sampled_stations_with_any_approved_rain": 0.3670520231213873,
+      "not_an_observed_window_coverage": true
+    },
+    {
+      "group": "Carreiro",
+      "max_weight_in_sampled_stations_with_any_approved_rain": 0.5273010920436818,
+      "not_an_observed_window_coverage": true
+    },
+    {
+      "group": "Prata-Turvo",
+      "max_weight_in_sampled_stations_with_any_approved_rain": 0.3187633262260128,
+      "not_an_observed_window_coverage": true
+    },
+    {
+      "group": "Alto Antas",
+      "max_weight_in_sampled_stations_with_any_approved_rain": 0.27832655432887854,
+      "not_an_observed_window_coverage": true
+    },
+    {
+      "group": "Tainhas",
+      "max_weight_in_sampled_stations_with_any_approved_rain": 0.8415300546448088,
+      "not_an_observed_window_coverage": true
+    }
+  ]
+}

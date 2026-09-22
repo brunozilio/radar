@@ -1,0 +1,632 @@
+[
+  {
+    "source_file": "raw/ana-20180830-20180905.xml",
+    "source_sha256": "ffc618aa08099730f9ec2dd89510e0ab3ffed4b198b71fcaf1e7b3ab85d906d7",
+    "start_requested": "2018-08-30",
+    "end_requested": "2018-09-05",
+    "record_count": 168,
+    "station_ids": [
+      "86510000"
+    ],
+    "first_literal": "2018-08-30 00:00:00",
+    "last_literal": "2018-09-05 23:00:00",
+    "interval_seconds": {
+      "3600": 167
+    },
+    "duplicate_timestamps": {},
+    "fields": {
+      "NivelFinal": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 164,
+        "qc_counts": {
+          "Dado aprovado": 164,
+          "Dado suspeito": 4
+        },
+        "min": [
+          222.0,
+          "2018-08-31 12:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          912.0,
+          "2018-09-03 07:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "NivelSensor": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 164,
+        "qc_counts": {
+          "Dado aprovado": 164,
+          "Dado suspeito": 4
+        },
+        "min": [
+          222.0,
+          "2018-08-31 12:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          912.0,
+          "2018-09-03 07:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "NivelManual": {
+        "field_absent": 0,
+        "empty": 168,
+        "finite": 0,
+        "finite_approved": 0,
+        "qc_counts": {
+          "": 168
+        },
+        "min": null,
+        "max": null
+      },
+      "NivelDisplay": {
+        "field_absent": 0,
+        "empty": 168,
+        "finite": 0,
+        "finite_approved": 0,
+        "qc_counts": {
+          "": 168
+        },
+        "min": null,
+        "max": null
+      },
+      "VazaoFinal": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 164,
+        "qc_counts": {
+          "Dado aprovado": 164,
+          "Dado suspeito": 4
+        },
+        "min": [
+          249.2,
+          "2018-08-31 12:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          2833.7,
+          "2018-09-03 07:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "ChuvaFinal": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 162,
+        "qc_counts": {
+          "Dado aprovado": 162,
+          "Dado suspeito": 6
+        },
+        "min": [
+          0.0,
+          "2018-08-30 00:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          10.8,
+          "2018-09-01 16:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "ChuvaAcumAdotada": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 168,
+        "qc_counts": {
+          "Dado aprovado": 168
+        },
+        "min": [
+          277.2,
+          "2018-08-30 00:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          413.8,
+          "2018-09-05 23:00:00",
+          "Dado aprovado"
+        ]
+      }
+    },
+    "expected_hour_slots": 168,
+    "approved_exact_hour_levels": 164,
+    "missing_exact_hours": [
+      "2018-09-02 03:00:00",
+      "2018-09-02 04:00:00",
+      "2018-09-02 05:00:00",
+      "2018-09-02 06:00:00"
+    ],
+    "expected_quarter_hour_slots": 672,
+    "present_quarter_hour_levels": 164,
+    "anchor_current_contract_admissible": 0,
+    "bulletin_point": {
+      "timestamp_literal": "2018-09-02 17:00:00",
+      "reported_cm": 845,
+      "ana_records": [
+        {
+          "CodEstacao": "86510000",
+          "DataHora": "2018-09-02 17:00:00",
+          "CQ_ChuvaAcumAdotada": "Dado aprovado",
+          "ChuvaAcumAdotada": "383.00",
+          "CQ_ChuvaFinal": "Dado aprovado",
+          "ChuvaFinal": "1.20",
+          "CQ_NivelSensor": "Dado aprovado",
+          "NivelSensor": "845.00",
+          "CQ_NivelDisplay": "",
+          "NivelDisplay": "",
+          "CQ_NivelManual": "",
+          "NivelManual": "",
+          "CQ_NivelFinal": "Dado aprovado",
+          "NivelFinal": "845.00",
+          "CQ_VazaoFinal": "Dado aprovado",
+          "VazaoFinal": "2537.40",
+          "_provenance": {
+            "source_file": "raw/ana-20180830-20180905.xml",
+            "source_sha256": "ffc618aa08099730f9ec2dd89510e0ab3ffed4b198b71fcaf1e7b3ab85d906d7",
+            "xml_record_index_1based": 79
+          }
+        }
+      ],
+      "exact_approved_match": true
+    },
+    "timezone_contract": "unverified; literal timestamps preserved; no offset assigned",
+    "vertical_reference": "unverified; station code identity does not establish unchanged zero",
+    "historical_publication_times": "not provided by endpoint; retrieval/revision now is not historical availability",
+    "level_nonfinite_count": 0,
+    "level_negative_count": 0,
+    "level_zero_count": 0,
+    "approved_level_discrete_max_cm": [
+      912.0,
+      "2018-09-03 07:00:00"
+    ],
+    "nonapproved_level_records": [
+      {
+        "DataHora": "2018-09-02 03:00:00",
+        "NivelFinal": "561.00",
+        "CQ_NivelFinal": "Dado suspeito",
+        "provenance": {
+          "source_file": "raw/ana-20180830-20180905.xml",
+          "source_sha256": "ffc618aa08099730f9ec2dd89510e0ab3ffed4b198b71fcaf1e7b3ab85d906d7",
+          "xml_record_index_1based": 93
+        }
+      },
+      {
+        "DataHora": "2018-09-02 04:00:00",
+        "NivelFinal": "615.00",
+        "CQ_NivelFinal": "Dado suspeito",
+        "provenance": {
+          "source_file": "raw/ana-20180830-20180905.xml",
+          "source_sha256": "ffc618aa08099730f9ec2dd89510e0ab3ffed4b198b71fcaf1e7b3ab85d906d7",
+          "xml_record_index_1based": 92
+        }
+      },
+      {
+        "DataHora": "2018-09-02 05:00:00",
+        "NivelFinal": "662.00",
+        "CQ_NivelFinal": "Dado suspeito",
+        "provenance": {
+          "source_file": "raw/ana-20180830-20180905.xml",
+          "source_sha256": "ffc618aa08099730f9ec2dd89510e0ab3ffed4b198b71fcaf1e7b3ab85d906d7",
+          "xml_record_index_1based": 91
+        }
+      },
+      {
+        "DataHora": "2018-09-02 06:00:00",
+        "NivelFinal": "701.00",
+        "CQ_NivelFinal": "Dado suspeito",
+        "provenance": {
+          "source_file": "raw/ana-20180830-20180905.xml",
+          "source_sha256": "ffc618aa08099730f9ec2dd89510e0ab3ffed4b198b71fcaf1e7b3ab85d906d7",
+          "xml_record_index_1based": 90
+        }
+      }
+    ],
+    "target_schedule": [
+      {
+        "horizon_hours": 1,
+        "scheduled_within_window": 167,
+        "boundary_excluded": 1,
+        "approved_exact_future_targets": 163,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 2,
+        "scheduled_within_window": 166,
+        "boundary_excluded": 2,
+        "approved_exact_future_targets": 162,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 3,
+        "scheduled_within_window": 165,
+        "boundary_excluded": 3,
+        "approved_exact_future_targets": 161,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 4,
+        "scheduled_within_window": 164,
+        "boundary_excluded": 4,
+        "approved_exact_future_targets": 160,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 5,
+        "scheduled_within_window": 163,
+        "boundary_excluded": 5,
+        "approved_exact_future_targets": 159,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 6,
+        "scheduled_within_window": 162,
+        "boundary_excluded": 6,
+        "approved_exact_future_targets": 158,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 7,
+        "scheduled_within_window": 161,
+        "boundary_excluded": 7,
+        "approved_exact_future_targets": 157,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 8,
+        "scheduled_within_window": 160,
+        "boundary_excluded": 8,
+        "approved_exact_future_targets": 156,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 9,
+        "scheduled_within_window": 159,
+        "boundary_excluded": 9,
+        "approved_exact_future_targets": 155,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 10,
+        "scheduled_within_window": 158,
+        "boundary_excluded": 10,
+        "approved_exact_future_targets": 154,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 11,
+        "scheduled_within_window": 157,
+        "boundary_excluded": 11,
+        "approved_exact_future_targets": 153,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 12,
+        "scheduled_within_window": 156,
+        "boundary_excluded": 12,
+        "approved_exact_future_targets": 152,
+        "eligible_anchor_target_pairs_current_contract": 0
+      }
+    ]
+  },
+  {
+    "source_file": "raw/ana-20180930-20181006.xml",
+    "source_sha256": "0914bbc903f9e99433e2760ec4ca82d5e64b6df744d73766740bb7da0e446a95",
+    "start_requested": "2018-09-30",
+    "end_requested": "2018-10-06",
+    "record_count": 168,
+    "station_ids": [
+      "86510000"
+    ],
+    "first_literal": "2018-09-30 00:00:00",
+    "last_literal": "2018-10-06 23:00:00",
+    "interval_seconds": {
+      "3600": 167
+    },
+    "duplicate_timestamps": {},
+    "fields": {
+      "NivelFinal": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 165,
+        "qc_counts": {
+          "Dado aprovado": 165,
+          "Dado não avaliado": 1,
+          "Dado suspeito": 2
+        },
+        "min": [
+          266.0,
+          "2018-10-01 15:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          1166.0,
+          "2018-10-04 03:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "NivelSensor": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 165,
+        "qc_counts": {
+          "Dado aprovado": 165,
+          "Dado não avaliado": 1,
+          "Dado suspeito": 2
+        },
+        "min": [
+          266.0,
+          "2018-10-01 15:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          1166.0,
+          "2018-10-04 03:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "NivelManual": {
+        "field_absent": 0,
+        "empty": 168,
+        "finite": 0,
+        "finite_approved": 0,
+        "qc_counts": {
+          "": 168
+        },
+        "min": null,
+        "max": null
+      },
+      "NivelDisplay": {
+        "field_absent": 0,
+        "empty": 168,
+        "finite": 0,
+        "finite_approved": 0,
+        "qc_counts": {
+          "": 168
+        },
+        "min": null,
+        "max": null
+      },
+      "VazaoFinal": {
+        "field_absent": 0,
+        "empty": 1,
+        "finite": 167,
+        "finite_approved": 165,
+        "qc_counts": {
+          "Dado aprovado": 165,
+          "": 1,
+          "Dado suspeito": 2
+        },
+        "min": [
+          360.4,
+          "2018-10-01 15:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          4092.0,
+          "2018-10-04 03:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "ChuvaFinal": {
+        "field_absent": 0,
+        "empty": 1,
+        "finite": 167,
+        "finite_approved": 166,
+        "qc_counts": {
+          "Dado aprovado": 166,
+          "Dado suspeito": 1,
+          "": 1
+        },
+        "min": [
+          0.0,
+          "2018-09-30 00:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          12.0,
+          "2018-10-02 13:00:00",
+          "Dado aprovado"
+        ]
+      },
+      "ChuvaAcumAdotada": {
+        "field_absent": 0,
+        "empty": 0,
+        "finite": 168,
+        "finite_approved": 167,
+        "qc_counts": {
+          "Dado aprovado": 167,
+          "Dado não avaliado": 1
+        },
+        "min": [
+          0.0,
+          "2018-09-30 00:00:00",
+          "Dado aprovado"
+        ],
+        "max": [
+          102.2,
+          "2018-10-06 23:00:00",
+          "Dado aprovado"
+        ]
+      }
+    },
+    "expected_hour_slots": 168,
+    "approved_exact_hour_levels": 165,
+    "missing_exact_hours": [
+      "2018-09-30 10:00:00",
+      "2018-10-02 19:00:00",
+      "2018-10-03 13:00:00"
+    ],
+    "expected_quarter_hour_slots": 672,
+    "present_quarter_hour_levels": 165,
+    "anchor_current_contract_admissible": 0,
+    "bulletin_point": {
+      "timestamp_literal": "2018-10-03 22:00:00",
+      "reported_cm": 1126,
+      "ana_records": [
+        {
+          "CodEstacao": "86510000",
+          "DataHora": "2018-10-03 22:00:00",
+          "CQ_ChuvaAcumAdotada": "Dado aprovado",
+          "ChuvaAcumAdotada": "102.20",
+          "CQ_ChuvaFinal": "Dado aprovado",
+          "ChuvaFinal": "0.00",
+          "CQ_NivelSensor": "Dado aprovado",
+          "NivelSensor": "1126.00",
+          "CQ_NivelDisplay": "",
+          "NivelDisplay": "",
+          "CQ_NivelManual": "",
+          "NivelManual": "",
+          "CQ_NivelFinal": "Dado aprovado",
+          "NivelFinal": "1126.00",
+          "CQ_VazaoFinal": "Dado aprovado",
+          "VazaoFinal": "3879.90",
+          "_provenance": {
+            "source_file": "raw/ana-20180930-20181006.xml",
+            "source_sha256": "0914bbc903f9e99433e2760ec4ca82d5e64b6df744d73766740bb7da0e446a95",
+            "xml_record_index_1based": 74
+          }
+        }
+      ],
+      "exact_approved_match": true
+    },
+    "timezone_contract": "unverified; literal timestamps preserved; no offset assigned",
+    "vertical_reference": "unverified; station code identity does not establish unchanged zero",
+    "historical_publication_times": "not provided by endpoint; retrieval/revision now is not historical availability",
+    "level_nonfinite_count": 0,
+    "level_negative_count": 0,
+    "level_zero_count": 0,
+    "approved_level_discrete_max_cm": [
+      1166.0,
+      "2018-10-04 03:00:00"
+    ],
+    "nonapproved_level_records": [
+      {
+        "DataHora": "2018-09-30 10:00:00",
+        "NivelFinal": "309.00",
+        "CQ_NivelFinal": "Dado não avaliado",
+        "provenance": {
+          "source_file": "raw/ana-20180930-20181006.xml",
+          "source_sha256": "0914bbc903f9e99433e2760ec4ca82d5e64b6df744d73766740bb7da0e446a95",
+          "xml_record_index_1based": 158
+        }
+      },
+      {
+        "DataHora": "2018-10-02 19:00:00",
+        "NivelFinal": "447.00",
+        "CQ_NivelFinal": "Dado suspeito",
+        "provenance": {
+          "source_file": "raw/ana-20180930-20181006.xml",
+          "source_sha256": "0914bbc903f9e99433e2760ec4ca82d5e64b6df744d73766740bb7da0e446a95",
+          "xml_record_index_1based": 101
+        }
+      },
+      {
+        "DataHora": "2018-10-03 13:00:00",
+        "NivelFinal": "898.00",
+        "CQ_NivelFinal": "Dado suspeito",
+        "provenance": {
+          "source_file": "raw/ana-20180930-20181006.xml",
+          "source_sha256": "0914bbc903f9e99433e2760ec4ca82d5e64b6df744d73766740bb7da0e446a95",
+          "xml_record_index_1based": 83
+        }
+      }
+    ],
+    "target_schedule": [
+      {
+        "horizon_hours": 1,
+        "scheduled_within_window": 167,
+        "boundary_excluded": 1,
+        "approved_exact_future_targets": 164,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 2,
+        "scheduled_within_window": 166,
+        "boundary_excluded": 2,
+        "approved_exact_future_targets": 163,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 3,
+        "scheduled_within_window": 165,
+        "boundary_excluded": 3,
+        "approved_exact_future_targets": 162,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 4,
+        "scheduled_within_window": 164,
+        "boundary_excluded": 4,
+        "approved_exact_future_targets": 161,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 5,
+        "scheduled_within_window": 163,
+        "boundary_excluded": 5,
+        "approved_exact_future_targets": 160,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 6,
+        "scheduled_within_window": 162,
+        "boundary_excluded": 6,
+        "approved_exact_future_targets": 159,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 7,
+        "scheduled_within_window": 161,
+        "boundary_excluded": 7,
+        "approved_exact_future_targets": 158,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 8,
+        "scheduled_within_window": 160,
+        "boundary_excluded": 8,
+        "approved_exact_future_targets": 157,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 9,
+        "scheduled_within_window": 159,
+        "boundary_excluded": 9,
+        "approved_exact_future_targets": 156,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 10,
+        "scheduled_within_window": 158,
+        "boundary_excluded": 10,
+        "approved_exact_future_targets": 155,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 11,
+        "scheduled_within_window": 157,
+        "boundary_excluded": 11,
+        "approved_exact_future_targets": 155,
+        "eligible_anchor_target_pairs_current_contract": 0
+      },
+      {
+        "horizon_hours": 12,
+        "scheduled_within_window": 156,
+        "boundary_excluded": 12,
+        "approved_exact_future_targets": 154,
+        "eligible_anchor_target_pairs_current_contract": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,246 @@
+{
+  "scope": "Post-evaluation diagnostic of three largest absolute 12h historical flood errors; selected by error for investigation only, not validation or candidate selection.",
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/diagnostico-eventos-proxy-carreiro-20260921/all-12h-flood-errors-ranked.csv": "dd393a6fa75cb64ca9ce013adadd7e0ff068091957e769d2f20e44ccc863b463",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json": "114cf5fc7cc8b0c1196a5b8a879e91395548e337c0f2d583651a151e48c9225e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz": "c8c3fa62bd28850e767d921cd3743edb304b84d11c3b9d3ed48189b5207a4314",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json": "f16f5007d45f9a04f17a5d3a5256c1d7ae199d6b89aaefe248feda6d6467648d",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv": "1921f44b91dbee97cb858e211ab50c1da6ed5d262dada05fb0bd43017d4a254e",
+    "/Users/brunozilio/Documents/radar/outputs/diagnostico-erros-julho-20260921/attribute.py": "171738c17c9c7ae03386ad0212baa8b9021c60783be1c42101eaa791a72b593a",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py": "b12cea013b4f580b73c3adbf179140b9fc19618c55c849098c674c83badcd9ac",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_flow_diagnostics.py": "c0137dcebebe20591185de43ed65fc31c701ac9465ea5478b39b0a48252455e6",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_07-ceran.csv": "746cb5b5d5b1d5772f99efa0c21daadf861546fb80c2e0fb3a63073f1690698a"
+  },
+  "prediction_reproduction_max_difference_m3_s": 3.637978807091713e-12,
+  "items": [
+    {
+      "origin": "2026-07-22T09:00:00-03:00",
+      "target_time": "2026-07-22T21:00:00-03:00",
+      "level_error_m": -9.038315647130192,
+      "known_julho_m3_s": 9170.0,
+      "routed_julho_forecast_m3_s": 1959.0727074752854,
+      "routed_julho_observed_future_comparison_only_m3_s": 8211.865707350087,
+      "routed_julho_error_m3_s": -6252.792999874802,
+      "groups": {
+        "known_julho_Q": 9170.0,
+        "intercept": 7.636194517847944,
+        "zero_floor": 70.08499376460671,
+        "julho": -1326.5391855657517,
+        "monte": -5821.26155594377,
+        "castro": -128.19495492005217,
+        "86500000": -1.3907668306122758,
+        "Baixo Antas": -165.86255804072758,
+        "Carreiro": -123.12146779912236,
+        "Prata-Turvo": 187.21362925236716,
+        "Alto Antas": -1.1354128851459073,
+        "Tainhas": 91.5680002687616,
+        "missing": 0.07579165688348706
+      },
+      "largest_feature_contributions": [
+        [
+          "known_julho_Q",
+          9170.0
+        ],
+        [
+          "monte:Q:slope3h",
+          -2490.194117679804
+        ],
+        [
+          "monte:I:slope3h",
+          -1533.7578075316983
+        ],
+        [
+          "monte:Q:slope6h",
+          -982.9971418866879
+        ],
+        [
+          "monte:I:slope6h",
+          -695.2503980292407
+        ],
+        [
+          "julho:Q:1000m3s",
+          -471.43399773956776
+        ],
+        [
+          "julho:I:1000m3s",
+          -393.0111935725796
+        ],
+        [
+          "monte:val_niveljusante:level",
+          -252.02446025624607
+        ],
+        [
+          "castro:I:slope3h",
+          -239.91110362819836
+        ],
+        [
+          "julho:Q:slope3h",
+          -211.43834521972127
+        ],
+        [
+          "julho:I:slope6h",
+          -200.95359154408501
+        ],
+        [
+          "Prata-Turvo:P24/100mm",
+          189.6371466479482
+        ]
+      ]
+    },
+    {
+      "origin": "2026-07-22T08:00:00-03:00",
+      "target_time": "2026-07-22T20:00:00-03:00",
+      "level_error_m": -9.025736045191831,
+      "known_julho_m3_s": 9023.0,
+      "routed_julho_forecast_m3_s": 2104.7670650062737,
+      "routed_julho_observed_future_comparison_only_m3_s": 8419.690637193049,
+      "routed_julho_error_m3_s": -6314.923572186775,
+      "groups": {
+        "known_julho_Q": 9023.0,
+        "intercept": 7.636194517847944,
+        "zero_floor": 21.25173374997372,
+        "julho": -1678.2765838078562,
+        "monte": -5455.534835618407,
+        "castro": 206.70832638452075,
+        "86500000": -1.3907668306122758,
+        "Baixo Antas": -182.04660814732208,
+        "Carreiro": -124.47293435009888,
+        "Prata-Turvo": 189.67173204784237,
+        "Alto Antas": -2.496574732542414,
+        "Tainhas": 100.64159013604339,
+        "missing": 0.07579165688348706
+      },
+      "largest_feature_contributions": [
+        [
+          "known_julho_Q",
+          9023.0
+        ],
+        [
+          "monte:Q:slope3h",
+          -2271.7134614742945
+        ],
+        [
+          "monte:Q:delta1h",
+          -1505.6222982095132
+        ],
+        [
+          "monte:I:slope3h",
+          -1423.0707728955867
+        ],
+        [
+          "monte:I:delta1h",
+          1385.041035674418
+        ],
+        [
+          "monte:Q:slope6h",
+          -885.0137091990748
+        ],
+        [
+          "monte:I:slope6h",
+          -632.5604372183607
+        ],
+        [
+          "julho:Q:1000m3s",
+          -463.6694616853806
+        ],
+        [
+          "julho:Q:slope3h",
+          -407.2781623870767
+        ],
+        [
+          "julho:I:1000m3s",
+          -372.6517435320361
+        ],
+        [
+          "monte:val_niveljusante:level",
+          -248.50946401223678
+        ],
+        [
+          "julho:I:slope6h",
+          -216.25319522467873
+        ]
+      ]
+    },
+    {
+      "origin": "2026-07-22T11:00:00-03:00",
+      "target_time": "2026-07-22T23:00:00-03:00",
+      "level_error_m": 8.45415895814758,
+      "known_julho_m3_s": 9396.0,
+      "routed_julho_forecast_m3_s": 13690.741364725789,
+      "routed_julho_observed_future_comparison_only_m3_s": 7616.66509770236,
+      "routed_julho_error_m3_s": 6074.076267023429,
+      "groups": {
+        "known_julho_Q": 9396.0,
+        "intercept": 7.636194517847944,
+        "zero_floor": 0.0,
+        "julho": -1132.5191668555183,
+        "monte": 5780.674306460072,
+        "castro": -376.1164552520504,
+        "86500000": -1.3784020678133282,
+        "Baixo Antas": -128.60430013588433,
+        "Carreiro": -104.68199744614441,
+        "Prata-Turvo": 177.79470854872267,
+        "Alto Antas": 1.9295957555220427,
+        "Tainhas": 69.93108954415277,
+        "missing": 0.07579165688348706
+      },
+      "largest_feature_contributions": [
+        [
+          "known_julho_Q",
+          9396.0
+        ],
+        [
+          "monte:Q:slope3h",
+          2576.7364341529665
+        ],
+        [
+          "monte:I:slope3h",
+          1584.5686653543496
+        ],
+        [
+          "monte:Q:delta1h",
+          1505.608752412797
+        ],
+        [
+          "julho:Q:1000m3s",
+          -483.3713116732161
+        ],
+        [
+          "julho:I:1000m3s",
+          -395.13830029323344
+        ],
+        [
+          "castro:I:slope3h",
+          -311.39034387661997
+        ],
+        [
+          "monte:val_niveljusante:level",
+          -251.4386275489114
+        ],
+        [
+          "Prata-Turvo:P24/100mm",
+          179.15049947012753
+        ],
+        [
+          "monte:Q:slope6h",
+          166.53313000639895
+        ],
+        [
+          "castro:val_niveljusante:level",
+          141.1780775632389
+        ],
+        [
+          "julho:I:slope6h",
+          -135.94758314554443
+        ]
+      ]
+    }
+  ],
+  "fitted": false,
+  "promoted": false,
+  "goal_achieved": false
+}

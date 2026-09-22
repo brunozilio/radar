@@ -1,0 +1,10 @@
+{
+ "scope": "Seis sondagens ANA ALL-QC, três postos de montante em duas semanas documentadas de2018; sem treino, matriz ou inferência",
+ "stations": ["86472000", "86472600", "86500000"],
+ "windows": [["2018-08-30", "2018-09-05"], ["2018-09-30", "2018-10-06"]],
+ "maximum_new_gets": 6,
+ "automatic_retries": 0,
+ "cache_inventory": "Busca local em manifests/receipts/references/plans por2018 e datas literais/URL, mais nomes de arquivos que combinem estação e2018. Nenhuma resposta pertinente aos três postos encontrada; apenas as duas respostas Muçum86510000 da rodada anterior.",
+ "existing_evidence": "outputs/pesquisa-janelas-ineditas-20260922/README.md e PDFs SGB preservados. Linha José Júlio aparece em manutenção no boletim02/09, sem afirmar ausência universal.",
+ "rules": ["Somente endpoint público ANA já usado", "Preservar todos campos/QC/timestamps literais/índices1-based", "Preservar erros, HTTP/headers/corpos/UTC/SHA", "Não interpolar, preencher, arredondar ou ajustar atrasos", "Não certificar datum/fuso/publicação", "Sem dados do endpoint não prova ausência em todos acervos"]
+}

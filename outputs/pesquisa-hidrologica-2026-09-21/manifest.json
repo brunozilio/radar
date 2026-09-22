@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-09-21T19:39:45.489270+00:00",
+  "scope": "bounded initial research; only public read requests and isolated local artifacts",
+  "sources": [
+    {
+      "id": "ana_legacy",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx",
+      "coverage": "Samples 2020,2023,2024; site-tested endpoint works today",
+      "resolution": "15 min in tested station samples",
+      "access": "Public read-only; deprecation announced for 2026-06-30; verify migration",
+      "license": "Explicit data license not established in this pass; attribute ANA/SGB and preserve QC"
+    },
+    {
+      "id": "ana_rest",
+      "url": "https://www.ana.gov.br/hidrowebservice/swagger-ui/index.html",
+      "coverage": "Documented telemetry, conventional stage/discharge, rating curves, cross sections",
+      "resolution": "Telemetry request max30days; conventional and geometry max366days",
+      "access": "Credentialed API; documentation verified, no authentication attempted",
+      "license": "Not established; use official access terms"
+    },
+    {
+      "id": "ons_hourly",
+      "url": "https://dados.ons.org.br/dataset/dados_hidrologicos_ho",
+      "coverage": "Catalog CSV/Parquet months 2020-07,2023-09,2024-05 verified; May2024 partial data downloaded",
+      "resolution": "hour ending, hourly; publication refreshed15min",
+      "access": "Public CKAN catalog and S3 downloads",
+      "license": "Creative Commons Attribution as catalog labels"
+    },
+    {
+      "id": "et0_era5",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "coverage": "Full ET0 sample Apr2025–Sep2026 saved; nonnull through2026-09-15T23UTC",
+      "resolution": "hourly; ERA5 grid0.25deg, actual cell -29.0,-51.5",
+      "access": "API works without key for local noncommercial research",
+      "license": "CC-BY4.0 data; Free API noncommercial; https://open-meteo.com/en/terms"
+    },
+    {
+      "id": "forecast_vintages",
+      "url": "https://open-meteo.com/en/docs/single-runs-api",
+      "coverage": "Docs: IFS from2024-03-14 as Cycle49R1 hindcasts; other models from2026-04-02",
+      "resolution": "hourly plus model initialization cycle",
+      "access": "Documentation only this pass",
+      "license": "Open-Meteo terms; do not call hindcasts true issued forecasts"
+    },
+    {
+      "id": "inmet",
+      "url": "https://portal.inmet.gov.br/dadoshistoricos",
+      "coverage": "Annual automatic-station files2000–2026 listed",
+      "resolution": "Station observations; hourly CSV expected but files not inspected",
+      "access": "Public index verified; no large archive downloaded",
+      "license": "Data license not established in this pass"
+    },
+    {
+      "id": "cemaden",
+      "url": "https://sws.cemaden.gov.br/",
+      "coverage": "API documentation includes historical accumulated and station data",
+      "resolution": "Sensor dependent; not verified in actual station series",
+      "access": "Historical website form uses CAPTCHA/contact info; no submission, no bypass; API docs only",
+      "license": "Not established"
+    },
+    {
+      "id": "imerg",
+      "url": "https://gpm.nasa.gov/data/imerg",
+      "coverage": "Historical gridded rain covering2020/2023/2024; product-version coverage must be pinned",
+      "resolution": "0.1deg/30min",
+      "access": "NASA catalog/docs verified, no Earthdata signup or bulk download",
+      "license": "NASA attribution/data-use requirements must accompany exact selected product"
+    },
+    {
+      "id": "sgb_marks",
+      "url": "https://rigeo.sgb.gov.br/handle/doc/24939.5",
+      "coverage": "Flood2024 peak/marks note has many revisions; index advertises2026-08 version19",
+      "resolution": "Event peak marks, not continuous target series",
+      "access": "Public metadata verified, no complete latest PDF downloaded",
+      "license": "Report attribution; explicit redistribution license not established"
+    },
+    {
+      "id": "ceran",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHCA.php",
+      "coverage": "Recent rolling table; historical bulk endpoint not established",
+      "resolution": "hourly",
+      "access": "Public page verified and current project snapshots read",
+      "license": "Explicit reuse license not established"
+    }
+  ],
+  "evidence_files": [
+    "sample-manifest.json",
+    "parsed-samples.json",
+    "sample-openmeteo-et0-manifest.json",
+    "et0-era5-full-manifest.json",
+    "ons-partial-manifest.json"
+  ],
+  "next_collection": [
+    {
+      "priority": 1,
+      "action": "Train ET0 candidate locally using supplied12,792valid hourly values; label120hmissing tail and test fallback separately"
+    },
+    {
+      "priority": 2,
+      "action": "Collect event windows2020-06-01..2020-07-20,2023-08-01..2023-09-20,2023-10-01..2023-11-30,2024-03-01..2024-05-31 in month chunks, first target86510000 then86472000/86472600/86500000/86505500, inventory/QC before training"
+    },
+    {
+      "priority": 3,
+      "action": "Download ONS Parquet2020-07,2023-09,2024-05 (1.14,1.20,1.28MB catalog estimates); verify plants14deJulho,MonteClaro,CastrodeAlves IDs, dates and missingness before expanding"
+    },
+    {
+      "priority": 4,
+      "action": "Request/read already-authorized ANA API access only if available; retrieve official rating curves, discharge measurements and cross sections by station and validity dates"
+    },
+    {
+      "priority": 5,
+      "action": "Add INMET gauges and basin rainfall comparison ERA5/IMERG; freeze entire independent flood events before any model selection"
+    }
+  ]
+}

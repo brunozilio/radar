@@ -20,6 +20,8 @@ import {
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Chart as ChartInstance } from "chart.js";
+import ProjectionPanel from "./projection-panel";
+import LiveCameras from "./live-cameras";
 import { timeSeriesBounds } from "@/lib/charts";
 import type { LayerGroup, Map as LeafletMap } from "leaflet";
 import {
@@ -28,7 +30,7 @@ import {
 } from "@/lib/chart-sampling";
 import {
   framesWithinLatestHour,
-  synchronizeFramesByTimestamp,
+  retainAvailableFrames,
 } from "@/lib/media-window";
 import {
   calculateOneHourMetricChange,
@@ -234,6 +236,10 @@ const RIVER_CITIES = [
     sensors: ["sace-86510000", "dcrs-00091"],
   },
   {
+    city: "Encantado",
+    sensors: ["sace-86720000"],
+  },
+  {
     city: "Santa Tereza",
     sensors: ["sace-86472600", "sace-86472000"],
   },
@@ -282,6 +288,9 @@ type ActiveAlert = {
 
 type AlertsLoadState = "loading" | "ready" | "error";
 
+// Defina como null para voltar a exibir os alertas das fontes.
+const TEMPORARY_ALERT: string | null = null;
+
 const ALERT_SEVERITY_LABEL: Record<ActiveAlert["severity"], string> = {
   yellow: "Atenção",
   orange: "Risco alto",
@@ -296,7 +305,7 @@ type SatelliteFrame = {
   id: string;
   timestamp: string;
   src: string;
-  provider?: "inmet" | "cptec";
+  provider?: "inmet" | "cptec" | "noaa";
 };
 
 type BasinOverlayMode =
@@ -1148,135 +1157,6 @@ const MEDIA_POLL_INTERVAL_MS = 30_000;
 const MEDIA_FRAME_INTERVAL_MS = 900;
 const MEDIA_LAST_FRAME_HOLD_MS = 10_000;
 
-function useSynchronizedWeatherFrames(
-  radarRefreshToken: number,
-  satelliteRefreshToken: number,
-) {
-  const [frames, setFrames] = useState<
-    Array<{
-      timestamp: string;
-      radar: SatelliteFrame;
-      satellite: SatelliteFrame;
-    }>
-  >([]);
-  const [framePosition, setFramePosition] = useState(0);
-  const framesRef = useRef<
-    Array<{
-      timestamp: string;
-      radar: SatelliteFrame;
-      satellite: SatelliteFrame;
-    }>
-  >([]);
-  const framePositionRef = useRef(0);
-
-  useEffect(() => {
-    let active = true;
-    let loading = false;
-
-    const refreshFrames = async () => {
-      if (loading) return;
-      loading = true;
-      try {
-        const cacheBuster = Date.now();
-        const requestOptions: RequestInit = {
-          cache: "no-store",
-          headers: {
-            "cache-control": "no-cache, no-store",
-            pragma: "no-cache",
-          },
-        };
-        const [radarResponse, satelliteResponse] = await Promise.all([
-          fetch(`/api/radar?_=${cacheBuster}`, requestOptions),
-          fetch(`/api/satellite?_=${cacheBuster}`, requestOptions),
-        ]);
-        const [radarPayload, satellitePayload] = await Promise.all([
-          radarResponse.json(),
-          satelliteResponse.json(),
-        ]);
-        if (!radarResponse.ok || !satelliteResponse.ok) {
-          throw new Error("Fonte meteorológica indisponível");
-        }
-        if (!active) return;
-        const radarFrames = framesWithinLatestHour<SatelliteFrame>(
-          Array.isArray(radarPayload.frames) ? radarPayload.frames : [],
-        );
-        const satelliteFrames = framesWithinLatestHour<SatelliteFrame>(
-          Array.isArray(satellitePayload.frames) ? satellitePayload.frames : [],
-        );
-        const nextFrames = synchronizeFramesByTimestamp(
-          radarFrames,
-          satelliteFrames,
-        );
-        const previousFrames = framesRef.current;
-        const currentTimestamp =
-          previousFrames[framePositionRef.current]?.timestamp;
-        const preservedPosition = currentTimestamp
-          ? nextFrames.findIndex(
-              (frame) => frame.timestamp === currentTimestamp,
-            )
-          : -1;
-        const nextPosition =
-          previousFrames.length === 0
-            ? 0
-            : preservedPosition >= 0
-              ? preservedPosition
-              : Math.min(
-                  framePositionRef.current,
-                  Math.max(0, nextFrames.length - 1),
-                );
-
-        framesRef.current = nextFrames;
-        framePositionRef.current = nextPosition;
-        setFrames(nextFrames);
-        setFramePosition(nextPosition);
-
-        for (const frame of nextFrames) {
-          for (const source of [frame.radar.src, frame.satellite.src]) {
-            const image = new Image();
-            image.src = source;
-          }
-        }
-      } catch {
-        // Mantém os quadros já armazenados durante falhas transitórias.
-      } finally {
-        loading = false;
-      }
-    };
-
-    void refreshFrames();
-    const poller = window.setInterval(
-      () => void refreshFrames(),
-      MEDIA_POLL_INTERVAL_MS,
-    );
-    return () => {
-      active = false;
-      window.clearInterval(poller);
-    };
-  }, [radarRefreshToken, satelliteRefreshToken]);
-
-  useEffect(() => {
-    if (frames.length < 2) return;
-    const delay =
-      framePosition >= frames.length - 1
-        ? MEDIA_LAST_FRAME_HOLD_MS
-        : MEDIA_FRAME_INTERVAL_MS;
-    const timer = window.setTimeout(() => {
-      const nextPosition =
-        framePositionRef.current >= framesRef.current.length - 1
-          ? 0
-          : framePositionRef.current + 1;
-      framePositionRef.current = nextPosition;
-      setFramePosition(nextPosition);
-    }, delay);
-    return () => window.clearTimeout(timer);
-  }, [framePosition, frames.length]);
-
-  return {
-    frames,
-    currentFrames: frames[framePosition] || frames[0],
-  };
-}
-
 function useIndependentWeatherFrames(
   endpoint: string,
   refreshToken: number,
@@ -1295,6 +1175,7 @@ function useIndependentWeatherFrames(
       try {
         const response = await fetch(`${endpoint}?_=${Date.now()}`, {
           cache: "no-store",
+          signal: AbortSignal.timeout(15_000),
           headers: {
             "cache-control": "no-cache, no-store",
             pragma: "no-cache",
@@ -1305,7 +1186,8 @@ function useIndependentWeatherFrames(
           throw new Error(payload.message || "Fonte indisponível");
         }
         if (!active) return;
-        const nextFrames = framesWithinLatestHour<SatelliteFrame>(
+        const nextFrames = retainAvailableFrames<SatelliteFrame>(
+          framesRef.current,
           Array.isArray(payload.frames) ? payload.frames : [],
         );
         const currentId =
@@ -1331,7 +1213,14 @@ function useIndependentWeatherFrames(
           image.src = frame.src;
         }
       } catch {
-        // Mantém os quadros locais durante falhas transitórias da fonte.
+        // Keep only still-recent cached frames during a transient outage.
+        if (active && framesRef.current.length &&
+            !framesWithinLatestHour(framesRef.current).length) {
+          framesRef.current = [];
+          framePositionRef.current = 0;
+          setFrames([]);
+          setFramePosition(0);
+        }
       } finally {
         loading = false;
       }
@@ -1409,7 +1298,7 @@ function ExpandableMediaFrame({
   const renderMedia = (frame: SatelliteFrame) => (
     <>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={frame.src} alt={imageAlt(frame)} />
+      <img src={frame.src} alt={imageAlt(frame)} data-provider={frame.provider} />
       {renderOverlay(frame)}
     </>
   );
@@ -1528,14 +1417,14 @@ function SatellitePanel({
         }
         emptyMessage="Imagem de satélite indisponível"
         variant="satellite"
-        renderOverlay={(frame) => (
+        renderOverlay={(frame) => frame.provider === "noaa" ? null : (
           <BasinUpstreamOverlay
             mode={`satellite-${frame.provider || "inmet"}`}
           />
         )}
       />
       <time className="media-time">
-        {currentFrame ? formatDate(currentFrame.timestamp) : "—"}
+        {currentFrame ? `${formatDate(currentFrame.timestamp)} · ${currentFrame.provider === "noaa" ? "NOAA/GOES" : currentFrame.provider === "cptec" ? "CPTEC" : "INMET"}` : "—"}
       </time>
     </section>
   );
@@ -1567,7 +1456,7 @@ function ConcordiaRadarPanel({
   );
 }
 
-function SynchronizedWeatherPanels({
+function WeatherPanels({
   radarRefreshToken,
   concordiaRefreshToken,
   satelliteRefreshToken,
@@ -1576,10 +1465,8 @@ function SynchronizedWeatherPanels({
   concordiaRefreshToken: number;
   satelliteRefreshToken: number;
 }) {
-  const { currentFrames } = useSynchronizedWeatherFrames(
-    radarRefreshToken,
-    satelliteRefreshToken,
-  );
+  const radarFrame = useIndependentWeatherFrames("/api/radar", radarRefreshToken);
+  const satelliteFrame = useIndependentWeatherFrames("/api/satellite", satelliteRefreshToken);
   const concordiaFrame = useIndependentWeatherFrames(
     "/api/radar-sc",
     concordiaRefreshToken,
@@ -1587,9 +1474,9 @@ function SynchronizedWeatherPanels({
 
   return (
     <section className="split-grid">
-      <WeatherPlayer currentFrame={currentFrames?.radar} />
+      <WeatherPlayer currentFrame={radarFrame} />
       <ConcordiaRadarPanel currentFrame={concordiaFrame} />
-      <SatellitePanel currentFrame={currentFrames?.satellite} />
+      <SatellitePanel currentFrame={satelliteFrame} />
     </section>
   );
 }
@@ -2822,49 +2709,57 @@ export default function Home() {
             <span>Alertas ativos</span>
           </div>
           <div className="alerts-list">
-            {alertsLoadState === "loading" && !alerts.length ? (
-              <p>Consultando Defesa Civil e INMET…</p>
-            ) : alerts.length ? (
-              alerts.map((alert) => (
-                <button
-                  type="button"
-                  className={`alert-item ${alert.severity}`}
-                  key={alert.id}
-                  onClick={(event) => {
-                    alertTriggerRef.current = event.currentTarget;
-                    setSelectedAlert(alert);
-                  }}
-                  aria-haspopup="dialog"
-                >
-                  <span className="alert-copy">
-                    <span className="alert-meta">
-                      <span className="alert-severity">
-                        {ALERT_SEVERITY_LABEL[alert.severity]}
-                      </span>
-                      <span className="alert-source">{alert.source}</span>
-                    </span>
-                    <span className="alert-title">
-                      {alertDisplayTitle(alert.title)}
-                    </span>
-                  </span>
-                  <time>Válido até {formatDate(alert.validUntil)}</time>
-                  <Eye className="alert-open-icon" size={17} aria-hidden="true" />
-                </button>
-              ))
-            ) : alertsLoadState === "error" ? (
-              <p role="alert">
-                {alertsStatusMessage ||
-                  "Não foi possível consultar os alertas oficiais agora."} A
-                coleta tentará novamente automaticamente.
-              </p>
+            {TEMPORARY_ALERT ? (
+              <div className="temporary-alert" role="alert">
+                <strong>{TEMPORARY_ALERT}</strong>
+              </div>
             ) : (
-              <p>Nenhum alerta ativo para Muçum nas fontes consultadas.</p>
-            )}
-            {alertsLoadState === "error" && alerts.length > 0 && (
-              <p role="status">
-                {alertsStatusMessage || "A atualização falhou"} Os últimos
-                alertas recebidos continuam visíveis.
-              </p>
+              <>
+                {alertsLoadState === "loading" && !alerts.length ? (
+                  <p>Consultando Defesa Civil e INMET…</p>
+                ) : alerts.length ? (
+                  alerts.map((alert) => (
+                    <button
+                      type="button"
+                      className={`alert-item ${alert.severity}`}
+                      key={alert.id}
+                      onClick={(event) => {
+                        alertTriggerRef.current = event.currentTarget;
+                        setSelectedAlert(alert);
+                      }}
+                      aria-haspopup="dialog"
+                    >
+                      <span className="alert-copy">
+                        <span className="alert-meta">
+                          <span className="alert-severity">
+                            {ALERT_SEVERITY_LABEL[alert.severity]}
+                          </span>
+                          <span className="alert-source">{alert.source}</span>
+                        </span>
+                        <span className="alert-title">
+                          {alertDisplayTitle(alert.title)}
+                        </span>
+                      </span>
+                      <time>Válido até {formatDate(alert.validUntil)}</time>
+                      <Eye className="alert-open-icon" size={17} aria-hidden="true" />
+                    </button>
+                  ))
+                ) : alertsLoadState === "error" ? (
+                  <p role="alert">
+                    {alertsStatusMessage ||
+                      "Não foi possível consultar os alertas oficiais agora."} A
+                    coleta tentará novamente automaticamente.
+                  </p>
+                ) : (
+                  <p>Nenhum alerta ativo para Muçum nas fontes consultadas.</p>
+                )}
+                {alertsLoadState === "error" && alerts.length > 0 && (
+                  <p role="status">
+                    {alertsStatusMessage || "A atualização falhou"} Os últimos
+                    alertas recebidos continuam visíveis.
+                  </p>
+                )}
+              </>
             )}
           </div>
         </section>
@@ -3340,12 +3235,13 @@ export default function Home() {
                                 : `${formatOneHourLevelChange(oneHourChange)} última hora`}
                             </small>
                           </div>
-                          <time className="river-time">
+                          <time className="river-time" title={`Fonte: ${sensor.source}`}>
                             {formatDate(
                               sensor.current?.timestamp,
                               true,
                               isRealtimeDcrs,
                             )}
+                            {sensor.current && ` · ${sensor.source}`}
                           </time>
                           {sensor.thresholds && (
                             <RiverThresholdLegend
@@ -3375,38 +3271,6 @@ export default function Home() {
               {currentError}
             </div>
           )}
-        </section>
-
-        <SynchronizedWeatherPanels
-          radarRefreshToken={liveVersions.radar}
-          concordiaRefreshToken={liveVersions["radar-sc"]}
-          satelliteRefreshToken={liveVersions.satellite}
-        />
-
-        <section
-          className="map-bulletin-grid single-panel"
-          id="chuva-acumulada"
-        >
-          <article className="panel map-panel">
-            <ModuleHeader
-              title="Chuva acumulada"
-              action={
-                <WindowSelector
-                  value={rainHours}
-                  onChange={(hours) => {
-                    setRainHours(hours);
-                  }}
-                  label="Janela de chuva acumulada"
-                />
-              }
-            />
-            <ExpandableRainMap stations={stations} hours={rainHours} />
-            <div className="map-legend">
-              <span><i className="rain-low" /> Fraca &lt; 50 mm</span>
-              <span><i className="rain-watch" /> Atenção 50–80 mm</span>
-              <span><i className="rain-critical" /> Crítica &gt; 80 mm</span>
-            </div>
-          </article>
         </section>
 
         <section className="panel ceran-panel" id="hidreletricas">
@@ -3477,6 +3341,42 @@ export default function Home() {
               );
             })}
           </div>
+        </section>
+
+        <ProjectionPanel />
+
+        <LiveCameras />
+
+        <WeatherPanels
+          radarRefreshToken={liveVersions.radar}
+          concordiaRefreshToken={liveVersions["radar-sc"]}
+          satelliteRefreshToken={liveVersions.satellite}
+        />
+
+        <section
+          className="map-bulletin-grid single-panel"
+          id="chuva-acumulada"
+        >
+          <article className="panel map-panel">
+            <ModuleHeader
+              title="Chuva acumulada"
+              action={
+                <WindowSelector
+                  value={rainHours}
+                  onChange={(hours) => {
+                    setRainHours(hours);
+                  }}
+                  label="Janela de chuva acumulada"
+                />
+              }
+            />
+            <ExpandableRainMap stations={stations} hours={rainHours} />
+            <div className="map-legend">
+              <span><i className="rain-low" /> Fraca &lt; 50 mm</span>
+              <span><i className="rain-watch" /> Atenção 50–80 mm</span>
+              <span><i className="rain-critical" /> Crítica &gt; 80 mm</span>
+            </div>
+          </article>
         </section>
 
         <section className="manifesto" aria-labelledby="manifesto-title">

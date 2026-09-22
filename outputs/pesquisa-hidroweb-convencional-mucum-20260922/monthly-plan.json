@@ -1,0 +1,87 @@
+{
+  "registered_at_utc": "2026-09-22T04:12:23.902182+00:00",
+  "reason": "Source ANA describes monthly Data field; weeks could exclude firstday monthly rows. Three sameevent months only; raw andconsistent explicitly queried. No yearlydata or newevent.",
+  "max_additional_get": 6,
+  "no_retry": true,
+  "jobs": [
+    {
+      "start": "2011-07-01",
+      "end": "2011-07-31",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/07/2011",
+        "dataFim": "31/07/2011",
+        "tipoDados": "1",
+        "nivelConsistencia": "2"
+      },
+      "file": "raw/month-hidro-86510000-2011-07-01--2011-07-31-consistencia2.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/HidroSerieHistorica?codEstacao=86510000&dataInicio=01%2F07%2F2011&dataFim=31%2F07%2F2011&tipoDados=1&nivelConsistencia=2"
+    },
+    {
+      "start": "2011-07-01",
+      "end": "2011-07-31",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/07/2011",
+        "dataFim": "31/07/2011",
+        "tipoDados": "1",
+        "nivelConsistencia": "1"
+      },
+      "file": "raw/month-hidro-86510000-2011-07-01--2011-07-31-consistencia1.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/HidroSerieHistorica?codEstacao=86510000&dataInicio=01%2F07%2F2011&dataFim=31%2F07%2F2011&tipoDados=1&nivelConsistencia=1"
+    },
+    {
+      "start": "2015-10-01",
+      "end": "2015-10-31",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/10/2015",
+        "dataFim": "31/10/2015",
+        "tipoDados": "1",
+        "nivelConsistencia": "2"
+      },
+      "file": "raw/month-hidro-86510000-2015-10-01--2015-10-31-consistencia2.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/HidroSerieHistorica?codEstacao=86510000&dataInicio=01%2F10%2F2015&dataFim=31%2F10%2F2015&tipoDados=1&nivelConsistencia=2"
+    },
+    {
+      "start": "2015-10-01",
+      "end": "2015-10-31",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/10/2015",
+        "dataFim": "31/10/2015",
+        "tipoDados": "1",
+        "nivelConsistencia": "1"
+      },
+      "file": "raw/month-hidro-86510000-2015-10-01--2015-10-31-consistencia1.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/HidroSerieHistorica?codEstacao=86510000&dataInicio=01%2F10%2F2015&dataFim=31%2F10%2F2015&tipoDados=1&nivelConsistencia=1"
+    },
+    {
+      "start": "2017-05-01",
+      "end": "2017-05-31",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/05/2017",
+        "dataFim": "31/05/2017",
+        "tipoDados": "1",
+        "nivelConsistencia": "2"
+      },
+      "file": "raw/month-hidro-86510000-2017-05-01--2017-05-31-consistencia2.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/HidroSerieHistorica?codEstacao=86510000&dataInicio=01%2F05%2F2017&dataFim=31%2F05%2F2017&tipoDados=1&nivelConsistencia=2"
+    },
+    {
+      "start": "2017-05-01",
+      "end": "2017-05-31",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/05/2017",
+        "dataFim": "31/05/2017",
+        "tipoDados": "1",
+        "nivelConsistencia": "1"
+      },
+      "file": "raw/month-hidro-86510000-2017-05-01--2017-05-31-consistencia1.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/HidroSerieHistorica?codEstacao=86510000&dataInicio=01%2F05%2F2017&dataFim=31%2F05%2F2017&tipoDados=1&nivelConsistencia=1"
+    }
+  ],
+  "official_format_sha256": "5cb985c484148becd0f504aeeee166afd69f89cf291d84f5028f4650a0053833"
+}

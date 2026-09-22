@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTable xmlns="http://MRCS/">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DadosHidrometereologicos" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DadosHidrometereologicos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CodEstacao" type="xs:string" minOccurs="0" />
+                <xs:element name="DataHora" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_VazaoFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="VazaoFinal" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <DocumentElement xmlns="">
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos1" msdata:rowOrder="0">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66666.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66666.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos2" msdata:rowOrder="1">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66660.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66660.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos3" msdata:rowOrder="2">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66656.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66656.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos4" msdata:rowOrder="3">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66658.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66658.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos5" msdata:rowOrder="4">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66658.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66658.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos6" msdata:rowOrder="5">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66657.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66657.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos7" msdata:rowOrder="6">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66654.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66654.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos8" msdata:rowOrder="7">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66653.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66653.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos9" msdata:rowOrder="8">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66651.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66651.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos10" msdata:rowOrder="9">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66648.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66648.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos11" msdata:rowOrder="10">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66646.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66646.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos12" msdata:rowOrder="11">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66643.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66643.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos13" msdata:rowOrder="12">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66639.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66639.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos14" msdata:rowOrder="13">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66632.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66632.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos15" msdata:rowOrder="14">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66628.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66628.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos16" msdata:rowOrder="15">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66622.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66622.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos17" msdata:rowOrder="16">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66617.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66617.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos18" msdata:rowOrder="17">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66612.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66612.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos19" msdata:rowOrder="18">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66607.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66607.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos20" msdata:rowOrder="19">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66609.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66609.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos21" msdata:rowOrder="20">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66611.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66611.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos22" msdata:rowOrder="21">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66613.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66613.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos23" msdata:rowOrder="22">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66614.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66614.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos24" msdata:rowOrder="23">
+        <CodEstacao>86200900</CodEstacao>
+        <DataHora>2024-05-01 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal />
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>66616.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>66616.00</NivelFinal>
+        <CQ_VazaoFinal />
+        <VazaoFinal />
+      </DadosHidrometereologicos>
+    </DocumentElement>
+  </diffgr:diffgram>
+</DataTable>

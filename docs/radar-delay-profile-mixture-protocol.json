@@ -1,0 +1,25 @@
+{
+  "id": "radar-delay-profile-mixture-v1",
+  "registered_at_utc": "2026-09-22T04:10:35.814040+00:00",
+  "problem": "Observed source delays applied to the entire historical grid changed 538204 pre-cutoff feature cells between the sealed 00h and 01h issues, with no revision of the 114 underlying historical fields. Investigate robustness to these two observed delay profiles, not historical publication-time reconstruction.",
+  "profiles": {
+    "A": "outputs/mucum-hourly-20260922T000704-0300/radar-features.npz",
+    "B": "outputs/mucum-hourly-20260922T010016-0300/radar-features.npz"
+  },
+  "inputs": "Use all180 original features, without normalization, clipping, imputation, added historical years, weather replacement or changed lag reconstruction. Restrict arrays to origins before2026-09-21T00:00:00-03:00. Require timestamps, truth, and60 historical weather columns to agree exactly between profiles. Preserve each profile base and missingness.",
+  "fixed_assignment": "Before fitting draw one assignment per chronological origin from numpy.random.Generator(numpy.random.PCG64(57)).integers(0,2,dtype=int8). Persist the vector. Reuse it for all horizons/folds. Each physical origin contributes once, using profileA if0 orB if1. No duplicated samples, seed search or assignment informed by target/error.",
+  "common_membership": "For each horizon, admit training origins only when both profiles have finite base and all first24 columns finite, and the common future target is finite. Use precisely the same admitted origins/order for all three families. This intersection is an experimental control and differs from each operational model own membership; do not claim operational-model reproduction.",
+  "families": [
+    "profile_A_control",
+    "profile_B_control",
+    "mixed_profile_candidate"
+  ],
+  "training": "Fit72 new models: three families,12 horizons, two temporal folds. The candidate uses the fixed assignment to select one complete profile vector and its matching base for each admitted origin; response is common future truth minus that selected base. Controls use their own profile/base for the same origins. All use weight1+2*(abs(delta)>=1)+2*(truth>=9), the existing frozen per-horizon leaf/loss config,180 iterations,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. No tuning.",
+  "folds": "Validation train: targets before2025-10-01, evaluate origins fromOct1 with targets before2026-07-01. Test train: union of that first block and origins>=Oct1 with targets beforeJuly1, preserving October boundary exclusions. Test evaluate origins>=July1 with targets beforeSep21. All these periods have been inspected previously; development diagnostics only.",
+  "evaluation": "Evaluate every family on both profileA and profileB independently on the full scheduled grid, requiring only finite evaluation-profile base for inference. Preserve all scheduled rows, missing targets, missing-base failures, and profile-relative complete24/missing24 populations. Report all and observed>=7m, all horizons, hits within0.50m, hits divided by observed targets including failures,MAE,bias,P98,max. Compare candidate primarily against the matching profile control on the same evaluation profile; report the cross-profile control as well. Never pool the two views as independent events or select the favorable profile per horizon.",
+  "interpretation": "A gain on one delay profile with regression on the other does not establish robust improvement. Two observed profiles do not represent the complete source-delay distribution. No prospectively independent accuracy claim, no98percent claim, no operational promotion or live issuance.",
+  "planned_models": 72,
+  "promotion": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

@@ -1,0 +1,11 @@
+{
+  "timing": "Added after execution and independent review; original protocol and executed source preserved.",
+  "term": "finalized residual",
+  "anchor_parentheses": "The preserved protocol prose omitted outer parentheses; executed code uses Q_anchor - [0.25 * Q_previous + 0.75 * Q_origin]. Both weighted terms are subtracted together.",
+  "application_flag": "residual_model_applied indicates a computable residual correction. Family status records whether it actually produced a level, failed for negative flow, or retained a missing baseline.",
+  "clarification": "Finalized describes the retrospective hourly reconstruction used to define a residual, not a reconstruction based exclusively on exact measured forcings. Local rainfall is observed weighted amount plus the uncovered spatial fraction times previous_day1 forecast mean. Its effects persist in HGE states. Upstream inputs use the existing historical grid/asof rules, and missing Carreiro inputs use the frozen regional proxy. These are modeled estimates, not newly observed truth.",
+  "target": "Reported ANA Q minus that retrospective reconstruction. Training labels can use later known reported Q and historical inputs at the label time; runtime features remain at the anchor or earlier. The candidate does not learn all errors of future upstream and weather forecasts.",
+  "scope": "No numerical result, training membership, source, cutoff or eligibility flag changed. Source publication availability and physical independence of reported Q from level remain unverified.",
+  "promoted": false,
+  "goal_achieved": false
+}

@@ -1,0 +1,76 @@
+{
+  "ledger_tip_sha256": "8f61bbf4f390120190292be0eb1e58a1a7aa949787f87ddd32a527eeb3b6f31d",
+  "ledger_records": 2602,
+  "regular_issues": 11,
+  "artifacts_verified": 250,
+  "models_inspected": 140,
+  "version_groups": [
+    {
+      "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+      "regular_issues": 3,
+      "declared_recipe_variants": 3,
+      "fitted_model_set_variants": 3,
+      "unverifiable_issues": 0,
+      "same_declared_recipe": false,
+      "all_runtime_recorded": true,
+      "receipts": [
+        "b31d299f358563172a98bf233a20c0c68216f592fde27f6af61686f6dbec89d4",
+        "d81951889c96952a8718a5420d0090d30e15932904ff6cd96296b9cf507368f9",
+        "ab68649c464d53c610c4f97b80976b71a030b851c0731aa912081fae1c0bddd4"
+      ]
+    },
+    {
+      "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+      "regular_issues": 2,
+      "declared_recipe_variants": 2,
+      "fitted_model_set_variants": 2,
+      "unverifiable_issues": 0,
+      "same_declared_recipe": false,
+      "all_runtime_recorded": true,
+      "receipts": [
+        "ad0f135386ab111c85f9db922cd9fd67361446bf9d616bd888be02671f8fef2c",
+        "971a360ec71a51cf033cb732230d29ecf3db0b1657199019814d504f3753851a"
+      ]
+    },
+    {
+      "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+      "regular_issues": 1,
+      "declared_recipe_variants": 0,
+      "fitted_model_set_variants": 0,
+      "unverifiable_issues": 1,
+      "same_declared_recipe": null,
+      "all_runtime_recorded": false,
+      "receipts": [
+        "a902a27977447df91473e8635f7fbd08691551605395f344255d363ee2bff369"
+      ]
+    },
+    {
+      "model_version": "hourly-live-weather-v1:fd40fd74e87486e7",
+      "regular_issues": 5,
+      "declared_recipe_variants": 1,
+      "fitted_model_set_variants": 5,
+      "unverifiable_issues": 0,
+      "same_declared_recipe": true,
+      "all_runtime_recorded": true,
+      "receipts": [
+        "bc57eee5908f2544692f44f1a34cd20c16db7fc77cbf34e5ca9942b2631400e3",
+        "cf0512133a9b6cac4f3e292c8f1dbfc4667e5546e25d8bee984b3bd55fc6ddbe",
+        "e322a0243173c064a6929cbd1ff7b22541c1ec2db705b79a6550fa605bce7a92",
+        "b81cc15cedec3251abcd7a8a8be6b7b70652a99564065fbfe0506637e5c05e76",
+        "fd47d506fd134b2e47e40ec7d74be104d68af7500a4512cda18340f5a1853fd8"
+      ]
+    }
+  ],
+  "source_code_sha256": "5271e23effeff86e7040e007d54cf8ef9f9d7da9eb9a137180307de3efdd5192",
+  "fit_performed": false,
+  "report_or_ledger_modified": false,
+  "goal_achieved": false,
+  "limitations": [
+    "Compares only code, runtime and settings declared/preserved in the packets; not proof of a complete transitive dependency inventory.",
+    "Legacy packets lacking artifact blobs are explicitly unverifiable; current filesystem paths are not substituted. Non-Radar models from former shared packets are never loaded.",
+    "The operational model_version hashes the main runner only. This audit does not change or backdate that identifier.",
+    "Different fitted weights and historical feature matrices are expected from the documented dynamic source-delay policy, despite a fixed label cutoff.",
+    "Static external parameter files are not automatically certified by equality of this recipe signature. Actual estimator parameters are inspected from sealed models.",
+    "Recipe equality is not prediction equality, equivalent data quality, source publication proof, independent validation or 98% accuracy."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "cases": 203,
+  "all_cases_explained_by_frozen_numeric_tree_threshold_crossings": true,
+  "all_prediction_differences_reproduced_by_sum_of_leaf_differences_tolerance": 1e-12,
+  "tree_crossings": 253,
+  "feature_counts": {
+    "Tainhas:P3lag12": 22,
+    "Alto Antas:P3lag6": 60,
+    "Tainhas:P12": 94,
+    "Alto Antas:P24": 30,
+    "Tainhas:P48": 2,
+    "Baixo Antas:P3": 1,
+    "Baixo Antas:P12": 23,
+    "Prata-Turvo:P6": 1,
+    "Prata-Turvo:P3lag6": 1,
+    "Tainhas:P3": 17,
+    "Alto Antas:P6": 2
+  },
+  "largest_prediction_difference_case": {
+    "year": 2022,
+    "family": "candidate120_plus2020",
+    "horizon_h": 4,
+    "origin": "2022-05-29T23:00:00-03:00",
+    "saved_m": 11.945531397437842,
+    "independent_m": 11.9162217457247,
+    "difference_m": -0.029309651713141704,
+    "original_reproduces": true
+  },
+  "limits": "Diagnostic only; original frozen matrices/predictions preserved. No rounding or normalization introduced."
+}

@@ -1,0 +1,282 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	Fale Conosco - WebService(ANA/SGH/GPLAN)
+</title><meta name="description" content="WebService do sistema Telemetria 1" /><meta name="keywords" content="ANA, Agência, Nacional, Águas, Telemetria, WebService, Estações, PCD" />
+<style type="text/css">
+	/* <![CDATA[ */
+	#Menu1 { background-color:#EEEEEE; }
+	#Menu1 img.icon { border-style:none;vertical-align:middle; }
+	#Menu1 img.separator { border-style:none;display:block; }
+	#Menu1 img.horizontal-separator { border-style:none;vertical-align:middle; }
+	#Menu1 ul { list-style:none;margin:0;padding:0;width:auto; }
+	#Menu1 ul.dynamic { background-color:#EEEEEE;z-index:1;margin-left:-50px; }
+	#Menu1 a { color:#7C6F57;font-family:Verdana;font-size:0.9em;font-weight:normal;text-decoration:none;white-space:nowrap;display:block; }
+	#Menu1 a.static { padding:2px 8px 2px 8px;font-weight:normal;text-decoration:none; }
+	#Menu1 a.popout { background-image:url("/WebResource.axd?d=RwQSAoB__l35EgZMnL2TaDEzASRHjvbs9nWuai_FMvD64LfYL_-iJ20hVPyJ2GtOcHIe3azpe3G92XOobcRq7QylqWVEdkY5B89bqVdBb4s1&t=637109961120000000");background-repeat:no-repeat;background-position:right center;padding-right:14px; }
+	#Menu1 a.dynamic { padding:2px 5px 2px 5px;font-weight:normal;text-decoration:none; }
+	#Menu1 a.static.selected { background-color:#D2D2D2;text-decoration:none; }
+	#Menu1 a.dynamic.selected { background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	#Menu1 a.static.highlighted { color:White;background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	#Menu1 a.dynamic.highlighted { color:White;background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	/* ]]> */
+</style></head>
+<style>
+    body{margin:0 0 auto 0;background-color:#FFFFFF;font-family:verdana,arial,helvetica,sans-serif;color:#000000;min-width:900px;}
+    #rodape {position: fixed;bottom: 0;background:#FFF;text-align:center;font-size:0.8em;width:100%;}
+    #barragov{width:auto;border-bottom:#bc8c00 1px solid;margin:0 auto;}
+    #barraana{width:auto; margin:0 auto; border-top:#FFF 1px solid; border-bottom:#FFF 0px solid; margin-bottom:0; height:10px; background:url(http://portal2010.ana.gov.br/_img/linha_ana.gif) repeat-x top;}
+    #topo{ /*clear:both;*/ min-width:1000px; height:65px; vertical-align:bottom; margin:0 5px; *margin-top:-19px; background:#eee;} /** Topo da Página **/ 
+    #logo{float:left; width:153px; height:65px; margin:0 10px 0 0;}
+    #logo a{float:left; width:154px; height:62px;background:url(/portal/_img/logo_ana.gif) no-repeat; text-indent:-9999px; overflow:hidden;}
+    #topoDir{margin:2px 6px 2px auto; float:right;}
+    #titSistema{float:right;color:#27408B;font-size:1.5em;font-weight:bold;position:relative;}
+    .lblTitPagina{color:Black;font-size:1.3em;/*text-decoration:underline*/}
+    #menu{float:right;margin-top:7px;*margin-top:-11px;padding:0;position:relative;min-width:0;height:0px;z-index:1000;}
+    #menu a{color:Black;font-size:0.9em;text-decoration:none;}
+    #menu a:hover{text-decoration:none;}
+    #conteudo{min-width:1000px; border:1px solid #eee; border-top:none; padding:5px; margin:auto 5px 20px 5px; z-index:2}
+    .titCorpo{height:16px; margin:3px 1px;border-bottom:2px solid #eee; text-align:center; font-size:1em; font-weight:bold;color:#27408B;}
+    .msgError{font-size:0.8em;color:Red;}
+    .adjustedZIndex {z-index:1000}
+    .ModalWindow {background:#FFFFEA;position:absolute;padding:10px;font-weight:bold;}
+    .modalBackground {background-color:#CCCCFF;filter:alpha(opacity=40);opacity:0.5;}
+    .TituloModal {background:#336699;color:White;}
+.msg {
+    width:100%;
+    margin-top:2px;
+    padding-bottom:7px;
+    padding-top:1px;
+    text-align:center;
+}
+    .msgOk {
+        border:solid 1px #19f808;
+        padding:3px 15px;
+        background-color:#d1fabc;
+        width:auto;
+}
+.msgAlerta {
+        border:solid 1px #a0a106;
+        padding:3px 15px;
+        background-color:#f6fb85;
+        width:auto;
+}
+.msgErro {
+        border:solid 1px #fc0404;
+        padding:3px 15px;
+        background-color:#fac9c9;
+        width:auto;
+}
+    </style>
+<body>
+    
+    <div id="barraana"><hr id="linhaana"/></div>
+    <form method="post" action="./Contato.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5NjMwODM2NjMPZBYCZg9kFgICAw9kFgQCAw88KwANAQwUKwAFBQ8wOjAsMDoxLDA6MiwwOjMUKwACFggeBFRleHQFD1Zpc3VhbGl6YcOnw7Vlcx4FVmFsdWUFD1Zpc3VhbGl6YcOnw7Vlcx4LTmF2aWdhdGVVcmwFASMeBlRhcmdldAUFX3NlbGYUKwAEBQswOjAsMDoxLDA6MhQrAAIWCB8ABRpEYWRvcyBIaWRyb21ldGVvcm9sw7NnaWNvcx8BBRpEYWRvcyBIaWRyb21ldGVvcm9sw7NnaWNvcx8CBQx+L0RhZG9zLmFzcHgfAwUFX3NlbGZkFCsAAhYIHwAFGEVzdGHDp8O1ZXMgVGVsZW3DqXRyaWNhcx8BBRhFc3Rhw6fDtWVzIFRlbGVtw6l0cmljYXMfAgUbfi9Fc3RhY29lc1RlbGVtZXRyaWNhcy5hc3B4HwMFBV9zZWxmZBQrAAIWCB8ABQxHb29nbGUgRWFydGgfAQUMR29vZ2xlIEVhcnRoHwIFI34vTWFwYS5hc3B4P3RwPUVzdGFjb2VzVGVsZW1ldHJpY2FzHwMFBV9zZWxmFCsACgUjMDowLDA6MSwwOjIsMDozLDA6NCwwOjUsMDo2LDA6NywwOjgUKwACFggfAAUfRXN0YcOnw7VlcyBIaWRyb21ldGVvcm9sw7NnaWNhcx8BBR9Fc3Rhw6fDtWVzIEhpZHJvbWV0ZW9yb2zDs2dpY2FzHwIFKn4vTWFwYS5hc3B4P3RwPUVzdGFjb2VzSGlkcm9tZXRlb3JvbG9naWNhcx8DBQVfc2VsZmQUKwACFggfAAUTUmlvIFBhcmHDrWJhIGRvIFN1bB8BBRNSaW8gUGFyYcOtYmEgZG8gU3VsHwIFHn4vTWFwYS5hc3B4P3RwPVJpb1BhcmFpYmFkb1N1bB8DBQVfc2VsZmQUKwACFggfAAUSUmlvIFPDo28gRnJhbmNpc2NvHwEFElJpbyBTw6NvIEZyYW5jaXNjbx8CBR5+L01hcGEuYXNweD90cD1SaW9TYW9GcmFuY2lzY28fAwUFX3NlbGZkFCsAAhYIHwAFEFJpbyBJdGFqYcOtLUHDp3UfAQUQUmlvIEl0YWphw60tQcOndR8CBRx+L01hcGEuYXNweD90cD1SaW9JdGFqYWktQWN1HwMFBV9zZWxmZBQrAAIWCB8ABRJCYWNpYSBSaW8gQW1hem9uYXMfAQUSQmFjaWEgUmlvIEFtYXpvbmFzHwIFH34vTWFwYS5hc3B4P3RwPUJhY2lhUmlvQW1hem9uYXMfAwUFX3NlbGZkFCsAAhYIHwAFElN1Yi1CYWNpYSBSaW8gRG9jZR8BBRJTdWItQmFjaWEgUmlvIERvY2UfAgUffi9NYXBhLmFzcHg/dHA9U3ViLUJhY2lhUmlvRG9jZR8DBQVfc2VsZmQUKwACFggfAAUhRXN0YcOnw7VlcyAtIEFsYWdvYXMgZSBQZXJuYW1idWNvHwEFIUVzdGHDp8O1ZXMgLSBBbGFnb2FzIGUgUGVybmFtYnVjbx8CBSp+L01hcGEuYXNweD90cD1Fc3RhY29lcy1BbGFnb2FzZVBlcm5hbWJ1Y28fAwUFX3NlbGZkFCsAAhYIHwAFGkVzdGHDp8O1ZXMgUmVzLiBDb25qdW50YSAzHwEFGkVzdGHDp8O1ZXMgUmVzLiBDb25qdW50YSAzHwIFJH4vTWFwYS5hc3B4P3RwPUVzdGFjb2VzUmVzLkNvbmp1bnRhMx8DBQVfc2VsZmQUKwACFggfAAUYUG9udG9zIGRlIE1vbml0b3JhbWVudG9zHwEFGFBvbnRvcyBkZSBNb25pdG9yYW1lbnRvcx8CBSV+L01hcGEuYXNweD90cD1Qb250b3NkZU1vbml0b3JhbWVudG9zHwMFBV9zZWxmZBQrAAIWBh8ABQtXZWJTZXJ2aWNlcx8BBQtXZWJTZXJ2aWNlcx8CBQEjFCsADAUsMDowLDA6MSwwOjIsMDozLDA6NCwwOjUsMDo2LDA6NywwOjgsMDo5LDA6MTAUKwACFggfAAUaRGFkb3MgSGlkcm9tZXRlb3JvbMOzZ2ljb3MfAQUaRGFkb3MgSGlkcm9tZXRlb3JvbMOzZ2ljb3MfAgUtfi9TZXJ2aWNlQU5BLmFzbXg/b3A9RGFkb3NIaWRyb21ldGVvcm9sb2dpY29zHwMFBl9ibGFua2QUKwACFggfAAUjRGFkb3MgSGlkcm9tZXRlb3JvbMOzZ2ljb3MgLSBHZXJhaXMfAQUjRGFkb3MgSGlkcm9tZXRlb3JvbMOzZ2ljb3MgLSBHZXJhaXMfAgUzfi9TZXJ2aWNlQU5BLmFzbXg/b3A9RGFkb3NIaWRyb21ldGVvcm9sb2dpY29zR2VyYWlzHwMFBl9ibGFua2QUKwACFggfAAUYRXN0YcOnw7VlcyBUZWxlbcOpdHJpY2FzHwEFGEVzdGHDp8O1ZXMgVGVsZW3DqXRyaWNhcx8CBS5+L1NlcnZpY2VBTkEuYXNteD9vcD1MaXN0YUVzdGFjb2VzVGVsZW1ldHJpY2FzHwMFBl9ibGFua2QUKwACFggfAAUZSElEUk8gLSBCYWNpYSAvIFN1YkJhY2lhIB8BBRlISURSTyAtIEJhY2lhIC8gU3ViQmFjaWEgHwIFJ34vU2VydmljZUFOQS5hc214P29wPUhpZHJvQmFjaWFTdWJCYWNpYR8DBQZfYmxhbmtkFCsAAhYIHwAFEUhJRFJPIC0gRW50aWRhZGVzHwEFEUhJRFJPIC0gRW50aWRhZGVzHwIFI34vU2VydmljZUFOQS5hc214P29wPUhpZHJvRW50aWRhZGVzHwMFBl9ibGFua2QUKwACFggfAAUOSElEUk8gLSBFc3RhZG8fAQUOSElEUk8gLSBFc3RhZG8fAgUgfi9TZXJ2aWNlQU5BLmFzbXg/b3A9SGlkcm9Fc3RhZG8fAwUGX2JsYW5rZBQrAAIWCB8ABRNISURSTyAtIEludmVudMOhcmlvHwEFE0hJRFJPIC0gSW52ZW50w6FyaW8fAgUkfi9TZXJ2aWNlQU5BLmFzbXg/b3A9SGlkcm9JbnZlbnRhcmlvHwMFBl9ibGFua2QUKwACFggfAAURSElEUk8gLSBNdW5pY2lwaW8fAQURSElEUk8gLSBNdW5pY2lwaW8fAgUjfi9TZXJ2aWNlQU5BLmFzbXg/b3A9SGlkcm9NdW5pY2lwaW8fAwUGX2JsYW5rZBQrAAIWCB8ABQtISURSTyAtIFJpbx8BBQtISURSTyAtIFJpbx8CBR1+L1NlcnZpY2VBTkEuYXNteD9vcD1IaWRyb1Jpbx8DBQZfYmxhbmtkFCsAAhYIHwAFGUhJRFJPIC0gU8OpcmllIEhpc3TDs3JpY2EfAQUZSElEUk8gLSBTw6lyaWUgSGlzdMOzcmljYR8CBSh+L1NlcnZpY2VBTkEuYXNteD9vcD1IaWRyb1NlcmllSGlzdG9yaWNhHwMFBl9ibGFua2QUKwACFgYfAAUYU2VydmnDp29zIHBhcmEgY29uc3VsdGFzHwEFGFNlcnZpw6dvcyBwYXJhIGNvbnN1bHRhcx8CBQEjFCsAAwUHMDowLDA6MRQrAAIWCB8ABQ9Db25zdWx0YXIgZGFkb3MfAQUPQ29uc3VsdGFyIGRhZG9zHwIFEX4vU2VydmljZUFOQS5hc214HwMFBl9ibGFua2QUKwACFggfAAULRXhpYmlyIFdTREwfAQULRXhpYmlyIFdTREwfAgUWfi9TZXJ2aWNlQU5BLmFzbXg/V1NETB8DBQZfYmxhbmtkFCsAAhYIHwAFC0Rlc2NyacOnw6NvHwEFC0Rlc2NyacOnw6NvHwIFE34vVGVsZW1ldHJpYTF3cy5wZGYfAwUGX2JsYW5rZBQrAAIWCB8ABQxGYWxlIENvbm9zY28fAQUMRmFsZSBDb25vc2NvHwIFDn4vQ29udGF0by5hc3B4HwMFBV9zZWxmZGQCCQ8PFgIfAAUHMzcyMzcwMWRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBSpjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGltYkVudmlhckNvbnRhdG/YPt1iKrgAOSJYWvbKxOFw3jEFrAb98ycOfNNlY0RBJQ==" />
+
+
+<script src="/telemetria1ws/WebResource.axd?d=zHW1zfcrC7b8Hc0o2PyPQPvZWqPrI2ZDBMH95c2J1JhTZCvs8vTRo_3vka8eIxdbbWW7nxOQjwcIaBEJe_lnKJer9UlZfqxVo_LzN1mHjhI1&amp;t=637109961120000000" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="585A3EF8" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAZ0wECcQe0BndN7R/h4xkaguBDVonQzsKAECautoet1mFf1tIAwDpA/p3iQAE0sdDsfzWiDNpSmjB46VzyvtgpJ2bIwIXZtJzVqyh9VvLULzcFR3K2thQknLHykN1wGhSCGcdWp26+sR543o9V+KvSOh2IMmfP2dKxZSTeBctcu9Q==" />
+    <div id="topo">
+	    <div id="logo">
+	      <a href="http://www2.ana.gov.br/Paginas/default.aspx"><img src="/portal/_img/logo_ana-branco.gif" alt="" /></a>
+	    </div>
+        <div id="topoDir">
+            <div id="titSistema">
+                <span id="lblTitSistema">WebServices</span>
+                
+            </div>
+            <div style="clear:both"></div>
+            
+
+            <div id="menu">
+                <a href="#Menu1_SkipLink"><img alt="Skip Navigation Links" src="/telemetria1ws/WebResource.axd?d=3zwQbX7vUdHTr9zUtAkJipUYzdscZODeQ8BPQ5kIs9z1ZqwN-pQ_q3i00rCnneyZTrlDfftUoNt8eBSPCpbgQUhzMMTD0UOPkcNmE-EWGR41&amp;t=637109961120000000" width="0" height="0" border="0" /></a><div id="Menu1">
+	<ul class="level1">
+		<li><a class="popout level1" href="#" target="_self">Visualizações</a><ul class="level2">
+			<li><a class="level2" href="Dados.aspx" target="_self">Dados Hidrometeorológicos</a></li><li><a class="level2" href="EstacoesTelemetricas.aspx" target="_self">Estações Telemétricas</a></li><li><a class="popout level2" href="Mapa.aspx?tp=EstacoesTelemetricas" target="_self">Google Earth</a><ul class="level3">
+				<li><a class="level3" href="Mapa.aspx?tp=EstacoesHidrometeorologicas" target="_self">Estações Hidrometeorológicas</a></li><li><a class="level3" href="Mapa.aspx?tp=RioParaibadoSul" target="_self">Rio Paraíba do Sul</a></li><li><a class="level3" href="Mapa.aspx?tp=RioSaoFrancisco" target="_self">Rio São Francisco</a></li><li><a class="level3" href="Mapa.aspx?tp=RioItajai-Acu" target="_self">Rio Itajaí-Açu</a></li><li><a class="level3" href="Mapa.aspx?tp=BaciaRioAmazonas" target="_self">Bacia Rio Amazonas</a></li><li><a class="level3" href="Mapa.aspx?tp=Sub-BaciaRioDoce" target="_self">Sub-Bacia Rio Doce</a></li><li><a class="level3" href="Mapa.aspx?tp=Estacoes-AlagoasePernambuco" target="_self">Estações - Alagoas e Pernambuco</a></li><li><a class="level3" href="Mapa.aspx?tp=EstacoesRes.Conjunta3" target="_self">Estações Res. Conjunta 3</a></li><li><a class="level3" href="Mapa.aspx?tp=PontosdeMonitoramentos" target="_self">Pontos de Monitoramentos</a></li>
+			</ul></li>
+		</ul></li><li><a class="popout level1" href="#">WebServices</a><ul class="level2">
+			<li><a class="level2" href="ServiceANA.asmx?op=DadosHidrometeorologicos" target="_blank">Dados Hidrometeorológicos</a></li><li><a class="level2" href="ServiceANA.asmx?op=DadosHidrometeorologicosGerais" target="_blank">Dados Hidrometeorológicos - Gerais</a></li><li><a class="level2" href="ServiceANA.asmx?op=ListaEstacoesTelemetricas" target="_blank">Estações Telemétricas</a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroBaciaSubBacia" target="_blank">HIDRO - Bacia / SubBacia </a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroEntidades" target="_blank">HIDRO - Entidades</a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroEstado" target="_blank">HIDRO - Estado</a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroInventario" target="_blank">HIDRO - Inventário</a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroMunicipio" target="_blank">HIDRO - Municipio</a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroRio" target="_blank">HIDRO - Rio</a></li><li><a class="level2" href="ServiceANA.asmx?op=HidroSerieHistorica" target="_blank">HIDRO - Série Histórica</a></li><li><a class="popout level2" href="#">Serviços para consultas</a><ul class="level3">
+				<li><a class="level3" href="ServiceANA.asmx" target="_blank">Consultar dados</a></li><li><a class="level3" href="ServiceANA.asmx?WSDL" target="_blank">Exibir WSDL</a></li>
+			</ul></li>
+		</ul></li><li><a class="level1" href="Telemetria1ws.pdf" target="_blank">Descrição</a></li><li><a class="level1" href="Contato.aspx" target="_self">Fale Conosco</a></li>
+	</ul>
+</div><a id="Menu1_SkipLink"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="conteudo">
+        <script type="text/javascript">
+			function FecharModal() {
+				document.getElementById('dvBlockPagina').style.display = "none";
+				document.getElementById('dvMensagem').style.display = "none";
+			}
+		</script>
+		<div id="dvBlockPagina" style="position: fixed; z-index: 1001; min-width: 100%; min-height: 100%; left: 0; top: 0px; background-color: #eee; opacity: 0.7; padding: 3px; display: block;"></div>
+
+		<div id="dvMensagem" 
+			style="position: absolute; z-index: 1003; background-color: #FFF; padding: 3px; font-size: 10pt;display: inline-block; margin-left:5%; margin-top:25px; ">
+			<style type="text/css">
+				p {
+					line-height: 1.5em;
+					text-indent: 3em;
+				}
+			</style>
+
+			<div style="width: 857px; border: 1px solid #eee;padding:5px; padding-left:10px;">
+
+				<span id="spFecharModal" class="navegacao" style="position: relative; float: right; margin-top: -2px; cursor: pointer;" title="Fechar janela" onclick="FecharModal()">
+					<img src="img/btnCancelar.fw.png" id="imFechar" alt="" />
+					
+				</span>
+				<div style="clear: both; height: 2px;"></div>
+				<div style="float: right; font-size: 0.8em;">Brasília-DF, 13 de outubro de 2025.</div>
+				<h2>ATENÇÃO!!!</h2>
+				<p>
+					Conforme aviso disponibilizado, nesta página, em 13/08/2023, este serviço deveria ter 
+                    sido descontinuado em 31/08/2024, e seus usuários migrados para a nova API. Mas, devido 
+                    à solicitação de vários usuários, a ANA decidiu por prorrogar este período até <b>30/06/2026</b>.
+				</p>
+                <p>
+					Entretanto, em virtude da grande defasem tecnológica, houve a necessidade de redirecionar 
+                    o serviço para uma base de dados de secundária, <b>que apresenta menor desempenho e possui 
+                    uma pequena defasagem na atualização das informações</b>.
+				</p>
+				<p>
+					Os usuários que desejam migrar para o novo serviço, mais moderno e completo, devem encaminhar 
+                    um email para <b>hidro@ana.gov.br</b>, com o assunto "<b>Solicitação de acesso à API</b>". No corpo do e-mail, 
+                    inclua uma breve explicação (em poucas linhas) sobre a motivação da solicitação e forneça as 
+                    seguintes informações para o cadastro:
+                </p>
+                <div style="margin-left:15px">
+                    <ul>
+                        <li><b>Nome do usuário ou instituição</b></li>
+                        <li><b>CPF ou CNPJ</b> (para ser utilizado como usuário)</li>
+                        <li><b>Endereço de e-mail</b> (será utilizado para o recebimento da senha de acesso)</li>
+                    </ul>
+                </div>
+
+				
+                <p>
+                    Após o recebimento do e-mail nossa equipe irá avaliar sua solicitação e, caso necessário, 
+                    entrar em contato para solicitar mais informações.
+                </p>
+                <p>
+                    Link para o manual de acesso ao novo serviço: 
+                    <a target="_blank" title="Tutorial de Serviço para Consumo de Dados - API HidroWebService" 
+                        href="https://www.gov.br/ana/pt-br/assuntos/monitoramento-e-eventos-criticos/monitoramento-hidrologico/orientacoes-manuais/manuais/manual-hidrowebservice_publica.pdf">
+                        Tutorial de Serviço para Consumo de Dados - API HidroWebService
+                    </a>
+                </p>
+				<br />
+				<span>
+					Atencionamente,<br />
+					Equipe técnica da ANA.
+				</span>
+				<p></p>
+
+			</div>
+			<!--
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<div style="position: relative; float: left; padding-right: 5px; line-height: 17px;"></div>
+
+			<div style="clear: both; height: 2px;"></div>
+			-->
+		</div>
+        <div>
+            
+
+    <script type="text/javascript">
+    function mascara_Tel(objeto, evento) {
+        var qtd = objeto.value.length;
+        var value = objeto.value;
+        var prtE = "(";
+        var prtD = ")";
+        var traco = "-";
+        if (qtd <= 1) {
+            objeto.value = prtE + value;
+        }
+        if (qtd == 3) {
+            objeto.value = value + prtD;
+        }
+        if (qtd == 8) {
+            objeto.value = value + traco;
+        }
+    }
+</script>
+    <div>
+        <div class="titCorpo">Fale Conosco</div>
+        <p></p>
+        
+    </div>
+    <table style="width: 100%;">
+        <tr>
+            <td style="width:15%">
+                Nome Completo: 
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtNome" type="text" id="ContentPlaceHolder1_txtNome" />
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-mail: 
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" id="ContentPlaceHolder1_txtEmail" />
+                <span style="position:absolute;padding-top:6px; padding-bottom:2px;">
+                    &nbsp;
+                </span>
+                <span style="position:absolute;padding-top:6px; padding-bottom:2px;">
+                    &nbsp;
+                </span>            
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefone: 
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtTel" type="text" maxlength="13" id="ContentPlaceHolder1_txtTel" onkeyup="return mascara_Tel(this,&#39;&#39;);" />
+                
+                <span style="position:absolute;padding-top:6px; padding-bottom:2px;">
+                    &nbsp;
+                </span>
+                <span style="position:absolute;padding-top:6px; padding-bottom:2px;">
+                    
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mensagem: 
+            </td>
+            <td valign="top">
+                <textarea name="ctl00$ContentPlaceHolder1$txtMensagem" rows="6" cols="20" id="ContentPlaceHolder1_txtMensagem">
+</textarea>
+                &nbsp;
+            </td>
+        </tr>
+        <tr><td>
+            <input type="image" name="ctl00$ContentPlaceHolder1$imbEnviarContato" id="ContentPlaceHolder1_imbEnviarContato" title="Enviar Mensagem" src="img/icon-enviarEmail.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$imbEnviarContato&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" />
+        </td></tr>
+    </table>
+
+        </div>
+
+    </div>
+    <div id="rodape" style="float:left; clear:both; font-size:0.7em;">Agência Nacional de Águas - ANA/SGH/GPLAN ( Total de Visitantes: 
+          <span id="lblContador"><b>3723701</b></span> )
+          <br /><span style="font-size:0.9em;"> Sistema melhor visualizado no Internet Explorer 8.0 ou superior.</span>
+    </div>
+
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'Menu1', disappearAfter: 100, orientation: 'horizontal', tabIndex: 0, disabled: false });</script></form>
+</body>
+</html>

@@ -1,0 +1,371 @@
+{
+  "passed": true,
+  "failures": [],
+  "checks": [
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/docs/rating-paired-only-protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/experiment.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/artifact-hashes.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_rating_paired_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed source hydro_rating_paired_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_downstream_flow_delta.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed source hydro_downstream_flow_delta.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed source hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed source hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "protocol source match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prior frozen input dados-roteamento.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prior frozen input telemetria-latencia.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prior frozen input conferencia-balanco.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prior predictions unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fit H/Q equal exact raw grid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all finite paired Q nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "curve evaluation no duplicates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/original_membership: strict membership and cutoff",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/original_membership: max Q and bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/original_membership: preserved soft_l1 cost",
+      "passed": true,
+      "detail": {
+        "difference": 0.0,
+        "cost_recomputed": 5.7906047748853355
+      }
+    },
+    {
+      "check": "validation/all_paired_hq: strict membership and cutoff",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/all_paired_hq: max Q and bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/all_paired_hq: preserved soft_l1 cost",
+      "passed": true,
+      "detail": {
+        "difference": 0.0,
+        "cost_recomputed": 11.408321247058034
+      }
+    },
+    {
+      "check": "test/original_membership: strict membership and cutoff",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "test/original_membership: max Q and bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "test/original_membership: preserved soft_l1 cost",
+      "passed": true,
+      "detail": {
+        "difference": 0.0,
+        "cost_recomputed": 10.684558458770901
+      }
+    },
+    {
+      "check": "test/all_paired_hq: strict membership and cutoff",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "test/all_paired_hq: max Q and bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "test/all_paired_hq: preserved soft_l1 cost",
+      "passed": true,
+      "detail": {
+        "difference": 0.0,
+        "cost_recomputed": 16.893058312192565
+      }
+    },
+    {
+      "check": "curve evaluation same paired population exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "curve evaluation values reproduce",
+      "passed": true,
+      "detail": {
+        "max_difference_m": 0.0
+      }
+    },
+    {
+      "check": "preJuly8880to10890 high128to256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "old control parameters reproduced",
+      "passed": true,
+      "detail": {
+        "max_difference": 6.09876593671288e-11
+      }
+    },
+    {
+      "check": "same initial bounds loss no optimizer search",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "fit residual only indexed H/Q",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "candidate pure inputs exclude target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "candidate call contains no future target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "23538 rows keys order unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "baseline targets anchors status preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "candidate preserves inferred flow and only changes curve/offset",
+      "passed": true,
+      "detail": {
+        "max_q_difference_m3_s": 0.0,
+        "max_level_difference_m": 0.0,
+        "row_errors": []
+      }
+    },
+    {
+      "check": "old-curve roundtrip",
+      "passed": true,
+      "detail": {
+        "max_difference_m": 7.105427357601002e-15
+      }
+    },
+    {
+      "check": "decomposition exact eligibility and unique rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "decomposition components and identity",
+      "passed": true,
+      "detail": {
+        "max_difference_across_stored_components_m_or_m3s": 7.105427357601002e-15
+      }
+    },
+    {
+      "check": "no promotion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all audited inputs unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/experiment.json": "d63520e580d35bbf3255a9cd8f1ffa404dd2e9aa2d38a561eadba54db70f2ad0",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/protocol.json": "f65b0149025e874caf54235b43cc54570290774aa433ff3fc19e6ba70bec8089",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/experiment.json": "2d7367cdfd1952153058c1285a2c0be8652e55d56f770e392df53513055f6e5f",
+    "/Users/brunozilio/Documents/radar/docs/rating-paired-only-protocol.json": "f65b0149025e874caf54235b43cc54570290774aa433ff3fc19e6ba70bec8089",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/predictions.csv": "c4b95775c5b088467629a2b3ff3dec375dc3a29192943a6271c378670f331369",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/artifact-hashes.json": "124c28421e6ff75196c9fdbe368dbc9d8cd8711dabbab4ee4b4859500dbd2c58",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_rating_paired_fit.py": "d9e5adbb561a6510fd3356311184322861625a45e56c68b0b141a975d7c1bcfd",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/code/hydro_rating_paired_fit.py": "d9e5adbb561a6510fd3356311184322861625a45e56c68b0b141a975d7c1bcfd",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_downstream_flow_delta.py": "c79878a33701ca1e663da6e7db77c38588374878cc464389af4271859b9bbece",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/code/hydro_downstream_flow_delta.py": "c79878a33701ca1e663da6e7db77c38588374878cc464389af4271859b9bbece",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py": "2c265b53228f8345a05de279c09c8f324f4025d641ed948b43619a4f477cb85c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/code/hydro_hourly_forecast.py": "2c265b53228f8345a05de279c09c8f324f4025d641ed948b43619a4f477cb85c",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/code/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/curves.json": "65fef1c1bb062c422c3c5a35393173cbf69d479ce958e59e0b202a990d04898e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/training.csv": "5abe2b40cc6fc5ea53efdbb3b4e98fdb343ce4611d8985b5a5636ae1b3d2fd0a",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/curve-fit-pairs.csv": "ef93659b83b9758bcf5b9c0677addb0970a90be7d4be2cfca18bd9319ceeea16",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/predictions.csv": "4e8223a76014b8e308e0e43cbae8f54d4b3e2b28e652682781538702c810fb5a",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-curva-pares-hq-20260921/error-decomposition.csv": "a843833055d3986f775c54e429a072d1d40073d121ecb12a7bd02e1898adca15"
+  },
+  "training_membership": [
+    {
+      "phase": "validation",
+      "family": "original_membership",
+      "n": 3025,
+      "high_n": 100,
+      "latest_training_epoch": 1759284000.0,
+      "indices_sha256": "22512af7fe847ea1847b950ac1606908fc8fd51bdf1529aabc849ea34e48a004"
+    },
+    {
+      "phase": "validation",
+      "family": "all_paired_hq",
+      "n": 4373,
+      "high_n": 228,
+      "latest_training_epoch": 1759284000.0,
+      "indices_sha256": "d98d22ab9f5a687cb23c7593341db7c0d00ec2bc04c900327ddcc9209d3e56de"
+    },
+    {
+      "phase": "test",
+      "family": "original_membership",
+      "n": 8880,
+      "high_n": 128,
+      "latest_training_epoch": 1782648000.0,
+      "indices_sha256": "f48dc65aae76987a1f7b1b02cf91e1602cc3339312b9ced564acaf5bb81ca8fc"
+    },
+    {
+      "phase": "test",
+      "family": "all_paired_hq",
+      "n": 10890,
+      "high_n": 256,
+      "latest_training_epoch": 1782871200.0,
+      "indices_sha256": "3a471c68775ac2148e0f4f814ff26e436d51a5548580f1741ff03360df9d099c"
+    }
+  ],
+  "rows": 23538,
+  "decomposition_population": {
+    "decomposed": 23091,
+    "missing_target_H": 276,
+    "missing_baseline_or_anchor": 159,
+    "missing_reported_target_Q": 12
+  },
+  "same_q_max_difference_m3_s": 0.0,
+  "candidate_max_difference_m": 0.0,
+  "reference_parameters_max_difference": 6.09876593671288e-11,
+  "decomposition_max_difference": 7.105427357601002e-15,
+  "optimizers_run": 0,
+  "performance_metrics_computed": false,
+  "causality_certified": false,
+  "limitations": [
+    "Reported ANA Q is not certified independent physical gauging.",
+    "Components are algebraic and may compensate; they are not independent physical causes.",
+    "Decomposition requires reported target Q, reducing population and potentially excluding flood times.",
+    "Same reconstructed totalQ is preserved; no full HGE rerun performed.",
+    "All inspected dates remain historical development, not independent evaluation."
+  ],
+  "created_at_utc": "2026-09-21T23:44:13.298567+00:00",
+  "decomposition_exclusion_priority": [
+    "missing_target_H",
+    "missing_baseline_or_anchor",
+    "missing_reported_target_Q",
+    "decomposed"
+  ]
+}

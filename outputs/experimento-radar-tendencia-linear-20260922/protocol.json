@@ -1,0 +1,29 @@
+{
+  "id": "radar-linear-trend-hybrid-v1",
+  "registered_at_utc": "2026-09-22T04:43:22.594125+00:00",
+  "parent": "outputs/experimento-radar-mistura-atrasos-20260922",
+  "motivation": "Frozen age feature experiment had no improvement at12h. Diagnostic shows both out-of-training-response underestimation and errors within response range. Test an additive linear trend component that can extrapolate; do not infer this alone solves either problem.",
+  "one_change": "For the mixed-profile candidate only, replace a tree-only delta predictor by a ridge delta predictor plus a tree predictor of its training residual. The tree sees the same180original columns. Ridge sees exactly20 existing nominal-rate columns: [6*g+k for g in range(4) for k in range(1,6)]. No anchor age column.",
+  "linear_stage": {
+    "features": "dH0.5,dH1,dH2,dH4,dH8 for Muçum,Linha,SantaTereza,Carreiro, in existing order",
+    "imputation": "Unweighted per-column median computed on this fold/horizon training rows only. Training values are required all finite by common complete24 mask; imputation applies to missing evaluation slopes only. Original tree missing values untouched.",
+    "scaling": "sklearn StandardScaler fit with original training sample weights, only training inputs; scale constant features per StandardScaler contract.",
+    "estimator": "sklearn Ridge(alpha=1000.0, fit_intercept=True, solver=cholesky), same original sample weights. Fixed once; no hyperparameter search.",
+    "target": "target minus selected-profile base, identical to parent delta",
+    "tree_residual": "delta minus fitted ridge prediction on training rows; fit HGB using unchanged parent parameters and original weights based on delta/target (not residual).",
+    "inference": "base + ridge(imputed standardized existing slopes) + residual_tree(original180inputs). Also report base+ridge alone as descriptive component baseline. No clipping, horizon switching, or fit-on-test."
+  },
+  "preserved": "Exact parent common masks,PCG64(57)assignment,onephysicalrowonce,chronologicalorder,targets,base,weights,180inputs,all temporal cutoffs.24bundles(two folds by12h),48 fitted estimators. Reproduce72parent models across two profiles,144 applications.",
+  "evaluation": "Same204168profile rows,5families(parent3,linear_trend_only,linear_trend_hybrid),1440metrics including full/complete24/missing24 and all/observed>=7. Include missing forecast failures in observed denominators, missing truth separately. Evaluate bothprofiles and allhorizons, no favorable selection.",
+  "limits": [
+    "Known development periods, not fresh independent validation.",
+    "These two profiles are alternative input views, not independent samples.",
+    "Historical source publication, timezone, datum, flood independence still not certified.",
+    "Additive linear extrapolation is not a physical flood-routing model or guaranteed stable outside training.",
+    "No operational change, live issuance, model promotion, or goal-completion claim."
+  ],
+  "planned_bundles": 24,
+  "planned_estimators": 48,
+  "promoted": false,
+  "goal_achieved": false
+}

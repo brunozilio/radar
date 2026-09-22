@@ -1,0 +1,13 @@
+{
+  "id": "radar-observed-only-native-v1",
+  "scope": "Local historical RADAR ablation, registered before fitting. No2023/2024 augmentation in this run, no operational promotion, no live issuance.",
+  "reference": "Frozen candidate family of experimento-radar-ausencias-nativas-runtime19-20260921:180features, native missing training, original2025/2026 membership. Load24models and reproduce their saved predictions exactly. No control refit.",
+  "candidate": "Use exactly the first120telemetry columns: observed levels/trends, reported Q/I/trends, observed regional rainfall and coverage. Remove the60previous_day1 NWP predictors from both fitting and inference; do not set future rainfall tozero. Same finite base/target training masks, all scheduled evaluation origins, native auxiliary missingness.",
+  "parameters": "Frozen per-horizon loss/leaf_nodes from reference training.csv, max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57; weights1+2*(abs(target-base)>=1)+2*(target>=9). Runtime must match reference. No parameter search; parameters originally selected for180features, so this is an untuned ablation rather than a claim of optimal120feature performance.",
+  "dates": "Preserve original two chronological training blocks and October boundary exclusion. Validation origins fromOctober1/2025 with target<July1/2026; test origins fromJuly1/2026 with target<September21/2026. All102084 rows retained, including missing targets/base. No2024or2023 rows enter this comparison.",
+  "evaluation": "All12nominal horizons; all targets and observed>=7m; full_schedule, original complete24 and missing24 subsets. Preserve coverage/failures. Report hits<=0.50m, paired and observed-target hit fractions, MAE,bias,P98,max. Never select only successful origins or combine models by horizon after seeing results.",
+  "purpose": "Establish a frozen120feature control before any future historical augmentation where archived NWP is unavailable. Keep removing NWP separate from adding old examples. Existing six-target22h comparison is not independent historical validation.",
+  "limits": "All periods have already been inspected: descriptive development, not untouched holdout. Fixed delays, source revisions, datum/timezone and publication-time gaps remain. No98percent or causal hydrological claim from this ablation. Removing NWP changes a statistical input set, not the physical future weather.",
+  "promoted": false,
+  "goal_achieved": false
+}

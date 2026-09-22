@@ -1,0 +1,16 @@
+{
+  "id": "radar-2018-observed-hourly-anchor-v1",
+  "scope": "Prepare frozen120observed-feature research matrices only. No fitting, inference, operational change or promotion.",
+  "windows": [{"warmup_start":"2018-08-27","origin_start":"2018-08-30","stop_exclusive":"2018-09-06"},{"warmup_start":"2018-09-27","origin_start":"2018-09-30","stop_exclusive":"2018-10-07"}],
+  "feature_catalog": "Same120field order/formulas as hydro_latency_forecast.telemetry_features: four6field level families, three7field ONS families and five15field rain families. No weather forecasts or reanalysis added.",
+  "level_contract": "Muçum uses exact approved observation at O-1h, maxage0, as explicitly experimental adaptation to its hourly cadence. Other levels preserve declared delays: Linha30min, SantaTereza15min, Carreiro30min, maximum age15min afterquery. Never skip an invalid latest value. Derivatives use existing quarter-hour grid shifts and nominal0.5/1/2/4/8h; Muçum0.5h derivative staysNaN. No bridge across windows, rounding or carried-forward Muçum levels.",
+  "quality": "ANA inputs and truth require explicitly Dado aprovado, finite nonnegative values; rain must also be<=150mm. Keep missing and rejected asNaN. Source ALL-QC files remain unchanged. This strictQC rule differs from older helpers allowing absentQC and must be applied equivalently to any future comparison.",
+  "rain": "Existing observed_rain_windows integration only: increments with0<interval<=5400seconds; partial boundary fraction uses actual timestamps. Preserved fixed regional weights and frozen station delays from auditoria-latencias-chuva-20260921, using their effective15min shift_steps. Threshold coverage>=0.5; no renormalization, no lower threshold, no assuming absent station is dry. Reject coarse intervals individually, not entire stations.23:01 remains literal.",
+  "ons": "Literal Q/I from frozen2018 monthly source-values CSVs; declared lag60min/maxage90min afterquery. Preserve23:59, zeros, negatives and diagnostics, without clipping rawQ/I or substituting components. The existing Qpower feature retains max(Q/1000,0)^0.6. No new QC or repaired values.",
+  "truth_and_schedule": "Exact approved Muçum at O+h for nominalh1..12, within the same central7day window; report finalboundary exclusions, missingtruth and basefailures separately. Missing features remainNaN; no complete24restriction. Every168hourlyorigin retained ineachwindow.",
+  "time": "Apply UTC-3 solely as explicit computational assumption matching frozen helpers, retain literal timestamps in source files. No certification of timezone/DST, datum, firstpublication, event independence or operational availability. Measurementlag assumptions are not recovered publicationlogs.",
+  "verification": "Seal sources/code/protocol beforepreparation and matrix/artifact hashes afterward; retain quarterhour arrays, source traces and rain coverage. Independently reconstruct exactMu anchors/targets and rainfall before any fit.",
+  "future_training": "Any augmentation experiment needs a separate preregistered protocol with common temporal/feature/QC contracts for contemporary controls and2018candidate, fixed cutoffs and identical evaluation rows. These newly prepared matrices do not alone justify fitting mismatched inputs, promotion or98percent claims.",
+  "promoted": false,
+  "goal_achieved": false
+}

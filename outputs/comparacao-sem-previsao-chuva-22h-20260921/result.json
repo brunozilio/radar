@@ -1,0 +1,77 @@
+{
+  "reference_at": "2026-09-21T22:00:00-03:00",
+  "computed_at": "2026-09-21T22:19:51.660257-03:00",
+  "observation": {
+    "time": "2026-09-21T21:30:00-03:00",
+    "level_m": 16.17
+  },
+  "status": "offline retrospective diagnostic; not a prospectively issued forecast",
+  "training_cutoff": "2026-09-21T00:00:00-03:00",
+  "features_retained": 120,
+  "future_rain_features_removed": 60,
+  "sources": {
+    "outputs/mucum-hourly-20260921T220010-0300/radar-features.npz": "4b2d9813c17a61b43822b47a213842a5e7095e8f16e0c079b3e90101667df679"
+  },
+  "points": [
+    {
+      "target": "2026-09-21T23:00:00-03:00",
+      "site_m": 16.85627218042998,
+      "local_with_forecast_m": 17.138005179943782,
+      "retrained_with_forecast_m": 17.138005179943782,
+      "observed_only_m": 17.198647180880325,
+      "paired_difference_m": 0.06064200093654293,
+      "baseline_reproduction_error_m": 0.0,
+      "training_rows": 10915
+    },
+    {
+      "target": "2026-09-22T00:00:00-03:00",
+      "site_m": 17.639199301474637,
+      "local_with_forecast_m": 17.687505020174704,
+      "retrained_with_forecast_m": 17.687505020174704,
+      "observed_only_m": 17.86898996981416,
+      "paired_difference_m": 0.18148494963945438,
+      "baseline_reproduction_error_m": 0.0,
+      "training_rows": 10908
+    },
+    {
+      "target": "2026-09-22T01:00:00-03:00",
+      "site_m": 18.000239803438884,
+      "local_with_forecast_m": 18.156463359667455,
+      "retrained_with_forecast_m": 18.156463359667455,
+      "observed_only_m": 18.155496869977235,
+      "paired_difference_m": -0.0009664896902208397,
+      "baseline_reproduction_error_m": 0.0,
+      "training_rows": 10905
+    },
+    {
+      "target": "2026-09-22T02:00:00-03:00",
+      "site_m": 18.26612896436389,
+      "local_with_forecast_m": 18.336787235722518,
+      "retrained_with_forecast_m": 18.336787235722518,
+      "observed_only_m": 18.410217636027856,
+      "paired_difference_m": 0.07343040030533743,
+      "baseline_reproduction_error_m": 0.0,
+      "training_rows": 10897
+    },
+    {
+      "target": "2026-09-22T03:00:00-03:00",
+      "site_m": 18.195040397450477,
+      "local_with_forecast_m": 18.077194539897317,
+      "retrained_with_forecast_m": 18.077194539897317,
+      "observed_only_m": 18.085139111666827,
+      "paired_difference_m": 0.007944571769510134,
+      "baseline_reproduction_error_m": 0.0,
+      "training_rows": 10896
+    },
+    {
+      "target": "2026-09-22T04:00:00-03:00",
+      "site_m": 17.943395373020913,
+      "local_with_forecast_m": 18.103166990344775,
+      "retrained_with_forecast_m": 18.103166990344775,
+      "observed_only_m": 17.913530786382328,
+      "paired_difference_m": -0.18963620396244707,
+      "baseline_reproduction_error_m": 0.0,
+      "training_rows": 10894
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id":"rating-all-paired-hq-v1",
+  "rationale":"Existing rating fit unnecessarily requires all routing-matrix predictors finite. Keep same nonlinearcurve, initialparameters, bounds, unweightedsoft_l1objective; relax only training membership to finite pairedMuçumH/Q. At preJulycutoff this restores128highleveltrainingpairs, without newsource or hindsightselection.",
+  "curve":"H=a*(Q/1000)^b+c; starting[4.5,.64,.4], bounds[.01,.1,-10]..[20,1.2,10], soft_l1. AllQnonnegative, a/bpositive. No tuning, observed-target clipping or artificial cap.",
+  "splits":"Fit original-membership and all-HQcurves separately beforeOct1/2025 for Oct1→Jul1validation and beforeJul1/2026 for Jul1→Sep21development. Same completeH/Q evaluationrows perphase, all and H>=7. OriginalpreJulyfit must reproduce preservedratingwithin1e-7.",
+  "downstream":"On23538preexistingJuly→Septorigin-targetrows, preserve routedestimatedflow, HGEstate/parameters/rain, upstreammodels, proxies, residualflow and tau6. Invert baselinelevel with oldcurve/oldanchoroffset to recoverQ; apply newlypreJulyfittedcurve and newoffset Hanchor-newstage(Qanchor). This isolates conversion only; compensating HGEcalibrationerrors mayremain. Preserve failures/targets, allhorizons1..12/all/high and0.50mtolerance.",
+  "diagnostic":"Qtarget is reported ANA discharge, not assumed independent physicalgauging. Separate baselinelevelerror into stage(Qpred)-stage(Qtarget) and offsetanchor-offsettarget whereQtargetexists. FutureQ participates only in diagnosis, never newprediction.",
+  "promotion":"No promotion from inspectedhistoricalperiods. Evaluate consistentvalidation and fulllevelperformance; independentfutureevents and originalgoalcriteria still required.",
+  "goal_achieved":false,
+  "live_issuance":false
+}

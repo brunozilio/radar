@@ -1,0 +1,140 @@
+{
+  "operation": {
+    "tags": [
+      "WSEstacoesTelemetricasController"
+    ],
+    "summary": "Séries de cota das estações convencionais (coleta manual). Deve ser informado o código de estação e período (limitado a 366 dias por requisição).",
+    "operationId": "gethidroseriecotas",
+    "parameters": [
+      {
+        "name": "Código da Estação",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      {
+        "name": "Tipo Filtro Data",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "enum": [
+            "DATA_LEITURA",
+            "DATA_ULTIMA_ATUALIZACAO"
+          ]
+        }
+      },
+      {
+        "name": "Data Inicial (yyyy-MM-dd)",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      {
+        "name": "Data Final (yyyy-MM-dd)",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      {
+        "name": "Horário Inicial (00:00:00)",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "Horário Final (23:59:59)",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Chamada Realizada com Sucesso",
+        "content": {
+          "*/*": {
+            "schema": {
+              "$ref": "#/components/schemas/Devolucao"
+            }
+          }
+        }
+      },
+      "417": {
+        "description": "Erro Inesperado. Expectativa Falha",
+        "content": {
+          "*/*": {
+            "schema": {
+              "$ref": "#/components/schemas/Devolucao"
+            }
+          }
+        }
+      },
+      "201": {
+        "description": "Recurso Criado com Sucesso",
+        "content": {
+          "*/*": {
+            "schema": {
+              "$ref": "#/components/schemas/Devolucao"
+            }
+          }
+        }
+      },
+      "401": {
+        "description": "Autorização é Requerida. Não Autorizado",
+        "content": {
+          "*/*": {
+            "schema": {
+              "$ref": "#/components/schemas/Devolucao"
+            }
+          }
+        }
+      },
+      "500": {
+        "description": "Erro Inesperado",
+        "content": {
+          "*/*": {
+            "schema": {
+              "$ref": "#/components/schemas/Devolucao"
+            }
+          }
+        }
+      },
+      "406": {
+        "description": "Parâmetro ou Informação Não Aceitável",
+        "content": {
+          "*/*": {
+            "schema": {
+              "$ref": "#/components/schemas/Devolucao"
+            }
+          }
+        }
+      }
+    },
+    "security": [
+      {
+        "Authorization": []
+      }
+    ]
+  },
+  "security_scheme": {
+    "type": "http",
+    "scheme": "bearer",
+    "bearerFormat": "JWT"
+  },
+  "data_query_executed": false,
+  "authentication_attempted": false
+}

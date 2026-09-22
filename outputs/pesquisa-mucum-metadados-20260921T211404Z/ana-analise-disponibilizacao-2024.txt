@@ -1,0 +1,884 @@
+
+--- PDF PAGE 1 ---
+Oficina – Progestão III – Meta I.6 –
+Monitoramento Hidrológico:
+Análise e Disponibilização de 
+Dados Hidrológicos
+Walszon Terllizzie Araújo Lopes
+João Carlos Carvalho 
+Coordenação de Dados e Informações Hidrometeorológicos - CODIH
+Superintendência de Gestão da Rede Hidrometeorológica - SGH
+Agência Nacional de Águas - ANA
+Brasília, 12 de novembro de 2024
+
+--- PDF PAGE 2 ---
+• Todos os dados hidrometeorológicos observados
+(monitorados) necessitam de tratamentos e
+processamentos básicos para que os mesmos possam
+ser utilizados com confiabilidade.
+• As incertezas envolvidas nos dados medidos de
+precipitação, evaporação, nível de rio (cotas),
+descargas líquidas e sólidas, parâmetros de qualidade
+de água, etc., muito raramente, podem ser
+desprezadas sem passarem, pelo menos, por análises
+preliminares.
+INTRODUÇÃO
+2
+
+--- PDF PAGE 3 ---
+• Ferramentas computacionais que auxiliem a 
+padronizar, sistematizar e facilitar as análises de 
+dados hidrológicos são bastante úteis e devem ser 
+prioritariamente utilizadas.
+• Serão apresentados os principais sistemas 
+computacionais desenvolvidos e/ou utilizados pela 
+ANA/SGH/CODIH para facilitar e padronizar as 
+análises e disponibilização de dados hidrológicos.
+INTRODUÇÃO
+3
+
+--- PDF PAGE 4 ---
+1. Walszon Terllizzie Araújo Lopes <walszon@ana.gov.br>. Coordenador, Esp. em Recursos Hídricos.
+2. Andrelina Laura dos Santos <andrelina.terceirizado@ana.gov.br>. Colaboradora.
+3. Dhalton Luiz Tosetto Ventura <Dhalton.Ventura@ana.gov.br>. Especialista em Recursos Hídricos.
+4. Diego Raphael Alves e Santos <diego.alves.terceirizado@ana.gov.br>. Colaborador.
+5. Gabriel Meldau Lemos <gabriel.lemos@ana.gov.br>. Especialista em Recursos Hídricos.
+6. Gabriel Reis de Vasconcelos <gabriel.vasconcelos.terceirizado@ana.gov.br>. Colaborador.
+7. Isadora Santos Dias <isadora.dias.terceirizado@ana.gov.br>. Colaboradora.
+8. João Carlos Carvalho <Joao.Carvalho@ana.gov.br>. Especialista em Recursos Hídricos.
+9. Jorge Augusto Pimentel Filho <Jorge.Filho@ana.gov.br>. Especialista em Recursos Hídricos.
+10. Josue Lazarini Flores <josue.flores.terceirizado@ana.gov.br>. Colaborador.
+11. Matheus da Silva Castro <matheus.castro.terceirizado@ana.gov.br>. Colaborador.
+12. Maurício Silva <mauricio.silva@ana.gov.br>. Esp. em Geoprocessamento.
+13. Rafael de Araújo Mendes <rafael.mendes.terceirizado@ana.gov.br>. Colaborador.
+14. Rejane Moreira do Nascimento <rejane.nascimento.terceirizado@ana.gov.br>. Colaborada.
+15. Rita de Cássia Cerqueira Condé <rita.conde@ana.gov.br>. Especialista em Recursos Hídricos.
+16. Taiara Sampaio Santos <taiara.santos.terceirizado@ana.gov.br>. Colaboradora.
+ANA/SGH/CODIH - Equipe
+4
+
+--- PDF PAGE 5 ---
+• Art. 108. À Coordenação de Dados e Informações 
+Hidrológicas – CODIH compete:
+– I - coordenar as atividades relativas ao gerenciamento da 
+base de dados hidrometeorológicos provenientes da RHN;
+– II - controlar a quantidade e qualidade dos dados 
+provenientes da Rede Hidrometeorológica da ANA, bem 
+como das redes de monitoramento cuja necessidade de 
+implantação decorre da ação regulatória da ANA;
+– III – integrar ao SNIRH dados provenientes de redes 
+hidrometeorológicas relativas aos rios fronteiriços e 
+transfronteiriços, em articulação com os países envolvidos; 
+ANA/SGH/CODIH - Atribuições
+5
+
+--- PDF PAGE 6 ---
+• Art. 108. À Coordenação de Dados e Informações 
+Hidrológicas – CODIH compete:
+– IV - acompanhar, junto às entidades operadoras, a análise de 
+consistência dos dados provenientes da Rede 
+Hidrometeorológica da ANA;
+– V - coordenar os processos relacionados ao recebimento, 
+tratamento, qualificação e disponibilização de dados 
+hidrometeorológicos de estações telemétricas da ANA; e
+– VI - prover o SNIRH com dados e informações hidrológicos da 
+RHN e
+– VII - participar do planejamento da RHN.
+ANA/SGH/CODIH - Atribuições
+6
+
+--- PDF PAGE 7 ---
+Rede Hidrometeorológica 
+da ANA
+7
+
+--- PDF PAGE 8 ---
+8
+
+
+--- PDF PAGE 9 ---
+Sistemas e Ferramentas 
+Computacionais para a 
+Análise de Dados 
+Hidrológicos
+9
+
+--- PDF PAGE 10 ---
+• Sistema para Gerenciamento e Análise de Dados 
+Hidrológicos (Hidro).
+• Sistema para Gerenciamento e Análise de Dados 
+Hidrológicos Telemétricos (Hidro-Telemetria).
+• Sistema para Análise de Dados Hidrológicos 
+(SiADH).
+• Sistema para Análise de Dados Pluviométricos 
+(Hidro-Plu).
+SISTEMAS E FERRAMENTAIS 
+COMPUTACIONAIS
+10
+
+--- PDF PAGE 11 ---
+• Sistema para Visualização de Fichas de Campo (SVFC).
+• Sistema para Detecção de Anomalias (MADE).
+• Painéis:
+– Análise Preliminar de Dados Fluviométricos.
+– Análise Preliminar de Dados Pluviométricos.
+– Top 10 Maiores/Menores de Cota/Vazão.
+– Acompanhamento de cheias no RS.
+– Avaliação de Registros de Curvas-chave.
+– Qualificação de Dados Fluviométricos.
+SISTEMAS E FERRAMENTAIS 
+COMPUTACIONAIS
+11
+
+--- PDF PAGE 12 ---
+SISTEMA HIDRO
+12
+Sistema para Gerenciamento de Dados 
+Hidrometeorológicos (Hidro 1.4), sistema utilizado para 
+inserção, armazenamento, análise, consulta e 
+disponibilização de dados hidrometeorológicos.
+
+--- PDF PAGE 13 ---
+13
+
+
+--- PDF PAGE 14 ---
+14
+
+
+--- PDF PAGE 15 ---
+15
+
+
+--- PDF PAGE 16 ---
+16
+
+
+--- PDF PAGE 17 ---
+17
+
+
+--- PDF PAGE 18 ---
+SISTEMA HIDRO-
+TELEMETRIA
+18
+Sistema para Gerenciamento de Dados 
+Hidrometeorológicos Telemétricos(Hidro-Telemetria), 
+sistema utilizado para inserção, armazenamento, análise, 
+consulta e disponibilização de dados hidrometeorológicos 
+telemétricos.
+
+--- PDF PAGE 19 ---
+19
+
+
+--- PDF PAGE 20 ---
+20
+
+
+--- PDF PAGE 21 ---
+SISTEMA SiADH
+21
+
+--- PDF PAGE 22 ---
+Principais resultados gerados pelo SiADH
+22
+100-Cotas Médias Diárias Consolidadas Versus Tempo com Medições 409-Vazões Específicas Médias Mensais Versus Tempo
+101-Cotas Médias Diárias Consolidadas Versus Tempo 410-Vazões Específicas Máximas Mensais Versus Tempo
+102-Cotas Médias Diárias Brutas Versus Tempo 411-Vazões Específicas Mínimas Mensais Versus Tempo
+103-Cotas Médias Diárias Consolidadas-Brutas Versus Tempo 412-Vazões Específicas Médias Anuais Versus Tempo
+104-Cotas Duplas Brutas Versus Tempo 413-Vazões Específicas Máximas Anuais Versus Tempo
+105-Cotas Duplas-Medias B-C Versus Tempo 414-Vazões Específicas Mínimas Anuais Versus Tempo
+106-Diagrama de Dados 415-Vazões Específicas Médias Anuais Versus Área de Drenagem
+107-Perfil Transversal 416-Vazões Específicas Diárias para Diversas Permanências Versus Área
+108-Frequência de Cotas Abaixo da Mínima por Ano 417-Vazões Específicas Mensais para Diversas Permanências Versus Área
+109-Frequência de Cotas Acima da Máxima por Ano 418-Vazões Médias Mensais (Incremental Negativo – Incrementais Mensais)
+110-Cotas Abaixo da Mínima-Período de Validade de Curva-chave 419-Teste de Continuidade de Vazões Médias Mensais
+111-Cotas Acima da Máxima-Período de Validade de Curva-chave 420-Curvas de Permanência de Vazões Médias Diárias
+112-Cota Medição Versus Cota Observada 421-Curvas de Permanência de Vazões Médias Mensais
+114-Planilha Excel para Análise de Dados de Cotas 422-Curvas de Permanência de Vazões Específicas Médias Diárias
+115-Envoltórias de Cotas por Percentis 423-Curvas de Permanência de Vazões Específicas Médias Mensais
+116-Cotas Médias Diárias Consolidadas e Percentis Versus Tempo 424-Diagrama de Dados
+117-Cotas Médias Diárias Brutas e Percentis Versus Tempo 425-Planilha Excel para Análise de Dados de Vazões
+118-Cotas Médias Diárias Consolidadas-Brutas e Percentis Versus Tempo 426-Vazão Versus Produto Área Molhada e Velocidade Média
+119-Permanência de Cotas 448-Planilha Excel para Análise e Traçado de Curva-chave
+120-Estatistica Mensal dos Dados de Cotas 449-Características das Curva-Chave
+399-Vazões e Cotas Médias Diárias Versus Tempo com Medições 450-Curva-Chave
+400-Vazões Médias Diárias Versus Tempo com Medições 452-Pares Cota Vazão e Curva-Chave
+401-Vazões Médias Diárias Versus Tempo 454-Permanência de Vazões
+402-Vazões Médias Mensais Versus Tempo 455-Envoltórias de Vazões por Percentis
+403-Vazões Máximas Mensais Versus Tempo 456-Vazões Médias Diárias Consolidadas e Percentis Versus Tempo
+404-Vazões Mínimas Mensais Versus Tempo 457-Vazões Médias Diárias Brutas e Percentis Versus Tempo
+405-Vazões Médias Anuais Versus Tempo 458-Vazões Médias Diárias Consolidadas-Brutas e Percentis Versus Tempo
+406-Vazões Máximas Anuais Versus Tempo 459-Estatistica Mensal dos Dados de Vazões
+407-Vazões Mínimas Anuais Versus Tempo 480-Velocidades Médias Diárias Versus Tempo com Medições
+408-Vazões Específicas Médias Diárias Versus Tempo 481-Velocidades Médias Diárias Versus Tempo
+
+--- PDF PAGE 23 ---
+EXEMPLOS DE RESULTADOS
+23
+a)
+ 
+b)
+ 
+c)
+ 
+d)
+ 
+e)
+ 
+f)
+ 
+Figura 1. Exemplos de resultados gerados pelo SiADH: a) 100-Cotas Médias Diárias Consolidadas Versus Tempo com Medições ; b) 118-Cotas Médias 
+Diárias Consolidadas-Brutas e Percentis Versus Tempo ; c) 450-Curva-Chave; d) 400-Vazões Médias Diárias Versus Tempo com Medições ; e) 408-
+Vazões Específicas Médias Diárias Versus Tempo; f) 450-Curva-Chave – Gráfico de desvios versus cota. 
+ 
+
+--- PDF PAGE 24 ---
+EXEMPLOS DE RESULTADOS
+24
+a)
+ 
+b)
+ 
+c)
+ 
+d)
+ 
+e)
+ 
+f)
+ 
+Figura 1. Exemplos de resultados gerados pelo SiADH: a) 418-Vazões Médias Mensais (Incremental Negativo – Incrementais Mensais); b) 419-Teste de 
+Continuidade de Vazões Médias Mensais ; c) 421-Curvas de Permanência de Vazões Médias Mensais ; d) 423-Curvas de Permanência de Vazões 
+Específicas Médias Mensais ; e) 417-Vazões Específicas Mensais para Diversas Permanências Versus Área de Drenage m; f) 426-Vazão Versus Produto 
+Área Molhada e Velocidade Média. 
+ 
+
+--- PDF PAGE 25 ---
+Sistema SiADH
+25
+
+
+--- PDF PAGE 26 ---
+Sistema SiADH
+26
+
+
+--- PDF PAGE 27 ---
+PROGRAMA DE 
+HOMOGENEIZAÇÃO DE 
+DADOS PLUVIOMÉTRICOS 
+(HIDRO-PLU)
+27
+
+--- PDF PAGE 28 ---
+• Hidro-PLU
+– O programa de Homogeneização de Dados Pluviométricos – HIDRO-
+PLU é um modelo matemático que tem como objetivo a análise de 
+consistência de dados pluviométricos mensais ou anuais.
+– O Hidro-PLU baseia-se no modelo matemático desenvolvido por 
+HOLANDA e OLIVEIRA (1979).
+• HOLANDA, C.V.M, OLIVEIRA, E. Programa para Homogeneização de Dados – 
+PROHD. In: Simpósio de Hidrologia, 3, 1979, Brasília. Anais. Porto Alegre: 
+Associação Brasileira de Recursos Hídricos, p. 810-845, 1979.
+– A análise é realizada a uma única estação pluviométrica a cada 
+processamento, e a crítica é efetuada detectando-se os dados 
+duvidosos e fornecendo os respectivos valores a serem 
+eventualmente substituídos, a critério do analista.
+CARACTERÍSTICAS DO HIDRO-PLU
+28
+
+--- PDF PAGE 29 ---
+
+
+--- PDF PAGE 30 ---
+
+
+--- PDF PAGE 31 ---
+
+
+--- PDF PAGE 32 ---
+
+
+--- PDF PAGE 33 ---
+
+
+--- PDF PAGE 34 ---
+
+
+--- PDF PAGE 35 ---
+
+
+--- PDF PAGE 36 ---
+
+
+--- PDF PAGE 37 ---
+
+
+--- PDF PAGE 38 ---
+• Compatibilização de dados diários
+FUNDAMENTAÇÃ
+O TEÓRICO DO 
+MODELO HIDRO-
+PLU
+
+
+--- PDF PAGE 39 ---
+Compatibilização 
+de dados diários
+
+
+--- PDF PAGE 40 ---
+• Curva duplo-acumulada
+GRÁFICOS
+
+
+--- PDF PAGE 41 ---
+• Gráfico dos totais diários
+GRÁFICOS
+
+
+--- PDF PAGE 42 ---
+• Hietogramas de totais mensais e anuais
+GRÁFICOS
+
+
+--- PDF PAGE 43 ---
+• Índice pluviométrico
+GRÁFICOS
+
+
+--- PDF PAGE 44 ---
+44
+
+
+--- PDF PAGE 45 ---
+Sistema para Visualização 
+de Fichas de Campo
+(https://www.snirh.gov.br
+/fichadecampo/)
+45
+
+--- PDF PAGE 46 ---
+46
+
+
+--- PDF PAGE 47 ---
+47
+
+
+--- PDF PAGE 48 ---
+Sistema com inteligência artificial para análise de 
+séries temporais de cotas e vazões médias diárias.
+Sistema para Detecção de 
+Anomalias em Séries 
+Temporais de Cotas & 
+Vazões - MADE
+48
+
+--- PDF PAGE 49 ---
+49
+
+
+--- PDF PAGE 50 ---
+50
+
+
+--- PDF PAGE 51 ---
+51
+
+
+--- PDF PAGE 52 ---
+52
+
+
+--- PDF PAGE 53 ---
+53
+
+
+--- PDF PAGE 54 ---
+54
+
+
+--- PDF PAGE 55 ---
+55
+
+
+--- PDF PAGE 56 ---
+o Sistema para processamento, análise e 
+disponibilização de dados de monitoramento 
+hidrológico e de qualidade de água de rios de lagos 
+por meio de satélites (Projeto HidroSat, ANA-IRD).
+Sistema HidroSat
+56
+
+--- PDF PAGE 57 ---
+Linhas de trabalho
+Imageamento (ótico)
+ Altimetria (radar)
+
+--- PDF PAGE 58 ---
+
+
+--- PDF PAGE 59 ---
+#AÁguaÉUmaSó
+Benefícios para o monitoramento hidrológico
+•
+ Custo
+-
+benefício
+• Escala de trabalho
+• Retroatividade
+• Frequência de amostragem
+• Preenchimento de lacunas
+• Redundância
+• Regularidade
+• Continuidade
+• Automação
+• (...)
+
+--- PDF PAGE 60 ---
+Séries de qualidade de água
+
+
+--- PDF PAGE 61 ---
+Séries de altitude da linha d’água
+
+
+--- PDF PAGE 62 ---
+Missões 
+internacionais
+com dados 
+gratuitos
+USGS & NASA. Desde 1972.
+Landsat (1-9)
+NASA. Desde 2000.
+Modis (Aqua & Terra)
+ESA. 2002-2012.
+Envisat
+EUMETSAT, NOAA, NASA & CNES. 
+Desde 2016.
+Jason-3
+NASA & CNES. 2008-2019.
+Jason-2
+ESA, EUMETSAT, NASA & NOAA. 
+Desde 2020.
+Sentinel-6 (Jason-CS)
+NASA & NOAA. Desde 2011.
+VIIRS (Suomi NPP & NOAA-20)
+ESA. Desde 2015.
+Sentinel-2
+CNES & ISRO. Desde 2013.
+SARAL
+ESA & EUMETSAT. Desde 2016.
+Sentinel-3
+INPE. Desde 2021.
+Amazonia-1
+
+
+--- PDF PAGE 63 ---
+PAINÉIS EM POWER BI
+63
+
+--- PDF PAGE 64 ---
+• Análise Preliminar de Dados Fluviométricos.
+• Análise Preliminar de Dados Pluviométricos.
+• Top 10 Maiores/Menores de Cota/Vazão.
+• Acompanhamento de cheias no RS.
+• Avaliação de Registros de Curvas-chave.
+• Qualificação de Dados Fluviométricos.
+Painéis
+64
+
+--- PDF PAGE 65 ---
+65
+
+
+--- PDF PAGE 66 ---
+66
+
+
+--- PDF PAGE 67 ---
+67
+
+
+--- PDF PAGE 68 ---
+68
+
+
+--- PDF PAGE 69 ---
+69
+
+
+--- PDF PAGE 70 ---
+70
+
+
+--- PDF PAGE 71 ---
+71
+
+
+--- PDF PAGE 72 ---
+72
+
+
+--- PDF PAGE 73 ---
+73
+
+
+--- PDF PAGE 74 ---
+74
+
+
+--- PDF PAGE 75 ---
+75
+
+
+--- PDF PAGE 76 ---
+76
+
+
+--- PDF PAGE 77 ---
+77
+
+
+--- PDF PAGE 78 ---
+78
+
+
+--- PDF PAGE 79 ---
+79
+
+
+--- PDF PAGE 80 ---
+80
+
+
+--- PDF PAGE 81 ---
+81
+
+
+--- PDF PAGE 82 ---
+82
+
+
+--- PDF PAGE 83 ---
+83
+
+
+--- PDF PAGE 84 ---
+84
+
+
+--- PDF PAGE 85 ---
+85
+
+
+--- PDF PAGE 86 ---
+86
+
+
+--- PDF PAGE 87 ---
+87
+
+
+--- PDF PAGE 88 ---
+88
+
+
+--- PDF PAGE 89 ---
+89
+
+
+--- PDF PAGE 90 ---
+90
+
+
+--- PDF PAGE 91 ---
+91
+
+
+--- PDF PAGE 92 ---
+92
+
+
+--- PDF PAGE 93 ---
+93
+
+
+--- PDF PAGE 94 ---
+94
+
+
+--- PDF PAGE 95 ---
+95
+
+
+--- PDF PAGE 96 ---
+96
+
+
+--- PDF PAGE 97 ---
+97
+
+
+--- PDF PAGE 98 ---
+98
+
+
+--- PDF PAGE 99 ---
+99
+
+
+--- PDF PAGE 100 ---
+100
+
+
+--- PDF PAGE 101 ---
+101
+
+
+--- PDF PAGE 102 ---
+SISTEMAS PARA 
+DISPONIBILIZAÇÃO DE 
+DADOS HIDROLÓGICOS
+102
+
+--- PDF PAGE 103 ---
+o Sistema para Disponibilização de Dados Hidrológicos (HidroWeb) 
+(https://www.snirh.gov.br/hidroweb/).
+o Sistema Hidro-Telemetria 
+(https://www.snirh.gov.br/hidrotelemetria/).
+o Sistema para Visualizador de Fichas de Campo 
+(http://www.snirh.gov.br/fichadecampo).
+o Sistema para processamento e disponibilização de dados 
+hidrológicos e de qualidade de água obtidos por satélites (HidroSat, 
+http://hidrosat.ana.gov.br/).
+o Aplicativo para Disponibilização de Dados Hidrológicos (HidroWeb 
+Mobile, https://www.snirh.gov.br/hidroweb-mobile/).
+SISTEMAS PARA DISPONIBILIZAÇÃO DE DADOS 
+HIDROLÓGICOS
+103
+
+--- PDF PAGE 104 ---
+SISTEMA Hidroweb
+(https://www.snirh.gov.br
+/hidroweb/)
+104
+
+--- PDF PAGE 105 ---
+105
+
+
+--- PDF PAGE 106 ---
+106
+
+
+--- PDF PAGE 107 ---
+SISTEMA Hidroweb Mobile
+(https://www.snirh.gov.br
+/hidroweb-mobile/
+107
+
+--- PDF PAGE 108 ---
+❑ To download from the Play Store (Android), go to:
+• https://play.google.com/store/apps/details?id=br.gov.ana.hidroweb
+❑ To download from the App Store (IOS), click on:
+• https://itunes.apple.com/br/app/hidroweb/id1453212814
+
+--- PDF PAGE 109 ---
+
+
+--- PDF PAGE 110 ---
+
+
+--- PDF PAGE 111 ---
+111
+
+
+--- PDF PAGE 112 ---
+Exemplo: Análise de Dados 
+Fluviométricos
+112
+
+--- PDF PAGE 113 ---
+Levantamento e 
+Organização de 
+Informações e 
+Dados 
+Fluviométricos
+113
+
+
+--- PDF PAGE 114 ---
+Metodologia para Análise de Cotas
+114
+
+
+--- PDF PAGE 115 ---
+Análise de Curvas-chave
+115
+
+
+--- PDF PAGE 116 ---
+Análise de 
+Vazões
+116
+
+--- PDF PAGE 117 ---
+Conteúdo dos 
+Relatórios
+117
+
+--- PDF PAGE 118 ---
+ATRIBUIÇÕES LEGAIS DA 
+ANA versus DADOS 
+HIDROLÓGICOS
+118
+
+--- PDF PAGE 119 ---
+• Atribuições da ANA (Lei n. 9.984/2000, Art. 4º):
+▪ I – supervisionar, controlar e avaliar as ações e atividades decorrentes do cumprimento 
+da legislação federal pertinente aos recursos hídricos;
+▪ II – disciplinar, em caráter normativo, a implementação, a operacionalização, o controle 
+e a avaliação dos instrumentos da Política Nacional de Recursos Hídricos;
+▪ IV – outorgar, por intermédio de autorização, o direito de uso de recursos hídricos em 
+corpos de água de domínio da União, observado o disposto nos arts. 5o, 6o, 7o e 8o;
+▪ V - fiscalizar os usos de recursos hídricos nos corpos de água de domínio da União;
+▪ VI - elaborar estudos técnicos para subsidiar a definição, pelo Conselho Nacional de 
+Recursos Hídricos, dos valores a serem cobrados pelo uso de recursos hídricos de 
+domínio da União, com base nos mecanismos e quantitativos sugeridos pelos Comitês 
+de Bacia Hidrográfica, na forma do inciso VI do art. 38 da Lei no 9.433, de 1997;
+▪ VII – estimular e apoiar as iniciativas voltadas para a criação de Comitês de Bacia 
+Hidrográfica;
+IMPORTÂNCIA DE DADOS HIDROLÓGICOS PARA O 
+CUMPRIMENTO DAS ATRIBUIÇÕES DA ANA
+119
+
+--- PDF PAGE 120 ---
+• Atribuições da ANA (Lei n. 9.984/2000, Art. 4º):
+▪ VIII – implementar, em articulação com os Comitês de Bacia Hidrográfica, a cobrança 
+pelo uso de recursos hídricos de domínio da União;
+▪ IX – arrecadar, distribuir e aplicar receitas auferidas por intermédio da cobrança pelo 
+uso de recursos hídricos de domínio da União, na forma do disposto no art. 22 da Lei 
+no 9.433, de 1997;
+▪ X – planejar e promover ações destinadas a prevenir ou minimizar os efeitos de secas e 
+inundações, no âmbito do Sistema Nacional de Gerenciamento de Recursos Hídricos, 
+em articulação com o órgão central do Sistema Nacional de Defesa Civil, em apoio aos 
+Estados e Municípios;
+▪ XI - promover a elaboração de estudos para subsidiar a aplicação de recursos 
+financeiros da União em obras e serviços de regularização de cursos de água, de 
+alocação e distribuição de água, e de controle da poluição hídrica, em consonância 
+com o estabelecido nos planos de recursos hídricos;
+IMPORTÂNCIA DE DADOS HIDROLÓGICOS PARA O 
+CUMPRIMENTO DAS ATRIBUIÇÕES DA ANA
+120
+
+--- PDF PAGE 121 ---
+• Atribuições da ANA (Lei n. 9.984/2000, Art. 4º):
+▪ XII – definir e fiscalizar as condições de operação de reservatórios por agentes públicos 
+e privados, visando a garantir o uso múltiplo dos recursos hídricos, conforme 
+estabelecido nos planos de recursos hídricos das respectivas bacias hidrográficas;
+▪ XIII - promover a coordenação das atividades desenvolvidas no âmbito da rede 
+hidrometeorológica nacional, em articulação com órgãos e entidades públicas ou 
+privadas que a integram, ou que dela sejam usuárias;
+▪ XIV - organizar, implantar e gerir o Sistema Nacional de Informações sobre Recursos 
+Hídricos;
+▪ XV - estimular a pesquisa e a capacitação de recursos humanos para a gestão de 
+recursos hídricos;
+▪ XVI - prestar apoio aos Estados na criação de órgãos gestores de recursos hídricos;
+▪ XVII – propor ao Conselho Nacional de Recursos Hídricos o estabelecimento de 
+incentivos, inclusive financeiros, à conservação qualitativa e quantitativa de recursos 
+hídricos.
+IMPORTÂNCIA DE DADOS HIDROLÓGICOS PARA O 
+CUMPRIMENTO DAS ATRIBUIÇÕES DA ANA
+121
+
+--- PDF PAGE 122 ---
+• Atribuições da ANA (Lei n. 9.984/2000, Art. 4º):
+▪ XVIII - participar da elaboração do Plano Nacional de Recursos Hídricos e supervisionar 
+a sua implementação.
+▪ XIX - regular e fiscalizar, quando envolverem corpos d'água de domínio da União, a 
+prestação dos serviços públicos de irrigação, se em regime de concessão, e adução de 
+água bruta, cabendo-lhe, inclusive, a disciplina, em caráter normativo, da prestação 
+desses serviços, bem como a fixação de padrões de eficiência e o estabelecimento de 
+tarifa, quando cabíveis, e a gestão e auditagem de todos os aspectos dos respectivos 
+contratos de concessão, quando existentes.
+▪ XX - organizar, implantar e gerir o Sistema Nacional de Informações sobre Segurança de 
+Barragens (SNISB);
+▪ XXI - promover a articulação entre os órgãos fiscalizadores de barragens;
+▪ XXII - coordenar a elaboração do Relatório de Segurança de Barragens e encaminhá-lo, 
+anualmente, ao Conselho Nacional de Recursos Hídricos (CNRH), de forma consolidada. 
+IMPORTÂNCIA DE DADOS HIDROLÓGICOS PARA O 
+CUMPRIMENTO DAS ATRIBUIÇÕES DA ANA
+122
+
+--- PDF PAGE 123 ---
+• Atribuições da ANA (Lei n. 9.984/2000, Art. 4º):
+▪ XXIII - declarar a situação crítica de escassez quantitativa ou qualitativa de recursos 
+hídricos nos corpos hídricos que impacte o atendimento aos usos múltiplos localizados 
+em rios de domínio da União, por prazo determinado, com base em estudos e dados 
+de monitoramento, observados os critérios estabelecidos pelo Conselho Nacional de 
+Recursos Hídricos, quando houver; e
+▪ XXIV - estabelecer e fiscalizar o cumprimento de regras de uso da água, a fim de 
+assegurar os usos múltiplos durante a vigência da declaração de situação crítica de 
+escassez de recursos hídricos a que se refere o inciso XXIII do caput deste artigo
+▪ Art. 4º-A. A ANA instituirá normas de referência para a regulação dos serviços públicos 
+de saneamento básico por seus titulares e suas entidades reguladoras e fiscalizadoras, 
+observadas as diretrizes para a função de regulação estabelecidas na Lei nº 11.445, de 
+5 de janeiro de 2007.   (Incluído pela Lei nº 14.026, de 2020)
+IMPORTÂNCIA DE DADOS HIDROLÓGICOS PARA O 
+CUMPRIMENTO DAS ATRIBUIÇÕES DA ANA
+123
+
+--- PDF PAGE 124 ---
+• A qualidade e a consistência dos dados hidrológicos são 
+essenciais para uma gestão eficiente dos recursos hídricos. 
+Sistemas e ferramentas que garantam a verificação e 
+validação dos dados são cruciais para apoiar tomadas de 
+decisão embasadas e confiáveis.
+• Ferramentas computacionais que auxiliem a padronizar, 
+sistematizar e facilitar as análises de dados hidrológicos são 
+bastante úteis e devem ser prioritariamente utilizadas.
+CONCLUSÕES
+124
+
+--- PDF PAGE 125 ---
+125
+
+
+--- PDF PAGE 126 ---
+www.youtube.com/anagovbrwww.twitter.com/anagovbr
+126
+
+
+--- PDF PAGE 127 ---
+www.youtube.com/anagovbrwww.twitter.com/anagovbr
+127
+
+
+--- PDF PAGE 128 ---
+www.youtube.com/anagovbrwww.twitter.com/anagovbr
+128
+
+
+--- PDF PAGE 129 ---
+www.youtube.com/anagovbrwww.twitter.com/anagovbr
+OBRIGADO PELA ATENÇÃO
+Walszon Terllizzie Araújo Lopes
+Especialista em Recursos Hídricos
+Coordenador de Dados e Informações Hidrometeorológicos - CODIH
+walszon@ana.gov.br  |  (+55) (61) 2109 –5476
+www.ana.gov.br
+129
+
+--- PDF PAGE 130 ---
+www.youtube.com/anagovbrwww.twitter.com/anagovbr
+FIM DA APRESENTAÇÃO
+Walszon Terllizzie Araújo Lopes
+Especialista em Recursos Hídricos
+Coordenador de Dados e Informações Hidrometeorológicos - CODIH
+walszon@ana.gov.br  |  (+55) (61) 2109 –5476
+www.ana.gov.br
+130

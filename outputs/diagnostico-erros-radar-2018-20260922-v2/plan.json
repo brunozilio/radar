@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-09-22T06:34:26.440700+00:00",
+  "input_sha256": {
+    "outputs/experimento-radar-historico-2018-119-20260922/predictions.csv": "ab62f528a19baf4b7d95cacee03319ba7f99af70030f60f4d78102add4421868",
+    "outputs/experimento-radar-historico-2018-119-20260922/evaluation.csv": "63a04aba3e8e0ed07c9f81029475a5ba16cba8f62a92c71466ea8ea244148406",
+    "outputs/experimento-radar-historico-2018-119-20260922/artifact-hashes.json": "bd5ba74c289a5f11af247c160a3e2dd675214b68ebe8a6bc43a293d7c8274695",
+    "outputs/radar-matriz-recente-ancora-horaria-20260922/features.npz": "b3264454a576e7ea4a43660be863cb2218dd31150aea705886df455c72a395df",
+    "scripts/hydro_radar_2018_error_diagnostic.py": "1ea8a66093b8c10b4134eabda0a0a40328ee78892626e2abf629503be9f5b437"
+  },
+  "scope": "Post-result diagnostic of every frozen paired forecast. No new model fit, inference, promotion or changed tolerance.",
+  "axes": {
+    "target_level": "below7,[7,9),atleast9,unknown; diagnostic future truth, never selectable at issuance.",
+    "known_trend": "Muçum dH1 original feature2, rise>=0.1m/h,fall<=-0.1m/h,otherwise stable,unknown separately; no rounding.",
+    "upstream": "Original18upstream level/trend fields6..23 allfinite or missing.",
+    "transition": "Both hit,hit-to-miss,miss-to-hit,bothmiss; missingtruth/missingforecast separate; hit iff absolute error<=0.50m before rounding."
+  },
+  "subsets": "All schedule; observed>=7m contains only known hightruth and records unknowntruth separately in global groups. Do not label unknown as high.",
+  "limits": "Known development periods; calendar target dates are not certified independent events. Descriptive partitioning cannot establish a causal mechanism or justify cherry-picking horizons."
+}

@@ -1,0 +1,48 @@
+{
+  "searched_at": "2026-09-22T01:03:17.815526+00:00",
+  "queries": [
+    "site.sgb.gov.br Muçum \"86510000\" \"2025\" estação reinstalação",
+    "site.gov.br/ana Muçum estação recuperação \"2026\"",
+    "site.sgb.gov.br \"Muçum\" \"sensor\" \"2025\" monitoramento"
+  ],
+  "query_count": 3,
+  "method": "Busca pública web; todos os resultados conferidos quanto ao domínio primário, pois a busca retornou também domínios fora do filtro textual site. Sem pesquisas adicionais.",
+  "prior_context": [
+    "/Users/brunozilio/.codex/automations/recalcular-previs-es-de-mu-um/memory.md",
+    "outputs/historico-cheias-mucum/documentation/reference-status.json",
+    "outputs/historico-cheias-mucum/documentation/fuso-e-referencia.md",
+    "outputs/historico-cheias-mucum/documentation/reference-investigation-report.md"
+  ],
+  "accepted": [
+    {
+      "url": "https://www.sgb.gov.br/sace/boletins/Taquari/20250618_17-20250618%20-%20183805.pdf",
+      "manifest": "source.json",
+      "reason": "Evidência pontual operacional 2025. Publica cota observada 1108 cm às 17h nominais, identifica 86510000 no gráfico. Sem data reinstalação ou vínculo sensor-régua."
+    }
+  ],
+  "rejected_or_not_downloaded": [
+    {
+      "url": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/162ce310-cb58-4f3d-ae86-e677203c5d1d/content",
+      "reason": "Artigo neural 2025 já disponível em outputs/mucum-bacia-2026-09-21/raw/sgb-model-2025.pdf; não é ficha de reinstalação. Não baixado novamente."
+    },
+    {
+      "url": "https://rigeo.sgb.gov.br/bitstreams/1e90590c-f924-4d05-bef6-1e42103e3993/download",
+      "reason": "Nivelamento de marcas 2024, fora do foco manutenção; revisões atuais já estudadas."
+    },
+    {
+      "url": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/fc1b8a76-deae-4913-96de-3b25cd3f9845/content",
+      "reason": "Nota anterior de marcas 2024; versões atuais já estudadas, não repetida."
+    },
+    {
+      "url": "https://grupoahora.net.br/conteudos/2025/07/03/mucum-testa-sistema-digital-pioneiro-para-monitorar-de-cheias/",
+      "reason": "Fonte secundária, trata de sensor municipal distinto sem vínculo comprovado à estação 86510000. Não aceita como prova de manutenção ANA/SGB."
+    }
+  ],
+  "tool_limitations": [
+    "Tentativa de seguir link do PDF via web.click sem id resolvível falhou; não resultou em coleta.",
+    "Extração local por pypdf e pdftotext indisponível; conteúdo do PDF conferido no extrator web. Nenhuma instalação realizada."
+  ],
+  "new_reinstallation_evidence": false,
+  "training_or_shared_edits": false,
+  "external_messages": false
+}

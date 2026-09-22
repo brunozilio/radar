@@ -1,0 +1,303 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "artifact_hash:additional-features.npz",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:input-trace.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:experiment.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:protocol.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_reservoir_level_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "exact_Radar_hourly_origins",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12928,
+      "tolerance": 0
+    },
+    {
+      "name": "regular_hourly_grid",
+      "passed": true
+    },
+    {
+      "name": "24_columns",
+      "passed": true
+    },
+    {
+      "name": "trace_unique_and_complete",
+      "passed": true
+    },
+    {
+      "name": "18_source_CSVs",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_03-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_08-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_12-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_05-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_06-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_02-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_09-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_04-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_07-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_01-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_09-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_10-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_04-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_07-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_08-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_05-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2026_06-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "raw_hash:DADOS_HIDROLOGICOS_HO_2025_11-ceran.csv",
+      "passed": true
+    },
+    {
+      "name": "no_duplicate_plant_timestamp",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:julho:val_nivelmontante:change1",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:julho:val_nivelmontante:slope3",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:julho:val_nivelmontante:slope6",
+      "passed": true
+    },
+    {
+      "name": "only_past_source:julho:val_nivelmontante",
+      "passed": true
+    },
+    {
+      "name": "expiry_obeyed:julho:val_nivelmontante",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:julho:val_niveljusante:change1",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:julho:val_niveljusante:slope3",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:julho:val_niveljusante:slope6",
+      "passed": true
+    },
+    {
+      "name": "only_past_source:julho:val_niveljusante",
+      "passed": true
+    },
+    {
+      "name": "expiry_obeyed:julho:val_niveljusante",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:monte:val_nivelmontante:change1",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:monte:val_nivelmontante:slope3",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:monte:val_nivelmontante:slope6",
+      "passed": true
+    },
+    {
+      "name": "only_past_source:monte:val_nivelmontante",
+      "passed": true
+    },
+    {
+      "name": "expiry_obeyed:monte:val_nivelmontante",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:monte:val_niveljusante:change1",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:monte:val_niveljusante:slope3",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:monte:val_niveljusante:slope6",
+      "passed": true
+    },
+    {
+      "name": "only_past_source:monte:val_niveljusante",
+      "passed": true
+    },
+    {
+      "name": "expiry_obeyed:monte:val_niveljusante",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:castro:val_nivelmontante:change1",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:castro:val_nivelmontante:slope3",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:castro:val_nivelmontante:slope6",
+      "passed": true
+    },
+    {
+      "name": "only_past_source:castro:val_nivelmontante",
+      "passed": true
+    },
+    {
+      "name": "expiry_obeyed:castro:val_nivelmontante",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:castro:val_niveljusante:change1",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:castro:val_niveljusante:slope3",
+      "passed": true
+    },
+    {
+      "name": "strictly_past_derivative_endpoints:castro:val_niveljusante:slope6",
+      "passed": true
+    },
+    {
+      "name": "only_past_source:castro:val_niveljusante",
+      "passed": true
+    },
+    {
+      "name": "expiry_obeyed:castro:val_niveljusante",
+      "passed": true
+    },
+    {
+      "name": "independent_24_features",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 310095,
+      "tolerance": 0
+    },
+    {
+      "name": "feature_names_order",
+      "passed": true
+    },
+    {
+      "name": "input_trace_matches_every_source_selection",
+      "passed": true,
+      "differences": 0
+    },
+    {
+      "name": "no_origin_or_future_observation",
+      "passed": true,
+      "minimum_age_minutes": 60.0,
+      "maximum_age_minutes": 121.0
+    },
+    {
+      "name": "expiry_inclusive_90min",
+      "passed": true
+    },
+    {
+      "name": "expiry_rejects_90min_plus1sec",
+      "passed": true
+    },
+    {
+      "name": "newest_nan_not_bypassed_or_future_used",
+      "passed": true
+    },
+    {
+      "name": "2359_literal_not_available_at_midnight",
+      "passed": true
+    }
+  ],
+  "origins": 12928,
+  "columns": 24,
+  "source_rows": 38764,
+  "trace_rows": 77568,
+  "available_2359_field_selections": 3230,
+  "newest_nonfinite_field_selections": 1,
+  "total_missing_feature_cells": 177,
+  "total_finite_feature_cells": 310095,
+  "time_contract": {
+    "assumed_timezone": "UTC-03",
+    "publication_delay_minutes": 60,
+    "max_age_after_delayed_cutoff_minutes": 90,
+    "maximum_policy_age_at_origin_minutes": 150,
+    "historical_publication_verified": false
+  },
+  "limitations": [
+    "ONS timestamp/reference assumptions remain unverified; no live CERAN contract established by this audit.",
+    "Only input provenance audited. No model fit, inference experiment or HGE execution.",
+    "Known original 168.74m July downstream value is retained, without masks or repairs."
+  ]
+}

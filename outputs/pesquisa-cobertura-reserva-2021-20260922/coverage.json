@@ -1,0 +1,862 @@
+{
+  "audited_at_utc": "2026-09-22T03:08:15.671431+00:00",
+  "scope": "Coverage/QC only; no training/inference/error calculation/model selection; reserved2021 excluded from fit.",
+  "get_attempts": 4,
+  "statuses": {
+    "parsed": 4
+  },
+  "stations": [
+    {
+      "station": "86510000",
+      "raw_records": 3264,
+      "unique_timestamps": 3264,
+      "duplicate_extra_records": 0,
+      "conflicting_timestamps": 0,
+      "first_literal": "2021-04-28 00:00:00",
+      "last_literal": "2021-05-31 23:45:00",
+      "cadence_seconds_counts": {
+        "900": 3263
+      },
+      "minute_counts": {
+        "0": 816,
+        "15": 816,
+        "30": 816,
+        "45": 816
+      },
+      "second_counts": {
+        "0": 3264
+      },
+      "fields": {
+        "ChuvaAcumAdotada": {
+          "qc_counts": {
+            "Dado aprovado": 3256,
+            "None": 8
+          },
+          "empty_values": 8,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3256,
+          "approved_numeric": 3256,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 813,
+          "approved_exact_quarter_hour": 3256
+        },
+        "ChuvaFinal": {
+          "qc_counts": {
+            "Dado aprovado": 3256,
+            "None": 8
+          },
+          "empty_values": 8,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3256,
+          "approved_numeric": 3256,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 2862,
+          "negative_numeric": 0,
+          "approved_exact_hour": 813,
+          "approved_exact_quarter_hour": 3256
+        },
+        "NivelDisplay": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3264,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        },
+        "NivelFinal": {
+          "qc_counts": {
+            "Dado aprovado": 3264
+          },
+          "empty_values": 0,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3264,
+          "approved_numeric": 3264,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 816,
+          "approved_exact_quarter_hour": 3264
+        },
+        "NivelManual": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3264,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        },
+        "NivelSensor": {
+          "qc_counts": {
+            "Dado aprovado": 3262,
+            "None": 2
+          },
+          "empty_values": 2,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3262,
+          "approved_numeric": 3262,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 815,
+          "approved_exact_quarter_hour": 3262
+        },
+        "VazaoFinal": {
+          "qc_counts": {
+            "Dado aprovado": 3264
+          },
+          "empty_values": 0,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3264,
+          "approved_numeric": 3264,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 816,
+          "approved_exact_quarter_hour": 3264
+        }
+      },
+      "windows": {
+        "all": {
+          "records": 3264,
+          "grids": {
+            "exact_15min": {
+              "expected": 3264,
+              "records_present": 3264,
+              "records_absent": 0,
+              "off_grid_records": 0,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 3264,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 3264,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 3256,
+                  "unavailable_or_not_approved": 8,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-30 05:00:00",
+                      "last": "2021-04-30 05:45:00",
+                      "slots": 4
+                    },
+                    {
+                      "first": "2021-05-04 16:00:00",
+                      "last": "2021-05-04 16:15:00",
+                      "slots": 2
+                    },
+                    {
+                      "first": "2021-05-07 12:00:00",
+                      "last": "2021-05-07 12:15:00",
+                      "slots": 2
+                    }
+                  ]
+                }
+              }
+            },
+            "exact_hour": {
+              "expected": 816,
+              "records_present": 816,
+              "records_absent": 0,
+              "off_grid_records": 2448,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 816,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 816,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 813,
+                  "unavailable_or_not_approved": 3,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-30 05:00:00",
+                      "last": "2021-04-30 05:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-04 16:00:00",
+                      "last": "2021-05-04 16:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-07 12:00:00",
+                      "last": "2021-05-07 12:00:00",
+                      "slots": 1
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "warmup": {
+          "records": 288,
+          "grids": {
+            "exact_15min": {
+              "expected": 288,
+              "records_present": 288,
+              "records_absent": 0,
+              "off_grid_records": 0,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 288,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 288,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 284,
+                  "unavailable_or_not_approved": 4,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-30 05:00:00",
+                      "last": "2021-04-30 05:45:00",
+                      "slots": 4
+                    }
+                  ]
+                }
+              }
+            },
+            "exact_hour": {
+              "expected": 72,
+              "records_present": 72,
+              "records_absent": 0,
+              "off_grid_records": 216,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 72,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 72,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 71,
+                  "unavailable_or_not_approved": 1,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-30 05:00:00",
+                      "last": "2021-04-30 05:00:00",
+                      "slots": 1
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "reserved_may": {
+          "records": 2976,
+          "grids": {
+            "exact_15min": {
+              "expected": 2976,
+              "records_present": 2976,
+              "records_absent": 0,
+              "off_grid_records": 0,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 2976,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 2976,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 2972,
+                  "unavailable_or_not_approved": 4,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-04 16:00:00",
+                      "last": "2021-05-04 16:15:00",
+                      "slots": 2
+                    },
+                    {
+                      "first": "2021-05-07 12:00:00",
+                      "last": "2021-05-07 12:15:00",
+                      "slots": 2
+                    }
+                  ]
+                }
+              }
+            },
+            "exact_hour": {
+              "expected": 744,
+              "records_present": 744,
+              "records_absent": 0,
+              "off_grid_records": 2232,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 744,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 744,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 742,
+                  "unavailable_or_not_approved": 2,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-04 16:00:00",
+                      "last": "2021-05-04 16:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-07 12:00:00",
+                      "last": "2021-05-07 12:00:00",
+                      "slots": 1
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "station": "86472000",
+      "raw_records": 3264,
+      "unique_timestamps": 3264,
+      "duplicate_extra_records": 0,
+      "conflicting_timestamps": 0,
+      "first_literal": "2021-04-28 00:00:00",
+      "last_literal": "2021-05-31 23:45:00",
+      "cadence_seconds_counts": {
+        "900": 3263
+      },
+      "minute_counts": {
+        "0": 816,
+        "15": 816,
+        "30": 816,
+        "45": 816
+      },
+      "second_counts": {
+        "0": 3264
+      },
+      "fields": {
+        "ChuvaAcumAdotada": {
+          "qc_counts": {
+            "Dado aprovado": 3098,
+            "None": 166
+          },
+          "empty_values": 166,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3098,
+          "approved_numeric": 3098,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 775,
+          "approved_exact_quarter_hour": 3098
+        },
+        "ChuvaFinal": {
+          "qc_counts": {
+            "Dado aprovado": 3098,
+            "None": 166
+          },
+          "empty_values": 166,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 3098,
+          "approved_numeric": 3098,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 2896,
+          "negative_numeric": 0,
+          "approved_exact_hour": 775,
+          "approved_exact_quarter_hour": 3098
+        },
+        "NivelDisplay": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3263,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 1,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 1,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        },
+        "NivelFinal": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3264,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        },
+        "NivelManual": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3264,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        },
+        "NivelSensor": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3264,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        },
+        "VazaoFinal": {
+          "qc_counts": {
+            "None": 3264
+          },
+          "empty_values": 3264,
+          "nonempty_nonfinite_or_nonnumeric": 0,
+          "numeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "zero_numeric": 0,
+          "negative_numeric": 0,
+          "approved_exact_hour": 0,
+          "approved_exact_quarter_hour": 0
+        }
+      },
+      "windows": {
+        "all": {
+          "records": 3264,
+          "grids": {
+            "exact_15min": {
+              "expected": 3264,
+              "records_present": 3264,
+              "records_absent": 0,
+              "off_grid_records": 0,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 3264,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-05-31 23:45:00",
+                      "slots": 3264
+                    }
+                  ]
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 3264,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-05-31 23:45:00",
+                      "slots": 3264
+                    }
+                  ]
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 3098,
+                  "unavailable_or_not_approved": 166,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-12 16:45:00",
+                      "last": "2021-05-12 17:30:00",
+                      "slots": 4
+                    },
+                    {
+                      "first": "2021-05-12 22:45:00",
+                      "last": "2021-05-12 23:30:00",
+                      "slots": 4
+                    },
+                    {
+                      "first": "2021-05-18 16:45:00",
+                      "last": "2021-05-20 05:45:00",
+                      "slots": 149
+                    },
+                    {
+                      "first": "2021-05-20 20:15:00",
+                      "last": "2021-05-20 20:30:00",
+                      "slots": 2
+                    },
+                    {
+                      "first": "2021-05-27 14:45:00",
+                      "last": "2021-05-27 15:15:00",
+                      "slots": 3
+                    },
+                    {
+                      "first": "2021-05-27 16:15:00",
+                      "last": "2021-05-27 16:30:00",
+                      "slots": 2
+                    },
+                    {
+                      "first": "2021-05-27 22:45:00",
+                      "last": "2021-05-27 23:00:00",
+                      "slots": 2
+                    }
+                  ]
+                }
+              }
+            },
+            "exact_hour": {
+              "expected": 816,
+              "records_present": 816,
+              "records_absent": 0,
+              "off_grid_records": 2448,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 816,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-05-31 23:00:00",
+                      "slots": 816
+                    }
+                  ]
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 816,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-05-31 23:00:00",
+                      "slots": 816
+                    }
+                  ]
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 775,
+                  "unavailable_or_not_approved": 41,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-12 17:00:00",
+                      "last": "2021-05-12 17:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-12 23:00:00",
+                      "last": "2021-05-12 23:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-18 17:00:00",
+                      "last": "2021-05-20 05:00:00",
+                      "slots": 37
+                    },
+                    {
+                      "first": "2021-05-27 15:00:00",
+                      "last": "2021-05-27 15:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-27 23:00:00",
+                      "last": "2021-05-27 23:00:00",
+                      "slots": 1
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "warmup": {
+          "records": 288,
+          "grids": {
+            "exact_15min": {
+              "expected": 288,
+              "records_present": 288,
+              "records_absent": 0,
+              "off_grid_records": 0,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 288,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-04-30 23:45:00",
+                      "slots": 288
+                    }
+                  ]
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 288,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-04-30 23:45:00",
+                      "slots": 288
+                    }
+                  ]
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 288,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                }
+              }
+            },
+            "exact_hour": {
+              "expected": 72,
+              "records_present": 72,
+              "records_absent": 0,
+              "off_grid_records": 216,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 72,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-04-30 23:00:00",
+                      "slots": 72
+                    }
+                  ]
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 72,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-04-28 00:00:00",
+                      "last": "2021-04-30 23:00:00",
+                      "slots": 72
+                    }
+                  ]
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 72,
+                  "unavailable_or_not_approved": 0,
+                  "unavailable_or_not_approved_intervals": []
+                }
+              }
+            }
+          }
+        },
+        "reserved_may": {
+          "records": 2976,
+          "grids": {
+            "exact_15min": {
+              "expected": 2976,
+              "records_present": 2976,
+              "records_absent": 0,
+              "off_grid_records": 0,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 2976,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-01 00:00:00",
+                      "last": "2021-05-31 23:45:00",
+                      "slots": 2976
+                    }
+                  ]
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 2976,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-01 00:00:00",
+                      "last": "2021-05-31 23:45:00",
+                      "slots": 2976
+                    }
+                  ]
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 2810,
+                  "unavailable_or_not_approved": 166,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-12 16:45:00",
+                      "last": "2021-05-12 17:30:00",
+                      "slots": 4
+                    },
+                    {
+                      "first": "2021-05-12 22:45:00",
+                      "last": "2021-05-12 23:30:00",
+                      "slots": 4
+                    },
+                    {
+                      "first": "2021-05-18 16:45:00",
+                      "last": "2021-05-20 05:45:00",
+                      "slots": 149
+                    },
+                    {
+                      "first": "2021-05-20 20:15:00",
+                      "last": "2021-05-20 20:30:00",
+                      "slots": 2
+                    },
+                    {
+                      "first": "2021-05-27 14:45:00",
+                      "last": "2021-05-27 15:15:00",
+                      "slots": 3
+                    },
+                    {
+                      "first": "2021-05-27 16:15:00",
+                      "last": "2021-05-27 16:30:00",
+                      "slots": 2
+                    },
+                    {
+                      "first": "2021-05-27 22:45:00",
+                      "last": "2021-05-27 23:00:00",
+                      "slots": 2
+                    }
+                  ]
+                }
+              }
+            },
+            "exact_hour": {
+              "expected": 744,
+              "records_present": 744,
+              "records_absent": 0,
+              "off_grid_records": 2232,
+              "absent_intervals": [],
+              "fields": {
+                "NivelFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 744,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-01 00:00:00",
+                      "last": "2021-05-31 23:00:00",
+                      "slots": 744
+                    }
+                  ]
+                },
+                "VazaoFinal": {
+                  "approved_numeric": 0,
+                  "unavailable_or_not_approved": 744,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-01 00:00:00",
+                      "last": "2021-05-31 23:00:00",
+                      "slots": 744
+                    }
+                  ]
+                },
+                "ChuvaFinal": {
+                  "approved_numeric": 703,
+                  "unavailable_or_not_approved": 41,
+                  "unavailable_or_not_approved_intervals": [
+                    {
+                      "first": "2021-05-12 17:00:00",
+                      "last": "2021-05-12 17:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-12 23:00:00",
+                      "last": "2021-05-12 23:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-18 17:00:00",
+                      "last": "2021-05-20 05:00:00",
+                      "slots": 37
+                    },
+                    {
+                      "first": "2021-05-27 15:00:00",
+                      "last": "2021-05-27 15:00:00",
+                      "slots": 1
+                    },
+                    {
+                      "first": "2021-05-27 23:00:00",
+                      "last": "2021-05-27 23:00:00",
+                      "slots": 1
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Literal naive DataHora; no certified timezone/datum/2021gauge continuity.",
+    "Exact-grid absence is distinct from absence of offgrid records; no timestamp rounding.",
+    "Approved is source QC text, not independent accuracy certification.",
+    "No record receipt/publication times; present-day retrospective source may contain revisions.",
+    "Unavailable field/record never replaced with zero; all source values/QC remain in JSONL/XML."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tolerance_m": 1e-08,
+  "rows_per_family": 72,
+  "passed": true,
+  "families": {
+    "baseline": {
+      "max_absolute_difference_m": 7.105427357601002e-15,
+      "failed": 0
+    },
+    "candidate": {
+      "max_absolute_difference_m": 7.105427357601002e-15,
+      "failed": 0
+    }
+  },
+  "comparison_inputs_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/predictions.csv": "c4b95775c5b088467629a2b3ff3dec375dc3a29192943a6271c378670f331369",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-ate-mucum-20260921/predictions.csv": "44d611450b80859558b535c3e9dcdc91df5ca030cf23fbd14a4d39fd4aa9b9fa",
+    "/Users/brunozilio/Documents/radar/outputs/verificacao-integral-chuva-mucum-20260921/recomputed-levels.csv": "60fda3b6fdee6e26e4e2f35ba14c4795febd9a3b9147eff03d576e157cc4f717"
+  },
+  "candidate_column": "julho_levels_rain_m"
+}

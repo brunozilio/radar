@@ -1,0 +1,25 @@
+{
+  "registered_at_utc": "2026-09-22T04:40:49.283857+00:00",
+  "input_sha256": {
+    "scripts/hydro_radar_trend_diagnostic.py": "0b81736a63312177ae554dc20e84457457b44edac3f5c70c204248a18a6ed132",
+    "outputs/experimento-radar-idade-ancora-20260922/predictions.csv": "323f763377c6abc065034c31abc362954d35133f723adc6dbbb791d3a4bd89a5",
+    "outputs/experimento-radar-idade-ancora-20260922/evaluation.csv": "76e1ac9601ed172900a6b0e022cbe3db7d68f07a3d46a57b6ebbf558fb5404b1",
+    "outputs/experimento-radar-idade-ancora-20260922/artifact-hashes.json": "ba9eab5746c7537eb8d7bb923b034e223b998844a28982a7cbcd1ea200afdc74",
+    "outputs/experimento-radar-mistura-atrasos-20260922/prepared-inputs.npz": "b2b6bec9438135dfe5f6d94722cd6c9f40ebd077232c15c9d09283cd2f916d06",
+    "outputs/experimento-radar-mistura-atrasos-20260922/training-masks.npz": "657cd9118106272b760c977dea01defce5327bccf328bc6555ea89b932298276",
+    "outputs/experimento-radar-mistura-atrasos-20260922/artifact-hashes.json": "dc86055d4618dbeb612c6f490bb3589b2b49184ee606896040252b43e67f03f3",
+    "scripts/hydro_latency_forecast.py": "021e26a9ac36b6d92a8773f20139e0d3bb8e470a3777ef509c5327dc823e3b32"
+  },
+  "purpose": "Diagnose frozen predictions before choosing another experiment; all periods already known development.",
+  "partitions": {
+    "known_trend": "Muçum column2 dH1: rising >=0.10 m/h, falling <=-0.10 m/h, stable otherwise, unknown if missing. Nominal-hour rate, not actual elapsed measurement time.",
+    "future_response": "actual minus profile base: rising >=0.50m, falling <=-0.50m, stable otherwise, unknown if either missing. Diagnostic label only, never model input.",
+    "training_response_support": "actual minus profile base compared with min/max training response for the same family/fold/horizon; below, within (inclusive), above, unknown. Descriptive univariate support only."
+  },
+  "scope": "Both profiles, both folds, all12 nominal horizons, all four families, all/observed>=7m. Missing truth retained separately; missing forecasts remain failures in observed denominators. Profiles are alternative views, not independent samples.",
+  "new_fits": 0,
+  "tuning": false,
+  "promotion": false,
+  "independent_test": false,
+  "goal_achieved": false
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "month": "2023-08",
+    "literal_csv": "outputs/historico-ceran-2023-complemento-20260921/ceran-source-values.csv",
+    "csv_sha256": "5872ad456b5c436ce6591c996d80a62c0934ce22bad672da94f70939bf251c10",
+    "csv_manifest": "outputs/historico-ceran-2023-complemento-20260921/artifact-hashes.json",
+    "csv_manifest_sha256": "4a5b35f17c15a8bfb7fda2d26e9b8a95fc4dab5e31255500bb2e7896e7f72ecf",
+    "raw_source_path": "outputs/historico-ceran-2023-complemento-20260921/raw/DADOS_HIDROLOGICOS_HO_2023_08.csv",
+    "raw_source_sha256": "33a279757c8adedd0e7864857742a678288e408c5269b451b668bc16f251706a",
+    "raw_source_url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_08.csv",
+    "raw_metadata": {
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_08.csv",
+      "catalog_resource_id": "197e8720-1c55-4872-85be-2b80406e477a",
+      "started_at": "2026-09-21T22:52:38.970149+00:00",
+      "collected_at": "2026-09-21T22:55:10.814445+00:00",
+      "file": "raw/DADOS_HIDROLOGICOS_HO_2023_08.csv",
+      "status": 200,
+      "headers": {
+        "x-amz-request-id": "WFAH19PJ2FM63DJD",
+        "x-amz-id-2": "eOvnUpuperccuNq8/UDk7Psiqtp3+bu/YQ8mAjhXcnY8ARiIVSuFafr8ZHOBPgWswfR0RCCjOZ1jJKudZVCwJWN71dZtYWNb",
+        "Content-Length": "15815645",
+        "Accept-Ranges": "bytes",
+        "Date": "Mon, 21 Sep 2026 22:52:40 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Thu, 13 Feb 2025 18:32:10 GMT",
+        "ETag": "\"cdc7f9fe8cb4944272061453d1e9a6f9-4\"",
+        "Content-Type": "binary/octet-stream",
+        "x-amz-server-side-encryption": "AES256",
+        "Connection": "close"
+      },
+      "sha256": "33a279757c8adedd0e7864857742a678288e408c5269b451b668bc16f251706a",
+      "bytes": 15815645
+    },
+    "plants": {
+      "JIUHQJ": {
+        "records": 744,
+        "unique_timestamps": 744,
+        "first": "2023-08-01 01:00:00",
+        "last": "2023-08-31 23:59:00",
+        "literal2359": 31
+      },
+      "JIUHMC": {
+        "records": 744,
+        "unique_timestamps": 744,
+        "first": "2023-08-01 01:00:00",
+        "last": "2023-08-31 23:59:00",
+        "literal2359": 31
+      },
+      "JIUHCA": {
+        "records": 744,
+        "unique_timestamps": 744,
+        "first": "2023-08-01 01:00:00",
+        "last": "2023-08-31 23:59:00",
+        "literal2359": 31
+      }
+    },
+    "timestamp_column_used": "din_instante",
+    "interpreted_columns_ignored": true,
+    "no_new_request": true
+  },
+  {
+    "month": "2023-09",
+    "literal_csv": "outputs/historico-cheia-setembro-2023/ons-ceran-source-values.csv",
+    "csv_sha256": "318fb81567ad390a5a4d562f3509c141cd4d88fd482fb4e7a9d58584e2894d8c",
+    "csv_manifest": "outputs/historico-cheia-setembro-2023/artifact-hashes.json",
+    "csv_manifest_sha256": "ecd78d6416f0d7c94e224db40b6bd3095e0ce9826842646bce47f1a0b7824736",
+    "raw_source_path": "outputs/historico-cheia-setembro-2023/raw/ons-2023-09.parquet",
+    "raw_source_sha256": "3e464e549e30cfd156f534c55776712a6614866d467dc43bd6644429f3ab4e83",
+    "raw_source_url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_09.parquet",
+    "raw_metadata": {
+      "file": "raw/ons-2023-09.parquet",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_09.parquet",
+      "retrieved_at": "2026-09-21T20:58:56.053787+00:00",
+      "cache_used": false,
+      "http_status": 200,
+      "final_url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_09.parquet",
+      "headers": {
+        "x-amz-request-id": "A6ZP0W8KDBZQ9XH6",
+        "x-amz-id-2": "1812hMiCx0Nt+CBTMQzuFePVfrmNVBDSJByGVkBE5kRb0DdoZrjvUWdQH9tIXaOoyE5M8OQcsKtrp8Vomm2BrA4JyvAzYN0b",
+        "Content-Length": "1200245",
+        "Accept-Ranges": "bytes",
+        "Date": "Mon, 21 Sep 2026 20:58:57 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Thu, 13 Feb 2025 18:35:13 GMT",
+        "ETag": "\"ba5a6fdd25d82c58977b0f57d1c14c23\"",
+        "Content-Type": "binary/octet-stream",
+        "x-amz-server-side-encryption": "AES256",
+        "Connection": "close"
+      },
+      "bytes": 1200245,
+      "sha256": "3e464e549e30cfd156f534c55776712a6614866d467dc43bd6644429f3ab4e83"
+    },
+    "plants": {
+      "JIUHQJ": {
+        "records": 714,
+        "unique_timestamps": 714,
+        "first": "2023-09-01 01:00:00",
+        "last": "2023-09-30 23:59:00",
+        "literal2359": 30
+      },
+      "JIUHMC": {
+        "records": 714,
+        "unique_timestamps": 714,
+        "first": "2023-09-01 01:00:00",
+        "last": "2023-09-30 23:59:00",
+        "literal2359": 30
+      },
+      "JIUHCA": {
+        "records": 714,
+        "unique_timestamps": 714,
+        "first": "2023-09-01 01:00:00",
+        "last": "2023-09-30 23:59:00",
+        "literal2359": 30
+      }
+    },
+    "timestamp_column_used": "din_instante",
+    "interpreted_columns_ignored": true,
+    "no_new_request": true
+  }
+]

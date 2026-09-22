@@ -1,0 +1,141 @@
+{
+  "tallies": [
+    {
+      "period": "2021",
+      "subset": "all",
+      "hits_improve": 8,
+      "hits_tie": 1,
+      "hits_worse": 3,
+      "mae_improve": 10,
+      "mae_worse": 2,
+      "max_worse": 7,
+      "candidate_point_fraction_ge98_horizons": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "period": "2021",
+      "subset": "level_ge_7m",
+      "hits_improve": 7,
+      "hits_tie": 3,
+      "hits_worse": 2,
+      "mae_improve": 8,
+      "mae_worse": 4,
+      "max_worse": 6,
+      "candidate_point_fraction_ge98_horizons": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "period": "2022",
+      "subset": "all",
+      "hits_improve": 9,
+      "hits_tie": 0,
+      "hits_worse": 3,
+      "mae_improve": 8,
+      "mae_worse": 4,
+      "max_worse": 0,
+      "candidate_point_fraction_ge98_horizons": [
+        1,
+        2
+      ]
+    },
+    {
+      "period": "2022",
+      "subset": "level_ge_7m",
+      "hits_improve": 8,
+      "hits_tie": 0,
+      "hits_worse": 4,
+      "mae_improve": 10,
+      "mae_worse": 2,
+      "max_worse": 0,
+      "candidate_point_fraction_ge98_horizons": [
+        1
+      ]
+    },
+    {
+      "period": "pooled",
+      "subset": "all",
+      "hits_improve": 12,
+      "hits_tie": 0,
+      "hits_worse": 0,
+      "mae_improve": 10,
+      "mae_worse": 2,
+      "max_worse": 0,
+      "candidate_point_fraction_ge98_horizons": [
+        1,
+        2
+      ]
+    },
+    {
+      "period": "pooled",
+      "subset": "level_ge_7m",
+      "hits_improve": 9,
+      "hits_tie": 0,
+      "hits_worse": 3,
+      "mae_improve": 10,
+      "mae_worse": 2,
+      "max_worse": 0,
+      "candidate_point_fraction_ge98_horizons": [
+        1
+      ]
+    }
+  ],
+  "worst_12h_cases": [
+    {
+      "year": 2021,
+      "family": "control120",
+      "origin": "2021-05-22T00:00:00-03:00",
+      "target_time": "2021-05-22T12:00:00-03:00",
+      "base_m": 1.04,
+      "actual_m": 1.81,
+      "forecast_m": 3.717365258669126,
+      "absolute_error_m": 1.907365258669126
+    },
+    {
+      "year": 2021,
+      "family": "candidate120_plus2020",
+      "origin": "2021-05-22T00:00:00-03:00",
+      "target_time": "2021-05-22T12:00:00-03:00",
+      "base_m": 1.04,
+      "actual_m": 1.81,
+      "forecast_m": 4.339067894611736,
+      "absolute_error_m": 2.5290678946117358
+    },
+    {
+      "year": 2022,
+      "family": "control120",
+      "origin": "2022-05-29T15:00:00-03:00",
+      "target_time": "2022-05-30T03:00:00-03:00",
+      "base_m": 3.92,
+      "actual_m": 12.03,
+      "forecast_m": 6.213083391543425,
+      "absolute_error_m": 5.816916608456574
+    },
+    {
+      "year": 2022,
+      "family": "candidate120_plus2020",
+      "origin": "2022-05-29T18:00:00-03:00",
+      "target_time": "2022-05-30T06:00:00-03:00",
+      "base_m": 4.88,
+      "actual_m": 12.56,
+      "forecast_m": 7.682284957287237,
+      "absolute_error_m": 4.877715042712763
+    }
+  ],
+  "input_sha256": {
+    "outputs/experimento-radar-reservas-2021-2022-20260922/predictions.csv": "96e61123df1a0a32b1161686637626ecd3856b45071106092c22107ab3c9bd86",
+    "outputs/experimento-radar-reservas-2021-2022-20260922/evaluation.csv": "57aef918f68a4924fa0b6bcbd323825ab4d0ba94eb9fdab47bfc5fceb727f6d2",
+    "outputs/experimento-radar-reservas-2021-2022-20260922/experiment.json": "6e5dbb8d657eb32f05531fb17f082683afeee82937cc402acdaf69f8ba88ac1d",
+    "outputs/experimento-radar-reservas-2021-2022-20260922/pre-inference-manifest.json": "050199567ab7dd589920dc7891c11eea6903b865b54fe250962bdf28635b163e"
+  },
+  "point_fractions_are_not_prospective_certification": true,
+  "no_model_selection_or_refit": true,
+  "promoted": false,
+  "goal_achieved": false
+}

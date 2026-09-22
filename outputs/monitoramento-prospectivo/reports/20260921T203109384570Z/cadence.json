@@ -1,0 +1,19 @@
+{
+  "configured": true,
+  "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+  "effective_from": "2026-09-21T21:00:00+00:00",
+  "closed_windows": 0,
+  "complete_windows": 0,
+  "coverage_percent": null,
+  "status_counts": {},
+  "current_window_started_at": null,
+  "windows": [],
+  "unlinked_forecast_issues": 2,
+  "limitations": [
+    "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+    "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+    "An unfinished record does not establish a live process.",
+    "Before the policy effective time, historical coverage remains unproven.",
+    "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+  ]
+}

@@ -1,0 +1,49 @@
+
+> monitoramento-rio-taquari@0.1.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ extrai candidatos da listagem oficial sem exigir território no resumo truncado (1.637667ms)
+✔ artigo completo corrige falso negativo territorial e usa a última data futura (11.603958ms)
+✔ artigo hidrológico aceita Taquari e Encantado e usa vigência lida do card (1.175375ms)
+✔ vigência do card termina no fim do último dia em Brasília (0.160667ms)
+✔ mantém o formato legado de validade explícita (0.485084ms)
+✔ horário sem minutos termina na hora cheia (0.094667ms)
+✔ relevância ampliada cobre as denominações territoriais esperadas (0.15975ms)
+✔ imagem externa não é aceita como imagem oficial (0.127167ms)
+✔ parseSaceLevelRows converte o CSV atual do SGB de centímetros para metros (0.687125ms)
+✔ as estações SACE usam o feed ativo do SGB (0.13525ms)
+✔ parseInmetAlerts normaliza um aviso oficial que inclui Muçum (0.737375ms)
+✔ o geocode de Muçum precisa ser um token exato (0.213291ms)
+✔ mantém avisos futuros e mapeia as três severidades (0.207417ms)
+✔ datas locais inválidas não são convertidas (0.106125ms)
+✔ prioriza imagens novas e ignora backlog antigo, datas inválidas e futuras (0.616208ms)
+✔ falha de download não interrompe os próximos quadros (0.150333ms)
+✔ quadro lento não impede publicação dos demais; concorrência é limitada (0.081625ms)
+✔ radar permanece disponível com satélite vazio ou em horário diferente (0.118583ms)
+✔ resposta vazia ou atrasada preserva último lote recente; lote novo substitui (0.079125ms)
+✔ satélite usa provedor com imagem recente mesmo se o preferido está antigo (0.1195ms)
+✔ janela ordena lote decrescente da API, elimina duplicações e limita animação a uma hora (0.59325ms)
+✔ NOAA extrai data UTC do dia do ano e aceita somente o setor e resolução esperados (3.491292ms)
+✔ rodadas mantêm seus valores históricos e rejeitam caminhos arbitrários (16.101583ms)
+[projection] scheduled refresh completed { generatedAt: '2026-09-21T21:05:00Z' }
+✔ ponte R2 aceita somente os arquivos de previsão previstos, sem travessia (0.5005ms)
+✔ aceita somente seis alvos horários finitos e ainda futuros (1.127458ms)
+✔ marca atraso sem invalidar rodadas históricas (0.110417ms)
+✔ cron chama apenas o endpoint interno autenticado e propaga falhas (11.9705ms)
+✔ ANA: centímetros, ausência de nível, zero, timestamp inválido/futuro e sentinela (1.078291ms)
+✔ cada fonte publica imediatamente, sem esperar pela outra (9.718791ms)
+✔ falha em ANA/SNIRH preserva a outra fonte (0.456708ms)
+✔ falha em SACE/SGB preserva a outra fonte (0.858417ms)
+✔ resposta vazia/HTML é identificada como erro, sem publicar leituras (0.258542ms)
+✔ banco real: mais recente por estação, empate SACE, fontes distintas, falhas e histórico (4.88225ms)
+✔ fonte do radar de Concórdia aponta para a Defesa Civil de SC (0.403708ms)
+✔ horário do arquivo CHP é interpretado em UTC (1.076167ms)
+✔ lista do radar aceita somente nomes de imagem seguros e válidos (0.477667ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 84.163667

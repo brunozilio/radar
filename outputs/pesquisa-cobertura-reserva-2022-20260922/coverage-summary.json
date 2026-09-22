@@ -1,0 +1,69 @@
+{
+  "stations": [
+    {
+      "station": "86510000",
+      "records": 6144,
+      "first": "2022-04-28T00:00:00",
+      "last": "2022-06-30T23:45:00",
+      "minute_counts": {
+        "0": 1536,
+        "15": 1536,
+        "30": 1536,
+        "45": 1536
+      },
+      "second_counts": {
+        "0": 6144
+      },
+      "expected_quarter_records": 6144,
+      "missing_quarter_timestamps": 0,
+      "off_grid_records": 0,
+      "level_qc_counts": {
+        "Dado aprovado": 6136,
+        "None": 8
+      },
+      "missing_level_values": 8,
+      "approved_level_records": 6136,
+      "exact_hour_approved_level_records": 1535,
+      "evaluation_exact_hour_approved_level_records": 1463
+    },
+    {
+      "station": "86472000",
+      "records": 6144,
+      "first": "2022-04-28T00:00:00",
+      "last": "2022-06-30T23:45:00",
+      "minute_counts": {
+        "0": 1536,
+        "15": 1536,
+        "30": 1536,
+        "45": 1536
+      },
+      "second_counts": {
+        "0": 6144
+      },
+      "expected_quarter_records": 6144,
+      "missing_quarter_timestamps": 0,
+      "off_grid_records": 0,
+      "level_qc_counts": {
+        "Dado aprovado": 3109,
+        "Dado reprovado": 1,
+        "Dado suspeito": 2,
+        "None": 3032
+      },
+      "missing_level_values": 3032,
+      "approved_level_records": 3109,
+      "exact_hour_approved_level_records": 779,
+      "evaluation_exact_hour_approved_level_records": 707
+    }
+  ],
+  "source_references": 12384,
+  "unique_unconflicted_rows": 12288,
+  "duplicate_extra_references": 96,
+  "conflicting_timestamp_groups": 0,
+  "failed_requests": 0,
+  "model_inference": false,
+  "training": false,
+  "timestamps_modified": false,
+  "timezone_certified": false,
+  "datum_certified": false,
+  "reservation_still_excludes_fitting": true
+}

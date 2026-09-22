@@ -1,0 +1,77 @@
+{
+  "forecasts": [
+    {
+      "model": "radar_arvores_live_candidate",
+      "recorded_at": "2026-09-21T23:04:38.599665+00:00",
+      "artifacts": 56,
+      "input_receipts": 207,
+      "real_lead_bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "first": {
+        "level_m": 15.808767107615092,
+        "nominal_lead_h": 1,
+        "valid_at": "2026-09-21T21:00:00-03:00"
+      },
+      "last": {
+        "level_m": 18.13541555710787,
+        "nominal_lead_h": 14,
+        "valid_at": "2026-09-22T10:00:00-03:00"
+      },
+      "upstream_extrapolation": null
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "recorded_at": "2026-09-21T23:04:38.716022+00:00",
+      "artifacts": 56,
+      "input_receipts": 207,
+      "real_lead_bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "first": {
+        "level_m": 16.841258863274895,
+        "nominal_lead_h": 1,
+        "valid_at": "2026-09-21T21:00:00-03:00"
+      },
+      "last": {
+        "level_m": 27.453483670415466,
+        "nominal_lead_h": 14,
+        "valid_at": "2026-09-22T10:00:00-03:00"
+      },
+      "upstream_extrapolation": {
+        "detail_path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T200235-0300/upstream-extrapolation.json",
+        "flow_models_with_outside_features": 28,
+        "forecast_above_training_max_count": 14,
+        "uncertainty_note": "PET/rainfall sensitivity does not cover the error of future upstream-flow estimates; flagged predictions remain in evaluation."
+      }
+    }
+  ],
+  "cycle_completed": true,
+  "goal_achieved": false
+}

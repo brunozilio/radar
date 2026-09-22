@@ -1,0 +1,14 @@
+{
+  "id": "radar-reservoir-levels-fixed-v1",
+  "scope": "Radar only, historical development. Reuse frozen current-runtime baseline without refitting it; fit24 new candidate models.",
+  "baseline": "Baseline family from experimento-radar-ausencias-nativas-runtime19-20260921:180 predictors, original complete24 training membership, original per-horizon parameters and weights. Neither the discarded native-missing training candidate nor HGE is used.",
+  "change": "Append the24 frozen CERAN reservoir level/change predictors from experimento-niveis-reservatorios-20260921/additional-features.npz: upstream/downstream levels for14deJulho,MonteClaro,CastrodeAlves and change1h,slope3h,slope6h, making204 features. Do not subtract levels between different gauges or convert to reservoir storage.",
+  "availability": "Preserve original ONS historical source timestamps, assume UTC-03 and60min availability delay, asof age<=90min after delayed lookup. Keep23:59 literal and newest missing value missing. NaNs handled natively; actual historical publication availability is not certified.",
+  "training": "Same indices, target delta, sample weights1+2*(abs(delta)>=1)+2*(target>=9), leaf/loss by horizon, max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,random_state57 and early_stoppingFalse. Same numpy2.5.3/sklearn1.9.1 runtime. No tuning, feature ablation search, anomaly removal or row filtering on added inputs.",
+  "splits": "Preserve previous historical masks: preOctober2025 training for validation; union of preOctober and October-to-July2026 blocks for test, including original boundary exclusions. Evaluate all scheduled origins/targets even with missing auxiliary fields; only missing Muçum base prevents inference. End test targets beforeSeptember21/2026.",
+  "evaluation": "All nominal horizons1..12, both validation/test descriptive phases, all/high>=7m subsets, full_schedule and original complete24/missing24 subsets. Preserve failures/coverage, MAE,bias,P98,max and hits<=0.50m. Exact same102084 scheduled rows and target values as frozen baseline required.",
+  "limits": "Previously inspected historical development; validation period already used to select original tree parameters. No independent holdout or prospective proof. Source revisions, publication latency, gauge references and predictor anomalies remain unchanged and uncertified.",
+  "live_issuance": false,
+  "promoted": false,
+  "goal_achieved": false
+}

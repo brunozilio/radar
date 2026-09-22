@@ -1,0 +1,76 @@
+{
+  "status": "NOT_PROMOTED",
+  "reason": "Nonnegative level regression reduced current extrapolation and development-test high-flow MAE but worsened validation high-flow MAE and general errors. No independent gain demonstrated.",
+  "max_relative_kkt_residual": 2.9350649640332095e-15,
+  "paired_target_sha256": "5d4f24793b380d96c8395eb53b2079deb151d5199760793440b434d7cfa3586b",
+  "paired_target_counts": {
+    "reference_delta_full": 102108,
+    "level_ridge_unconstrained": 102108,
+    "level_ridge_nonnegative": 102108
+  },
+  "summary": [
+    {
+      "phase": "validation",
+      "family": "reference_delta_full",
+      "all_n": 78558,
+      "all_mae_m3_s": 81.98173597620702,
+      "all_bias_m3_s": 16.851690041630434,
+      "high_flow_n": 336,
+      "high_flow_mae_m3_s": 285.24054211498526,
+      "high_flow_bias_m3_s": 19.75339125181602
+    },
+    {
+      "phase": "validation",
+      "family": "level_ridge_unconstrained",
+      "all_n": 78558,
+      "all_mae_m3_s": 177.47656877358276,
+      "all_bias_m3_s": 168.33372223143908,
+      "high_flow_n": 336,
+      "high_flow_mae_m3_s": 395.21642362083367,
+      "high_flow_bias_m3_s": 272.9798389433051
+    },
+    {
+      "phase": "validation",
+      "family": "level_ridge_nonnegative",
+      "all_n": 78558,
+      "all_mae_m3_s": 185.46179559559448,
+      "all_bias_m3_s": 179.68728972444018,
+      "high_flow_n": 336,
+      "high_flow_mae_m3_s": 417.4788661762851,
+      "high_flow_bias_m3_s": 331.1400347031888
+    },
+    {
+      "phase": "test",
+      "family": "reference_delta_full",
+      "all_n": 23550,
+      "all_mae_m3_s": 169.23495875920005,
+      "all_bias_m3_s": -8.977182474282625,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 437.98863562105976,
+      "high_flow_bias_m3_s": -152.16243217649117
+    },
+    {
+      "phase": "test",
+      "family": "level_ridge_unconstrained",
+      "all_n": 23550,
+      "all_mae_m3_s": 173.61865294481933,
+      "all_bias_m3_s": 62.96100606560375,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 403.540219311557,
+      "high_flow_bias_m3_s": -129.45245018495976
+    },
+    {
+      "phase": "test",
+      "family": "level_ridge_nonnegative",
+      "all_n": 23550,
+      "all_mae_m3_s": 175.641184303388,
+      "all_bias_m3_s": 51.804437294016,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 421.835339927828,
+      "high_flow_bias_m3_s": -158.6241456633003
+    }
+  ],
+  "invalid_predecessor": "../experimento-vazao-nao-negativa-20260921/invalidation.json",
+  "promoted": false,
+  "goal_achieved": false
+}

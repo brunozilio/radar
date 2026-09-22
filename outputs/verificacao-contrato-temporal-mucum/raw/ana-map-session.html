@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Hidro-Telemetria / Mapa
+</title><meta name="description" content="Sistema - GestorSGH" /><meta name="keywords" content="Projeto desenvolvido entre ANA (Agência Nacional de Águas)" /><meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><link rel="shortcut icon" href="inc/img/favicon.ico" /><link rel="stylesheet" type="text/css" href="inc/css/stylesRhn.css" /><link rel="stylesheet" type="text/css" href="inc/css/stylesGeral.css" /><link rel="stylesheet" type="text/css" href="inc/css/glyphicon.css" />
+
+    <script src="inc/js/apis/AceitesModulosEmailAPI.js"></script>
+
+    <script type="text/javascript">
+        function fxVerificar() {
+            document.getElementById('hackFX').style.display = "none";
+            if (navigator.userAgent.indexOf("Firefox") != -1) {
+                document.getElementById('hackFX').style.display = "block";
+            }
+            if ((navigator.userAgent.indexOf("MSIE") != -1) || (navigator.userAgent.indexOf("MSIE") == -1 && navigator.userAgent.indexOf("Firefox") == -1)) {
+                document.getElementById('hackFX').style.display = 'none';
+            }
+        }
+
+        function DisableButton() {
+            document.getElementById('btnAceite').disabled = true;
+        }
+    </script>
+    
+    
+    
+    
+<style type="text/css">
+	/* <![CDATA[ */
+	#Menu1 { background-color:White;border-color:LightGrey;border-width:1px;border-style:solid; }
+	#Menu1 img.icon { border-style:none;vertical-align:middle; }
+	#Menu1 img.separator { border-style:none;display:block; }
+	#Menu1 img.horizontal-separator { border-style:none;vertical-align:middle; }
+	#Menu1 ul { list-style:none;margin:0;padding:0;width:auto; }
+	#Menu1 ul.dynamic { background-color:#EEEEEE;border-color:#D2D2D2;border-width:1px;border-style:solid;z-index:1; }
+	#Menu1 a { color:Black;font-family:Calibri;font-size:1em;font-weight:normal;text-decoration:none;white-space:nowrap;display:block; }
+	#Menu1 a.static { padding:8px 7px 8px 7px;font-weight:normal;text-decoration:none; }
+	#Menu1 a.popout { background-image:url("inc/img/icon/ico_Arrow_Button.png");background-repeat:no-repeat;background-position:right center;padding-right:14px; }
+	#Menu1 a.popout-dynamic { background:url("inc/img/icon/ico_Arrow_Right.png") no-repeat right center;padding-right:14px; }
+	#Menu1 a.dynamic { font-weight:normal;text-decoration:none;border-style:none; }
+	#Menu1 a.static.highlighted { color:Black;background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	#Menu1 a.dynamic.highlighted { background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	/* ]]> */
+</style><style type="text/css">
+	/* <![CDATA[ */
+	#mnuUsuarios { background-color:White;border-color:LightGrey;border-width:1px;border-style:solid; }
+	#mnuUsuarios img.icon { border-style:none;vertical-align:middle; }
+	#mnuUsuarios img.separator { border-style:none;display:block; }
+	#mnuUsuarios img.horizontal-separator { border-style:none;vertical-align:middle; }
+	#mnuUsuarios ul { list-style:none;margin:0;padding:0;width:auto; }
+	#mnuUsuarios ul.dynamic { background-color:#EEEEEE;border-color:#D2D2D2;border-width:1px;border-style:solid;z-index:1;margin-left:-1px; }
+	#mnuUsuarios a { color:Black;font-family:Calibri;font-size:1em;font-weight:normal;text-decoration:none;white-space:nowrap;display:block; }
+	#mnuUsuarios a.static { width:197px;padding:2px 0px 2px 0px;font-weight:normal;text-decoration:none; }
+	#mnuUsuarios a.popout { background-image:url("inc/img/icon/ico_Arrow_Button.png");background-repeat:no-repeat;background-position:right center;padding-right:14px; }
+	#mnuUsuarios a.dynamic { padding:5px 10px 5px 10px;font-weight:normal;text-decoration:none;border-style:none; }
+	#mnuUsuarios a.static.highlighted { color:Black;background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	#mnuUsuarios a.dynamic.highlighted { background-color:#D2D2D2;font-weight:normal;text-decoration:none; }
+	/* ]]> */
+</style></head>
+
+<body style="left: 0"> 
+
+        
+
+    
+    <span style="position: relative; z-index: 1500">
+    </span>
+    <form method="post" action="./Mapa.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMzE2NTQ0NTUPFgQeDkV2ZW50T3RoZXJQYWdlBQVmYWxzZR4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWBgIDD2QWDgIHDw8WAh4HVmlzaWJsZWhkZAIJDw8WAh8CaGRkAgsPPCsADQEMFCsABwUXMDowLDA6MSwwOjIsMDozLDA6NCwwOjUUKwACFgYeBFRleHQFBE1hcGEeBVZhbHVlBQRNYXBhHgtOYXZpZ2F0ZVVybAULfi9NYXBhLmFzcHhkFCsAAhYGHwMFCkVzdGHDp8O1ZXMfBAUaSW5mb3JtYcOnw7VlcyBkYSBFc3Rhw6fDo28fBQUBIxQrAAMFBzA6MCwwOjEUKwACFgYfAwURTGlzdGFyIEVzdGHDp8O1ZXMfBAURTGlzdGFyIEVzdGHDp8O1ZXMfBQUPfi9Fc3RhY29lcy5hc3B4ZBQrAAIWBh8DBRJGaWNoYSBkYSBFc3Rhw6fDo28fBAUSRmljaGEgZGEgRXN0YcOnw6NvHwUFF34vRXN0YWNvZXNDYWRhc3Ryby5hc3B4ZBQrAAIWBh8DBRBWaXN1YWxpemFyIERhZG9zHwQFE1Zpc3VhbGl6YXIgb3MgZGFkb3MfBQUBIxQrAAcFFzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1FCsAAhYGHwMFCUdyw6FmaWNvcx8EBQ9HZXJhciBncsOhZmljb3MfBQUTfi9nZXJhckdyYWZpY28uYXNweGQUKwACFgYfAwUOw5psdGltb3MgRGFkb3MfBAUXw5psdGltb3MgZGFkb3MgZGFzIFBDRHMfBQUTfi91bHRpbW9zRGFkb3MuYXNweGQUKwACFgYfAwURU8OpcmllIEhpc3TDs3JpY2EfBAURU8OpcmllIEhpc3TDs3JpY2EfBQUVfi9zZXJpZUhpc3RvcmljYS5hc3B4ZBQrAAIWBh8DBQ9NYW51dC4gZGUgRGFkb3MfBAUVTWFudXRlbsOnw6NvIGRlIERhZG9zHwUFFn4vbWFudXRlbmNhb0RhZG9zLmFzcHhkFCsAAhYGHwMFDkltcG9ydGFyIERhZG9zHwQFDkltcG9ydGFyIERhZG9zHwUFFH4vSW1wb3J0YXJEYWRvcy5hc3B4ZBQrAAIWCB8DBRlFeHBvcnRhciBEYWRvcyAoSGlkcm93ZWIpHwQFF0V4cG9ydGFyIGRhZG9zIGRhcyBQQ0RzHwUFMWh0dHA6Ly93d3cuc25pcmguZ292LmJyL2hpZHJvd2ViL3Nlcmllc2hpc3RvcmljYXMeBlRhcmdldAUGX2JsYW5rZBQrAAIWBh8DBQtSZWxhdMOzcmlvcx8EBRZTZXNzw6NvIGRlIHJlbGF0w7NyaW9zHwUFASMUKwAEBQswOjAsMDoxLDA6MhQrAAIWCB8DBQ1TdGF0dXMgZGEgUENEHwQFF0Fjb21wYW5oYW1lbnRvIGRhcyBQQ0RzHwUFGH4vYWNvbXBhbmhhbWVudG9QY2QuYXNweB4HVG9vbFRpcAUXQWNvbXBhbmhhbWVudG8gZGFzIFBDRHNkFCsAAhYKHwMFE0luZGljYWRvcmVzIGRhIFJITlIfBAUiUmVsYXTDs3JpbyBjb20gSW5kaWNhZG9yZXMgZGEgUkhOUh8FBZMBaHR0cHM6Ly9hcHAucG93ZXJiaS5jb20vdmlldz9yPWV5SnJJam9pWXpReFl6TTRPRFl0WTJZMFpDMDBNVGxtTFdKaU5qQXRNbVU0TnpNNU9UazBPREkwSWl3aWRDSTZJbVV3WW1JME1ERXlMVGd4TUdJdE5EWTVZUzA0WWpSa0xUWTJOMlpqWkRGaVlXWTRPQ0o5HwYFBl9ibGFuax8HBSJSZWxhdMOzcmlvIGNvbSBJbmRpY2Fkb3JlcyBkYSBSSE5SZBQrAAIWCB8DBRlEaXNwb25pYmlsaWRhZGUgZG9zIERhZG9zHwQFKFJlbGF0w7NyaW9zIGRlIERpc3BvbmliaWxpZGFkZSBkb3MgRGFkb3MfBQUBIx8HBShSZWxhdMOzcmlvcyBkZSBEaXNwb25pYmlsaWRhZGUgZG9zIERhZG9zFCsABQUPMDowLDA6MSwwOjIsMDozFCsAAhYIHwMFDEN1c3RvbWl6YWRvcx8EBTVSZWxhdMOzcmlvcyBkZSBEaXNwb25pYmlsaWRhZGUgZG9zIERhZG9zIEN1c3RvbWl6YWRvcx8FBRV+L2dlcmFyUmVsYXRvcmlvLmFzcHgfBwU1UmVsYXTDs3Jpb3MgZGUgRGlzcG9uaWJpbGlkYWRlIGRvcyBEYWRvcyBDdXN0b21pemFkb3NkFCsAAhYIHwMFClByb2dlc3TDo28fBAUyUmVsYXTDs3JpbyBkZSBEaXNwb25pYmlsaWRhZGUgZG9zIERhZG9zIFByb2dlc3TDo28fBQUQfi9Qcm9HZXN0YW8uYXNweB8HBTJSZWxhdMOzcmlvIGRlIERpc3BvbmliaWxpZGFkZSBkb3MgRGFkb3MgUHJvZ2VzdMOjb2QUKwACFggfAwVpUkhOUiA8YnI+PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZTowLjhlbTtmb250LXN0eWxlOml0YWxpYyc+UmVkZSBIaWRyb2zDs2dpY2EgTmFjaW9uYWwgZGUgUmVmZXLDqm5jaWE8L3NwYW4+HwQFWFJlbGF0w7NyaW8gZGUgRGlzcG9uaWJpbGlkYWRlIGRvcyBEYWRvcyBSSE5SIC0gUmVkZSBIaWRyb2zDs2dpY2EgTmFjaW9uYWwgZGUgUmVmZXLDqm5jaWEfBQULfi9yaG5yLmFzcHgfBwVYUmVsYXTDs3JpbyBkZSBEaXNwb25pYmlsaWRhZGUgZG9zIERhZG9zIFJITlIgLSBSZWRlIEhpZHJvbMOzZ2ljYSBOYWNpb25hbCBkZSBSZWZlcsOqbmNpYWQUKwACFggfAwUPU2V0b3IgRWzDqXRyaWNvHwQFN1JlbGF0w7NyaW8gZGUgRGlzcG9uaWJpbGlkYWRlIGRvcyBEYWRvcyBTZXRvciBFbMOpdHJpY28fBQUUfi9TZXRvckVsZXRyaWNvLmFzcHgfBwU3UmVsYXTDs3JpbyBkZSBEaXNwb25pYmlsaWRhZGUgZG9zIERhZG9zIFNldG9yIEVsw6l0cmljb2QUKwACFgYfAwUJR2VyZW5jaWFyHwQFE1Nlc3PDo28gZGUgY2FkYXN0cm8fBQUBIxQrAAIFAzA6MBQrAAIWBh8DBQZMaXN0YXMfBAULQ3JpYXIgbGlzdGEfBQURfi9nZXJhckxpc3RhLmFzcHhkFCsAAhYIHwMFDEZhbGUgQ29ub3Njbx8EBShQYXJhIGTDunZpZGFzIGUgc3VnZXN0w7VlcywgRmFsZSBDb25vc2NvHwUFPGh0dHA6Ly93d3cyLmFuYS5nb3YuYnIvUGFnaW5hcy9zZXJ2aWNvcy9mYWxlY29ub3Njby9mYXEuYXNweB8GBQZfYmxhbmtkZAINDzwrAA0BDBQrAAIFAzA6MBQrAAIWBh8DBYkBPGRpdiBjbGFzcz0ibWVudVVzdWFyaW9TZWxlY3RlZCI+PGRpdj48Yj5DYXJvIFZpc2l0YW50ZTwvYj48L2Rpdj48ZGl2PkZhw6dhIG8gc2V1IExvZ2luPC9kaXY+PGRpdj5BZ8OqbmNpYSBOYWNpb25hbCBkZSDDgWd1YXM8L2Rpdj48L2Rpdj4fBAUKU2VndXJhbsOnYR8FBQ1+L0xvZ2luMi5hc3B4ZGQCFQ9kFgICAw9kFgICAw9kFgICAQ8QZGQWAGQCFw9kFgICAQ9kFgJmD2QWBgIBDw8WAh8CaGRkAgMPZBYCAgEPEA8WAh4LXyFEYXRhQm91bmRnZA8WA2YCAQICFgMQBRFOaXZlbF9SZWZlcsOqbmNpYQUCMTlnEAURQ2h1dmFfUmVmZXLDqm5jaWEFAjIyZxAFCEhpZHJvV2ViBQIyNGcWAWZkAgUPFgIeA3NyYwVnaHR0cHM6Ly9wb3J0YWwxLnNuaXJoLmdvdi5ici9hbmEvYXBwcy9leHBlcmllbmNlYnVpbGRlci9leHBlcmllbmNlLz9pZD02OGQyMjNjMDE0YTU0ZTU3OGZmOGZmNDYyMWJmNTA5ZWQCGw8PFgIfAwUWNDE3IHVzdcOhcmlvKHMpIG9ubGluZWRkAgUPDxYCHwMFDHY2LjAuODQ3NS4yMWRkAgcPDxYCHwMFEDI0LzAyLzIwMjYgMTU6NDhkZGRoadlEhhkZ2Jp3pOjxZNVdcFcZVUtMM7cZJLNoONjIYQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/hidrotelemetria/WebResource.axd?d=60OM3JEy2RxPikum764ZKeraPQqXO5f24OMnHZDde0pqIdiNRCktZYkTp0_A2_iH46u4gSeXeNVfZ9zUdy4PH42VGJcLznvEwHv150V0UM81&amp;t=638242697820000000" type="text/javascript"></script>
+
+
+<script src="/hidrotelemetria/ScriptResource.axd?d=aC_paaoUgqckz6JNqBRGLX5azlK5lNuKRml8wqCq3PASPOzPNFWFdvExG3gTBKUV0auFrfbQ-HGkv5VZXWsmrlUZ7nKO9KsT-bCppz28UJzCZl6z8dRryRLBYFqRx2rWdCLYUM4DZq9FDgsZPAim0w2&amp;t=ffffffff813744a7" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"pt-BR","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":".","CurrencySymbol":"R$","NaNSymbol":"NaN (Não é um número)","CurrencyNegativePattern":9,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-Infinito","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":".","CurrencyPositivePattern":2,"PositiveInfinitySymbol":"+Infinito","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":".","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135586000000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, d\u0027 de \u0027MMMM\u0027 de \u0027yyyy HH:mm:ss","LongDatePattern":"dddd, d\u0027 de \u0027MMMM\u0027 de \u0027yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d\u0027 de \u0027MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM\u0027 de \u0027yyyy","AbbreviatedDayNames":["dom","seg","ter","qua","qui","sex","sáb"],"ShortestDayNames":["D","S","T","Q","Q","S","S"],"DayNames":["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"],"AbbreviatedMonthNames":["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez",""],"MonthNames":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro",""],"IsReadOnly":true,"NativeCalendarName":"Calendário gregoriano","AbbreviatedMonthGenitiveNames":["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez",""],"MonthGenitiveNames":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro",""]},"eras":[1,"d.C.",null,0]};//]]>
+</script>
+
+<script src="/hidrotelemetria/ScriptResource.axd?d=u7Sj8qi-iF_YwiCmnLlTtG1z1L5zIQsG3vOlKvMWY7fHnKUV8pehuEJvQG7ZS7CXU3-zVcLEHROV3Oal-9qn7TRwsLDMTCoXsLpROir-eZv6mZB4MgJw8h-znq15qICGr5jbgNqo5S6CE8eDG4dOL3KkhAKFciaeYCq8wbDQOqc1&amp;t=fffffffff4ed9dba" type="text/javascript"></script>
+<script src="/hidrotelemetria/ScriptResource.axd?d=Iy-CYgDqC4BXcY5sEEXxen2ni1Ljf60vB4AN50xCfcDOKXd83szNlflXGy-jN3NMZZ-ch5B1g46RftGOCw9Rlb1e5oChKY1j3aOuLYEPJnwwyspPOLyf5g_wyAjBzoJINWxFnGle8a4ORjFHmpYncwDpEj9GQNJoQIbCSfpV-WhZsYDu7_jA328_AaOdBiqd0&amp;t=fffffffff4ed9dba" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FC454507" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAhJOAfSbE64ymuHOacxgynAdmqt8Xp2+JRRTRcjRMVnZf05Nk9QU58fyRRolftSMAT7JLbOjEW6TeYlutXrq+5B/LATWOUhPW1eIfyfANQcuFZTtzrw1pUtI6bdz3H2GdunbGVw56fogDlQx3fYfiwHxiUgbtdVO9ZqqklrC99RVyMhjtz7t1/6x180ZJYHqGZv9RoaNjcJCXqLd9PCrhg1" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$UpdatePanel1','UpdatePanel1','tctl00$cphCorpo$UpdatePanel1','cphCorpo_UpdatePanel1'], ['ctl00$Menu1','Menu1','ctl00$mnuUsuarios','mnuUsuarios','ctl00$lkbUpdatePanel','lkbUpdatePanel'], [], 0, 'ctl00');
+//]]>
+</script>
+
+        <div id="UpdatePanel1">
+	
+                <a id="lkbUpdatePanel" href="javascript:__doPostBack(&#39;ctl00$lkbUpdatePanel&#39;,&#39;&#39;)"></a>
+                <div id="uppGeral" style="display:none;">
+		
+                        <div id="pnlModalPadraoFundo" style="z-index: 1005; background-color: Gray; filter: alpha(opacity=80); opacity: 0.80; width: 100%; top: 0px; left: 0px; position: fixed; height: 100%;">
+			
+                        
+		</div>
+                        <div id="pnlModalInfo" style="border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; z-index: 1005; background-color: white; filter: alpha(opacity=100); opacity: 1; right: 0; left: 50%; margin-left: -140px; color: #5D7B9D; width: 280px; height: auto; padding: 15px 6px; position: absolute; top: 105px;">
+			
+                            <span style="font-size: 0.7em;">Favor aguardar.</span>
+                            <br />
+                            <span style="font-weight: bold; font-size: 0.8em">Atualizando informações.
+                            </span>
+                            <hr />
+                            <img id="Image2" src="inc/img/LogoANA.jpg" align="middle" /><br />
+                            <img id="Image3" src="inc/img/ajaxloading.gif" align="middle" />
+                            <br />
+                            <div id="divMensagemAdicional" style="display:none;font-size:0.6em;color:red;margin-top:8px;">
+                                <span id="lblMensagemAdicional"></span>
+                            </div>
+                        
+		</div>
+                        
+                    
+	</div>
+            
+</div>
+
+        <div id="barraana"></div>
+        <div id="tudo">
+            <div id="topo">
+                
+                <div id="logo" style="text-align: center;">
+                    <img id="Image1" title="Rede Hidrometeorológica Nacional" alt="Rede Hidrometeorológica Nacional" src="inc/img/MarcaRHN-Transp-Topo.png" />
+                </div>
+
+                <div id="topoCenter">
+
+                    
+                    
+                     
+
+                     <div id="titSistema" title="Sistema Gerenciados de dados transmitidos pelas Plataformas de Coletas de Dados - PCD" 
+                         alt="Sistema Gerenciados de dados transmitidos pelas Plataformas de Coletas de Dados - PCD">
+                        Sistema HIDRO - Telemetria
+                    </div>
+
+                    <div id="MenuEsq" style="position: relative;z-index: 10">
+                        <div>
+                            <a href="#Menu1_SkipLink"><img alt="Skip Navigation Links" src="/hidrotelemetria/WebResource.axd?d=opRrmi0AoMjQUIci2vCMwhXrtatY5i3cDpDtI7BEVZHUdcxS2htjkOwfO3yKpAxjrLYbcyD6NexAHKA40Eaiz4Ak3jAlBBQALP3lAwCpiSw1&amp;t=638242697820000000" width="0" height="0" style="border-width:0px;" /></a><div id="Menu1">
+	<ul class="level1">
+		<li><a class="level1" href="Mapa.aspx">Mapa</a></li><li><a class="popout level1" href="#">Estações</a><ul class="level2">
+			<li><a class="level2 minWidth" href="Estacoes.aspx">Listar Estações</a></li><li><a class="level2 minWidth" href="EstacoesCadastro.aspx">Ficha da Estação</a></li>
+		</ul></li><li><a class="popout level1" href="#">Visualizar Dados</a><ul class="level2">
+			<li><a class="level2 minWidth" href="gerarGrafico.aspx">Gráficos</a></li><li><a class="level2 minWidth" href="ultimosDados.aspx">Últimos Dados</a></li><li><a class="level2 minWidth" href="serieHistorica.aspx">Série Histórica</a></li><li><a class="level2 minWidth" href="http://www.snirh.gov.br/hidroweb/serieshistoricas" target="_blank">Exportar Dados (Hidroweb)</a></li>
+		</ul></li><li><a class="popout level1" href="#">Relatórios</a><ul class="level2">
+			<li><a title="Acompanhamento das PCDs" class="level2 minWidth" href="acompanhamentoPcd.aspx">Status da PCD</a></li><li><a title="Relatórios de Disponibilidade dos Dados" class="popout-dynamic level2 minWidth" href="#">Disponibilidade dos Dados</a><ul class="level3">
+				<li><a title="Relatórios de Disponibilidade dos Dados Customizados" class="level3 minWidth" href="gerarRelatorio.aspx">Customizados</a></li><li><a title="Relatório de Disponibilidade dos Dados Progestão" class="level3 minWidth" href="ProGestao.aspx">Progestão</a></li><li><a title="Relatório de Disponibilidade dos Dados RHNR - Rede Hidrológica Nacional de Referência" class="level3 minWidth" href="rhnr.aspx">RHNR <br><span style='font-size:0.8em;font-style:italic'>Rede Hidrológica Nacional de Referência</span></a></li><li><a title="Relatório de Disponibilidade dos Dados Setor Elétrico" class="level3 minWidth" href="SetorEletrico.aspx">Setor Elétrico</a></li>
+			</ul></li>
+		</ul></li><li><a class="popout level1" href="#">Gerenciar</a><ul class="level2">
+			<li><a class="level2 minWidth" href="gerarLista.aspx">Listas</a></li>
+		</ul></li><li><a class="level1" href="http://www2.ana.gov.br/Paginas/servicos/faleconosco/faq.aspx" target="_blank">Fale Conosco</a></li>
+	</ul>
+</div><a id="Menu1_SkipLink"></a>
+                            <style type="text/css">
+                                 .minWidth {
+                                     min-width: 100px;
+                                     text-align: left;
+                                     padding:5px 3px 5px 15px;
+                                 }
+                            </style>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+
+                <div id="topoDir">
+                    <div id="MenuUsuario" style="text-align: center; margin-right: 0; position: relative; z-index: 101">
+                        <a href="#mnuUsuarios_SkipLink"><img alt="Skip Navigation Links" src="/hidrotelemetria/WebResource.axd?d=opRrmi0AoMjQUIci2vCMwhXrtatY5i3cDpDtI7BEVZHUdcxS2htjkOwfO3yKpAxjrLYbcyD6NexAHKA40Eaiz4Ak3jAlBBQALP3lAwCpiSw1&amp;t=638242697820000000" width="0" height="0" style="border-width:0px;" /></a><div OnClientClick="ActiveTabChanged" class="menu" id="mnuUsuarios">
+	<ul class="level1">
+		<li><a class="level1" href="Login2.aspx"><div class="menuUsuarioSelected"><div><b>Caro Visitante</b></div><div>Faça o seu Login</div><div>Agência Nacional de Águas</div></div></a></li>
+	</ul>
+</div><a id="mnuUsuarios_SkipLink"></a>
+                        <style type="text/css">
+                            .minWidthh {
+                                min-width: 146px;
+                                text-align: left
+                            }
+                        </style>
+                    </div>
+                </div>
+                <br/><br/>
+
+                
+            </div>
+            
+            <input type="hidden" name="ctl00$hdfInPaste" id="hdfInPaste" value="False" />
+            <input type="hidden" name="ctl00$hdfAmbiente" id="hdfAmbiente" value="PRD" />
+            <div id="conteudo">
+                
+                
+
+                <div style="clear: both"></div>
+                
+    <div class="container">
+        <div id="cphCorpo_UpdatePanel1">
+	
+                <div id="dvCorpoMap" style="position: relative; width: 100%; z-index: 1;">
+                    
+                    <div id="cphCorpo_pnlListaMapas" class="input-group" style="position: absolute; z-index: 1; top: 30px; float: right; right: 70px;">
+		
+                        <select name="ctl00$cphCorpo$ddlListaMapas" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cphCorpo$ddlListaMapas\&#39;,\&#39;\&#39;)&#39;, 0)" id="cphCorpo_ddlListaMapas" class="input-m-xs">
+			<option selected="selected" value="19">Nivel_Refer&#234;ncia</option>
+			<option value="22">Chuva_Refer&#234;ncia</option>
+			<option value="24">HidroWeb</option>
+
+		</select>
+                    
+	</div>
+                    
+                    <!-- Valores anteriores width="99.9%" height="100%" -->
+                    <iframe src="https://portal1.snirh.gov.br/ana/apps/experiencebuilder/experience/?id=68d223c014a54e578ff8ff4621bf509e" id="cphCorpo_ifMapa" width="1500" height="auto" style="border: 1px solid #fff;"></iframe>
+
+                </div>
+                <div style="clear: both"></div>
+                </div>
+
+                <style type="text/css">
+                    #dvCorpoMap {
+                        height: 79vh; /*Ajusta a altura do mapa. Se for menor, a responsividade é alterada.*/
+                        min-height: 610px;
+                        max-height: 1000px;
+                        display: flex;
+                        position:relative;
+                    }
+
+                    #dvCorpoMap #ifMapa {
+                        border: 1px solid #fff;
+                        padding: 1px;
+                        height: 100%;
+                        flex: 1;
+                    }
+                    .erroCarregarMapa{
+                        width:500%;
+                        height:250%;
+                        padding:5em;
+                        color:red;
+                        font-size:1em;
+                    }
+                </style>
+
+                
+            
+</div>
+    </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div style="position: relative; top: -20px; float: right" title="Total de usuários conectados neste momento">
+                <img id="Image4" src="inc/img/UsersConects_.fw.png" style="position: relative; bottom: -3px;" />
+                <span id="lblOnLineUsers" style="font-size:7pt;">417 usuário(s) online</span>
+            </div>
+            
+        </div>
+
+    
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'Menu1', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script><script type='text/javascript'>new Sys.WebForms.Menu({ element: 'mnuUsuarios', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("uppGeral"));
+});
+//]]>
+</script>
+</form>
+
+    <div class="rodape">
+        <div class="logoana" style="position: relative; float: left; border: 0px">
+            <a href="http://www2.ana.gov.br/Paginas/default.aspx">
+                <img src="inc/img/MarcaANA-Transp.png" border="0" alt="Link / Marca da Agência Nacional de Águas" /></a>
+        </div>
+
+        <div class="endereco" style="position: relative; float: left; line-height: 16px;">
+            <em style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(153, 153, 153); width: auto; height: 60px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(238, 238, 238);">
+                <strong style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);">Agência Nacional de Águas - ANA</strong><br
+                    style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);" />
+                Setor Policial, Área 5, Quadra 3, Blocos &quot;B&quot;,&quot;L&quot;,&quot;M&quot; e &quot;T&quot;.<br
+                    style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);" />
+                Brasília-DF CEP: 70610-200&nbsp;&nbsp;&nbsp;PABX: (61) 2109-5400 / (61) 2109-5252<br
+                    style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);" />
+                Melhor visualizado em 1280x900 com Firefox 3 e IExplorer 7 ou superiores</em>
+        </div>
+        
+        <!-- fim div banner -->
+        <br />
+        <div style="position: relative; float: right; margin-right:-115px; margin-top:24px; text-align:right; width:100px;" title="Versão da aplicação">
+            <label>
+                <span id="lblVersao" style="font-size:7pt;font-weight:bold;">v6.0.8475.21</span>
+            </label>
+            <br />
+            <label style="margin-right:4px">
+                <span id="lblDateBuild" style="font-size:6pt;">24/02/2026 15:48</span> 
+            </label>
+        </div>
+    </div>
+</body>
+</html>

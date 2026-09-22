@@ -1,0 +1,101 @@
+{
+  "station": "86510000",
+  "window_id": "2024-mar-mai",
+  "start_inclusive_source_naive": "2024-03-01T00:00:00",
+  "stop_exclusive_source_naive": "2024-06-01T00:00:00",
+  "role": "AUDIT_ONLY_UNASSIGNED_NO_TRAIN_TEST_ALLOCATION",
+  "timestamp_timezone": "Assumed UTC-03; official convention pending; preserve original naive timestamp",
+  "datum": "Unverified; gauge zero, relocation and validity metadata pending",
+  "rating_curve_and_cross_sections": "Not collected; official validity metadata pending",
+  "raw_rows": 8832,
+  "unique_valid_timestamp_rows": 8832,
+  "rejected_rows": 0,
+  "duplicate_rows": 0,
+  "conflicting_timestamps": [],
+  "nominal_grid_minutes": 15,
+  "expected_grid_slots": 8832,
+  "grid_counts": {
+    "approved": 8832
+  },
+  "off_grid_records": 0,
+  "level_counts": {
+    "approved": 8832
+  },
+  "variables": {
+    "ChuvaAcumAdotada": {
+      "numeric_count": 8828,
+      "missing_or_nonfinite": 4,
+      "qc_counts": {
+        "Dado aprovado": 8828,
+        "MISSING_QC": 4
+      },
+      "approved_numeric_count": 8828,
+      "min": 0.0,
+      "max": 1491.0
+    },
+    "ChuvaFinal": {
+      "numeric_count": 8828,
+      "missing_or_nonfinite": 4,
+      "qc_counts": {
+        "Dado aprovado": 8828,
+        "MISSING_QC": 4
+      },
+      "approved_numeric_count": 8828,
+      "min": 0.0,
+      "max": 25.6
+    },
+    "NivelSensor": {
+      "numeric_count": 8832,
+      "missing_or_nonfinite": 0,
+      "qc_counts": {
+        "Dado aprovado": 8832
+      },
+      "approved_numeric_count": 8832,
+      "min": 120.0,
+      "max": 2557.0
+    },
+    "NivelDisplay": {
+      "numeric_count": 0,
+      "missing_or_nonfinite": 8832,
+      "qc_counts": {
+        "MISSING_QC": 8832
+      },
+      "approved_numeric_count": 0,
+      "min": null,
+      "max": null
+    },
+    "NivelManual": {
+      "numeric_count": 0,
+      "missing_or_nonfinite": 8832,
+      "qc_counts": {
+        "MISSING_QC": 8832
+      },
+      "approved_numeric_count": 0,
+      "min": null,
+      "max": null
+    },
+    "NivelFinal": {
+      "numeric_count": 8832,
+      "missing_or_nonfinite": 0,
+      "qc_counts": {
+        "Dado aprovado": 8832
+      },
+      "approved_numeric_count": 8832,
+      "min": 120.0,
+      "max": 2557.0
+    },
+    "VazaoFinal": {
+      "numeric_count": 8832,
+      "missing_or_nonfinite": 0,
+      "qc_counts": {
+        "Dado aprovado": 8832
+      },
+      "approved_numeric_count": 8832,
+      "min": 64.0,
+      "max": 14568.5
+    }
+  },
+  "interpolation": "NONE",
+  "next_official_source": "https://www.snirh.gov.br/hidroweb/serieshistoricas?codigoEstacao=86510000",
+  "official_geometry_api_docs": "https://www.ana.gov.br/hidrowebservice/swagger-ui/index.html"
+}

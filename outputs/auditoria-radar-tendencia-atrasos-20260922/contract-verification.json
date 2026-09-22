@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "columns": [
+    {
+      "profile": "A",
+      "column": 2,
+      "name": "86510000:dH1",
+      "units": "m/hour_nominal",
+      "nominal_hours": 1,
+      "delay_minutes": 15.0,
+      "rows": 12912,
+      "finite": 12773,
+      "missing": 139,
+      "finite_with_non_nominal_measurement_interval": 9,
+      "measurement_interval_hours": [
+        0.75,
+        1.0,
+        1.25
+      ]
+    },
+    {
+      "profile": "A",
+      "column": 3,
+      "name": "86510000:dH2",
+      "units": "m/hour_nominal",
+      "nominal_hours": 2,
+      "delay_minutes": 15.0,
+      "rows": 12912,
+      "finite": 12769,
+      "missing": 143,
+      "finite_with_non_nominal_measurement_interval": 11,
+      "measurement_interval_hours": [
+        1.75,
+        2.0,
+        2.25
+      ]
+    },
+    {
+      "profile": "B",
+      "column": 2,
+      "name": "86510000:dH1",
+      "units": "m/hour_nominal",
+      "nominal_hours": 1,
+      "delay_minutes": 30.0,
+      "rows": 12912,
+      "finite": 12795,
+      "missing": 117,
+      "finite_with_non_nominal_measurement_interval": 26,
+      "measurement_interval_hours": [
+        0.75,
+        1.0,
+        1.25
+      ]
+    },
+    {
+      "profile": "B",
+      "column": 3,
+      "name": "86510000:dH2",
+      "units": "m/hour_nominal",
+      "nominal_hours": 2,
+      "delay_minutes": 30.0,
+      "rows": 12912,
+      "finite": 12790,
+      "missing": 122,
+      "finite_with_non_nominal_measurement_interval": 30,
+      "measurement_interval_hours": [
+        1.75,
+        2.0,
+        2.25
+      ]
+    }
+  ],
+  "input_sha256": {
+    "outputs/experimento-radar-mistura-atrasos-20260922/prepared-inputs.npz": "b2b6bec9438135dfe5f6d94722cd6c9f40ebd077232c15c9d09283cd2f916d06",
+    "scripts/hydro_latency_forecast.py": "021e26a9ac36b6d92a8773f20139e0d3bb8e470a3777ef509c5327dc823e3b32",
+    "scripts/hydro_model.py": "815bb34ba33bb9ec452558312f7220e5a9ac8171bdae69597324a3eb3ecd9ada",
+    "scripts/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae",
+    "outputs/mucum-hourly-20260922T000704-0300/history/ana-86510000.npz": "2699102dbbc91fc3513d72b2d27f02e815781aba674822e636cda49895e3d59c",
+    "outputs/mucum-hourly-20260922T000704-0300/idades-fontes.csv": "11e6e7ada6c9acced40e6795016959f87eeafa884679e3b5dd788d684af68ab9",
+    "outputs/mucum-hourly-20260922T010016-0300/history/ana-86510000.npz": "e1b099ce9870e597d4b09304674cdc75e96a47a49dbc52b6b20620e677166e7a",
+    "outputs/mucum-hourly-20260922T010016-0300/idades-fontes.csv": "230cc341b0a910e3696910ffa6365a2c78a2e29bf3ea95070881a6192ccb12a8"
+  },
+  "diagnostic_outputs_not_yet_audited": false
+}

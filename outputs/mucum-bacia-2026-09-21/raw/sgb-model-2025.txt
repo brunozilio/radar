@@ -1,0 +1,524 @@
+
+--- PAGE 1 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 1 
+ 
+ 
+ 
+ 
+ 
+ APLICAÇÃO DE REDE NEURAL LINEAR PARA MODELOS 
+AUTORREGRESSIVOS EM ESTAÇÕES FLUVIOMÉTRICAS DA BACIA DO 
+RIO TAQUARI NO RIO GRANDE DO SUL 
+ 
+Daniel Vieira Mendes 1 ; Francisco F. N. Marcuzzo 2 & Franco Turco Buffon 2  
+ 
+Abstract: Hydrological forecasting is an important tool for predicting hydrological disasters. 
+Therefore, having models that can perform in extreme events become crucial. This study aims to 
+apply Linear Neural Network to obtain multiple linear autoregressive regression equations for water 
+level forecasting at streamgages of the Hydrological Alert System (SAH) in the Taquari River Basin 
+under two flood event scenarios, with three forecast horizons (4h, 3h, and 2h). For this study, the 
+TensorFlow framework with Keras was used via Python scripting to develop the autoregressi ve 
+models. Stage data from streamgages belonging to the National Hydrometeorological Network an d 
+that are in Taquari River Basin  SAH were utilized. It was found that the streamgage with the best 
+model metrics was Taquari (86950000). It was also observed that using flood data starting from the 
+attention level improved results by 86,1% at 4h, 36,1% at 3h, and 63,9% at 2h. Furthermore, the best 
+forecast results were achieved with horizons of 2h, 3h, and 4h, respectively. It was concluded that as 
+it moves downstream, the models produce better results. Additionally, using data from the attention 
+level pro vides better results than using data from the alert level. Furthermore, shorter forecast 
+horizons also provides better results. 
+ 
+Resumo: A previsão hidrológica se mostra como uma importante ferramenta para a previsão dos 
+desastres hidrológicos. Assim, possuir modelos que consigam performar em eventos extremos se 
+torna preponderante. Este estudo tem por objetivo a aplicação de Rede Neural Li near para obtenção 
+de equações de regressão linear múltipla autorregressiva para previsão de nível em estações do 
+Sistema de Alerta Hidrológico (SAH) da Bacia do Rio Taquari em dois cenários de eventos de cheia, 
+com três horizontes de previsão (4h, 3h e 2h ). Para o artigo, foi utilizado o Framework TensorFlow 
+com Keras, através de script em Python, para obtenção dos modelos autorregressivos.  Foram 
+utilizados dados fluviométricos de cota de estações da Rede Hidrometeorológica Nacional  e que 
+fazem parte do SAH da Bacia do Rio Taquari. Verificou-se que a estação que tem o modelo com 
+melhores métricas é Taquari (86950000). Constatou-se também que usar dados de cheia a partir da 
+cota de atenção melhorou os resultados em 86,1% em 4h, 36,1% em 3h, e 63,9% em 2h . Ainda, os 
+resultados de previsão tiveram seus melhores valores com os horizontes de 2h, 3h e 4h, 
+respectivamente. Concluiu-se que, conforme se avança de montante para jusante, melhores são os 
+resultados dos modelos. Além disso, utilizar dados a partir da cota de atenção fornecem melhores 
+resultados que os a partir de alerta. Ainda, conforme se diminui o horizonte de previsão, melhores 
+também são os resultados. 
+ 
+Palavras-Chave – Redes Neurais, Modelagem Hidrológica, Desastres Hidrológicos 
+ 
+1) Estagiário do SGB/GEHITE – PA. Eng. Ambiental e Sanitária – CAV/UDESC – Universidade do Estado de Santa Catarina. Avenida Luiz de 
+Camões, 2090 – Conta Dinheiro, Lages/SC – CEP 88.520-000, Tel.: (49) 3289-9100. danielmendesdaniel@hotmail.com 
+2) SGB - Serviço Geológico do Brasil - Rua Banco da Província, 105 - Santa Teresa - Porto Alegre/RS - CEP 90.840-030, Tel.: (51) 3406-7300. 
+francisco.marcuzzo@sgb.gov.br; franco.buffon@sgb.gov.br 
+
+--- PAGE 2 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 2 
+ 
+ 
+ 
+ 
+ 
+INTRODUÇÃO 
+Atualmente, ao passo que os desastres hidrológicos vêm se tornando cada vez mais frequentes, 
+vide, por exemplo , as grandes cheias no Rio Grande do Sul em 2023 e 2024, possuir modelos de 
+previsão hidrológica acurados e que conseguem performar em eventos extremos fazem -se 
+preponderantemente necessários.  
+Modelo hidrológico constitui -se uma importante ferramenta para a previsão de inundações e 
+cheias e o consequente desastre hidrológico. Servem como base para conhecimento da variação dos 
+níveis dos rios ao longo do tempo, propiciando a geração e emissão de boletins com vistas à prevenção 
+de danos à vida e ao patrimônio (SGB, c2024, Santos et al. 2019). Dentre os modelos de previsão de 
+cota, pode-se citar os autorregressivos como uma ferramenta para previsão hidrológica (Lucas et al., 
+2009; Moreira, 2016, Lappicy et al., 2021).  
+Os modelos empíricos, como as equações de regressão, têm  os pesos definidos com base em 
+dados observados (Moreira, 2016). Uma das formas de se realizar previsão hidrológica , fazendo-se 
+uso desses dados,  é através de aprendizado de máquina, por meio da utilização do Framework 
+TensorFlow com Keras, através de script em Python (Antoniassi, 2022, Godinho, 2021). O Keras é 
+caracterizado por criar e treinar modelo de aprendizado profundo, sendo fácil de se r utilizado, com 
+poucas restrições, permitindo criação de novas camadas, métricas e funções (TensorFlow, 2020). 
+Este estudo tem por objetivo a aplicação de Rede Neural Linear para obtenção de equação de 
+regressão linear múltipla autorregressiva  para previsão de nível  em estações da Rede 
+Hidrometeorólogica Nacional que também fazem parte do Sistema de Alerta Hidrológico (SAH) da 
+Bacia do Rio Taquari. 
+ 
+MATERIAL E MÉTODO 
+Área de estudo 
+A área objeto deste estudo compreende estações fluviométricas da RHN  que também fazem 
+parte do SAH da Bacia do Rio Taquari, as quais são operadas pelo SGB de Porto Alegre (Tabela 1 e 
+Figura 1).  
+Tabela 1 – Estações fluviométricas utilizadas no estudo. Fonte: ANA (2024) e SGB (2025). 
+Bacia 
+Hidrográfica 
+(BH) 
+Estação 
+fluviométrica 
+Código Município Latitude Longitude 
+Período 
+utilizado 
+Total 
+de Anos 
+RIO TAQUARI Linha José 
+Júlio 86472000 Santa 
+Tereza -29.0978 -51.6997 Set/2015 – 
+Mai/2024 5,87 
+RIO TAQUARI Muçum 86510000 Muçum -29.1672 -51.8686 Abr/2015 
+– Jul/2024 8,76 
+RIO TAQUARI Encantado 86720000 Encantado -29.2344 -51.8550 Jul/2015 – 
+Jul/2024 8,26 
+RIO TAQUARI Estrela 86879300 Estrela -29.4733 -51.9622 Jul/2015 – 
+Jul/2024 7,92 
+RIO TAQUARI Bom Retiro do 
+Sul 86881000 Bom Retiro 
+do Sul -29.6081 -51.9511 Nov/2018 
+– Jul/2024 3,77 
+RIO TAQUARI Porto 
+Mariante 86895000 Venâncio 
+Aires -29.6922 -51.9700 
+Nov/2014 
+– 
+Out/2024 
+5,56 
+RIO TAQUARI Taquari 86950000 Taquari -29.8070 -51.8758 Jul/2015 – 
+Jul/2024 6,32 
+ 
+
+--- PAGE 3 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 3 
+ 
+ 
+ 
+ 
+ 
+ Figura 1 – Mapa de localização das estações utilizadas no estudo. 
+ 
+Fonte: Os autores (2025). 
+Rede Neural Linear – Tensor Flow/Keras  
+Por meio de script em Python, foi utilizada o Framework TensorFlow com API Keras para 
+construção do modelo . Para execução da modelagem, outras bibliotecas de manipulação de dados 
+foram utilizadas, como pandas e numpy. Para fins práticos, objetivou-se elaborar uma equação para 
+aplicação direta com os valores das cotas. Assim, objetivou -se a concepção de um modelo de rede 
+neural simples (Quadro 1). 
+Quadro 1 – Construção do Modelo de Rede Neural Linear. 
+Parâmetros 
+Camada densa 1 
+Neurônios na camada 1 
+Função de ativação Nenhuma 
+Regularização L2 e Early Stopping 
+Otimização Adam 
+Fonte: Os autores (2025). 
+O modelo é composto por apenas um neurônio de saída, porquanto se quer apenas obter o valor 
+de uma variável, a cota em um momento futuro. Não foi aplicada função de ativação, uma vez que se 
+busca que o modelo aprenda e consiga reproduzir equações lineares interpretáveis (Vicentini e 
+Oliveira-Filho, 2021; Marcon, 2019). Na etapa de compilação do modelo, foi utilizado Erro Absoluto 
+Médio como a função de perda, ou seja, por meio desse parâmetro se identificaria os erros entre o 
+previsto e o observado. E, para ajustar os pesos da equação para que o modelo tenha resultados mais 
+acurados, foi utilizado o otimizado r Adam, sendo uma boa escolha para  ajuste dos pesos (Siqueira, 
+2021; Júnior e Ribeiro, 2020, Antoniassi, 2022). Foi aplicada ainda a técnica do Early Stopping para 
+adicionar mais robustez ao modelo (Antoniassi, 2022; Godinho, 2021).  
+ 
+ 
+
+
+--- PAGE 4 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 4 
+ 
+ 
+ 
+ 
+ 
+Cenários e dados utilizados 
+Para treinamento do modelo, utilizou-se todos os dados para calibração, para que se tivesse o 
+melhor resultado possível, conforme corroborado por Shen et al (2022), Arsenault et al. (2018). 
+Para fins de acurácia no modelo, foram fornecidos somente os dados de eventos de cheia. 
+Assim, o modelo consegue identificar mais claramente os padrões de mudança de cota em momentos 
+de cheia. Desse modo , para cada série de dados de cada respectiva estação, foram selecionados 
+previamente os eventos que estão compreendidos entre cotas de referência (Figura 2). 
+Figura 2 – Cenários de cheia analisados com base nas cotas de referência. 
+ 
+Fonte: Os autores (2025). 
+Sabendo-se que quanto menor o horizonte de previsão, melhor a acurácia (Magro, 2021; 
+Pedrollo, 1999; Gorodetskaya et al., 2018; Bravo et al., 2008) e que o rio Taquari possui variação 
+rápida de nível em alguns pontos, estabeleceu-se cenários de previsão de 2h, 3h e 4h. 
+ 
+RESULTADOS E DISCUSSÃO 
+Métricas e avaliações gráficas 
+Para análise dos resultados de um modelo hidrológico, é necessário avaliar  as métricas de 
+desempenho (Antoniassi, 2022; Silva et al., 2023, Godinho, 2021). A análise de um só indicador pode 
+não representar o desempenho do modelo na sua totalidade. As métricas para os cenários 1 e 2 e para 
+os horizontes estabelecidos são apresentadas na s tabelas 2, 3 e 4. Nas f iguras 3 e 4, mostra -se a 
+aplicação gráfica na estação Taquari (86950000). A estação Linha José Júlio (86472000) não possui 
+cota de inundação, somente de atenção e alerta, assim, somente uma análise foi feita com relação aos 
+cenários. Por mais que ela tenha sido alocada na parte da tabela que se destina às análises que se 
+iniciam na cota de atenção e finalizam na de inundação, seus valores são para o único grupo de cotas 
+que possui, atenção e alerta. A análise  da melhora  dos resultados do modelo é realizada pelas 
+mudanças dos valores dos parâmetros, mais especificamente pela diminuição do s: Erro Médio, Erro 
+Absoluto Médio, Erro Absoluto Máximo, Raíz do Erro Quadrático Médio, Desvio Padrão dos Erros; 
+e aumento do R². 
+Conforme as tabelas 2, 3 e 4, comparando as previsões das cotas de referência, verificou-se que 
+a melhoria dos parâmetros das previsões que se iniciam na cota de atenção, em relação às de alerta 
+são: 86,1% dos parâmetros em 4h, 36,1% em 3h , e 63,9% em 2h. Isto é, inserir dados do início da 
+cheia propícia que o modelo desempenhe melhor, ou seja, usar dados de cheia que se iniciam na cota 
+de atenção desempenham melhor que os que se iniciam na cota de alerta. O que já era esperado, visto 
+que o modelo consegue ter mais dados para identificar os padrões de comportamento.
+
+
+--- PAGE 5 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 3 – Comparação entre valores observados e preditos pelo modelo na estação Taquari (86950000) - Cenário 1. 
+ 
+Fonte: Os autores (2025). 
+Figura 4 – Comparação entre valores observados e preditos pelo modelo na estação Taquari (86950000) - Cenário 2. 
+ 
+Fonte: Os autores (2025). 
+
+
+--- PAGE 6 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tabela 2 – Métricas de desempenho para o horizonte de 4h. 
+Código Nome da estação Descrição 
+do teste 
+Erro 
+Médio 
+Erro 
+Absoluto 
+Médio 
+Erro Absoluto 
+Máximo 
+Raiz do Erro 
+Quadrático Médio 
+Desvio Padrão 
+dos Erros R² 
+86472000 LINHA JOSÉ JÚLIO 
+Início: Cota 
+de Atenção            
+Fim: Cota 
+de 
+Inundação 
+30.254 67.106 802.449 113.148 109.094 0.950 
+86510000 MUÇUM 37.926 72.121 528.321 117.777 111.675 0.958 
+86720000 ENCANTADO 28.557 53.745 427.687 83.881 78.925 0.971 
+86879300 ESTRELA 14.048 31.344 248.514 48.379 46.316 0.987 
+86881000 BOM RETIRO DO SUL 0.467 26.413 331.114 46.027 46.084 0.983 
+86895000 PORTO MARIANTE 1.847 24.808 217.729 38.567 38.571 0.984 
+86950000 TAQUARI 1.025 11.304 89.697 17.177 17.160 0.995 
+86472000 LINHA JOSÉ JÚLIO 
+Início: Cota 
+de Alerta            
+Fim: Cota 
+de 
+Inundação 
+ - - -  -  -  -  
+86510000 MUÇUM 38.514 72.637 542.037 118.991 112.759 0.958 
+86720000 ENCANTADO 19.890 53.938 423.414 82.943 80.579 0.971 
+86879300 ESTRELA 25.680 34.851 259.637 54.525 48.122 0.986 
+86881000 BOM RETIRO DO SUL 10.270 27.640 346.435 49.596 48.583 0.984 
+86895000 PORTO MARIANTE 9.302 25.806 225.378 40.502 39.468 0.984 
+86950000 TAQUARI 5.025 11.833 101.614 18.426 17.742 0.994 
+Fonte: Os autores (2025). 
+Tabela 3 – Métricas de desempenho para o horizonte de 3h. 
+Código Nome da estação Descrição 
+do teste 
+Erro 
+Médio 
+Erro 
+Absoluto 
+Médio 
+Erro Absoluto 
+Máximo 
+Raiz do Erro 
+Quadrático Médio 
+Desvio Padrão 
+dos Erros R² 
+86472000 LINHA JOSÉ JÚLIO 
+Início: Cota 
+de Atenção            
+Fim: Cota 
+de 
+Inundação 
+29.533 52.757 623.304 88.574 83.556 0.970 
+86510000 MUÇUM 15.729 57.427 367.999 89.191 87.928 0.972 
+86720000 ENCANTADO 18.797 36.231 326.098 58.208 55.127 0.985 
+86879300 ESTRELA 7.463 20.719 163.400 32.404 31.547 0.994 
+86881000 BOM RETIRO DO SUL -0.064 18.675 221.368 31.558 31.599 0.992 
+86859000 PORTO MARIANTE -0.979 19.303 141.856 29.003 29.023 0.991 
+86950000 TAQUARI 2.056 7.615 67.044 11.856 11.686 0.997 
+86472000 LINHA JOSÉ JÚLIO - - - - - - 
+
+--- PAGE 7 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 7 
+ 
+ 
+ 
+ 
+ 
+86510000 MUÇUM Início: Cota 
+de Alerta            
+Fim: Cota 
+de 
+Inundação 
+28.150 47.003 386.162 78.056 72.915 0.981 
+86720000 ENCANTADO 15.486 36.149 313.692 58.126 56.064 0.985 
+86879300 ESTRELA 19.440 24.479 173.089 38.407 33.140 0.993 
+86881000 BOM RETIRO DO SUL 4.755 18.151 238.106 31.137 30.812 0.993 
+86859000 PORTO MARIANTE 2.206 18.338 141.101 28.333 28.283 0.992 
+86950000 TAQUARI 1.320 7.409 63.352 11.459 11.392 0.998 
+Fonte: Os autores (2025). 
+Tabela 4 – Métricas de desempenho para o horizonte de 2h. 
+Código Nome da estação Descrição 
+do teste 
+Erro 
+Médio 
+Erro 
+Absoluto 
+Médio 
+Erro Absoluto 
+Máximo 
+Raiz do Erro 
+Quadrático Médio 
+Desvio Padrão 
+dos Erros R² 
+86472000 LINHA JOSÉ JÚLIO 
+Início: Cota 
+de Atenção            
+Fim: Cota 
+de 
+Inundação 
+16.805 30.682 369.279 50.082 47.206 0.990 
+86510000 MUÇUM 11.909 23.762 248.211 40.421 38.667 0.996 
+86720000 ENCANTADO 9.127 20.242 205.076 34.118 32.897 0.995 
+86879300 ESTRELA 0.761 12.195 92.965 18.090 18.083 0.998 
+86881000 BOM RETIRO DO SUL 0.438 10.850 124.736 18.270 18.335 0.997 
+86859000 PORTO MARIANTE 0.238 10.907 84.834 16.789 17.290 0.997 
+86950000 TAQUARI 0.022 4.666 39.652 7.163 7.168 0.999 
+86472000 LINHA JOSÉ JÚLIO 
+Início: Cota 
+de Alerta            
+Fim: Cota 
+de 
+Inundação 
+- - - - - - 
+86510000 MUÇUM 17.708 26.161 260.091 44.097 40.428 0.996 
+86720000 ENCANTADO 4.785 21.525 199.054 35.130 34.827 0.994 
+86879300 ESTRELA 4.903 11.310 89.315 18.222 17.558 0.998 
+86881000 BOM RETIRO DO SUL 0.587 10.000 129.133 17.569 17.581 0.997 
+86859000 PORTO MARIANTE 2.449 10.819 112.561 17.058 16.902 0.997 
+86950000 TAQUARI 0.812 4.994 49.969 7.832 7.796 0.999 
+Fonte: Os autores (2025). 
+
+--- PAGE 8 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 8 
+ 
+ 
+ 
+ 
+ 
+ Graficamente, com o exemplo da estação de Taquari  (86950000), percebe -se que, tanto no 
+cenário 1 quanto no cenário 2, os resultados foram muito bons, identificando grande proximidade 
+entre os valores observados e preditos. Analiticamente, ao comparar os resultados de todas as 
+equações de 4h para 3h (tabelas 2, 3 e 4), verifica-se que houve melhora em 98 ,7% dos parâmetros, 
+ou seja, as métricas diminuíram, com exceção do R², que, pelo seu comportamento inverso, aumentou. 
+De 3h para 2h, o valor de melhora compreendeu 96,2% dos parâmetros. Isto é, verifica-se que quanto 
+menor o horizonte de previsão, melho res são os resultados, mais assertivo é a estimativa , conforme 
+também identifi caram Magro (2021), Pedrollo (1999), Gorodetskaya et al.  (2018), Bravo et al.  
+(2008). 
+Por meio das métricas (tabelas 2, 3 e 4), verifica-se que, de forma geral, conforme se move de 
+montante para jusante, os modelos tendem a ficar mais acurados, os erros diminuem e o R² aumenta. 
+Quanto mais se direciona para jusante (Moreira, 2016),  ou quanto mais lento tende ser o rio,  maior 
+assertividade do modelo autorregressivo. Assim, a estação de Taquari (86950000) é a que tem o 
+modelo mais preciso, dentre as estações analisadas. 
+Conforme análise das equações geradas para os cenários acima, as componentes das equações 
+que tiveram maior peso, estão nas diferenças. Ao analisar as três variáveis que mais tinham influência 
+em cada equação, de cada cenário, chegou-se aos valores da tabela 5. 
+Tabela 5 - Distribuição das variáveis de maior influência nas equações. 
+Variável da equação Frequência 
+Cenário: Início: Cota de Atenção 
+𝐶 − 𝐶3ℎ 13 
+𝐶 − 𝐶2ℎ 12 
+𝐶 − 𝐶4ℎ 9 
+Cenário: Início: Cota de Atenção 
+𝐶 − 𝐶3ℎ 12 
+𝐶 − 𝐶2ℎ 10 
+C 9 
+Fonte: Os autores (2025). 
+A diferença C-C3h (diferença da cota atual com a de 3h atrás) não significa que ela foi a que 
+teve maior peso nas equações, mas sim que, ao analisar as três componentes que tiveram maior peso, 
+ela ficou entre essas, podendo ser, por exemplo, a de menor valor absoluto entre as três. 
+A quantidade de dados e eventos apresenta-se como um fator limitante, visto que, quanto maior 
+a série histórica disponível para treinamento, melhor é o aprendizado. Além disso, é necessário que 
+dados de entrada estejam consistidos, para não causar vieses. Um outro limitante que se tem é o 
+modelo em si, que foi adotado como uma rede neural simples, de apenas uma camada, para que fosse 
+possível obter uma equação de regressão , podendo, assim não conseguir capturar padrões mais 
+complexos.  
+ 
+CONCLUSÃO 
+Utilizou-se a aplicação de Rede Neural Linear para obtenção de equações de regressão linear 
+múltipla autorregressiva em estações d a RHN que também fazem parte do SAH da Bacia do Rio 
+Taquari, através do Framework TensorFlow com Keras, usando-se script em Python. Por meio dos 
+resultados obtidos, verificou-se que modelos que possuem dados de cheias a partir da cota de atenção 
+tendem a ter melhores resultados do que aqueles a partir da cota de alerta. Constatou -se que, quanto 
+
+--- PAGE 9 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 9 
+ 
+ 
+ 
+ 
+ 
+menor o horizonte de previsão, melhores os resultados fornecidos pelo s modelos. Ainda, conforme 
+se move de montante para jusante, melhores tendem a ser os resultados do s modelos. Ademais, a 
+metodologia apresentada se mostra eficaz na gestão de desastres hidrológicos, fornecendo modelos 
+de aplicabilidade prática e direta no uso dos dados hidrológicos. 
+ 
+REFERÊNCIAS 
+AGÊNCIA NACIONAL DE ÁGUAS E SANEAMENTO BÁSICO – ANA. (2024). Sistema 
+Nacional de Informações sobre Recursos Hídricos (SNIRH) – Hidroweb. Disponível em: 
+https://www.snirh.gov.br/hidroweb. 
+ANTONIASSI, R. A. dos S. (2022). Predição de nível de rios da Região Hidrográfica do Rio 
+Paraguai utilizando algoritmos de Aprendizado de Máquina.  Dissertação de Mestrado, 85p. 
+Universidade Federal de Mato Grosso do Sul. Disponível em: 
+https://repositorio.ufms.br/bitstream/123456789/4642/1/mestrado_defesa_rogerio_antoniassi.pdf. 
+Acesso em 22 jun. 2025. 
+ARSENAULT, R.; BRISSETTE, F.; MARTEL, J. L. (2018). “The hazards of split-sample validation 
+in hydrological model calibration” . Journal of Hydrology, v. 566, pp. 346 -362. Disponível em: 
+https://www.sciencedirect.com/science/article/abs/pii/S0022169418307145?via%3Dihub. Acesso 
+em: 22 jun. 2025. 
+BRAVO, J. M.; PEDROLLO, O. C.; COLLISCHONN, W.; PAZ, A. R. da; UVO, C. B. (2008). 
+“Previsões de Curto Prazo de Vazão Afluente ao Reservatório de Furnas Utilizando Redes Neurais 
+Artificiais”. Revista Brasileira de Recursos Hídricos, v. 13, n. 2, pp.77-88. Disponível em: Previsões 
+de curto prazo de vazão afluente ao reservatório de Furnas utilizando redes neurais artificiais. Acesso 
+em: 22 jun. 2025. 
+GODINHO, J. da S. (2021). Previsão Hidrológica na Bacia Hidrográfica do Rio Macaé com Redes 
+Neurais. Trabalho de Conclusão  de Curso, 61p. Universidade Federal do Rio de Janeiro. 
+Disponível:https://engenharias.macae.ufrj.br/images/testetcc/2021/TCC_Julia_Godinho.pdf.  
+GORODETSKAYA, Y.; DA FONSECA, L. G.; RIBEIRO, C. B. de M. (2018). “Previsão de vazão 
+de curto prazo utilizando Redes Neurais Artificiais. Estudo de Caso: Rio Paraíba do Sul”  in Anais 
+III Simpósio de Recursos Hídricos do Rio Paraíba do Sul, Juiz de Fora, Ago. 2018, 9p. Disponível 
+em: https://anais.abrhidro.org.br/job.php?Job=3837. Acesso em 22 jun. 2025. 
+LAPPICY, T.; LIMA, C. H. R.; FIORUCCI, J. A. (2021). “Uso de modelos estocásticos para 
+previsões de vazões mensais dos reservatórios ligados ao SIN utilizando o conceito de energia 
+equivalente” in Anais do XXIV Simpósio Brasileiro de Recursos Hídricos, Belo Horizonte, Nov. 
+2021, 10p. Disponível em: https://anais.abrhidro.org.br/job.php?Job=13140. Acesso em 22 jun. 2025. 
+LUCAS, E. W. M.; DE SOUSA, F. de A. S.; SILVA, F. D. dos S.; LUCIO, P. S. (2009). “Modelagem 
+Hidrológica Determinística e Estocástica aplicada à Gestão Hidrográfica do Xingu – Pará”. Revista 
+Brasileira de Meteorologia, v. 24, n. 3, pp. 308 -322. Disponível em: 
+https://www.scielo.br/j/rbmet/a/YSv5hcy3WDZKJPXtx9hzKYy/. Acesso em: 22 jun. 2025. 
+MAGRO, R. B. (2021). Aplicação de Redes Neurais Artificiais para Previsão de Inundação em uma 
+área urbana. Dissertação de Mestrado, 134p. Universidade do Estado de Santa Catarina. Disponível 
+em: 
+https://www.udesc.br/arquivos/cav/id_cpmenu/2846/1__Dissertacao_RenataBMagro_capa_166508
+21216082_2846.pdf. Acesso em 22 jun. 2025. 
+
+--- PAGE 10 ---
+                                                                              
+XXVI Simpósio Brasileiro de Recursos Hídricos (ISSN 2318-0358) 10 
+ 
+ 
+ 
+ 
+ 
+MARCON, R. F. (2019). Uso de Redes Neurais para obtenção de Modelos de Predição para 
+Controladores Preditivos Lineares.  Departamento de Automação e Sistemas . Relatório, 86p. 
+Universidade Federal de Santa Catarina.  Disponível em: 
+https://repositorio.ufsc.br/bitstream/handle/123456789/204766/PFC.pdf?sequence=1. Acesso em 21 
+jun. 2025. 
+MOREIRA, G. C. (2016). Previsão de níveis fluviais em tempo atual com modelo de regressão 
+adaptativo: aplicação na Bacia do Rio Uruguai. Dissertação de Mestrado, 153p. Instituo de Pesquisas 
+Hidráulicas. Universidade Federal do Rio Grande do Sul. Disponível em: 
+https://lume.ufrgs.br/bitstream/handle/10183/147081/000998810.pdf;jsessionid=6C04A37BD9BDC
+7D7E09F86D934EF94BF?sequence=1. Acesso em: 22 jun. 2025. 
+PEDROLLO, O. C. (1999). “Previsão Hidrológica de curto prazo com chuvas efetivas determinadas 
+pela função sigmóide”. Revista Brasileira de Recursos Hídricos, v. 4, n. 2, pp. 19-30. Disponível em: 
+https://lume.ufrgs.br/bitstream/handle/10183/232492/000234660.pdf?sequence=1. Acesso em: 22 
+jun. 2025. 
+RIBEIRO, A. M.; JUNIOR, F. de P. S. A. (2020). “Um Estudo Comparativo Entre Cinco Métodos 
+de Otimização Aplicados Em Uma RNC Voltada ao Diagnóstico do Glaucoma”. Revista de Sistemas 
+e Computação, v. 10, n. 1, pp. 120 -130. Disponível em: 
+https://revistas.unifacs.br/index.php/rsc/article/view/6488. Acesso em: 21 jun. 2025. 
+SANTOS, A. C. N; TOMASELLA, J.; CARAM, R. C. (2019). “Simulação Hidrológica na Bacia do 
+Rio Sapucaí com o Modelo Hidrológico Distribuído utilizando precipitação observada e dados do 
+Produto Merge” in Anais XXIII Simpósio Brasileiro de Recursos Hídricos, Foz do Iguaçu, Nov. 
+2019, p. 10. Disponível em: https://anais.abrhidro.org.br/job.php?Job=5897. Acesso em: 22 jun. 
+2025. 
+SHEN, H.; TOL SON, B. A.; MAI, J. (2022). “Time to Update the Split -Sample Approach in 
+Hydrological Model Calibration” . Water Resources Research. 26p. Disponível em:  
+https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021WR031523. Acesso em 22 jun. 2025. 
+SILVA, V. A.; SOUZA, R. de F.; OLIVEIRA, M. P.; SANTOS, F. L. dos. (2023). “Aplicação de 
+machine learning e deep learning para modelagem de uma bacia hidrográfica ”. Revista Paranoá, n 
+34, 21p. Disponível em: https://www.cbhmedioparaiba.org.br/conteudo/aplicacao-learning-deep-
+bacia.pdf. Acesso em 22 jun. 2025. 
+SIQUEIRA, F. M. F. (2021). Estratégia de otimização de processos com o uso de Redes Neurais. 
+Escola de Engenharia. Dissertação de Mestrado, 206p. Universidade Federal Fluminense. Disponível 
+em: https://app.uff.br/riuff/handle/1/22073. Acesso em: 22 jun. 2025. 
+SERVIÇO GEOLÓGICO DO BRASIL – SGB. (c2024). Hidrologia. SGB – CPRM. Ministério de 
+Minas e Energia Disponível em: https://www.sgb.gov.br/hidrologia. 
+SERVIÇO GEOLÓGICO DO BRASIL – SGB. (2025) . SACE: SISTEMA DE ALERTA DE 
+EVENTOS CRÍTICOS. Disponível em: https://www.sgb.gov.br/sace/. 
+TENSOR FLOW. (2020). Keras. Disponível em:  https://www.tensorflow.org/guide/keras?hl=pt-br. 
+Acesso em 21 jun. 2025. 
+VICENTINI, E. D.; OLIVEIRA -FILHO, A. G. S. (2021). “Introdução às Redes Neurais para 
+regressões não-lineares: ajuste de superfícies de energia potencial” . Quím. Nova, vol. 44, n. 2, pp. 
+229-324. Disponível em: https://www.scielo.br/j/qn/a/gDX7ZGVnPPdBPfjvLpdqC4d/. Acesso em: 
+22 jun. 2025. 

@@ -232,6 +232,17 @@ input:focus-visible {
   font-size: 11px;
 }
 
+.temporary-alert {
+  padding: 16px 18px;
+  color: #b62d35;
+  background: #ffe9e9;
+  border: 1px solid #b62d3547;
+  border-left: 5px solid #b62d35;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .alert-item {
   --alert-accent: #a97800;
   --alert-background: #fff7d8;
@@ -1121,8 +1132,9 @@ select {
 
 .river-city-grid {
   display: grid;
+  align-items: start;
   gap: 16px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .river-city-card {
@@ -1777,6 +1789,79 @@ select {
 
 .bulletin-view:hover { color: var(--muted); }
 
+.cameras-panel {
+  border-right: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cameras-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.camera-card { min-width: 0; }
+
+.camera-player {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  border-radius: 6px;
+  background: #1a1a18;
+}
+
+.camera-player iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.camera-caption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+}
+
+.camera-caption h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 560;
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+.camera-caption p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.camera-caption a {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 4px;
+  margin-top: -8px;
+  color: var(--blue);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.camera-caption a:hover { text-decoration: underline; }
+
+@media (max-width: 760px) {
+  .cameras-grid { grid-template-columns: minmax(0, 1fr); }
+  .cameras-panel { padding-inline: 8px; }
+}
+
 .ceran-panel {
   padding: 48px var(--section-gutter);
   border-right: 0;
@@ -1906,6 +1991,10 @@ footer {
   padding: 24px 0 0;
   color: var(--muted);
   font-size: 10px;
+}
+
+@media (max-width: 1199px) {
+  .river-city-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 960px) {
@@ -2074,3 +2163,31 @@ footer {
     border-top: 0;
   }
 }
+
+/* The NOAA sector uses its own projection and includes its geographic legend. */
+.satellite-frame img[data-provider="noaa"],
+.media-modal-frame--satellite > img[data-provider="noaa"] { object-fit: contain; }
+.projection-panel { margin-top: 20px; padding: 24px; }
+.projection-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.projection-heading h2 { display: flex; align-items: center; gap: 8px; font-size: 19px; font-weight: 600; margin: 6px 0 0; }
+.projection-eyebrow { font-size: 10px; letter-spacing: .09em; color: var(--muted); }
+.projection-stations { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.projection-stations button { min-height: 44px; padding: 8px 16px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--muted); font: inherit; font-size: 13px; cursor: pointer; }
+.projection-stations button[aria-pressed="true"] { background: #edf3ef; border-color: #abc8b7; color: #285b47; font-weight: 600; }
+.projection-stations button:hover { background: #f4f7f4; }
+.projection-stations button:focus-visible { outline: 2px solid #37836b; outline-offset: 3px; }
+.projection-badge { font-size: 11px; padding: 5px 9px; border-radius: 20px; background: #edf3ef; color: #426453; }
+.projection-chart { width: 100%; height: auto; max-height: 260px; display: block; margin: 12px 0; color: var(--muted); overflow: visible; }
+.projection-chart text { fill: currentColor; font-size: 11px; font-variant-numeric: tabular-nums; }
+.projection-table-wrap { overflow-x: auto; border-radius: 8px; }
+.projection-table-wrap:focus-visible { outline: 2px solid #37836b; outline-offset: 3px; }
+.projection-table { width: 100%; border-collapse: collapse; text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.projection-table th { color: var(--muted); font-size: 11px; font-weight: 500; padding: 8px; }
+.projection-table td { font-size: 15px; font-weight: 600; padding: 9px; background: #f4f7f4; }
+.projection-table td span { font-size: 10px; font-weight: 400; color: var(--muted); }
+.projection-details { margin-top: 16px; font-size: 11px; color: var(--muted); }
+.projection-details summary { cursor: pointer; width: fit-content; min-height: 40px; display: list-item; align-content: center; }
+.projection-details p { max-width: 720px; line-height: 1.7; margin: 8px 0; }
+.projection-empty { padding: 30px 0; font-size: 13px; color: var(--muted); }
+.projection-warning { font-size: 12px; color: #8b5c22; margin: 12px 0 0; }
+@media (max-width: 600px) { .projection-panel { padding: 18px 14px; } .projection-heading h2 { font-size: 17px; } .projection-chart { min-height: 145px; } .projection-chart text { font-size: 20px; } }

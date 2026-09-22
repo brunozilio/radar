@@ -1,0 +1,17 @@
+{
+  "id": "upstream-flow-change-clipping-v1",
+  "scope": "Local historical development experiment prompted by Monte Claro oscillation diagnosis. Previously inspected evaluation periods are not an independent holdout.",
+  "sources": ["julho", "carreiro"],
+  "families": ["level_and_slopes", "level_clipped_flow_changes"],
+  "base": "Frozen 77 feature reservoir-level candidate, original ridge alpha1000, delta response target-known, weights1+2*(target>2 in1000m3/s). Reference models reused verbatim from reservoir-level experiment.",
+  "transform": "Clip only the21 flow-change predictors (delta1h,slope3h,slope6h for each of7 flow series) to finite training-row quantiles0.005 and0.995. Fit bounds separately for each source, lead and training phase. No quantile tuning. Keep all current flow levels, rain, reservoir levels and level-change variables unchanged. Missing values remain missing. Apply the same transform to training and inference. No observed flow or level is modified.",
+  "quantiles": [0.005, 0.995],
+  "flow_change_columns": [1,2,3,5,6,7,9,10,11,13,14,15,17,18,19,21,22,23,25,26,27],
+  "training": "Validation targets strictly before2025-10-01; validation origins from2025-10-01 and targets before2026-07-01. Test training targets strictly before2026-07-01; test origins from2026-07-01 and targets before2026-09-21. Preserve same finite target/known membership as reference. Imputation/scaling/bounds fitted on training rows only.",
+  "evaluation": "All leads0..11, same source95th-percentile high-flow threshold computed before2025-10-01. Report every pair, MAE,bias,P90 overall and high-flow; reference predictions must reproduce stored outputs. Report number of transformed training/inference rows and all bounds. No filtering by favorable events.",
+  "selection": "No hyperparameter search. Compare validation mean across leads of MAEall+0.5MAEhigh, then complete development test. Reduced extreme errors alone cannot justify live promotion. A future end-to-end check still required even if upstream scores improve.",
+  "cautions": "Training quantiles are statistical influence controls, not physical limits or official QC. True extreme trends can be suppressed and accuracy can worsen. Zero observations remain preserved. Source availability history remains assumed.",
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

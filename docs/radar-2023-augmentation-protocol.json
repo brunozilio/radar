@@ -1,0 +1,12 @@
+{
+  "id": "radar-2023-observed-augmentation-v1",
+  "scope": "Local RADAR research only, registered before fitting. No operational promotion or live issuance.",
+  "reference": "Frozen120feature models from experimento-radar-observado-120-20260921, original2025/2026 native-missing membership. Reproduce all saved forecasts exactly. Do not compare directly against180features to attribute gains to2023.",
+  "candidate": "Add all eligible September2023 origins from radar-matriz-observada-2023-20260921, finite delayed base and exact future approved target, target beforeOctober1. No auxiliary completeness restriction, no imputation or peak mark. No2024data added. Fit chronologically with2023rows first, then unchanged original training rows. Future targets built separately within datasets, never across the calendar gap.",
+  "features_and_parameters": "Same120observed columns, original loss/leaf_nodes and fixed max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. Same runtime and weights1+2*(abs(target-base)>=1)+2*(target>=9). No parameter search or selective addition of extreme-only rows.",
+  "evaluation": "Unchanged102084scheduled rows and both original chronological folds, including originalOctober boundary exclusion. All horizons1..12, all targets and level>=7m, complete24/missing24/full_schedule. Preserve missing targets, failures and coverage; paired and observed-target hit fractions within0.50m,MAE,bias,P98,max. No posthoc horizon mixing.",
+  "base_selection": "As in the frozen reference, latest row at O−15min with age<=15min after query; latest missing row stays missing. This rule may differ from an exact-only scan. The audited extra h12pair481vs480 actually comes from newly collected warmup data: base0.86m exactlyAugust31 23:45, originSeptember1 00h,target1.43m at12h. It is not caused by asof tolerance or imputation. Preserve the reference rule.",
+  "limits": "All historical periods already inspected; no independent holdout claimed.2023sensor/datum/timezone/publication and regime comparisons remain uncertified. Auxiliary level and rain gaps are substantial. New rows are conditional research examples, not certified equivalent operational data. No98percent claim from numerical improvement.",
+  "promoted": false,
+  "goal_achieved": false
+}

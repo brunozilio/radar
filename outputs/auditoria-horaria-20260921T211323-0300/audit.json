@@ -1,0 +1,865 @@
+{
+  "audited_at": "2026-09-21T21:15:48.067472-03:00",
+  "run": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T210023-0300",
+  "runner": "duplicate suppressed; no new forecast",
+  "hash_checks": 492,
+  "hash_errors": [],
+  "changed_live_artifacts_not_sealed_blobs": [
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py"
+  ],
+  "model_artifacts": 56,
+  "input_receipts": 207,
+  "history_files": 33,
+  "responses": 133,
+  "collection_failures": [],
+  "collection_retries": [],
+  "pipeline_errors": [],
+  "source_ages": [
+    {
+      "source": "86060010",
+      "last_time": "2026-09-21T08:00:00-03:00",
+      "delay_minutes": "780.0",
+      "value": "13.8"
+    },
+    {
+      "source": "86099000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "6.99"
+    },
+    {
+      "source": "86102000",
+      "last_time": "2026-09-21T10:00:00-03:00",
+      "delay_minutes": "660.0",
+      "value": "7.51"
+    },
+    {
+      "source": "86117000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "2.43"
+    },
+    {
+      "source": "86125000",
+      "last_time": "2026-09-21T11:59:00-03:00",
+      "delay_minutes": "541.0",
+      "value": "0.8412999999999999"
+    },
+    {
+      "source": "86125050",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "1.39"
+    },
+    {
+      "source": "86160000",
+      "last_time": "2026-09-21T19:45:00-03:00",
+      "delay_minutes": "75.0",
+      "value": "5.01"
+    },
+    {
+      "source": "86163000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "1.23"
+    },
+    {
+      "source": "86200900",
+      "last_time": "2026-09-21T12:00:00-03:00",
+      "delay_minutes": "540.0",
+      "value": "667.03"
+    },
+    {
+      "source": "86280500",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "4.875"
+    },
+    {
+      "source": "86298000",
+      "last_time": "2026-09-21T18:00:00-03:00",
+      "delay_minutes": "180.0",
+      "value": "12.62"
+    },
+    {
+      "source": "86403000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "8.77"
+    },
+    {
+      "source": "86410800",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "0.02"
+    },
+    {
+      "source": "86447000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "4.88"
+    },
+    {
+      "source": "86448000",
+      "last_time": "2026-09-21T19:00:00-03:00",
+      "delay_minutes": "120.0",
+      "value": "153.55"
+    },
+    {
+      "source": "86450000",
+      "last_time": "2026-09-21T18:15:00-03:00",
+      "delay_minutes": "165.0",
+      "value": "17.53"
+    },
+    {
+      "source": "86471000",
+      "last_time": "2026-09-21T20:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "2.87"
+    },
+    {
+      "source": "86472000",
+      "last_time": "2026-09-21T20:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "17.66"
+    },
+    {
+      "source": "86472600",
+      "last_time": "2026-09-21T20:45:00-03:00",
+      "delay_minutes": "15.0",
+      "value": "14.36"
+    },
+    {
+      "source": "86479000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "0.3"
+    },
+    {
+      "source": "86488000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "2.4"
+    },
+    {
+      "source": "86493000",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "371.95"
+    },
+    {
+      "source": "86495500",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "330.51"
+    },
+    {
+      "source": "86500000",
+      "last_time": "2026-09-21T20:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "4.793"
+    },
+    {
+      "source": "86504900",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "6.19"
+    },
+    {
+      "source": "86505500",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "1.15"
+    },
+    {
+      "source": "86510000",
+      "last_time": "2026-09-21T20:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "15.56"
+    },
+    {
+      "source": "julho",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "8875.46"
+    },
+    {
+      "source": "monte",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "11154.08"
+    },
+    {
+      "source": "castro",
+      "last_time": "2026-09-21T20:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "8905.44"
+    }
+  ],
+  "stale_auxiliaries_over_180_minutes": [
+    {
+      "source": "86060010",
+      "last_time": "2026-09-21T08:00:00-03:00",
+      "delay_minutes": "780.0",
+      "value": "13.8"
+    },
+    {
+      "source": "86102000",
+      "last_time": "2026-09-21T10:00:00-03:00",
+      "delay_minutes": "660.0",
+      "value": "7.51"
+    },
+    {
+      "source": "86125000",
+      "last_time": "2026-09-21T11:59:00-03:00",
+      "delay_minutes": "541.0",
+      "value": "0.8412999999999999"
+    },
+    {
+      "source": "86200900",
+      "last_time": "2026-09-21T12:00:00-03:00",
+      "delay_minutes": "540.0",
+      "value": "667.03"
+    }
+  ],
+  "history_index": {
+    "directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T210023-0300/history",
+    "manifest_sha256": "b3cf61db9952ab79e76abfc8a10aaa6c56b6dc4545e21cb0c622385fa7eba5c1"
+  },
+  "issuance": [
+    {
+      "model": "radar_arvores_live_candidate",
+      "recorded_at": "2026-09-22T00:02:20.346907+00:00",
+      "actual_leads_h": [
+        0.9610147480555555,
+        1.9610147480555555,
+        2.9610147480555558,
+        3.9610147480555558,
+        4.961014748055556,
+        5.961014748055556,
+        6.961014748055556,
+        7.961014748055556,
+        8.961014748055556,
+        9.961014748055556,
+        10.961014748055556,
+        11.961014748055556,
+        12.961014748055556,
+        13.961014748055556
+      ],
+      "bands_1_to_12": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "terminal_states": [
+        "cycle_completed"
+      ],
+      "training_cutoff": "2026-09-21T00:00:00-03:00"
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "recorded_at": "2026-09-22T00:02:20.495193+00:00",
+      "actual_leads_h": [
+        0.9609735574999999,
+        1.9609735575,
+        2.9609735575,
+        3.9609735575,
+        4.9609735575,
+        5.9609735575,
+        6.9609735575,
+        7.9609735575,
+        8.960973557500001,
+        9.9609735575,
+        10.9609735575,
+        11.9609735575,
+        12.9609735575,
+        13.9609735575
+      ],
+      "bands_1_to_12": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "terminal_states": [
+        "cycle_completed"
+      ],
+      "training_cutoff": "2026-09-21T00:00:00-03:00"
+    }
+  ],
+  "capture": {
+    "receipt": "8c897692287dde9f32675cde51b66fdeeb9c9b3e3f89b290d1365ac7b820e578",
+    "recorded_at": "2026-09-22T00:13:40.432922+00:00",
+    "observations": 180,
+    "new": [
+      {
+        "station_id": "86510000",
+        "datum_id": "ANA:86510000:reference-unverified",
+        "valid_at": "2026-09-21T20:45:00-03:00",
+        "level_m": 15.73,
+        "quality": "Dado aprovado",
+        "timezone_verified": false,
+        "datum_verified": false,
+        "raw_time": "2026-09-21 20:45:00",
+        "raw_level_cm": "1573.00"
+      }
+    ],
+    "revised": [],
+    "latest": {
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "valid_at": "2026-09-21T20:45:00-03:00",
+      "level_m": 15.73,
+      "quality": "Dado aprovado",
+      "timezone_verified": false,
+      "datum_verified": false,
+      "raw_time": "2026-09-21 20:45:00",
+      "raw_level_cm": "1573.00"
+    }
+  },
+  "report": "/Users/brunozilio/Documents/radar/outputs/monitoramento-prospectivo/reports/20260922T001547913468Z",
+  "status_counts": {
+    "matched": 16,
+    "missing_exact_observation": 7,
+    "not_due": 86
+  },
+  "goal_eligible_pairs": 0,
+  "retired_model_pairs_preserved": 109,
+  "cadence": {
+    "configured": true,
+    "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+    "effective_from": "2026-09-21T21:00:00+00:00",
+    "closed_windows": 3,
+    "complete_windows": 3,
+    "coverage_percent": 100.0,
+    "status_counts": {
+      "complete": 3
+    },
+    "current_window_started_at": "2026-09-22T00:00:00+00:00",
+    "windows": [
+      {
+        "start": "2026-09-21T21:00:00+00:00",
+        "end_exclusive": "2026-09-21T22:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+            "started_at": "2026-09-21T21:00:20.111770+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          },
+          {
+            "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+            "started_at": "2026-09-21T21:33:05.230842+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      },
+      {
+        "start": "2026-09-21T22:00:00+00:00",
+        "end_exclusive": "2026-09-21T23:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+            "started_at": "2026-09-21T22:00:23.957858+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      },
+      {
+        "start": "2026-09-21T23:00:00+00:00",
+        "end_exclusive": "2026-09-22T00:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+            "started_at": "2026-09-21T23:02:35.814320+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      }
+    ],
+    "all_recorded_attempts": [
+      {
+        "cycle_sha256": "65b3b7d67c6e4cbb98f7b360004ca1d3225e70f9a167944794dfabb184128887",
+        "started_at": "2026-09-21T20:27:07.658033+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_failed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "1bbb40de9c89f3cd627bb94829af9d4f32de404445a16b6cca169e406f7f9012",
+        "started_at": "2026-09-21T20:29:31.309630+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+        "started_at": "2026-09-21T21:00:20.111770+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+        "started_at": "2026-09-21T21:33:05.230842+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+        "started_at": "2026-09-21T22:00:23.957858+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+        "started_at": "2026-09-21T23:02:35.814320+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "8fa0ba4428dc007e04e85cc40ec2f27dfa4bd170dd4d7cec964822b0e35143e5",
+        "started_at": "2026-09-22T00:00:23.276039+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      }
+    ],
+    "unlinked_forecast_issues": 2,
+    "limitations": [
+      "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+      "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+      "An unfinished record does not establish a live process.",
+      "Before the policy effective time, historical coverage remains unproven; recorded failures remain visible separately.",
+      "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+    ]
+  },
+  "upstream_extrapolation": {
+    "archival_cycle_before_HGE_retirement": true,
+    "above_training_max_count": 12,
+    "outside_feature_count": 28,
+    "total": 28,
+    "maximum": {
+      "source": "julho",
+      "lead_h": 3,
+      "forecast_m3_s": 11393.353482442111,
+      "training_max_target_m3_s": 9452.0,
+      "above_training_max": true,
+      "features_outside_training_range": [
+        {
+          "feature": "julho:Q:slope3h",
+          "current_value": 1.062716666666666,
+          "training_min": -0.4256666666666667,
+          "training_max": 0.843
+        },
+        {
+          "feature": "julho:Q:slope6h",
+          "current_value": 0.8188799999999997,
+          "training_min": -0.3953333333333333,
+          "training_max": 0.677
+        },
+        {
+          "feature": "julho:I:slope3h",
+          "current_value": 0.9714199999999998,
+          "training_min": -0.3953333333333333,
+          "training_max": 0.8753333333333333
+        },
+        {
+          "feature": "julho:I:slope6h",
+          "current_value": 0.8913799999999998,
+          "training_min": -0.33066666666666666,
+          "training_max": 0.7173333333333334
+        },
+        {
+          "feature": "monte:Q:1000m3s",
+          "current_value": 11.15408,
+          "training_min": 0.0,
+          "training_max": 9.907
+        },
+        {
+          "feature": "monte:I:1000m3s",
+          "current_value": 11.31658,
+          "training_min": 0.0,
+          "training_max": 9.999
+        },
+        {
+          "feature": "castro:Q:1000m3s",
+          "current_value": 8.90544,
+          "training_min": 0.016,
+          "training_max": 5.323
+        },
+        {
+          "feature": "castro:Q:delta1h",
+          "current_value": -0.40851999999999933,
+          "training_min": -0.2549999999999999,
+          "training_max": 0.6199999999999997
+        },
+        {
+          "feature": "castro:Q:slope6h",
+          "current_value": 1.01289,
+          "training_min": -0.23916666666666667,
+          "training_max": 0.45249999999999996
+        },
+        {
+          "feature": "castro:I:1000m3s",
+          "current_value": 8.60933,
+          "training_min": 0.001,
+          "training_max": 5.621
+        },
+        {
+          "feature": "castro:I:delta1h",
+          "current_value": -1.2228200000000005,
+          "training_min": -0.371,
+          "training_max": 0.6929999999999996
+        },
+        {
+          "feature": "castro:I:slope6h",
+          "current_value": 0.9067833333333333,
+          "training_min": -0.25383333333333336,
+          "training_max": 0.43850000000000006
+        },
+        {
+          "feature": "Baixo Antas:P12/100mm",
+          "current_value": 0.8281387283236974,
+          "training_min": 0.0,
+          "training_max": 0.7020520231213861
+        },
+        {
+          "feature": "Baixo Antas:P24/100mm",
+          "current_value": 1.343011560693638,
+          "training_min": 0.0,
+          "training_max": 1.1114624277456602
+        },
+        {
+          "feature": "Tainhas:P6/100mm",
+          "current_value": 0.3837704918032734,
+          "training_min": 0.0,
+          "training_max": 0.3626666666666681
+        },
+        {
+          "feature": "Tainhas:P12/100mm",
+          "current_value": 1.436759562841522,
+          "training_min": 0.0,
+          "training_max": 0.6352076502732302
+        },
+        {
+          "feature": "Tainhas:P24/100mm",
+          "current_value": 1.5055027322404269,
+          "training_min": 0.0,
+          "training_max": 1.0574644808743188
+        },
+        {
+          "feature": "Tainhas:P48/100mm",
+          "current_value": 1.721530054644792,
+          "training_min": 0.0,
+          "training_max": 1.3663825136612127
+        }
+      ],
+      "largest_linear_contributions": [
+        {
+          "feature": "castro:I:1000m3s",
+          "contribution_m3_s": 1361.8692502300978,
+          "standardized_value": 24.36621646128257
+        },
+        {
+          "feature": "castro:I:slope6h",
+          "contribution_m3_s": 1293.8530263898056,
+          "standardized_value": 44.082572330106856
+        },
+        {
+          "feature": "julho:Q:1000m3s",
+          "contribution_m3_s": -900.8710524829047,
+          "standardized_value": 13.329729039380451
+        },
+        {
+          "feature": "castro:Q:delta1h",
+          "contribution_m3_s": -525.4954118935138,
+          "standardized_value": -15.272012221532474
+        },
+        {
+          "feature": "castro:Q:slope3h",
+          "contribution_m3_s": 482.89104257624246,
+          "standardized_value": 20.250996375495383
+        },
+        {
+          "feature": "julho:Q:slope6h",
+          "contribution_m3_s": -406.226740284179,
+          "standardized_value": 20.97790360192244
+        },
+        {
+          "feature": "julho:Q:slope3h",
+          "contribution_m3_s": -394.66251606548616,
+          "standardized_value": 22.865777765282843
+        },
+        {
+          "feature": "julho:I:slope6h",
+          "contribution_m3_s": 363.60030831198634,
+          "standardized_value": 23.208462494154503
+        },
+        {
+          "feature": "castro:Q:slope6h",
+          "contribution_m3_s": 346.81854692681264,
+          "standardized_value": 47.85897483620043
+        },
+        {
+          "feature": "julho:I:slope3h",
+          "contribution_m3_s": 270.8308957096298,
+          "standardized_value": 20.048199143672928
+        }
+      ],
+      "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+    }
+  },
+  "changes_from_20h": [
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "delta_m": -0.30258360596236145
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-21T23:00:00-03:00",
+      "delta_m": -0.017358818222398043
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T00:00:00-03:00",
+      "delta_m": 0.14346066218881148
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T01:00:00-03:00",
+      "delta_m": 0.3510367005599484
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T02:00:00-03:00",
+      "delta_m": 0.28365854120511
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T03:00:00-03:00",
+      "delta_m": -0.6495609247732439
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T04:00:00-03:00",
+      "delta_m": -0.9265720763760541
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T05:00:00-03:00",
+      "delta_m": -0.9603338660524372
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T06:00:00-03:00",
+      "delta_m": -0.6053057035021787
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T07:00:00-03:00",
+      "delta_m": -0.9429381735628368
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T08:00:00-03:00",
+      "delta_m": -0.7143772762871876
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T09:00:00-03:00",
+      "delta_m": -0.7982852267058824
+    },
+    {
+      "model": "radar_arvores_live_candidate",
+      "valid_at": "2026-09-22T10:00:00-03:00",
+      "delta_m": -1.0996698393026172
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "delta_m": -0.837285170295317
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-21T23:00:00-03:00",
+      "delta_m": -1.065416167200162
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T00:00:00-03:00",
+      "delta_m": -1.3703026736134518
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T01:00:00-03:00",
+      "delta_m": -1.6818343020049085
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T02:00:00-03:00",
+      "delta_m": -2.0693383985099487
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T03:00:00-03:00",
+      "delta_m": -2.5010149307507845
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T04:00:00-03:00",
+      "delta_m": -3.028263248542288
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T05:00:00-03:00",
+      "delta_m": -3.536966564244736
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T06:00:00-03:00",
+      "delta_m": -3.988767256429213
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T07:00:00-03:00",
+      "delta_m": -4.421375470792249
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T08:00:00-03:00",
+      "delta_m": -4.845334485376306
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T09:00:00-03:00",
+      "delta_m": -5.19188504934656
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "valid_at": "2026-09-22T10:00:00-03:00",
+      "delta_m": -5.613760138979181
+    }
+  ],
+  "scope_note": "Current runner and report were already changed to Radar-only by coordinating task. Historical 21:02 cycle had both models and remains intact. No HGE execution or modification by this audit.",
+  "previous_report": "/Users/brunozilio/Documents/radar/outputs/monitoramento-prospectivo/reports/20260922T001340436256Z",
+  "model_transition_records": [
+    {
+      "kind": "cadence_model_transition",
+      "payload": {
+        "effective_from": "2026-09-22T01:00:00+00:00",
+        "expected_models": [
+          "radar_arvores_live_candidate"
+        ],
+        "reason": "User explicitly removed HGE/ARNO; preserve original requirements for earlier delivery windows."
+      },
+      "previous_sha256": "8c897692287dde9f32675cde51b66fdeeb9c9b3e3f89b290d1365ac7b820e578",
+      "recorded_at": "2026-09-22T00:14:48.837476+00:00",
+      "schema": 1,
+      "sequence": 1641,
+      "sha256": "2764921193cdf9ff93d1593d6620b83abea247fea0e38208ccdde1347e6f881a"
+    }
+  ],
+  "research": {
+    "directory": "/Users/brunozilio/Documents/radar/outputs/pesquisa-mucum-20260922T001359Z",
+    "source_document_hash_verified": true,
+    "finding": "ANA 2025 documents destroyed station in Muçum; aggregate recovery does not establish individual recovery date, datum or endpoint timezone.",
+    "new_series": 0
+  }
+}

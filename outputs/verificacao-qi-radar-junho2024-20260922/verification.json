@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "checks": 17296,
+  "rows": 2160,
+  "lookups": 3024,
+  "summary": [
+    {
+      "scope": "month",
+      "plant": "JIUHQJ",
+      "n": 720,
+      "q_equals_i": 720,
+      "turbine_zero": 470,
+      "component_residual_gt1": 250,
+      "residual_min": -173.0,
+      "residual_max": 1.0
+    },
+    {
+      "scope": "month",
+      "plant": "JIUHMC",
+      "n": 720,
+      "q_equals_i": 222,
+      "turbine_zero": 720,
+      "component_residual_gt1": 0,
+      "residual_min": -1.0,
+      "residual_max": 0.0
+    },
+    {
+      "scope": "month",
+      "plant": "JIUHCA",
+      "n": 720,
+      "q_equals_i": 161,
+      "turbine_zero": 14,
+      "component_residual_gt1": 0,
+      "residual_min": -1.0,
+      "residual_max": 1.0
+    },
+    {
+      "scope": "warmup",
+      "plant": "JIUHQJ",
+      "n": 240,
+      "q_equals_i": 240,
+      "turbine_zero": 203,
+      "component_residual_gt1": 37,
+      "residual_min": -169.0,
+      "residual_max": 1.0
+    },
+    {
+      "scope": "warmup",
+      "plant": "JIUHMC",
+      "n": 240,
+      "q_equals_i": 48,
+      "turbine_zero": 240,
+      "component_residual_gt1": 0,
+      "residual_min": -1.0,
+      "residual_max": 0.0
+    },
+    {
+      "scope": "warmup",
+      "plant": "JIUHCA",
+      "n": 240,
+      "q_equals_i": 33,
+      "turbine_zero": 14,
+      "component_residual_gt1": 0,
+      "residual_min": -1.0,
+      "residual_max": 1.0
+    },
+    {
+      "scope": "central",
+      "plant": "JIUHQJ",
+      "n": 168,
+      "q_equals_i": 168,
+      "turbine_zero": 131,
+      "component_residual_gt1": 37,
+      "residual_min": -169.0,
+      "residual_max": 1.0
+    },
+    {
+      "scope": "central",
+      "plant": "JIUHMC",
+      "n": 168,
+      "q_equals_i": 21,
+      "turbine_zero": 168,
+      "component_residual_gt1": 0,
+      "residual_min": -1.0,
+      "residual_max": 0.0
+    },
+    {
+      "scope": "central",
+      "plant": "JIUHCA",
+      "n": 168,
+      "q_equals_i": 23,
+      "turbine_zero": 14,
+      "component_residual_gt1": 0,
+      "residual_min": -1.0,
+      "residual_max": 1.0
+    }
+  ],
+  "julho_monte_equal_Q": 221,
+  "source_artifact_manifest_sha256": "fd894bb7ac34f1be6444b5a4bf24aaa654245e77d05a19f1b2bfbbd5a543d692",
+  "source_script_sha256": "7fdde3454f5c3654065f1c712bb00dc91d9aa748de67434b2213b5f69668f343",
+  "source_index_convention": "Zero-based data-row index, header excluded.",
+  "fits": 0,
+  "inferences": 0,
+  "goal_achieved": false
+}

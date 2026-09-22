@@ -1,0 +1,16 @@
+{
+  "id": "upstream-forecast-rain-v1",
+  "scope": "Historical development experiment only; all evaluation periods previously inspected. No independent or prospective claim.",
+  "families": ["level_and_slopes", "levels_forecast_rain"],
+  "sources": ["julho", "carreiro"],
+  "reference": "Reuse frozen77feature reservoir-level models verbatim, without clipping or QC masks.",
+  "candidate": "Append20rain predictors: accumulated forecast precipitation at origin+1 through+3,+6,+9,+12hours for each of5 frozen locations; divide mm by100. For each location/window, arithmetic mean across GFS/ECMWF/ICON members with a complete finite window. Partial members are excluded from that feature and counted; if none complete feature is missing, never zero. These points represent the existing basin sampling locations, not area-averaged rainfall.",
+  "temporal_contract": "Use precipitation_previous_day1 only: documented fixed24h lead referenced to each valid time. For valid times origin+1..+12, nominal initialization references precede origin by23..12h. Different valid times may use different forecast vintages. Per-record run/issuance/publication timestamps are unavailable; historical availability is assumed, not certified. Never substitute precipitation observations or reanalysis. Live latest-run forecasts have a different lead distribution; no automatic integration.",
+  "windows_h": [3,6,9,12],
+  "model": "Original ridge alpha1000; delta target-known, weights1+2*(target>2 in1000m3/s), same nonnegative output clipping. Fit imputation/scales/coefficients on training rows only. All original features and observations unchanged.",
+  "partitions": "Validation training targets before2025-10-01; validation origins from2025-10-01 and targets before2026-07-01. Test training targets before2026-07-01; test origins from2026-07-01 and targets before2026-09-21. All12relative leads0..11; same finite source target/known membership across families. No removal for missing forecast rain.",
+  "assessment": "No hyperparameter tuning. Report every prediction and source/horizon/phase MAE,bias,P90 for all targets and flows at or above source95thpercentile before2025-10-01. Compare mean per-lead validation MAEall+0.5MAEhigh, then full test including failures. Improvement in upstream discharge alone does not establish level accuracy. A candidate requires later independent and downstream validation before promotion.",
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

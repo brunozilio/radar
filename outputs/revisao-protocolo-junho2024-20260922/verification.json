@@ -1,0 +1,1654 @@
+{
+  "passed": true,
+  "checks": 409,
+  "check_details": [
+    {
+      "check": "outputs/radar-matriz-recente-ancora-15min-20260922/feature-coverage.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-recente-ancora-15min-20260922/features.npz sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-recente-ancora-15min-20260922/preparation-plan.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-recente-ancora-15min-20260922/preparation.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-recente-ancora-15min-20260922/quarter-hour.npz sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/2024-06-15-features.npz sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/2024-06-15-quarter-hour.npz sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/feature-catalog.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/feature-coverage.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/level-source-trace.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/preparation-plan.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/preparation.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/rain-coverage.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/radar-matriz-observada-junho2024-20260922/target-coverage.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/code/hydro_hourly_forecast.py sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/code/hydro_radar_native_missing.py sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/code/hydro_radar_observed_only.py sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/code/hydro_radar_reservoir_features.py sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/code/hydro_routing_fit.py sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/control-reproduction.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/evaluation.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/experiment.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-1.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-10.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-11.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-12.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-2.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-3.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-4.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-5.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-6.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-7.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-8.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/test-9.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-1.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-10.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-11.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-12.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-2.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-3.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-4.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-5.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-6.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-7.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-8.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/models/validation-9.joblib sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/predictions.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/protocol.json sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/training-masks.npz sealed",
+      "passed": true
+    },
+    {
+      "check": "outputs/experimento-radar-observado-120-20260921/training.csv sealed",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/docs/radar-june2024-observed-features-protocol.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/scripts/hydro_radar_recent_quarterhour_anchor.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/outputs/auditoria-contrato-qc-recente-2018-20260922/strict-latest/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/scripts/hydro_model.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/scripts/hydro_rain_windows.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source docs/radar-june2024-observed-features-protocol.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/auditoria-qi-radar-junho2024-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/auditoria-qi-radar-junho2024-20260922/ceran-2024-06-source-values.csv",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/auditoria-qi-radar-junho2024-20260922/ons-references.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source outputs/radar-insumos-observados-junho2024-20260922/stations/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "check": "preparation source scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source scripts/hydro_model.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source scripts/hydro_radar_june2024_features.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source scripts/hydro_rain_windows.py",
+      "passed": true
+    },
+    {
+      "check": "preparation source scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "check": "fixed120 features exact independent comparison",
+      "passed": true
+    },
+    {
+      "check": "times exact original",
+      "passed": true
+    },
+    {
+      "check": "base exact original",
+      "passed": true
+    },
+    {
+      "check": "truth exact original",
+      "passed": true
+    },
+    {
+      "check": "complete24 exact original",
+      "passed": true
+    },
+    {
+      "check": "recent shape",
+      "passed": true
+    },
+    {
+      "check": "june shape",
+      "passed": true
+    },
+    {
+      "check": "hourly grids",
+      "passed": true
+    },
+    {
+      "check": "june boundaries",
+      "passed": true
+    },
+    {
+      "check": "separate nonoverlapping datasets",
+      "passed": true
+    },
+    {
+      "check": "june all bases/truth finite",
+      "passed": true
+    },
+    {
+      "check": "missing Linha Carreiro kept",
+      "passed": true
+    },
+    {
+      "check": "complete24 diagnostic exact",
+      "passed": true
+    },
+    {
+      "check": "june complete24 allfalse",
+      "passed": true
+    },
+    {
+      "check": "102084uniqueevaluation keys",
+      "passed": true
+    },
+    {
+      "check": "runtime same controls",
+      "passed": true
+    },
+    {
+      "check": "juneh1 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh1 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh1 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh1 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh1 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh1 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh1 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh1 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh1 params",
+      "passed": true
+    },
+    {
+      "check": "validationh1 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh1 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh1 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh1 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh1 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh1 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh1 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh1 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh1 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh1 params",
+      "passed": true
+    },
+    {
+      "check": "testh1 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh1 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh1 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh2 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh2 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh2 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh2 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh2 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh2 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh2 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh2 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh2 params",
+      "passed": true
+    },
+    {
+      "check": "validationh2 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh2 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh2 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh2 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh2 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh2 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh2 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh2 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh2 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh2 params",
+      "passed": true
+    },
+    {
+      "check": "testh2 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh2 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh2 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh3 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh3 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh3 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh3 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh3 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh3 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh3 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh3 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh3 params",
+      "passed": true
+    },
+    {
+      "check": "validationh3 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh3 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh3 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh3 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh3 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh3 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh3 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh3 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh3 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh3 params",
+      "passed": true
+    },
+    {
+      "check": "testh3 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh3 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh3 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh4 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh4 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh4 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh4 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh4 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh4 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh4 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh4 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh4 params",
+      "passed": true
+    },
+    {
+      "check": "validationh4 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh4 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh4 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh4 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh4 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh4 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh4 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh4 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh4 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh4 params",
+      "passed": true
+    },
+    {
+      "check": "testh4 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh4 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh4 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh5 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh5 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh5 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh5 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh5 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh5 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh5 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh5 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh5 params",
+      "passed": true
+    },
+    {
+      "check": "validationh5 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh5 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh5 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh5 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh5 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh5 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh5 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh5 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh5 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh5 params",
+      "passed": true
+    },
+    {
+      "check": "testh5 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh5 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh5 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh6 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh6 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh6 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh6 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh6 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh6 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh6 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh6 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh6 params",
+      "passed": true
+    },
+    {
+      "check": "validationh6 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh6 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh6 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh6 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh6 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh6 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh6 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh6 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh6 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh6 params",
+      "passed": true
+    },
+    {
+      "check": "testh6 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh6 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh6 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh7 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh7 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh7 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh7 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh7 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh7 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh7 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh7 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh7 params",
+      "passed": true
+    },
+    {
+      "check": "validationh7 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh7 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh7 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh7 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh7 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh7 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh7 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh7 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh7 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh7 params",
+      "passed": true
+    },
+    {
+      "check": "testh7 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh7 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh7 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh8 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh8 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh8 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh8 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh8 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh8 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh8 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh8 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh8 params",
+      "passed": true
+    },
+    {
+      "check": "validationh8 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh8 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh8 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh8 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh8 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh8 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh8 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh8 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh8 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh8 params",
+      "passed": true
+    },
+    {
+      "check": "testh8 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh8 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh8 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh9 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh9 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh9 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh9 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh9 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh9 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh9 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh9 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh9 params",
+      "passed": true
+    },
+    {
+      "check": "validationh9 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh9 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh9 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh9 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh9 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh9 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh9 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh9 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh9 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh9 params",
+      "passed": true
+    },
+    {
+      "check": "testh9 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh9 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh9 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh10 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh10 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh10 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh10 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh10 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh10 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh10 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh10 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh10 params",
+      "passed": true
+    },
+    {
+      "check": "validationh10 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh10 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh10 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh10 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh10 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh10 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh10 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh10 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh10 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh10 params",
+      "passed": true
+    },
+    {
+      "check": "testh10 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh10 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh10 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh11 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh11 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh11 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh11 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh11 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh11 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh11 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh11 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh11 params",
+      "passed": true
+    },
+    {
+      "check": "validationh11 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh11 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh11 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh11 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh11 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh11 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh11 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh11 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh11 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh11 params",
+      "passed": true
+    },
+    {
+      "check": "testh11 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh11 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh11 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "juneh12 targetcoverage",
+      "passed": true
+    },
+    {
+      "check": "juneh12 trailing targetsnan",
+      "passed": true
+    },
+    {
+      "check": "validationh12 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "validationh12 metadata",
+      "passed": true
+    },
+    {
+      "check": "validationh12 cutoff",
+      "passed": true
+    },
+    {
+      "check": "validationh12 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "validationh12 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "validationh12 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "validationh12 params",
+      "passed": true
+    },
+    {
+      "check": "validationh12 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "validationh12 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "validationh12 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "testh12 frozenmaskexact",
+      "passed": true
+    },
+    {
+      "check": "testh12 metadata",
+      "passed": true
+    },
+    {
+      "check": "testh12 cutoff",
+      "passed": true
+    },
+    {
+      "check": "testh12 allcolumnsfinite somewhere",
+      "passed": true
+    },
+    {
+      "check": "testh12 targetsfinitemembership",
+      "passed": true
+    },
+    {
+      "check": "testh12 oneorigin",
+      "passed": true
+    },
+    {
+      "check": "testh12 params",
+      "passed": true
+    },
+    {
+      "check": "testh12 targetsandbase",
+      "passed": true
+    },
+    {
+      "check": "testh12 target timestamp",
+      "passed": true
+    },
+    {
+      "check": "testh12 frozenavailability",
+      "passed": true
+    },
+    {
+      "check": "schedule102084",
+      "passed": true
+    }
+  ],
+  "runtime": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "fits": 0,
+  "predictions_executed": 0,
+  "models_config_only_inspected": 24,
+  "blocking_bug_found": false,
+  "reviewed_utc": "2026-09-22T07:03:00.793048+00:00"
+}

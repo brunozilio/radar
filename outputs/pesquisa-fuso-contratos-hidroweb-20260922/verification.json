@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "checks_count": 32,
+  "checks": [
+    {
+      "check": "exists:outputs/pesquisa-ana-qualidade-20260921T231424Z/ana-telemetria1ws-2013.pdf",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/pesquisa-ana-qualidade-20260921T231424Z/source-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/pesquisa-referencia-legacy-20260921/sources/legacy-wsdl-public-proxy.xml",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/pesquisa-referencia-legacy-20260921/new-source-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/pesquisa-referencia-legacy-20260921/contract-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/verificacao-contrato-temporal-mucum/raw/ana-form-mucum-data.html",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/verificacao-contrato-temporal-mucum/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/verificacao-contrato-temporal-mucum/comparison-summary.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/verificacao-contrato-temporal-mucum/README.md",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/verificacao-contrato-temporal-mucum/raw/sace-root.html",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/verificacao-contrato-temporal-mucum/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/historico-cheias-mucum/documentation/ana-progestao-referencias-2020.pdf",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/historico-cheias-mucum/documentation/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/historico-cheias-mucum/documentation/ana-hidrowebservice-manual-2026.pdf",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/historico-cheias-mucum/documentation/reference-investigation-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/historico-cheias-mucum/documentation/ana-hidrowebservice-manual-2026.txt",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/ana-formato-hidro.pdf",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/ana-formato-hidro.pdf.source.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/ana-formato-hidro.txt",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/new-api-v1-openapi.json",
+      "passed": true
+    },
+    {
+      "check": "provenance exists:outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/new-api-v1-openapi.json.source.json",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/pesquisa-hidroweb-convencional-mucum-20260922/records-original-fields.jsonl",
+      "passed": true
+    },
+    {
+      "check": "exists:outputs/historico-cheias-mucum/documentation/reference-investigation-report.md",
+      "passed": true
+    },
+    {
+      "check": "legacy manual operation differs",
+      "passed": true
+    },
+    {
+      "check": "legacy manual noUTC/GMT/DST/timezone/fuso",
+      "passed": true
+    },
+    {
+      "check": "new manual separates update andmeasurement",
+      "passed": true
+    },
+    {
+      "check": "portalUTC3stationidentity",
+      "passed": true
+    },
+    {
+      "check": "portal no explicit operation binding",
+      "passed": true
+    },
+    {
+      "check": "SACE timezone dependent",
+      "passed": true
+    },
+    {
+      "check": "OpenAPI no explicit timezone keywords",
+      "passed": true
+    },
+    {
+      "check": "monthlyDataHora separate from dayfield",
+      "passed": true
+    },
+    {
+      "check": "prior WSDL no DataHora contract",
+      "passed": true
+    }
+  ],
+  "new_requests": 0,
+  "no_models_or_flags_changed": true
+}

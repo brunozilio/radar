@@ -1,0 +1,157 @@
+{
+  "months": [
+    {
+      "month": "2020-06",
+      "plant": "JIUHQJ",
+      "rows": 720,
+      "literal_2359": 30,
+      "Q_finite": 720,
+      "I_finite": 720,
+      "Q_zero": 0,
+      "I_zero": 0,
+      "Q_zero_positive_components": 0,
+      "balance_residual_gt1": 0
+    },
+    {
+      "month": "2020-06",
+      "plant": "JIUHMC",
+      "rows": 720,
+      "literal_2359": 30,
+      "Q_finite": 720,
+      "I_finite": 720,
+      "Q_zero": 0,
+      "I_zero": 0,
+      "Q_zero_positive_components": 0,
+      "balance_residual_gt1": 0
+    },
+    {
+      "month": "2020-06",
+      "plant": "JIUHCA",
+      "rows": 720,
+      "literal_2359": 30,
+      "Q_finite": 720,
+      "I_finite": 720,
+      "Q_zero": 0,
+      "I_zero": 0,
+      "Q_zero_positive_components": 0,
+      "balance_residual_gt1": 0
+    },
+    {
+      "month": "2020-07",
+      "plant": "JIUHQJ",
+      "rows": 744,
+      "literal_2359": 31,
+      "Q_finite": 744,
+      "I_finite": 744,
+      "Q_zero": 8,
+      "I_zero": 6,
+      "Q_zero_positive_components": 8,
+      "balance_residual_gt1": 8
+    },
+    {
+      "month": "2020-07",
+      "plant": "JIUHMC",
+      "rows": 744,
+      "literal_2359": 31,
+      "Q_finite": 744,
+      "I_finite": 744,
+      "Q_zero": 14,
+      "I_zero": 15,
+      "Q_zero_positive_components": 0,
+      "balance_residual_gt1": 0
+    },
+    {
+      "month": "2020-07",
+      "plant": "JIUHCA",
+      "rows": 744,
+      "literal_2359": 31,
+      "Q_finite": 744,
+      "I_finite": 744,
+      "Q_zero": 0,
+      "I_zero": 0,
+      "Q_zero_positive_components": 0,
+      "balance_residual_gt1": 0
+    }
+  ],
+  "rows": 4392,
+  "scheduled_origins": 480,
+  "lag_lookups": 8640,
+  "source_rows_flagged": 23,
+  "origins_all_lookups_available": 480,
+  "origins_with_any_zero": 23,
+  "origins_with_Q_zero_positive_components": 16,
+  "origins_with_Q_balance_residual_gt1": 16,
+  "extreme_origins": [
+    {
+      "origin": "2020-07-07T12:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-07T13:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-07T14:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-07T15:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-07T16:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-12T04:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-12T05:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-12T06:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    },
+    {
+      "origin": "2020-07-12T07:00:00-03:00",
+      "all_18_lookups_available": true,
+      "uses_any_zero": false,
+      "uses_Q_zero_positive_components": false,
+      "uses_Q_balance_residual_gt1": false
+    }
+  ],
+  "seconds_delay": 3600,
+  "max_age_after_query_seconds": 5400,
+  "timestamp_policy": "Literal din_instante, including23:59. AssumedUTC-3 for origin labels only; no rounding or exporter certification.",
+  "flags_policy": "Diagnostics only; source values unchanged, no rejection mask, no filling or component substitution.",
+  "reused_july_csv_verification": "Hash equals frozen prior feasibility audit. Parquet hash matches retrieval manifest; Parquet not redecoded in this audit.",
+  "trained": false,
+  "promoted": false,
+  "goal_achieved": false
+}

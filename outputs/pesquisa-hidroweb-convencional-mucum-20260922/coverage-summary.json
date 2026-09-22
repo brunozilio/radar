@@ -1,0 +1,150 @@
+[
+  {
+    "year": 2011,
+    "window": [
+      "2011-07-18",
+      "2011-07-24"
+    ],
+    "monthly_records": 4,
+    "monthly_value_fields_present": 109,
+    "monthly_absent_value_fields": 15,
+    "window_instant_raw": 14,
+    "window_raw_daily_means": 7,
+    "window_consistent_daily_means": 7,
+    "instant_clock_intervals_hours": [
+      10,
+      14
+    ],
+    "window_raw_instant_status_histogram": {
+      "field_absent": 14
+    },
+    "window_consistent_status_histogram": {
+      "1": 7
+    },
+    "window_peak_of_returned_raw_readings": {
+      "date_from_month_and_field": "2011-07-21",
+      "clock_literal": "07:00:00",
+      "is_daily_mean": false,
+      "record_DataHora_literal": "2011-07-01 07:00:00",
+      "record_DataIns_literal": "2011-10-27 00:00:00",
+      "NivelConsistencia": "1",
+      "TipoMedicaoCotas": "1",
+      "field": "Cota21",
+      "value_original_cm": "2010",
+      "value_field_present": true,
+      "status_original": null,
+      "status_field_present": false,
+      "inside_candidate_window": true,
+      "source_file": "raw/month-hidro-86510000-2011-07-01--2011-07-31-consistencia1.xml",
+      "source_sha256": "ed27351f66696036c93aa21956b5badd7c8760e4ada72f7ed480dd7a1e7eb858",
+      "record_index_1based": 2
+    },
+    "DataIns_by_consistency": {
+      "1": [
+        "2011-10-27 00:00:00"
+      ],
+      "2": [
+        "2018-06-29 00:00:00"
+      ]
+    }
+  },
+  {
+    "year": 2015,
+    "window": [
+      "2015-10-08",
+      "2015-10-14"
+    ],
+    "monthly_records": 4,
+    "monthly_value_fields_present": 124,
+    "monthly_absent_value_fields": 0,
+    "window_instant_raw": 14,
+    "window_raw_daily_means": 7,
+    "window_consistent_daily_means": 7,
+    "instant_clock_intervals_hours": [
+      10,
+      14
+    ],
+    "window_raw_instant_status_histogram": {
+      "field_absent": 12,
+      "3": 2
+    },
+    "window_consistent_status_histogram": {
+      "1": 7
+    },
+    "window_peak_of_returned_raw_readings": {
+      "date_from_month_and_field": "2015-10-09",
+      "clock_literal": "17:00:00",
+      "is_daily_mean": false,
+      "record_DataHora_literal": "2015-10-01 17:00:00",
+      "record_DataIns_literal": "2016-01-26 00:00:00",
+      "NivelConsistencia": "1",
+      "TipoMedicaoCotas": "1",
+      "field": "Cota09",
+      "value_original_cm": "1693",
+      "value_field_present": true,
+      "status_original": null,
+      "status_field_present": false,
+      "inside_candidate_window": true,
+      "source_file": "raw/month-hidro-86510000-2015-10-01--2015-10-31-consistencia1.xml",
+      "source_sha256": "8f10e1c22461a22eedc0aa244f10ba23f48f46f88c42f4f7695c0dcae860d523",
+      "record_index_1based": 3
+    },
+    "DataIns_by_consistency": {
+      "1": [
+        "2016-01-26 00:00:00"
+      ],
+      "2": [
+        "2024-04-09 00:00:00"
+      ]
+    }
+  },
+  {
+    "year": 2017,
+    "window": [
+      "2017-05-24",
+      "2017-05-30"
+    ],
+    "monthly_records": 4,
+    "monthly_value_fields_present": 124,
+    "monthly_absent_value_fields": 0,
+    "window_instant_raw": 14,
+    "window_raw_daily_means": 7,
+    "window_consistent_daily_means": 7,
+    "instant_clock_intervals_hours": [
+      10,
+      14
+    ],
+    "window_raw_instant_status_histogram": {
+      "field_absent": 14
+    },
+    "window_consistent_status_histogram": {
+      "1": 7
+    },
+    "window_peak_of_returned_raw_readings": {
+      "date_from_month_and_field": "2017-05-28",
+      "clock_literal": "07:00:00",
+      "is_daily_mean": false,
+      "record_DataHora_literal": "2017-05-01 07:00:00",
+      "record_DataIns_literal": "2017-10-06 00:00:00",
+      "NivelConsistencia": "1",
+      "TipoMedicaoCotas": "1",
+      "field": "Cota28",
+      "value_original_cm": "1233",
+      "value_field_present": true,
+      "status_original": null,
+      "status_field_present": false,
+      "inside_candidate_window": true,
+      "source_file": "raw/month-hidro-86510000-2017-05-01--2017-05-31-consistencia1.xml",
+      "source_sha256": "0ce81689ad2353dd1a57003b576d7bec8244acc115340351415a34030fcea29f",
+      "record_index_1based": 2
+    },
+    "DataIns_by_consistency": {
+      "1": [
+        "2017-10-06 00:00:00"
+      ],
+      "2": [
+        "2024-04-09 00:00:00"
+      ]
+    }
+  }
+]

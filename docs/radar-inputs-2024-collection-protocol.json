@@ -1,0 +1,12 @@
+{
+  "id": "radar-2024-pre-damage-inputs-v1",
+  "purpose": "Collect and audit missing public inputs for potential historical Radar augmentation; no fitting, holdout allocation, operational integration or promotion.",
+  "candidate_origins": "2024-04-01T00:00:00-03:00 <= O < 2024-05-02T00:00:00-03:00; require targets beforeMay2. Operational change onMay2 motivates boundary; the event has already been inspected and is not blind.",
+  "ana_source_window": "2024-03-29 through2024-05-01 inclusive, split by calendar month. Reuse verified Muçum March/April/May XMLs; query remaining26 station codes from frozen chuva-pesos.json. Preserve all returned fields/QC; retain only requested station/window in normalized audit. Missing or suspect values stay separate.",
+  "ana_admission": "Produce explicit approved-only and current-parser-compatible counts separately. Do not silently change the operational convention that may accept numeric values without QC. No normalization for model inference is authorized by this collection protocol.",
+  "reservoir_sources": "Download official ONS March/April2024 Parquets; reuse verified May2024 source. Preserve original timestamps including23:59 and all raw values for the three CERAN identifiers. No gap fill, balancing corrections, storage conversion or zero correction.",
+  "meteorology": "Separate research-agent collection: valid datesMarch29–May2 inclusive, original5coordinates and3model IDs, precipitation_previous_day1, UTC-03 assumed. Audit coverage/returned grid without substitution by reanalysis or a different forecast product.",
+  "limits": "Historical publication versions, gauge datum continuity, time-zone contract and changing reservoir regime remain uncertified. Successful collection and source-approved QC do not certify training comparability or98percent accuracy. Local research only.",
+  "trained": false,
+  "promoted": false
+}

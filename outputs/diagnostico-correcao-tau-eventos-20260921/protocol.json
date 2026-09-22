@@ -1,0 +1,12 @@
+{
+  "id": "residual-tau-fixed-event-diagnostic-v1",
+  "scope": "Post-evaluation diagnostic only, no fit or candidate promotion.",
+  "inputs": "The completed fixed tau2/6/12 experiments; frozen origin-trend and observed-target-cluster labels from diagnostico-eventos-proxy-carreiro-20260921.",
+  "membership": "Join exact origin,target_time,nominal_lead_h; verify targets, anchors and baseline predictions unchanged. Do not recalculate or select event boundaries from forecast errors. Preserve unknown trend and missing/unassigned high targets.",
+  "metrics": "Every horizon1..12 and both model families: count scheduled rows, observed targets, forecast failures, pairs, hits within0.50m, MAE,bias,P98,max. Report each fixed observed high-target cluster and each origin trend for all/high targets. Compare scenarios on the same paired samples and assert unchanged coverage.",
+  "event_weighting": "For each horizon/family/scenario, additionally report arithmetic mean of per-cluster MAE and hit fraction, giving each represented cluster equal weight. This describes sensitivity to pooled sample dominance, not an estimate of prospective accuracy or independence.",
+  "constraints": "Previously inspected development data; observed target>=7m is an outcome-based evaluation subset, never a runtime selector. Origin trend uses only pre-origin endpoints but is diagnostic here. No best tau chosen by horizon, event or trend; no dynamic switching implemented.",
+  "live_issuance": false,
+  "promoted": false,
+  "goal_achieved": false
+}

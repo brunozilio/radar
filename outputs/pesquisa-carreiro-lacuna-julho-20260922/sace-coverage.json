@@ -1,0 +1,48 @@
+{
+  "rows": 2878,
+  "first_literal": "2026-08-22 21:15:00",
+  "last_literal": "2026-09-22 00:30:00",
+  "header": [
+    "data_hora_medicao",
+    "indice"
+  ],
+  "requested_window_rows": 0,
+  "point_metadata": {
+    "type": "Feature",
+    "id": "pm-54",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -51.8325,
+        -28.84888,
+        260.0
+      ]
+    },
+    "properties": {
+      "id": 54,
+      "nome": "Passo Carreiro",
+      "sigla": "86500000",
+      "rio": "Rio Carreiro / Guaporé",
+      "localizacao": "Rio Carreiro / Município Guaporé",
+      "altitude": 260.0,
+      "latitude": -28.84888,
+      "longitude": -51.8325,
+      "fusoHorario": "GMT-3",
+      "observacao": "",
+      "acessibilidade": "",
+      "areaDrenagem": 1820.0,
+      "defasagemTemporal": null,
+      "maxInterpolacao": 10,
+      "tipoAlerta": "BAIXO",
+      "corAlerta": "#ffff33",
+      "nomeFiltroAlerta": "Cota de Atenção",
+      "ordemLegenda": 5
+    }
+  },
+  "point_source": "outputs/santa-tereza-model-v1/sources/sace-points.json",
+  "notes": [
+    "Current rolling export outside requested dates is not proof there are no historical source records.",
+    "CSV lacks per-value QC, offset and explicit unit header. Point metadata GMT-3 does not prove historical export conversion.",
+    "Altitude260 is not proven zero-of-gauge elevation or valid datum."
+  ]
+}

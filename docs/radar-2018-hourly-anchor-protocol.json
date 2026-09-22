@@ -1,0 +1,12 @@
+{
+  "id": "radar-2018-hourly-anchor-availability-v1",
+  "scope": "Local structural data-availability experiment only. No model fitting, inference, operational contract change or promotion.",
+  "prior_exposure": "The two 2018 Muçum windows, QC, bulletin points and discrete maxima have been inspected. No model predictions or errors on these windows have been calculated in this experiment.",
+  "windows": [["2018-08-30", "2018-09-05"], ["2018-09-30", "2018-10-06"]],
+  "candidate": "For each literal hourly origin O, require the exact approved finite nonnegative NivelFinal at O minus 1 hour. Do not skip an invalid observation, carry forward, interpolate, round or use the reading at O. Compute derivatives using exact endpoints O-1h and O-1h-k for k=0.5,1,2,4,8 hours, divided by the actual endpoint separation. Missing endpoints remain NaN.",
+  "control": "Reconstruct current Muçum anchor availability only: latest raw timestamp at or before O-15min, maximum age15min after that query. This is a coverage comparison, not a comparison of model accuracy or a proposal to silently change the current contract.",
+  "targets": "Exact approved finite nonnegative NivelFinal at O+h for nominal h1..12, within its own contiguous seven-day window. Retain every in-window origin/target pair, missing truth and missing features; report terminal-boundary exclusions separately. Never shift across the calendar gap.",
+  "output": "Preserve source hashes, literal times, feature catalog, every lookup and target, coverage by window/horizon and observed>=7m, plus verification results. These six local-level fields are not the full Radar input matrix.",
+  "time_and_quality": "Timestamps remain literal naive source timestamps. No timezone, DST, datum continuity, actual issue time, first publication time or historical operational availability is certified. The one-hour anchor is a declared measurement-lag assumption, not demonstrated publication latency.",
+  "limits": "Coverage does not measure precision. Zero model fits or forecasts. A subsequent model experiment must predeclare common feature and latency contracts for control and candidate, chronological training/evaluation partitions and identical outcome accounting. The prospective98percent goal is unchanged and unproved."
+}

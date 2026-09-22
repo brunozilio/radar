@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTable xmlns="http://MRCS/">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DadosHidrometereologicos" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DadosHidrometereologicos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CodEstacao" type="xs:string" minOccurs="0" />
+                <xs:element name="DataHora" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_VazaoFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="VazaoFinal" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <DocumentElement xmlns="">
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos1" msdata:rowOrder="0">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 23:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1117.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1117.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4058.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos2" msdata:rowOrder="1">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 23:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1124.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1124.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4095.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos3" msdata:rowOrder="2">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 23:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1126.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1126.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4106.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos4" msdata:rowOrder="3">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1131.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1131.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4133.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos5" msdata:rowOrder="4">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 22:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1133.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1133.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4143.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos6" msdata:rowOrder="5">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 22:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1137.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1137.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4165.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos7" msdata:rowOrder="6">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 22:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1140.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1140.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4181.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos8" msdata:rowOrder="7">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1143.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1143.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4197.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos9" msdata:rowOrder="8">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 21:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1146.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1146.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4213.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos10" msdata:rowOrder="9">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 21:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1150.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1150.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4235.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos11" msdata:rowOrder="10">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 21:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1154.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1154.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4257.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos12" msdata:rowOrder="11">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1156.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1156.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4268.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos13" msdata:rowOrder="12">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 20:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1159.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1159.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4284.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos14" msdata:rowOrder="13">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 20:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1161.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1161.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4295.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos15" msdata:rowOrder="14">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 20:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1165.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1165.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4317.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos16" msdata:rowOrder="15">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1165.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1165.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4317.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos17" msdata:rowOrder="16">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 19:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1170.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1170.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4344.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos18" msdata:rowOrder="17">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 19:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>468.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>1.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1173.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1173.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4360.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos19" msdata:rowOrder="18">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 19:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>467.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1177.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1177.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4382.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos20" msdata:rowOrder="19">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>466.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1177.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1177.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4382.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos21" msdata:rowOrder="20">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 18:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>466.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1181.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1181.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4404.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos22" msdata:rowOrder="21">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 18:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>466.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1181.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1181.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4404.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos23" msdata:rowOrder="22">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 18:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1184.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1184.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4421.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos24" msdata:rowOrder="23">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1187.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1187.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4437.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos25" msdata:rowOrder="24">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 17:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1193.00</NivelSensor>
+        <CQ_NivelDisplay>Dado aprovado</CQ_NivelDisplay>
+        <NivelDisplay>1204.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1193.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4470.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos26" msdata:rowOrder="25">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 17:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1193.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1193.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4470.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos27" msdata:rowOrder="26">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 17:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1200.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1200.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4509.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos28" msdata:rowOrder="27">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1202.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1202.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4520.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos29" msdata:rowOrder="28">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 16:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1202.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1202.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4520.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos30" msdata:rowOrder="29">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 16:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1211.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1211.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4570.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos31" msdata:rowOrder="30">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 16:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1211.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1211.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4570.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos32" msdata:rowOrder="31">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1211.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1211.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4570.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos33" msdata:rowOrder="32">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 15:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1220.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1220.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4620.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos34" msdata:rowOrder="33">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 15:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1219.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1219.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4614.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos35" msdata:rowOrder="34">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 15:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>465.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1224.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1224.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4642.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos36" msdata:rowOrder="35">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>464.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1227.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1227.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4659.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos37" msdata:rowOrder="36">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 14:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>463.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1229.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1229.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4670.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos38" msdata:rowOrder="37">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 14:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>463.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1235.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1235.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4703.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos39" msdata:rowOrder="38">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 14:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>463.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1236.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1236.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4709.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos40" msdata:rowOrder="39">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>463.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1241.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1241.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4737.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos41" msdata:rowOrder="40">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 13:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>463.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1242.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1242.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4743.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos42" msdata:rowOrder="41">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 13:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>463.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>1.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1248.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1248.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4776.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos43" msdata:rowOrder="42">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 13:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>462.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1247.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1247.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4771.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos44" msdata:rowOrder="43">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>462.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1254.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1254.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4810.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos45" msdata:rowOrder="44">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 12:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>462.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1256.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1256.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4821.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos46" msdata:rowOrder="45">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 12:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>461.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1258.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1258.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4833.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos47" msdata:rowOrder="46">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 12:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>461.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1261.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1261.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4850.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos48" msdata:rowOrder="47">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>461.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1264.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1264.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4867.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos49" msdata:rowOrder="48">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 11:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>461.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1268.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1268.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4889.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos50" msdata:rowOrder="49">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 11:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>460.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1271.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1271.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4906.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos51" msdata:rowOrder="50">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 11:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1273.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1273.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4918.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos52" msdata:rowOrder="51">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1278.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1278.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4946.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos53" msdata:rowOrder="52">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 10:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1277.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1277.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4940.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos54" msdata:rowOrder="53">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 10:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1283.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1283.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4974.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos55" msdata:rowOrder="54">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 10:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1288.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1288.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5003.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos56" msdata:rowOrder="55">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1287.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1287.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4997.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos57" msdata:rowOrder="56">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 09:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1292.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1292.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5026.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos58" msdata:rowOrder="57">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 09:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1292.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1292.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5026.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos59" msdata:rowOrder="58">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 09:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1300.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1300.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5072.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos60" msdata:rowOrder="59">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1304.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1304.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5094.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos61" msdata:rowOrder="60">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 08:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1309.00</NivelSensor>
+        <CQ_NivelDisplay>Dado suspeito</CQ_NivelDisplay>
+        <NivelDisplay>1330.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1309.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5123.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos62" msdata:rowOrder="61">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 08:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1312.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1312.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5140.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos63" msdata:rowOrder="62">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 08:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1315.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1315.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5158.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos64" msdata:rowOrder="63">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1319.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1319.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5181.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos65" msdata:rowOrder="64">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 07:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1314.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1314.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5152.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos66" msdata:rowOrder="65">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 07:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1323.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1323.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5204.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos67" msdata:rowOrder="66">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 07:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1321.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1321.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5192.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos68" msdata:rowOrder="67">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1329.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1329.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5239.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos69" msdata:rowOrder="68">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 06:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>459.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1328.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1328.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5233.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos70" msdata:rowOrder="69">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 06:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>458.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1330.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1330.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5244.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos71" msdata:rowOrder="70">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 06:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>458.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1331.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1331.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5250.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos72" msdata:rowOrder="71">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>458.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1337.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1337.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5285.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos73" msdata:rowOrder="72">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 05:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>458.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>1.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1335.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1335.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5273.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos74" msdata:rowOrder="73">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 05:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>457.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1332.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1332.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5256.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos75" msdata:rowOrder="74">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 05:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>457.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1337.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1337.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5285.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos76" msdata:rowOrder="75">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>457.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1332.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1332.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5256.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos77" msdata:rowOrder="76">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 04:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>457.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1336.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1336.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5279.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos78" msdata:rowOrder="77">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 04:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1333.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1333.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5262.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos79" msdata:rowOrder="78">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 04:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1339.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1339.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5297.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos80" msdata:rowOrder="79">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1330.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1330.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5244.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos81" msdata:rowOrder="80">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 03:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1331.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1331.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5250.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos82" msdata:rowOrder="81">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 03:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1329.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1329.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5239.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos83" msdata:rowOrder="82">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 03:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1329.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1329.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5239.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos84" msdata:rowOrder="83">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1327.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1327.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5227.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos85" msdata:rowOrder="84">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 02:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1328.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1328.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5233.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos86" msdata:rowOrder="85">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 02:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1322.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1322.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5198.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos87" msdata:rowOrder="86">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 02:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1326.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1326.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5221.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos88" msdata:rowOrder="87">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1315.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1315.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5158.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos89" msdata:rowOrder="88">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 01:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1314.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1314.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5152.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos90" msdata:rowOrder="89">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 01:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1310.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1310.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5129.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos91" msdata:rowOrder="90">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 01:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1314.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1314.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5152.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos92" msdata:rowOrder="91">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1310.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1310.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5129.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos93" msdata:rowOrder="92">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 00:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1305.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1305.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5100.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos94" msdata:rowOrder="93">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 00:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1299.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1299.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5066.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos95" msdata:rowOrder="94">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 00:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1299.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1299.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5066.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos96" msdata:rowOrder="95">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2022-05-04 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>456.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1293.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1293.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5031.90</VazaoFinal>
+      </DadosHidrometereologicos>
+    </DocumentElement>
+  </diffgr:diffgram>
+</DataTable>

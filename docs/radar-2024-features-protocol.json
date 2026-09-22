@@ -1,0 +1,12 @@
+{
+  "id": "radar-2024-features-v1",
+  "scope": "Build180-column research matrix for April1–May1/2024; no training or operational change in this preparation step.",
+  "columns": "Use existing telemetry_features definition120 columns plus60 precipitation_previous_day1 sums (3models,5locations,windows3/6/9/12). No reservoir-level features in this matrix; isolate eventual data augmentation against the frozen180-column native-missing control.",
+  "data_window": "Quarter-hour gridMarch29 00h throughMay1 23h45 UTC-03 assumed, then retain744 hourly originsApril1 throughMay1 23h. Targets only beforeMay2. Weather valid-time margin throughMay2 does not permit post-boundary observed labels.",
+  "levels": "Preserve raw values/QC in source. For research matrix reproduce existing parser: numeric nonnegative and QC approved or absent, cm/100. Muçum/LinhaJoseJulio/SantaTereza/Carreiro delays15/30/15/30min, latest source row at delayed query with max_age15min, no older-finite fallback. Raw target exactly on grid. Carreiro remains entirelyNaN.",
+  "rain": "Same observed_rain_windows, frozen spatial weights and source-specific rain delays reconstructed from the15h2026 input snapshot. Preserve integer15min delay-step truncation used by reference. Missing stations have no measured duration or increment. Regional sum uses existing zero contribution for unavailable station amount, no weight renormalization, and only returns precipitation when weighted coverage>=0.5. Preserve coverage predictors and all missing values.",
+  "reservoir_flows": "Original ONS source timestamps kept literal. Same60min delay and max_age90min after lookup. Q/I raw values preserved; Q06 transform and differences as existing telemetry_features. No source balancing or gap fill.",
+  "limits": "Latencies are reference stress assumptions, not verified2024 publication times. Revisions, metadata, vertical references and regime change remain uncertified. Research matrix is not proof of comparability, independent validation, prospective accuracy or98percent.",
+  "trained": false,
+  "promoted": false
+}

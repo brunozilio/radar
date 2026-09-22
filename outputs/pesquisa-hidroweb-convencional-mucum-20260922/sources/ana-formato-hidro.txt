@@ -1,0 +1,3310 @@
+--- PDF PAGE 1 ---
+ 
+ 
+ 
+ORIENTAÇÕES 
+PARA O ENVIO 
+DOS DADOS 
+HIDROLÓGICOS 
+COLETADOS NO 
+ÂMBITO DA 
+RESOLUÇÃO 
+ANEEL NO 396/1998 
+ 
+ 
+ 
+ 
+ 
+ 
+--- PDF PAGE 2 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+República Federativa do Brasil 
+Dilma Vana Rousseff 
+Presidenta 
+ 
+Ministério do Meio Ambiente (MMA) 
+Izabella Mônica Vieira Teixeira 
+Ministra  
+ 
+Agência Nacional de Águas (ANA) 
+Diretoria Colegiada 
+Vicente Andreu Guillo (Diretor-Presidente) 
+Dalvino Troccoli Franca 
+Paulo Lopes Varella Neto 
+João Gilberto Lotufo Conejo 
+Paulo Rodrigues Vieira 
+ 
+Superintendência de Gestão da Rede Hidrometeorológica – SGH 
+Valdemar Santos Guimarães 
+Superintendente 
+ 
+ 
+ 
+ 
+--- PDF PAGE 3 ---
+ 
+ 
+Agência Nacional de Águas 
+Ministério do Meio do Meio Ambiente 
+ 
+ 
+ 
+ 
+ORIENTAÇÕES 
+PARA O ENVIO 
+DOS DADOS 
+HIDROLÓGICOS 
+COLETADOS NO 
+ÂMBITO DA 
+RESOLUÇÃO 
+ANEEL NO 396/1998 
+ 
+ 
+ 
+VERSÃO MAIO DE 2012 
+ 
+ 
+ 
+SUPERINTENDÊNCIA DE GESTÃO DA REDE HIDROMETEOROLÓGICA (SGH) 
+BRASÍLIA-DF, 2012 
+--- PDF PAGE 4 ---
+ 
+ 
+ 
+© 2011 Agência Nacional de Águas (ANA). 
+Setor Policial Sul, Área 5, Quadra 3, Blocos “B”, “L” , “M” e “T”. 
+CEP: 70610-200, Brasília ― DF 
+PABX: (61) 2109-5400 / (61) 2109-5252 
+Endereço eletrônico: www.ana.gov.br 
+ 
+ 
+Equipe editorial 
+ 
+ 
+Superintendência de Gestão da Rede Hidrometeorológica – SGH 
+Valdemar Santos Guimarães – Superintendente 
+ 
+ 
+Gerência de Dados e Informações Hidrometeorológicos – GEINF 
+Walszon Terllizzie Araújo Lopes – Gerente 
+ 
+ 
+Revisão Final 
+Leny Simone Tavares Mendonça 
+ 
+ 
+Todos os direitos reservados. É permitida a reprodução de dados e informações contidos 
+nesta publicação, desde que citada a fonte. 
+ 
+ 
+ 
+ 
+A465o         Agência Nacional de Águas (Brasil). 
+ 
+            Orientações para o Envio de Dados Hidrológico Coletados no âmbito da 
+Resolução ANEEL nº 396/1998 / Agência Nacional de Águas (ANA); Superintendência 
+de Gestão da Rede Hidrometeorológica. -- Brasília: ANA, SGH, 2012. 
+ 
+75p.: il. 
+ 
+ 1. dados hidrológicos 2. fluviometria 3. pluviometria 
+ 
+ 
+                    I. Agência Nacional de Águas (ANA) II. Título 
+ 
+                                                                    CDU 556.18(81) 
+ 
+--- PDF PAGE 5 ---
+ 
+  
+ 
+ i 
+Sumário 
+ 
+ 
+1 Apresentação 2 
+2 Introdução 2 
+3 Procedimentos para Envio dos Dados Hidrológicos obtidos no âmbito da 
+Resolução ANEEL 396/1998. 3 
+3.1 Capa ................................................................................................................................ 3 
+3.2 Contracapa ...................................................................................................................... 3 
+3.3 Conteúdo: ........................................................................................................................ 3 
+3.4 Como entrar em contato com a ANA ............................................................................. 3 
+4 Dados Hidrológicos obtidos no âmbito da Resolução ANEEL nº 396/19985 
+5 Consistência de Dados Fluviométricos e Pluviométricos 7 
+6 Visão Geral do Sistema Hidro 1.2 7 
+6.1 Processo Suportado pelo Hidro 1.2 ................................................................................ 7 
+7 Dicionário de Dados 11 
+8 Informações para Desenvolvedores 64 
+9 Conclusões e Recomendações 69 
+10 Glossário 70 
+ 
+ 
+ 
+ 
+Índice de Figuras 
+ 
+Figura 1 – Ambiente cliente/servidor suportado pelo Hidro ........................................... 8 
+ 
+ 
+ 
+Índice de Tabelas 
+ 
+Tabela 1 – Dicionário de Dados Hidro 1.2 ...................................................................... 11 
+Tabela 2 – Parâmetros climatológicos ............................................................................. 63 
+Tabela 3 – Objetos do banco de dados ............................................................................. 64 
+Tabela 4 – Campos especiais dos registros do Hidro ..................................................... 67 
+ 
+ 
+ 
+--- PDF PAGE 6 ---
+ 
+ 
+2 
+ 
+1 Apresentação 
+ 
+A Resolução Conjunta ANA ANEEL nº 03, de 10 de agosto de 2010, publicada em 20 de 
+outubro de 2010, estabelece as condições e o s procedimentos a serem observados pelos 
+concessionários e autorizados de geração de energia hidrelétrica para a instalação, operação e 
+manutenção de estações hidrométricas visando ao monitoramento pluviométrico, 
+limnimétrico, fluviométrico, sedimentométri co e de qualidade da água associado a 
+aproveitamentos hidrelétricos. 
+ 
+A ANA, com tal Resolução, assume a função de orientar os agentes do setor elétrico sobre os 
+procedimentos de coleta, tratamento e armazenamento dos dados hidrométricos objetos do 
+normativo, bem como sobre a forma de envio dessas informações em formato compatível com 
+o Sistema Nacional de Informações sobre Recursos Hídricos (SNIRH), o que permitirá a 
+difusão dos dados em “tempo real” oriundos do monitoramento hidrológico realizado pelos 
+agentes do setor elétrico. 
+ 
+ 
+2 Introdução  
+ 
+ 
+Todos os concessionários ou autorizados de geração de energia hidrelétrica deverão enviar à 
+ANA o relatório de consistência de todos os dados e informações hidrológicos gerados 
+coletados no período de vigência da Re solução ANEEL nº 396/98, de 04 de dezembro de 
+1998 até 19 de outubro de 2010, data em que entrou em vigência a Resolução ANA ANEEL 
+nº 3/2010 . O artigo 7º da Resolução Conjunta estabelece a obrigatoriedade do envio dos 
+mesmos: 
+ 
+Art. 7º Os concessionários e autorizados deverão realizar análise de consistência 
+de todos os dados e informações hidrológicos gerados na vigência da Resolução 
+ANEEL nº 396, de 4 de dezembro de 1998, convertê -los para o formato indicado 
+pela ANA no seu endereço virtual e enviá -los par a a ANA no prazo de até 12 
+meses contados da data de publicação desta Resolução.  
+ 
+Para subsidiar a realização da consistência dos dados fluviométricos e pluviom étricos a ANA 
+disponibilizou documentos orientativos no sitio 
+http://www2.ana.gov.br/Paginas/servicos/informacoeshidrologicas/monitoramentohidro.aspx 
+e que devem ser utilizados para a consistência de todos os dados hidrológicos coletados pelas 
+empresas do Setor Elétrico durante a vigência da Resolução ANEEL nº 396/98. 
+ 
+ 
+ 
+ 
+ 
+--- PDF PAGE 7 ---
+ 
+ 
+3 
+ 
+3 Procedimentos para Envio dos Dados Hidrológicos 
+obtidos no âmbito da Resolução ANEEL 396/1998. 
+ 
+ 
+O envio dos dados hidrológicos coletados no período de vigência da Resolução AN EEL nº 
+396, de 4/12/1998 deve contemplar , no mínimo,  todos os dados de 04/12/1998 até a data em 
+que seja iniciado o envio dos dados hidrológicos à ANA pelo sistema WebService. 
+ 
+Esse documento e os dados hidrológicos devem ser enviados conforme as especific ações a 
+seguir transcritas.  
+ 
+ 
+3.1 Capa 
+ Identificar o nome do agente autorizado ou concessionário, na parte superior da 
+página;  
+ O nome do aproveitamento hidrelétrico sob sua responsabilidade (PCH ou UHE, 
+mais o respectivo nome) em linha aparte;  
+ O título “Dados Hidrológicos obtidos no âmbito da Resolução ANEEL nº 
+396/1998”, centralizado na página;  
+ Nome da empresa ou do técnico competente que elaborou o relatório,  
+ Local e data do estudo, em linhas consecutivas, no extremo inferior da capa. 
+ 
+ 
+3.2 Contracapa  
+Sumário e a lista de anexos (mapas, croquis, tabelas). 
+ 
+ 
+3.3 Conteúdo: 
+Apresentação do Relatório, formato Word,  com os itens detalhados nestas Orientações , bem 
+como seguindo as Orientações para Consistências de Dados Fluviométricos e Pluviométricos , 
+disponíveis no sítio da ANA. 
+ 
+Banco de dados hidrológicos com registros brutos e consistidos no formato MDB e 
+compatível com o sistema HIDRO 
+ 
+3.4 Como entrar em contato com a ANA 
+ 
+Os contatos e informações referentes à Resolução Conjunta ANA ANEEL nº 3/2010 podem 
+ser obtidos nos Endereços que se seguem: 
+ 
+ 
+--- PDF PAGE 8 ---
+ 
+ 
+4 
+Endereço: 
+ 
+Agência Nacional de Águas (ANA) 
+Superintendência de Gestão da Rede Hidrometeorológica (SGH) 
+Setor Policial, Área 5, Quadra 3, Bloco L 
+Brasília – DF, Brasil. 
+CEP 70610-200 
+ 
+ 
+Na Internet: 
+ 
+Para o correio eletrônico resolucaoconjunta3@ana.gov.br (casos específicos das estações 
+hidrológicas objeto da Resolução Conjunta ANA ANEEL nº 3/2010) e para sgh@ana.gov.br 
+quando se tratar dos demais assuntos sobre a Rede Hidrometeorológica da ANA. 
+ 
+ 
+3.5 Forma de Envio do Relatório 
+ 
+O Relatório de Consistência de Dados Fluviométricos e Pluviométricos e os dados hidrológicos 
+obtidos no âmbito da Resolução ANEEL nº 396/1998 devem ser enviado, exclusivamente em 
+formato digital, mídia eletrônica (CD) para:  
+ 
+ 
+Agência Nacional de Águas (ANA)  
+Valdemar Santos Guimarães  
+Superintendente  
+Superintendência de Gestão da Rede Hidrometeorológica (SGH)  
+Setor Policial, Área 5, Quadra 3, Bloco L  
+Brasília – DF, Brasil.  
+CEP 70610-200  
+ 
+O Relatório deve vir no formato Word e os dados hidrológicos , brutos e consistidos,  em arquivo 
+formato MDB e compatível com o sistema HIDRO, em CD.  
+ 
+Os dados hidrológicos a serem enviados deverão obedecer ao padrão utilizado pela  Agência 
+Nacional de Águas para armazenamento de dados oriundos do monitoramento hidrológico. 
+Tal padrão é o utilizado pelo Sistema para Gerenciamento de Dados Hidrometeorológicos 
+(Hidro 1.2), o qual está disponível para download no endereço: 
+http://hidroweb.ana.gov.br/HidroWeb.asp?TocItem=6010#hidro108 . 
+ 
+ 
+--- PDF PAGE 9 ---
+ 
+ 
+5 
+ 
+4 Dados Hidrológicos obtidos no âmbito 
+da Resolução ANEEL nº 396/1998 
+ 
+ 
+A Resolução ANEEL nº 39 6/98 estabeleceu que em t odos os aproveitamentos hidrelétricos, os 
+Concessionários e os Autorizados eram obrigados a instalar, manter e operar estações 
+fluviométricas e pluviométricas na região do empreendimento. 
+ 
+ Art. 1º Estabelecer que, em todos os aproveitamentos hidrelétricos, os  
+Concessionários e os Autorizados ficam obrigadas a instalar, manter e 
+operar estações fluviométricas e pluviométricas na região do 
+empreendimento, nas condições previstas nesta Resolução. 
+ 
+Os parágrafos 1º e 2º do Art. 1º da Resolução ANEEL nº 397/98 estabelecia: 
+ 
+ § 1º Entende -se por estação fluviométrica o monitoramento limnimétrico 
+contínuo em determinado local do curso d’água, apoiado por medições 
+regulares de vazão, que permitam a manutenção atualizada de curva de 
+descarga para o local.  
+ 
+§ 2º Entende -se por estação pluviométrica o monitoramento contínuo da 
+precipitação num determinado local. 
+Diante da descrição do tipo de monitoramento exigido , os dados que, no mínimo, deverão ser 
+enviados à ANA e que foram obtidos no âmbito da vigência da Resolução A NEEL nº 396/98 
+são: 
+ 
+a) Fluviométricos: 
+ Cota dos rios; 
+ Descarga liquida obtida em campanhas de medição; 
+ Curva chave da estação fluviométrica; 
+ Série de vazão gerada com base na curva chave e cota do rio. 
+ 
+b) Pluviométricos 
+ 
+ 
+--- PDF PAGE 10 ---
+ 
+ 
+6 
+Observação: Caso a empresa tenha reali zado o monitoramento sedimentométrico e de 
+qualidade da água, tais dados poderão ser enviados à ANA nesse mesmo relatório e 
+arquivo digital no formato HIDRO, tendo em vista o grande importância de tais dados 
+para o Sistema de Nacional de Informações de Recursos Hídricos - SNIRH. 
+ 
+O quantitativo de dados está diretamente relacionado com o de estações hidrométricas que era 
+estabelecido para cada Usina conforme a Tabela contida no inciso I, § 3º do Art. 1º da 
+Resolução ANEEL nº 396/98 e a seguir transcrita. 
+ 
+ 
+Área de Drenagem 
+incremental  
+De 0 a 500 
+km²  
+De 501 a 
+5.000 km²  
+De 5.001 a 
+50.000 km²  
+De 50.001 a 
+500.000 km²  
+Acima de 
+500.000 km² 
+Número de estações 
+fluviométricas  
+1  3  4  6  7  
+Número de estações 
+pluviométricas  
+-  3  4  6  7  
+ 
+ 
+Para este item d eve ser apresentado Tabela descrevendo da rede de monitoramento existente 
+(pluviométrica, limnimétrica  e fluviométrica), tendo para cada ponto de monitoramento as 
+seguintes informações:  
+ 
+ nome e código da estação hidrométrica,  
+ tipo de monitoramento realizado (nível, vazão, chuva , sedimento/qualidade 
+da água - se houver); 
+ descrição do tipo de levantamento horário, diário, bem como das medições 
+realizadas em campo; 
+ posição geográfica da estação (latitude e longitude); 
+ nome do município, estado e do rio, alti tude e área de drenagem – caso das 
+estações fluviométricas, observações específicas; 
+ data de inicio de operação da estação hidrométrica. 
+ 
+ 
+É importante que neste Relatório sejam apresentadas informações de data de outorga da PCH 
+ou UHE, bem como a data de entrada em operação comercial da mesma. 
+ 
+Destaca-se que as estações hidrométricas são cadastradas na ANA como de titularidade da 
+empresa detentora da autorização ou concessão da ANEEL para exploração do potencial 
+hidráulico.  
+ 
+Durante a fase de recadastram ento das estações diversas empresas encaminharam, 
+erroneamente, o registro de suas estações como de propriedade de Holdings ou de um única 
+empresa integrante de consórcio. Esse fato será ao longo da fase de acesso ao sistema 
+WebService corrigido.  
+ 
+ 
+--- PDF PAGE 11 ---
+ 
+ 
+7 
+5 Consistência de Dados Fluviométricos 
+e Pluviométricos 
+ 
+Os dados hidrológicos (nível, vazão, chuva) obtidos no âmbito da Resolução ANEEL nº 
+396/98 deverão ser enviados  à ANA tanto brutos quanto no status de consistidos, no formato 
+HIDRO. 
+ 
+Para a consistência dos  dados fluviométricos e pluviométricos devem ser seguidos as 
+orientações contidas nos documentos denominados: 
+ 
+a) Diretrizes e Análises Recomendadas para Consistência de Dados Pluviométricos  
+(http://arquivos.ana.gov.br/infohidrologicas/cadastro/DiretrizesEAnalisesRecomenda
+dasParaConsistenciaDeDadosPluviometricos-VersaoJan12.pdf ) 
+ 
+b)  Diretrizes e Análises Recomendadas para Consistência de Dados Fluviométricos  
+(http://arquivos.ana.gov.br/infohidrologicas/cadastro/Diretrizes_Analises_Recomend
+adas_Consistencia_de_Dados_Fluviometricos.pdf ) 
+ 
+Todos os procedimentos, mapas, tabelas, metodologias que forem utilizados, conforme 
+estabelece as Orientações devem ser apresentadas neste Relatório. 
+ 
+6 Visão Geral do Sistema Hidro 1.2 
+ 
+A seguir serão apresentadas a visão geral do sistema de gerenciamento de dados hidrológico 
+da ANA, Hidro, em sua versão 1.2.  
+Ressalta-se que durante a fase de recadastramento das es tações hidrométricas a ANA 
+disponibilizou os arquivos de instalação do sistema Hidro, bem como os manuais de 
+utilização do referido sistema. 
+http://www2.ana.gov.br/Paginas/servicos/informacoeshidrologicas/instrucoesrecadastro.aspx 
+ 
+6.1 Processo Suportado pelo Hidro 1.2 
+ 
+O principal objetivo do sistema Hidro é servir como principal ferramenta de software no 
+gerenciamento de uma base de dados hidrometeorológi ca. Isso é feito através da manutenção 
+de um banco de dados central e do suporte a entrada de dados de diversos tipos, normalmente 
+coletados por entidades que operam uma rede de estações hidrometeorológicas. 
+O Hidro é uma aplicação de banco de dados do tip o cliente/servidor capaz de acessar tanto 
+um banco de dados local quanto remoto (veja a Figura 1). A conexão remota pode ser feita 
+--- PDF PAGE 12 ---
+ 
+ 
+8 
+através da rede interna da organização (intranet) ou até mesmo da Internet (no caso  de 
+usuários externos autorizados). 
+Figura 1 – Ambiente cliente/servidor suportado pelo Hidro 
+UsuárioIntranet
+Firewall
+Servidor de
+Banco de Dados
+Hidro
+Usuário
+Banco de
+Dados Central
+(SQL Server ou
+Oracle)
+Internet
+Hidro
+Usuário
+Ambiente Externo
+Banco de
+Dados
+(Access)
+Hidro
+Hidro
+Usuário
+ 
+--- PDF PAGE 13 ---
+ 
+ 
+9 
+ 
+O Hidro suporta dois tipos de dados hidrometeorológicos: 
+ 
+ Dados de Inventário (como estações, rios, Estados, Municípios, entidades) 
+ Dados de Séries Históricas (como medições diárias  e horárias de cotas e chuvas , 
+curva chave, sedimentos, parâmetros de qualidade da água, dentre outros).  
+ 
+Cada um desses dados estão agrupados em unidades básicas de processamento de nominadas 
+registros. Desta forma, um registro pode ser de inventário ou de série. 
+ 
+Os registros do Hidro estão classificados da seguinte forma (o Dicionário de Dados  contém 
+uma descrição detalhada de todos os dados desses registros): 
+ 
+a) Registros de Inventário 
+ 
+ Bacia – dados de identificação de bacia hidrográfica. 
+ Sub-bacia – dados de identificação de sub-bacia hidrográfica. 
+ Rio – dados de identificação de curso d’água. 
+ Estado – dados de identificação de unidade da fe deração ou de país da América do 
+Sul. 
+ Município – dados de identificação de município. 
+ Entidade – dados de identificação de entidade responsável ou operadora de estações 
+hidrometeorológicas. 
+ Estação – dados de identificação de estação hidrometeorológica. 
+ Plano de Trabalho  – dados de plano de operação, manutenção e instalação de 
+estações. 
+ 
+b) Registros de Série 
+ 
+ Cotas – níveis d’água (cotas) mensais de um ponto de rio. 
+ Cotas Horárias - totais de registros de dados referente a cotas horário/dia de uma 
+região.  
+ Vazões – vazões líquidas mensais de um ponto de rio. 
+ Vazões Horárias - totais de registros de dados referente a vazões horário/dia de uma 
+região.  
+ Chuvas – totais pluviométricos mensais de uma região. 
+ Chuvas 2 Leituras - totais pluviométricos mensais com 2 leituras diárias de uma 
+região.  
+ Chuvas Horárias – totais pluviométricos horário/dia de uma região.  
+ Clima – parâmetros climatológicos mensais de uma região. 
+--- PDF PAGE 14 ---
+ 
+ 
+10 
+ Qualidade da Água – medição de parâmetros de qualidade da água de um ponto de 
+rio. 
+ Resumo de Descarga – resumo de medição de descarga líquida de uma seção 
+transversal de um rio. 
+ Sedimentos – medição de sedimentos em uma seção transversal de um rio. 
+ Curva de Descarga – representação de uma curva Cota X Vazão de uma seção 
+transversal de um rio. Essa curva pode ser representada algebricamente, através de 
+uma equação, ou discretamente, através de uma tabela Cota X Vazão. 
+ Perfil Transversal – medição de perfil transversal de um rio. 
+ Medição de Descarga Liquida ADCP – medição de descarga liquida de um rio por 
+ADCP. 
+ Medição de Descarga Liquida Molinete – medição de descarga liquida de um rio por 
+molinete.  
+ Granulometria – dados de granulométrica coletado de um rio.  
+ 
+ 
+Nota: um registro de série sempre está associado a uma estação. 
+ 
+ 
+Para a troca de dados entre dois ou mais bancos de dados, o Hidro permite a exportação de 
+qualquer tipo de registro para arquivos especiais, denominados arquivos de intercâmbio.  
+ 
+Posteriormente, esses arquivos podem ser importados em outro banco de dados, possibilitando 
+assim a troc a de dados entre bancos. Isso é particularmente importante no caso de entidades 
+que operam uma rede de estações e necessitam enviar dados para o banco de dados central. 
+--- PDF PAGE 15 ---
+ 
+ 
+11 
+7 Dicionário de Dados 
+A seguir é fornecida uma descrição detalhada de todos os dados dos registros do Hidro 1.2. Entre as informações fornecidas, incluem o tipo dos 
+dados, unidades, valores válidos e as tabelas do banco de dados onde são armazenados. 
+Tabela 1 – Dicionário de Dados Hidro 1.2 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Bacia 
+Código X Número - 9 - 1 a 9 Código que identifica a 
+bacia hidrográfica 
+Código Bacia 
+Nome X Texto 50 - - - Nome da bacia 
+hidrográfica 
+Nome Bacia 
+Sub-bacia 
+Código da bacia X Número - 9 - 1 a 9 Código que identifica a 
+bacia hidrográfica 
+associada 
+BaciaCodigo SubBacia 
+Código X Número - 99 - 1 a 99 Código que identifica a 
+sub-bacia hidrográfica 
+Código SubBacia 
+Nome X Texto 50 - - - Nome da sub -bacia 
+hidrográfica 
+Nome SubBacia 
+Jurisdição - Número - 9 - 1 = Federal 
+2 = Estadual 
+3 = Indefinido 
+Jurisdição da sub -bacia 
+hidrográfica 
+Jurisdição SubBacia 
+--- PDF PAGE 16 ---
+ 
+ 
+12 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Rio 
+Código da bacia X Número - 9 - 1 a 9 Código que identifica a 
+bacia hidrográfica 
+associada 
+BaciaCodigo Rio 
+Código da sub-bacia X Número - 99 - 1 a 99 Código que identifica a 
+sub-bacia hidrográfica 
+associada 
+SubBaciaCodigo Rio 
+Código X Número - 99999999 - 1 a 99999999 Código que identifica o 
+rio 
+Codigo Rio 
+Nome X Texto 50 - - - Nome do rio Nome Rio 
+Jurisdição - Número - 9 - 1 = Federal 
+2 = Estadual 
+3 = Indefinido 
+Jurisdição do rio Jurisdicao Rio 
+Estado 
+Código X Número - 99 - 1 a 99 Código que identifica o 
+estado ou país da América 
+do Sul 
+ 
+Codigo Estado 
+Código IBGE - Número - 99999999 - 1 a 99999999 Código do estado segundo 
+o IBGE 
+CodigoIBGE Estado 
+Sigla X Texto 2 - - - Sigla do estado Sigla Estado 
+Nome X Texto 50 - - - Nome do estado ou país 
+da América do Sul 
+Nome Estado 
+--- PDF PAGE 17 ---
+ 
+ 
+13 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Município 
+Código do estado X Número - 99 - 1 a 99 Código que identifica o 
+estado ou país da América 
+do Sul associado 
+EstadoCodigo Municipio 
+Código X Número - 99999999 - 1 a 99999999 Código que identifica o 
+município 
+Codigo Municipio 
+Código IBGE - Número - 99999999 - 1 a 99999999 Código do município 
+segundo o IBGE 
+CodigoIBGE Municipio 
+Nome X Texto 50 - - - Nome do município Nome Municipio 
+Entidade 
+Código X Número - 999 - 1 a 999 Código da entidade 
+responsável ou que opera 
+um conjunto de estações 
+Codigo Entidade 
+Sigla X Texto 15 - - - Sigla da entidade Sigla Entidade 
+Nome - Texto 100 - - - Nome da entidade Nome Entidade 
+Estação 
+Código do rio - Número - 99999999 - 1 a 99999999 Código que identifica o 
+rio em que se encontra a 
+estação 
+RioCodigo Estacao 
+Código da sub-bacia X Número - 99 - 1 a 99 Código que identifica a 
+sub-bacia hidrográfica em 
+que se encontra a estação 
+SubBaciaCodigo Estacao 
+Código da bacia - Número - 9 - 1 a 9 Código que identifica a 
+bacia hidrográfica em que 
+se encontra a estação 
+BaciaCodigo Estacao 
+--- PDF PAGE 18 ---
+ 
+ 
+14 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Código do município X Número - 99999999 - 1 a 99999999 Código que identifica o 
+município em que se 
+encontra a estação 
+MunicipioCodigo Estacao 
+Código do estado - Número - 99 - 1 a 99 Código que identifica o 
+estado ou país da América 
+do Sul em que se encontra 
+a estação 
+EstadoCodigo Estacao 
+Responsável - Código X Número - 999 - 1 a 999 Código da entidade 
+proprietária ou 
+responsável pela estação 
+ResponsavelCodigo Estacao 
+Responsável - Unidade - Número - 99 - 1 a 99 Código da 
+unidade/distrito 
+responsável pela estação 
+ResponsavelUnidade Estacao 
+Responsável - Jurisdição - Número - 99 - 1 a 99 Código da 
+unidade/distrito com 
+jurisdição sobre a estação 
+ResponsavelJurisdicao Estacao 
+Operadora - Código X Número - 999 - 1 a 999 Código da entidade que 
+opera a estação 
+OperadoraCodigo Estacao 
+Operadora - Unidade - Número - 99 - 1 a 99 Código da unidade que 
+opera a estação 
+OperadoraUnidade Estacao 
+Operadora - Subunidade - Número - 99 - 1 a 99 Código da subunidade que 
+opera a estação 
+OperadoraSubUnidade Estacao 
+Tipo de estação X Número - 9 - 1 = Fluviométrica 
+2 = Pluviométrica 
+Indica o tipo de estação TipoEstacao Estacao 
+Código X Número - 99999999 - 1 a 99999999 Código que identifica a 
+estação 
+Codigo Estacao 
+Nome X Texto 50 - - - Nome da estação Nome Estacao 
+--- PDF PAGE 19 ---
+ 
+ 
+15 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Código adicional - Texto 15 - - - Identificador adicional ou 
+original da estação 
+CodigoAdicional Estacao 
+Latitude - Número - 99 99 99 - -90 a +90 Latitude da estação Latitude Estacao 
+Longitude - Número - 999 99 99 - -180 a +180 Longitude da estação Longitude Estacao 
+Altitude - Número - 9999,99 m 0 a 9999,99 Altitude da estação Altitude Estacao 
+Área de drenagem - Número - 99999999,99 km2 0 a 99999999,99 Área de drenagem 
+associada a estação 
+AreaDrenagem Estacao 
+Tipo de estação - Escala - Número - 9 - 0 = Não 
+1 = Sim 
+Indica se as cotas são 
+medidas com escala 
+TipoEstacaoEscala Estacao 
+Tipo de estação - Registrador de 
+nível 
+- Número - 9 - 0 = Não 
+1 = Sim 
+Indica se as cotas são 
+medidas com registrador 
+de nível 
+TipoEstacaoRegistradorNivel Estacao 
+Tipo de estação - Descarga 
+líquida 
+- Número - 9 - 0 = Não 
+1 = Sim 
+Indica que na estação são 
+feitas medições de 
+descarga líquida 
+TipoEstacaoDescLiquida Estacao 
+Tipo de estação - Sedimentos - Número - 9 - 0 = Não 
+1 = Sim 
+Indica que na estação são 
+feitas medições de 
+sedimentos 
+TipoEstacaoSedimentos Estacao 
+Tipo de estação - Qualidade da 
+água 
+- Número - 9 - 0 = Não 
+1 = Sim 
+Indica qu a na estação são 
+feitas medições de 
+qualidade da água 
+TipoEstacaoQualAgua Estacao 
+Tipo de estação - Pluviômetro - Número - 9 - 0 = Não 
+1 = Sim 
+Indica se os totais 
+pluviométricos são 
+medidos com pluviômetro 
+TipoEstacaoPluviometro Estacao 
+Tipo de estação - Registrador de 
+chuva 
+- Número - 9 - 0 = Não 
+1 = Sim 
+Indica se os totais 
+pluviométricos são 
+medidos com registrador 
+TipoEstacaoRegistradorChuva Estacao 
+--- PDF PAGE 20 ---
+ 
+ 
+16 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+de chuva 
+Tipo de estação - Tanque 
+evaporimétrico 
+- Número - 9 - 0 = Não 
+1 = Sim 
+Indica que na estação s ão 
+feitas medições de 
+evaporação 
+TipoEstacaoTanqueEvapo Estacao 
+Tipo de estacao - Climatológica - Número - 9 - 0 = Não 
+1 = Sim 
+Indica que na estação são 
+feitas medições de 
+parâmetros climatológicos 
+TipoEstacaoClimatologica Estacao 
+Tipo de estação - Piezometria - Número - 9 - 0 = Não 
+1 = Sim 
+Indica que na estação são 
+feitas medições 
+piezométricas 
+TipoEstacaoPiezometria Estacao 
+Tipo de estação - Telemétrica - Número - 9 - 0 = Não 
+1 = Sim 
+Indica que a estação é 
+telemétrica 
+TipoEstacaoTelemetrica Estacao 
+Período de observação - Escala 
+- Início 
+- Data - MM/AAAA - - - PeriodoEscalaInicio Estacao 
+Período de observação - Escala 
+- Fim 
+- Data - MM/AAAA - - - PeriodoEscalaFim Estacao 
+Período de observação - 
+Registrador de nível - Início 
+- Data - MM/AAAA - - - PeriodoRegistradorNivelInicio Estacao 
+Período de observação - 
+Registrador de nível - Fim 
+- Data - MM/AAAA - - - PeriodoRegistradorNivelFim Estacao 
+Período de observação - 
+Descarga líquida - Início 
+- Data - MM/AAAA - - - PeriodoDescLiquidaInicio Estacao 
+Período de observação - 
+Descarga líquida - Fim 
+- Data - MM/AAAA - - - PeriodoDescLiquidaFim Estacao 
+Período de observação - 
+Sedimentos - Início 
+- Data - MM/AAAA - - - PeriodoSedimentosInicio Estacao 
+Período de observação - - Data - MM/AAAA - - - PeriodoSedimentosFim Estacao 
+--- PDF PAGE 21 ---
+ 
+ 
+17 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Sedimentos - Fim 
+Período de observação - 
+Qualidade da água - Início 
+- Data - MM/AAAA - - - PeriodoQualAguaInicio Estacao 
+Período de observação - 
+Qualidade da água - Fim 
+- Data - MM/AAAA - - - PeriodoQualAguaFim Estacao 
+Período de observação - 
+Pluviômetro - Início 
+- Data - MM/AAAA - - - PeriodoPluviometroInicio Estacao 
+Período de observação - 
+Pluviômetro - Fim 
+- Data - MM/AAAA - - - PeriodoPluviometroFim Estacao 
+Período de observação - 
+Registrador de chuva - Início 
+- Data - MM/AAAA - - - PeriodoRegistradorChuvaInicio Estacao 
+Período de observação - 
+Registrador de chuva - Fim 
+- Data - MM/AAAA - - - PeriodoRegistradorChuvaFim Estacao 
+Período de observação - Tanque 
+evaporimétrico - Início 
+- Data - MM/AAAA - - - PeriodoTanqueEvapoInicio Estacao 
+Período de observação - Tanque 
+evaporimétrico - Fim 
+- Data - MM/AAAA - - - PeriodoTanqueEvapoFim Estacao 
+Período de observação - 
+Climatológica - Início 
+- Data - MM/AAAA - - - PeriodoClimatologicaInicio Estacao 
+Período de observação - 
+Climatológica - Fim 
+- Data - MM/AAAA - - - PeriodoClimatologicaFim Estacao 
+Período de observação - 
+Piezometria - Início 
+- Data - MM/AAAA - - - PeriodoPiezometriaInicio Estacao 
+Período de observação - 
+Piezometria - Fim 
+- Data - MM/AAAA - - - PeriodoPiezometriaFim Estacao 
+Período de observação - - Data - MM/AAAA - - - PeriodoTelemetricaInicio Estacao 
+--- PDF PAGE 22 ---
+ 
+ 
+18 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Telemétrica - Início 
+Período de observação - 
+Telemétrica - Fim 
+- Data - MM/AAAA - - - PeriodoTelemetricaFim Estacao 
+Tipo de rede - Básica - Número - 9 - 0 = Não 
+1 = Sim 
+- TipoRedeBasica Estacao 
+Tipo de rede - Energética - Número - 9 - 0 = Não 
+1 = Sim 
+- TipoRedeEnergetica Estacao 
+Tipo de rede - Navegação - Número - 9 - 0 = Não 
+1 = Sim 
+- TipoRedeNavegacao Estacao 
+Tipo de rede - Curso d'água - Número - 9 - 0 = Não 
+1 = 
+Manancial/Nascente 
+2 = Curso principal 
+3 = Afluente 
+4 = Subafluente 
+5 = Outros afluentes 
+6 = Galeria pluvial 
+7 = Esgoto 
+doméstico 
+8 = Esgoto 
+industrial 
+9 = Outras 
+- TipoRedeCursoDagua Estacao 
+Tipo de rede - Estratégica - Número - 9 - 0 = Não 
+1 = Sim 
+- TipoRedeEstrategica Estacao 
+Tipo de rede - Captação - Número - 9 - 0 = Não 
+1 = Uso doméstico 
+2 = Uso industrial 
+3 = Uso para 
+irrigação 
+4 = Uso para 
+recreação 
+- TipoRedeCaptacao Estacao 
+--- PDF PAGE 23 ---
+ 
+ 
+19 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+5 = Uso para 
+piscicultura 
+6 = Uso para 
+geração 
+7 = Uso geral 
+Tipo de rede - Sedimentos - Número - 9 - 0 = Não 
+1 = Sim 
+- TipoRedeSedimentos Estacao 
+Tipo de rede - Qualidade da 
+água 
+- Número - 99 - 0 = Não 
+1 = Especial 
+2 = Água doce 
+classe 1 
+3 = Água doce 
+classe 2 
+4 = Água doce 
+classe 3 
+5 = Água doce 
+classe 4 
+6 = Água salgada 
+(1) 
+7 = Água salgada 
+(2) 
+8 = Água salobra 
+(1) 
+9 = Água salobra 
+(2) 
+10 = Sem 
+classificação 
+- TipoRedeQualAgua Estacao 
+Tipo de rede - Classe de vazão - Número - 9 - 0 = Não 
+1 = Vazão 
+observada 
+2 = Vazão natural 
+3 = Vazão 
+equivalente 
+- TipoRedeClasseVazao Estacao 
+--- PDF PAGE 24 ---
+ 
+ 
+20 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+4 = Vazão turbinada 
+5 = Vazão vertida 
+6 = Vazão afluente 
+7 = Vazão de fundo 
+Última atualização - Data - DD/MM/AAAA - - Data da última atualização 
+dos dados da estação 
+UltimaAtualizacao Estacao 
+Operando - Número - 9 - 0 = Não 
+1 = Sim 
+Indica se a estaçã o ainda 
+está operando 
+Operando Estacao 
+Descrição - Texto Sem 
+limite 
+- - - Descrição da estação 
+(incluindo características 
+dos equipamentos etc.) 
+Descricao Estacao 
+Histórico - Texto Sem 
+limite 
+- - - Histórico da estação Historico Estacao 
+Número de imagens - Número - 999 - 0 a 10000 Número de imagens 
+associadas a estação 
+NumImagens Estacao 
+Plano de Trabalho 
+Ano X Número 15 9999 - 1 a 9999 - Ano PlanTrab 
+Responsável - Código X Número - 999 - 1 a 999 - ResponsavelCodigo PlanTrab 
+Responsável - Sigla - Texto 15 - - - - ResponsavelSigla PlanTrab 
+Responsável - Unidade X Número - 99 - 0 a 99 - ResponsavelUnidade PlanTrab 
+Responsável - Sigla Unidade - Texto 15 - - - - ResponsavelUnidadeSigla PlanTrab 
+Operadora - Código X Número - 999 - 1 a 999 - OperadoraCodigo PlanTrab 
+Operadora - Sigla - Texto 15 - - - - OperadoraSigla PlanTrab 
+Operadora - Unidade X Número - 99 - 0 a 99 - OperadoraUnidade PlanTrab 
+--- PDF PAGE 25 ---
+ 
+ 
+21 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Operadora - Sigla Unidade - Texto - - - - - OperadoraUnidadeSigla PlanTrab 
+Roteiro X Número[0..*] - 99 - 1 a 99 - Roteiro PlanTrabPonto 
+Código FLU - Número[0..*] 12 99999999 - 1 a 99999999 - CodigoFLU PlanTrabPonto 
+Código PLU - Número[0..*] 12 99999999 - 1 a 99999999 - CodigoPLU PlanTrabPonto 
+Coleta FLU - Texto[0..*] - - - - - ColetaFLU PlanTrabPonto 
+Coleta PLU - Texto[0..*] - - - - - ColetaPLU PlanTrabPonto 
+Número de visitas - Número[0..*] - 99 - 1 a 99 - NumVisitas PlanTrabPonto 
+Número de nivelamentos - Número[0..*] - 99 - 1 a 99 - NumNivelamentos PlanTrabPonto 
+Número de medições líquidas - Número[0..*] - 99 - 1 a 99 - NumMedLiquidas PlanTrabPonto 
+Número de medições sólidas - Número[0..*] - 99 - 1 a 99 - NumMedSolidas PlanTrabPonto 
+Número de medições de 
+qualidade da água 
+- Número[0..*] - 99 - 1 a 99 - NumMedQualAgua PlanTrabPonto 
+Número de levantamentos da 
+seção medição 
+- Número[0..*] - 99 - 1 a 99 - NumLevantSecaoMedicao PlanTrabPonto 
+Número de levantamentos da 
+seção de escalas 
+- Número[0..*] - 99 - 1 a 99 - NumLevantSecaoEscala PlanTrabPonto 
+Medições extras se menor que - Número[0..*] - 999999,9 - -999999,9 a 
+999999,9 
+- MedExtrasMenorQue PlanTrabPonto 
+Medições extras se maior que - Número[0..*] - 999999,9 - -999999,9 a 
+999999,9 
+- MedExtrasMaiorQue PlanTrabPonto 
+Visitas - Número[0..*, 
+12] 
+- 9 - 0 = Não 
+1 = Sim 
+- MesVisita01..12 PlanTrabPonto 
+Observações - Texto[0..*] 255 - - - - Observacoes PlanTrabPonto 
+--- PDF PAGE 26 ---
+ 
+ 
+22 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Cotas 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Cotas 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Cotas 
+Data X Data - MM/AAAA - - Mês/ano em que foram 
+realizadas as medições 
+Data Cotas 
+Hora X Hora - HH:MM - - Hora em que foram 
+realizadas as medições 
+Hora Cotas 
+Média diária X Número - 9 - 0 = Não 
+1 = Sim 
+Indica se a medição é uma 
+média diária ou é 
+instantânea 
+MediaDiaria Cotas 
+Tipo de medição X Número - 9 - 1 = Escala 
+2 = Linígrafo 
+3 = Data logger 
+Indica como as cotas 
+foram obtidas 
+TipoMedicaoCotas Cotas 
+Máxima - Número - 999999 cm -999999 a 999999 Valor máximo da cota no 
+mês 
+Maxima Cotas 
+Mínima - Número - 999999 cm -999999 a 999999 Valor mínimo da cota no 
+mês 
+Minima Cotas 
+Média - Número - 999999 cm -999999 a 999999 Valor médio da cota no 
+mês 
+Media Cotas 
+Dia da máxima - Número - 99 - 1 a 31 Dia em que ocorreu a cota 
+máxima 
+DiaMaxima Cotas 
+Dia da mínima - Número - 99 - 1 a 31 Dia em que ocorreu a cota 
+mínima 
+DiaMinima Cotas 
+--- PDF PAGE 27 ---
+ 
+ 
+23 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da cota máxima 
+MaximaStatus Cotas 
+Status da mínima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da cota mínima 
+MinimaStatus Cotas 
+Status da média - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da cota média 
+MediaStatus Cotas 
+Média anual - Número - 999999 cm -999999 a 999999 Valor médio da cota no 
+ano 
+MediaAnual Cotas 
+Status da média anual - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a di sponibilidade, 
+precisão e confiabilidade 
+do valor da cota média 
+anual 
+MediaAnualStatus Cotas 
+Cotas - Valor - Número[31] - 999999 cm -999999 a 999999 Valor da cota para cada Cota01..31 Cotas 
+--- PDF PAGE 28 ---
+ 
+ 
+24 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+dia do mês 
+Cotas - Status - Número[31] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+das valores das cotas 
+diárias 
+Cota01..31Status Cotas 
+Cotas Horárias 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Cotas24 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Cotas24 
+Data X Data - DD/MM/AAAA - - Dia/Mês/Ano em que 
+foram reali zadas as 
+medições 
+Data Cotas24 
+Tipo de medição X Número - 9 - 1 = Escala 
+2 = Linígrafo 
+3 = Data logger 
+Indica como as cotas 
+foram obtidas 
+TipoMedicaoCotas Cotas24 
+Máxima - Número - 999999 cm -999999 a 999999 Valor máximo da cota 
+horária 
+Maxima Cotas24 
+Mínima - Número - 999999 cm -999999 a 999999 Valor mínimo da cota 
+horária 
+Minima Cotas24 
+Média - Número - 999999 cm -999999 a 999999 Valor médio da cota 
+horária 
+Media Cotas24 
+Hora da máxima - Número - 99 - 1 a 31 Hora em que ocorreu a HoraMaxima Cotas24 
+--- PDF PAGE 29 ---
+ 
+ 
+25 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+cota máxima 
+Hora da mínima - Número - 99 - 1 a 31 Hora em que ocorreu a 
+cota mínima 
+DiaMinima Cotas24 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da cota máxima 
+MaximaStatus Cotas24 
+Status da mínima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da cota mínima 
+MinimaStatus Cotas24 
+Status da média - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da cota média 
+MediaStatus Cotas24 
+Cotas - Valor - Número[24] - 999999 cm -999999 a 999999 Valor da cota para cada 
+hora do dia 
+Cota00..23 Cotas24 
+Cotas - Status - Número[24] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+das valores das cotas 
+diárias 
+Cota00..23Status Cotas24 
+--- PDF PAGE 30 ---
+ 
+ 
+26 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+(?) 
+4 = Régua Seca (#) 
+Vazões 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Vazoes 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Vazoes 
+Data X Data - MM/AAAA - - Mês/ano em que foram 
+realizadas as medições 
+Data Vazoes 
+Hora X Hora - HH:MM - - Hora em que foram 
+realizadas as medições 
+Hora Vazoes 
+Média diária X Número - 9 - 0 = Não 
+1 = Sim 
+Indica se a medição é uma 
+média diária ou é 
+instantânea 
+MediaDiaria Vazoes 
+Método de obtenção X Número - 9 - 1 = Curva de 
+descarga 
+2 = Transferência 
+3 = Soma 
+4 = ADCP 
+Indica como as vazões 
+foram obtidas 
+MetodoObtencaoVazoes Vazoes 
+Máxima - Número - 999999,9 m3/s 0 a 999999,9 Valor máximo da vazão 
+no mês 
+Maxima Vazoes 
+Mínima - Número - 999999,9 m3/s 0 a 999999,9 Valor mínimo da vazão 
+no mês 
+Minima Vazoes 
+Média - Número - 999999,9 m3/s 0 a 999999,9 Valor médio da vaz ão no 
+mês 
+Media Vazoes 
+Dia da máxima - Número - 99 - 1 a 31 Dia em que ocorreu a DiaMaxima Vazoes 
+--- PDF PAGE 31 ---
+ 
+ 
+27 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+vazão máxima 
+Dia da mínima - Número - 99 - 1 a 31 Dia em que ocorreu a 
+vazão mínima 
+DiaMinima Vazoes 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão máxima 
+MaximaStatus Vazoes 
+Status da mínima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão mínima 
+MinimaStatus Vazoes 
+Status da média - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão média 
+MediaStatus Vazoes 
+Média anual - Número - 999999,9 m3/s 0 a 999999,9 Valor médio da vazão no 
+ano 
+MediaAnual Vazoes 
+Status da média anual - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão média 
+anual 
+MediaAnualStatus Vazoes 
+--- PDF PAGE 32 ---
+ 
+ 
+28 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+(?) 
+4 = Régua Seca (#) 
+Vazões - Valor - Número[31] - 999999,9 m3/s 0 a 999999,9 Valor da vazão para cada 
+dia do mês 
+Vazao01..31 Vazoes 
+Vazões - Status - Número[31] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+dos valores diários de 
+vazão 
+Vazao01..31Status Vazoes 
+Vazões Horárias 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Vazoes24 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Vazoes24 
+Data X Data - MM/AAAA - - Mês/ano em que foram 
+realizadas as medições 
+Data Vazoes24 
+Hora X Hora - HH:MM - - Hora em que foram 
+realizadas as medições 
+Hora Vazoes24 
+Média diária X Número - 9 - 0 = Não 
+1 = Sim 
+Indica se a medição é uma 
+média diária ou é 
+instantânea 
+MediaDiaria Vazoes24 
+Método de obtenção X Número - 9 - 1 = Curva de 
+descarga 
+2 = Transferência 
+3 = Soma 
+Indica como as vazões 
+foram obtidas 
+MetodoObtencaoVazoes Vazoes24 
+--- PDF PAGE 33 ---
+ 
+ 
+29 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+4 = ADCP 
+Máxima - Número - 999999,9 m3/s 0 a 999999,9 Valor máximo da vazão 
+no mês 
+Maxima Vazoes24 
+Mínima - Número - 999999,9 m3/s 0 a 999999,9 Valor mínimo da vazão 
+no mês 
+Minima Vazoes24 
+Média - Número - 999999,9 m3/s 0 a 999999,9 Valor médio da vazão no 
+mês 
+Media Vazoes24 
+Hora da máxima - Número - 99 - 0 a 23 Hora em que ocorreu a 
+vazão máxima 
+HoraMaxima Vazoes24 
+Hora da máxima - Número - 99 - 0 a 23 Hora em que ocorreu a 
+vazão máxima 
+HoraMaxima Vazoes24 
+Dia da mínima - Número - 99 - 1 a 31 Dia em que ocorreu a 
+vazão mínima 
+DiaMinima Vazoes24 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão máxima 
+MaximaStatus Vazoes24 
+Status da mínima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão mínima 
+MinimaStatus Vazoes24 
+Status da média - Número - 9 - 0 = BRANCO 
+1= Valor real 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+MediaStatus Vazoes24 
+--- PDF PAGE 34 ---
+ 
+ 
+30 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+do valor da vazão média 
+Média anual - Número - 999999,9 m3/s 0 a 999999,9 Valor médio da vazão no 
+ano 
+MediaAnual Vazoes24 
+Status da média anual - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da vazão média 
+anual 
+MediaAnualStatus Vazoes24 
+Vazões - Valor - Número[24] - 999999,9 m3/s 0 a 999999,9 Valor da vazão para cada 
+hora do dia 
+Vazao00..23 Vazoes24 
+Vazões - Status - Número[24] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Régua Seca (#) 
+Indica a disponibilidade, 
+precisão e confiabilid ade 
+dos valores diários de 
+vazão 
+Vazao00..23Status Vazoes24 
+Chuvas 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Chuvas 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Chuvas 
+--- PDF PAGE 35 ---
+ 
+ 
+31 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Data X Data - MM/AAAA - - Mês/ano em que foram 
+realizadas as medições 
+Data Chuvas 
+Tipo de medição X Número - 9 - 1 = Pluviômetro 
+2 = Pluviógrafo 
+3 = Data logger 
+Indica como as chuvas 
+foram obtidas 
+TipoMedicaoChuvas Chuvas 
+Máxima - Número - 99999,9 mm 0 a 99999,9 Valor máximo da chuva 
+no mês 
+Maxima Chuvas 
+Total - Número - 99999,9 mm 0 a 99999,9 Valor total da chuva no 
+mês 
+Total Chuvas 
+Dia da máxima - Número - 99 - 1 a 31 Dia em que oc orreu a 
+chuva máxima 
+DiaMaxima Chuvas 
+Número de dias de chuva - Número - 99 - 0 a 31 Número de dias em que 
+ocorreu chuva no mês 
+NumDiasDeChuva Chuvas 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da chuva máxima 
+MaximaStatus Chuvas 
+Status do total - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilid ade, 
+precisão e confiabilidade 
+do valor da chuva total 
+TotalStatus Chuvas 
+Status do número de dias de 
+chuva 
+- Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+Indica a disponibilidade, 
+precisão e confia bilidade 
+do valor do número de 
+NumDiasDeChuvaStatus Chuvas 
+--- PDF PAGE 36 ---
+ 
+ 
+32 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+dias de chuva 
+Total anual - Número - 99999,9 mm 0 a 99999,9 Valor total da chuva no 
+ano 
+TotalAnual Chuvas 
+Status do total anual - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da chuva total 
+anual 
+TotalAnualStatus Chuvas 
+Chuvas - Valor - Número[31] - 99999,9 mm 0 a 99999,9 Chuva total para cada dia 
+do mês 
+Chuva01..31 Chuvas 
+Chuvas - Status - Número[31] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+dos valores diários de 
+chuva 
+Chuva01..31Status Chuvas 
+Chuvas 2 Leituras 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Chuvas2 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Chuvas2 
+Data X Data - MM/AAAA - - Mês/ano em que foram Data Chuvas2 
+--- PDF PAGE 37 ---
+ 
+ 
+33 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+realizadas as medições 
+Hora1 X Hora  HH:MM - - Hora em que foram 
+realizadas as medições 
+Hora1 Chuvas2 
+Hora2 X Hora  HH:MM - - Hora em que foram 
+realizadas as medições 
+Hora2 Chuvas2 
+Tipo de medição X Número - 9 - 1 = Pluviômetro 
+2 = Pluviógrafo 
+3 = Data logger 
+Indica como as chuvas 
+foram obtidas 
+TipoMedicaoChuvas Chuvas2 
+Máxima - Número - 99999,9 mm 0 a 99999,9 Valor máximo da chuva 
+no mês 
+Maxima Chuvas2 
+Total - Número - 99999,9 mm 0 a 99999,9 Valor to tal da chuva no 
+mês 
+Total Chuvas2 
+Dia da máxima - Número - 99 - 1 a 31 Dia em que ocorreu a 
+chuva máxima 
+DiaMaxima Chuvas2 
+Número de dias de chuva - Número - 99 - 0 a 31 Número de dias em que 
+ocorreu chuva no mês 
+NumDiasDeChuva Chuvas2 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da chuva máxima 
+MaximaStatus Chuvas2 
+Status do número de dias de 
+chuva 
+- Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor do número de 
+dias de chuva 
+NumDiasDeChuvaStatus Chuvas2 
+--- PDF PAGE 38 ---
+ 
+ 
+34 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+4 = Acumulado ($) 
+Total anual - Número - 99999,9 mm 0 a 99999,9 Valor t otal da chuva no 
+ano 
+TotalAnual Chuvas2 
+Status do total anual - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da chuva total 
+anual 
+TotalAnualStatus Chuvas2 
+Chuvas1 - Valor - Número[31] - 99999,9 mm 0 a 99999,9 Total de Chuva  para cada 
+dia do mês (1° Leitura) 
+Chuva01_1...31_1 Chuvas2 
+Chuvas1 - Status - Número[31] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+dos valores diários de 
+chuva (1° Leitura) 
+Chuva01_1...31Status_1 Chuvas2 
+Chuvas2 - Valor - Número[31] - 99999,9 mm 0 a 99999,9 Total de Chuva  para cada 
+dia do mês (2° Leitura) 
+Chuva01_2...31_2 Chuvas2 
+Chuvas2 - Status - Número[31] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+dos valores diários de 
+chuva (2° Leitura) 
+Chuva01_2...31Status_2 Chuvas2 
+--- PDF PAGE 39 ---
+ 
+ 
+35 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Chuvas Horária 
+Status do total - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor da chuva total 
+TotalStatus Chuvas24 
+Chuvas - Valor - Número[24] - 99999,9 mm 0 a 99999,9 Chuva total para cada 
+hora do dia 
+Chuva00..23 Chuvas24 
+Chuvas - Status - Número[24] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+4 = Acumulado ($) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+dos valores horarios de 
+chuva 
+Chuva00..23Status Chuvas24 
+Clima 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Clima 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Clima 
+Data X Data - MM/AAAA - - Mês/ano em que foram 
+realizadas as medições 
+Data Clima 
+Hora X Hora - HH:MM - - Hora em que foram 
+realizadas as medições 
+Hora Clima 
+Parâmetro climatológico X Número - 9 - Ver  Código indicando o ParametroClima Clima 
+--- PDF PAGE 40 ---
+ 
+ 
+36 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Tabela 2  parâmetro climatológico 
+medido 
+Máxima - Número - 99999,9 Ver  
+Tabela 2  
+-99999,9 a 99999,9 Valor máximo do 
+parâmetro climatológico 
+Maxima Clima 
+Mínima - Número - 99999,9 Ver  
+Tabela 2  
+-99999,9 a 99999,9 Valor mínimo do 
+parâmetro climatológico 
+Minima Clima 
+Média - Número - 99999,9 Ver  
+Tabela 2  
+-99999,9 a 99999,9 Valor médio do parâmetro 
+climatológico 
+Media Clima 
+Total - Número - 99999,9 Ver  
+Tabela 2  
+-99999,9 a 99999,9 Valor total do parâmetro 
+climatológico no mês 
+Total Clima 
+Dia da máxima - Número - 99 - 1 a 31 Dia em que ocorreu o 
+valor máximo do 
+parâmetro climatológico 
+DiaMaxima Clima 
+Dia da mínimo - Número - 99 - 1 a 31 Dia em que ocorreu o 
+valor mínimo do 
+parâmetro climatológico 
+DiaMinima Clima 
+Número de dias de chuva - Número - 99 - 0 a 31 Número de dias em que 
+ocorreu chuva 
+NumDiasDeChuva Clima 
+Status da máxima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor do clima máxima 
+MaximaStatus Clima 
+Status da mínima - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+MinimaStatus Clima 
+--- PDF PAGE 41 ---
+ 
+ 
+37 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+(*) 
+3 = Valor duvidoso 
+(?) 
+do valor do clima mínimo 
+Status da média - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor do clima médio 
+MediaStatus Clima 
+Status do total - Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+do valor do clima total 
+TotalStatus Clima 
+Status do número de dias de 
+chuva 
+- Número - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+Indica a disponibilidad e, 
+precisão e confiabilidade 
+do valor do número de 
+dias de chuva 
+NumDiasDeChuvaStatus Clima 
+Clima - Valor - Número[31] - 99999,9 Ver  
+Tabela 2  
+-99999,9 a 99999,9 Valor da parâmetro 
+climatológico para cada 
+dia do mês 
+Clima01..31 Clima 
+Clima - Status - Número[31] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor estimado 
+(*) 
+3 = Valor duvidoso 
+(?) 
+Indica a disponibilidade, 
+precisão e confiabilidade 
+dos valores diários do 
+parâmetro climatológico 
+Clima01..31Status Clima 
+--- PDF PAGE 42 ---
+ 
+ 
+38 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Qualidade da Água 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo QualAgua 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia QualAgua 
+Data X Data - DD/MM/AAAA - - Dia em que foram 
+realizadas as medições 
+Data QualAgua 
+Hora X Hora - HH:MM - - Hora inicial das medições Hora QualAgua 
+Número da medição - Número - 9999 - 1 a 9999 Número da medição de 
+qualidade da água 
+NumMedicao QualAgua 
+Posição horizontal da coleta - Número - 99 - 1 = Margem direita 
+2 = Centro 
+3 = Margem 
+esquerda 
+4 = Composta 
+5 = Extra 
+6 = Indefinida 
+7 = Superfície 
+8 = Integrada 
+9 = 40% 
+10 = 50% 
+- PosHorizColeta QualAgua 
+Posição vertical da coleta - Número - 99 - 1 = Indefinida 
+2 = Superficial 
+3 = Integrada 
+4 = Fundo 
+5 = 20% 
+6 = 40% 
+7 = 50% 
+8 = 60% 
+- PosVertColeta QualAgua 
+--- PDF PAGE 43 ---
+ 
+ 
+39 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+9 = 70% 
+10 = 80% 
+Choveu - Número - 9 - 0 = Não 
+1 = Sim 
+Indica se ocorreu chuva 
+durante a medição 
+Choveu QualAgua 
+Profundidade - Número - 9999,99 m 0 a 9999,99 Profundidade da medição Profundidade QualAgua 
+Temperatura do ar - Número - 9999,9999 °C - - TempAr QualAgua 
+Temperatura da amostra - Número - 9999,9999 °C - - TempAmostra QualAgua 
+pH - Número - 9999,9999 - - - pH QualAgua 
+Cor - Número - 9999,9999 mg Pt/Co - - Cor QualAgua 
+Turbidez - Número - 9999,9999 FTU - - Turbidez QualAgua 
+Condutividade elétrica - Número - 9999,9999 uS/cm a 
+20°C 
+- - CondutividadeEletrica QualAgua 
+Dureza total - Número - 9999,9999 mg/l 
+CaCO3 
+- - DurezaTotal QualAgua 
+Dureza - Número - 9999,9999 mg/l - - Dureza QualAgua 
+DQO - Número - 9999,9999 mg/l 02 - - DQO QualAgua 
+DBO - Número - 9999,9999 mg/l 02 - - DBO QualAgua 
+OD - Número - 9999,9999 mg/l 02 - - OD QualAgua 
+Sólidos totais - Número - 9999,9999 mg/l - - SolTotais QualAgua 
+Sólidos fixos - Número - 9999,9999 mg/l - - SolFixos QualAgua 
+Sólidos voláteis - Número - 9999,9999 mg/l - - SolVolateis QualAgua 
+Sólidos em suspensão totais - Número - 9999,9999 mg/l - - SolSuspensaoTotais QualAgua 
+Sólidos em suspensão fixos - Número - 9999,9999 mg/l - - SolSuspensaoFixos QualAgua 
+--- PDF PAGE 44 ---
+ 
+ 
+40 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Sólidos em suspensão voláteis - Número - 9999,9999 mg/l - - SolSuspensaoVolateis QualAgua 
+Sólidos dissolvidos totais - Número - 9999,9999 mg/l - - SolDissolvidosTotais QualAgua 
+Sólidos dissolvidos fixos - Número - 9999,9999 mg/l a 
+180°C 
+- - SolDissolvidosFixos QualAgua 
+Sólidos dissolvidos voláteis - Número - 9999,9999 mg/l - - SolDissolvidosVolateis QualAgua 
+Sólidos sedimentáveis - Número - 9999,9999 mg/l - - SolSedimentaveis QualAgua 
+Detergentes - Número - 9999,9999 mg/l 
+LAS 
+- - Detergentes QualAgua 
+Alcalinidade CO3 - Número - 9999,9999 mg/l - - AlcalinidadeCO3 QualAgua 
+Alcalinidade HCO3 - Número - 9999,9999 mg/l - - AlcalinidadeHCO3 QualAgua 
+Alcalinidade OH - Número - 9999,9999 mg/l - - AlcalinidadeOH QualAgua 
+Cloretos - Número - 9999,9999 mg/l Cl - - Cloretos QualAgua 
+Sulfatos - Número - 9999,9999 mg/l SO4 - - Sulfatos QualAgua 
+Sulfetos - Número - 9999,9999 mg/l S - - Sulfetos QualAgua 
+Fluoretos - Número - 9999,9999 mg/l F - - Fluoretos QualAgua 
+Fosfato total - Número - 9999,9999 mg/l P - - FosfatoTotal QualAgua 
+Cianetos - Número - 9999,9999 mg/l CN - - Cianetos QualAgua 
+Nitrogênio total - Número - 9999,9999 mg/l N - - NitrogenioTotal QualAgua 
+Amônia não ionizável - Número - 9999,9999 mg/l N - - AmoniaNaoIonizavel QualAgua 
+Nitrogênio amoniacal - Número - 9999,9999 mg/l N - - NitrogenioAmoniacal QualAgua 
+Nitratos - Número - 9999,9999 mg/l N - - Nitratos QualAgua 
+Nitritos - Número - 9999,9999 mg/l N - - Nitritos QualAgua 
+--- PDF PAGE 45 ---
+ 
+ 
+41 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Compostos organoclorados - Número - 9999,9999 mg/l - - CompostosOrganoclorados QualAgua 
+Compostos organofosforados - Número - 9999,9999 mg/l - - CompostosOrganofosforados QualAgua 
+Alumínio - Número - 9999,9999 mg/l Al - - Aluminio QualAgua 
+Arsênio - Número - 9999,9999 mg/l As - - Arsenio QualAgua 
+Cádmio - Número - 9999,9999 mg/l Cd - - Cadmio QualAgua 
+Chumbo - Número - 9999,9999 mg/l Pb - - Chumbo QualAgua 
+Cobre - Número - 9999,9999 mg/l Cu - - Cobre QualAgua 
+Cromo trivalente - Número - 9999,9999 mg/l Cr - - CromoTrivalente QualAgua 
+Cromo hexavalente - Número - 9999,9999 mg/l Cr - - CromoHexavalente QualAgua 
+Ferro solúvel - Número - 9999,9999 mg/l Fe - - FerroSoluvel QualAgua 
+Manganês - Número - 9999,9999 mg/l Mn - - Manganes QualAgua 
+Mercúrio - Número - 9999,9999 mg/l Hg - - Mercurio QualAgua 
+Níquel - Número - 9999,9999 mg/l Ni - - Niquel QualAgua 
+Zinco - Número - 9999,9999 mg/l Zn - - Zinco QualAgua 
+Índice de fenóis - Número - 9999,9999 mg/l 
+C6H5OH 
+- - IndiceFenois QualAgua 
+Coliformes totais - Número - 9999,9999 NMP/100 
+ml 
+- - ColiformesTotais QualAgua 
+Coliformes fecais - Número - 9999,9999 NMP/100 
+ml 
+- - ColiformesFecais QualAgua 
+Cloro residual - Número - 9999,9999 mg/l Cl - - CloroResidual QualAgua 
+Bário - Número - 9999,9999 mg/l Ba - - Bario QualAgua 
+--- PDF PAGE 46 ---
+ 
+ 
+42 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Berílio - Número - 9999,9999 mg/l Be - - Berilio QualAgua 
+Boro - Número - 9999,9999 mg/l B - - Boro QualAgua 
+Cobalto - Número - 9999,9999 mg/l Co - - Cobalto QualAgua 
+Estanho - Número - 9999,9999 mg/l Sn - - Estanho QualAgua 
+Lítio - Número - 9999,9999 mg/l Li - - Litio QualAgua 
+Prata - Número - 9999,9999 mg/l Ag - - Prata QualAgua 
+Selênio - Número - 9999,9999 mg/l Se - - Selenio QualAgua 
+Urânio total - Número - 9999,9999 mg/l U - - UranioTotal QualAgua 
+Vanádio - Número - 9999,9999 mg/l V - - Vanadio QualAgua 
+Benzeno - Número - 9999,9999 mg/l - - Benzeno QualAgua 
+Benzo-a-Pireno - Número - 9999,9999 mg/l - - BenzoAPireno QualAgua 
+1,1 Dicloroeteno - Número - 9999,9999 mg/l - - n11Dicloroeteno QualAgua 
+1,2 Dicloroetano - Número - 9999,9999 mg/l - - n12Dicloroetano QualAgua 
+Pentaclorofenol - Número - 9999,9999 mg/l - - Pentaclorofenol QualAgua 
+Tetracloroeteno - Número - 9999,9999 mg/l - - Tetracloroeteno QualAgua 
+Tricloroeteno - Número - 9999,9999 mg/l - - Tricloroeteno QualAgua 
+Tetracloreto de carbono - Número - 9999,9999 mg/l - - TetracloretoCarbono QualAgua 
+2,4,6 triclorofenol - Número - 9999,9999 mg/l - - n246Triclorofenol QualAgua 
+Aldrin - Número - 9999,9999 mg/l - - Aldrin QualAgua 
+Clordano - Número - 9999,9999 mg/l - - Clordano QualAgua 
+DDT - Número - 9999,9999 mg/l - - DDT QualAgua 
+--- PDF PAGE 47 ---
+ 
+ 
+43 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Dieldrin - Número - 9999,9999 mg/l - - Dieldrin QualAgua 
+Endrin - Número - 9999,9999 mg/l - - Endrin QualAgua 
+Endossulfan - Número - 9999,9999 mg/l - - Endossulfan QualAgua 
+Epóxido de heptacloro - Número - 9999,9999 mg/l - - EpoxidoHeptacloro QualAgua 
+Heptacloro - Número - 9999,9999 mg/l - - Heptacloro QualAgua 
+Lindano - Número - 9999,9999 mg/l - - Lindano QualAgua 
+Metoxicloro - Número - 9999,9999 mg/l - - Metoxicloro QualAgua 
+Dodecacloro + Nonacloro - Número - 9999,9999 mg/l - - DodecacloroNonacloro QualAgua 
+Bifenilas policloradas (PCBs) - Número - 9999,9999 mg/l - - BifenilasPolicloradas QualAgua 
+Toxafeno - Número - 9999,9999 mg/l - - Toxafeno QualAgua 
+Demeton - Número - 9999,9999 mg/l - - Demeton QualAgua 
+Gution - Número - 9999,9999 mg/l - - Gution QualAgua 
+Malation - Número - 9999,9999 mg/l - - Malation QualAgua 
+Paration - Número - 9999,9999 mg/l - - Paration QualAgua 
+Carbaril - Número - 9999,9999 mg/l - - Carbaril QualAgua 
+Ácido 2,4 Diclorofenoxiacético - Número - 9999,9999 mg/l - - Acido24Diclorofenoxiacetico QualAgua 
+2,4,5 - TP - Número - 9999,9999 mg/l - - n245TP QualAgua 
+2,4,5 - T - Número - 9999,9999 mg/l - - n245T QualAgua 
+BHC - Número - 9999,9999 mg/l - - BHC QualAgua 
+Ethion - Número - 9999,9999 mg/l - - Ethion QualAgua 
+Dy Syston / Disulfton - Número - 9999,9999 mg/l - - DySystonDisulfton QualAgua 
+--- PDF PAGE 48 ---
+ 
+ 
+44 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Phosdrin (mevinphos) - Número - 9999,9999 mg/l - - Phosdrin QualAgua 
+DDE PP - Número - 9999,9999 mg/l - - DDEPP QualAgua 
+Azinfos etil - Número - 9999,9999 mg/l - - AzinfosEtil QualAgua 
+Diazinon - Número - 9999,9999 mg/l - - Diazinon QualAgua 
+Estreptococos fecais - Número - 9999,9999 NMP/100 
+ml 
+- - EstreptococosFecais QualAgua 
+Pseudomonas - Número - 9999,9999 NMP/100 
+ml 
+- - Pseudomonas QualAgua 
+Salmonelas - Número - 9999,9999 NMP/100 
+ml 
+- - Salmonelas QualAgua 
+Colifagos - Número - 9999,9999 NMP/100 
+ml 
+- - Colifagos QualAgua 
+Bactérias heterotróficas - Número - 9999,9999 UFC/ml - - BacteriasHeterotroficas QualAgua 
+Protozoários - Número - 9999,9999 N° 
+org/ml 
+- - Protozoarios QualAgua 
+Fungos - Número - 9999,9999 UFC/ml - - Fungos QualAgua 
+Algas - Número - 9999,9999 N° 
+UPA/ml 
+- - Algas QualAgua 
+Contagem de bactérias em placa - Número - 9999,9999 UFC/ml - - ContagemBacteriasPlaca QualAgua 
+Clorofila - Número - 9999,9999 mg/l 
+feofitina 
+- - Clorofila QualAgua 
+Óleos e graxas - Número - 9999,9999 mg/l - - OleosGraxas QualAgua 
+Alcalinidade total - Número - 9999,9999 mg/l 
+CaCO3 
+- - AlcalinidadeTotal QualAgua 
+--- PDF PAGE 49 ---
+ 
+ 
+45 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Carbono orgânico total - Número - 9999,9999 mg/l C - - CarbonoOrganicoTotal QualAgua 
+Hidrocarbonetos - Número - 9999,9999 mg/l - - Hidrocarbonetos QualAgua 
+Ortofosfato total - Número - 9999,9999 mg/l PO4 - - OrtofosfatoTotal QualAgua 
+Cromo total - Número - 9999,9999 mg/l Cr - - CromoTotal QualAgua 
+Metil - Paration - Número - 9999,9999 mg/l - - MetilParation QualAgua 
+Nitrogênio orgânico - Número - 9999,9999 mg/l - - NitrogenioOrganico QualAgua 
+Oxigênio consumido em meio 
+ácido 
+- Número - 9999,9999 mg/l 02 - - OxigenioMeioAcido QualAgua 
+Sódio total - Número - 9999,9999 mg/l Na - - SodioTotal QualAgua 
+Magnésio total - Número - 9999,9999 mg/l Mg - - MagnesioTotal QualAgua 
+Sílica dissolvida - Número - 9999,9999 mg/l Si02 - - SilicaDissolvida QualAgua 
+Potássio total - Número - 9999,9999 mg/l K - - PotassioTotal QualAgua 
+Cálcio total - Número - 9999,9999 mg/l Ca - - CalcioTotal QualAgua 
+Ferro total - Número - 9999,9999 mg/l Fe - - FerroTotal QualAgua 
+Descarga líquida - Número - 99999,9999 m3/s - - DescargaLiquida QualAgua 
+Fósforo total - Número - 9999,9999 mg/l P - - FosforoTotal QualAgua 
+Bismuto total - Número - 9999,9999 mg/l Bi - - BismutoTotal QualAgua 
+Acidez (pH = 4,5) - Número - 9999,9999 - - - Acidez QualAgua 
+Fitoplâncton total - Número - 9999,9999 N° 
+org/ml 
+- - FitoplanctonTotal QualAgua 
+Nitrogênio total KJELDAHL - Número - 9999,9999 mg/l N - - NitrogenioTotalKJELDAHL QualAgua 
+Nitrogênio albuminoide - Número - 9999,9999 mg/l - - NitrogenioAlbuminoide QualAgua 
+--- PDF PAGE 50 ---
+ 
+ 
+46 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Transparência - Número - 9999,9999 - - - Transparencia QualAgua 
+Entero-bactérias patogênicas - Número - 9999,9999 N° 
+org/ml 
+- - EnteroBacteriasPatogenicas QualAgua 
+Zooplâncton total - Número - 9999,9999 N° 
+org/ml 
+- - ZooplanctonTotal QualAgua 
+Amoníaco 
+IQA 
+- 
+- 
+Número 
+Número 
+- 
+- 
+9999,9999 
+9999,9999 
+mg/l N 
+- 
+- 
+- 
+- 
+- 
+Amoniaco 
+IQA 
+QualAgua 
+QualAgua 
+Status dos parâmetros de 
+qualidade da água 
+- Número[1..138] - 9 - 0 = BRANCO 
+1= Valor real 
+2 = Valor menor 
+que (<) 
+3 = Valor aceito 
+(VA) 
+4 = Não detectado 
+(ND) 
+Indica a disponibilidade, 
+precisão e confiabi lidade 
+dos valores dos 
+parâmetros de qualidade 
+da água 
+QualAgua001..138Status QualAguaStatus 
+Resumo de Descarga 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo ResumoDescarga 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia ResumoDescarga 
+Data X Data - DD/MM/AAAA - - Dia em que foram 
+realizadas as medições 
+Data ResumoDescarga 
+Hora X Hora - HH:MM - - Hora inicial das medições Hora ResumoDescarga 
+Número da medição - Número - 9999 - 1 a 9999 Número da medição de 
+descarga líquida 
+NumMedicao ResumoDescarga 
+--- PDF PAGE 51 ---
+ 
+ 
+47 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Cota X Número - 999999 cm -999999 a 999999 Cota associada a medição 
+de descarga líquida 
+Cota ResumoDescarga 
+Vazão X Número - 999999,9 m3/s 0 a 999999,9 Vazão medida Vazao ResumoDescarga 
+Área molhada - Número - 99999,9 m2 0 a 99999,9 Área molhada da medição AreaMolhada ResumoDescarga 
+Largura - Número - 9999,99 m 0 a 9999,99 Largura da medição Largura ResumoDescarga 
+Velocidade média - Número - 99,999 m/s 0 a 99,999 Velocidade média da 
+medição 
+VelMedia ResumoDescarga 
+Profundidade - Número - 9999,99 m 0 a 9999,99 Profundidade da medição Profundidade ResumoDescarga 
+Sedimentos 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Sedimentos 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Sedimentos 
+Data X Data - DD/MM/AAAA - - Dia em que foram 
+realizadas as medições 
+Data Sedimentos 
+Hora X Hora - HH:MM - - Hora inicial das medições Hora Sedimentos 
+Número da medição - Número - 9999 - 1 a 9999 Número da medição de 
+sedimentos 
+NumMedicao Sedimentos 
+Data medição líquida X Data - DD/MM/AAAA - - Dia em que foi realizada a 
+medição de descarga 
+líquida correspondente 
+DataLiq Sedimentos 
+Hora medição líquida X Hora - HH:MM - - Hora inicial da medição 
+de descarga líquida 
+correspondente 
+HoraLiq Sedimentos 
+--- PDF PAGE 52 ---
+ 
+ 
+48 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Número da medição líquida - Número - 9999 - 1 a 9999 Número da medição de 
+descarga líquida 
+correspondente 
+NumMedicaoLiq Sedimentos 
+Cota - Número - 999999 cm -999999 a 999999 Cota da medição de 
+descarga líquida 
+correspondente 
+Cota Sedimentos 
+Vazão - Número - 999999,9 m3/s 0 a 999999,9 Vazão da medição de 
+descarga líquida 
+correspondente 
+Vazao Sedimentos 
+Área molhada - Número - 99999,9 m2 0 a 99999,9 Área molhada da medição 
+de descarga líquida 
+correspondente 
+AreaMolhada Sedimentos 
+Largura - Número - 9999,99 m 0 a 9999,99 Largura da medi ção de 
+descarga líquida 
+correspondente 
+Largura Sedimentos 
+Velocidade média - Número - 99,999 m/s 0 a 99,999 Velocidade média da 
+medição de descarga 
+líquida correspondente 
+VelMedia Sedimentos 
+Concentração X Número - 99999,99 ppm 0 a 99999,99 Quantidade se dimento, 
+por volume de água 
+(mg/l) amostrado em uma 
+determinada seção de um 
+rio 
+ConcentracaoMatSuspensao Sedimentos 
+Cota de medição - Número - 999999 cm -999999 a 999999 Cota associada a medição 
+de descarga líquida 
+CotaDeMedicao Sedimentos 
+Temperatura da água - Número - 99999,99 °C -99999,99 a 
+99999,99 
+Temperatura da água em 
+graus celsius medida com 
+termômetro manual em 
+contato com amostra da 
+TemperaturaDaAgua Sedimentos 
+--- PDF PAGE 53 ---
+ 
+ 
+49 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+água in situ 
+Concentração da amostra extra - Número - 99999,99 ppm 0 a 99999,99 Quantidade sedimento, 
+por volume de água 
+(mg/l) amostrado em uma 
+determinada seção de um 
+rio 
+ConcentracaoDaAmostraExtra Sedimentos 
+Condutividade elétrica - Número - 99999,99 uS/cm a 
+20°C 
+0 a 99999,99 - CondutividadeEletrica Sedimentos 
+Observações - Texto Sem 
+limite 
+- - - Observações sobre a 
+medição 
+Observacoes Sedimentos 
+Curva de Descarga 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação 
+fluviométrica 
+correspondente 
+EstacaoCodigo CurvaDescarga 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia CurvaDescarga 
+Período de validade - Início X Data - DD/MM/AAAA - - Início do período de 
+validade da curva 
+PeriodoValidadeInicio CurvaDescarga 
+Período de validade - Fim X Data - DD/MM/AAAA - - Fim do período de 
+validade da curva 
+PeriodoValidadeFim CurvaDescarga 
+Cota máxima X Número - 999999 cm -999999 a 999999 Cota máxima válida para 
+a curva 
+CotaMaxima CurvaDescarga 
+Cota mínima X Número - 999999 cm -999999 a 999999 Cota mínima válida para a 
+curva 
+CotaMinima CurvaDescarga 
+Tipo de representação da curva X Número - 9 - 1 = Equação 
+2 = Tabela 
+Indica se a curva deve ser 
+representada por uma 
+equação ou por uma 
+TipoCurva CurvaDescarga 
+--- PDF PAGE 54 ---
+ 
+ 
+50 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+tabela de descarga 
+Número da curva X Texto 5 99/99 - - Número de identificação 
+da curva. Ex.: 1/2, 3/4 etc. 
+NumeroCurva CurvaDescarga 
+Equação - Tipo - Número - 9 - 1 = Potência 
+2 = Linear 
+3 = Parabólica 
+4 = Cúbica 
+Indica o tipo de equação 
+que representa a curva (no 
+caso da curva ser 
+representada por uma 
+equação) 
+TipoEquacao CurvaDescarga 
+Equação - Coeficiente a - Número - 9999,999999 - - Coeficiente da equação 
+exponencial 
+CoefA CurvaDescarga 
+Equação - Coeficiente h0 - Número - 999999 cm -999999,99 a 
+999999,99 
+Coeficiente da equação 
+exponencial 
+CoefH0 CurvaDescarga 
+Equação - Coeficiente n - Número - 9999,999999 - - Coeficiente da equação 
+exponencial 
+CoefN CurvaDescarga 
+Equação - Coeficiente a0 - Número - 9999,999999 - - Coeficiente de equação 
+polinomial (linear, 
+parabólica ou cúbica) 
+CoefA0 CurvaDescarga 
+Equação - Coeficiente a1 - Número - 9999,999999 - - Coeficiente de equação 
+polinomial (linear, 
+parabólica ou cúbica) 
+CoefA1 CurvaDescarga 
+Equação - Coeficiente a2 - Número - 9999,999999 - - Coeficiente de equação 
+polinomial (linear, 
+parabólica ou cúbica) 
+CoefA2 CurvaDescarga 
+Equação - Coeficiente a3 - Número - 9999,999999 - - Coeficiente de equação 
+polinomial (linear, 
+parabólica ou cúbica) 
+CoefA3 CurvaDescarga 
+Tabela - Passo da cota - Número - 999999 cm 1 a 999999 Valor que deve ser 
+adicionado 
+incrementalmente a cota 
+TabelaPassoCota CurvaDescarga 
+--- PDF PAGE 55 ---
+ 
+ 
+51 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+mínima para a obtenção 
+das cotas da tabela de 
+descarga 
+Tabela - Vazão - Número[0..*] - 999999,9 m3/s 0 a 999999,9 Valores de vazão da 
+tabela de descarga 
+Vazao CurvaDescargaTabelaVazao 
+Perfil Transversal 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo PerfilTransversal 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia PerfilTransversal 
+Data X Data - DD/MM/AAAA - - Dia em que foram 
+realizadas as medições 
+Data PerfilTransversal 
+Hora - Hora - HH:MM - - Hora inicial das medições Hora PerfilTransversal 
+Número do levantamento - Número - 9999 - 1 a 9999 Número do leva ntamento 
+do perfil transversal 
+NumLevantamento PerfilTransversal 
+Tipo de seção - Número - 9 - 1 = Régua 
+2 = Medição 
+- TipoSecao PerfilTransversal 
+Número de verticais - Número - 9999 - 0 a 9999 Número de verticais 
+medidas 
+NumVerticais PerfilTransversal 
+Distância PI-PF - Número - 999999,9 m 0 a 999999,9 Distância entre o ponto 
+inicial (PI) e final (PF) da 
+medição de perfil. Obs.: 
+PI está localizado na 
+margem esquerda e PF na 
+margem direita. 
+DistanciaPIPF PerfilTransversal 
+Eixo X - Distância máxima - Número - 99999,99 m -99999,99 a - EixoXDistMaxima PerfilTransversal 
+--- PDF PAGE 56 ---
+ 
+ 
+52 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+99999,99 
+Eixo X - Distância mínima - Número - 99999,99 m -99999,99 a 
+99999,99 
+- EixoXDistMinima PerfilTransversal 
+Eixo Y - Cota máxima - Número - 999999 cm -999999 a 999999 - EixoYCotaMaxima PerfilTransversal 
+Eixo Y - Cota mínima - Número - 999999 cm -999999 a 999999 - EixoYCotaMinima PerfilTransversal 
+Observações - Texto Sem 
+limite 
+- - - Observações sobre a 
+medição 
+Observacoes PerfilTransversal 
+Verticais - Distância - Número[0..*] - 99999,99 m -99999,99 a 
+99999,99 
+Distâncias das verticais Distancia PerfilTransversalVert 
+Verticais - Cota - Número[0..*] - 999999 cm -999999 a 999999 Cotas das verticais Cota PerfilTransversalVert 
+          
+Medição de Descarga Molinete 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo MedDescMolinete 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia MedDescMolinete 
+Data X Data - DD/MM/AAAA - - Dia em que foram 
+realizadas as medições 
+Data MedDescMolinete 
+Hora Inicial 
+Hora Final 
+SM 
+Cota Inicial 
+Cota Final 
+X 
+X 
+- 
+- 
+- 
+Hora 
+Hora 
+Número 
+Número 
+Número 
+- 
+- 
+- 
+- 
+- 
+HH:MM 
+HH:MM 
+9 
+999999 
+999999 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+Hora do Inicio da 
+medição 
+Hora do Final da medição 
+ 
+ 
+HoraInicial 
+HoraFinal 
+SM 
+CotaInicial 
+CotaFinal 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolinete 
+--- PDF PAGE 57 ---
+ 
+ 
+53 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Delta 
+Lastro 
+Margem Inicial 
+Tipo de Medição 
+Equipe 
+Numero de Verticais 
+Primeira Distancia 
+Variação 
+Tempo Constante 
+PINA 
+NAPF 
+Método Calculado 
+Limite Inferior 
+Limite Superior 
+a1 
+b1 
+a2 
+b2 
+a3 
+b3 
+Informação Molinete 
+Rot Toque 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Número 
+Texto 
+Número 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Delta 
+Lastro 
+MargemInicial 
+TipoMedicao 
+Equipe 
+NumVerticais 
+PrimDist 
+Variacao 
+TempoConst 
+PINA 
+NAPF 
+MetodoCalc 
+LimiteInf 
+LimiteSup 
+a1 
+b1 
+a2 
+b2 
+a3 
+b3 
+InfoMolinete 
+RotToque 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolinete 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+MedDescMolineteVert 
+--- PDF PAGE 58 ---
+ 
+ 
+54 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Aferido - Número -  - -  
+ 
+Aferido MedDescMolineteVert 
+Numero - Número -  - -  Num MedDescMolineteVert 
+DistAc - Número -  - -  DistAc MedDescMolineteVert 
+LeitHodFundo - Número -  - -  LeitHodFundo MedDescMolineteVert 
+Arrasto - Número -  - -  Arrastro MedDescMolineteVert 
+ProfReal - Número -  - -  ProfReal MedDescMolineteVert 
+Numero de Pontos - Número -  - -  NumPontos MedDescMolineteVert 
+Toque 1 - Número -  - -  Toque 1 MedDescMolineteVert 
+Tempo 1 - Número -  - -  Tempo 1 MedDescMolineteVert 
+Toque 2 - Número -  - -  Toque 2 MedDescMolineteVert 
+Tempo 2 - Número -  - -  Tempo 2 MedDescMolineteVert 
+Toque 3 - Número -  - -  Toque 3 MedDescMolineteVert 
+Tempo 3 - Número -  - -  Tempo 3 MedDescMolineteVert 
+Toque 4 - Número -  - -  Toque 4 MedDescMolineteVert 
+Tempo 4 - Número -  - -  Tempo 4 MedDescMolineteVert 
+Toque 5 - Número -  - -  Toque 5 MedDescMolineteVert 
+Tempo 5 - Número -  - -  Tempo 5 MedDescMolineteVert 
+Toque 6 - Número -  - -  Toque 6 MedDescMolineteVert 
+Tempo 6 - Número -  - -  Tempo 6 MedDescMolineteVert 
+          
+--- PDF PAGE 59 ---
+ 
+ 
+55 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Medição de Descarga ADCP 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo MedDescADCP 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia MedDescADCP 
+Data X Data - DD/MM/AAAA - - Dia em que foram 
+realizadas as medições 
+Data MedDescADCP 
+Seção da Medição - Número -  - -  SecaoMedicao MedDescADCP 
+Seção da Régua - Número -  - -  SecaoRegua MedDescADCP 
+Numero de Medições - Número -  - -  NumMedicao MedDescADCPMedicao 
+Hora Inicial - Hora -  - -  HoraInicial MedDescADCPMedicao 
+Hora Final - Hora -  - -  HoraFInal MedDescADCPMedicao 
+Arquivo de Dados - Texto -  - -  ArqDados MedDescADCPMedicao 
+Arquivo de Conferencia - Texto -  - -  ArqConf MedDescADCPMedicao 
+Ensemble Inicial - Número -  - -  EnsembleInicial MedDescADCPMedicao 
+Ensemble Final - Número -  - -  EnsembleFInal MedDescADCPMedicao 
+Margens Iniciais - Número -  - -  MargemInicial MedDescADCPMedicao 
+Margens Finais - Número -  - -  MargemFinal MedDescADCPMedicao 
+Nível 1 - Número -  - -  Nivel1 MedDescADCPMedicao 
+Nível 2 - Número -  - -  Nivel2 MedDescADCPMedicao 
+QT - Número -  - -  QT MedDescADCPMedicao 
+--- PDF PAGE 60 ---
+ 
+ 
+56 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+AQ - Número -  - -  AQ MedDescADCPMedicao 
+QM - Número -  - -  QM MedDescADCPMedicao 
+Q - Número -  - -  Q MedDescADCPMedicao 
+Qmedida - Número -  - -  Qmedida MedDescADCPMedicao 
+Area - Número -  - -  Area MedDescADCPMedicao 
+Larg - Número -  - -  Larg MedDescADCPMedicao 
+Prof - Número -  - -  Prof MedDescADCPMedicao 
+VelMedida - Número -  - -  VelMedida MedDescADCPMedicao 
+M - Número -  - -  M MedDescADCPMedicao 
+DesvPad - Número -  - -  DesvPad MedDescADCPMedicao 
+CV - Número -  - -  CV MedDescADCPMedicao 
+Obs - Texto -  - -  Obs MedDescADCPMedicao 
+Granulometria 
+Código da estação X Número - 99999999 - 1 a 99999999 Código da estação onde 
+foram realizadas as 
+medições 
+EstacaoCodigo Granulometria 
+Nível de consistência X Número - 9 - 0 = Bruto 
+1 = Consistido 
+Indica o nível de 
+consistência do registro 
+NivelConsistencia Granulometria 
+Data X Data - DD/MM/AAAA    Data Granulometria 
+Hora Inicial  Hora - HH:MM    HoraInicial Granulometria 
+Hora Final  Hora - HH:MM    HoraFinal Granulometria 
+Cota  Número -     Cota Granulometria 
+--- PDF PAGE 61 ---
+ 
+ 
+57 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+Largura  Número -     Largura Granulometria 
+TipoAmostra  Número -     TipoAmostra Granulometria 
+TipoColeta  Texto -     TipoColeta Granulometria 
+TipoEquip  Texto -     TipoEquip Granulometria 
+ProfTotal  Número -     ProfTotal Granulometria 
+OrdemColeta  Número -     OrdemColeta Granulometria 
+DistPTOInicial  Número -     DistPTOInicial Granulometria 
+ChuvaUlt48  Número -     ChuvaUlt48 Granulometria 
+MatFundo15_9  Número -     MatFundo15_9 Granulometria 
+MatFundo8_0  Número -     MatFundo8_0 Granulometria 
+MatFundo4_0  Número -     MatFundo4_0 Granulometria 
+MatFundo2_0  Número -     MatFundo2_0 Granulometria 
+MatFundo1_0  Número -     MatFundo1_0 Granulometria 
+MatFundo0_5  Número -     MatFundo0_5 Granulometria 
+MatFundo0_25  Número -     MatFundo0_25 Granulometria 
+MatFundo0_125  Número -     MatFundo0_125 Granulometria 
+MatFundo0_0625  Número -     MatFundo0_0625 Granulometria 
+MatFundoArgila  Número -     MatFundoArgila Granulometria 
+MatFundoSilte  Número -     MatFundoSilte Granulometria 
+MatFundoAreia  Número -     MatFundoAreia Granulometria 
+MatFundoPedregulho  Número -     MatFundoPedregulho Granulometria 
+--- PDF PAGE 62 ---
+ 
+ 
+58 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+MatFundo0_0_a_0_0156  Número -     MatFundo0_0_a_0_0156 Granulometria 
+MatFundo0_0157_a_0_02  Número -     MatFundo0_0157_a_0_02 Granulometria 
+MatFundo0_0201_a_0_0625  Número -     MatFundo0_0201_a_0_0625 Granulometria 
+MatFundo0_0626_a_0_1250  Número -     MatFundo0_0626_a_0_1250 Granulometria 
+MatFundo0_1251_a_0_25  Número -     MatFundo0_1251_a_0_25 Granulometria 
+MatFundo0_2501_a_0_5  Número -     MatFundo0_2501_a_0_5 Granulometria 
+MatFundo0_501_a_1_0  Número -     MatFundo0_501_a_1_0 Granulometria 
+MatFundo1_0001_a_2_0  Número -     MatFundo1_0001_a_2_0 Granulometria 
+MatFundo2_0001_a_4_0  Número -     MatFundo2_0001_a_4_0 Granulometria 
+MatFundo4_0001_a_8_0  Número -     MatFundo4_0001_a_8_0 Granulometria 
+MatFundo8_0001_a_16_000  Número -     MatFundo8_0001_a_16_000 Granulometria 
+MatFundoD10  Número -     MatFundoD10 Granulometria 
+MatFundoD16  Número -     MatFundoD16 Granulometria 
+MatFundoD35  Número -     MatFundoD35 Granulometria 
+MatFundoD50  Número -     MatFundoD50 Granulometria 
+MatFundoD65  Número -     MatFundoD65 Granulometria 
+MatFundoD84  Número -     MatFundoD84 Granulometria 
+MatFundoD90  Número -     MatFundoD90 Granulometria 
+MatArrasteVazao  Número -     MatArrasteVazao Granulometria 
+MatArrasteLargRio  Número -     MatArrasteLargRio Granulometria 
+MatArrasteLargEquip  Número -     MatArrasteLargEquip Granulometria 
+--- PDF PAGE 63 ---
+ 
+ 
+59 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+MatArrastePesoMat  Número -     MatArrastePesoMat Granulometria 
+MatArrasteVelMedia  Número -     MatArrasteVelMedia Granulometria 
+MatArrasteTempAgua  Número -     MatArrasteTempAgua Granulometria 
+MatArrasteTempAr  Número -     MatArrasteTempAr Granulometria 
+MatArrasteTempoColeta  Número -     MatArrasteTempoColeta Granulometria 
+MatArrasteArraste  Número -     MatArrasteArraste Granulometria 
+MatArraste15_9  Número -     MatArraste15_9 Granulometria 
+MatArraste8_0  Número -     MatArraste8_0 Granulometria 
+MatArraste4_0  Número -     MatArraste4_0 Granulometria 
+MatArraste2_0  Número -     MatArraste2_0 Granulometria 
+MatArraste1_0  Número -     MatArraste1_0 Granulometria 
+MatArraste0_5  Número -     MatArraste0_5 Granulometria 
+MatArraste0_25  Número -     MatArraste0_25 Granulometria 
+MatArraste0_125  Número -     MatArraste0_125 Granulometria 
+MatArraste0_0625  Número -     MatArraste0_0625 Granulometria 
+MatArrasteArgila  Número -     MatArrasteArgila Granulometria 
+MatArrasteSilte  Número -     MatArrasteSilte Granulometria 
+MatArrasteAreia  Número -     MatArrasteAreia Granulometria 
+MatArrastePedregulho  Número -     MatArrastePedregulho Granulometria 
+MatArraste0_0_a_0_0156  Número -     MatArraste0_0_a_0_0156 Granulometria 
+MatArraste0_0157_a_0_02  Número -     MatArraste0_0157_a_0_02 Granulometria 
+--- PDF PAGE 64 ---
+ 
+ 
+60 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+MatArraste0_0201_a_0_0625  Número -     MatArraste0_0201_a_0_0625 Granulometria 
+MatArraste0_0626_a_0_1250  Número -     MatArraste0_0626_a_0_1250 Granulometria 
+MatArraste0_1251_a_0_25  Número -     MatArraste0_1251_a_0_25 Granulometria 
+MatArraste0_2501_a_0_5  Número -     MatArraste0_2501_a_0_5 Granulometria 
+MatArraste0_501_a_1_0  Número -     MatArraste0_501_a_1_0 Granulometria 
+MatArraste1_0001_a_2_0  Número -     MatArraste1_0001_a_2_0 Granulometria 
+MatArraste2_0001_a_4_0  Número -     MatArraste2_0001_a_4_0 Granulometria 
+MatArraste4_0001_a_8_0  Número -     MatArraste4_0001_a_8_0 Granulometria 
+MatArraste8_0001_a_16_000  Número -     MatArraste8_0001_a_16_000 Granulometria 
+MatArrasteD10  Número -     MatArrasteD10 Granulometria 
+MatArrasteD16  Número -     MatArrasteD16 Granulometria 
+MatArrasteD35  Número -     MatArrasteD35 Granulometria 
+MatArrasteD50  Número -     MatArrasteD50 Granulometria 
+MatArrasteD65  Número -     MatArrasteD65 Granulometria 
+MatArrasteD84  Número -     MatArrasteD84 Granulometria 
+MatArrasteD90  Número -     MatArrasteD90 Granulometria 
+MatSusp15_9  Número -     MatSusp15_9 Granulometria 
+MatSusp8_0  Número -     MatSusp8_0 Granulometria 
+MatSusp4_0  Número -     MatSusp4_0 Granulometria 
+MatSusp2_0  Número -     MatSusp2_0 Granulometria 
+MatSusp1_0  Número -     MatSusp1_0 Granulometria 
+--- PDF PAGE 65 ---
+ 
+ 
+61 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+MatSusp0_5  Número -     MatSusp0_5 Granulometria 
+MatSusp0_25  Número -     MatSusp0_25 Granulometria 
+MatSusp0_125  Número -     MatSusp0_125 Granulometria 
+MatSusp0_0625  Número -     MatSusp0_0625 Granulometria 
+MatSuspArgila  Número -     MatSuspArgila Granulometria 
+MatSuspSilte  Número -     MatSuspSilte Granulometria 
+MatSuspAreia  Número -     MatSuspAreia Granulometria 
+MatSuspPedregulho  Número -     MatSuspPedregulho Granulometria 
+MatSusp0_0_a_0_0156  Número -     MatSusp0_0_a_0_0156 Granulometria 
+MatSusp0_0157_a_0_02  Número -     MatSusp0_0157_a_0_02 Granulometria 
+MatSusp0_0201_a_0_0625  Número -     MatSusp0_0201_a_0_0625 Granulometria 
+MatSusp0_0626_a_0_1250  Número -     MatSusp0_0626_a_0_1250 Granulometria 
+MatSusp0_1251_a_0_25  Número -     MatSusp0_1251_a_0_25 Granulometria 
+MatSusp0_2501_a_0_5  Número      MatSusp0_2501_a_0_5 Granulometria 
+MatSusp0_501_a_1_0  Número -     MatSusp0_501_a_1_0 Granulometria 
+MatSusp1_0001_a_2_0  Número -     MatSusp1_0001_a_2_0 Granulometria 
+MatSusp2_0001_a_4_0  Número -     MatSusp2_0001_a_4_0 Granulometria 
+MatSusp4_0001_a_8_0  Número -     MatSusp4_0001_a_8_0 Granulometria 
+MatSusp8_0001_a_16_000  Número -     MatSusp8_0001_a_16_000 Granulometria 
+MatSuspD10  Número -     MatSuspD10 Granulometria 
+MatSuspD16  Número -     MatSuspD16 Granulometria 
+--- PDF PAGE 66 ---
+ 
+ 
+62 
+Estação NV Tipo Tamanho Formato Unidade Valores Válido Descrição Campo Tabela 
+MatSuspD35  Número -     MatSuspD35 Granulometria 
+MatSuspD50  Número -     MatSuspD50 Granulometria 
+MatSuspD65  Número -     MatSuspD65 Granulometria 
+MatSuspD84  Número -     MatSuspD84 Granulometria 
+MatSuspD90  Número -     MatSuspD90 Granulometria 
+NV – Não Vazio 
+ 
+--- PDF PAGE 67 ---
+ 
+ 
+63 
+Tabela 2 – Parâmetros climatológicos 
+Código Nome Unidade 
+10 Temperatura do Ar - Média °C 
+11 Temperatura do Ar - Máxima °C 
+12 Temperatura do Ar - Mínima °C 
+20 Temperatura da Água - Média °C 
+21 Temperatura da Água - Máxima °C 
+22 Temperatura da Água - Mínima °C 
+30 Temperatura do Solo - Média °C 
+31 Temperatura do Solo - Máxima °C 
+32 Temperatura do Solo - Mínima °C 
+40 Anemômetro do Tanque km/h 
+41 Anemômetro do Tanque - Leitura - 
+42 Anemômetro Elevado km/h 
+43 Anemômetro Elevado - Leitura - 
+50 Evaporação - Piche mm 
+51 Evaporímetro de Piche - Leitura - 
+52 Evaporímetro de Piche - Complemento - 
+60 Evaporação - Tanque mm 
+61 Tanque Evaporimétrico - Leitura - 
+62 Tanque Evaporimétrico - Complemento - 
+70 Chuva - Pluviômetro mm 
+71 Chuva - Pluviógrafo mm 
+80 Insolação - Horas e Décimos - 
+90 Umidade Relativa do Ar % 
+91 Termômetro Seco - Leitura °C 
+92 Termômetro Úmido - Leitura °C 
+100 Pressão Atmosférica mb 
+ 
+--- PDF PAGE 68 ---
+ 
+ 
+64 
+8 Informações para Desenvolvedores 
+ 
+A seguir são fornecidas algumas informações para aqueles que desejam desenvolver 
+aplicações que utilizem bancos de dados criados pelo Hidro. 
+Objetos do Banco de Dados 
+Todos os bancos de dados do Hidro (em qualquer tipo de ambiente) devem conter os 
+seguintes objetos: 
+Tabela 3 – Objetos do banco de dados 
+Objeto Descrição 
+Tabelas 
+Bacia Armazena os registros de bacia. 
+SubBacia Armazena os registros de sub-bacia. 
+Rio Armazena os registros de rio. 
+Estado Armazena os registros de estado. 
+Municipio Armazena os registros de município. 
+Entidade Armazena os registros de entidade. 
+Estacao Armazena os registros de estação. 
+PlanTrab Armazena os dados de identificação dos registros de plano de trabalho.  
+PlanTrabPonto Armazena os pontos de operação dos planos de trabalho. 
+Cotas Armazena os registros de cotas. Cada linha corresponde  a um mês de 
+leitura. 
+Cotas24 Armazena os registros de cotas a cada hora do dia, sendo armazenados 24 
+valores de cotas. Cada registro faz referencia a 1 dia. 
+Vazoes Armazena os registros de vazões. Cada linha corresponde a um mês de 
+leitura. 
+Vazoes24 Armazena os registros de vazões a cada hora do dia, sendo armazenados 24 
+valores de vazões. Cada registro faz referencia a 1 dia. 
+Chuvas Armazena os registros de chuvas. Cada linha corresponde a um mês de 
+leitura. 
+Chuva2 Armazena os registros de chuvas col etadas 2 vezes ao dia. Cada linha 
+armazenada no banco faz referencia a todas as leituras de um mês. 
+Chuvas24 Armazena os registros de chuvas a cada hora do dia, sendo armazenados 24 
+valores de chuvas. Cada linha armazenada no banco faz referencia a 1 dia.  
+Clima Armazena os registros de clima. Cada linha corresponde a um mês de 
+leitura. 
+QualAgua Armazena os registros de qualidade da água, com exceção dos status dos 
+parâmetros. 
+QualAguaStatus Armazena os status dos parâmetros de qualidade da água. 
+--- PDF PAGE 69 ---
+ 
+ 
+65 
+Objeto Descrição 
+ResumoDescarga Armazena os registros de resumo de descarga líquida. 
+Sedimentos Armazena os registros de sedimentos. 
+CurvaDescarga Armazena os registros de curva de descarga, com exceção da tabela Cota X 
+Vazão. 
+CurvaDescargaTabelaVazao Armazena as vazões das t abelas Cota X Vazão dos registros de curva de 
+descarga. 
+PerfilTransversal Armazena os registros de perfil transversal, com exceção das verticais. 
+PerfilTransversalVert Armazena as verticais dos registros de perfil transversal. 
+MedDescADCP Armazena os registros de Medição de descarga liquida ADCP, com exceção 
+das medições. 
+MedDescADCPMedicao Armazena as medições da descarga liquida ADCP. 
+MedDescMolinete Armazena os registros de Medição de descarga liquida Molinete, com 
+exceção das medições verticais. 
+MedDescMolineteVert Armazena as verticais dos registros de Medição de descarga liquida 
+Molinete. 
+Granulometria Armazena os registros de Granulometria. 
+Imagem Armazena as imagens associadas aos registros de estação. 
+Usuario Armazena o cadastro de usuários . Para maior segurança, as senhas dos 
+usuários são criptografadas. 
+Versao Contém informações sobre a versão do banco de dados. Importante: essa 
+tabela não deve ser modificada pelo usuário. 
+Identificadores Contém contadores para a geração de identificador es de novos registros ou 
+imagens (veja o tópico a seguir Tabela Identificadores). 
+Visões 
+EstacaoValida Contém todas as estações da área de “Registros Permanentes” do banco de 
+dados. 
+Estacao_Cotas Utilizada na consulta a registros de cotas. Corresponde a  associação da 
+tabela Cotas com a visão EstacaoValida. 
+Estacao_Vazoes Utilizada na consulta a registros de vazões. Corresponde a associação da 
+tabela Vazoes com a visão EstacaoValida. 
+Estacao_Chuvas Utilizada na consulta a registros de chuvas. Correspond e a associação da 
+tabela Chuvas com a visão EstacaoValida. 
+Estacao_Clima Utilizada na consulta a registros de clima. Corresponde a associação da 
+tabela Clima com a visão EstacaoValida. 
+Estacao_QualAgua Utilizada na consulta a registros de qualidade da ág ua. Corresponde a 
+associação da tabela QualAgua com a visão EstacaoValida. 
+Estacao_ResumoDescarga Utilizada na consulta a registros de resumo de descarga. Corresponde a 
+associação da tabela ResumoDescarga com a visão EstacaoValida. 
+Estacao_Sedimentos Utilizada na consulta a registros de sedimentos. Corresponde a associação 
+da tabela Sedimentos com a visão EstacaoValida. 
+Estacao_CurvaDescarga Utilizada na consulta a registros de curva de descarga. Corresponde a 
+--- PDF PAGE 70 ---
+ 
+ 
+66 
+Objeto Descrição 
+associação da tabela CurvaDescarga com a visão EstacaoValida. 
+Estacao_PerfilTransversal Utilizada na consulta a registros de perfil transversal. Corresponde a 
+associação da tabela PerfilTransversal com a visão EstacaoValida. 
+Series_Cotas Utilizada na seleção de séries de cotas. Contém uma lista co m campos de 
+identificação de todas as séries de cotas do banco de dados. 
+Series_Vazoes Utilizada na seleção de séries de vazões. Contém uma lista com campos de 
+identificação de todas as séries de vazões do banco de dados. 
+Series_Chuvas Utilizada na seleção de séries de chuvas. Contém uma lista com campos de 
+identificação de todas as séries de chuvas do banco de dados. 
+Series_Clima Utilizada na seleção de séries de clima. Contém uma lista com campos de 
+identificação de todas as séries de clima do banco de dados. 
+Series_QualAgua Utilizada na seleção de séries de qualidade da água. Contém uma lista com 
+campos de identificação de todas as séries de qualidade da água do banco 
+de dados. 
+Series_ResumoDescarga Utilizada na seleção de séries de resumo de descarg a líquida. Contém uma 
+lista com campos de identificação de todas as séries de resumo de descarga 
+do banco de dados. 
+Series_Sedimentos Utilizada na seleção de séries de sedimentos. Contém uma lista com 
+campos de identificação de todas as séries de sediment os do banco de 
+dados. 
+Series_CurvaDescarga Utilizada na seleção de curvas de descarga. Contém uma lista com campos 
+de identificação de todas as curvas de descarga do banco de dados. 
+Series_PerfilTransversal Utilizada na seleção de perfis transversais. Co ntém uma lista com campos 
+de identificação de todos os perfis transversais do banco de dados. 
+Procedimentos Armazenados (somente para SQL Server e Oracle)  
+SP_RefazerIdentificadores Procedimento armazenado utilizado para refazer todas as atribuições de 
+identificadores de registros, imagens e usuários do banco de dados. 
+Iniciando em 1, a atribuição de novos identificadores vai até o número 
+máximo de registros, imagens ou usuários (veja o tópico a seguir Tabela 
+Identificadores). 
+Regras de Usuários (somente para SQL Server) 
+hidro_leitor Definição das regras de acesso ao banco de dados para usuários leitores.  
+hidro_tecnico Definição das regras de acesso ao banco de dados para usuários técnicos.  
+hidro_admin Definição das regras de acesso ao banco de dados pa ra usuários 
+administradores. 
+ 
+ 
+ 
+Nota: o usuário pode criar novos objetos no banco de dados para uso em suas aplicações, isso não vai afetar o 
+funcionamento do Hidro. 
+--- PDF PAGE 71 ---
+ 
+ 
+67 
+Campos Especiais dos Registros 
+Todos os registros do Hidro possuem um conjunto de campos especiais que são utilizados 
+internamente pela aplicação para identificação ou controle desses registros. Esses campos são 
+os seguintes: 
+Tabela 4 – Campos especiais dos registros do Hidro 
+Campo Tipo Bytes Descrição 
+RegistroID Numérico 8 Campo numérico inteiro que identifica unicamente o registro em 
+todo o banco de dados. Para novos registros, o valor desse campo 
+é obtido a partir de um contador localizado na tabela 
+Identificadores (veja maiores informações sobre essa tabela a 
+seguir). 
+Importado Numérico 1 Campo numérico inteiro que indica a área onde se localiza o 
+registro. Os valores válidos para esse campo são os seguintes: 
+ 0 – “Registros Permanentes” 
+ 1 – “Registros Importados” 
+ 2 – “Registros Novos” 
+Temporario Numérico 1 Campo n umérico inteiro que, quando igual a 1, indica um 
+registro temporário. Seus valores válidos são os seguintes: 
+ 0 – registro não temporário. 
+ 1 – registro temporário. 
+Nota: atualmente esse campo não é utilizado pelo Hidro (seu 
+valor é sempre 0), mas pode ser u tilizado pelas aplicações do 
+usuário para identificar registros de uso transiente (utilizados, 
+digamos, durante algum tipo de cálculo). 
+Removido Numérico 1 Campo numérico inteiro que, quando igual a 1, indica um 
+registro da área de “Registros Excluídos” ( ou seja, um registro 
+excluído pelo usuário mas ainda não removido do banco de 
+dados). Seus valores válidos são os seguintes: 
+ 0 – registro não excluído. 
+ 1 – registro excluído. 
+ImportadoRepetido Numérico 1 Campo numérico inteiro utilizado durante a importaç ão de 
+registros que, quando igual a 1, indica se o registro está repetido 
+na área de “Registros Permanentes”. Seus valores válidos são os 
+seguintes: 
+ 0 – o registro não está repetido ou a checagem de repetição 
+de registros não foi realizada. 
+ 1 – o registro está repetido. 
+DataIns Data 10 Campo data deverá ser armazenado e não poderá ser alterado, 
+guardará a data da geração do registro. 
+DataAlt Data 10 Campo data deverá ser armazenado sempre a data da ultima 
+alteração feita no registro. 
+RespAlt Numérico 8 Campo numérico inteiro utilizado para armazenar o código do 
+usuário responsável pela ultima alteração feita no regitro. 
+--- PDF PAGE 72 ---
+ 
+ 
+68 
+Tabela Identificadores 
+ 
+A tabela Identificadores do banco de dados é de extrema importância para aqueles que 
+desejam desenvolver aplicações que criem novos registros no Hidro. Essa tabela contém dois 
+campos numéricos, denominados RegistroID e ImagemID, que são utilizados para gerar 
+novos identificadores de registros ou imagens. Eles devem ser utilizados da seguinte forma: 
+a) Antes de criar um  registro ou imagem, o campo RegistroID ou ImagemID, 
+respectivamente, deve ser incrementado em 1. 
+b) O valor incrementado deve ser utilizado como identificador do novo registro 
+ou imagem, ou seja, esse valor deve ser atribuído, respectivamente, ao campo 
+RegistroID ou ImagemID do registro ou imagem. 
+ 
+Importante1: o processo de leitura, incremento e atualização dos campos RegistroID e ImagemID deve ser feito 
+em uma única transação e de forma exclusiva. 
+Importante2: os contadores RegistroID e ImagemID suportam valores até 179.769.313.486.232, acima disso, o 
+usuário deve executar o procedimento SP_RefazerIdentificadores para refazer todas as atribuições de 
+identificadores do banco de dados. 
+Importante3: a tabela Identificadores contém mais um campo, denominado UsuarioID, que é utilizado na 
+criação de novos usuários. O uso desse campo não será discutido aqui pois a manutenção do cadastro de usuários 
+deve ser uma atribuição exclusiva do Hidro. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- PDF PAGE 73 ---
+ 
+ 
+69 
+9 Conclusões e Recomendações 
+ 
+É imprescindível que os dados  hidrológicos, brutos e consistidos,  sejam encaminhado em 
+arquivo formato MDB compatível com o sistema HIDRO. 
+ 
+O Relatório que encaminhará os dados obtidos no âmbito da Resolução ANEEL 396/98 deve 
+detalhar todos os procedimentos de consistência de dados fl uviométricos e pluviométricos, 
+cujos documentos orientativos já disponibilizados pela ANA foram citados neste documento. 
+ 
+Os Relatórios e dados hidrológicos que não estiverem no formato indicado neste documento 
+serão devolvidos para os ajustes necessários,  visto que não será possível sua inserção na base 
+do Sistema Nacional de Informações sobre Recursos Hídricos – SNIRH.  
+ 
+Caso a empresa opte por apresentar um único Relatório e arquivo no formato Hidro 
+(*.MDB) para as estações hidrométricas de todas as suas  Usinas, é importante que 
+apresente uma Tabela descrevendo as estações vinculadas a cada Usina. Ressalta-se que 
+cada autorizado/concessionário deve apresentar seu Relatório, evitando inserir em um 
+mesmo Relatório/CD analises de estações de empresas diferentes.  
+ 
+ 
+--- PDF PAGE 74 ---
+ 
+ 
+70 
+10 Glossário 
+ 
+ANA Agência Nacional de Águas. 
+ANEEL Agência Nacional de Energia Elétrica. 
+SGH Superintendência de Gestão da Rede Hidrometeorológica 
+Arquivo de Intercâmbio Arquivos Access especiais para a troca de dados entre bancos de dados 
+Hidro. 
+Dados de Inventário Dados do inventário hidrometeorológico do Hidro, como estações, rios, 
+sub-bacias etc. 
+Dados de Série Dados hidrometeorológicos que compõem uma série histórica de medições. 
+Essas medições podem ser diretas, como cotas e chuvas, ou ind iretas, como 
+vazões calculadas a partir de uma curva de descarga. 
+DBA Administrador de Banco de Dados (Database Administrator). 
+DNAEE Departamento Nacional de Águas e Energia Elétrica (extinto). 
+Hidro Sistema de Informações Hidrológicas. 
+Lixeira Pasta contendo registros marcados como excluídos , mas ainda não 
+removidos definitivamente do banco de dados. 
+MDAC Microsoft Data Access Components – conjunto de componentes para acesso 
+a vários tipos de bancos de dados em ambiente Windows. 
+MDI Multiple Document Interface – tipo de aplicação Windows que permite que 
+várias janelas estejam abertas simultaneamente. 
+MSDHD Microssistema de Dados Hidrometeorológicos – antigo sistema para 
+gerenciamento de dados hidrológicos do DNAEE. 
+ODBC Microsoft Open Database Connectivity – camada de abstração de dados para 
+acesso transparente a vários tipos de bancos de dados. 
+Registro Unidade básica para processamento de dados do Hidro. 
+SGBD Sistema Gerenciador de Banco de Dados. 
+SQL Structed Query Language – linguagem para definição e manipulação de 
+dados em um banco de dados relacional. 
+SIH  Superintendência de Estudos e Informações Hidrológicas da ANEEL. 
+– Ou – 
+Superintendência de Informações Hidrológicas da ANA. 
+– Ou – 
+Sistema de Informações Hidrológicas – antigo sistema para gerenciamento 
+de dados hidrológicos do DNAEE. 
+--- PDF PAGE 75 ---
+ 
+ 
+71 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

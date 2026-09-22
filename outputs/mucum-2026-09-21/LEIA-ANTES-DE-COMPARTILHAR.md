@@ -1,0 +1,1 @@
+A extrapolação nesta pasta foi superada pela análise da bacia e reprovada para uso como previsão pública. Consulte ../mucum-bacia-2026-09-21/relatorio.md e o gráfico de observações, que não promete cotas futuras.

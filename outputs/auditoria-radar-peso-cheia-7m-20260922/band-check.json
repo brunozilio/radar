@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "groups": 4,
+  "results": [
+    {
+      "phase": "test",
+      "profile": "A",
+      "horizon_h": 12,
+      "family": "mixed_profile_candidate",
+      "observed_level_band": "7_to_9m",
+      "scheduled_rows": 120,
+      "unknown_truth": 0,
+      "observed_targets": 120,
+      "pairs": 120,
+      "failures": 0,
+      "hits": 44,
+      "sum_abs_error_m": 91.9238497092283,
+      "mae_m": 0.7660320809102359,
+      "bias_m": -0.5182508756593414,
+      "max_abs_m": 3.323315913385237
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "horizon_h": 12,
+      "family": "flood_weight_7m",
+      "observed_level_band": "7_to_9m",
+      "scheduled_rows": 120,
+      "unknown_truth": 0,
+      "observed_targets": 120,
+      "pairs": 120,
+      "failures": 0,
+      "hits": 39,
+      "sum_abs_error_m": 96.17471423268927,
+      "mae_m": 0.8014559519390773,
+      "bias_m": -0.4921482251317882,
+      "max_abs_m": 3.3663647337398412
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "horizon_h": 12,
+      "family": "mixed_profile_candidate",
+      "observed_level_band": "7_to_9m",
+      "scheduled_rows": 120,
+      "unknown_truth": 0,
+      "observed_targets": 120,
+      "pairs": 120,
+      "failures": 0,
+      "hits": 49,
+      "sum_abs_error_m": 93.77419164884041,
+      "mae_m": 0.7814515970736701,
+      "bias_m": -0.5327899506662842,
+      "max_abs_m": 3.3906966197328137
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "horizon_h": 12,
+      "family": "flood_weight_7m",
+      "observed_level_band": "7_to_9m",
+      "scheduled_rows": 120,
+      "unknown_truth": 0,
+      "observed_targets": 120,
+      "pairs": 120,
+      "failures": 0,
+      "hits": 40,
+      "sum_abs_error_m": 99.0593032495626,
+      "mae_m": 0.825494193746355,
+      "bias_m": -0.5075783379479347,
+      "max_abs_m": 3.463306213913791
+    }
+  ],
+  "input_sha256": {
+    "outputs/experimento-radar-peso-cheia-7m-20260922/predictions.csv": "90d221246b69af6fc9c80a909a2723efde58df00cd6d01eea23d63353d3935f3",
+    "outputs/analise-radar-peso-cheia-7m-20260922/level-band-metrics.csv": "adfea93da0300e2fab22f52b5e636e9b73f3df5a5109e8c8558635a24263b1bf",
+    "outputs/analise-radar-peso-cheia-7m-20260922/artifact-hashes.json": "0ab5063520edfc086fa1a2033c9fa2ad391119416ce7b08da0a7b16bdc5b790e"
+  },
+  "scope": "Only test h12 [7,9), old mixed/candidate, profiles A/B. No inference or full secondary-analysis audit."
+}

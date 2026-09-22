@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hidro-Telemetria / Sobre o Sistema</title>
+    <link rel="shortcut icon" href="inc/img/favicon.ico">
+    <link href="inc/css/stylesRhn.css" rel="stylesheet" type="text/css" />
+    <link href="inc/css/stylesGeral.css" rel="stylesheet" />
+    <style type="text/css">
+        #titSistema {
+            text-align: center;
+            width: 1164px;
+        }
+
+        #divCookie {
+            /*margin: 25px 0;*/
+        }
+
+            #divCookie #pnlModalPadraoFundo {
+                display: none;
+                z-index: 1005;
+                background-color: Gray;
+                filter: alpha(opacity=80);
+                opacity: 0.80;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                position: fixed;
+                height: 100%;
+            }
+
+            #divCookie #pnlInfoNavegador {
+                color: #000;
+                display: none;
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                z-index: 1005;
+                background-color: white;
+                filter: alpha(opacity=100);
+                opacity: 1;
+                right: 0;
+                left: 50%;
+                margin-left: -450px;
+                color: #5D7B9D;
+                width: 900px;
+                height: auto;
+                padding: 15px 6px;
+                position: absolute;
+                top: 155px;
+            }
+
+            #divCookie .texts {
+                margin-top: 13px;
+                text-align: left;
+                text-indent: 50px;
+                line-height: 25px;
+            }
+
+                #divCookie .texts a {
+                    color: #000000;
+                    font-weight: bold;
+                }
+
+                    #divCookie .texts a:hover {
+                        color: blue;
+                    }
+    </style>
+
+    <!--<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+    <script language="javascript" type="text/javascript" src="inc/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        function checkCookies() {
+            if (navigator.cookieEnabled == true) {
+                document.getElementById("divAcessoMapa").style.display = "block";
+                document.getElementById("divCookie").style.display = "none";
+                //alert("true");
+            } else {
+                document.getElementById("divAcessoMapa").style.display = "none";
+                document.getElementById("divCookie").style.display = "block";
+                //alert("false");
+            }
+        }
+
+        function infoModalExibe(divName) {
+            document.getElementById("pnlModalPadraoFundo").style.display =
+                document.getElementById("pnlInfoNavegador").style.display =
+                document.getElementById(divName).style.display = "block";
+        }
+        function infoModalFecha(divName) {
+            document.getElementById("pnlModalPadraoFundo").style.display =
+                document.getElementById("pnlInfoNavegador").style.display =
+                document.getElementById("pnlChrome").style.display =
+                document.getElementById("pnlEdge").style.display =
+                document.getElementById("pnlIe").style.display =
+                document.getElementById("pnlFirefox").style.display =
+                document.getElementById("pnlOpera").style.display = "none";
+        }
+
+        $(document).ready(function () {
+            if (navigator.cookieEnabled == true) {
+                //$("#lnkMapa").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "Default.aspx/SetCookie",
+                    data: "",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function () {
+
+                        $("#divAcessoMapa").css('display', 'block'); //.style.display = "block";
+                        $("#divCookie").css('display', 'none'); //.style.display = "none";
+
+                        //alert('Cookie Ok');
+                    },
+                    error: function (req, status, error) {
+
+                        $("#divAcessoMapa").css('display', 'none'); //.style.display = "none";
+                        $("#divCookie").css('display', 'block'); //.style.display = "block";
+
+                        alert(error);
+                    }
+                });
+                //});
+                return false;
+            } else {
+                $("#divAcessoMapa").css('display', 'none');
+                $("#divCookie").css('display', 'block');
+            }
+        });
+    </script>
+</head>
+<!--<body onload="checkCookies();">-->
+<body>
+        <span style="position: relative; z-index: 1000">
+        </span>
+        <div id="barraana"></div>
+        <div id="tudo">
+            <div id="topo">
+
+                <div id="logo" style="text-align: center;">
+                    <img id="Image1" src="inc/img/MarcaRHN-Transp-Topo.png" title="Rede Hidrometeorológica Nacional" alt="Rede Hidrometeorológica Nacional" />
+                </div>
+
+                <div id="topoCenter">
+
+                    <div id="titSistema" title="Sistema Gerenciados de dados transmitidos pelas Plataformas de Coletas de Dados - PCD"
+                         alt="Sistema Gerenciados de dados transmitidos pelas Plataformas de Coletas de Dados - PCD">
+                        Sistema HIDRO - Telemetria
+                    </div>
+
+                    <div id="MenuEsq" style="position: relative;z-index: 10"></div>
+                    <div style="clear: both"></div>
+                </div>
+
+                <div id="topoDir"></div>
+                <br /><br />
+
+            </div>
+
+            <div id="conteudo">
+
+                
+                
+                
+
+                <div style="clear: both"></div>
+                <div id="titulo" class="titulo">Sobre o Sistema Hidro-Telemetria</div>
+                <div id="tutorial">
+                    <div style="margin-top:13px; text-align:justify; text-indent:50px;line-height:25px;">
+                        Este sistema tem por objetivo realizar a aquisição, qualificação e gestão dos dados hidrometeorológicos, transmitidos em tempo quase real, do Sistema Nacional de Informações sobre Recursos Hídricos - SNIRH.
+                    </div>
+                    <div style="margin-top:13px;text-align:justify; text-indent:50px;line-height:25px;">
+                        Apesar do sistema permitir o download das séries históricas, por questão de desempenho, recomenda-se que o usuário utilize o portal Hidroweb (<a href="http://www.snirh.gov.br/hidroweb" alt="Portal hidroweb" title="Portal Hidroweb" target="_blank">http://www.snirh.gov.br › hidroweb</a>) para esta finalidade.
+                    </div>
+
+                    <div style="clear:both;height:25px;"></div>
+                    <div id="divCookie" style="display:none;">
+
+                        <div style="text-align:justify; text-indent:50px;color:red;font-weight:bold;">
+                            IMPORTANTE
+                        </div>
+
+                        <div class="texts">
+                            <b>O que são cookies</b>
+                        </div>
+                        <div class="texts">
+                            Cookies são usados para armazenar informações gerais sobre a navegação dos usuários no site,
+                            como o horário em que a visita ocorreu, se o visitante já esteve no site antes e qual foi o
+                            site de origem daquele visitante. Os navegadores não compartilham seus cookies entre outros domínios.
+                        </div>
+                        <div class="texts">
+                            Esses arquivos são colocados em seu computador para rastrear movimentos dentro do site, como visitas
+                            as páginas e anúncios. Cookies não armazenam informações pessoais sem que o usuário as tenha fornecido
+                            e não coletam informações registradas em seu computador.
+                        </div>
+                        <div class="texts">
+                            Para o <b>Hidro-Telemetria</b>, é obrigatório que o seu navegador permita a gravação de cookies.
+                        </div>
+                        <div class="texts">
+                            <!--http://bancovw.com.br/br/home/politica-privacidade/como-desabilitar-cookies.html-->
+                            <!--Saiba como habilitar a gravação por tipo de navegador:-->
+                            Saiba como habilitar a uttilização em alguns dos principais navegadores:
+                            <a href="#" onclick="infoModalExibe('pnlChrome');">Google Chrome</a>,
+                            <a href="#" onclick="infoModalExibe('pnlEdge');">Microsoft Edge</a>,
+                            <a href="#" onclick="infoModalExibe('pnlIe');">Microsoft Internet Explorer</a>,
+                            <a href="#" onclick="infoModalExibe('pnlFirefox');">Mozilla Firefox</a>,
+                            <a href="#" onclick="infoModalExibe('pnlOpera');">Opera</a>.
+                            <div id="pnlModalPadraoFundo" onclick="infoModalFecha('pnlInfoNavegador');"></div>
+                            <div id="pnlInfoNavegador">
+                                <div id="pnlFechar" style="float:right; font-weight:bold; color:red; font-size:1.5em; margin-top:-15px;"
+                                     onclick="infoModalFecha('pnlInfoNavegador');" title="Fechar">X</div>
+                                <div style="clear:both"></div>
+                                <div id="pnlChrome" Style="display:none; padding:0 10px;">
+                                    <div style="font-weight:bold;">Google Chrome.</div>
+                                    <hr />
+                                    <span style="line-height:25px;">
+                                        1.&nbsp;&nbsp;Clique no ícone do menu do Google Chrome;<br />
+                                        2.&nbsp;&nbsp;Selecione "Configurações";<br />
+                                        3.&nbsp;&nbsp;Na parte inferior da página, clique em "Mostrar configurações avançadas";<br />
+                                        4.&nbsp;&nbsp;Na seção "Privacidade", clique em Configurações de conteúdo;<br />
+                                        5.&nbsp;&nbsp;Ativar ou desativar cookies:<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para ativar os cookies, selecione "Permitir a configuração de dados locais (recomendado)";<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para desativar os cookies, selecione "Bloquear as configurações de quaisquer dados dos sites".
+                                    </span>
+                                </div>
+                                <div id="pnlEdge" Style="display:none; padding:0 10px;">
+                                    <span style="font-weight:bold;">Microsoft Edge.</span>
+                                    <hr />
+                                    <span style="line-height:25px;">
+                                        1.&nbsp;&nbsp;Clique no ícone de três pontos, parecido com reticências, (…) no canto superior direito da tela;<br />
+                                        2.&nbsp;&nbsp;Selecione "Configurações";<br />
+                                        3.&nbsp;&nbsp;Clique em “exibir/mostrar configurações avançadas”;<br />
+                                        4.&nbsp;&nbsp;Vá até o fim do novo menu que aparece;<br />
+                                        5.&nbsp;&nbsp;Nas opções que aparece abaixo de cookies, clique e escolha "não bloquear cookies";<br />
+                                        6.&nbsp;&nbsp;Alternativamente, você pode optar por bloquear cookies ou bloquear apenas cookies de terceiros;<br />
+                                        7.&nbsp;&nbsp;Para sair do painel de configurações, basta clicar em qualquer outro lugar na página.
+                                    </span>
+                                </div>
+                                <div id="pnlIe" Style="display:none; padding:0 10px;">
+                                    <span style="font-weight:bold;">Microsoft Internet Explorer.</span>
+                                    <hr />
+                                    <span style="line-height:25px;">
+                                        * Para desabilitar cookies:<br />
+                                        1.&nbsp;&nbsp;Toque ou clique no ícone do “Internet Explorer” na área de trabalho ou na barra de tarefas;<br />
+                                        2.&nbsp;&nbsp;Toque ou clique no botão “Ferramentas” e depois em “Opções da Internet”;<br />
+                                        3.&nbsp;&nbsp;Toque ou clique na guia “Privacidade” e, em seguida, em “Configurações”. Mova o controle deslizante até em cima para bloquear todos os cookies e clique em “OK”.<br /><br />
+                                        * Para personalizar configurações de cookies:<br />
+                                        1.&nbsp;&nbsp;Abra a área de trabalho e clique no ícone do “Internet Explorer” na barra de tarefas;<br />
+                                        2.&nbsp;&nbsp;Clique no botão “Ferramentas” e depois em “Opções da Internet”;<br />
+                                        3.&nbsp;&nbsp;Na guia “Privacidade” siga um ou mais destes procedimentos:<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para definir os tipos de cookies que serão bloqueados ou permitidos, mova o controle deslizante;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para bloquear ou permitir sites específicos, clique em “Sites”;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para importar um arquivo de preferências de privacidade, clique em “Importar”;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para substituir as configurações de privacidade para determinados tipos de cookies, clique em “Avançado”;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- para restaurar as configurações de privacidade originais, clique em “Padrão”.<br />
+                                        4.&nbsp;&nbsp;Quando terminar de fazer as alterações, clique em “OK”.
+                                    </span>
+                                </div>
+                                <div id="pnlFirefox" Style="display:none; padding:0 10px;">
+                                    <span style="font-weight:bold;">Firefox.</span>
+                                    <hr />
+                                    <span style="line-height:25px;">
+                                        1.&nbsp;&nbsp;No topo da janela do Firefox, clique no botão Firefox, selecione Opções, e na janela seguinte, clique no item “Privacidade”<br />
+                                        2.&nbsp;&nbsp;Na opção “O Firefox deve:” selecione “Usar minhas configurações”;<br />
+                                        3.&nbsp;&nbsp;Marque “Sites podem definir cookies” para ativar Cookies ou desmarque para desativá-los:<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- se você está tentando resolver problemas com cookies, cheque se “Inclusive cookies de elementos fora do site visitado” está marcado. Para mais informações, clique aqui (em inglês).<br />
+                                        4.&nbsp;&nbsp;Defina quanto tempo os cookies podem durar:<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- preservar cookies até: “Perderem a validade”: Cada cookie será removido quando ele alcançar sua data de validade, que é definida pelo site que enviou o cookie;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- preservar cookies até: “Sair do Firefox”: Os cookies que estiverem no seu computador serão apagados quando o Firefox for fechado;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- preservar cookies até: “Perguntar”: Mostra um alerta toda vez que um site tenta enviar um cookie e pergunta se você deseja ou não guardá-lo.<br />
+                                        5.&nbsp;&nbsp;Clique em OK para fechar a janela de Opções.
+                                    </span>
+                                </div>
+                                <div id="pnlOpera" Style="display:none; padding:0 10px;">
+                                    <span style="font-weight:bold;">Opera.</span>
+                                    <hr />
+                                    <span style="line-height:25px;">
+                                        1.&nbsp;&nbsp;Clique no menu "Configuração fácil" no canto superior esquerdo do navegador;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- no menu que aparece, vá até o final e clique em "Ir para as configurações dos navegador".<br />
+                                        2.&nbsp;&nbsp;Na nova aba aberta, clique em "Segurança e Privacidade" no menu do lado esquerdo;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- localize o item "Configurações do site" e clique;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- localize e clique em em Permissões / Cookie;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- marque a opção "Permitir que os sites salvem e leiam os dados de arquivos "cookies" - que armazenam temporariamente o que você visitou na rede. (Recomendado)".
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear:both;height:25px;"></div>
+                    </div>
+
+                    <div id="divAcessoMapa" style="text-indent:50px;display:none;">
+                        <a href="Mapa.aspx" id="lnkMapa" class="btn btn-success btn-sm"><span class="btn-icon">Acesso ao Mapa</span></a>
+                    </div>
+
+                    <!--<div style="margin-top:25px;text-align:justify; text-indent:50px;line-height:25px;">
+            Para relatar problemas, dúvidas ou sugestões entre em contato pelo (61) 2109-5513/5309 ou pelo <a href="https://www.ana.gov.br/fale-conosco-1/fale-conosco" target="_blank">Fale conosco</a>.
+        </div>-->
+                </div>
+                <div style="clear: both; height:20px;"></div>
+            </div>
+
+        </div>
+
+        <div class="rodape">
+            <div class="logoana" style="position: relative; float: left; border: 0px">
+                <a href="http://www2.ana.gov.br/Paginas/default.aspx">
+                    <img src="inc/img/MarcaANA-Transp.png" border="0" alt="Link / Marca da Agência Nacional de Águas" />
+                </a>
+            </div>
+
+            <div class="endereco" style="position: relative; float: left; line-height: 16px;">
+                <em style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(153, 153, 153); width: auto; height: 60px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(238, 238, 238);">
+                    <strong style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);">Agência Nacional de Águas - ANA</strong><br style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);" />
+                    Setor Policial, Área 5, Quadra 3, Blocos &quot;B&quot;,&quot;L&quot;,&quot;M&quot; e &quot;T&quot;.<br style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);" />
+                    Brasília-DF CEP: 70610-200&nbsp;&nbsp;&nbsp;PABX: (61) 2109-5400 / (61) 2109-5252<br style="margin: 0px; padding: 0px; border: 0px; text-decoration: none; font-family: Arial, Tahoma, Verdana, sans-serif, Helvetica; font-size: 11px; color: rgb(71, 66, 58);" />
+                    Melhor visualizado em 1280x900 com Firefox 3 e IExplorer 7 ou superiores
+                </em>
+            </div>
+        </div>
+
+    </body>
+</html>

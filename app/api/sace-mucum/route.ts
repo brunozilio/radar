@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { openReaderDatabase } from "@/lib/database";
 
+import { readLevelHistory } from "@/lib/river-levels";
+
 export const dynamic = "force-dynamic";
 
 export async function GET() {
@@ -12,20 +14,10 @@ export async function GET() {
     );
   }
   try {
-    const row = database
-      .prepare(`
-        SELECT timestamp, level, level_cm
-        FROM sace_readings
-        WHERE station = '86510000'
-        ORDER BY timestamp DESC
-        LIMIT 1
-      `)
-      .get() as
-      | { timestamp: string; level: number; level_cm: number }
-      | undefined;
+    const row = readLevelHistory(database, "86510000", 1).at(-1);
     if (!row) {
       return NextResponse.json(
-        { message: "SACE ainda não foi sincronizado" },
+        { message: "Níveis ANA/SACE ainda não foram sincronizados" },
         { status: 503 },
       );
     }
@@ -36,8 +28,8 @@ export async function GET() {
         name: "Muçum",
         timestamp: row.timestamp,
         level: row.level,
-        levelCm: row.level_cm,
-        source: "SACE/SGB",
+        levelCm: row.levelCm,
+        source: row.source,
       },
       { headers: { "cache-control": "no-store, max-age=0" } },
     );

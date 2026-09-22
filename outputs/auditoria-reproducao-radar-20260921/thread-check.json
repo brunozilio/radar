@@ -1,0 +1,27 @@
+{
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "train_n": 9524,
+  "test_n": 1350,
+  "runs": [
+    {
+      "threads": 1,
+      "first_error_m": 0.001403385642978705,
+      "max_abs_difference_m": 0.09079718646364165,
+      "mae_difference_m": 0.0059337131383608455
+    },
+    {
+      "threads": 2,
+      "first_error_m": 0.001403385642978705,
+      "max_abs_difference_m": 0.09079718646364165,
+      "mae_difference_m": 0.0059337131383608455
+    },
+    {
+      "threads": 4,
+      "first_error_m": 0.001403385642978705,
+      "max_abs_difference_m": 0.09079718646364165,
+      "mae_difference_m": 0.0059337131383608455
+    }
+  ],
+  "maximum_between_thread_predictions_m": 0.0
+}

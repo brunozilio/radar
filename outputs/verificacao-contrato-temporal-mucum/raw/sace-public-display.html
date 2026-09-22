@@ -1,0 +1,99 @@
+<META HTTP-EQUIV="Pragma" CONTENT="cache">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<form id="ExibirDados_form"  method="post" action="">
+
+<fieldset>
+	<div id="divDadosPrint"  >
+		<style>
+		
+			.labelDados{
+				font-family: Arial;
+		        font-size: 10pt;
+		        font-weight: normal;
+		        color: black;
+			}
+			
+			.labelTituloDados{
+				font-size: 11pt; 
+		      	font-family: Arial; 
+		      	text-align: left;
+		      	font-weight: bold;
+		      	color: black;
+			}
+		
+		</style>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding-top: 5px;  " >
+			<tr>
+				<td>
+				
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding-top: 5px;  " >
+						<tr>
+							<td colspan="3">
+								<span class="labelTituloDados"> Ponto de monitoramento</span>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<label class="labelTituloDados">Nome:</label>&nbsp; <label class="labelDados" id="ExibirDados_nome"></label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="labelTituloDados">Sigla:</label>&nbsp; <label class="labelDados" id="ExibirDados_sigla"></label>
+							</td>
+							<td>
+								<label class="labelTituloDados">Latitude:</label>&nbsp; <label class="labelDados" id="ExibirDados_latitude"></label>
+							</td>
+							<td>
+								<label class="labelTituloDados">Longitude:</label>&nbsp; <label class="labelDados" id="ExibirDados_longitude"></label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="labelTituloDados">Rio:</label>&nbsp; <label class="labelDados" id="ExibirDados_rio"></label>
+							</td>
+							<td>
+								<label class="labelTituloDados">Área:</label>&nbsp; <label class="labelDados" id="ExibirDados_area"></label>
+							</td>
+							<td>
+								<label class="labelTituloDados">Altitude:</label>&nbsp; <label class="labelDados" id="ExibirDados_altitude"></label>
+							</td>
+						</tr>
+					</table>
+				
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-top: 10px; " align="center">
+					<div style="border: 1px solid #c4c4c4;" align="center" id ="divGraficoDados"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-top: 10px; "  align="center">
+					<div align="center" id ="divMedicoesDados"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-top: 10px; "  align="center">
+					<div align="center" id ="divChuvaAcumulada"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding-top: 5px;  " >
+		<tr>
+			<td style="padding-top: 10px; "  align="left">
+				<fieldset id="fieldSetDados" style="display:none; min-height: 20px; padding-left:15px;" ><legend>Dados de sensores dispon&iacute;veis para download:</legend>
+					<div align="left" id ="divExportacaoDados"></div>
+				</fieldset>
+			</td>
+		</tr>
+	</table>
+</fieldset>
+
+</form>
+<script type="text/javascript">
+
+</script>

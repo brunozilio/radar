@@ -1,0 +1,68 @@
+{
+  "audited_at_utc": "2026-09-21T22:36:11.715896+00:00",
+  "scope": "Development-only retrospective forecasts, no promotion or eligibility change",
+  "variable": "precipitation_previous_day1",
+  "unit": "mm",
+  "valid_time_definition": "Sum of precipitation during preceding hour, ending at timestamp T",
+  "nominal_lead_hours": 24,
+  "origin": "O",
+  "accumulation": "sum(P_previous_day1(O+h) for h in 1..W), W in {3,6,9,12}",
+  "nominal_reference_formula": "T-24h = O+h-24h; NOT a certified per-record initialization timestamp",
+  "nominal_hours_before_origin": [
+    {
+      "h": 1,
+      "nominal_hours_before_origin": 23
+    },
+    {
+      "h": 2,
+      "nominal_hours_before_origin": 22
+    },
+    {
+      "h": 3,
+      "nominal_hours_before_origin": 21
+    },
+    {
+      "h": 4,
+      "nominal_hours_before_origin": 20
+    },
+    {
+      "h": 5,
+      "nominal_hours_before_origin": 19
+    },
+    {
+      "h": 6,
+      "nominal_hours_before_origin": 18
+    },
+    {
+      "h": 7,
+      "nominal_hours_before_origin": 17
+    },
+    {
+      "h": 8,
+      "nominal_hours_before_origin": 16
+    },
+    {
+      "h": 9,
+      "nominal_hours_before_origin": 15
+    },
+    {
+      "h": 10,
+      "nominal_hours_before_origin": 14
+    },
+    {
+      "h": 11,
+      "nominal_hours_before_origin": 13
+    },
+    {
+      "h": 12,
+      "nominal_hours_before_origin": 12
+    }
+  ],
+  "compatible_with_no_post_origin_initializations_under_documented_contract": true,
+  "individual_run_identity_verified": false,
+  "historical_publication_verified": false,
+  "archive_version_immutability_verified": false,
+  "historical_availability_status": "assumed; not certified",
+  "live_distribution_difference": "Previous Runs fixed-lead mixed vintages versus live Forecast API most recent stitched runs",
+  "no_new_observations_inserted": true
+}

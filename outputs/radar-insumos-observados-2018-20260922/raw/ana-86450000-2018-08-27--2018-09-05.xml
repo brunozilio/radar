@@ -1,0 +1,2395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTable xmlns="http://MRCS/">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DadosHidrometereologicos" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DadosHidrometereologicos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CodEstacao" type="xs:string" minOccurs="0" />
+                <xs:element name="DataHora" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_VazaoFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="VazaoFinal" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <DocumentElement xmlns="">
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos1" msdata:rowOrder="0">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>280.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>280.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>200.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos2" msdata:rowOrder="1">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>281.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>281.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>202.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos3" msdata:rowOrder="2">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>289.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>289.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>213.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos4" msdata:rowOrder="3">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>291.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>291.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>216.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos5" msdata:rowOrder="4">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>297.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>297.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>225.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos6" msdata:rowOrder="5">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>306.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>306.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>239.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos7" msdata:rowOrder="6">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>313.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>313.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>250.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos8" msdata:rowOrder="7">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>329.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>329.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>277.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos9" msdata:rowOrder="8">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>333.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>333.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>284.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos10" msdata:rowOrder="9">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>338.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>338.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>292.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos11" msdata:rowOrder="10">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>342.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>342.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>299.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos12" msdata:rowOrder="11">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>346.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>346.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>306.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos13" msdata:rowOrder="12">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>347.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>347.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>308.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos14" msdata:rowOrder="13">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>334.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>334.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>285.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos15" msdata:rowOrder="14">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>313.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>313.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>250.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos16" msdata:rowOrder="15">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>305.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>305.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>238.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos17" msdata:rowOrder="16">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>305.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>305.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>238.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos18" msdata:rowOrder="17">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>308.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>308.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>243.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos19" msdata:rowOrder="18">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>312.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>312.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>249.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos20" msdata:rowOrder="19">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>315.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>315.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>254.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos21" msdata:rowOrder="20">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>318.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>318.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>259.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos22" msdata:rowOrder="21">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>321.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>321.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>263.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos23" msdata:rowOrder="22">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>322.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>322.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>265.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos24" msdata:rowOrder="23">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-05 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>327.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>327.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>273.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos25" msdata:rowOrder="24">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>327.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>327.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>273.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos26" msdata:rowOrder="25">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>330.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>330.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>278.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos27" msdata:rowOrder="26">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>333.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>333.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>284.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos28" msdata:rowOrder="27">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>335.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>335.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>287.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos29" msdata:rowOrder="28">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>342.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>342.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>299.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos30" msdata:rowOrder="29">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>348.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>348.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>310.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos31" msdata:rowOrder="30">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>359.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>359.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>329.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos32" msdata:rowOrder="31">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>372.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>372.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>353.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos33" msdata:rowOrder="32">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>366.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>366.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>342.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos34" msdata:rowOrder="33">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>363.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>363.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>337.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos35" msdata:rowOrder="34">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>365.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>365.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>340.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos36" msdata:rowOrder="35">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>360.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>360.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>331.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos37" msdata:rowOrder="36">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>351.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>351.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>315.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos38" msdata:rowOrder="37">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>353.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>353.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>318.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos39" msdata:rowOrder="38">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>350.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>350.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>313.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos40" msdata:rowOrder="39">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>352.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>352.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>317.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos41" msdata:rowOrder="40">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>354.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>354.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>320.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos42" msdata:rowOrder="41">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>354.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>354.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>320.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos43" msdata:rowOrder="42">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>356.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>356.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>324.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos44" msdata:rowOrder="43">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>354.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>354.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>320.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos45" msdata:rowOrder="44">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>353.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>353.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>318.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos46" msdata:rowOrder="45">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>360.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>360.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>331.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos47" msdata:rowOrder="46">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>369.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>369.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>348.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos48" msdata:rowOrder="47">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-04 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>373.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>373.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>355.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos49" msdata:rowOrder="48">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>370.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>370.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>350.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos50" msdata:rowOrder="49">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>375.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>375.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>359.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos51" msdata:rowOrder="50">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>374.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>374.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>357.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos52" msdata:rowOrder="51">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>373.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>373.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>355.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos53" msdata:rowOrder="52">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>376.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>376.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>361.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos54" msdata:rowOrder="53">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>382.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>382.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>372.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos55" msdata:rowOrder="54">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>393.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>393.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>394.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos56" msdata:rowOrder="55">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>413.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>413.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>434.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos57" msdata:rowOrder="56">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>432.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>432.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>474.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos58" msdata:rowOrder="57">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>420.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>420.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>449.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos59" msdata:rowOrder="58">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>417.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>417.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>442.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos60" msdata:rowOrder="59">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>424.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>424.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>457.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos61" msdata:rowOrder="60">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>420.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>420.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>449.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos62" msdata:rowOrder="61">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>424.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>424.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>457.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos63" msdata:rowOrder="62">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>421.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>421.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>451.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos64" msdata:rowOrder="63">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>423.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>423.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>455.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos65" msdata:rowOrder="64">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>424.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>424.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>457.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos66" msdata:rowOrder="65">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>435.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>435.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>481.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos67" msdata:rowOrder="66">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>437.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>437.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>485.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos68" msdata:rowOrder="67">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>441.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>441.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>494.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos69" msdata:rowOrder="68">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>445.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>445.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>503.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos70" msdata:rowOrder="69">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>449.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>449.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>511.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos71" msdata:rowOrder="70">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>453.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>453.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>520.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos72" msdata:rowOrder="71">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-03 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>453.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>453.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>520.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos73" msdata:rowOrder="72">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>456.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>456.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>527.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos74" msdata:rowOrder="73">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>455.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>455.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>525.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos75" msdata:rowOrder="74">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>445.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>445.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>503.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos76" msdata:rowOrder="75">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>445.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>445.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>503.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos77" msdata:rowOrder="76">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>446.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>446.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>505.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos78" msdata:rowOrder="77">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>449.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>449.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>511.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos79" msdata:rowOrder="78">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>453.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>453.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>520.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos80" msdata:rowOrder="79">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>458.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>458.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>532.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos81" msdata:rowOrder="80">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>466.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>466.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>550.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos82" msdata:rowOrder="81">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>468.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>468.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>554.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos83" msdata:rowOrder="82">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>473.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>473.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>566.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos84" msdata:rowOrder="83">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>486.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>486.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>597.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos85" msdata:rowOrder="84">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>494.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>494.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>616.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos86" msdata:rowOrder="85">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>471.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>471.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>561.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos87" msdata:rowOrder="86">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>439.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>439.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>489.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos88" msdata:rowOrder="87">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>434.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>434.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>479.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos89" msdata:rowOrder="88">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>426.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>426.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>461.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos90" msdata:rowOrder="89">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>428.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>428.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>466.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos91" msdata:rowOrder="90">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>430.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>430.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>470.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos92" msdata:rowOrder="91">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>435.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>435.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>481.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos93" msdata:rowOrder="92">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>422.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>422.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>453.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos94" msdata:rowOrder="93">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>412.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>412.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>432.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos95" msdata:rowOrder="94">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>392.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>392.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>392.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos96" msdata:rowOrder="95">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-02 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>372.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>372.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>353.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos97" msdata:rowOrder="96">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>363.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>363.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>337.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos98" msdata:rowOrder="97">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>350.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>350.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>313.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos99" msdata:rowOrder="98">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>337.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>337.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>290.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos100" msdata:rowOrder="99">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>324.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>324.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>268.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos101" msdata:rowOrder="100">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>298.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>298.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>227.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos102" msdata:rowOrder="101">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>272.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>272.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>189.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos103" msdata:rowOrder="102">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>220.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>220.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>122.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos104" msdata:rowOrder="103">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>152.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>152.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>56.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos105" msdata:rowOrder="104">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>112.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>112.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>32.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos106" msdata:rowOrder="105">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>103.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>103.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>27.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos107" msdata:rowOrder="106">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>103.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>103.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>27.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos108" msdata:rowOrder="107">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>103.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>103.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>27.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos109" msdata:rowOrder="108">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>103.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>103.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>27.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos110" msdata:rowOrder="109">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>104.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>104.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>28.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos111" msdata:rowOrder="110">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>105.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>105.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>28.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos112" msdata:rowOrder="111">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>105.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>105.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>28.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos113" msdata:rowOrder="112">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>106.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>106.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>29.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos114" msdata:rowOrder="113">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>108.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>108.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>30.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos115" msdata:rowOrder="114">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>110.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>110.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>31.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos116" msdata:rowOrder="115">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>111.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>111.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>31.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos117" msdata:rowOrder="116">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>114.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>114.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>33.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos118" msdata:rowOrder="117">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>116.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>116.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>34.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos119" msdata:rowOrder="118">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>116.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>116.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>34.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos120" msdata:rowOrder="119">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-09-01 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>117.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>117.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>34.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos121" msdata:rowOrder="120">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>116.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>116.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>34.10</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos122" msdata:rowOrder="121">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>115.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>115.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>33.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos123" msdata:rowOrder="122">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>109.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>109.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>30.70</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos124" msdata:rowOrder="123">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>106.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>106.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>29.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos125" msdata:rowOrder="124">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>103.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>103.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>27.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos126" msdata:rowOrder="125">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>100.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>100.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>26.50</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos127" msdata:rowOrder="126">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>95.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>95.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>24.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos128" msdata:rowOrder="127">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>92.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>92.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>23.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos129" msdata:rowOrder="128">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>89.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>89.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>22.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos130" msdata:rowOrder="129">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>86.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>86.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>20.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos131" msdata:rowOrder="130">
+        <CodEstacao>86450000</CodEstacao>
+        <DataHora>2018-08-31 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada />
+        <ChuvaAcumAdotada />
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>85.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay />
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>85.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>20.50</VazaoFinal>
+      </DadosHidrometereologicos>
+    </DocumentElement>
+  </diffgr:diffgram>
+</DataTable>

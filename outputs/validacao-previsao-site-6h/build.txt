@@ -1,0 +1,87 @@
+
+> monitoramento-rio-taquari@0.1.0 build
+> next build
+
+▲ Next.js 16.2.12 (Turbopack)
+
+  Creating an optimized production build ...
+Turbopack build encountered 2 warnings:
+./lib/projection-server.ts:41:19
+The file pattern (<dynamic> | '/opt/projection-venv/bin/python') matches 12250 files in [project]/
+  [90m39 |[0m   [36mawait[0m mkdir(directory, { recursive: [36mtrue[0m });
+  [90m40 |[0m   [36mawait[0m [36mnew[0m [33mPromise[0m<[36mvoid[0m>((resolve, reject) => {
+[31m[1m>[0m [90m41 |[0m     [36mconst[0m child = spawn(process.env.[33mPROJECTION_PYTHON[0m || [32m"/opt/projection-venv/bin/python"[0m...
+  [90m   |[0m                   [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m42 |[0m       stdio: [[32m"ignore"[0m, [32m"pipe"[0m, [32m"pipe"[0m],
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m43 |[0m       env: { ...process.env, [33mPYTHONUNBUFFERED[0m: [32m"1"[0m, [33mOMP_NUM_THREADS[0m: [32m"2"[0m, [33mOPENBLAS_NUM_THR...[0m
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m44 |[0m     });
+  [90m   |[0m [31m[1m^^^^^^[0m
+  [90m45 |[0m     [36mlet[0m tail = [32m""[0m;
+  [90m46 |[0m     [36mconst[0m consume = (data: [33mBuffer[0m) => { tail = (tail + data.toString()).slice(-[35m2500[0m); };
+  [90m47 |[0m     child.stdout.on([32m"data"[0m, consume);
+
+Overly broad patterns can lead to build performance issues and over bundling.
+
+Import trace:
+  App Route:
+    ./lib/projection-server.ts
+    ./app/api/projection/route.ts
+
+
+./next.config.ts
+Encountered unexpected file in NFT list
+A file was traced that indicates that the whole project was traced unintentionally. Somewhere in the import trace below, there are:
+- filesystem operations (like path.join, path.resolve or fs.readFile), or
+- very dynamic requires (like require('./' + foo)).
+To resolve this, you can
+- remove them if possible, or
+- only use them in development, or
+- make sure they are statically scoped to some subfolder: path.join(process.cwd(), 'data', bar), or
+- add ignore comments: path.join(/*turbopackIgnore: true*/ process.cwd(), bar)
+
+Import trace:
+  App Route:
+    ./next.config.ts
+    ./lib/projection-server.ts
+    ./app/api/projection/route.ts
+
+
+✓ Compiled successfully in 2.4s
+  Running TypeScript ...
+  Finished TypeScript in 1144ms ...
+  Collecting page data using 17 workers ...
+  Generating static pages using 17 workers (0/6) ...
+  Generating static pages using 17 workers (1/6) 
+  Generating static pages using 17 workers (2/6) 
+  Generating static pages using 17 workers (4/6) 
+✓ Generating static pages using 17 workers (6/6) in 59ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/alerts
+├ ƒ /api/alerts/image
+├ ƒ /api/assets/[id]
+├ ƒ /api/bulletins
+├ ƒ /api/ceran
+├ ƒ /api/defesa-civil
+├ ƒ /api/internal/projection-refresh
+├ ƒ /api/media/[id]
+├ ƒ /api/projection
+├ ƒ /api/radar
+├ ƒ /api/radar-sc
+├ ƒ /api/river-levels
+├ ƒ /api/sace-mucum
+├ ƒ /api/satellite
+├ ƒ /api/stations
+├ ○ /manifest.webmanifest
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

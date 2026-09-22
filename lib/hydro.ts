@@ -32,6 +32,13 @@ export const SACE_LEVEL_SENSORS = [
     csv: "https://sace.sgb.gov.br/api/dados/taquari_3_cota.csv",
   },
   {
+    id: "sace-86720000",
+    code: "86720000",
+    city: "Encantado",
+    name: "Sensor na Cidade de Encantado",
+    csv: "https://sace.sgb.gov.br/api/dados/taquari_2_cota.csv",
+  },
+  {
     id: "sace-86472600",
     code: "86472600",
     city: "Santa Tereza",

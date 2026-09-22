@@ -1,0 +1,61 @@
+{
+  "reason": "Restore original requested basin coordinates from chuva-prevista-query.json; old hourly collector incorrectly reused GFS returned grid coordinates for other models. New returned grids match each model historical training grid. Prior snapshots and failed cycle preserved.",
+  "sources": {
+    "weather-ecmwf_ifs025.json": {
+      "previous_sha256": "343dc78396a02d6464aba2eb99627a37dc63ca8c02df4eeb43d13221bf4829c4",
+      "new_sha256": "0a44599c6500d118d25617793cef5cc5c497d4e455f824c7382a574ec967ab0c",
+      "historical_grid_source": "outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "historical_grid_sha256": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313",
+      "expected_locations": [
+        [
+          -29.0,
+          -51.5
+        ],
+        [
+          -28.5,
+          -51.75
+        ],
+        [
+          -28.5,
+          -51.25
+        ],
+        [
+          -29.0,
+          -50.75
+        ],
+        [
+          -29.0,
+          -50.5
+        ]
+      ]
+    },
+    "weather-icon_global.json": {
+      "previous_sha256": "9de44b5acbb3ee877aab4e473b6882f25c983051cf30dcc00fa6c7c59f9c3551",
+      "new_sha256": "761c8be14f7301f24e2aee107ba15149f28285fae4811b2c7d7fd684ec3a459d",
+      "historical_grid_source": "outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "historical_grid_sha256": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f",
+      "expected_locations": [
+        [
+          -29.125,
+          -51.625
+        ],
+        [
+          -28.625,
+          -51.75
+        ],
+        [
+          -28.5,
+          -51.375
+        ],
+        [
+          -28.875,
+          -50.75
+        ],
+        [
+          -29.125,
+          -50.375
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "reservoir-candidate-origin-trend-and-events-v1",
+  "scope": "Post-evaluation diagnostic stratification only. No training, candidate selection by subset, replacement forecast, promotion or prospective claim.",
+  "prediction_source": "outputs/experimento-niveis-ate-mucum-pesos-zero-20260921",
+  "origin_trend": "Difference between exact approved Muçum level at the anchor(origin-15min) and at anchor-3h, divided by3. Both observations must match frozen raw levels. Intermediate missing samples do not turn endpoint net change into continuous monotonicity.",
+  "trend_labels": {"rising": "net slope>0.05m/h", "falling": "net slope<-0.05m/h", "stable": "absolute net slope<=0.05m/h", "unknown": "Missing/nonapproved/mismatching endpoint"},
+  "threshold_role": "Fixed analyst diagnostic threshold, not a warning rule, calibrated hydrological phase or accuracy tolerance.",
+  "events": "Use existing flood-event-grouping-policy.json on source observations with explicit approved QC only. Preserve gaps, censoring and missing datum/timezone verification. Clusters remain uncertified. Associate only exact high target observations, never choose events by error.",
+  "metrics": "By nominal horizon, origin trend and target>=7m versus all: preserve pair counts and failures; compare MAE,bias,fraction within0.50m. Also report every observed high-target cluster separately, including clusters without calculable forecasts.",
+  "non_goal_evidence": "All predictions remain historical development from previously inspected periods. No overlapping predictions are counted as independent floods. No confidence interval is inferred from IID hourly samples.",
+  "live_issuance": false,
+  "promotion": false,
+  "goal_achieved": false
+}

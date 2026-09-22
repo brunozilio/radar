@@ -1,0 +1,442 @@
+{
+  "configured": true,
+  "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+  "effective_from": "2026-09-21T21:00:00+00:00",
+  "closed_windows": 8,
+  "complete_windows": 8,
+  "coverage_percent": 100.0,
+  "status_counts": {
+    "complete": 8
+  },
+  "current_window_started_at": "2026-09-22T05:00:00+00:00",
+  "windows": [
+    {
+      "start": "2026-09-21T21:00:00+00:00",
+      "end_exclusive": "2026-09-21T22:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+          "started_at": "2026-09-21T21:00:20.111770+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        },
+        {
+          "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+          "started_at": "2026-09-21T21:33:05.230842+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-21T22:00:00+00:00",
+      "end_exclusive": "2026-09-21T23:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+          "started_at": "2026-09-21T22:00:23.957858+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-21T23:00:00+00:00",
+      "end_exclusive": "2026-09-22T00:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+          "started_at": "2026-09-21T23:02:35.814320+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-22T00:00:00+00:00",
+      "end_exclusive": "2026-09-22T01:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "8fa0ba4428dc007e04e85cc40ec2f27dfa4bd170dd4d7cec964822b0e35143e5",
+          "started_at": "2026-09-22T00:00:23.276039+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-22T01:00:00+00:00",
+      "end_exclusive": "2026-09-22T02:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": "2764921193cdf9ff93d1593d6620b83abea247fea0e38208ccdde1347e6f881a",
+      "attempts": [
+        {
+          "cycle_sha256": "062cae31a22442ebda546ced55e077b9d4199cac49fb4bc242e83e0118607485",
+          "started_at": "2026-09-22T01:00:10.620523+00:00",
+          "complete_delivery": true,
+          "timely_issues": 1,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-22T02:00:00+00:00",
+      "end_exclusive": "2026-09-22T03:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": "2764921193cdf9ff93d1593d6620b83abea247fea0e38208ccdde1347e6f881a",
+      "attempts": [
+        {
+          "cycle_sha256": "63484856300d49e540b9bce80372c567bf870d566f6ec4401d687a232b5e87aa",
+          "started_at": "2026-09-22T02:00:14.981803+00:00",
+          "complete_delivery": true,
+          "timely_issues": 1,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-22T03:00:00+00:00",
+      "end_exclusive": "2026-09-22T04:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": "2764921193cdf9ff93d1593d6620b83abea247fea0e38208ccdde1347e6f881a",
+      "attempts": [
+        {
+          "cycle_sha256": "11b4cbd2e7932beb43104e80e732a80264989214c6fac02758982cafd3aa9f54",
+          "started_at": "2026-09-22T03:00:59.640207+00:00",
+          "complete_delivery": false,
+          "timely_issues": 0,
+          "late_issues": 0,
+          "missing_models": [
+            "radar_arvores_live_candidate"
+          ],
+          "missing_leads": {
+            "radar_arvores_live_candidate": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          },
+          "terminal_states": [
+            "cycle_failed"
+          ],
+          "unfinished_record": false
+        },
+        {
+          "cycle_sha256": "45dde7b0694bef5959cd1321091e1e589156c3d63e07686ded312b838ca909f5",
+          "started_at": "2026-09-22T03:02:18.526531+00:00",
+          "complete_delivery": false,
+          "timely_issues": 0,
+          "late_issues": 0,
+          "missing_models": [
+            "radar_arvores_live_candidate"
+          ],
+          "missing_leads": {
+            "radar_arvores_live_candidate": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          },
+          "terminal_states": [
+            "cycle_failed"
+          ],
+          "unfinished_record": false
+        },
+        {
+          "cycle_sha256": "ae2d8179ae6d8e40c54d7f3c2cb1d143717dd0dc0f04b91befffcf2a7a54a409",
+          "started_at": "2026-09-22T03:07:04.946017+00:00",
+          "complete_delivery": true,
+          "timely_issues": 1,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-22T04:00:00+00:00",
+      "end_exclusive": "2026-09-22T05:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": "2764921193cdf9ff93d1593d6620b83abea247fea0e38208ccdde1347e6f881a",
+      "attempts": [
+        {
+          "cycle_sha256": "c7ff685dd6635e3195eecb64d93de1dc168e06cd8c2e021694e9cb791c615da6",
+          "started_at": "2026-09-22T04:00:16.549229+00:00",
+          "complete_delivery": true,
+          "timely_issues": 1,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    }
+  ],
+  "all_recorded_attempts": [
+    {
+      "cycle_sha256": "65b3b7d67c6e4cbb98f7b360004ca1d3225e70f9a167944794dfabb184128887",
+      "started_at": "2026-09-21T20:27:07.658033+00:00",
+      "before_effective_period": true,
+      "terminal_records": [
+        "cycle_failed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "1bbb40de9c89f3cd627bb94829af9d4f32de404445a16b6cca169e406f7f9012",
+      "started_at": "2026-09-21T20:29:31.309630+00:00",
+      "before_effective_period": true,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+      "started_at": "2026-09-21T21:00:20.111770+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+      "started_at": "2026-09-21T21:33:05.230842+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+      "started_at": "2026-09-21T22:00:23.957858+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+      "started_at": "2026-09-21T23:02:35.814320+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "8fa0ba4428dc007e04e85cc40ec2f27dfa4bd170dd4d7cec964822b0e35143e5",
+      "started_at": "2026-09-22T00:00:23.276039+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "062cae31a22442ebda546ced55e077b9d4199cac49fb4bc242e83e0118607485",
+      "started_at": "2026-09-22T01:00:10.620523+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "63484856300d49e540b9bce80372c567bf870d566f6ec4401d687a232b5e87aa",
+      "started_at": "2026-09-22T02:00:14.981803+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "11b4cbd2e7932beb43104e80e732a80264989214c6fac02758982cafd3aa9f54",
+      "started_at": "2026-09-22T03:00:59.640207+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_failed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "45dde7b0694bef5959cd1321091e1e589156c3d63e07686ded312b838ca909f5",
+      "started_at": "2026-09-22T03:02:18.526531+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_failed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "ae2d8179ae6d8e40c54d7f3c2cb1d143717dd0dc0f04b91befffcf2a7a54a409",
+      "started_at": "2026-09-22T03:07:04.946017+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "c7ff685dd6635e3195eecb64d93de1dc168e06cd8c2e021694e9cb791c615da6",
+      "started_at": "2026-09-22T04:00:16.549229+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "e471007b5433eaf1dfb68caabd085b4d7f3319ea5bf372ceaab0c3244742bcc5",
+      "started_at": "2026-09-22T05:00:11.267950+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    }
+  ],
+  "unlinked_forecast_issues": 2,
+  "limitations": [
+    "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+    "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+    "An unfinished record does not establish a live process.",
+    "Before the policy effective time, historical coverage remains unproven; recorded failures remain visible separately.",
+    "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+  ]
+}

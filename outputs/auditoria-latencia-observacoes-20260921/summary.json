@@ -1,0 +1,26 @@
+{
+  "ledger_tip_sha256": "2cd08ac35cf1a3a201e14bbf3ff44b112338743805ee14015e0353a5a687564a",
+  "ledger_records": 1211,
+  "observation_receipts_verified": 20,
+  "distinct_collection_snapshots": 19,
+  "audit_start": "2026-09-21T19:48:31.978284+00:00",
+  "audit_end": "2026-09-21T22:45:09.855417+00:00",
+  "first_approved_observations_after_audit_start": 10,
+  "first_seen_delay_minutes": {
+    "minimum": 18.18684215,
+    "median": 27.500257783333332,
+    "p90": 31.763306933333325,
+    "maximum": 43.32605498333333
+  },
+  "first_seen_within15min": 0,
+  "provider_publication_latency_certified": false,
+  "timezone_or_datum_verified": false,
+  "goal_achieved": false,
+  "limitations": [
+    "First seen is an upper bound on when our sampled collector discovered an observation, not an exact publication time.",
+    "Earlier-than-audit observations are left-censored and excluded from delay summary.",
+    "Collection cadence, API caching and collector downtime can all increase first-seen delay.",
+    "Limited observation of one event cannot establish a universal delay distribution.",
+    "No forecast, metadata eligibility or source observation is changed."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-09-22T06:11:15.280022+00:00",
+  "fields": [
+    "NivelFinal",
+    "ChuvaFinal"
+  ],
+  "stations": [
+    "86060010",
+    "86099000",
+    "86102000",
+    "86117000",
+    "86125000",
+    "86125050",
+    "86160000",
+    "86163000",
+    "86200900",
+    "86280500",
+    "86298000",
+    "86403000",
+    "86410800",
+    "86447000",
+    "86448000",
+    "86450000",
+    "86471000",
+    "86472000",
+    "86472600",
+    "86479000",
+    "86488000",
+    "86493000",
+    "86495500",
+    "86500000",
+    "86504900",
+    "86505500",
+    "86510000"
+  ],
+  "precedence": [
+    "ana-CODE-2025.xml",
+    "ana-CODE.xml",
+    "ana-CODE-latest.xml",
+    "mucum-atualizacao-15h/raw/ana-CODE-fresh.xml"
+  ],
+  "strict_latest_rule": "Every last encountered literal timestamp record replaces earlier record field, including rejected/missing/nonfinite values, in source precedence then XML document order. No bypass. All timestamps retained.",
+  "strict_qc": "Only Dado aprovado; finite nonnegative, rain<=150mm; level cm to m. UTC-3 computational convention, not certified timezone.",
+  "legacy_cache_rule": "Per-field finite approved or absent-QC only replacement; invalid new values leave earlier finite value. Fresh rows replace all fields even NaN.",
+  "variants": "legacy reproduces existing semantic; strict_finite changes only QC gate while keeping finite-only historical replacement; strict_latest also changes historical revision precedence. Changes are distinct.",
+  "no_mutation": "Only own artifact folder written; caches, frozen telemetry, operation and source XML untouched",
+  "runtime": "No production module imports, no fit/inference/network"
+}

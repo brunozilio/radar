@@ -1,0 +1,86 @@
+{
+  "promoted": false,
+  "goal_achieved": false,
+  "next_step": "Define and validate a source-semantic input QC rule on independent periods, preserving raw readings. Do not deploy date-specific masks. Investigate extrapolation separately.",
+  "checks": {
+    "paired_target_values_and_membership_identical": true,
+    "validation_unchanged": true,
+    "unaffected_test_max_prediction_difference_m3_s": 0.0,
+    "reference_current_reproduction_max_difference_m3_s": 0.0
+  },
+  "summary": [
+    {
+      "source": "julho",
+      "variant": "original",
+      "all_n": 23550,
+      "all_mae_m3_s": 169.23495875920005,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 437.98863562105976,
+      "affected_n": 108,
+      "affected_mae_m3_s": 3950.386289481912,
+      "current_11h_m3_s": 13418.353636340378
+    },
+    {
+      "source": "julho",
+      "variant": "Q_missing",
+      "all_n": 23550,
+      "all_mae_m3_s": 158.93595806148502,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 363.40638887100164,
+      "affected_n": 108,
+      "affected_mae_m3_s": 1704.6319706746083,
+      "current_11h_m3_s": 13804.329599060946
+    },
+    {
+      "source": "julho",
+      "variant": "QI_missing",
+      "all_n": 23550,
+      "all_mae_m3_s": 153.3187984242655,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 322.72861843541745,
+      "affected_n": 108,
+      "affected_mae_m3_s": 479.7791053364613,
+      "current_11h_m3_s": 13506.23201605156
+    },
+    {
+      "source": "carreiro",
+      "variant": "original",
+      "all_n": 20206,
+      "all_mae_m3_s": 29.678742992328818,
+      "high_flow_n": 2832,
+      "high_flow_mae_m3_s": 78.20557806106852,
+      "affected_n": 108,
+      "affected_mae_m3_s": 265.64526980229,
+      "current_11h_m3_s": 1659.1584922235686
+    },
+    {
+      "source": "carreiro",
+      "variant": "Q_missing",
+      "all_n": 20206,
+      "all_mae_m3_s": 29.34366903219344,
+      "high_flow_n": 2832,
+      "high_flow_mae_m3_s": 78.52839256440646,
+      "affected_n": 108,
+      "affected_mae_m3_s": 202.95541389029472,
+      "current_11h_m3_s": 1705.300650026192
+    },
+    {
+      "source": "carreiro",
+      "variant": "QI_missing",
+      "all_n": 20206,
+      "all_mae_m3_s": 29.107169152189282,
+      "high_flow_n": 2832,
+      "high_flow_mae_m3_s": 78.90672122185043,
+      "affected_n": 108,
+      "affected_mae_m3_s": 158.70803819248056,
+      "current_11h_m3_s": 1678.241151628553
+    }
+  ],
+  "report_inputs_sha256": {
+    "evaluation.csv": "fa43900280ee56fdbed35374e8117ec0a7ef0deb20987b179b9a6addd9e74dd6",
+    "current.csv": "412bc8c6ae9cd3ff895391b0e0fdbdeb4ea7aa5493c818e4459b377cd7e3f93e",
+    "test-predictions.csv": "a25e20eef3548513d78cbee21b0327f4628f105266fe9b2151c737a94b50c4ba",
+    "policy.json": "163c80a92daff5f3f34ab16e989e993e8f82c8d74eea831b949533efdb726e81",
+    "summarize.py": "68dce644639e4539e60234781a2b811e9ee775d85d19ed16020fdd96bd21cea1"
+  }
+}

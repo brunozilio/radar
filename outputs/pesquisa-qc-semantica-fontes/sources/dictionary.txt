@@ -1,0 +1,108 @@
+
+--- PAGE 1 ---
+                                                                                                                                                                        Data: 06-06-2024 - Página 1
+
+DADOS HIDROLÓGICOS DE RESERVATÓRIOS                                  – BASE HORÁRIA
+
+Descrição do Dado: Dados hidrológicos de reservatórios consolidados pelo                                ONS em base horária.
+
+ Descrição                                                      Código                                Tipo de Dado           Formato                 Permite           Permite           Permite
+                                                                                                                                                     valor             valor             valor
+                                                                                                                                                     nulo              zerado            negativo
+
+ Identificador do subsistema                                    id_subsistema                         TEXTO                  2 POSIÇÕES              Não               ----              ----
+
+ Nome do subsistema                                             nom_subsistema                        TEXTO                  40 POSIÇÕES             Não               ----              ----
+
+ Tipo do reservatório                                           tip_reservatorio                      TEXTO                  40 POSIÇÕES             Não               ----              ----
+
+ Nome da bacia em que o reservatório está localizado            nom_bacia                             TEXTO                  15 POSIÇÕES             Não               ----              ----
+
+ Identificador do reservatório                                  id_reservatorio                       TEXTO                  6 POSIÇÕES              Não               ----              ----
+
+ Nome do reservatório                                           nom_reservatorio                      TEXTO                  20 POSIÇÕES             Não               ----              ----
+
+ Código da usina nos modelos de otimização                      cod_usina                             INTEIRO                                        Sim               Não               Não
+
+ Data                                                           din_instante                          DATETIME               YYYY-MM-DD              Não               ----              ----
+                                                                                                                             HH:MM:SS
+ Nota: A Hora Fim (01:00) representa o intervalo entre
+ 00:00 até 00:59
+
+ Nível montante, em metros                                      val_nivelmontante                     FLOAT                                          Não               Não               Não
+
+ Nível jusante, em metros                                       val_niveljusante                      FLOAT                                          Sim               Não               Não
+
+
+
+--- PAGE 2 ---
+                                                                                                                                                                               Data: 06-06-2024 - Página 2
+
+ Descrição                                                         Código                                 Tipo de Dado             Formato                  Permite           Permite            Permite
+                                                                                                                                                            valor             valor              valor
+                                                                                                                                                            nulo              zerado             negativo
+
+ Valor do volume útil (%)                                          val_volumeutil                         FLOAT                                             Sim               Sim                Sim
+
+ Vazão afluente em m3/s                                            val_vazaoafluente                      FLOAT                                             Sim               Sim                Sim
+
+ Vazão da defluencia, em m3/s                                      val_vazaodefluente                     FLOAT                                             Sim               Sim                Não
+
+ Vazão turbinada, em m3/s                                          val_vazaoturbinada                     FLOAT                                             Sim               Sim                Não
+
+ Vazão vertida, em m3/s                                            val_vazaovertida                       FLOAT                                             Sim               Sim                Não
+
+ Vazão de outras estruturadas, em m3/s                             val_vazaooutrasestruturas              FLOAT                                             Sim               Sim                Não
+
+ Vazão transferida, em m3/s                                        val_vazaotransferida                   FLOAT                                             Sim               Sim                Sim
+
+ Vazão vertida não turbinável, em m3/s                             val_vazaovertidanaoturbinavel          FLOAT                                             Sim               Sim                Não
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- PAGE 3 ---
+                                                                                                                                                      Data: 06-06-2024 - Página 3
+
+Evoluções do Conjunto de Dados:
+ Versão 1.0         29-04-2024               Criação do dicionário de dados
+
+ Versão 2.0         06-06-2024               Adição de informações no campo de Data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

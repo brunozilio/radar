@@ -1,0 +1,19 @@
+{
+  "rows": 102084,
+  "metric_groups_reconciled": 96,
+  "validation_high_unique_targets": 28,
+  "validation_high_forecast_pairs": 336,
+  "first_validation_high_target": "2025-11-08T08:00:00-03:00",
+  "last_validation_high_target": "2025-11-09T11:00:00-03:00",
+  "contiguous_hourly_targets": true,
+  "independent_event_certified": false,
+  "input_sha256": {
+    "predictions.csv": "db3118b6ebd67e0870a00a797c9b6dd9df54f647a15faea9536a8af2ef92f75d",
+    "evaluation.csv": "696d58fa0b89290c339a85ab2d66ba0ffd22b2960774c76f3660dad9530ffc61",
+    "training.csv": "eda374b8e34ea686715f6c06ea5e064ffb2830982098eccf08718200d81989da"
+  },
+  "strata_use_future_observed_response_for_diagnosis_only": true,
+  "trained": false,
+  "promoted": false,
+  "goal_achieved": false
+}

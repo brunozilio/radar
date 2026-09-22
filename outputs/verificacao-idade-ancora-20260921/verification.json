@@ -1,0 +1,989 @@
+{
+  "passed": true,
+  "check_count": 162,
+  "failures": [],
+  "checks": [
+    {
+      "check": "baseline rows and unique keys",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: 23538 unique rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: origin-target keys and order unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: actual targets unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: horizon equals target-origin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: anchor timestamp and row age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: rain state ends origin-1h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: proxy-use flags unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: metadata age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: unchanged proxy models by parsed content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: frozen proxy arrays: keys",
+      "passed": true,
+      "detail": {
+        "keys_a": [
+          "times",
+          "estimated_q_m3_s",
+          "historical_missing",
+          "future_missing"
+        ],
+        "keys_b": [
+          "times",
+          "estimated_q_m3_s",
+          "historical_missing",
+          "future_missing"
+        ]
+      }
+    },
+    {
+      "check": "15: frozen proxy arrays: times",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "check": "15: frozen proxy arrays: estimated_q_m3_s",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928,
+          12
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "check": "15: frozen proxy arrays: historical_missing",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928
+        ],
+        "dtype": "bool"
+      }
+    },
+    {
+      "check": "15: frozen proxy arrays: future_missing",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928,
+          12
+        ],
+        "dtype": "bool"
+      }
+    },
+    {
+      "check": "15: proxy training records unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: protocol copy exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: protocol anchor age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: same input path set except protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/docs/anchor-delay-15min-protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/resultado.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: allowed baseline input change /Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hge_dependencies.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: executed source snapshot exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: source copies match input hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: baseline statuses identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: reference_m missing pattern",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: reference_m finite equivalence",
+      "passed": true,
+      "detail": {
+        "compared_finite": 23250,
+        "max_absolute_difference_m": 0.0,
+        "nonfinite_numeric_rows": 0,
+        "tolerance_m": 1e-10
+      }
+    },
+    {
+      "check": "15: julho_levels_m missing pattern",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: julho_levels_m finite equivalence",
+      "passed": true,
+      "detail": {
+        "compared_finite": 23250,
+        "max_absolute_difference_m": 0.0,
+        "nonfinite_numeric_rows": 0,
+        "tolerance_m": 1e-10
+      }
+    },
+    {
+      "check": "30: 23538 unique rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: origin-target keys and order unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: actual targets unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: horizon equals target-origin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: anchor timestamp and row age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: rain state ends origin-1h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: proxy-use flags unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: metadata age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: unchanged proxy models by parsed content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: frozen proxy arrays: keys",
+      "passed": true,
+      "detail": {
+        "keys_a": [
+          "times",
+          "estimated_q_m3_s",
+          "historical_missing",
+          "future_missing"
+        ],
+        "keys_b": [
+          "times",
+          "estimated_q_m3_s",
+          "historical_missing",
+          "future_missing"
+        ]
+      }
+    },
+    {
+      "check": "30: frozen proxy arrays: times",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "check": "30: frozen proxy arrays: estimated_q_m3_s",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928,
+          12
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "check": "30: frozen proxy arrays: historical_missing",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928
+        ],
+        "dtype": "bool"
+      }
+    },
+    {
+      "check": "30: frozen proxy arrays: future_missing",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928,
+          12
+        ],
+        "dtype": "bool"
+      }
+    },
+    {
+      "check": "30: proxy training records unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: protocol copy exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: protocol anchor age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: same input path set except protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/docs/anchor-delay-30min-protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/resultado.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: allowed baseline input change /Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hge_dependencies.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: executed source snapshot exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: source copies match input hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: 23538 unique rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: origin-target keys and order unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: actual targets unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: horizon equals target-origin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: anchor timestamp and row age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: rain state ends origin-1h",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: proxy-use flags unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: metadata age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: unchanged proxy models by parsed content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: frozen proxy arrays: keys",
+      "passed": true,
+      "detail": {
+        "keys_a": [
+          "times",
+          "estimated_q_m3_s",
+          "historical_missing",
+          "future_missing"
+        ],
+        "keys_b": [
+          "times",
+          "estimated_q_m3_s",
+          "historical_missing",
+          "future_missing"
+        ]
+      }
+    },
+    {
+      "check": "45: frozen proxy arrays: times",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "check": "45: frozen proxy arrays: estimated_q_m3_s",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928,
+          12
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "check": "45: frozen proxy arrays: historical_missing",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928
+        ],
+        "dtype": "bool"
+      }
+    },
+    {
+      "check": "45: frozen proxy arrays: future_missing",
+      "passed": true,
+      "detail": {
+        "shape": [
+          12928,
+          12
+        ],
+        "dtype": "bool"
+      }
+    },
+    {
+      "check": "45: proxy training records unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: protocol copy exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: protocol anchor age",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: same input path set except protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/docs/anchor-delay-45min-protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/resultado.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: allowed baseline input change /Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hge_dependencies.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: input hash matches /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: executed source snapshot exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: source copies match input hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all3: identical executed code",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all3: same non-protocol input hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all3: no other protocol change",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: delay conversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: interpolation weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: constant-flow interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15: linear-flow interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: delay conversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: interpolation weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: constant-flow interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "30: linear-flow interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: delay conversion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: interpolation weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: constant-flow interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "45: linear-flow interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected 60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected -15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected 16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected True",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected None",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid delay rejected '15'",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source formula delay_h * previous_q + (1 - delay_h) * origin_q",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source formula np.exp(-(horizon + delay_h) / 6)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source formula anchor_index(z[\"times\"], t[i], delay_minutes * 60)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source formula reconstruct_anchor(previous_q, origin_q, delay_h)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source formula iso(t[i] - delay_minutes * 60)",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/predictions.csv": "c4b95775c5b088467629a2b3ff3dec375dc3a29192943a6271c378670f331369",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/experiment.json": "2d7367cdfd1952153058c1285a2c0be8652e55d56f770e392df53513055f6e5f",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/proxy-models.json": "8b818ff34d8e788cb34915609447f60334645a2e088af5b3390688fedcafd772",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/experiment.json": "4d96486e5847a10dba94925dd16f63d9dfc164dab944bcfac1ef4d419cbff980",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/predictions.csv": "efec5e78afb91aa23b2594dcdb4968e83132a9d1ef4adc6f9fc315c653dd9abc",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/proxy-models.json": "8b818ff34d8e788cb34915609447f60334645a2e088af5b3390688fedcafd772",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/modeled-carreiro-inputs.npz": "406c603ddbadb52cb744ded82e895cd33082cfba0223afca9f098d82b53ec07e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/modeled-carreiro-inputs.npz": "406c603ddbadb52cb744ded82e895cd33082cfba0223afca9f098d82b53ec07e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/proxy-training.csv": "8dbafa6ed0e70ac941e47180f7ae602b1f709fd7f010e82f17e2c7fbdd7a162c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/proxy-training.csv": "8dbafa6ed0e70ac941e47180f7ae602b1f709fd7f010e82f17e2c7fbdd7a162c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/protocol.json": "c3779f75bb325dfd7da14c9290f67fab7e4158ee32b97727eecf00231de0d414",
+    "/Users/brunozilio/Documents/radar/docs/anchor-delay-15min-protocol.json": "c3779f75bb325dfd7da14c9290f67fab7e4158ee32b97727eecf00231de0d414",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json": "114cf5fc7cc8b0c1196a5b8a879e91395548e337c0f2d583651a151e48c9225e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz": "c8c3fa62bd28850e767d921cd3743edb304b84d11c3b9d3ed48189b5207a4314",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv": "1921f44b91dbee97cb858e211ab50c1da6ed5d262dada05fb0bd43017d4a254e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json": "f16f5007d45f9a04f17a5d3a5256c1d7ae199d6b89aaefe248feda6d6467648d",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json": "79a5734092cbfaa2238934bf5769942539d5edad842c3be12517ec032e3872bf",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/resultado.json": "d8332f95bbfd60c4dbbb13b6d9ca331df3f026f8732a65a32fb72f09af67ef15",
+    "/Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py": "1675720deb96c34a28550ba902cd1820ed44c4e2c2a7ce73c446e4982f2ab47e",
+    "/Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py": "1c41801b512df0befab47cdba7f03a00758b2dc10c41cac7a3fee3f228cf84e5",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_reservoir_mucum_experiment.py": "841a3c861d6227f19b262d3d55a344630eb4e882ef8bd726cd74996046a179b6",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py": "b12cea013b4f580b73c3adbf179140b9fc19618c55c849098c674c83badcd9ac",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hge_dependencies.py": "46f1950e5e0d743181906d63c309ab02842ded4546c3b9506d9f08b5f5cbe4ef",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py": "2c265b53228f8345a05de279c09c8f324f4025d641ed948b43619a4f477cb85c",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json": "10213a6d0e29447e9a9da62ad9f0137af3444d79a5007b1a802cdc557fd04f7c",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-15min-20260921/code/hydro_reservoir_mucum_experiment.py": "841a3c861d6227f19b262d3d55a344630eb4e882ef8bd726cd74996046a179b6",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/experiment.json": "f9ffd2ebaaae66bbf37d544e9a09ddc68d1496211cf85ca28200aa68b0c843ec",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/predictions.csv": "cb9b5d4fb60caed03db4e6f9017a065dbd657ff31f69d56d9015eb46978069ac",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/proxy-models.json": "8b818ff34d8e788cb34915609447f60334645a2e088af5b3390688fedcafd772",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/modeled-carreiro-inputs.npz": "406c603ddbadb52cb744ded82e895cd33082cfba0223afca9f098d82b53ec07e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/proxy-training.csv": "8dbafa6ed0e70ac941e47180f7ae602b1f709fd7f010e82f17e2c7fbdd7a162c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/protocol.json": "73afa20ee40094659602bbc27c0f6d74dfbe89ae8bdbe051678223e8fc08058b",
+    "/Users/brunozilio/Documents/radar/docs/anchor-delay-30min-protocol.json": "73afa20ee40094659602bbc27c0f6d74dfbe89ae8bdbe051678223e8fc08058b",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-30min-20260921/code/hydro_reservoir_mucum_experiment.py": "841a3c861d6227f19b262d3d55a344630eb4e882ef8bd726cd74996046a179b6",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/experiment.json": "7156a2119d62f0fc92ec8400dfd3e6e712cda3c310cb2bcb5b2237cdb1af58a2",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/predictions.csv": "9dcc4be7da4984360847699dbda6f650e7402bc1a2b0281ef51580a25d569840",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/proxy-models.json": "8b818ff34d8e788cb34915609447f60334645a2e088af5b3390688fedcafd772",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/modeled-carreiro-inputs.npz": "406c603ddbadb52cb744ded82e895cd33082cfba0223afca9f098d82b53ec07e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/proxy-training.csv": "8dbafa6ed0e70ac941e47180f7ae602b1f709fd7f010e82f17e2c7fbdd7a162c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/protocol.json": "00f5ab367acf2559f930dba95c476e1129dc96f6cf73ac039d78df3832252617",
+    "/Users/brunozilio/Documents/radar/docs/anchor-delay-45min-protocol.json": "00f5ab367acf2559f930dba95c476e1129dc96f6cf73ac039d78df3832252617",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-idade-ancora-45min-20260921/code/hydro_reservoir_mucum_experiment.py": "841a3c861d6227f19b262d3d55a344630eb4e882ef8bd726cd74996046a179b6"
+  },
+  "scope": "Artifact invariance and source/pure-function formula verification, not full rerun or retrospective publication proof",
+  "causality_certified": false,
+  "metrics_compared": false,
+  "tolerance_15min_m": 1e-10,
+  "created_at_utc": "2026-09-21T23:09:15.654227+00:00"
+}

@@ -1,0 +1,358 @@
+{
+  "passed": true,
+  "frozen_observed_cells": 1551360,
+  "rows": 12928,
+  "columns": 120,
+  "features_exact": true,
+  "base_truth_times_exact": true,
+  "prior_rainfall_source_hashes_verified": 56,
+  "prior_rainfall_comparison_fields": 60,
+  "prior_rainfall_rows_per_field": 51709,
+  "prior_rainfall_exact": true,
+  "source_sha256": {
+    "outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "outputs/experimento-radar-ausencias-nativas-runtime19-20260921/features.npz": "608eb4d58e34a240bdc6c13c365b21e6b2c4cd108200e25896a09ed3a0388b0c",
+    "outputs/auditoria-latencias-chuva-20260921/source-manifest.json": "683f5dca2c951b2aefe08f0c51923829993473b294f57a48dcd36a62500102de",
+    "outputs/auditoria-latencias-chuva-20260921/regional-comparison.json": "612a0802db62c3eaf92d65a24a7d003d01465ea9a81c40d6e19948c9f99df300",
+    "outputs/auditoria-latencias-chuva-20260921/latencies.json": "f0182f5670b715890c4973324f066b66a6c12810cb5bd76ee39f130c5d47252e"
+  },
+  "bindings": [
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "sha256": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+      "expected": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "sha256": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+      "expected": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86060010.npz",
+      "sha256": "4e5e1282641c5db4391776b53555aebc682af1f4cf7a9b2a5a74e7686563bd4c",
+      "expected": "4e5e1282641c5db4391776b53555aebc682af1f4cf7a9b2a5a74e7686563bd4c",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86060010-fresh.xml",
+      "sha256": "d61b19c824d22402e0668ae1620cae34d67454e2625f9152e1b6fa120d8fbb89",
+      "expected": "d61b19c824d22402e0668ae1620cae34d67454e2625f9152e1b6fa120d8fbb89",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86099000.npz",
+      "sha256": "1fe3b432913d7a35212acb9178a918844b42f04db04c0896f971c427d384b0c5",
+      "expected": "1fe3b432913d7a35212acb9178a918844b42f04db04c0896f971c427d384b0c5",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86099000-fresh.xml",
+      "sha256": "a00000119a63950316775cee1c1a46db5886c01d00f95c49d2cafc747063d74a",
+      "expected": "a00000119a63950316775cee1c1a46db5886c01d00f95c49d2cafc747063d74a",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86102000.npz",
+      "sha256": "3316959dd7a7419cd39f49d9df83fcccf4e84f2be920a9b816a76be1e7b02226",
+      "expected": "3316959dd7a7419cd39f49d9df83fcccf4e84f2be920a9b816a76be1e7b02226",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86102000-fresh.xml",
+      "sha256": "f3aa053f871792257a7482a54cdaf181aef98c53f73126addaaef76e52aaf556",
+      "expected": "f3aa053f871792257a7482a54cdaf181aef98c53f73126addaaef76e52aaf556",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86117000.npz",
+      "sha256": "64261ba086d4cc87aec8d2ae3dc341a7c799433a35e77391c9d3c11dd0ccd815",
+      "expected": "64261ba086d4cc87aec8d2ae3dc341a7c799433a35e77391c9d3c11dd0ccd815",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86117000-fresh.xml",
+      "sha256": "6bfa7099e4916f4186dfc956783207dd67962a336431131f9d07130bbd105c24",
+      "expected": "6bfa7099e4916f4186dfc956783207dd67962a336431131f9d07130bbd105c24",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86125000.npz",
+      "sha256": "2a1736310fc473bcaa415061802f5ad15845e92926fe03c7db5a6e2057ae3625",
+      "expected": "2a1736310fc473bcaa415061802f5ad15845e92926fe03c7db5a6e2057ae3625",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86125000-fresh.xml",
+      "sha256": "25b6a3a79bc0666d6d7f06b94debd67d48e54c328b4cb983363598592f27cf63",
+      "expected": "25b6a3a79bc0666d6d7f06b94debd67d48e54c328b4cb983363598592f27cf63",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86125050.npz",
+      "sha256": "7f99b7e458802f8fc23f3229088bf9f48838ae2fb0e5b547ba979e95ac72462a",
+      "expected": "7f99b7e458802f8fc23f3229088bf9f48838ae2fb0e5b547ba979e95ac72462a",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86125050-fresh.xml",
+      "sha256": "b9353c15f2d7a3451c74bd049d783ddf6f098cd6e82728dca836a1f5c050f257",
+      "expected": "b9353c15f2d7a3451c74bd049d783ddf6f098cd6e82728dca836a1f5c050f257",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86160000.npz",
+      "sha256": "736bb58c817bb81b43a9c80f41ff72da516612fbd0df9411683015c55ed318cb",
+      "expected": "736bb58c817bb81b43a9c80f41ff72da516612fbd0df9411683015c55ed318cb",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86160000-fresh.xml",
+      "sha256": "9a0d0e2cef7e9f638c910d5ef51975285be1da7cd41a90a7a769aeade29a9e2f",
+      "expected": "9a0d0e2cef7e9f638c910d5ef51975285be1da7cd41a90a7a769aeade29a9e2f",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86163000.npz",
+      "sha256": "87fa83db304659d0f5760c6c3e753615658c418c30610e33605639c3ac3b53e6",
+      "expected": "87fa83db304659d0f5760c6c3e753615658c418c30610e33605639c3ac3b53e6",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86163000-fresh.xml",
+      "sha256": "2e4e3e9fd283eb725806ee9de21cde63797de7601015b259659daa3770d21517",
+      "expected": "2e4e3e9fd283eb725806ee9de21cde63797de7601015b259659daa3770d21517",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86200900.npz",
+      "sha256": "10a91d29e15f9bcc2a3b59c1b1055af46e51955146095e29277894e091dff76b",
+      "expected": "10a91d29e15f9bcc2a3b59c1b1055af46e51955146095e29277894e091dff76b",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86200900-fresh.xml",
+      "sha256": "8fd4358e73bf39f7dbce657bce07edd4f2c86becd043360fa4f9afc0c0137fe3",
+      "expected": "8fd4358e73bf39f7dbce657bce07edd4f2c86becd043360fa4f9afc0c0137fe3",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86280500.npz",
+      "sha256": "bc3fddc936256d7a34476e44ccc357e53c086dbf045cbeabbd3fa82be29aacf6",
+      "expected": "bc3fddc936256d7a34476e44ccc357e53c086dbf045cbeabbd3fa82be29aacf6",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86280500-fresh.xml",
+      "sha256": "eeee480739906cfb828b522f708d84d36fe993d9837edef0989fa7887a68da0a",
+      "expected": "eeee480739906cfb828b522f708d84d36fe993d9837edef0989fa7887a68da0a",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86298000.npz",
+      "sha256": "3fc6312d4653e3dede11c36ff87139000fe461cd07d3a9bcc2ba92eb0e406472",
+      "expected": "3fc6312d4653e3dede11c36ff87139000fe461cd07d3a9bcc2ba92eb0e406472",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86298000-fresh.xml",
+      "sha256": "384cd0e16c17a08b330f12b6582cd1cfa4afc8a16212911737a13bf21a89143a",
+      "expected": "384cd0e16c17a08b330f12b6582cd1cfa4afc8a16212911737a13bf21a89143a",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86403000.npz",
+      "sha256": "4294516f4eb085b659bcef060252fc39364a6ecb16763eee6102d65c547218be",
+      "expected": "4294516f4eb085b659bcef060252fc39364a6ecb16763eee6102d65c547218be",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86403000-fresh.xml",
+      "sha256": "c5f00c6f77eed814be2e60c8220b421af6df1e49cc25376f412dab12fb1297cc",
+      "expected": "c5f00c6f77eed814be2e60c8220b421af6df1e49cc25376f412dab12fb1297cc",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86410800.npz",
+      "sha256": "dd532b1bc240428e9de23e0d65992179f1f559d6767a62b6887980107aaf74d6",
+      "expected": "dd532b1bc240428e9de23e0d65992179f1f559d6767a62b6887980107aaf74d6",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86410800-fresh.xml",
+      "sha256": "5bd20869c50ed1c73c41f099e969c05ec446506130ccd76c988bd2962a254e80",
+      "expected": "5bd20869c50ed1c73c41f099e969c05ec446506130ccd76c988bd2962a254e80",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86447000.npz",
+      "sha256": "45426936ebc9a74e7bfbe4bbab9f532accfb562046b9a33550228843d1c725a6",
+      "expected": "45426936ebc9a74e7bfbe4bbab9f532accfb562046b9a33550228843d1c725a6",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86447000-fresh.xml",
+      "sha256": "c11354ec480255deb395f6dd78197427668ddbf80120f7ead9b6a50d36d44fe9",
+      "expected": "c11354ec480255deb395f6dd78197427668ddbf80120f7ead9b6a50d36d44fe9",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86448000.npz",
+      "sha256": "8d23bd08dd33a01dfb2b29d610661be576dafdb4e6dbfad02e50e068035f02ec",
+      "expected": "8d23bd08dd33a01dfb2b29d610661be576dafdb4e6dbfad02e50e068035f02ec",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86448000-fresh.xml",
+      "sha256": "c90ad8281cf33421fcab7b1d27e5e980d44785b092e4ab0bfa41d1f3ba90c37a",
+      "expected": "c90ad8281cf33421fcab7b1d27e5e980d44785b092e4ab0bfa41d1f3ba90c37a",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86450000.npz",
+      "sha256": "6c3570c197a50bae17d32740a6fd978ca6136e6485418bfb2676029d8fae1f79",
+      "expected": "6c3570c197a50bae17d32740a6fd978ca6136e6485418bfb2676029d8fae1f79",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86450000-fresh.xml",
+      "sha256": "e12659e34be8a1c3aad5f0c07d53af9d56680e2104f0ff1a3f1095e625354fa0",
+      "expected": "e12659e34be8a1c3aad5f0c07d53af9d56680e2104f0ff1a3f1095e625354fa0",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86471000.npz",
+      "sha256": "419b0fa5d6d5cce96c8b351b8bd9526be3856830f6b9349ad4213811b9fada63",
+      "expected": "419b0fa5d6d5cce96c8b351b8bd9526be3856830f6b9349ad4213811b9fada63",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86471000-fresh.xml",
+      "sha256": "180328f2e99ac6aae4e40ff79ce9b2af5b00d487a39d531df48fa4b198bb7af7",
+      "expected": "180328f2e99ac6aae4e40ff79ce9b2af5b00d487a39d531df48fa4b198bb7af7",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86472000.npz",
+      "sha256": "9d07e6c6bef19d26ea919d03623e5cf30193634646d1f43ecd791a97bcbbbc03",
+      "expected": "9d07e6c6bef19d26ea919d03623e5cf30193634646d1f43ecd791a97bcbbbc03",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86472000-fresh.xml",
+      "sha256": "74796c2fe2cb18cbbb4a720c7c5887aba9bd866fab151a341dad261cd4c2cc3d",
+      "expected": "74796c2fe2cb18cbbb4a720c7c5887aba9bd866fab151a341dad261cd4c2cc3d",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86472600.npz",
+      "sha256": "9afa1998113823f7eee983f0e26e429c61813ad2e68e95ecf49dc53919a6f59d",
+      "expected": "9afa1998113823f7eee983f0e26e429c61813ad2e68e95ecf49dc53919a6f59d",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86472600-fresh.xml",
+      "sha256": "ab667568df560e819ea804c4eff08e156bb24a622b6a9eb5669745f047cc8e4c",
+      "expected": "ab667568df560e819ea804c4eff08e156bb24a622b6a9eb5669745f047cc8e4c",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86479000.npz",
+      "sha256": "0c2bb2fdf15e7c10fb4ab1f409dc47273b74f59a01ae1c25a49fdf6cd8d2d2cf",
+      "expected": "0c2bb2fdf15e7c10fb4ab1f409dc47273b74f59a01ae1c25a49fdf6cd8d2d2cf",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86479000-fresh.xml",
+      "sha256": "223e88290c10bbdd7ddae6b85b54a0cdbe3f6351d962edc837a6cc892fb60db9",
+      "expected": "223e88290c10bbdd7ddae6b85b54a0cdbe3f6351d962edc837a6cc892fb60db9",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86488000.npz",
+      "sha256": "fb71f3327a973f48c14c9726cd2365db5509dd5cd68c885a21256a50dc30dc85",
+      "expected": "fb71f3327a973f48c14c9726cd2365db5509dd5cd68c885a21256a50dc30dc85",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86488000-fresh.xml",
+      "sha256": "e15503327cd67453440599b5d0fee92588ee81d1dd20901d685ff615919e6851",
+      "expected": "e15503327cd67453440599b5d0fee92588ee81d1dd20901d685ff615919e6851",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86493000.npz",
+      "sha256": "7bcc4328edac94643aba8c0d8b77a3fc55060fdd63cfd8132230f51ce63e4987",
+      "expected": "7bcc4328edac94643aba8c0d8b77a3fc55060fdd63cfd8132230f51ce63e4987",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86493000-fresh.xml",
+      "sha256": "7c48f8959edf30bacf568949cb3bf389d3a614337168a684f742c0819a117c1e",
+      "expected": "7c48f8959edf30bacf568949cb3bf389d3a614337168a684f742c0819a117c1e",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86495500.npz",
+      "sha256": "5831c7a287b835b95353b45fe313a5ad4a0bc15de967088a50a787e7d44c3811",
+      "expected": "5831c7a287b835b95353b45fe313a5ad4a0bc15de967088a50a787e7d44c3811",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86495500-fresh.xml",
+      "sha256": "c3e27205deac2ccececaaf311be296362fe30faa3d3c0e61e27e419277b1d9ae",
+      "expected": "c3e27205deac2ccececaaf311be296362fe30faa3d3c0e61e27e419277b1d9ae",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86500000.npz",
+      "sha256": "373bebcb75e847ce1aaf7fc5af7ae681ce473c89f778f7b6cb7768b09c637f8b",
+      "expected": "373bebcb75e847ce1aaf7fc5af7ae681ce473c89f778f7b6cb7768b09c637f8b",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86500000-fresh.xml",
+      "sha256": "4e99b44a80a39f045e0fc5f0e258f50a5b6d76ac52bec5d41649d997fbd918eb",
+      "expected": "4e99b44a80a39f045e0fc5f0e258f50a5b6d76ac52bec5d41649d997fbd918eb",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86504900.npz",
+      "sha256": "6e5f02f69b5e24c56532b1315823d72c8b57272e387c324327a1c156fae5ccb1",
+      "expected": "6e5f02f69b5e24c56532b1315823d72c8b57272e387c324327a1c156fae5ccb1",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86504900-fresh.xml",
+      "sha256": "09ec433764856add3b76f02e6c6c4349d2561095451f6c1cea71a95d42d6a3b5",
+      "expected": "09ec433764856add3b76f02e6c6c4349d2561095451f6c1cea71a95d42d6a3b5",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86505500.npz",
+      "sha256": "b15cd9f0a53ade7b869d9248bd45d660c5f8395f781b0ccf6c584bd571e4934d",
+      "expected": "b15cd9f0a53ade7b869d9248bd45d660c5f8395f781b0ccf6c584bd571e4934d",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86505500-fresh.xml",
+      "sha256": "c8e495fa38dd8609df3ee94afdaf62082485d179f0edc1e266a147d7c12da658",
+      "expected": "c8e495fa38dd8609df3ee94afdaf62082485d179f0edc1e266a147d7c12da658",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/normalized-86510000.npz",
+      "sha256": "484238d46edbe6c83230520849f159d802a8f4dff635c5fc904bd1aefb0678b8",
+      "expected": "484238d46edbe6c83230520849f159d802a8f4dff635c5fc904bd1aefb0678b8",
+      "passed": true
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86510000-fresh.xml",
+      "sha256": "ee754753e5fbe16b6e04626838e370e50772fea702570189440a75d864938c1d",
+      "expected": "ee754753e5fbe16b6e04626838e370e50772fea702570189440a75d864938c1d",
+      "passed": true
+    }
+  ],
+  "method": "Manually reconstructed the120observed columns from frozen telemetry without importing helpers. Bound prior rainfall integration audit to unchanged input hashes. Did not rerun interval integration here."
+}

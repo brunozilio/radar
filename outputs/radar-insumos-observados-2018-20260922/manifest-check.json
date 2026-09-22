@@ -1,0 +1,991 @@
+{
+  "passed": true,
+  "count": 246,
+  "manifest_sha256": "9bc8ed6d3a4380d7e6935a33b59cfa3350c59222713c52ffd54ed7641ad96b7a",
+  "checks": [
+    {
+      "file": "README.md",
+      "passed": true
+    },
+    {
+      "file": "audit.py",
+      "passed": true
+    },
+    {
+      "file": "collect.py",
+      "passed": true
+    },
+    {
+      "file": "conflicts.json",
+      "passed": true
+    },
+    {
+      "file": "coverage.json",
+      "passed": true
+    },
+    {
+      "file": "daily-coverage.csv",
+      "passed": true
+    },
+    {
+      "file": "field-coverage.csv",
+      "passed": true
+    },
+    {
+      "file": "finalize.py",
+      "passed": true
+    },
+    {
+      "file": "plan.json",
+      "passed": true
+    },
+    {
+      "file": "prepare.py",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86060010-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86060010-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86060010-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86060010-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86060010-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86060010-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86099000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86099000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86099000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86099000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86099000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86099000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86102000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86102000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86102000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86102000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86102000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86102000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86117000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86117000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86117000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86117000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86117000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86117000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125050-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125050-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125050-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125050-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125050-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86125050-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86160000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86160000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86160000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86160000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86160000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86160000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86163000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86163000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86163000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86163000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86163000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86163000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86200900-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86200900-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86200900-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86200900-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86200900-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86200900-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86280500-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86280500-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86280500-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86280500-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86280500-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86280500-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86298000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86298000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86298000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86298000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86298000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86298000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86403000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86403000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86403000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86403000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86403000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86403000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86410800-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86410800-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86410800-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86410800-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86410800-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86410800-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86447000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86447000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86447000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86447000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86447000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86447000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86448000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86448000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86448000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86448000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86448000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86448000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86450000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86450000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86450000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86450000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86450000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86450000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86471000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86471000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86471000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86471000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86471000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86471000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472000-2018-08-27--2018-08-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472000-2018-08-27--2018-08-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472000-2018-08-27--2018-08-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472000-2018-09-27--2018-09-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472000-2018-09-27--2018-09-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472000-2018-09-27--2018-09-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472600-2018-08-27--2018-08-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472600-2018-08-27--2018-08-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472600-2018-08-27--2018-08-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472600-2018-09-27--2018-09-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472600-2018-09-27--2018-09-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86472600-2018-09-27--2018-09-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86479000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86479000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86479000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86479000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86479000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86479000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86488000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86488000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86488000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86488000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86488000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86488000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86493000-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86493000-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86493000-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86493000-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86493000-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86493000-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86495500-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86495500-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86495500-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86495500-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86495500-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86495500-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86500000-2018-08-27--2018-08-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86500000-2018-08-27--2018-08-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86500000-2018-08-27--2018-08-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86500000-2018-09-27--2018-09-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86500000-2018-09-27--2018-09-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86500000-2018-09-27--2018-09-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86504900-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86504900-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86504900-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86504900-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86504900-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86504900-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86505500-2018-08-27--2018-09-05.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86505500-2018-08-27--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86505500-2018-08-27--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86505500-2018-09-27--2018-10-06.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86505500-2018-09-27--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86505500-2018-09-27--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86510000-2018-08-27--2018-08-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86510000-2018-08-27--2018-08-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86510000-2018-08-27--2018-08-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86510000-2018-09-27--2018-09-29.attempt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86510000-2018-09-27--2018-09-29.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/ana-86510000-2018-09-27--2018-09-29.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472000-2018-08-30--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472000-2018-08-30--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472000-2018-09-30--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472000-2018-09-30--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472600-2018-08-30--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472600-2018-08-30--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472600-2018-09-30--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86472600-2018-09-30--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86500000-2018-08-30--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86500000-2018-08-30--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86500000-2018-09-30--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86500000-2018-09-30--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86510000-2018-08-30--2018-09-05.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86510000-2018-08-30--2018-09-05.xml",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86510000-2018-09-30--2018-10-06.receipt.json",
+      "passed": true
+    },
+    {
+      "file": "raw/reused-86510000-2018-09-30--2018-10-06.xml",
+      "passed": true
+    },
+    {
+      "file": "report.py",
+      "passed": true
+    },
+    {
+      "file": "source-manifest.json",
+      "passed": true
+    },
+    {
+      "file": "source-status.json",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-08-27/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "stations/2018-09-27/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "file": "verification.json",
+      "passed": true
+    }
+  ]
+}

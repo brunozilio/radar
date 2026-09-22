@@ -1,0 +1,207 @@
+{
+  "id": "santa-tereza-6h-v1",
+  "station": "86472600",
+  "horizonHours": 6,
+  "features": [
+    "86472600:level",
+    "86472600:age_hours",
+    "86472600:change_0.5h",
+    "86472600:change_1h",
+    "86472600:change_2h",
+    "86472600:change_4h",
+    "86472600:change_8h",
+    "86472000:level",
+    "86472000:age_hours",
+    "86472000:change_0.5h",
+    "86472000:change_1h",
+    "86472000:change_2h",
+    "86472000:change_4h",
+    "86472000:change_8h"
+  ],
+  "trainingCutoff": "2026-09-21T00:00:00-03:00",
+  "validationStart": "2026-01-01",
+  "testStart": "2026-07-01",
+  "validationPassed": true,
+  "artifacts": {
+    "forecast-1.joblib": "5c5c4b84e50585a588d561a2e185674f2e3d9990abd831e966b8adcb5e69484f",
+    "forecast-2.joblib": "e1d9c0c06903fca8f22e4782fe1e67f8d2b14f647d4d04e80502e1db3958404d",
+    "forecast-3.joblib": "cb7c1c5bab0d3efcbfb4f8f2f932ebd1b813e679559ec1a7a588d5643b9f1dac",
+    "forecast-4.joblib": "4a9830bead6084a2c34f09226c06f1a04ec4720bbf96af75f551e7439173c844",
+    "forecast-5.joblib": "218268fee46793630e719cb7c3ec91fe9c871e9246d7940deb7e03b97b2e4312",
+    "forecast-6.joblib": "f2aa80644cf32c051995c0d60b9713b9f32b776db02c385a8f7ac023efe42a13"
+  },
+  "levelRange": {
+    "86472600": [
+      1.09,
+      17.46
+    ],
+    "86472000": [
+      2.49,
+      20.35
+    ]
+  },
+  "metrics": [
+    {
+      "lead_hours": 1,
+      "validation": {
+        "n": 25207,
+        "mae_m": 0.02689095122291696,
+        "p90_m": 0.06106822528348786,
+        "persistence_mae_m": 0.08417899789740943
+      },
+      "test": {
+        "n": 11391,
+        "mae_m": 0.07582215963120524,
+        "p90_m": 0.19079483975060718,
+        "persistence_mae_m": 0.21671143885523658
+      },
+      "changing_test": {
+        "n": 1324,
+        "mae_m": 0.24502459959875011,
+        "p90_m": 0.501352573412783,
+        "persistence_mae_m": 0.7990105740181269
+      }
+    },
+    {
+      "lead_hours": 2,
+      "validation": {
+        "n": 25194,
+        "mae_m": 0.038508966738537,
+        "p90_m": 0.08962284367801733,
+        "persistence_mae_m": 0.12944709057712153
+      },
+      "test": {
+        "n": 11369,
+        "mae_m": 0.12531637240464796,
+        "p90_m": 0.31354815590491575,
+        "persistence_mae_m": 0.3337470314011787
+      },
+      "changing_test": {
+        "n": 2606,
+        "mae_m": 0.2521270289584257,
+        "p90_m": 0.5614251058214597,
+        "persistence_mae_m": 0.8670299309286262
+      }
+    },
+    {
+      "lead_hours": 3,
+      "validation": {
+        "n": 25190,
+        "mae_m": 0.049877424061132006,
+        "p90_m": 0.11254787503922511,
+        "persistence_mae_m": 0.17117229059150457
+      },
+      "test": {
+        "n": 11354,
+        "mae_m": 0.18782298420716753,
+        "p90_m": 0.46514352081056043,
+        "persistence_mae_m": 0.44356438259644176
+      },
+      "changing_test": {
+        "n": 3732,
+        "mae_m": 0.332479809700434,
+        "p90_m": 0.7393529803055333,
+        "persistence_mae_m": 0.9440862808145766
+      }
+    },
+    {
+      "lead_hours": 4,
+      "validation": {
+        "n": 25188,
+        "mae_m": 0.06640567017766856,
+        "p90_m": 0.14637765234025849,
+        "persistence_mae_m": 0.20864340161981895
+      },
+      "test": {
+        "n": 11332,
+        "mae_m": 0.2608158792825701,
+        "p90_m": 0.6435293911518377,
+        "persistence_mae_m": 0.5442560889516413
+      },
+      "changing_test": {
+        "n": 4638,
+        "mae_m": 0.42485158926877276,
+        "p90_m": 0.9029023382184987,
+        "persistence_mae_m": 1.0142410521776628
+      }
+    },
+    {
+      "lead_hours": 5,
+      "validation": {
+        "n": 25184,
+        "mae_m": 0.09016613674227927,
+        "p90_m": 0.19537699497618152,
+        "persistence_mae_m": 0.24149261435832275
+      },
+      "test": {
+        "n": 11314,
+        "mae_m": 0.33985223223514305,
+        "p90_m": 0.8171028974059741,
+        "persistence_mae_m": 0.6350380060102527
+      },
+      "changing_test": {
+        "n": 5372,
+        "mae_m": 0.5152473436863996,
+        "p90_m": 1.0370577024644616,
+        "persistence_mae_m": 1.0761392405063293
+      }
+    },
+    {
+      "lead_hours": 6,
+      "validation": {
+        "n": 25176,
+        "mae_m": 0.12545216141061613,
+        "p90_m": 0.26996787435332414,
+        "persistence_mae_m": 0.2694629806164601
+      },
+      "test": {
+        "n": 11302,
+        "mae_m": 0.4066654964241352,
+        "p90_m": 0.9102951715787337,
+        "persistence_mae_m": 0.7156644841620952
+      },
+      "changing_test": {
+        "n": 6052,
+        "mae_m": 0.5736806528135008,
+        "p90_m": 1.1014490048087588,
+        "persistence_mae_m": 1.1220472571050892
+      }
+    }
+  ],
+  "delayScenariosSeconds": [
+    [
+      0,
+      0
+    ],
+    [
+      1800,
+      1800
+    ],
+    [
+      3600,
+      3600
+    ],
+    [
+      5400,
+      5400
+    ],
+    [
+      0,
+      5400
+    ],
+    [
+      5400,
+      0
+    ]
+  ],
+  "limitations": [
+    "Retrospective availability stress; historical publication timestamps unknown.",
+    "Repeated delay scenarios are not independent observations.",
+    "No 2023/2024 extreme-flood validation; no guaranteed accuracy.",
+    "Observed levels only; rainfall forecasts and dam operations are not direct inputs."
+  ],
+  "inputs": {
+    "outputs/mucum-propagacao-2026-09-21/raw/normalized-86472600.npz": "9afa1998113823f7eee983f0e26e429c61813ad2e68e95ecf49dc53919a6f59d",
+    "outputs/mucum-propagacao-2026-09-21/raw/normalized-86472000.npz": "9d07e6c6bef19d26ea919d03623e5cf30193634646d1f43ecd791a97bcbbbc03"
+  }
+}

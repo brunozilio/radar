@@ -1,0 +1,18 @@
+{
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-29.1&longitude=-51.61&start_date=2025-04-01&end_date=2025-04-02&hourly=et0_fao_evapotranspiration%2Cprecipitation&models=era5&timezone=UTC",
+  "status": 200,
+  "retrieved_at": "2026-09-21T19:35:06.174047+00:00",
+  "sha256": "ef1eb83f6e35992a6a7500441c7d199312c9b1638b1ad07f93b716f4adb1978c",
+  "bytes": 1712,
+  "sample_hours": 48,
+  "non_null_et0": 48,
+  "units": {
+    "time": "iso8601",
+    "et0_fao_evapotranspiration": "mm",
+    "precipitation": "mm"
+  },
+  "coordinate_returned": [
+    -29.0,
+    -51.5
+  ]
+}

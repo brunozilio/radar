@@ -1,0 +1,13 @@
+{
+  "id": "radar-2020-observed-augmentation-v1",
+  "scope": "Local RADAR research only, registered before fitting. No operational promotion or live issuance.",
+  "reference": "Frozen120feature models from experimento-radar-observado-120-20260921, original2025/2026 native-missing membership. Reproduce all saved forecasts exactly. Do not compare directly against180features to attribute gains to2020.",
+  "candidate": "Add all eligible July1..20/2020 origins from radar-matriz-observada-2020-20260921, finite delayed base and exact future approved target, target beforeJuly21. No auxiliary completeness restriction, imputation or peak mark. No2023/2024 data added. Fit chronologically with2020rows first then unchanged original rows. Future targets built separately per dataset. Do not access reserved2021/2022windows.",
+  "features_and_parameters": "Same120observed columns, original loss/leaf_nodes and fixed max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. Same runtime and weights1+2*(abs(target-base)>=1)+2*(target>=9). No parameter search or selective addition of extreme-only rows.",
+  "evaluation": "Unchanged102084scheduled rows and both original chronological folds, including originalOctober boundary exclusion. All horizons1..12, all targets and level>=7m, complete24/missing24/full_schedule. Preserve missing targets, failures and coverage; paired and observed-target hit fractions within0.50m,MAE,bias,P98,max. No posthoc horizon mixing.",
+  "base_selection": "Same frozen latest-row rule O−15min with age<=15min after query, preserving missing values. The audited2020matrix actually has exact source rows at O−15min for all480origins; no additional carry-forward was used.",
+  "limits": "Original evaluation phases and July2020 are inspected development data, not an independent holdout. Gauge datum/timezone/publication and dam regimes uncertified; missing peak targets and entire PrataTurvo rainfall block remain explicit. No98percent claim or promotion from numerical improvement. Reserved2021/2022 remain unused.",
+  "promoted": false,
+  "goal_achieved": false,
+  "qi_checks": "Preserve reported Q/I values. Assert no admitted2020pair uses a reportedzero in the frozen current/lagged QI diagnostic; this is a consequence of the existing base/target eligibility, not a new rejection mask. Do not fill missing peak labels."
+}

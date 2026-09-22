@@ -1,0 +1,38 @@
+{
+  "direct_http_attempts": [
+    {
+      "url": "https://open-meteo.com/en/docs/previous-runs-api",
+      "requested_at": "2026-09-21T22:32:45.566210+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://open-meteo.com/en/docs/single-runs-api",
+      "requested_at": "2026-09-21T22:32:45.566497+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://open-meteo.com/en/docs/model-updates",
+      "requested_at": "2026-09-21T22:32:45.566614+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://open-meteo.com/en/docs",
+      "requested_at": "2026-09-21T22:32:45.566702+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "web_tool_extraction": {
+    "file": "sources/open-meteo-web-extract.txt",
+    "sha256": "2f3116c0eef566f757f450f9ca05acc82f9a97f5be19e055782adcd3471cae65",
+    "preserved_at_utc": "2026-09-21T22:36:11.715896+00:00",
+    "collected_date_utc": "2026-09-21",
+    "exact_web_request_timestamp_not_exposed": true,
+    "format": "Public web tool text extraction; not raw HTTP body. Original HTML requests returned HTTP 403.",
+    "urls": [
+      "https://open-meteo.com/en/docs/previous-runs-api",
+      "https://open-meteo.com/en/docs/single-runs-api",
+      "https://open-meteo.com/en/docs/model-updates",
+      "https://open-meteo.com/en/docs"
+    ]
+  }
+}

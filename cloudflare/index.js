@@ -9714,7 +9714,7 @@ __name(decodeObjectMetadata, "decodeObjectMetadata");
 function objectKeyFromUrl(url) {
   try {
     const key = decodeURIComponent(url.pathname.slice(1));
-    return OBJECT_KEY_PATTERN.test(key) ? key : null;
+    return OBJECT_KEY_PATTERN.test(key) || isProjectionObjectKey(key) ? key : null;
   } catch {
     return null;
   }
@@ -9724,7 +9724,7 @@ async function handleContainerObjectStorage(request, env) {
   const url = new URL(request.url);
   if (request.method === "GET" && url.pathname === "/") {
     const prefix = url.searchParams.get("prefix") || "";
-    if (!["media/", "assets/"].includes(prefix)) {
+    if (!["media/", "assets/", "projection/rounds/"].includes(prefix)) {
       return json({ message: "Prefixo inv\xE1lido" }, 400);
     }
     const listed = await env.MEDIA_BUCKET.list({
@@ -10521,7 +10521,12 @@ MonitoramentoContainer.outboundByHost = {
   "monitora-d1": handleContainerDatabase,
   "monitora-r2": handleContainerObjectStorage
 };
+import { runProjectionSchedule } from "./projection-schedule.js";
+import { isProjectionObjectKey } from "./projection-storage.js";
 var worker = {
+  async scheduled(_event, env) {
+    await runProjectionSchedule(env, getContainer);
+  },
   async fetch(request, env, context) {
     const pathname = new URL(request.url).pathname;
     if (pathname.startsWith("/api/push/")) {

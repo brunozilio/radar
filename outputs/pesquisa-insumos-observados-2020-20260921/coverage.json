@@ -1,0 +1,3655 @@
+{
+  "audited_at_utc": "2026-09-22T02:35:27.906896+00:00",
+  "source_timestamps": "Original strings without timezone; any UTC−3 interpretation remains presumed",
+  "units": "ANA NivelFinal cm, ChuvaFinal mm under existing parser convention; raw responses preserved",
+  "collection_only": true,
+  "no_training": true,
+  "no_matrix": true,
+  "stations": [
+    {
+      "station": "86060010",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 0,
+          "empty": 213,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 213
+          },
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "VazaoFinal": {
+          "numeric": 0,
+          "empty": 213,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {
+            "None": 213
+          },
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaFinal": {
+          "numeric": 213,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 213,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 213,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 213
+          },
+          "approved_min_native_units": 0.0,
+          "approved_max_native_units": 19.2,
+          "first_approved": "2020-07-04 01:00:00",
+          "last_approved": "2020-07-13 23:00:00",
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 0,
+          "empty": 213,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {
+            "None": 213
+          },
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [],
+      "rows": 213,
+      "unique_timestamps": 213,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": "2020-07-04T01:00:00",
+      "last": "2020-07-13T23:00:00",
+      "timestamp_deltas_seconds": {
+        "3600": 205,
+        "7200": 1,
+        "10800": 1,
+        "14400": 1,
+        "18000": 2,
+        "21600": 1,
+        "28800": 1
+      },
+      "timestamp_second_counts": {
+        "0": 213
+      },
+      "cadence_inferred_seconds": 3600,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 747,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-04T00:00:00",
+          "end": "2020-07-04T00:45:00",
+          "slots": 4
+        },
+        {
+          "start": "2020-07-04T01:15:00",
+          "end": "2020-07-04T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T02:15:00",
+          "end": "2020-07-04T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T03:15:00",
+          "end": "2020-07-04T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T04:15:00",
+          "end": "2020-07-04T09:45:00",
+          "slots": 23
+        },
+        {
+          "start": "2020-07-04T10:15:00",
+          "end": "2020-07-04T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T11:15:00",
+          "end": "2020-07-04T14:45:00",
+          "slots": 15
+        },
+        {
+          "start": "2020-07-04T15:15:00",
+          "end": "2020-07-04T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T16:15:00",
+          "end": "2020-07-04T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T17:15:00",
+          "end": "2020-07-04T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T18:15:00",
+          "end": "2020-07-04T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T19:15:00",
+          "end": "2020-07-04T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T20:15:00",
+          "end": "2020-07-04T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T21:15:00",
+          "end": "2020-07-04T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T22:15:00",
+          "end": "2020-07-04T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T23:15:00",
+          "end": "2020-07-04T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T00:15:00",
+          "end": "2020-07-05T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T01:15:00",
+          "end": "2020-07-05T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T02:15:00",
+          "end": "2020-07-05T09:45:00",
+          "slots": 31
+        },
+        {
+          "start": "2020-07-05T10:15:00",
+          "end": "2020-07-05T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T11:15:00",
+          "end": "2020-07-05T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T12:15:00",
+          "end": "2020-07-05T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T13:15:00",
+          "end": "2020-07-05T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T14:15:00",
+          "end": "2020-07-05T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T15:15:00",
+          "end": "2020-07-05T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T16:15:00",
+          "end": "2020-07-05T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T17:15:00",
+          "end": "2020-07-05T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T18:15:00",
+          "end": "2020-07-05T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T19:15:00",
+          "end": "2020-07-05T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T20:15:00",
+          "end": "2020-07-05T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T21:15:00",
+          "end": "2020-07-05T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T22:15:00",
+          "end": "2020-07-05T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T23:15:00",
+          "end": "2020-07-05T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T00:15:00",
+          "end": "2020-07-06T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T01:15:00",
+          "end": "2020-07-06T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T02:15:00",
+          "end": "2020-07-06T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T03:15:00",
+          "end": "2020-07-06T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T04:15:00",
+          "end": "2020-07-06T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T05:15:00",
+          "end": "2020-07-06T09:45:00",
+          "slots": 19
+        },
+        {
+          "start": "2020-07-06T10:15:00",
+          "end": "2020-07-06T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T11:15:00",
+          "end": "2020-07-06T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T12:15:00",
+          "end": "2020-07-06T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T13:15:00",
+          "end": "2020-07-06T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T14:15:00",
+          "end": "2020-07-06T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T15:15:00",
+          "end": "2020-07-06T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T16:15:00",
+          "end": "2020-07-06T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T17:15:00",
+          "end": "2020-07-06T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T18:15:00",
+          "end": "2020-07-06T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T19:15:00",
+          "end": "2020-07-06T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T20:15:00",
+          "end": "2020-07-06T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T21:15:00",
+          "end": "2020-07-06T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T22:15:00",
+          "end": "2020-07-06T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T23:15:00",
+          "end": "2020-07-06T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T00:15:00",
+          "end": "2020-07-07T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T01:15:00",
+          "end": "2020-07-07T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T02:15:00",
+          "end": "2020-07-07T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T03:15:00",
+          "end": "2020-07-07T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T04:15:00",
+          "end": "2020-07-07T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T05:15:00",
+          "end": "2020-07-07T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T06:15:00",
+          "end": "2020-07-07T08:45:00",
+          "slots": 11
+        },
+        {
+          "start": "2020-07-07T09:15:00",
+          "end": "2020-07-07T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T10:15:00",
+          "end": "2020-07-07T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T11:15:00",
+          "end": "2020-07-07T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T12:15:00",
+          "end": "2020-07-07T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T13:15:00",
+          "end": "2020-07-07T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T14:15:00",
+          "end": "2020-07-07T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T15:15:00",
+          "end": "2020-07-07T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T16:15:00",
+          "end": "2020-07-07T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T17:15:00",
+          "end": "2020-07-07T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T18:15:00",
+          "end": "2020-07-07T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T19:15:00",
+          "end": "2020-07-07T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T20:15:00",
+          "end": "2020-07-07T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T21:15:00",
+          "end": "2020-07-07T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T22:15:00",
+          "end": "2020-07-07T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T23:15:00",
+          "end": "2020-07-07T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T00:15:00",
+          "end": "2020-07-08T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T01:15:00",
+          "end": "2020-07-08T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T02:15:00",
+          "end": "2020-07-08T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T03:15:00",
+          "end": "2020-07-08T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T04:15:00",
+          "end": "2020-07-08T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T05:15:00",
+          "end": "2020-07-08T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T06:15:00",
+          "end": "2020-07-08T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T07:15:00",
+          "end": "2020-07-08T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T08:15:00",
+          "end": "2020-07-08T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T09:15:00",
+          "end": "2020-07-08T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T10:15:00",
+          "end": "2020-07-08T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T11:15:00",
+          "end": "2020-07-08T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T12:15:00",
+          "end": "2020-07-08T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T13:15:00",
+          "end": "2020-07-08T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T14:15:00",
+          "end": "2020-07-08T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T15:15:00",
+          "end": "2020-07-08T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T16:15:00",
+          "end": "2020-07-08T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T17:15:00",
+          "end": "2020-07-08T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T18:15:00",
+          "end": "2020-07-08T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T19:15:00",
+          "end": "2020-07-08T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T20:15:00",
+          "end": "2020-07-08T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T21:15:00",
+          "end": "2020-07-08T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T22:15:00",
+          "end": "2020-07-08T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T23:15:00",
+          "end": "2020-07-08T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T00:15:00",
+          "end": "2020-07-09T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T01:15:00",
+          "end": "2020-07-09T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T02:15:00",
+          "end": "2020-07-09T06:45:00",
+          "slots": 19
+        },
+        {
+          "start": "2020-07-09T07:15:00",
+          "end": "2020-07-09T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T08:15:00",
+          "end": "2020-07-09T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T09:15:00",
+          "end": "2020-07-09T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T10:15:00",
+          "end": "2020-07-09T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T11:15:00",
+          "end": "2020-07-09T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T12:15:00",
+          "end": "2020-07-09T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T13:15:00",
+          "end": "2020-07-09T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T14:15:00",
+          "end": "2020-07-09T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T15:15:00",
+          "end": "2020-07-09T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T16:15:00",
+          "end": "2020-07-09T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T17:15:00",
+          "end": "2020-07-09T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T18:15:00",
+          "end": "2020-07-09T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T19:15:00",
+          "end": "2020-07-09T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T20:15:00",
+          "end": "2020-07-09T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T21:15:00",
+          "end": "2020-07-09T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T22:15:00",
+          "end": "2020-07-09T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T23:15:00",
+          "end": "2020-07-09T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T00:15:00",
+          "end": "2020-07-10T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T01:15:00",
+          "end": "2020-07-10T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T02:15:00",
+          "end": "2020-07-10T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T03:15:00",
+          "end": "2020-07-10T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T04:15:00",
+          "end": "2020-07-10T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T05:15:00",
+          "end": "2020-07-10T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T06:15:00",
+          "end": "2020-07-10T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T07:15:00",
+          "end": "2020-07-10T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T08:15:00",
+          "end": "2020-07-10T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T09:15:00",
+          "end": "2020-07-10T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T10:15:00",
+          "end": "2020-07-10T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T11:15:00",
+          "end": "2020-07-10T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T12:15:00",
+          "end": "2020-07-10T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T13:15:00",
+          "end": "2020-07-10T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T14:15:00",
+          "end": "2020-07-10T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T15:15:00",
+          "end": "2020-07-10T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T16:15:00",
+          "end": "2020-07-10T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T17:15:00",
+          "end": "2020-07-10T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T18:15:00",
+          "end": "2020-07-10T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T19:15:00",
+          "end": "2020-07-10T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T20:15:00",
+          "end": "2020-07-10T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T21:15:00",
+          "end": "2020-07-10T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T22:15:00",
+          "end": "2020-07-10T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T23:15:00",
+          "end": "2020-07-10T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T00:15:00",
+          "end": "2020-07-11T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T01:15:00",
+          "end": "2020-07-11T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T02:15:00",
+          "end": "2020-07-11T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T03:15:00",
+          "end": "2020-07-11T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T04:15:00",
+          "end": "2020-07-11T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T05:15:00",
+          "end": "2020-07-11T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T06:15:00",
+          "end": "2020-07-11T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T07:15:00",
+          "end": "2020-07-11T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T08:15:00",
+          "end": "2020-07-11T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T09:15:00",
+          "end": "2020-07-11T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T10:15:00",
+          "end": "2020-07-11T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T11:15:00",
+          "end": "2020-07-11T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T12:15:00",
+          "end": "2020-07-11T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T13:15:00",
+          "end": "2020-07-11T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T14:15:00",
+          "end": "2020-07-11T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T15:15:00",
+          "end": "2020-07-11T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T16:15:00",
+          "end": "2020-07-11T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T17:15:00",
+          "end": "2020-07-11T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T18:15:00",
+          "end": "2020-07-11T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T19:15:00",
+          "end": "2020-07-11T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T20:15:00",
+          "end": "2020-07-11T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T21:15:00",
+          "end": "2020-07-11T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T22:15:00",
+          "end": "2020-07-11T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T23:15:00",
+          "end": "2020-07-11T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T00:15:00",
+          "end": "2020-07-12T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T01:15:00",
+          "end": "2020-07-12T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T02:15:00",
+          "end": "2020-07-12T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T03:15:00",
+          "end": "2020-07-12T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T04:15:00",
+          "end": "2020-07-12T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T05:15:00",
+          "end": "2020-07-12T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T06:15:00",
+          "end": "2020-07-12T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T07:15:00",
+          "end": "2020-07-12T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T08:15:00",
+          "end": "2020-07-12T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T09:15:00",
+          "end": "2020-07-12T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T10:15:00",
+          "end": "2020-07-12T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T11:15:00",
+          "end": "2020-07-12T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T12:15:00",
+          "end": "2020-07-12T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T13:15:00",
+          "end": "2020-07-12T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T14:15:00",
+          "end": "2020-07-12T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T15:15:00",
+          "end": "2020-07-12T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T16:15:00",
+          "end": "2020-07-12T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T17:15:00",
+          "end": "2020-07-12T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T18:15:00",
+          "end": "2020-07-12T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T19:15:00",
+          "end": "2020-07-12T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T20:15:00",
+          "end": "2020-07-12T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T21:15:00",
+          "end": "2020-07-12T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T22:15:00",
+          "end": "2020-07-12T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T23:15:00",
+          "end": "2020-07-12T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T00:15:00",
+          "end": "2020-07-13T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T01:15:00",
+          "end": "2020-07-13T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T02:15:00",
+          "end": "2020-07-13T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T03:15:00",
+          "end": "2020-07-13T04:45:00",
+          "slots": 7
+        },
+        {
+          "start": "2020-07-13T05:15:00",
+          "end": "2020-07-13T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T06:15:00",
+          "end": "2020-07-13T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T07:15:00",
+          "end": "2020-07-13T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T08:15:00",
+          "end": "2020-07-13T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T09:15:00",
+          "end": "2020-07-13T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T10:15:00",
+          "end": "2020-07-13T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T11:15:00",
+          "end": "2020-07-13T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T12:15:00",
+          "end": "2020-07-13T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T13:15:00",
+          "end": "2020-07-13T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T14:15:00",
+          "end": "2020-07-13T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T15:15:00",
+          "end": "2020-07-13T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T16:15:00",
+          "end": "2020-07-13T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T17:15:00",
+          "end": "2020-07-13T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T18:15:00",
+          "end": "2020-07-13T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T19:15:00",
+          "end": "2020-07-13T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T20:15:00",
+          "end": "2020-07-13T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T21:15:00",
+          "end": "2020-07-13T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T22:15:00",
+          "end": "2020-07-13T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T23:15:00",
+          "end": "2020-07-13T23:45:00",
+          "slots": 3
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true,
+      "modal_cadence_diagnostic": {
+        "phase_seconds": 0,
+        "expected_slots": 240,
+        "present_on_grid": 213,
+        "off_grid_records": 0,
+        "missing_slots": 27,
+        "gaps": [
+          {
+            "start": "2020-07-04T00:00:00",
+            "end": "2020-07-04T00:00:00",
+            "slots": 1
+          },
+          {
+            "start": "2020-07-04T05:00:00",
+            "end": "2020-07-04T09:00:00",
+            "slots": 5
+          },
+          {
+            "start": "2020-07-04T12:00:00",
+            "end": "2020-07-04T14:00:00",
+            "slots": 3
+          },
+          {
+            "start": "2020-07-05T03:00:00",
+            "end": "2020-07-05T09:00:00",
+            "slots": 7
+          },
+          {
+            "start": "2020-07-06T06:00:00",
+            "end": "2020-07-06T09:00:00",
+            "slots": 4
+          },
+          {
+            "start": "2020-07-07T07:00:00",
+            "end": "2020-07-07T08:00:00",
+            "slots": 2
+          },
+          {
+            "start": "2020-07-09T03:00:00",
+            "end": "2020-07-09T06:00:00",
+            "slots": 4
+          },
+          {
+            "start": "2020-07-13T04:00:00",
+            "end": "2020-07-13T04:00:00",
+            "slots": 1
+          }
+        ]
+      }
+    },
+    {
+      "station": "86125050",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "VazaoFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [
+        "Sem dados para esta estação (Código: 86125050) no período solicitado!"
+      ],
+      "rows": 0,
+      "unique_timestamps": 0,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": null,
+      "last": null,
+      "timestamp_deltas_seconds": {},
+      "timestamp_second_counts": {},
+      "cadence_inferred_seconds": null,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 960,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-04T00:00:00",
+          "end": "2020-07-13T23:45:00",
+          "slots": 960
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true
+    },
+    {
+      "station": "86160000",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 906,
+          "empty": 18,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 905,
+          "suspect_numeric": 1,
+          "numeric_without_qc": 0,
+          "parser_compatible": 905,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 905,
+            "None": 18,
+            "Dado suspeito": 1
+          },
+          "approved_min_native_units": 116.0,
+          "approved_max_native_units": 597.0,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:45:00",
+          "suspect_samples": [
+            {
+              "DataHora": "2020-07-11 13:00:00",
+              "NivelFinal": "191.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            }
+          ]
+        },
+        "VazaoFinal": {
+          "numeric": 906,
+          "empty": 18,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 905,
+          "suspect_numeric": 1,
+          "numeric_without_qc": 0,
+          "parser_compatible": 905,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 905,
+            "None": 18,
+            "Dado suspeito": 1
+          },
+          "approved_min_native_units": 23.5,
+          "approved_max_native_units": 675.9,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:45:00",
+          "suspect_samples": [
+            {
+              "DataHora": "2020-07-11 13:00:00",
+              "VazaoFinal": "72.30",
+              "CQ_VazaoFinal": "Dado suspeito"
+            }
+          ]
+        },
+        "ChuvaFinal": {
+          "numeric": 818,
+          "empty": 106,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 818,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 818,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 818,
+            "None": 106
+          },
+          "approved_min_native_units": 0.0,
+          "approved_max_native_units": 45.0,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:45:00",
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 818,
+          "empty": 106,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 818,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 818,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 818,
+            "None": 106
+          },
+          "approved_min_native_units": 433.6,
+          "approved_max_native_units": 773.6,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:45:00",
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [],
+      "rows": 924,
+      "unique_timestamps": 924,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": "2020-07-04T00:00:00",
+      "last": "2020-07-13T23:45:00",
+      "timestamp_deltas_seconds": {
+        "900": 920,
+        "8100": 1,
+        "11700": 1,
+        "15300": 1
+      },
+      "timestamp_second_counts": {
+        "0": 924
+      },
+      "cadence_inferred_seconds": 900,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 36,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-07T11:00:00",
+          "end": "2020-07-07T14:45:00",
+          "slots": 16
+        },
+        {
+          "start": "2020-07-07T20:00:00",
+          "end": "2020-07-07T21:45:00",
+          "slots": 8
+        },
+        {
+          "start": "2020-07-08T00:00:00",
+          "end": "2020-07-08T02:45:00",
+          "slots": 12
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true,
+      "modal_cadence_diagnostic": {
+        "phase_seconds": 0,
+        "expected_slots": 960,
+        "present_on_grid": 924,
+        "off_grid_records": 0,
+        "missing_slots": 36,
+        "gaps": [
+          {
+            "start": "2020-07-07T11:00:00",
+            "end": "2020-07-07T14:45:00",
+            "slots": 16
+          },
+          {
+            "start": "2020-07-07T20:00:00",
+            "end": "2020-07-07T21:45:00",
+            "slots": 8
+          },
+          {
+            "start": "2020-07-08T00:00:00",
+            "end": "2020-07-08T02:45:00",
+            "slots": 12
+          }
+        ]
+      }
+    },
+    {
+      "station": "86450000",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 46,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 46,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 46,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 46
+          },
+          "approved_min_native_units": 51.0,
+          "approved_max_native_units": 930.0,
+          "first_approved": "2020-07-04 10:00:00",
+          "last_approved": "2020-07-10 23:00:00",
+          "suspect_samples": []
+        },
+        "VazaoFinal": {
+          "numeric": 46,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 46,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 46,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 46
+          },
+          "approved_min_native_units": 8.1,
+          "approved_max_native_units": 1889.8,
+          "first_approved": "2020-07-04 10:00:00",
+          "last_approved": "2020-07-10 23:00:00",
+          "suspect_samples": []
+        },
+        "ChuvaFinal": {
+          "numeric": 46,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 46,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 46,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 46
+          },
+          "approved_min_native_units": 0.0,
+          "approved_max_native_units": 0.2,
+          "first_approved": "2020-07-04 10:00:00",
+          "last_approved": "2020-07-10 23:00:00",
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 0,
+          "empty": 46,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {
+            "None": 46
+          },
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [],
+      "rows": 46,
+      "unique_timestamps": 46,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": "2020-07-04T10:00:00",
+      "last": "2020-07-10T23:00:00",
+      "timestamp_deltas_seconds": {
+        "3600": 41,
+        "7200": 2,
+        "18000": 1,
+        "385200": 1
+      },
+      "timestamp_second_counts": {
+        "0": 46
+      },
+      "cadence_inferred_seconds": 3600,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 914,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-04T00:00:00",
+          "end": "2020-07-04T09:45:00",
+          "slots": 40
+        },
+        {
+          "start": "2020-07-04T10:15:00",
+          "end": "2020-07-04T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T11:15:00",
+          "end": "2020-07-04T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T12:15:00",
+          "end": "2020-07-04T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T13:15:00",
+          "end": "2020-07-04T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T14:15:00",
+          "end": "2020-07-04T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T15:15:00",
+          "end": "2020-07-04T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T16:15:00",
+          "end": "2020-07-04T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T17:15:00",
+          "end": "2020-07-04T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T18:15:00",
+          "end": "2020-07-04T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T19:15:00",
+          "end": "2020-07-04T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T20:15:00",
+          "end": "2020-07-04T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T21:15:00",
+          "end": "2020-07-04T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T22:15:00",
+          "end": "2020-07-04T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T23:15:00",
+          "end": "2020-07-09T09:45:00",
+          "slots": 427
+        },
+        {
+          "start": "2020-07-09T10:15:00",
+          "end": "2020-07-09T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T11:15:00",
+          "end": "2020-07-09T12:45:00",
+          "slots": 7
+        },
+        {
+          "start": "2020-07-09T13:15:00",
+          "end": "2020-07-09T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T14:15:00",
+          "end": "2020-07-09T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T15:15:00",
+          "end": "2020-07-09T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T16:15:00",
+          "end": "2020-07-09T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T17:15:00",
+          "end": "2020-07-09T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T18:15:00",
+          "end": "2020-07-09T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T19:15:00",
+          "end": "2020-07-09T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T20:15:00",
+          "end": "2020-07-09T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T21:15:00",
+          "end": "2020-07-09T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T22:15:00",
+          "end": "2020-07-09T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T23:15:00",
+          "end": "2020-07-09T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T00:15:00",
+          "end": "2020-07-10T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T01:15:00",
+          "end": "2020-07-10T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T02:15:00",
+          "end": "2020-07-10T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T03:15:00",
+          "end": "2020-07-10T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T04:15:00",
+          "end": "2020-07-10T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T05:15:00",
+          "end": "2020-07-10T09:45:00",
+          "slots": 19
+        },
+        {
+          "start": "2020-07-10T10:15:00",
+          "end": "2020-07-10T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T11:15:00",
+          "end": "2020-07-10T12:45:00",
+          "slots": 7
+        },
+        {
+          "start": "2020-07-10T13:15:00",
+          "end": "2020-07-10T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T14:15:00",
+          "end": "2020-07-10T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T15:15:00",
+          "end": "2020-07-10T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T16:15:00",
+          "end": "2020-07-10T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T17:15:00",
+          "end": "2020-07-10T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T18:15:00",
+          "end": "2020-07-10T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T19:15:00",
+          "end": "2020-07-10T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T20:15:00",
+          "end": "2020-07-10T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T21:15:00",
+          "end": "2020-07-10T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T22:15:00",
+          "end": "2020-07-10T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T23:15:00",
+          "end": "2020-07-13T23:45:00",
+          "slots": 291
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true,
+      "modal_cadence_diagnostic": {
+        "phase_seconds": 0,
+        "expected_slots": 240,
+        "present_on_grid": 46,
+        "off_grid_records": 0,
+        "missing_slots": 194,
+        "gaps": [
+          {
+            "start": "2020-07-04T00:00:00",
+            "end": "2020-07-04T09:00:00",
+            "slots": 10
+          },
+          {
+            "start": "2020-07-05T00:00:00",
+            "end": "2020-07-09T09:00:00",
+            "slots": 106
+          },
+          {
+            "start": "2020-07-09T12:00:00",
+            "end": "2020-07-09T12:00:00",
+            "slots": 1
+          },
+          {
+            "start": "2020-07-10T06:00:00",
+            "end": "2020-07-10T09:00:00",
+            "slots": 4
+          },
+          {
+            "start": "2020-07-10T12:00:00",
+            "end": "2020-07-10T12:00:00",
+            "slots": 1
+          },
+          {
+            "start": "2020-07-11T00:00:00",
+            "end": "2020-07-13T23:00:00",
+            "slots": 72
+          }
+        ]
+      }
+    },
+    {
+      "station": "86472000",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 952,
+          "empty": 8,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 911,
+          "suspect_numeric": 41,
+          "numeric_without_qc": 0,
+          "parser_compatible": 911,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 911,
+            "None": 8,
+            "Dado suspeito": 41
+          },
+          "approved_min_native_units": 408.0,
+          "approved_max_native_units": 2269.0,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 12:30:00",
+          "suspect_samples": [
+            {
+              "DataHora": "2020-07-13 13:45:00",
+              "NivelFinal": "1331.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:00:00",
+              "NivelFinal": "1323.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:15:00",
+              "NivelFinal": "1310.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:30:00",
+              "NivelFinal": "1301.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:45:00",
+              "NivelFinal": "1296.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:00:00",
+              "NivelFinal": "1289.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:15:00",
+              "NivelFinal": "1274.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:30:00",
+              "NivelFinal": "1269.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:45:00",
+              "NivelFinal": "1258.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:00:00",
+              "NivelFinal": "1257.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:15:00",
+              "NivelFinal": "1243.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:30:00",
+              "NivelFinal": "1237.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:45:00",
+              "NivelFinal": "1234.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:00:00",
+              "NivelFinal": "1222.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:15:00",
+              "NivelFinal": "1217.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:30:00",
+              "NivelFinal": "1214.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:45:00",
+              "NivelFinal": "1200.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 18:00:00",
+              "NivelFinal": "1195.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 18:15:00",
+              "NivelFinal": "1187.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 18:30:00",
+              "NivelFinal": "1183.00",
+              "CQ_NivelFinal": "Dado suspeito"
+            }
+          ]
+        },
+        "VazaoFinal": {
+          "numeric": 952,
+          "empty": 8,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 911,
+          "suspect_numeric": 41,
+          "numeric_without_qc": 0,
+          "parser_compatible": 911,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 911,
+            "None": 8,
+            "Dado suspeito": 41
+          },
+          "approved_min_native_units": 336.6,
+          "approved_max_native_units": 11024.0,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 12:30:00",
+          "suspect_samples": [
+            {
+              "DataHora": "2020-07-13 13:45:00",
+              "VazaoFinal": "4235.30",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:00:00",
+              "VazaoFinal": "4188.40",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:15:00",
+              "VazaoFinal": "4112.70",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:30:00",
+              "VazaoFinal": "4060.50",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 14:45:00",
+              "VazaoFinal": "4031.70",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:00:00",
+              "VazaoFinal": "3991.40",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:15:00",
+              "VazaoFinal": "3905.70",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:30:00",
+              "VazaoFinal": "3877.20",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 15:45:00",
+              "VazaoFinal": "3815.00",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:00:00",
+              "VazaoFinal": "3809.30",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:15:00",
+              "VazaoFinal": "3730.70",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:30:00",
+              "VazaoFinal": "3697.20",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 16:45:00",
+              "VazaoFinal": "3680.50",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:00:00",
+              "VazaoFinal": "3613.90",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:15:00",
+              "VazaoFinal": "3586.30",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:30:00",
+              "VazaoFinal": "3569.80",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 17:45:00",
+              "VazaoFinal": "3493.10",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 18:00:00",
+              "VazaoFinal": "3465.90",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 18:15:00",
+              "VazaoFinal": "3422.50",
+              "CQ_VazaoFinal": "Dado suspeito"
+            },
+            {
+              "DataHora": "2020-07-13 18:30:00",
+              "VazaoFinal": "3400.90",
+              "CQ_VazaoFinal": "Dado suspeito"
+            }
+          ]
+        },
+        "ChuvaFinal": {
+          "numeric": 960,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 960,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 960,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 960
+          },
+          "approved_min_native_units": 0.0,
+          "approved_max_native_units": 8.8,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:45:00",
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 960,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 960,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 960,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 960
+          },
+          "approved_min_native_units": 1746.1,
+          "approved_max_native_units": 1993.8,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:45:00",
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [],
+      "rows": 960,
+      "unique_timestamps": 960,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": "2020-07-04T00:00:00",
+      "last": "2020-07-13T23:45:00",
+      "timestamp_deltas_seconds": {
+        "900": 959
+      },
+      "timestamp_second_counts": {
+        "0": 960
+      },
+      "cadence_inferred_seconds": 900,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 0,
+      "quarter_hour_gaps": [],
+      "quarter_hour_count_is_not_universal_rain_denominator": true,
+      "modal_cadence_diagnostic": {
+        "phase_seconds": 0,
+        "expected_slots": 960,
+        "present_on_grid": 960,
+        "off_grid_records": 0,
+        "missing_slots": 0,
+        "gaps": []
+      }
+    },
+    {
+      "station": "86472600",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "VazaoFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [
+        "Sem dados para esta estação (Código: 86472600) no período solicitado!"
+      ],
+      "rows": 0,
+      "unique_timestamps": 0,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": null,
+      "last": null,
+      "timestamp_deltas_seconds": {},
+      "timestamp_second_counts": {},
+      "cadence_inferred_seconds": null,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 960,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-04T00:00:00",
+          "end": "2020-07-13T23:45:00",
+          "slots": 960
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true
+    },
+    {
+      "station": "86479000",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 240,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 240,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 240,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 240
+          },
+          "approved_min_native_units": 101.0,
+          "approved_max_native_units": 845.0,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:00:00",
+          "suspect_samples": []
+        },
+        "VazaoFinal": {
+          "numeric": 183,
+          "empty": 57,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 183,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 183,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 183,
+            "None": 57
+          },
+          "approved_min_native_units": 21.0,
+          "approved_max_native_units": 228.7,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:00:00",
+          "suspect_samples": []
+        },
+        "ChuvaFinal": {
+          "numeric": 240,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 240,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 240,
+          "negative": 0,
+          "qc_counts": {
+            "Dado aprovado": 240
+          },
+          "approved_min_native_units": 0.0,
+          "approved_max_native_units": 3.6,
+          "first_approved": "2020-07-04 00:00:00",
+          "last_approved": "2020-07-13 23:00:00",
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 0,
+          "empty": 240,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {
+            "None": 240
+          },
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [],
+      "rows": 240,
+      "unique_timestamps": 240,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": "2020-07-04T00:00:00",
+      "last": "2020-07-13T23:00:00",
+      "timestamp_deltas_seconds": {
+        "3600": 239
+      },
+      "timestamp_second_counts": {
+        "0": 240
+      },
+      "cadence_inferred_seconds": 3600,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 720,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-04T00:15:00",
+          "end": "2020-07-04T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T01:15:00",
+          "end": "2020-07-04T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T02:15:00",
+          "end": "2020-07-04T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T03:15:00",
+          "end": "2020-07-04T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T04:15:00",
+          "end": "2020-07-04T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T05:15:00",
+          "end": "2020-07-04T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T06:15:00",
+          "end": "2020-07-04T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T07:15:00",
+          "end": "2020-07-04T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T08:15:00",
+          "end": "2020-07-04T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T09:15:00",
+          "end": "2020-07-04T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T10:15:00",
+          "end": "2020-07-04T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T11:15:00",
+          "end": "2020-07-04T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T12:15:00",
+          "end": "2020-07-04T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T13:15:00",
+          "end": "2020-07-04T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T14:15:00",
+          "end": "2020-07-04T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T15:15:00",
+          "end": "2020-07-04T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T16:15:00",
+          "end": "2020-07-04T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T17:15:00",
+          "end": "2020-07-04T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T18:15:00",
+          "end": "2020-07-04T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T19:15:00",
+          "end": "2020-07-04T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T20:15:00",
+          "end": "2020-07-04T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T21:15:00",
+          "end": "2020-07-04T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T22:15:00",
+          "end": "2020-07-04T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-04T23:15:00",
+          "end": "2020-07-04T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T00:15:00",
+          "end": "2020-07-05T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T01:15:00",
+          "end": "2020-07-05T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T02:15:00",
+          "end": "2020-07-05T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T03:15:00",
+          "end": "2020-07-05T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T04:15:00",
+          "end": "2020-07-05T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T05:15:00",
+          "end": "2020-07-05T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T06:15:00",
+          "end": "2020-07-05T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T07:15:00",
+          "end": "2020-07-05T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T08:15:00",
+          "end": "2020-07-05T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T09:15:00",
+          "end": "2020-07-05T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T10:15:00",
+          "end": "2020-07-05T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T11:15:00",
+          "end": "2020-07-05T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T12:15:00",
+          "end": "2020-07-05T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T13:15:00",
+          "end": "2020-07-05T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T14:15:00",
+          "end": "2020-07-05T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T15:15:00",
+          "end": "2020-07-05T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T16:15:00",
+          "end": "2020-07-05T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T17:15:00",
+          "end": "2020-07-05T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T18:15:00",
+          "end": "2020-07-05T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T19:15:00",
+          "end": "2020-07-05T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T20:15:00",
+          "end": "2020-07-05T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T21:15:00",
+          "end": "2020-07-05T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T22:15:00",
+          "end": "2020-07-05T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-05T23:15:00",
+          "end": "2020-07-05T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T00:15:00",
+          "end": "2020-07-06T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T01:15:00",
+          "end": "2020-07-06T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T02:15:00",
+          "end": "2020-07-06T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T03:15:00",
+          "end": "2020-07-06T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T04:15:00",
+          "end": "2020-07-06T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T05:15:00",
+          "end": "2020-07-06T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T06:15:00",
+          "end": "2020-07-06T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T07:15:00",
+          "end": "2020-07-06T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T08:15:00",
+          "end": "2020-07-06T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T09:15:00",
+          "end": "2020-07-06T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T10:15:00",
+          "end": "2020-07-06T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T11:15:00",
+          "end": "2020-07-06T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T12:15:00",
+          "end": "2020-07-06T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T13:15:00",
+          "end": "2020-07-06T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T14:15:00",
+          "end": "2020-07-06T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T15:15:00",
+          "end": "2020-07-06T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T16:15:00",
+          "end": "2020-07-06T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T17:15:00",
+          "end": "2020-07-06T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T18:15:00",
+          "end": "2020-07-06T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T19:15:00",
+          "end": "2020-07-06T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T20:15:00",
+          "end": "2020-07-06T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T21:15:00",
+          "end": "2020-07-06T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T22:15:00",
+          "end": "2020-07-06T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-06T23:15:00",
+          "end": "2020-07-06T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T00:15:00",
+          "end": "2020-07-07T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T01:15:00",
+          "end": "2020-07-07T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T02:15:00",
+          "end": "2020-07-07T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T03:15:00",
+          "end": "2020-07-07T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T04:15:00",
+          "end": "2020-07-07T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T05:15:00",
+          "end": "2020-07-07T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T06:15:00",
+          "end": "2020-07-07T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T07:15:00",
+          "end": "2020-07-07T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T08:15:00",
+          "end": "2020-07-07T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T09:15:00",
+          "end": "2020-07-07T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T10:15:00",
+          "end": "2020-07-07T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T11:15:00",
+          "end": "2020-07-07T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T12:15:00",
+          "end": "2020-07-07T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T13:15:00",
+          "end": "2020-07-07T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T14:15:00",
+          "end": "2020-07-07T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T15:15:00",
+          "end": "2020-07-07T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T16:15:00",
+          "end": "2020-07-07T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T17:15:00",
+          "end": "2020-07-07T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T18:15:00",
+          "end": "2020-07-07T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T19:15:00",
+          "end": "2020-07-07T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T20:15:00",
+          "end": "2020-07-07T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T21:15:00",
+          "end": "2020-07-07T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T22:15:00",
+          "end": "2020-07-07T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-07T23:15:00",
+          "end": "2020-07-07T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T00:15:00",
+          "end": "2020-07-08T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T01:15:00",
+          "end": "2020-07-08T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T02:15:00",
+          "end": "2020-07-08T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T03:15:00",
+          "end": "2020-07-08T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T04:15:00",
+          "end": "2020-07-08T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T05:15:00",
+          "end": "2020-07-08T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T06:15:00",
+          "end": "2020-07-08T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T07:15:00",
+          "end": "2020-07-08T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T08:15:00",
+          "end": "2020-07-08T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T09:15:00",
+          "end": "2020-07-08T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T10:15:00",
+          "end": "2020-07-08T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T11:15:00",
+          "end": "2020-07-08T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T12:15:00",
+          "end": "2020-07-08T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T13:15:00",
+          "end": "2020-07-08T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T14:15:00",
+          "end": "2020-07-08T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T15:15:00",
+          "end": "2020-07-08T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T16:15:00",
+          "end": "2020-07-08T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T17:15:00",
+          "end": "2020-07-08T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T18:15:00",
+          "end": "2020-07-08T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T19:15:00",
+          "end": "2020-07-08T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T20:15:00",
+          "end": "2020-07-08T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T21:15:00",
+          "end": "2020-07-08T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T22:15:00",
+          "end": "2020-07-08T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-08T23:15:00",
+          "end": "2020-07-08T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T00:15:00",
+          "end": "2020-07-09T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T01:15:00",
+          "end": "2020-07-09T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T02:15:00",
+          "end": "2020-07-09T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T03:15:00",
+          "end": "2020-07-09T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T04:15:00",
+          "end": "2020-07-09T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T05:15:00",
+          "end": "2020-07-09T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T06:15:00",
+          "end": "2020-07-09T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T07:15:00",
+          "end": "2020-07-09T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T08:15:00",
+          "end": "2020-07-09T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T09:15:00",
+          "end": "2020-07-09T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T10:15:00",
+          "end": "2020-07-09T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T11:15:00",
+          "end": "2020-07-09T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T12:15:00",
+          "end": "2020-07-09T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T13:15:00",
+          "end": "2020-07-09T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T14:15:00",
+          "end": "2020-07-09T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T15:15:00",
+          "end": "2020-07-09T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T16:15:00",
+          "end": "2020-07-09T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T17:15:00",
+          "end": "2020-07-09T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T18:15:00",
+          "end": "2020-07-09T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T19:15:00",
+          "end": "2020-07-09T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T20:15:00",
+          "end": "2020-07-09T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T21:15:00",
+          "end": "2020-07-09T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T22:15:00",
+          "end": "2020-07-09T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-09T23:15:00",
+          "end": "2020-07-09T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T00:15:00",
+          "end": "2020-07-10T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T01:15:00",
+          "end": "2020-07-10T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T02:15:00",
+          "end": "2020-07-10T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T03:15:00",
+          "end": "2020-07-10T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T04:15:00",
+          "end": "2020-07-10T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T05:15:00",
+          "end": "2020-07-10T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T06:15:00",
+          "end": "2020-07-10T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T07:15:00",
+          "end": "2020-07-10T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T08:15:00",
+          "end": "2020-07-10T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T09:15:00",
+          "end": "2020-07-10T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T10:15:00",
+          "end": "2020-07-10T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T11:15:00",
+          "end": "2020-07-10T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T12:15:00",
+          "end": "2020-07-10T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T13:15:00",
+          "end": "2020-07-10T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T14:15:00",
+          "end": "2020-07-10T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T15:15:00",
+          "end": "2020-07-10T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T16:15:00",
+          "end": "2020-07-10T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T17:15:00",
+          "end": "2020-07-10T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T18:15:00",
+          "end": "2020-07-10T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T19:15:00",
+          "end": "2020-07-10T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T20:15:00",
+          "end": "2020-07-10T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T21:15:00",
+          "end": "2020-07-10T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T22:15:00",
+          "end": "2020-07-10T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-10T23:15:00",
+          "end": "2020-07-10T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T00:15:00",
+          "end": "2020-07-11T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T01:15:00",
+          "end": "2020-07-11T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T02:15:00",
+          "end": "2020-07-11T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T03:15:00",
+          "end": "2020-07-11T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T04:15:00",
+          "end": "2020-07-11T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T05:15:00",
+          "end": "2020-07-11T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T06:15:00",
+          "end": "2020-07-11T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T07:15:00",
+          "end": "2020-07-11T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T08:15:00",
+          "end": "2020-07-11T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T09:15:00",
+          "end": "2020-07-11T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T10:15:00",
+          "end": "2020-07-11T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T11:15:00",
+          "end": "2020-07-11T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T12:15:00",
+          "end": "2020-07-11T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T13:15:00",
+          "end": "2020-07-11T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T14:15:00",
+          "end": "2020-07-11T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T15:15:00",
+          "end": "2020-07-11T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T16:15:00",
+          "end": "2020-07-11T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T17:15:00",
+          "end": "2020-07-11T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T18:15:00",
+          "end": "2020-07-11T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T19:15:00",
+          "end": "2020-07-11T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T20:15:00",
+          "end": "2020-07-11T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T21:15:00",
+          "end": "2020-07-11T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T22:15:00",
+          "end": "2020-07-11T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-11T23:15:00",
+          "end": "2020-07-11T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T00:15:00",
+          "end": "2020-07-12T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T01:15:00",
+          "end": "2020-07-12T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T02:15:00",
+          "end": "2020-07-12T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T03:15:00",
+          "end": "2020-07-12T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T04:15:00",
+          "end": "2020-07-12T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T05:15:00",
+          "end": "2020-07-12T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T06:15:00",
+          "end": "2020-07-12T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T07:15:00",
+          "end": "2020-07-12T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T08:15:00",
+          "end": "2020-07-12T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T09:15:00",
+          "end": "2020-07-12T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T10:15:00",
+          "end": "2020-07-12T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T11:15:00",
+          "end": "2020-07-12T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T12:15:00",
+          "end": "2020-07-12T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T13:15:00",
+          "end": "2020-07-12T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T14:15:00",
+          "end": "2020-07-12T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T15:15:00",
+          "end": "2020-07-12T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T16:15:00",
+          "end": "2020-07-12T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T17:15:00",
+          "end": "2020-07-12T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T18:15:00",
+          "end": "2020-07-12T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T19:15:00",
+          "end": "2020-07-12T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T20:15:00",
+          "end": "2020-07-12T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T21:15:00",
+          "end": "2020-07-12T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T22:15:00",
+          "end": "2020-07-12T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-12T23:15:00",
+          "end": "2020-07-12T23:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T00:15:00",
+          "end": "2020-07-13T00:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T01:15:00",
+          "end": "2020-07-13T01:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T02:15:00",
+          "end": "2020-07-13T02:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T03:15:00",
+          "end": "2020-07-13T03:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T04:15:00",
+          "end": "2020-07-13T04:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T05:15:00",
+          "end": "2020-07-13T05:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T06:15:00",
+          "end": "2020-07-13T06:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T07:15:00",
+          "end": "2020-07-13T07:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T08:15:00",
+          "end": "2020-07-13T08:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T09:15:00",
+          "end": "2020-07-13T09:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T10:15:00",
+          "end": "2020-07-13T10:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T11:15:00",
+          "end": "2020-07-13T11:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T12:15:00",
+          "end": "2020-07-13T12:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T13:15:00",
+          "end": "2020-07-13T13:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T14:15:00",
+          "end": "2020-07-13T14:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T15:15:00",
+          "end": "2020-07-13T15:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T16:15:00",
+          "end": "2020-07-13T16:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T17:15:00",
+          "end": "2020-07-13T17:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T18:15:00",
+          "end": "2020-07-13T18:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T19:15:00",
+          "end": "2020-07-13T19:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T20:15:00",
+          "end": "2020-07-13T20:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T21:15:00",
+          "end": "2020-07-13T21:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T22:15:00",
+          "end": "2020-07-13T22:45:00",
+          "slots": 3
+        },
+        {
+          "start": "2020-07-13T23:15:00",
+          "end": "2020-07-13T23:45:00",
+          "slots": 3
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true,
+      "modal_cadence_diagnostic": {
+        "phase_seconds": 0,
+        "expected_slots": 240,
+        "present_on_grid": 240,
+        "off_grid_records": 0,
+        "missing_slots": 0,
+        "gaps": []
+      }
+    },
+    {
+      "station": "86500000",
+      "http_status": 200,
+      "fields": {
+        "NivelFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "VazaoFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaFinal": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        },
+        "ChuvaAcumAdotada": {
+          "numeric": 0,
+          "empty": 0,
+          "nonempty_nonnumeric": 0,
+          "approved_numeric": 0,
+          "suspect_numeric": 0,
+          "numeric_without_qc": 0,
+          "parser_compatible": 0,
+          "negative": 0,
+          "qc_counts": {},
+          "approved_min_native_units": null,
+          "approved_max_native_units": null,
+          "first_approved": null,
+          "last_approved": null,
+          "suspect_samples": []
+        }
+      },
+      "source_errors": [
+        "Sem dados para esta estação (Código: 86500000) no período solicitado!"
+      ],
+      "rows": 0,
+      "unique_timestamps": 0,
+      "duplicates": 0,
+      "outside_window_rows": 0,
+      "first": null,
+      "last": null,
+      "timestamp_deltas_seconds": {},
+      "timestamp_second_counts": {},
+      "cadence_inferred_seconds": null,
+      "quarter_hour_timestamp_slots": 960,
+      "quarter_hour_grid_absent_count": 960,
+      "quarter_hour_gaps": [
+        {
+          "start": "2020-07-04T00:00:00",
+          "end": "2020-07-13T23:45:00",
+          "slots": 960
+        }
+      ],
+      "quarter_hour_count_is_not_universal_rain_denominator": true
+    }
+  ]
+}

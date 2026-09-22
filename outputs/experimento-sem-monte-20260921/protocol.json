@@ -1,0 +1,19 @@
+{
+  "experiment_id": "julho-without-monte-v1",
+  "scope": "Local historical development ablation. Hypothesis motivated by already-inspected Monte Claro predictor contributions and July2026 oscillations, not a fresh independent holdout.",
+  "families": ["level_and_slopes", "without_monte"],
+  "removed_columns": [8,9,10,11,12,13,14,15,61,62,63,64,65,66,67,68],
+  "change": "Remove all16MonteClaro inputs from established77feature matrix: Q/I current and1/3/6hchanges, upstream/downstream levels and1/3/6hchanges.61features remain; preserve every source value including suspected anomalies.",
+  "source": "Only14deJulho discharge prediction is fitted. Carreiro and all operational models remain unchanged.",
+  "alpha": 1000,
+  "leads_h": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "fit": "Same ridge helper, training-only medians/scales, target delta from knownJulhoQ, weights1+2*(target>2 in1000m3/s), final nonnegative prediction as reference. No hyperparameter search.",
+  "splits": "Validation: targets in training strictly before2025-10-01UTC-03, validation origins from2025-10-01 with targets before2026-07-01. Development test: training targets before2026-07-01, test origins from2026-07-01 and targets before2026-09-21. Preserve original partitions, target coverage and lead0..11.",
+  "reference": "Reuse frozen level_and_slopes models and reproduce preserved predictions exactly within1e-7m3/s before comparing. Same origins/targets in both families.",
+  "evaluation": "MAE,bias,RMSE,P90,P98,maximum and failure/coverage perlead and phase using original metric definitions. Highflow threshold is fixed source95thpercentile before2025-10-01. Aggregate MAE weighted by sample counts, never called independent sample size. Examine event concentration before interpreting gains.",
+  "next_stage_gate": "Proceed to downstream experimental level evaluation only if candidate aggregateMAE decreases for both all/high-flow subsets in BOTH validation and development test. Passing permits more evaluation, not promotion; no favorable horizon or event cherry-picking.",
+  "limitations": "Other source latency/availability assumptions remain. Omission can discard useful physical signal. This is statistical source dependence diagnosis, not proof Monte data are erroneous or unimportant hydrologically. Cannot establish98%Muçum accuracy from upstream metrics.",
+  "promotion": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

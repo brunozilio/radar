@@ -1,0 +1,73 @@
+[
+  {
+    "pet_mm_day_hypothesis": 1.0,
+    "parameters": {
+      "Wm": 40.97441815776017,
+      "b": 0.010000000000000005,
+      "kbas": 10.000000000000002,
+      "k": 5.360940079028226,
+      "CB": 1.4941026687561942,
+      "Ws": 1.0,
+      "n": 3
+    },
+    "objective": 0.07423701972103773,
+    "optimizer_converged": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "near_parameter_bounds": [
+      "b",
+      "kbas",
+      "Ws"
+    ],
+    "max_water_balance_error_mm": 5.684341886080802e-14,
+    "soil_fraction_at_origin": 0.9889378977538612,
+    "soil_fraction_before_today": 0.6307729673272429,
+    "current_incremental_flow_m3_s": 1834.0125765197665
+  },
+  {
+    "pet_mm_day_hypothesis": 3.0,
+    "parameters": {
+      "Wm": 39.308856593306366,
+      "b": 0.010000000000000005,
+      "kbas": 10.000000000000002,
+      "k": 5.349220618028762,
+      "CB": 1.4791589498688305,
+      "Ws": 1.0,
+      "n": 3
+    },
+    "objective": 0.07503455115652666,
+    "optimizer_converged": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "near_parameter_bounds": [
+      "b",
+      "kbas",
+      "Ws"
+    ],
+    "max_water_balance_error_mm": 2.842170943040401e-14,
+    "soil_fraction_at_origin": 0.986407539415907,
+    "soil_fraction_before_today": 0.5770255239976398,
+    "current_incremental_flow_m3_s": 1795.0526016531364
+  },
+  {
+    "pet_mm_day_hypothesis": 5.0,
+    "parameters": {
+      "Wm": 36.36925343099655,
+      "b": 0.03674629055922124,
+      "kbas": 10.000000000000002,
+      "k": 5.36395335247934,
+      "CB": 1.6142250325403698,
+      "Ws": 1.0,
+      "n": 3
+    },
+    "objective": 0.07610698309720709,
+    "optimizer_converged": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "near_parameter_bounds": [
+      "kbas",
+      "Ws"
+    ],
+    "max_water_balance_error_mm": 5.684341886080802e-14,
+    "soil_fraction_at_origin": 0.9831054841756497,
+    "soil_fraction_before_today": 0.53517006297425,
+    "current_incremental_flow_m3_s": 1765.2261758043783
+  }
+]

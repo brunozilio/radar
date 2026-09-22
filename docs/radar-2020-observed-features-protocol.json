@@ -1,0 +1,11 @@
+{
+  "id": "radar-2020-observed-features-v1",
+  "scope": "Prepare only, no training. All480hourly origins July1..20/2020, withJune28..30 warmup.120observed inputs from the exact frozen telemetry_features definition; no NWP columns or replacement meteorology.",
+  "eligibility": "Preserve every hourly origin even when base or target is missing. Source raw level targets exact on the15minute grid. Future targets shifted separately within this2020dataset, never across years. Finite base/target needed later for training, auxiliary completeness not required. No peak marks or interpolated labels.",
+  "inputs": "Reuse verified27station ALL-QC series and ONS literal June/July CSV references. Existing parser admits nonnegative numeric levels with approved or absent QC; retains most recent missing row. Delays Muçum15min, LinhaJoseJulio30min, SantaTereza15min, Carreiro30min; max_age15min after query. Q/I use60min delay and90min age after query. Keep23:59literal, raw negatives/zeros in Q/I as prior model. Preserve reported Q/I zeros without repair in this reference matrix. Link the explicit ONS2020diagnostic audit; preparing a matrix does not approve all rows for training.",
+  "rain": "Frozen source-specific15h2026lag assumptions including integer15minute truncation, unchanged regional weights and observed_rain_windows. No measured interval for missing station; zero contribution to regional amount and coverage, precipitation only if weighted coverage>=0.5. No renormalization, imputation or observed future input.",
+  "limits": "Publication latency is assumed, not a2020receipt log. Datum, timezone and regime comparability uncertified. July2020already inspected and not a new holdout. Preparation and numerical checks do not prove98percent or authorize promotion. Future2021/2022reserved windows are excluded from this preparation. No diagnostic flag becomes an implicit rejection or imputation rule.",
+  "trained": false,
+  "promoted": false,
+  "qi_diagnostics": "outputs/auditoria-qi-radar-2020-20260921/audit.json; 23of480origins use a reportedzero in current/laggedQI,16use Qzero with positive components. Confirm against frozen references in the prepared artifact."
+}

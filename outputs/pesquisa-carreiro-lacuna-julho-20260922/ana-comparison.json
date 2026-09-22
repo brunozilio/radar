@@ -1,0 +1,130 @@
+{
+  "records": 192,
+  "fields": {
+    "NivelFinal": [
+      {
+        "value_present": false,
+        "qc_literal": null,
+        "records": 188
+      },
+      {
+        "value_present": true,
+        "qc_literal": "Dado aprovado",
+        "records": 4
+      }
+    ],
+    "NivelManual": [
+      {
+        "value_present": false,
+        "qc_literal": null,
+        "records": 188
+      },
+      {
+        "value_present": true,
+        "qc_literal": "Dado aprovado",
+        "records": 4
+      }
+    ],
+    "NivelSensor": [
+      {
+        "value_present": true,
+        "qc_literal": "Dado reprovado",
+        "records": 192
+      }
+    ],
+    "NivelDisplay": [
+      {
+        "value_present": false,
+        "qc_literal": null,
+        "records": 192
+      }
+    ],
+    "VazaoFinal": [
+      {
+        "value_present": true,
+        "qc_literal": "Dado aprovado",
+        "records": 192
+      }
+    ]
+  },
+  "approved_readings": [
+    {
+      "CodEstacao": "86500000",
+      "DataHora": "2026-07-21 07:00:00",
+      "CQ_ChuvaAcumAdotada": "Dado aprovado",
+      "ChuvaAcumAdotada": "90.00",
+      "CQ_ChuvaFinal": "Dado aprovado",
+      "ChuvaFinal": "0.40",
+      "CQ_NivelSensor": "Dado reprovado",
+      "NivelSensor": "130.00",
+      "CQ_NivelDisplay": null,
+      "NivelDisplay": null,
+      "CQ_NivelManual": "Dado aprovado",
+      "NivelManual": "236.00",
+      "CQ_NivelFinal": "Dado aprovado",
+      "NivelFinal": "236.00",
+      "CQ_VazaoFinal": "Dado aprovado",
+      "VazaoFinal": "112.94"
+    },
+    {
+      "CodEstacao": "86500000",
+      "DataHora": "2026-07-21 17:00:00",
+      "CQ_ChuvaAcumAdotada": "Dado aprovado",
+      "ChuvaAcumAdotada": "137.00",
+      "CQ_ChuvaFinal": "Dado aprovado",
+      "ChuvaFinal": "1.60",
+      "CQ_NivelSensor": "Dado reprovado",
+      "NivelSensor": "130.40",
+      "CQ_NivelDisplay": null,
+      "NivelDisplay": null,
+      "CQ_NivelManual": "Dado aprovado",
+      "NivelManual": "570.00",
+      "CQ_NivelFinal": "Dado aprovado",
+      "NivelFinal": "570.00",
+      "CQ_VazaoFinal": "Dado aprovado",
+      "VazaoFinal": "797.26"
+    },
+    {
+      "CodEstacao": "86500000",
+      "DataHora": "2026-07-22 07:00:00",
+      "CQ_ChuvaAcumAdotada": "Dado aprovado",
+      "ChuvaAcumAdotada": "164.40",
+      "CQ_ChuvaFinal": "Dado aprovado",
+      "ChuvaFinal": "0.00",
+      "CQ_NivelSensor": "Dado reprovado",
+      "NivelSensor": "130.80",
+      "CQ_NivelDisplay": null,
+      "NivelDisplay": null,
+      "CQ_NivelManual": "Dado aprovado",
+      "NivelManual": "840.00",
+      "CQ_NivelFinal": "Dado aprovado",
+      "NivelFinal": "840.00",
+      "CQ_VazaoFinal": "Dado aprovado",
+      "VazaoFinal": "1638.95"
+    },
+    {
+      "CodEstacao": "86500000",
+      "DataHora": "2026-07-22 17:00:00",
+      "CQ_ChuvaAcumAdotada": "Dado aprovado",
+      "ChuvaAcumAdotada": "168.60",
+      "CQ_ChuvaFinal": "Dado aprovado",
+      "ChuvaFinal": "0.60",
+      "CQ_NivelSensor": "Dado reprovado",
+      "NivelSensor": "130.50",
+      "CQ_NivelDisplay": null,
+      "NivelDisplay": null,
+      "CQ_NivelManual": "Dado aprovado",
+      "NivelManual": "852.00",
+      "CQ_NivelFinal": "Dado aprovado",
+      "NivelFinal": "852.00",
+      "CQ_VazaoFinal": "Dado aprovado",
+      "VazaoFinal": "1681.70"
+    }
+  ],
+  "old_source_file": "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000.xml",
+  "old_sha256": "831a9b929103163c725d27f5419cba5e3064feb2b9a9bfd24f075a1242fded61",
+  "all_fields_identical": true,
+  "differences": [],
+  "units_note": "Nivel fields use legacy cm convention already preserved; no conversion in ALL-QC records.",
+  "timestamp_note": "DataHora literal has no offset; UTC-03 is existing pipeline assumption, not new endpoint certification."
+}

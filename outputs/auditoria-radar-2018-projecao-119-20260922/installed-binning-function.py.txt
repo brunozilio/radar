@@ -1,0 +1,81 @@
+def _find_binning_thresholds(col_data, max_bins, sample_weight=None):
+    """Extract quantiles from a continuous feature.
+
+    Missing values are ignored for finding the thresholds.
+
+    Parameters
+    ----------
+    col_data : array-like, shape (n_samples,)
+        The continuous feature to bin.
+    max_bins: int
+        The maximum number of bins to use for non-missing values. If for a
+        given feature the number of unique values is less than ``max_bins``,
+        then those unique values will be used to compute the bin thresholds,
+        instead of the quantiles
+
+    Return
+    ------
+    binning_thresholds : ndarray of shape(min(max_bins, n_unique_values) - 1,)
+        The increasing numeric values that can be used to separate the bins.
+        A given value x will be mapped into bin value i iff
+        bining_thresholds[i - 1] < x <= binning_thresholds[i]
+    """
+    # ignore missing values when computing bin thresholds
+    missing_mask = np.isnan(col_data)
+    any_missing = missing_mask.any()
+    if any_missing:
+        col_data = col_data[~missing_mask]
+
+    # If sample_weight is not None and 0-weighted values exist, we need to
+    # remove those before calculating the distinct points.
+    if sample_weight is not None:
+        if any_missing:
+            sample_weight = sample_weight[~missing_mask]
+        nnz_sw = sample_weight != 0
+        col_data = col_data[nnz_sw]
+        sample_weight = sample_weight[nnz_sw]
+
+    # The data will be sorted anyway in np.unique and again in percentile, so we do it
+    # here. Sorting also returns a contiguous array.
+    sort_idx = np.argsort(col_data)
+    col_data = col_data[sort_idx]
+    if sample_weight is not None:
+        sample_weight = sample_weight[sort_idx]
+
+    distinct_values = np.unique(col_data).astype(X_DTYPE)
+
+    if len(distinct_values) == 1:
+        return np.asarray([])
+
+    if len(distinct_values) <= max_bins:
+        # Calculate midpoints if distinct values <= max_bins
+        bin_thresholds = sliding_window_view(distinct_values, 2).mean(axis=1)
+    elif sample_weight is None:
+        # We compute bin edges using the output of np.percentile with
+        # the "averaged_inverted_cdf" interpolation method that is consistent
+        # with the code for the sample_weight != None case.
+        percentiles = np.linspace(0, 100, num=max_bins + 1)
+        percentiles = percentiles[1:-1]
+        bin_thresholds = np.percentile(
+            col_data, percentiles, method="averaged_inverted_cdf"
+        )
+        assert bin_thresholds.shape[0] == max_bins - 1
+    else:
+        percentiles = np.linspace(0, 100, num=max_bins + 1)
+        percentiles = percentiles[1:-1]
+        bin_thresholds = np.array(
+            [
+                _weighted_percentile(col_data, sample_weight, percentile, average=True)
+                for percentile in percentiles
+            ]
+        )
+        assert bin_thresholds.shape[0] == max_bins - 1
+    # Remove duplicated thresholds if they exist.
+    unique_bin_values = np.unique(bin_thresholds)
+    if unique_bin_values.shape[0] != bin_thresholds.shape[0]:
+        bin_thresholds = unique_bin_values
+
+    # We avoid having +inf thresholds: +inf thresholds are only allowed in
+    # a "split on nan" situation.
+    np.clip(bin_thresholds, a_min=None, a_max=ALMOST_INF, out=bin_thresholds)
+    return bin_thresholds

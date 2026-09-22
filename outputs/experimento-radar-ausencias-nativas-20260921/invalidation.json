@@ -1,0 +1,7 @@
+{
+  "status": "Interrupted before test candidate due to historical reproduction mismatch",
+  "reason": "Historical runtime sklearn1.6.1/numpy2.0.2 reproduces all1350 h1 predictions exactly; current sklearn1.9.1/numpy2.5.3 differs by up to0.090797m. Inputs and membership match. Thread counts1/2/4 are identical within each runtime.",
+  "candidate_test_evidence": false,
+  "preserve_partial_validation_models": true,
+  "promoted": false
+}

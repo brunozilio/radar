@@ -1,0 +1,52 @@
+{
+  "contrasts": 144,
+  "groups": [
+    {
+      "phase": "validation",
+      "subset": "all",
+      "horizons": 12,
+      "hits_improved": 3,
+      "hits_worsened": 9,
+      "hits_equal": 0,
+      "mae_improved": 1,
+      "mae_worsened": 11,
+      "maximum_worsened": 10
+    },
+    {
+      "phase": "validation",
+      "subset": "level_ge_7m",
+      "horizons": 12,
+      "hits_improved": 2,
+      "hits_worsened": 7,
+      "hits_equal": 3,
+      "mae_improved": 3,
+      "mae_worsened": 9,
+      "maximum_worsened": 10
+    },
+    {
+      "phase": "test",
+      "subset": "all",
+      "horizons": 12,
+      "hits_improved": 8,
+      "hits_worsened": 3,
+      "hits_equal": 1,
+      "mae_improved": 12,
+      "mae_worsened": 0,
+      "maximum_worsened": 3
+    },
+    {
+      "phase": "test",
+      "subset": "level_ge_7m",
+      "horizons": 12,
+      "hits_improved": 12,
+      "hits_worsened": 0,
+      "hits_equal": 0,
+      "mae_improved": 12,
+      "mae_worsened": 0,
+      "maximum_worsened": 3
+    }
+  ],
+  "source_manifest_sha256": "5846a0684d25c097bab5d714538b7e9cbe17e406b020b7ca7adb9f91b30fde62",
+  "promoted": false,
+  "goal_achieved": false
+}

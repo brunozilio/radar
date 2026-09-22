@@ -6,6 +6,8 @@ export default defineConfig([
   globalIgnores([
     ".next/**",
     "cloudflare/index.js",
+    "outputs/**",
+    "projection-runtime/**",
     "next-env.d.ts",
   ]),
 ]);

@@ -1,0 +1,53 @@
+{
+  "run_at": "2026-09-21T22:14:20.804893+00:00",
+  "sources": [
+    {
+      "local_source": "/Users/brunozilio/Documents/radar/outputs/historico-vazoes-ceran/raw/dictionary.pdf",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DicionarioDados_DadosHidrologicosHorarios.pdf",
+      "original_retrieved_at": "2026-09-21T20:09:35.363642+00:00",
+      "sha256": "57bf625d79407abda7f956ff96c57917bd992111ae4f63c865152648d5158da0",
+      "verified_at": "2026-09-21T22:14:20.804893+00:00",
+      "reused_without_download": true,
+      "units": {
+        "flow": "m3/s",
+        "level": "m",
+        "useful_volume": "percent"
+      },
+      "timezone": "Brasilia explicit for RO-AO.BR.02 Rev08; historical exporter linkage unresolved",
+      "hour_end": "dictionary 01:00 represents 00:00 through 00:59; 23:59 mapping unresolved",
+      "datum": "not specified for reservoir levels; not needed for timezone inquiry",
+      "quality": "agent-reported hourly data; no ONS validation assured by current catalogue",
+      "license": "Dataset catalogue identifies Creative Commons Attribution; normative PDF independent redistribution terms not confirmed",
+      "gaps": [
+        "23:59 to hour24 exporter contract",
+        "historical continuity of timezone/exporter mapping for July2020 and May2024",
+        "original release times and historical revision versions"
+      ]
+    },
+    {
+      "local_source": "/Users/brunozilio/Documents/radar/outputs/historico-vazoes-ceran/raw/ons-RO-AO-BR02-rev08.pdf",
+      "url": "https://www.ons.org.br/%2FMPO%2FDocumento%20Normativo%2F4.%20Rotinas%20Operacionais%20-%20SM%205.13%2F4.3.%20Rotinas%20P%C3%B3s-Opera%C3%A7%C3%A3o%2F4.3.2.%20Apura%C3%A7%C3%A3o%20de%20Dados%2FRO-AO.BR.02_Rev.08.pdf",
+      "original_retrieved_at": "2026-09-21T20:09:38.925132+00:00",
+      "sha256": "5ab6eef17b44558dc121cd41cc062a451b8f0e6967d513d3c766a58805038204",
+      "verified_at": "2026-09-21T22:14:20.804893+00:00",
+      "reused_without_download": true,
+      "units": {
+        "flow": "m3/s",
+        "level": "m",
+        "useful_volume": "percent"
+      },
+      "timezone": "Brasilia explicit for RO-AO.BR.02 Rev08; historical exporter linkage unresolved",
+      "hour_end": "dictionary 01:00 represents 00:00 through 00:59; 23:59 mapping unresolved",
+      "datum": "not specified for reservoir levels; not needed for timezone inquiry",
+      "quality": "agent-reported hourly data; no ONS validation assured by current catalogue",
+      "license": "Dataset catalogue identifies Creative Commons Attribution; normative PDF independent redistribution terms not confirmed",
+      "gaps": [
+        "23:59 to hour24 exporter contract",
+        "historical continuity of timezone/exporter mapping for July2020 and May2024",
+        "original release times and historical revision versions"
+      ]
+    }
+  ],
+  "catalogue_provenance": "/Users/brunozilio/Documents/radar/outputs/historico-vazoes-ceran/source-manifest.json",
+  "new_downloads": 0
+}

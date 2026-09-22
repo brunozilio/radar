@@ -1,0 +1,12 @@
+{
+  "id": "radar-2024-augmentation-v1",
+  "scope": "Local RADAR research only. Register before fitting. No operational changes, promotion, publication or live issuance.",
+  "reference": "Frozen native-missing 180-column models from experimento-radar-ausencias-nativas-runtime19-20260921, candidate family. Verify hashes and reproduce their saved predictions exactly; do not refit controls.",
+  "candidate": "Same 180 features, runtime, hyperparameters, sample-weight formula and original training membership, plus every eligible hourly origin in the predeclared April1–May1/2024 window. Base and exact future target must be finite, with target strictly before May2/2024. Do not require auxiliary completeness, fill Carreiro, select only extreme events, or alter weights. Sort training data chronologically, retaining original chronological order within both datasets.",
+  "parameters": "Per-horizon leaf_nodes/loss from frozen candidate training.csv; max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. sample_weight=1+2*(abs(target-base)>=1)+2*(target>=9). No search or horizon-wise ensemble selection.",
+  "split": "Preserve original validation and test training masks exactly, including original October boundary exclusion. All new 2024 labels precede both cutoffs. Build future targets separately within each continuous dataset; never shift across the 2024–2025 gap. Validation targets before July1/2026, test targets before September21/2026, unchanged 102084 scheduled rows.",
+  "evaluation": "Compare frozen native control against augmented candidate on the identical full schedule, all 12 nominal horizons, all targets and level>=7m, further broken down into original complete24 and missing24. Report coverage, missing targets, prediction failures, hits within0.50m, MAE, bias, P98 and max. Include failures in an additional observed-target success fraction. Keep every scheduled row, including unavailable base/target.",
+  "limits": "All evaluation periods were previously inspected and remain descriptive development, not independent holdout. Reconstructed latencies are stress assumptions, not actual2024 publication records. Weather vintage, timezones, datum continuity and cross-regime comparability remain uncertified. Historical improvement cannot prove prospective98percent. No automatic promotion regardless of result.",
+  "promoted": false,
+  "goal_achieved": false
+}

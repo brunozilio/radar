@@ -1,0 +1,617 @@
+{
+  "models_checked": 24,
+  "models_using_age": 17,
+  "source_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/analise-radar-idade-ancora-20260922/inspect_trees.py": "ac2beccca5c65d259315279bda9406dfd5381d33ffb2b135489aa56b6231077a",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-1.joblib": "17debb39a438635092eea96c913403f455c82964c3156d1c0ca56cd6589c1a18",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-1.joblib": "e1f6c78d493c74a76cf9d0b4f3bb4fef849451333346619bbc3ec7129cb71058",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-2.joblib": "4e05abef58a2b78ecdf97f772ea835818083325922f87e8bca480ab45f60ec68",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-2.joblib": "4d068b685ff7b2e025bbd233bf95b1552c681374ea15c4ea98c7fa5df0c04459",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-3.joblib": "9d4c05837cab8f2c1cd6698986e35febbccfb61b71091eee0746f0baad048c25",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-3.joblib": "c1f6d75e0a0242802fa7eda884429e6e57e8f096f181e79fe63cf9ed3c1d4ca1",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-4.joblib": "6aee5c2de38d9e09c1846f5832d2ba5e54ae53d84d6a5444b30592d5dceac853",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-4.joblib": "21e01ecaf455f40130cdd7649f0c5cdd34a9e6482cb113e6a31a33dfd62fb919",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-5.joblib": "2811d78c94d5efb84fb7065c8f49a52ab3df2c80a602589cdad9c3a7c99493bb",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-5.joblib": "670b9112277ff599729a9d111decaa710274cd24fac898ab6b86386b0e7f5e0f",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-6.joblib": "d1cc1aa2d8b2132f8d2ab9d02e9e3f0b29d35eb6a6361d023c2f80d8a2d5e173",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-6.joblib": "80aee0d2b4b8df146276a4a01c04fcbf9cc6c35656125dc892812ebbee2a7c97",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-7.joblib": "9b29d177edbfc9f626905ffe37e5aa4049aad21ce8597e5ea23bd36c109f4d47",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-7.joblib": "6ff2c1f791437297a8ab126c1334b46e571b8c46b0a49d513d54c1f0b2adb644",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-8.joblib": "5bad7c1dc987ff9281e993608a577cc2201221fccc8a3481159f2cfaded132c7",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-8.joblib": "558aed4211b64117c0a51232714a2416a2cf5aa58c99fd1a9d70d9daac100ce9",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-9.joblib": "d8f0a788c1e00bce9ec09147ec87c276cb9a66301e7524ab9c3219c212835da0",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-9.joblib": "b36705e38058b3eb3813054b52913928028d632598845627bd7bfc5e4b9848a4",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-10.joblib": "e44308774989630c24db32a67f4780000bab67f383ac7a1b5617fa872bc89774",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-10.joblib": "8801038a50485c75ac61f915084d77ac7b62e3d290bdf5ed993833dc84d6767f",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-11.joblib": "e4b85f86b67c096ba7eee18a4fd9b26959755cac4be4dfb3a9abb8c15b8ea74e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-11.joblib": "23f77c9a0882ab50f1b332dc22f4697c1e52e27cf355c928a74211fbec50b9a1",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-12.joblib": "dbe89425f36e01294183faadf5c71534a6090ea7ce857a9d419aa15a918e8006",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-12.joblib": "c98f48a438d10909cc1a4cc7aa9659e8a59252f746ae17be7182c5e8fc0a8ebc",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-1.joblib": "c9594587219525e2ec20ba65d71525cc4da687e2af391ed2183e337aa1df043c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-1.joblib": "5e470b073fc8da8311d4fd4736c2dc96d2d484831927d574185e31db45a3d78e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-2.joblib": "2867ac880cf32a29df415db682fb7283831db75585a9967609210b4f5cf5288e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-2.joblib": "b5aad140a49fb2a4a499b48d01c955678baadc57bffc124b1e0b46626a374e04",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-3.joblib": "5f4e73c9e0e2e7c7b7d8dc75aca158fc0910a7ebca1e3260d059e165772b3367",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-3.joblib": "6c0e93ac3852d9ab085d3d1919112a37be9a1112a3864d2df193ddac2c6120fd",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-4.joblib": "374667c59876ca3a5ebbcccfe3fdee86e3b36a3755572858bff08dc4e46390b3",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-4.joblib": "6a1b64c83a42a8cbe4bab44e0240f00a17beb87e92e38c0e621f18339dcd3f1c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-5.joblib": "05e48226e40b30211e0aafd976796a43ad01e3dd3215d596fe772d119f9441be",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-5.joblib": "999d09ae684f3708b2e0c42adcc7e068a67de1e81b3108f7199153f15682d7cd",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-6.joblib": "7d021e36bc1cdf157d4656acd9f3d5398be15f313add7937a1e25da03769d321",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-6.joblib": "70c2494db44f566a4b15e01fad7323369a3b5c768ee8a0b5228c160216a8d636",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-7.joblib": "d4b9d7e3689afd281a3a0dd3eccd973d3d7618b35fd7a50000f54649df3b084f",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-7.joblib": "9780fbb1d3575460635fb8ff1c655dc99c45d26ec77690a764b38abe8f164df7",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-8.joblib": "7cc5a864e1a29eff51bd84970a54360e5dbe92282f32bb29a6d22191363626fa",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-8.joblib": "d8422293c6091d6da3aac042527c868e5ec062729e003789172dab7c2c94ba81",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-9.joblib": "bac7ca2c4592c04cd941e71e53f568fe0e455337a480dfc53fa80a69d87ba870",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-9.joblib": "71c2345c52855fc0eda7e6d9e9ea527b962f03244a6a5d2d12adcdd01dfa3f45",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-10.joblib": "bed88a1f27ba74554fd09b57b650e45fd10118e3309533d33033854da9dee553",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-10.joblib": "5927f065bf77a8a7e7122ddcae5f51ed188000d5dde46f5d13cf015a750e63f4",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-11.joblib": "76a9b8de6ef324890536185674923ca38ba8def20093211cabd5b0966be3b030",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-11.joblib": "78a65cf3b1de44d7ec7d42b9e2fe535e925090feb28c43242983282f5dc97a5d",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-12.joblib": "47b7f15df232b15d9ba11ce6df863fdfc229e6d13c2ffe32e7952f9e9a403b3b",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-12.joblib": "0f4a16043497db7d8985f4b572ed53e11e88e48e78dfb7bbdecbd706878905d8"
+  },
+  "no_age_models": [
+    {
+      "phase": "validation",
+      "horizon_h": 9,
+      "all_trees_identical": false
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 10,
+      "all_trees_identical": true
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 11,
+      "all_trees_identical": true
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 12,
+      "all_trees_identical": true
+    },
+    {
+      "phase": "test",
+      "horizon_h": 10,
+      "all_trees_identical": true
+    },
+    {
+      "phase": "test",
+      "horizon_h": 11,
+      "all_trees_identical": true
+    },
+    {
+      "phase": "test",
+      "horizon_h": 12,
+      "all_trees_identical": true
+    }
+  ],
+  "metadata_only_differences": [
+    {
+      "phase": "validation",
+      "horizon_h": 2,
+      "tree": 3,
+      "node": 19,
+      "is_leaf": true,
+      "gain_with_age": 0.3833143789154416,
+      "gain_without_age": 0.3321755649761684
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 2,
+      "tree": 8,
+      "node": 23,
+      "is_leaf": true,
+      "gain_with_age": 0.29999879458884315,
+      "gain_without_age": 0.06761636322886666
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 2,
+      "tree": 10,
+      "node": 23,
+      "is_leaf": true,
+      "gain_with_age": 0.4154813233582768,
+      "gain_without_age": 0.18927216167297356
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 3,
+      "tree": 8,
+      "node": 19,
+      "is_leaf": true,
+      "gain_with_age": 9.570181280707594,
+      "gain_without_age": 8.796353734208296
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 3,
+      "tree": 10,
+      "node": 11,
+      "is_leaf": true,
+      "gain_with_age": 21.4202657807309,
+      "gain_without_age": 15.37255262432209
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 25,
+      "node": 22,
+      "is_leaf": true,
+      "gain_with_age": 25.249915993384377,
+      "gain_without_age": 23.77940878686783
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 26,
+      "node": 24,
+      "is_leaf": true,
+      "gain_with_age": 30.636500988124727,
+      "gain_without_age": 20.293936111984536
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 31,
+      "node": 21,
+      "is_leaf": true,
+      "gain_with_age": 13.61628576524243,
+      "gain_without_age": 12.123792627636504
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 41,
+      "node": 2,
+      "is_leaf": true,
+      "gain_with_age": 18.331295935203237,
+      "gain_without_age": 17.7231319290725
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 43,
+      "node": 16,
+      "is_leaf": true,
+      "gain_with_age": 19.702743936162797,
+      "gain_without_age": 19.421763954623994
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 46,
+      "node": 7,
+      "is_leaf": true,
+      "gain_with_age": 12.623620464649468,
+      "gain_without_age": 10.177360269292972
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 49,
+      "node": 9,
+      "is_leaf": true,
+      "gain_with_age": 9.9804868355688,
+      "gain_without_age": 7.733302795833989
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 4,
+      "tree": 50,
+      "node": 15,
+      "is_leaf": true,
+      "gain_with_age": 11.084819997863473,
+      "gain_without_age": 9.515421711827354
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 5,
+      "tree": 22,
+      "node": 22,
+      "is_leaf": true,
+      "gain_with_age": 5.603414699213019,
+      "gain_without_age": 4.565656565656564
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 5,
+      "tree": 35,
+      "node": 2,
+      "is_leaf": true,
+      "gain_with_age": 9.688709097863757,
+      "gain_without_age": 9.545842548403366
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 5,
+      "tree": 39,
+      "node": 2,
+      "is_leaf": true,
+      "gain_with_age": 15.84348641049672,
+      "gain_without_age": 15.51637885697407
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 5,
+      "tree": 40,
+      "node": 22,
+      "is_leaf": true,
+      "gain_with_age": 19.344285714285714,
+      "gain_without_age": 11.249036051667632
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 5,
+      "tree": 44,
+      "node": 2,
+      "is_leaf": true,
+      "gain_with_age": 12.828000865114266,
+      "gain_without_age": 12.325170920774887
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 5,
+      "tree": 48,
+      "node": 20,
+      "is_leaf": true,
+      "gain_with_age": 12.342161876212305,
+      "gain_without_age": 11.318567131528571
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 6,
+      "tree": 62,
+      "node": 21,
+      "is_leaf": true,
+      "gain_with_age": 12.491473601260834,
+      "gain_without_age": 11.10480693459417
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 6,
+      "tree": 67,
+      "node": 21,
+      "is_leaf": true,
+      "gain_with_age": 13.468778280542983,
+      "gain_without_age": 11.134365325077399
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 6,
+      "tree": 68,
+      "node": 21,
+      "is_leaf": true,
+      "gain_with_age": 8.96161616161616,
+      "gain_without_age": 6.968888888888889
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 6,
+      "tree": 93,
+      "node": 28,
+      "is_leaf": true,
+      "gain_with_age": 10.673510319099176,
+      "gain_without_age": 9.514147158611564
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 6,
+      "tree": 114,
+      "node": 22,
+      "is_leaf": true,
+      "gain_with_age": 14.886618249509146,
+      "gain_without_age": 14.534298621879426
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 6,
+      "tree": 129,
+      "node": 19,
+      "is_leaf": true,
+      "gain_with_age": 1.8811911728017061,
+      "gain_without_age": 1.0989648033126276
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 7,
+      "tree": 60,
+      "node": 20,
+      "is_leaf": true,
+      "gain_with_age": 0.48540517787848153,
+      "gain_without_age": 0.41688781221597004
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 8,
+      "tree": 29,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 2.3759587138369103,
+      "gain_without_age": 2.121822255343468
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 8,
+      "tree": 48,
+      "node": 15,
+      "is_leaf": true,
+      "gain_with_age": 0.21260099307010938,
+      "gain_without_age": 0.08666324196959896
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 8,
+      "tree": 52,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 1.1916011684989005,
+      "gain_without_age": 0.6291384080929707
+    },
+    {
+      "phase": "validation",
+      "horizon_h": 9,
+      "tree": 45,
+      "node": 27,
+      "is_leaf": true,
+      "gain_with_age": 2.0930972243833343,
+      "gain_without_age": 1.959973917990509
+    },
+    {
+      "phase": "test",
+      "horizon_h": 1,
+      "tree": 38,
+      "node": 11,
+      "is_leaf": true,
+      "gain_with_age": 0.28652223226795037,
+      "gain_without_age": 0.23743478727834577
+    },
+    {
+      "phase": "test",
+      "horizon_h": 1,
+      "tree": 41,
+      "node": 3,
+      "is_leaf": true,
+      "gain_with_age": 0.19746782654305783,
+      "gain_without_age": 0.1421510630818681
+    },
+    {
+      "phase": "test",
+      "horizon_h": 2,
+      "tree": 7,
+      "node": 11,
+      "is_leaf": true,
+      "gain_with_age": 0.7955346092929254,
+      "gain_without_age": 0.7639083661952171
+    },
+    {
+      "phase": "test",
+      "horizon_h": 2,
+      "tree": 10,
+      "node": 11,
+      "is_leaf": true,
+      "gain_with_age": 0.8374398311480609,
+      "gain_without_age": 0.7943737977214882
+    },
+    {
+      "phase": "test",
+      "horizon_h": 2,
+      "tree": 16,
+      "node": 14,
+      "is_leaf": true,
+      "gain_with_age": 0.7807387553656158,
+      "gain_without_age": 0.5222096705577544
+    },
+    {
+      "phase": "test",
+      "horizon_h": 2,
+      "tree": 17,
+      "node": 21,
+      "is_leaf": true,
+      "gain_with_age": 0.3417862085918513,
+      "gain_without_age": 0.3094078248120236
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 2,
+      "node": 6,
+      "is_leaf": true,
+      "gain_with_age": 8.859298210132476,
+      "gain_without_age": 6.4
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 7,
+      "node": 27,
+      "is_leaf": true,
+      "gain_with_age": 27.582965915262193,
+      "gain_without_age": 26.116552008290363
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 11,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 28.984744633521153,
+      "gain_without_age": 23.379228802904287
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 12,
+      "node": 27,
+      "is_leaf": true,
+      "gain_with_age": 50.030498533724334,
+      "gain_without_age": 41.731735827001756
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 13,
+      "node": 27,
+      "is_leaf": true,
+      "gain_with_age": 54.999620414673046,
+      "gain_without_age": 51.717011855067625
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 14,
+      "node": 12,
+      "is_leaf": true,
+      "gain_with_age": 18.10351178002159,
+      "gain_without_age": 16.455564325177583
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 14,
+      "node": 22,
+      "is_leaf": true,
+      "gain_with_age": 57.80493728107752,
+      "gain_without_age": 53.660403403131
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 14,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 26.025224957239534,
+      "gain_without_age": 20.604651162790702
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 17,
+      "node": 22,
+      "is_leaf": true,
+      "gain_with_age": 35.55296170238799,
+      "gain_without_age": 34.56171220139652
+    },
+    {
+      "phase": "test",
+      "horizon_h": 3,
+      "tree": 17,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 41.72301587301587,
+      "gain_without_age": 38.72505003515984
+    },
+    {
+      "phase": "test",
+      "horizon_h": 4,
+      "tree": 14,
+      "node": 7,
+      "is_leaf": true,
+      "gain_with_age": 26.301734038319402,
+      "gain_without_age": 24.462808594330667
+    },
+    {
+      "phase": "test",
+      "horizon_h": 4,
+      "tree": 14,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 31.04317973324062,
+      "gain_without_age": 29.134821819945344
+    },
+    {
+      "phase": "test",
+      "horizon_h": 4,
+      "tree": 15,
+      "node": 26,
+      "is_leaf": true,
+      "gain_with_age": 21.52415584415583,
+      "gain_without_age": 21.387228070175436
+    },
+    {
+      "phase": "test",
+      "horizon_h": 6,
+      "tree": 26,
+      "node": 11,
+      "is_leaf": true,
+      "gain_with_age": 33.58773250213413,
+      "gain_without_age": 23.956293481359133
+    },
+    {
+      "phase": "test",
+      "horizon_h": 6,
+      "tree": 31,
+      "node": 18,
+      "is_leaf": true,
+      "gain_with_age": 52.67264538400445,
+      "gain_without_age": 45.47474704472284
+    },
+    {
+      "phase": "test",
+      "horizon_h": 6,
+      "tree": 37,
+      "node": 16,
+      "is_leaf": true,
+      "gain_with_age": 42.28126029007145,
+      "gain_without_age": 35.59181102636648
+    },
+    {
+      "phase": "test",
+      "horizon_h": 6,
+      "tree": 45,
+      "node": 14,
+      "is_leaf": true,
+      "gain_with_age": 38.97945238180493,
+      "gain_without_age": 37.76845255058421
+    },
+    {
+      "phase": "test",
+      "horizon_h": 6,
+      "tree": 47,
+      "node": 15,
+      "is_leaf": true,
+      "gain_with_age": 44.222807169099895,
+      "gain_without_age": 43.10670263540153
+    },
+    {
+      "phase": "test",
+      "horizon_h": 7,
+      "tree": 85,
+      "node": 9,
+      "is_leaf": true,
+      "gain_with_age": 0.592612432510577,
+      "gain_without_age": 0.567473960230165
+    },
+    {
+      "phase": "test",
+      "horizon_h": 7,
+      "tree": 87,
+      "node": 9,
+      "is_leaf": true,
+      "gain_with_age": 0.5411671557084744,
+      "gain_without_age": 0.2840884506849002
+    },
+    {
+      "phase": "test",
+      "horizon_h": 8,
+      "tree": 80,
+      "node": 25,
+      "is_leaf": true,
+      "gain_with_age": 1.2246409922950048,
+      "gain_without_age": 1.2166714943992212
+    },
+    {
+      "phase": "test",
+      "horizon_h": 9,
+      "tree": 35,
+      "node": 14,
+      "is_leaf": true,
+      "gain_with_age": 0.6474281299053808,
+      "gain_without_age": 0.5633534575549017
+    }
+  ],
+  "limits": "Feature use or non-use is a property of these saved trees, not a causal attribution of prediction error or justification to force splits/tune thresholds."
+}

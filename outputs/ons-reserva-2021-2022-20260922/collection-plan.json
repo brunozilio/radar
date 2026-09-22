@@ -1,0 +1,43 @@
+{
+  "registered_at_utc": "2026-09-22T03:15:45.401013+00:00",
+  "catalog": "outputs/historico-vazoes-ceran/raw/catalog.json",
+  "catalog_sha256": "bd0203e0db33546a2ba8ffbc34766b28ea49703d9952dead56615460977cf3da",
+  "license_id": "cc-by",
+  "existing_csv_inventory": [],
+  "jobs": [
+    {
+      "month": "2021-04",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2021_04.csv",
+      "resource_id": "ce37ba3e-7476-41e3-b93d-3d9c5e425b78",
+      "file": "raw/ons-2021-04.csv"
+    },
+    {
+      "month": "2021-05",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2021_05.csv",
+      "resource_id": "6d272be1-9cb5-4e8d-b099-4a8b788912e8",
+      "file": "raw/ons-2021-05.csv"
+    },
+    {
+      "month": "2022-04",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2022_04.csv",
+      "resource_id": "03399f21-25b3-47c6-bd0e-7473bdba445e",
+      "file": "raw/ons-2022-04.csv"
+    },
+    {
+      "month": "2022-05",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2022_05.csv",
+      "resource_id": "02ed588f-2005-4844-b3c9-7b97bcf774d9",
+      "file": "raw/ons-2022-05.csv"
+    },
+    {
+      "month": "2022-06",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2022_06.csv",
+      "resource_id": "6c5561fd-c76a-4da6-b503-9cfeba069df4",
+      "file": "raw/ons-2022-06.csv"
+    }
+  ],
+  "max_gets": 5,
+  "max_bytes_per_response": 33554432,
+  "automatic_retries": 0,
+  "scope": "Literal Q/I source and coverage diagnostics only; reserve2021/2022 remains outside fitting/inference. April files provide warmup."
+}

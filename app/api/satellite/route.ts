@@ -23,7 +23,7 @@ export async function GET() {
         WHERE kind = 'satellite-enhanced'
           AND julianday(captured_at) >= julianday(?)
           AND julianday(captured_at) <= julianday(?)
-        ORDER BY julianday(captured_at) ASC, julianday(created_at) ASC
+        ORDER BY julianday(captured_at) DESC, julianday(created_at) DESC
         LIMIT 60
       `)
       .all(cutoff, now) as Array<{
@@ -38,13 +38,17 @@ export async function GET() {
         src: `/api/media/${row.id}`,
         provider: row.source_url.includes("cptec.inpe.br")
           ? "cptec"
-          : "inmet",
+          : row.source_url.includes("star.nesdis.noaa.gov") ? "noaa" : "inmet",
       })),
       nowMs,
       "inmet",
     );
+    const sources = database.prepare(`
+      SELECT source, status, checked_at AS checkedAt, message AS reason
+      FROM source_status WHERE source IN ('satellite-inmet', 'satellite-cptec', 'satellite-noaa')
+    `).all();
     return NextResponse.json(
-      { frames },
+      { frames, sources },
       { headers: { "cache-control": "no-store, max-age=0" } },
     );
   } finally {

@@ -1,0 +1,284 @@
+{
+  "model": "HGE simple_water_balance (ARNO) + existing empirical upstream routing",
+  "full_mgb_iph": false,
+  "origin": "2026-09-21T15:00:00-03:00",
+  "last_observed": {
+    "source": "86510000",
+    "last_time": "2026-09-21T14:45:00-03:00",
+    "delay_minutes": 15.0,
+    "value": 9.23
+  },
+  "generated_at": "2026-09-21T16:40:00.537400-03:00",
+  "area_incremental_km2": 1273.3799363219698,
+  "source_code": {
+    "repository": "https://github.com/HGE-IPH/simple_water_balance",
+    "commit": "31a6ed4f428c491401e1c96b60457be293564f10",
+    "license": "GPL-3.0",
+    "files": {
+      "hydrological_model.py": {
+        "url": "https://raw.githubusercontent.com/HGE-IPH/simple_water_balance/31a6ed4f428c491401e1c96b60457be293564f10/model/hydrological_model.py",
+        "sha256": "1c41801b512df0befab47cdba7f03a00758b2dc10c41cac7a3fee3f228cf84e5"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/HGE-IPH/simple_water_balance/31a6ed4f428c491401e1c96b60457be293564f10/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      },
+      "README.upstream.md": {
+        "url": "https://raw.githubusercontent.com/HGE-IPH/simple_water_balance/31a6ed4f428c491401e1c96b60457be293564f10/README.md",
+        "sha256": "cff09117865492d756e63ffb0034d25db40619e92b641dd990a16ffcef4b9987"
+      }
+    },
+    "modified": false,
+    "scope": "Simplified ARNO water balance, not full MGB-IPH"
+  },
+  "input_sha256": {
+    "outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4",
+    "outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6",
+    "outputs/mucum-atualizacao-15h-2026-09-21/previsao-vazoes-montante.csv": "4584b363396b50a86fed18ea9cb581088ffeb6c24ed529f719a137362d61c672",
+    "outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.json": "22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+    "outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv": "f40d62328b4f8e861dff65260d65fe35f359b1ab1111746f07a80b8aff7417be",
+    "outputs/mucum-atualizacao-15h-2026-09-21/roteamento-previsao.csv": "144c3f8454f6bf13329f683a5f4735c8fa6d3b1f63ead76ea73d44df97aee3ec",
+    "outputs/pesquisa-hidrologica-2026-09-21/et0-era5-2025-04-01--2026-09-20.json": "aefa759427246c4bb357fd52b787d8eb574f86f52d4cd693df6612338cca559d",
+    "outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json": "10213a6d0e29447e9a9da62ad9f0137af3444d79a5007b1a802cdc557fd04f7c",
+    "outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313",
+    "outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f"
+  },
+  "adapter_sha256": "5a5b2e3d340af9896cb8d8dc64f0e1034314e8f335ab771f890df8b62bbb362e",
+  "runtime_versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "numba": "0.67.0",
+    "matplotlib": "3.11.2"
+  },
+  "pet_reanalysis_input": {
+    "source_file": "outputs/pesquisa-hidrologica-2026-09-21/et0-era5-2025-04-01--2026-09-20.json",
+    "type": "ERA5 FAO56 reference ET0 reanalysis proxy, not observed ET",
+    "latitude": -29.0,
+    "longitude": -51.5,
+    "matched_hours": 12789,
+    "missing_hours": 139,
+    "latest_valid_time": "2026-09-15T20:00:00-03:00",
+    "missing_and_future_policy": "Explicit 1/3/5 mm/day constant sensitivity hypotheses"
+  },
+  "weather_missing_hours": {
+    "gfs": 0,
+    "ecmwf": 0,
+    "icon": 77
+  },
+  "calibration": {
+    "start_after_warmup": "2025-05-31T00:00:00-03:00",
+    "end_exclusive": "2026-07-01T00:00:00-03:00",
+    "n": 8775
+  },
+  "reconstruction_test": {
+    "start": "2026-07-01T00:00:00-03:00",
+    "end_exclusive": "2026-09-21T00:00:00-03:00",
+    "n": 1506,
+    "is_prospective_forecast_validation": false,
+    "note": "Observed upstream flows and rainfall; same origins and rating curve for both models."
+  },
+  "reference_scenario": {
+    "pet_mm_day_hypothesis": 3,
+    "rainfall": "mean of 3 saved previous-day forecasts at Baixo Antas centroid",
+    "correction_tau_h_hypothesis": 6
+  },
+  "limitations": [
+    "Not the complete MGB-IPH: no distributed HRUs, river hydraulics, backwater or floodplain storage.",
+    "PET constants of 1/3/5 mm/day are sensitivity hypotheses, not observations; when ET0 is supplied, constants only fill unavailable and future hours.",
+    "Soil parameters are effective residual fits; upstream routing and rating errors can be absorbed by them.",
+    "Soil initialization is hypothetical with 60-day warm-up; spin-up convergence is not established.",
+    "Upstream future discharges reuse the existing statistical forecasts; these are not observed releases.",
+    "Future rainfall is a centroid proxy from saved previous-day forecasts, not spatially integrated latest runs.",
+    "Missing precipitation fractions are estimated with model rainfall, not replaced by zeros.",
+    "Reference scenario is not selected by independent forecast validation; sensitivity bounds are not confidence intervals.",
+    "Existing upstream kernels and rating were fitted before 2026-07-01, but the project has previously examined the test period.",
+    "Snapshot is from 15:00 BRT and is not refreshed telemetry; current-event errors did not tune this experiment."
+  ],
+  "forecast": [
+    {
+      "time": "2026-09-21T16:00:00-03:00",
+      "lead_h": 1,
+      "hge_reference_m": 10.74140877537376,
+      "sensitivity_min_m": 10.627926331135681,
+      "sensitivity_max_m": 11.097596534440248,
+      "previous_selected_m": 10.354225675568127,
+      "previous_routing_m": 10.678505560202755
+    },
+    {
+      "time": "2026-09-21T17:00:00-03:00",
+      "lead_h": 2,
+      "hge_reference_m": 11.9173199650473,
+      "sensitivity_min_m": 11.743238055273478,
+      "sensitivity_max_m": 12.371651150982839,
+      "previous_selected_m": 11.209646933704338,
+      "previous_routing_m": 12.190709842994954
+    },
+    {
+      "time": "2026-09-21T18:00:00-03:00",
+      "lead_h": 3,
+      "hge_reference_m": 13.080357990575617,
+      "sensitivity_min_m": 12.863655996833174,
+      "sensitivity_max_m": 13.559355514272179,
+      "previous_selected_m": 11.501219284075743,
+      "previous_routing_m": 13.32558099017457
+    },
+    {
+      "time": "2026-09-21T19:00:00-03:00",
+      "lead_h": 4,
+      "hge_reference_m": 14.119757980514711,
+      "sensitivity_min_m": 13.873358320729848,
+      "sensitivity_max_m": 14.588641638451499,
+      "previous_selected_m": 11.650989959045251,
+      "previous_routing_m": 14.296494536459127
+    },
+    {
+      "time": "2026-09-21T20:00:00-03:00",
+      "lead_h": 5,
+      "hge_reference_m": 14.975334653197448,
+      "sensitivity_min_m": 14.701703040985828,
+      "sensitivity_max_m": 15.419576203792348,
+      "previous_selected_m": 12.403635040443014,
+      "previous_routing_m": 14.806574689625922
+    },
+    {
+      "time": "2026-09-21T21:00:00-03:00",
+      "lead_h": 6,
+      "hge_reference_m": 15.684749140514393,
+      "sensitivity_min_m": 15.387774239597352,
+      "sensitivity_max_m": 16.096096408357187,
+      "previous_selected_m": 12.103225906054362,
+      "previous_routing_m": 15.519267225058902
+    },
+    {
+      "time": "2026-09-21T22:00:00-03:00",
+      "lead_h": 7,
+      "hge_reference_m": 16.248329788158024,
+      "sensitivity_min_m": 15.933358324792135,
+      "sensitivity_max_m": 16.624284715356332,
+      "previous_selected_m": 13.445622097751722,
+      "previous_routing_m": 16.27358260429984
+    },
+    {
+      "time": "2026-09-21T23:00:00-03:00",
+      "lead_h": 8,
+      "hge_reference_m": 16.745238704917277,
+      "sensitivity_min_m": 16.41883510961903,
+      "sensitivity_max_m": 17.08534399001643,
+      "previous_selected_m": 13.629904539529917,
+      "previous_routing_m": 16.605529192861383
+    },
+    {
+      "time": "2026-09-22T00:00:00-03:00",
+      "lead_h": 9,
+      "hge_reference_m": 17.1714833972448,
+      "sensitivity_min_m": 16.83970966625774,
+      "sensitivity_max_m": 17.47711515235557,
+      "previous_selected_m": 14.164101359105347,
+      "previous_routing_m": 16.86951416001856
+    },
+    {
+      "time": "2026-09-22T01:00:00-03:00",
+      "lead_h": 10,
+      "hge_reference_m": 17.48858531763827,
+      "sensitivity_min_m": 17.156276669016467,
+      "sensitivity_max_m": 17.762365164443395,
+      "previous_selected_m": 13.977466606446058,
+      "previous_routing_m": 17.0662943203236
+    },
+    {
+      "time": "2026-09-22T02:00:00-03:00",
+      "lead_h": 11,
+      "hge_reference_m": 17.683704836374233,
+      "sensitivity_min_m": 17.354703669436827,
+      "sensitivity_max_m": 17.92861527112037,
+      "previous_selected_m": 13.799682357580576,
+      "previous_routing_m": 17.06532463037265
+    },
+    {
+      "time": "2026-09-22T03:00:00-03:00",
+      "lead_h": 12,
+      "hge_reference_m": 17.90441195840113,
+      "sensitivity_min_m": 17.583344475679123,
+      "sensitivity_max_m": 18.12527721911807,
+      "previous_selected_m": 13.737598273980495,
+      "previous_routing_m": 17.035763402708177
+    }
+  ],
+  "reconstruction_metrics": [
+    {
+      "model": "hge_pet_1",
+      "subset": "all",
+      "n": 1506,
+      "mae_m": 0.41137566815719145,
+      "rmse_m": 0.5600465019404394,
+      "bias_m": 0.032905006559942954
+    },
+    {
+      "model": "hge_pet_1",
+      "subset": "level_ge_7m",
+      "n": 167,
+      "mae_m": 0.9027309174447065,
+      "rmse_m": 1.0968471999291214,
+      "bias_m": 0.6557239522820696
+    },
+    {
+      "model": "hge_pet_3",
+      "subset": "all",
+      "n": 1506,
+      "mae_m": 0.41160536891438193,
+      "rmse_m": 0.5601896293603773,
+      "bias_m": 0.03234667257039816
+    },
+    {
+      "model": "hge_pet_3",
+      "subset": "level_ge_7m",
+      "n": 167,
+      "mae_m": 0.9027309174447065,
+      "rmse_m": 1.0968471999291214,
+      "bias_m": 0.6557239522820696
+    },
+    {
+      "model": "hge_pet_5",
+      "subset": "all",
+      "n": 1506,
+      "mae_m": 0.41181027688624033,
+      "rmse_m": 0.5603260399841081,
+      "bias_m": 0.03185067813532562
+    },
+    {
+      "model": "hge_pet_5",
+      "subset": "level_ge_7m",
+      "n": 167,
+      "mae_m": 0.9027309174447065,
+      "rmse_m": 1.0968471999291214,
+      "bias_m": 0.6557239522820696
+    },
+    {
+      "model": "existing_linear_routing",
+      "subset": "all",
+      "n": 1506,
+      "mae_m": 0.42577734994444166,
+      "rmse_m": 0.5712409782073569,
+      "bias_m": -0.0032471373461693816
+    },
+    {
+      "model": "existing_linear_routing",
+      "subset": "level_ge_7m",
+      "n": 167,
+      "mae_m": 0.8486128401996493,
+      "rmse_m": 1.0684859541838632,
+      "bias_m": 0.2502147774738782
+    }
+  ],
+  "checks": {
+    "vendor_hashes_match": true,
+    "source_snapshot_unchanged": true,
+    "nonnegative_states": true,
+    "water_conservation_tolerance_mm": 1e-08,
+    "max_mass_error_mm": 4.263256414560601e-14,
+    "forecast_hours": 12,
+    "forecast_validation_complete": false
+  }
+}

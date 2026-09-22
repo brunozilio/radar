@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1912PWNFT"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Q1912PWNFT'); </script>
+    <title>SGB - SACE</title>
+	<link href="./favicon.ico" rel="shortcut icon">
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="description" content="Portal SACE">
+    <meta name="keywords" content="CPRM, SGB, alerta de enchentes">
+    <meta http-equiv="content-language" content="pt-br">
+
+    <!-- CSS Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="CPRM_arquivos/global.css">
+
+    <link type="text/css" rel="stylesheet" href="CPRM_arquivos/index.css">
+
+    <!-- jQuery Scripts -->
+    <script src="CPRM_arquivos/jquery-1.js" type="text/javascript"></script>
+
+    <!-- Scripts -->
+    <script src="CPRM_arquivos/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- BARRA BRASIL :: START -->
+    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+	<ul id="menu-barra-temp" style="list-style:none;">
+		<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li>
+		<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+	</ul>
+    </div>
+    <!-- BARRA BRASIL :: END -->
+
+    <!-- BODY SECTION :: START -->
+    <div id="body-section">
+
+<!-- HEADER :: START -->
+<header id="header" class="section shadow-bottom">
+    <div class="wrapper">
+        <div class="wrapper-section">
+            <div id="header_top">
+                <div class="wrapper">
+                    <div class="wrapper-section">
+                    	<!-- BANNER BAR :: START -->
+                        <a href="/sace" title="P&aacute;gina Inicial">
+                            <img id="banner" src="CPRM_arquivos/logo_sace_2025.jpg">
+                        </a>
+                        <!-- BANNER BAR :: END -->
+                    </div>
+                </div>
+            </div>
+            <div id="header_bottom">
+            	<div class="wrapper">
+                    <div class="wrapper-section">
+                        <!-- MENU TOP :: START -->
+                        <nav id="nav-top">
+                            <ul>
+                                <li><a href="/sace" title="P&aacute;gina Inicial">P&aacute;gina Inicial</a></li>
+                                <li><a href="/sace/index_bacias_monitoradas.php" title="Bacias Monitoradas">Bacias Monitoradas</a></li>
+                                <li><a href="/sace/index_manchas_inundacao.php" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+                                <li><a href="/sace/index_secas_estiagens.php" title="Secas e Estiagens">Secas e Estiagens</a></li>
+								<li><a href="/sace/index_monitoramento_especial.php" title="Monitoramento Especial">Monitoramento Especial</a></li>
+                            </ul>
+                        </nav>
+                        <!-- MENU TOP :: END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- HEADER :: END -->
+
+<!-- CONTENT :: START l -->
+<div id="content" class="section">
+    <div class="wrapper">
+        <div class="wrapper-section">
+<!-- BAR LEFT :: START -->
+<div style="min-height: 1600px;" id="bar-left" class="shadow-right">
+
+    <!-- MENU LEFT :: START -->
+    <nav id="nav-left">
+        <ul>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Amazonas" id="bamazonas">Bacia do Rio Amazonas</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_sace.php','full')" id="bamazonasSACE" title="SACE Rio Amazonas">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bamazonasHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>		
+                    <li><a href="index_manchas_inundacao.php?getbacia=bamazonas" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('amazonas_boletins.php','frame')" id="bamazonasBOLETINS" title="Boletim">Boletins</a></li>
+                    <li style="display: none;"><a href="#" onclick="javascript:openUrl('amazonas_monitoramento_anteriores.php','frame')" id="bamazonasAnteriores" title="Monitoramento Amaz&ocirc;nia Ocidental - Anteriores">Monitoramento 2007 a 2015</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Paraguai (Pantanal)" id="bparaguai">Bacia do Rio Paraguai (Pantanal)</a>
+                <ul class="sub-menu">
+					<li><a href="#" onclick="javascript:openUrl('paraguai_sace.php','full')" id="bparaguaiSACE" title="SACE Rio Paraguai">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('paraguai_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bparaguaiHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('paraguai_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('paraguai_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('paraguai_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('paraguai_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('paraguai_boletins.php','frame')" id="bparaguaiBOLETINS" title="Boletim">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Doce" id="bdoce">Bacia do Rio Doce</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('doce_sace.php','full')" title="SACE Rio Doce" id="bdoceSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('doce_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bdoceHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('doce_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('doce_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('doce_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('doce_relatorios.php','frame')" title="Relat&oacute;rios e Artigos">Relat&oacute;rios e Artigos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('doce_monitoramento_especial.php?idbacia=3','full')" title="Monitoramento Especial" id="bdoceME">Monitoramento Especial</a></li>
+                    <li><a href="index_manchas_inundacao.php?getbacia=bdoce" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=3','frame')" id="bdoceBOLETINS" title="Boletim">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Ca&iacute;" id="bcai">Bacia do Rio Ca&iacute;</a>
+                <ul class="sub-menu">
+                    <!--li><a href="#" onclick="javascript:openUrl('_sace.php?bacia=cai','full')" title="SACE Rio Ca&iacute;" id="bcaiSACE">SACE Monitoramento</a></li-->
+					<li style="display:none;"><a href="#" onclick="javascript:openUrl('cai_sace_dc.php','full')" title="SACE Rio Ca&iacute;" id="bcaidc">SACE DC</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('cai_sace.php','full')" title="SACE Rio Ca&iacute;" id="bcaiSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('cai_apresentacao.html','frame')" title="Apresenta&ccedil;&atilde;o" id="bcaiHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('cai_caracteristicas.html','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+					<li><a href="#" onclick="javascript:openUrl('cai_municipios.html','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('cai_mapeamento_risco.html','frame')" title="Mapeamento de risco">Mapeamento de risco</a></li>
+					<li><a href="#" onclick="javascript:openUrl('cai_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <!--<li><a href="#" onclick="javascript:openUrl('cai_fluxograma.html','frame')" title="Fluxograma">Fluxograma</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('cai_pontos_monitoramento.html','frame')" title="Pontos de Monitoramento">Pontos de Monitoramento</a></li> -->
+                    <li><a href="index_manchas_inundacao.php?getbacia=bcai" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=4','frame')" title="Boletim" id="bcaiBOLETINS" style="font-weight: bold;color: red;">Boletins <img src="./img/importante.png" style="vertical-align:bottom;width:16px;"></a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Muria&eacute;" id="bmuriae">Bacia do Rio Muria&eacute;</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('muriae_sace.php','full')" title="SACE Rio Muria&eacute;" id="bmuriaeSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('muriae_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bmuriaeHOME">Apresenta&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('muriae_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>				   				   
+                    <li><a href="#" onclick="javascript:openUrl('muriae_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>					
+					<li><a href="#" onclick="javascript:openUrl('muriae_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>				
+					<li><a href="#" onclick="javascript:openUrl('muriae_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>					
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=5','frame')" title="Boletim" id="bmuriaeBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Acre" id="bacre">Bacia do Rio Acre</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('acre_sace.php','full')" title="SACE Rio Acre" id="bacreSACE">SACE Monitoramento</a></li>
+					<li><a href="#" onclick="javascript:openUrl('acre_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bacreHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('acre_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <!--li><a href="#" onclick="javascript:openUrl('acre_historico.php','frame')" title="Hist&oacute;rico">Hist&oacute;rico</a></li-->
+                    <li><a href="#" onclick="javascript:openUrl('acre_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('acre_mapeamento_risco.php','frame')" title="Mapeamento de risco">Mapeamento de risco</a></li>
+					<li><a href="#" onclick="javascript:openUrl('acre_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=6','frame')" title="Boletim" id="bacreBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Madeira" id="bmadeira">Bacia do Rio Madeira</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('madeira_sace.php','full')" title="SACE Rio Madeira" id="bmadeiraSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('madeira_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bmadeiraHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('madeira_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('madeira_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('madeira_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+					<li><a href="#" onclick="javascript:openUrl('madeira_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="index_manchas_inundacao.php?getbacia=bmadeira" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('madeira_boletins.php','frame')" title="Boletim" id="bmadeiraBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Parna&iacute;ba" id="bparnaiba">Bacia do Rio Parna&iacute;ba</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('parnaiba_sace.php','full')" title="SACE Rio Parna&iacute;ba" id="bparnaibaSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('parnaiba_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bparnaibaHOME">Apresenta&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('parnaiba_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <!--<li><a href="#" onclick="javascript:openUrl('parnaiba_historico.php','frame')" title="Hist&oacute;rico">Hist&oacute;rico</a></li> -->
+                    <li><a href="#" onclick="javascript:openUrl('parnaiba_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('parnaiba_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <!--<li><a href="#" onclick="javascript:openUrl('parnaiba_pontos.php','frame')" title="Pontos de Monitoramento">Pontos de Monitoramento</a></li>-->
+                    <li><a href="#" onclick="javascript:openUrl('parnaiba_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="index_manchas_inundacao.php?getbacia=bparnaiba" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=8','frame')" title="Boletim" id="bparnaibaBOLETINS">Boletins</a></li>
+                 </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Taquari" id="btaquari">Bacia do Rio Taquari</a>
+                <ul class="sub-menu">
+					<li style="display:none;"><a href="#" onclick="javascript:openUrl('taquari_sace_dc.php','full')" title="SACE Rio Taquari" id="btaquaridc">SACE DC</a></li>
+					<li><a href="#" onclick="javascript:openUrl('taquari_sace.php','full')" title="SACE Rio Taquari" id="btaquariSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('taquari_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="btaquariHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('taquari_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <!--li><a href="#" onclick="javascript:openUrl('taquari_fluxograma.php','frame')" title="Fluxograma">Fluxograma</a></li-->
+                    <li><a href="#" onclick="javascript:openUrl('taquari_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('taquari_mapeamento_risco.php','frame')" title="Mapeamento de Risco" id="btaquariMAPEAMENTO">Mapeamento de Risco</a></li>
+                    <!--li><a href="#" onclick="javascript:openUrl('taquari_pontos.php','frame')" title="Pontos de Monitoramento">Pontos de Monitoramento</a></li-->
+                    <li><a href="#" onclick="javascript:openUrl('taquari_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es da Bacia">Publica&ccedil;&otilde;es da Bacia</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=9','frame')" title="Boletim" id="btaquariBOLETINS" style="font-weight: bold;color: red;">Boletins <img src="./img/importante.png" style="vertical-align:bottom;width:16px;"></a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Munda&uacute;" id="bmundau">Bacia do Rio Munda&uacute;</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('mundau_sace.php','full')" title="SACE Rio Munda&uacute" id="bmundauSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('mundau_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bmundauHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('mundau_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('mundau_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('mundau_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('mundau_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=10','frame')" title="Boletim" id="bmundauBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Branco" id="bbranco">Bacia do Rio Branco</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('branco_sace.php','full')" title="SACE Rio Branco" id="bbrancoSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('branco_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bbrancoHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('branco_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('branco_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('branco_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('branco_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('branco_fotos.php','frame')" title="Fotos das Instala&ccedil;&otilde;es de PCDs">Fotos das Instala&ccedil;&otilde;es</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=11','frame')" title="Boletim" id="bbrancoBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Xingu" id="bxingu">Bacia do Rio Xingu</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('xingu_sace.php','full')" title="SACE Rio Xingu" id="bxinguSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('xingu_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bxinguHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('xingu_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('xingu_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('xingu_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('xingu_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=12','frame')" title="Boletim" id="bxinguBOLETINS">Boletins</a></li>
+				</ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Uruguai" id="buruguai">Bacia do Rio Uruguai</a>
+                <ul class="sub-menu">
+                    <!--li><a href="#" onclick="javascript:openUrl('_sace.php?bacia=uruguai','full')" title="SACE Rio Uruguai" id="buruguaiSACE">SACE Monitoramento</a></li-->
+					<li style="display:none;"><a href="#" onclick="javascript:openUrl('uruguai_sace_dc.php','full')" title="SACE Rio Uruguai" id="buruguaidc">SACE DC</a></li>
+					<li><a href="#" onclick="javascript:openUrl('uruguai_sace.php','full')" title="SACE Rio Uruguai" id="buruguaiSACE">SACE Monitoramento</a></li>
+					<li><a href="#" onclick="javascript:openUrl('uruguai_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia" id="buruguaiHOME">Caracter&iacute;sticas da Bacia</a></li>				   				   
+                    <li><a href="#" onclick="javascript:openUrl('uruguai_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>					
+					<li><a href="#" onclick="javascript:openUrl('uruguai_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>			
+                    <li><a href="#" onclick="javascript:openUrl('uruguai_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="index_manchas_inundacao.php?getbacia=buruguai" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=13','frame')" title="Boletim" id="buruguaiBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Velhas" id="bvelhas">Bacia do Rio Velhas</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('velhas_sace.php','full')" title="SACE Rio Velhas" id="bvelhasSACE">SACE Monitoramento</a></li>
+					<li><a href="#" onclick="javascript:openUrl('velhas_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bvelhasHOME">Apresenta&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('velhas_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('velhas_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('velhas_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=14','frame')" title="Boletim" id="bvelhasBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+			<li class="parent"><a href="#" title="Bacia do Rio Itapecuru" id="bitapecuru">Bacia do Rio Itapecuru</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('itapecuru_sace.php','full')" title="SACE Rio Itapecuru" id="bitapecuruSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('itapecuru_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bitapecuruHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('itapecuru_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('itapecuru_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('itapecuru_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+					<li><a href="#" onclick="javascript:openUrl('itapecuru_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+                    <li><a href="index_manchas_inundacao.php?getbacia=bitapecuru" title="Manchas de Inunda&ccedil;&atilde;o">Manchas de Inunda&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=16','frame')" title="Boletim" id="bitapecuruBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Pomba" id="bpomba">Bacia do Rio Pomba</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('pomba_sace.php','full')" title="SACE Rio Pomba" id="bpombaSACE">SACE Monitoramento</a></li>
+					<li><a href="#" onclick="javascript:openUrl('pomba_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia" id="bpombaHOME">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('pomba_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('pomba_publicacoes.php','frame')" title="Publica&ccedil;&otilde;es">Publica&ccedil;&otilde;es</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=17','frame')" title="Boletim" id="bpombaBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio S&atilde;o Francisco" id="bsaofrancisco">Bacia do Rio S&atilde;o Francisco</a>
+                <ul class="sub-menu">
+                    <li><a href="#" onclick="javascript:openUrl('saofrancisco_sace.php','full')" title="SACE Rio S&atilde;o Francisco" id="bsaofranciscoSACE">SACE Monitoramento</a></li>
+					<li><a href="#" onclick="javascript:openUrl('sf_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bsaofranciscoHOME">Apresenta&ccedil;&atilde;o</a></li>
+					<li><a href="#" onclick="javascript:openUrl('sf_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('sf_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=18','frame')" title="Boletim" id="bsaofranciscoBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Gua&iacute;ba" id="bguaiba">Bacia do Rio Gua&iacute;ba</a>
+                <ul class="sub-menu">
+                    <!--li><a href="#" onclick="javascript:openUrl('guaiba_sace_popup.php','frame')" title="SACE Rio Gua&iacute;ba" id="bguaibaSACE">SACE Monitoramento</a></li-->
+                    <li><a href="#" onclick="javascript:openUrl('guaiba_sace.php','full')" title="SACE Rio Gua&iacute;ba" id="bguaibaSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('guaiba_apresentacao.php','frame')" title="Apresenta&ccedil;&atilde;o" id="bguaibaHOME">Apresenta&ccedil;&atilde;o</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('guaiba_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('guaiba_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('guaiba_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=21','frame')" title="Boletim" id="bguaibaBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+            <li class="parent"><a href="#" title="Bacia do Rio Araguaia" id="baraguaia">Bacia do Rio Araguaia</a>
+                <ul class="sub-menu">
+					<!--li><a href="#" onclick="javascript:openUrl('araguaia_sace_popup.php','frame')" title="SACE Rio Araguaia" id="baraguaiaSACE">SACE Monitoramento</a></li-->
+					<li><a href="#" onclick="javascript:openUrl('araguaia_sace.php','full')" title="SACE Rio Araguaia" id="baraguaiaSACE">SACE Monitoramento</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('araguaia_caracteristicas.php','frame')" title="Caracter&iacute;sticas da Bacia">Caracter&iacute;sticas da Bacia</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('araguaia_mapeamento_risco.php','frame')" title="Mapeamento de Risco">Mapeamento de Risco</a></li>
+                    <li><a href="#" onclick="javascript:openUrl('araguaia_municipios.php','frame')" title="Munic&iacute;pios Atendidos">Munic&iacute;pios Atendidos</a></li>
+					<li><a href="#" onclick="javascript:openUrl('boletins.php?idbacia=23','frame')" title="Boletim" id="baraguaiaBOLETINS">Boletins</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- MENU LEFT :: END -->
+
+</div>
+<!-- BAR LEFT :: END -->
+            <!-- BAR RIGHT :: START   class="bar-right-full" style="min-height:550px;"-->
+<div style="height: 600px;" id="bar-right">
+    <!-- CONTENT :: START -->
+    <div class="bar-right-none" style="height: 600px;" id="bar-right-content">
+    <div class="" id="content-item">
+        <h3 class="title">BACIAS MONITORADAS</h3>
+        <div style="width: 800px; line-height: 30px; text-align: justify;">
+
+            <style type="text/css">
+                .img_bm {
+                    float:right;
+                }
+                #img_sah {
+                    clear:right;
+                }
+                p {
+                    text-align:justify;
+                }
+            </style>
+
+            <a href="img/conteudo/bacias_monitoradas_index2025max.jpg" target="_blank">
+                <img src="img/conteudo/bacias_monitoradas_index2025.jpg" title="Sistemas de Alerta&#13;*** clique para ampliar ***" class="img_bm" id="img_mapa" />
+            </a>
+			<img src="img/conteudo/sah2025.png" title="SAH - Sistema de Alerta Hidrológico"  class="img_bm" id="img_sah" />
+
+            <p>
+                Sistemas de Alertas Hidrológicos atualmente em operação:<br />
+                1. Bacia do rio Amazonas: em operação desde 1989<br />
+                2. Bacia do rio Paraguai (Pantanal): em operação desde 1994<br />
+                3. Bacia do rio Doce: em operação desde 1996<br />
+                4. Bacia do rio Caí: em operação desde 2010<br />
+                5. Bacia do rio Muriaé: em operação desde 2014<br />
+                6. Bacia do rio Acre: em operação desde 2014<br />
+                7. Bacia do rio Madeira: em operação desde 2014<br />
+                8. Bacia do rio Parnaíba: em operação desde 2015<br />
+                9. Bacia do rio Taquari: em operação desde 2015<br />
+                10. Bacia do rio Branco: em operação desde 2015<br />
+                11. Bacia do rio Xingu: em operação desde 2017<br />
+                12. Bacia do rio Mundaú: em operação desde 2017<br />
+                13. Bacia do rio Uruguai: em operação desde 2018<br />
+                14. Bacia do rio das Velhas: em operação desde 2018<br />
+                15. Bacia do rio Itapecuru: em operação desde 2019<br />
+                16. Bacia do rio Pomba: em operação desde 2019<br />
+                17. Bacia do rio São Francisco: em operação desde 2021<br />
+                18. Bacia da região hidrográfica do Guaíba: em operação desde 2025<br />
+                19. Bacia do rio Araguaia: em operação desde 2025<br />
+            </p>
+
+        </div>
+    </div>
+        <iframe id="content-frame" name="content-frame" src="" class="remove" frameborder="0"></iframe>
+    </div>
+    <!-- CONTENT :: END -->
+</div>
+<!-- BAR RIGHT :: END -->        </div>
+    </div>
+</div>
+<!-- CONTENT :: END -->
+<!-- FOOTER :: START -->
+<footer id="footer" class="section shadow-top">
+
+    <div class="wrapper">
+        <div class="wrapper-section">
+            <div id="footer-left">
+                <ul>
+                	<li id="footer-sgb"><a href="https://www.sgb.gov.br/" title="SGB" target="_blank"><img src="CPRM_arquivos/footer_sgb.png"></a></li>
+                    <li id="footer-mme"><a href="http://www.mme.gov.br/" title="Minist&eacute;rio de Minas e Energia" target="_blank"><img src="CPRM_arquivos/footer_mme.png"></a></li>
+                </ul>
+               
+            </div>
+            <div id="footer-center">
+             <p>   
+                Servi&ccedil;o Geol&oacute;gico do Brasil - SGB<br />
+                Departamento de Hidrologia e Gest&acirc;o Territorial<br />
+                Avenida Pasteur, 404 - Urca<br />
+                Rio de Janeiro - RJ - Brasil<br />
+                (21) 2546-0201/2295-4546<br />
+                </p> 
+            </div>
+            <div id="footer-right">
+            	<ul>
+                    <li><a href="https://www.facebook.com/sgbgov" title="Facebook SGB" target="_blank"><img src="CPRM_arquivos/sn_icon_facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/sgbgovbr" title="Instagram SGB" target="_blank"><img src="CPRM_arquivos/sn_icon_instagram.png"></a></li>
+                    <li><a href="https://www.youtube.com/@tvsgbgovbr" title="Youtube SGB" target="_blank"><img src="CPRM_arquivos/sn_icon_youtube.png"></a></li>
+                    <li><a href="https://x.com/sgbgovbr" title="X SGB" target="_blank"><img src="CPRM_arquivos/sn_icon_x.png"></a></li>
+                    <li><a href="https://www.linkedin.com/company/sgbgovbr" title="Linkedin SGB" target="_blank"><img src="CPRM_arquivos/sn_icon_linkedin.png"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+  
+</footer>
+<!-- FOOTER :: END -->
+</div>
+</div>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+
+
+    var getBacia = 'btaquari';
+
+    if (getBacia == 'bcaidc' || getBacia == 'btaquaridc' || getBacia == 'buruguaidc') {
+
+		$("#"+getBacia.slice(0, -2)).click();
+		$("#"+getBacia).click();
+
+	}
+
+    if (getBacia == 'bamazonas' || getBacia == 'bparaguai' || getBacia == 'bdoce' || getBacia == 'bcai' ||
+        getBacia == 'bmuriae' || getBacia == 'bacre' || getBacia == 'bmadeira' || getBacia == 'bparnaiba' ||
+        getBacia == 'btaquari' || getBacia == 'bmundau' || getBacia == 'bbranco' || getBacia == 'bxingu' ||
+		getBacia == 'bvelhas' || getBacia == 'buruguai' || getBacia == 'bparaopeba' || getBacia == 'bitapecuru' || 
+        getBacia == 'bpomba' || getBacia == 'bsaofrancisco' || getBacia == 'bguaiba' || getBacia == 'baraguaia') {
+			
+				$("#"+getBacia).click();
+				$("#"+getBacia+"SACE").click();
+
+	}
+
+	if (getBacia.search("home")) {
+		varBacia = getBacia.substr(0,getBacia.search("home"));
+		$("#"+varBacia).click();
+		$("#"+varBacia+"HOME").click();
+	}
+
+	if (getBacia.search("boletim")) {
+		varBacia = getBacia.substr(0,getBacia.search("boletim"));
+		$("#"+varBacia).click();
+		$("#"+varBacia+"BOLETINS").click();
+	}
+
+	if (getBacia.search("mapeamento")) {
+		varBacia = getBacia.substr(0,getBacia.search("mapeamento"));
+		$("#"+varBacia).click();
+		$("#"+varBacia+"MAPEAMENTO").click();
+	}
+
+    if (getBacia == 'bdoce_boletim') {
+
+            $("#bdoce").click();
+            $("#bdoceBOLETINS").click();
+
+    }
+
+    if (getBacia == 'bdoceME') {
+
+            $("#bdoce").click();
+            $("#bdoceME").click();
+
+    }
+    
+    if (getBacia == 'bamazonasAnteriores') {
+
+            $("#bamazonas").click();
+            $("#bamazonasAnteriores").click();
+
+    }
+
+});
+</script>
+<script src="CPRM_arquivos/barra3.js" type="text/javascript"></script>
+</body>
+</html>

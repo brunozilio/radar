@@ -1,0 +1,865 @@
+{
+  "registered_at_utc": "2026-09-22T02:40:52.253614+00:00",
+  "stations": [
+    "86060010",
+    "86099000",
+    "86102000",
+    "86117000",
+    "86125000",
+    "86125050",
+    "86160000",
+    "86163000",
+    "86200900",
+    "86280500",
+    "86298000",
+    "86403000",
+    "86410800",
+    "86447000",
+    "86448000",
+    "86450000",
+    "86471000",
+    "86472000",
+    "86472600",
+    "86479000",
+    "86488000",
+    "86493000",
+    "86495500",
+    "86500000",
+    "86504900",
+    "86505500",
+    "86510000"
+  ],
+  "window": [
+    "2020-06-28",
+    "2020-07-20"
+  ],
+  "warmup": [
+    "2020-06-28",
+    "2020-06-30"
+  ],
+  "max_new_gets": 36,
+  "planned_new_gets": 34,
+  "no_automatic_retries": true,
+  "new_jobs": [
+    {
+      "station": "86060010",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86060010",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86060010-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86060010",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86060010",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86060010-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86099000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86099000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86099000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86099000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86102000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86102000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86102000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86102000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86117000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86117000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86117000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86117000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86125000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86125000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86125000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86125050",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86125050",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86125050-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86125050",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86125050",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86125050-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86160000",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86160000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86160000-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86160000",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86160000",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86160000-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86163000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86163000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86163000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86163000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86200900",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86200900",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86200900&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86200900-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86280500",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86280500",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86280500&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86280500-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86298000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86298000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86298000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86298000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86403000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86403000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86403000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86403000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86410800",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86410800",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86410800&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86410800-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86447000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86447000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86447000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86447000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86448000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86448000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86448000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86448000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86450000",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86450000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86450000-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86450000",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86450000",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86450000-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86471000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86471000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86471000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86471000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86472000",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86472000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86472000-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86472000",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86472000",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86472000-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86472600",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86472600",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86472600-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86472600",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86472600",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86472600-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86479000",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86479000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86479000-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86479000",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86479000",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86479000-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86488000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86488000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86488000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86488000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86493000",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86493000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86493000&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86493000-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86495500",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86495500",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86495500&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86495500-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86500000",
+      "start": "2020-06-28",
+      "end": "2020-07-03",
+      "parameters": {
+        "codEstacao": "86500000",
+        "dataInicio": "28/06/2020",
+        "dataFim": "03/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=28%2F06%2F2020&dataFim=03%2F07%2F2020",
+      "file": "raw/ana-86500000-2020-06-28--2020-07-03.xml"
+    },
+    {
+      "station": "86500000",
+      "start": "2020-07-14",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86500000",
+        "dataInicio": "14/07/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=14%2F07%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86500000-2020-07-14--2020-07-20.xml"
+    },
+    {
+      "station": "86504900",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86504900",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86504900&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86504900-2020-06-28--2020-07-20.xml"
+    },
+    {
+      "station": "86505500",
+      "start": "2020-06-28",
+      "end": "2020-07-20",
+      "parameters": {
+        "codEstacao": "86505500",
+        "dataInicio": "28/06/2020",
+        "dataFim": "20/07/2020"
+      },
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86505500&dataInicio=28%2F06%2F2020&dataFim=20%2F07%2F2020",
+      "file": "raw/ana-86505500-2020-06-28--2020-07-20.xml"
+    }
+  ],
+  "reused": [
+    {
+      "station": "86060010",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86060010.xml",
+      "source_metadata": {
+        "station": "86060010",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86060010",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:33:10.005385+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:33:07 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:33:11.727666+00:00",
+        "file": "raw/ana-86060010.xml",
+        "bytes": 150735,
+        "sha256": "f10b5f1b013ebea16c0d0b91cc7f7dae8e1987f718dcaab7cb3ff65f8815db69"
+      },
+      "sha256": "f10b5f1b013ebea16c0d0b91cc7f7dae8e1987f718dcaab7cb3ff65f8815db69",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86125050",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86125050.xml",
+      "source_metadata": {
+        "station": "86125050",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86125050",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:33:11.728562+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:33:19 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:33:23.332246+00:00",
+        "file": "raw/ana-86125050.xml",
+        "bytes": 1193,
+        "sha256": "c32cde5d356f6c56159a11d3ecd40107553b6e97ebd4e2d56ddc9eb1fca47b5d"
+      },
+      "sha256": "c32cde5d356f6c56159a11d3ecd40107553b6e97ebd4e2d56ddc9eb1fca47b5d",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86160000",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86160000.xml",
+      "source_metadata": {
+        "station": "86160000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86160000",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:33:23.332834+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:33:38 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:33:42.041960+00:00",
+        "file": "raw/ana-86160000.xml",
+        "bytes": 755245,
+        "sha256": "df4b2195824183683a080a4e0feb465847276a696798fe0f19d487608c38f73d"
+      },
+      "sha256": "df4b2195824183683a080a4e0feb465847276a696798fe0f19d487608c38f73d",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86450000",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86450000.xml",
+      "source_metadata": {
+        "station": "86450000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86450000",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:33:42.043287+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:34:03 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:34:07.442216+00:00",
+        "file": "raw/ana-86450000.xml",
+        "bytes": 37864,
+        "sha256": "d68949833623286ed0db093c9553b8a852241375ac356ebea86db1d0f7c48222"
+      },
+      "sha256": "d68949833623286ed0db093c9553b8a852241375ac356ebea86db1d0f7c48222",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86472000",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86472000.xml",
+      "source_metadata": {
+        "station": "86472000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86472000",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:34:07.442909+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:34:29 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:34:33.024459+00:00",
+        "file": "raw/ana-86472000.xml",
+        "bytes": 803842,
+        "sha256": "4321cceb9a2a7825fff4523ab09492d1a2cda53b781cff447d0794ab06c1683d"
+      },
+      "sha256": "4321cceb9a2a7825fff4523ab09492d1a2cda53b781cff447d0794ab06c1683d",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86472600",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86472600.xml",
+      "source_metadata": {
+        "station": "86472600",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86472600",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:34:33.025749+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:34:54 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:34:58.282105+00:00",
+        "file": "raw/ana-86472600.xml",
+        "bytes": 1193,
+        "sha256": "53c31320701a00b8d178cba432810ff76160014b7be7c9992198ee70f40ea02e"
+      },
+      "sha256": "53c31320701a00b8d178cba432810ff76160014b7be7c9992198ee70f40ea02e",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86479000",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86479000.xml",
+      "source_metadata": {
+        "station": "86479000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86479000",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:34:58.283133+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:35:00 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:35:04.372317+00:00",
+        "file": "raw/ana-86479000.xml",
+        "bytes": 185930,
+        "sha256": "c83326188cbb2237996f1f669afbe751cd24fd9a86f14d0feba35b772487db70"
+      },
+      "sha256": "c83326188cbb2237996f1f669afbe751cd24fd9a86f14d0feba35b772487db70",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86500000",
+      "start": "2020-07-04",
+      "end": "2020-07-13",
+      "source_path": "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86500000.xml",
+      "source_metadata": {
+        "station": "86500000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "parameters": {
+          "codEstacao": "86500000",
+          "dataInicio": "04/07/2020",
+          "dataFim": "13/07/2020"
+        },
+        "requested_at_utc": "2026-09-22T02:35:04.373059+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 02:35:08 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=04%2F07%2F2020&dataFim=13%2F07%2F2020",
+        "collected_at_utc": "2026-09-22T02:35:11.796315+00:00",
+        "file": "raw/ana-86500000.xml",
+        "bytes": 1193,
+        "sha256": "4b2bcb9463a93a4949f0a83ff3e2cb3365eacf36642a9802017b06242df47e1f"
+      },
+      "sha256": "4b2bcb9463a93a4949f0a83ff3e2cb3365eacf36642a9802017b06242df47e1f",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86510000",
+      "start": "2020-06-01",
+      "end": "2020-06-30",
+      "source_path": "outputs/historico-cheias-mucum/raw/ana-86510000-2020-06-01--2020-06-30.xml",
+      "source_metadata": {
+        "station": "86510000",
+        "start_inclusive": "2020-06-01",
+        "end_inclusive": "2020-06-30",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F06%2F2020&dataFim=30%2F06%2F2020",
+        "raw_file": "raw/ana-86510000-2020-06-01--2020-06-30.xml",
+        "access": "public_read_only",
+        "retrieved_at": "2026-09-21T19:43:51.980932+00:00",
+        "http_status": 200,
+        "content_type": "text/xml; charset=utf-8",
+        "last_modified": null,
+        "etag": null,
+        "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F06%2F2020&dataFim=30%2F06%2F2020",
+        "bytes": 2399700,
+        "sha256": "95b4f4054a77ea0a226fe1cedec255057f36c83822ae562d78eef6eeb051dc14",
+        "cache_used": true,
+        "status": "data",
+        "rows": 2880,
+        "source_errors": [],
+        "cache_verified_at": "2026-09-21T19:44:25.712165+00:00"
+      },
+      "sha256": "95b4f4054a77ea0a226fe1cedec255057f36c83822ae562d78eef6eeb051dc14",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86510000",
+      "start": "2020-07-01",
+      "end": "2020-07-20",
+      "source_path": "outputs/historico-cheias-mucum/raw/ana-86510000-2020-07-01--2020-07-20.xml",
+      "source_metadata": {
+        "station": "86510000",
+        "start_inclusive": "2020-07-01",
+        "end_inclusive": "2020-07-20",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F07%2F2020&dataFim=20%2F07%2F2020",
+        "raw_file": "raw/ana-86510000-2020-07-01--2020-07-20.xml",
+        "access": "public_read_only",
+        "retrieved_at": "2026-09-21T19:43:52.688178+00:00",
+        "http_status": 200,
+        "content_type": "text/xml; charset=utf-8",
+        "last_modified": null,
+        "etag": null,
+        "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F07%2F2020&dataFim=20%2F07%2F2020",
+        "bytes": 1604023,
+        "sha256": "37b3df82a3537da916053c9e3f6cbdac3302236b2334e061d986a9638dcb0b8b",
+        "cache_used": true,
+        "status": "data",
+        "rows": 1920,
+        "source_errors": [],
+        "cache_verified_at": "2026-09-21T19:44:25.742764+00:00"
+      },
+      "sha256": "37b3df82a3537da916053c9e3f6cbdac3302236b2334e061d986a9638dcb0b8b",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86510000",
+      "start": "2020-07-09",
+      "end": "2020-07-09",
+      "source_path": "outputs/pesquisa-hidrologica-2026-09-21/ana-86510000-09-07-2020.xml",
+      "source_metadata": {
+        "file": "ana-86510000-09-07-2020.xml",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=09%2F07%2F2020&dataFim=09%2F07%2F2020",
+        "retrieved_at": "2026-09-21T19:36:01.886807+00:00",
+        "status": 200,
+        "bytes": 81964,
+        "sha256": "d459913709ccfdd227b722d545226bef4f237e44fdba8336c33d33a9b4f13ab1",
+        "rows": 96,
+        "snippet": "velSensor>\r\n        <NivelSensor>2102.00</NivelSensor>\r\n        <CQ_NivelDisplay />\r\n        <NivelDisplay />\r\n        <CQ_NivelManual />\r\n        <NivelManual />\r\n        <CQ_NivelFinal>Dado suspeito</CQ_NivelFinal>\r\n        <NivelFinal>2102.00</NivelFinal>\r\n        <CQ_VazaoFinal>Dado suspeito</CQ_VazaoFinal>\r\n        <VazaoFinal>10495.20</VazaoFinal>\r\n      </DadosHidrometereologicos>\r\n    </DocumentElement>\r\n  </diffgr:diffgram>\r\n</DataTable>"
+      },
+      "sha256": "d459913709ccfdd227b722d545226bef4f237e44fdba8336c33d33a9b4f13ab1",
+      "status": "verified_reuse",
+      "purpose": "overlap comparison; monthly source first; no repeat network"
+    }
+  ],
+  "existing_2020_xml_inventory": [
+    "outputs/historico-cheias-mucum/raw/ana-86510000-2020-06-01--2020-06-30.xml",
+    "outputs/historico-cheias-mucum/raw/ana-86510000-2020-07-01--2020-07-20.xml",
+    "outputs/pesquisa-hidrologica-2026-09-21/ana-86510000-09-07-2020.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86060010.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86125050.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86160000.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86450000.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86472000.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86472600.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86479000.xml",
+    "outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86500000.xml"
+  ],
+  "reference_hashes": {
+    "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+    "outputs/auditoria-latencias-chuva-20260921/latencies.json": "f0182f5670b715890c4973324f066b66a6c12810cb5bd76ee39f130c5d47252e",
+    "outputs/pesquisa-insumos-observados-2020-20260921/source-manifest.json": "8344a21e4c03b45632d497b20e3c535a73a0fa7d73b4d541891299f3853bed3e",
+    "outputs/historico-cheias-mucum/raw/ana-86510000-2020-06-01--2020-06-30.manifest.json": "6d85a4f16e2879786515c4ac41fd7be6196f1784ce29e8f9bf84508706de7b1d",
+    "outputs/historico-cheias-mucum/raw/ana-86510000-2020-07-01--2020-07-20.manifest.json": "bd8907efc970903ec3c713e4b6eeab626e7051067aca1f0a1957b64f020731bd",
+    "outputs/pesquisa-hidrologica-2026-09-21/sample-manifest.json": "27975bdd046099b95d87653a0ab6a253cc6c5788b6dacaa338d92f96da5bd260"
+  },
+  "duplicate_policy": "Compare ALL original fields on equal station/timestamp; identical duplicates retain one normalized row and all provenance. Conflicts preserved separately, never resolve automatically.",
+  "exclusions": [
+    "No2021/22 requests",
+    "No ONS/NWP",
+    "No fits or matrix",
+    "No operational mutations",
+    "No interpolation/rounding/zero filling"
+  ]
+}

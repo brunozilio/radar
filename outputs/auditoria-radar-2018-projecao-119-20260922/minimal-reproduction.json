@@ -1,0 +1,44 @@
+{
+  "runtime": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "cases": [
+    {
+      "case": "thresholds_four_allNaN_positive_weights",
+      "status": "error",
+      "exception_type": "ValueError",
+      "message": "window shape cannot be larger than input array shape",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/brunozilio/Documents/radar/outputs/auditoria-radar-2018-projecao-119-20260922/audit.py\", line 15, in callcase\n    x=fn();return {'case':name,'status':'ok','result':np.asarray(x).tolist() if x is not None else None}\n      ^^^^\n  File \"/Users/brunozilio/Documents/radar/outputs/auditoria-radar-2018-projecao-119-20260922/audit.py\", line 19, in <lambda>\n    tests=[callcase('thresholds_four_allNaN_positive_weights',lambda:_find_binning_thresholds(np.array([np.nan]*4),255,np.ones(4))),callcase('thresholds_constant_finite_positive_weights',lambda:_find_binning_thresholds(np.ones(4),255,np.ones(4))),callcase('thresholds_mixed_finite_NaN',lambda:_find_binning_thresholds(np.array([1.,np.nan,2.,np.nan]),255,np.ones(4)))]\n                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/binning.py\", line 82, in _find_binning_thresholds\n    bin_thresholds = sliding_window_view(distinct_values, 2).mean(axis=1)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/numpy/lib/_stride_tricks_impl.py\", line 439, in sliding_window_view\n    raise ValueError(\nValueError: window shape cannot be larger than input array shape\n"
+    },
+    {
+      "case": "thresholds_constant_finite_positive_weights",
+      "status": "ok",
+      "result": []
+    },
+    {
+      "case": "thresholds_mixed_finite_NaN",
+      "status": "ok",
+      "result": [
+        1.5
+      ]
+    },
+    {
+      "case": "BinMapper8x2_allNaNcolumn",
+      "status": "error",
+      "exception_type": "ValueError",
+      "message": "window shape cannot be larger than input array shape",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/brunozilio/Documents/radar/outputs/auditoria-radar-2018-projecao-119-20260922/audit.py\", line 15, in callcase\n    x=fn();return {'case':name,'status':'ok','result':np.asarray(x).tolist() if x is not None else None}\n      ^^^^\n  File \"/Users/brunozilio/Documents/radar/outputs/auditoria-radar-2018-projecao-119-20260922/audit.py\", line 23, in <lambda>\n    tests.extend([callcase('BinMapper8x2_allNaNcolumn',lambda:binmap(tiny)),callcase('BinMapper8x1_projected',lambda:binmap(tiny[:,[0]]))])\n                                                              ^^^^^^^^^^^^\n  File \"/Users/brunozilio/Documents/radar/outputs/auditoria-radar-2018-projecao-119-20260922/audit.py\", line 22, in binmap\n    bm=_BinMapper(n_bins=256,n_threads=1);bm.fit(data,sample_weight=np.ones(len(data)));return bm.n_bins_non_missing_\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/binning.py\", line 287, in fit\n    non_cat_thresholds = Parallel(n_jobs=self.n_threads, backend=\"threading\")(\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/utils/parallel.py\", line 91, in __call__\n    return super().__call__(iterable_with_config_and_warning_filters)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/joblib/parallel.py\", line 2012, in __call__\n    return output if self.return_generator else list(output)\n                                                ^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/joblib/parallel.py\", line 1940, in _get_sequential_output\n    res = func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/utils/parallel.py\", line 184, in __call__\n    return self.function(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/binning.py\", line 82, in _find_binning_thresholds\n    bin_thresholds = sliding_window_view(distinct_values, 2).mean(axis=1)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/radar-hge-venv/lib/python3.12/site-packages/numpy/lib/_stride_tricks_impl.py\", line 439, in sliding_window_view\n    raise ValueError(\nValueError: window shape cannot be larger than input array shape\n"
+    },
+    {
+      "case": "BinMapper8x1_projected",
+      "status": "ok",
+      "result": [
+        8
+      ]
+    }
+  ],
+  "scope": "Only threshold/binmapper fits on4or8synthetic rows; zeroHGBmodel fits, no environmental changes."
+}

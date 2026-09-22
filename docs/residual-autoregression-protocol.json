@@ -1,0 +1,15 @@
+{
+  "id": "mucum-finalized-flow-residual-ar-v1",
+  "scope": "Train one fixed ridge residual predictor per nominal horizon1..12. Historical development candidate; no promotion or live issue.",
+  "train": "Only finite complete feature rows and target times strictly before2026-07-01T00:00:00-03:00. Frozen upstream proxy, HGE, routing and rating were fitted before this same cutoff. Residual features/labels inside that training period are in-sample to these frozen components, not out-of-fold validation.",
+  "features": ["current_anchor_residual_at_O_minus_15min", "finalized_residual_at_O_minus_1h", "finalized_residual_at_O_minus_3h", "finalized_residual_at_O_minus_6h"],
+  "target": "Finalized residual at exact O+h: reported ANA Q minus routed historical upstream flows with strictly positive lags minus HGE local discharge with finalized rainfall through that target hour. Future information is used only in training labels. This label does not include errors in forecast future upstream flow or rainfall; that mismatch must remain explicit.",
+  "anchor": "Reproduce original baseline anchor residual exactly: paired Q at O-15min minus 0.25*(historical routing and state at O-1h)+0.75*(historical routing at O and one-hour forecast-rain state initialized at O-1h). Historical source publication availability remains assumed.",
+  "ridge": "Uniform weights; alpha1000 fixed, train-only mean/std; fit absolute signed residual in m3/s with intercept. No search, slope threshold, event selection or clipping.",
+  "missing": "No imputation in the new four residual features. Missing feature returns original tau6 correction and records fallback. Preserve missing baseline inputs/anchors and actual targets. Negative corrected flow is an explicit candidate failure, never clipped.",
+  "evaluation": "All original23538 scheduled pairs from July1 through targets beforeSeptember21. Replace only statistical flow correction on each of the two preserved baseline flow families; same curve and anchor offset. All horizons separately, all/high targets, individual and common samples, failures and coverage. No choice of better model by actual target level or event.",
+  "limitations": "Already inspected historical development. No independent validation for hyperparameters or promotion. Residual is statistical discrepancy, not verified physical runoff; reported Q may share rating-derived information with H. Numeric water balance does not certify residual physics.",
+  "live_issuance": false,
+  "promoted": false,
+  "goal_achieved": false
+}

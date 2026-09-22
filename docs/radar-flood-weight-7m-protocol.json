@@ -1,0 +1,19 @@
+{
+  "id": "radar-flood-weight-7m-v1",
+  "registered_at_utc": "2026-09-22T05:19:38.986717+00:00",
+  "parent": "outputs/experimento-radar-mistura-atrasos-20260922",
+  "motivation": "The unchanged operational/development weight adds2 at observed target>=9m, while the established goal analytical flood subset is observed>=7m. Test alignment of this training weight threshold, without changing the goal or its0.50m hit tolerance.7m is not an official alert level.",
+  "one_change": "For the mixed-profile HGB candidate only, change training weights from1+2*(abs(delta)>=1)+2*(target>=9) to1+2*(abs(delta)>=1)+2*(target>=7). Exactly those training rows with7<=target<9 gain2. All other weights unchanged; no renormalization, clipping or selection by test error.",
+  "preserved": "Original180features including NaNs, PCG64(57)one-profile-per-origin assignment,24common masks, chronological row order, one physical sample once, base,target,delta, fold cutoffs and full HGB parameters. No age, linear component, feature corruption or additional history.",
+  "training": "Exactly24new models(twofolds×12nominalhorizons). Require original weights to match parent training.csv weights_sum, new weights_sum minus old equals2*count(7<=target<9). Save paired old/new weight hashes and changed counts per fold/horizon before fit. Reproduce72frozen parent controls on both profiles,144applications.",
+  "evaluation": "Untouched parent204168profile rows,4families(parent3+flood_weight_7m),1152metrics for full/complete24/missing24 and all/observed>=7. Retain unknown truth and missing forecast failures. Report every horizon/profile/fold and full-level regressions, not just flood gains. The two profiles are alternative views of the same observations.",
+  "limits": [
+    "Known development periods, no unseen validation or causal accuracy claim.",
+    "Changing training weights can trade low-level accuracy and extreme errors for moderate-level gains. Report both.",
+    "Source publication, datum, timezone, prospective sample size and event independence remain unresolved.",
+    "No seed/weight search, new cutoff, operation change, live issuance, promotion or98percent claim."
+  ],
+  "planned_models": 24,
+  "promoted": false,
+  "goal_achieved": false
+}

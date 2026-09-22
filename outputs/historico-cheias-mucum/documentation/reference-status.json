@@ -1,0 +1,74 @@
+{
+  "station": "86510000",
+  "audited_at": "2026-09-21T20:04:01.486217+00:00",
+  "published_zero": {
+    "status": "PRIMARY_SOURCE_FOUND_NOT_TEMPORALLY_VALIDATED",
+    "value_m": 33.985,
+    "vertical_model": "MAPGEO2015",
+    "benchmark": "PA 008",
+    "source": "https://rigeo.sgb.gov.br/handle/doc/25578.3",
+    "source_pdf": "sgb-zeros-ortometricos-v3-2026.pdf",
+    "page": 12,
+    "effective_from": null,
+    "effective_to": null
+  },
+  "cross_period_datum_status": "UNVERIFIED_2020_2024_2026",
+  "other_published_zero_m": 33.96,
+  "difference_m": 0.025,
+  "difference_explanation": "UNRESOLVED_DO_NOT_ASSUME_ROUNDING_OR_PHYSICAL_SHIFT",
+  "endpoint_timezone": {
+    "status": "ASSUMED_UTC_MINUS03_NOT_VERIFIED_FOR_CURRENT_ENDPOINT",
+    "historical_primary_convention": "UTC-03 without DST",
+    "current_explicit_contract_found": false
+  },
+  "current_clock_corroboration": {
+    "source_path": "/Users/brunozilio/Documents/radar/outputs/mucum-12h-2026-09-21/raw/ana-86510000-fresh.xml",
+    "source_sha256": "b97a381ff16a3063929a841813db81c76bb05eb6da22887dd47272838a32924a",
+    "rows": [
+      {
+        "CodEstacao": "86510000",
+        "DataHora": "2026-09-21 12:00:00",
+        "CQ_ChuvaAcumAdotada": "Dado aprovado",
+        "ChuvaAcumAdotada": "538.20",
+        "CQ_ChuvaFinal": "Dado aprovado",
+        "ChuvaFinal": "0.40",
+        "CQ_NivelSensor": "Dado aprovado",
+        "NivelSensor": "708.00",
+        "CQ_NivelDisplay": null,
+        "NivelDisplay": "2124.00",
+        "CQ_NivelManual": null,
+        "NivelManual": null,
+        "CQ_NivelFinal": "Dado aprovado",
+        "NivelFinal": "708.00",
+        "CQ_VazaoFinal": "Dado aprovado",
+        "VazaoFinal": "1969.22"
+      },
+      {
+        "CodEstacao": "86510000",
+        "DataHora": "2026-09-21 09:00:00",
+        "CQ_ChuvaAcumAdotada": "Dado aprovado",
+        "ChuvaAcumAdotada": "523.40",
+        "CQ_ChuvaFinal": "Dado aprovado",
+        "ChuvaFinal": "0.80",
+        "CQ_NivelSensor": "Dado aprovado",
+        "NivelSensor": "493.00",
+        "CQ_NivelDisplay": null,
+        "NivelDisplay": "2124.00",
+        "CQ_NivelManual": null,
+        "NivelManual": null,
+        "CQ_NivelFinal": "Dado aprovado",
+        "NivelFinal": "493.00",
+        "CQ_VazaoFinal": "Dado aprovado",
+        "VazaoFinal": "1021.79"
+      }
+    ],
+    "sgb_bulletin": "sgb-boletim-2026-09-21.pdf",
+    "interpretation": "same nominal time and level once; not explicit timezone proof"
+  },
+  "public_contact_channels": {
+    "sgb": "alerta.taquari@sgb.gov.br",
+    "ana": "hidro@ana.gov.br"
+  },
+  "external_messages_sent": false,
+  "training_or_pipeline_changes": false
+}

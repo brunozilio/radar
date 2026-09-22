@@ -1,0 +1,14 @@
+{
+  "policy_id": "monte-claro-zero-sensitivity-v1",
+  "scope": "Retrospective sensitivity experiment on frozen 15h latency inputs only. Not an operational cleaning rule or prospective accuracy result.",
+  "reason": "Input-only audit: ONS Monte Claro July 22 2026 07-09h Q=0 contradicts positive other outflow; concurrent I zeros suspected. Cause and corrected values unknown.",
+  "frozen_input_sha256": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+  "windows": [
+    {"key": "monte:Q", "start": "2026-07-22T08:00:00-03:00", "end_exclusive": "2026-07-22T11:00:00-03:00", "expected_slots": 12, "expected_value": 0},
+    {"key": "monte:I", "start": "2026-07-22T08:00:00-03:00", "end_exclusive": "2026-07-22T10:00:00-03:00", "expected_slots": 8, "expected_value": 0}
+  ],
+  "variants": ["original", "Q_missing", "QI_missing"],
+  "transformation": "Copy delayed input arrays, replace only specified zero slots by NaN, then recompute all lag differences. Leave raw data, target values, sample membership, weights, parameters and current input row unchanged. Ridge missing-value treatment uses training-only medians and indicators.",
+  "evaluation": "Same chronological boundaries and fixed ridge alpha1000 as previous flow experiments. Retain every original target and compare paired errors. July-September2026 is an inspected development period. No tuning based on the resulting scores.",
+  "promotion": false
+}

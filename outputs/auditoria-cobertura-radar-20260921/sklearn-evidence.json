@@ -1,0 +1,7 @@
+{
+  "version": "1.9.1",
+  "source": "/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+  "source_sha256": "82619e3ae89af1625dea1d4245d0d4a9e2eb85e0d034790fbd89a1bb51d7e996",
+  "excerpt": "This estimator has native support for missing values (NaNs). During\n    training, the tree grower learns at each split point whether samples\n    with missing values should go to the left or right child, based on the\n    potential gain. When predicting, samples with missing values are\n    assigned to the left or right child consequently. If no missing values\n    were encountered for a given feature during training, then samples with\n    missing values are mapped to whichever child has the most samples.",
+  "scope": "Installed primary library documentation; not a model execution."
+}

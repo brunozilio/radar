@@ -1,0 +1,2007 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-09-22T02:44:15.515329+00:00",
+  "check_count": 495,
+  "checks": [
+    {
+      "check": "34GETs_under36",
+      "passed": true
+    },
+    {
+      "check": "all34HTTP200",
+      "passed": true
+    },
+    {
+      "check": "plan_before_all_requests",
+      "passed": true
+    },
+    {
+      "check": "11XMLreuse",
+      "passed": true
+    },
+    {
+      "check": "no_conflict",
+      "passed": true
+    },
+    {
+      "check": "priorhash outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    },
+    {
+      "check": "priorhash outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true
+    },
+    {
+      "check": "priorhash outputs/pesquisa-insumos-observados-2020-20260921/source-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "priorhash outputs/historico-cheias-mucum/raw/ana-86510000-2020-06-01--2020-06-30.manifest.json",
+      "passed": true
+    },
+    {
+      "check": "priorhash outputs/historico-cheias-mucum/raw/ana-86510000-2020-07-01--2020-07-20.manifest.json",
+      "passed": true
+    },
+    {
+      "check": "priorhash outputs/pesquisa-hidrologica-2026-09-21/sample-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86060010.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86125050.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86160000.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86450000.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86472000.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86472600.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86479000.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-insumos-observados-2020-20260921/raw/ana-86500000.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/historico-cheias-mucum/raw/ana-86510000-2020-06-01--2020-06-30.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/historico-cheias-mucum/raw/ana-86510000-2020-07-01--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/pesquisa-hidrologica-2026-09-21/ana-86510000-09-07-2020.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86060010-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86060010-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86099000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86102000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86117000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86125000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86125050-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86125050-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86160000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86160000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86163000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86200900-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86280500-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86298000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86403000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86410800-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86447000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86448000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86450000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86450000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86471000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86472000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86472000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86472600-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86472600-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86479000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86479000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86488000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86493000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86495500-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86500000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86500000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86504900-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "rawhash outputs/radar-insumos-observados-2020-20260921/raw/ana-86505500-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86060010-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86060010-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86099000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86102000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86117000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86125000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86125050-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86125050-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86160000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86160000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86163000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86200900-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86280500-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86298000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86403000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86410800-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86447000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86448000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86450000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86450000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86471000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86472000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86472000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86472600-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86472600-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86479000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86479000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86488000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86493000-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86495500-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86500000-2020-06-28--2020-07-03.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86500000-2020-07-14--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86504900-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "planlink raw/ana-86505500-2020-06-28--2020-07-20.xml",
+      "passed": true
+    },
+    {
+      "check": "station rows 86060010",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86060010",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86060010",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86060010source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86060010source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86060010source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86060010NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86060010NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86060010VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86060010VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86060010ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86060010ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86060010ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86060010ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86060010",
+      "passed": true
+    },
+    {
+      "check": "station rows 86099000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86099000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86099000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86099000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86099000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86099000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86099000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86099000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86099000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86099000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86099000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86099000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86099000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86099000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86099000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86102000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86102000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86102000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86102000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86102000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86102000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86102000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86102000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86102000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86102000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86102000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86102000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86102000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86102000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86102000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86117000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86117000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86117000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86117000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86117000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86117000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86117000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86117000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86117000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86117000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86117000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86117000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86117000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86117000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86117000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86125000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86125000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86125000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86125000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86125000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86125000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86125000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86125000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86125000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86125000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86125000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86125050",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86125050",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86125050",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86125050source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86125050source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86125050source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125050NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86125050NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125050VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86125050VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125050ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86125050ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86125050ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86125050ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86125050",
+      "passed": true
+    },
+    {
+      "check": "station rows 86160000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86160000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86160000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86160000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86160000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86160000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86160000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86160000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86160000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86160000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86160000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86160000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86160000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86160000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86160000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86163000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86163000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86163000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86163000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86163000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86163000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86163000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86163000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86163000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86163000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86163000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86163000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86163000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86163000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86163000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86200900",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86200900",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86200900",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86200900source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86200900source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86200900source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86200900NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86200900NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86200900VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86200900VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86200900ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86200900ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86200900ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86200900ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86200900",
+      "passed": true
+    },
+    {
+      "check": "station rows 86280500",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86280500",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86280500",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86280500source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86280500source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86280500source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86280500NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86280500NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86280500VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86280500VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86280500ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86280500ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86280500ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86280500ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86280500",
+      "passed": true
+    },
+    {
+      "check": "station rows 86298000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86298000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86298000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86298000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86298000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86298000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86298000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86298000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86298000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86298000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86298000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86298000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86298000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86298000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86298000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86403000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86403000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86403000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86403000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86403000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86403000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86403000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86403000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86403000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86403000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86403000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86403000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86403000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86403000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86403000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86410800",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86410800",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86410800",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86410800source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86410800source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86410800source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86410800NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86410800NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86410800VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86410800VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86410800ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86410800ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86410800ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86410800ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86410800",
+      "passed": true
+    },
+    {
+      "check": "station rows 86447000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86447000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86447000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86447000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86447000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86447000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86447000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86447000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86447000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86447000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86447000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86447000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86447000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86447000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86447000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86448000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86448000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86448000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86448000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86448000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86448000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86448000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86448000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86448000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86448000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86448000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86448000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86448000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86448000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86448000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86450000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86450000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86450000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86450000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86450000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86450000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86450000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86450000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86450000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86450000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86450000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86450000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86450000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86450000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86450000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86471000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86471000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86471000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86471000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86471000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86471000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86471000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86471000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86471000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86471000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86471000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86471000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86471000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86471000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86471000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86472000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86472000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86472000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86472000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86472000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86472000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86472000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86472000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86472000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86472000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86472000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86472600",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86472600",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86472600",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86472600source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86472600source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86472600source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472600NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86472600NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472600VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86472600VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472600ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86472600ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86472600ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86472600ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86472600",
+      "passed": true
+    },
+    {
+      "check": "station rows 86479000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86479000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86479000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86479000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86479000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86479000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86479000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86479000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86479000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86479000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86479000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86479000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86479000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86479000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86479000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86488000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86488000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86488000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86488000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86488000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86488000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86488000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86488000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86488000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86488000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86488000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86488000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86488000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86488000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86488000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86493000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86493000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86493000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86493000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86493000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86493000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86493000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86493000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86493000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86493000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86493000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86493000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86493000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86493000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86493000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86495500",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86495500",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86495500",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86495500source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86495500source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86495500source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86495500NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86495500NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86495500VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86495500VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86495500ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86495500ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86495500ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86495500ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86495500",
+      "passed": true
+    },
+    {
+      "check": "station rows 86500000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86500000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86500000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86500000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86500000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86500000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86500000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86500000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86500000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86500000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86500000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86500000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86500000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86500000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86500000",
+      "passed": true
+    },
+    {
+      "check": "station rows 86504900",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86504900",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86504900",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86504900source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86504900source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86504900source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86504900NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86504900NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86504900VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86504900VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86504900ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86504900ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86504900ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86504900ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86504900",
+      "passed": true
+    },
+    {
+      "check": "station rows 86505500",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86505500",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86505500",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86505500source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86505500source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86505500source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86505500NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86505500NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86505500VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86505500VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86505500ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86505500ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86505500ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86505500ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86505500",
+      "passed": true
+    },
+    {
+      "check": "station rows 86510000",
+      "passed": true
+    },
+    {
+      "check": "unique sorted times 86510000",
+      "passed": true
+    },
+    {
+      "check": "literal dates 86510000",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86510000source_file",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86510000source_sha256",
+      "passed": true
+    },
+    {
+      "check": "NPZ provenance 86510000source_record_index",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86510000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86510000NivelFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86510000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86510000VazaoFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86510000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "QC 86510000ChuvaFinal",
+      "passed": true
+    },
+    {
+      "check": "rawnumeric 86510000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "QC 86510000ChuvaAcumAdotada",
+      "passed": true
+    },
+    {
+      "check": "all_fields_source_identical 86510000",
+      "passed": true
+    }
+  ],
+  "raw_record_comparisons": 15340,
+  "total_unique_rows": 15244,
+  "total_rain_approved": 14850,
+  "total_level_approved": 14155,
+  "new_GETs": 34,
+  "reused_XMLs": 11,
+  "duplicates": 96,
+  "conflicts": 0,
+  "statuses": {
+    "parsed": 34,
+    "no_data_api": 11
+  },
+  "all_QC_preserved": true,
+  "no_interpolation": true,
+  "no_rounding": true,
+  "no_zero_fill": true,
+  "trained": false,
+  "matrix_built": false,
+  "network_scope": "Only2020ANA34GETs; no2021/22,ONS,NWP requests",
+  "no_operational_edits": true
+}

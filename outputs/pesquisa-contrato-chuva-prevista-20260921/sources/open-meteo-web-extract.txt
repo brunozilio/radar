@@ -1,0 +1,462 @@
+Previous Runs API | Open-Meteo.com (https://open-meteo.com/en/docs/previous-runs-api)
+citeturn80view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://open-meteo.com/en/docs/previous-runs-api","lineno":261}); Total lines: 316
+L125: Wind Direction (80 m)  | Day 0  | Day 1  | Day 2  | Day 3  | Day 4  | Day 5  | Day 6  | Day 7
+L126: Wind Direction (100 m)  | Day 0  | Day 1  | Day 2  | Day 3  | Day 4  | Day 5  | Day 6  | Day 7
+L127: Wind Direction (120 m)  | Day 0  | Day 1  | Day 2  | Day 3  | Day 4  | Day 5  | Day 6  | Day 7
+L128: Wind Direction (180 m)  | Day 0  | Day 1  | Day 2  | Day 3  | Day 4  | Day 5  | Day 6  | Day 7
+L129: Wind Direction (200 m)  | Day 0  | Day 1  | Day 2  | Day 3  | Day 4  | Day 5  | Day 6  | Day 7
+L130: ## Weather models
+L131: 
+L132: Best match
+L133: 
+L134: ECMWF IFS HRES 9km
+L135: 
+L136: ECMWF IFS 0.25°
+L137: 
+L138: ECMWF AIFS 0.25° Single
+L139: 
+L140: CMA GRAPES Global
+L141: 
+L142: BOM ACCESS Global
+L143: 
+L144: NCEP GFS Seamless
+L145: 
+L146: NCEP GFS Global 0.11°/0.25°
+L147: 
+L148: NCEP HRRR U.S. Conus
+L149: 
+L150: NCEP NBM U.S. Conus
+L151: 
+L152: NCEP NAM U.S. Conus
+L153: 
+L154: NCEP AIGFS 0.25°
+L155: 
+L156: NCEP HGEFS 0.25° Ensemble Mean
+L157: 
+L158: JMA Seamless
+L159: 
+L160: JMA MSM
+L161: 
+L162: JMA GSM
+L163: 
+L164: KMA Seamless
+L165: 
+L166: KMA LDPS
+L167: 
+L168: KMA GDPS
+L169: 
+L170: DWD ICON Seamless
+L171: 
+L172: DWD ICON Global
+L173: 
+L174: DWD ICON EU
+L175: 
+L176: DWD ICON D2
+L177: 
+L178: GEM Seamless
+L179: 
+L180: GEM Global
+L181: 
+L182: GEM Regional
+L183: 
+L184: GEM HRDPS Continental
+L185: 
+L186: GEM HRDPS West
+L187: Météo-France Seamless
+L188: 
+L189: Météo-France ARPEGE World
+L190: 
+L191: Météo-France ARPEGE Europe
+L192: 
+L193: Météo-France AROME France
+L194: 
+L195: Météo-France AROME France HD
+L196: 
+L197: ItaliaMeteo ARPAE ICON 2I
+L198: 
+L199: MET Norway Nordic Seamless (with ECMWF)
+L200: 
+L201: MET Norway Nordic
+L202: 
+L203: KNMI Seamless (with ECMWF)
+L204: 
+L205: KNMI Harmonie AROME Europe
+L206: 
+L207: KNMI Harmonie AROME Netherlands
+L208: 
+L209: DMI Seamless (with ECMWF)
+L210: 
+L211: DMI Harmonie AROME Europe
+L212: 
+L213: UK Met Office Seamless
+L214: 
+L215: UK Met Office Global 10km
+L216: 
+L217: UK Met Office UK 2km
+L218: 
+L219: MeteoSwiss ICON Seamless
+L220: 
+L221: MeteoSwiss ICON CH1
+L222: 
+L223: MeteoSwiss ICON CH2
+L224: GeoSphere Seamless (with ECMWF)
+L225: 
+L226: GeoSphere AROME Austria
+L227: 
+L228: CHMI Aladin Seamless
+L229: 
+L230: CHMI Aladin Central Europe 2km
+L231: 
+L232: CHMI Aladin CZ 1km
+L233: 
+L234: Note: The default Best Match provides the best forecast for any given location worldwide. Seamless combines all models from a given provider into a seamless prediction.
+L235: 
+L236: cite40†Settings L237: 
+L238: Celsius °C Temperature Unit [Input]
+L239: 
+L240: km/h Wind Speed Unit [Input]
+L241: 
+L242: Millimeter Precipitation Unit [Input]
+L243: 
+L244: ISO 8601 (e.g. 2026-09-21) Timeformat [Input]
+L245: 
+L246: Usage licence:
+L247: Non-Commercial Commercial Self-Hosted
+L248: 
+L249: cite41†API Response L250: 
+L251: Preview:
+L252: 
+L253: Chart & URL Python TypeScript Swift Other
+L254: 
+L255: cite42†Download XLSX†previous-runs-api.open-meteo.com cite43†Download CSV†previous-runs-api.open-meteo.com L256: 
+L257: API URL (cite44†Open in new tab†previous-runs-api.open-meteo.com , copy this URL into your application, or paste an API URL to restore its settings)
+L258: 
+L259: [Input]
+L260: 
+L261: cite45†Data Availability L262: Most models are archived from January 2024. Some models were added to the archive later in 2024 or 2025 and have correspondingly shorter coverage. Exceptions with longer history:
+L263: 
+L264:   * GFS 2 m temperature — available from March 2021
+L265:   * JMA GSM and MSM — available from 2018
+L266: 
+L267: Additional historical coverage can be reconstructed on request, subject to upstream availability from the originating weather service.
+L268: 
+L269: cite46†API Documentation L270: The Previous Runs API exposes forecast data at fixed lead-time offsets rather than as a seamless time-series. _previous_day0 is the current model run (equivalent to the live Forecast API). _previous_day1 is the value that was predicted 24 hours before valid time, _previous_day2 48 hours before, and so on up to day 7. For local models with shorter forecast horizons (2–5 days), only offsets within that horizon are populated.
+L271: This structure is suited to aggregated skill analysis — for example, computing the mean absolute error of all _previous_day3 forecasts against ERA5 over a calendar year. For workflows that need the complete output of a specific model run (initialisation datetime, all forecast hours, multiple variables), use the cite24†Single Runs API instead, which stores each run independently and is queryable by its UTC initialisation time via the &run= parameter.
+L272: Models: The Previous Runs API supports the same models as the cite3†Weather Forecast API . See the Forecast API documentation for the full model and variable list.
+L273: 
+L274: Update cadence: Global models update every 6 hours; regional models (e.g. ICON-D2, HRRR, AROME) update every 1–3 hours. The available lead-time window for each model is limited to its forecast horizon, so a model with a 3-day horizon will have at most _previous_day3 populated.
+L275: 
+L276: cite0†Open-Meteo L277:   * cite1†Features L278:   * cite2†Pricing L279:   * cite47†About us & Contact L280:   * cite48†Licence L281:   * cite49†Terms & Privacy L282: 
+L283: cite3†Weather APIs L284: 
+L285:   * cite3†Weather Forecast API L286:   * cite22†Historical Weather API L287:   * cite8†ECMWF API L288:   * cite6†GFS & HRRR Forecast API L289:   * cite7†Météo-France API L290:   * cite5†DWD ICON API L291:   * cite14†GEM API L292:   * cite11†JMA API L293:   * cite13†Met Norway API L294: 
+L295: Other APIs
+L296:   * cite26†Ensemble API L297:   * cite30†Climate Change API L298:   * cite31†Marine Weather API L299:   * cite32†Air Quality API L300:   * cite34†Geocoding API L301:   * cite35†Elevation API L302:   * cite36†Flood API L303: 
+L304: External
+L305: 
+L306:   * cite50†X†x.com L307:   * cite51†Blog†openmeteo.substack.com L308:   * cite52†GitHub†github.com L309:   * cite53†Mastodon†fosstodon.org L310:   * cite54†Service status and uptime†status.open-meteo.com L311:   * cite37†Model Updates Overview L312: 
+L313: Animations
+L314: 
+L315: © 2022-2026 Copyright: cite0†Open-Meteo.com --------------------------------------------------------------------------------
+Single Runs API | Open-Meteo.com (https://open-meteo.com/en/docs/single-runs-api)
+citeturn80view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://open-meteo.com/en/docs/single-runs-api","lineno":636}); Total lines: 696
+L470: Minimum Temperature (2 m)
+L471: 
+L472: Maximum Apparent Temperature (2 m)
+L473: 
+L474: Minimum Apparent Temperature (2 m)
+L475: 
+L476: UV Index
+L477: 
+L478: UV Index Clear Sky
+L479: 
+L480: Sunrise
+L481: 
+L482: Sunset
+L483: 
+L484: Daylight Duration
+L485: 
+L486: Sunshine Duration
+L487: 
+L488: Moonrise
+L489: 
+L490: Moonset
+L491: 
+L492: Moon Phase
+L493: 
+L494: Rain Sum
+L495: 
+L496: Showers Sum
+L497: 
+L498: Snowfall Sum
+L499: 
+L500: Precipitation Sum
+L501: 
+L502: Precipitation Hours
+L503: 
+L504: Precipitation Probability Max
+L505: 
+L506: Maximum Wind Speed (10 m)
+L507: 
+L508: Maximum Wind Gusts (10 m)
+L509: 
+L510: Dominant Wind Direction (10 m)
+L511: 
+L512: Shortwave Radiation Sum
+L513: 
+L514: Reference Evapotranspiration (ET₀)
+L515: ## Additional Daily Variables
+L516: 
+L517: Mean Temperature (2 m)
+L518: 
+L519: Mean Apparent Temperature (2 m)
+L520: 
+L521: Mean CAPE
+L522: 
+L523: Maximum CAPE
+L524: 
+L525: Minimum CAPE
+L526: 
+L527: Mean Cloud cover
+L528: 
+L529: Maximum Cloud cover
+L530: 
+L531: Minimum Cloud cover
+L532: 
+L533: Mean Dewpoint (2 m)
+L534: 
+L535: Maximum Dewpoint (2 m)
+L536: 
+L537: Minimum Dewpoint (2 m)
+L538: 
+L539: Reference Evapotranspiration Sum (ET₀)
+L540: 
+L541: Growing Degree Days Base 0 Limit 50
+L542: 
+L543: Mean Leaf Wetness Probability
+L544: 
+L545: Mean Precipitation Probability
+L546: 
+L547: Minimum Precipitation Probability
+L548: 
+L549: Mean Relative Humidity (2 m)
+L550: 
+L551: Maximum Relative Humidity (2 m)
+L552: Minimum Relative Humidity (2 m)
+L553: 
+L554: Snowfall Water Equivalent Sum
+L555: 
+L556: Mean Sealevel Pressure
+L557: 
+L558: Maximum Sealevel Pressure
+L559: 
+L560: Minimum Sealevel Pressure
+L561: 
+L562: Mean Surface Pressure
+L563: 
+L564: Maximum Surface Pressure
+L565: 
+L566: Minimum Surface Pressure
+L567: 
+L568: Maximum Updraft
+L569: 
+L570: Mean Visibility
+L571: 
+L572: Minimum Visibility
+L573: 
+L574: Maximum Visibility
+L575: 
+L576: Dominant Wind Direction (10m)
+L577: 
+L578: Mean Wind Gusts (10 m)
+L579: 
+L580: Mean Wind Speed (10 m)
+L581: 
+L582: Minimum Wind Gusts (10 m)
+L583: 
+L584: Minimum Wind Speed (10 m)
+L585: 
+L586: Mean Wet Bulb Temperature (2 m)
+L587: 
+L588: Maximum Wet Bulb Temperature (2 m)
+L589: Minimum Wet Bulb Temperature (2 m)
+L590: 
+L591: Maximum Vapour Pressure Deficit
+L592: 
+L593: Mean Soil Moisture (0-100 cm)
+L594: 
+L595: Mean Soil Moisture (0-10 cm)
+L596: 
+L597: Mean Soil Moisture (0-7 cm)
+L598: 
+L599: Mean Soil Moisture (28-100 cm)
+L600: 
+L601: Mean Soil Moisture (7-28 cm)
+L602: 
+L603: Mean Soil Temperature (0-100 cm)
+L604: 
+L605: Mean Soil Temperature (0-7 cm)
+L606: 
+L607: Mean Soil Temperature (28-100 cm)
+L608: 
+L609: Mean Soil Temperature (7-28 cm)
+L610: 
+L611: cite41†Settings L612: 
+L613: Celsius °C Temperature Unit [Input]
+L614: 
+L615: km/h Wind Speed Unit [Input]
+L616: 
+L617: Millimeter Precipitation Unit [Input]
+L618: ISO 8601 (e.g. 2026-09-21) Timeformat [Input]
+L619: 
+L620: Usage licence:
+L621: 
+L622: Non-Commercial Commercial Self-Hosted
+L623: 
+L624: cite42†API Response L625: 
+L626: Preview:
+L627: 
+L628: Chart & URL Python TypeScript Swift Other
+L629: 
+L630: cite43†Download XLSX†single-runs-api.open-meteo.com cite44†Download CSV†single-runs-api.open-meteo.com L631: 
+L632: API URL (cite45†Open in new tab†single-runs-api.open-meteo.com , copy this URL into your application, or paste an API URL to restore its settings)
+L633: 
+L634: [Input]
+L635: 
+L636: cite46†Data Sources L637: Weather models are initialised and computed multiple times per day. Each run ingests the latest observations — radiosondes, weather stations, aircraft, satellites, and ocean buoys — and produces a complete forecast out to the model's full horizon (typically 7–16 days). The operational Open-Meteo Forecast API stitches the most recent run of each model into a seamless, continuously updated time-series.
+L638: That approach is ideal for end-user applications but discards the individual run structure required for research, post-processing, and backtesting workflows.
+L639: The Single Runs API preserves this structure. Each run is stored and retrievable independently, so you can request the exact forecast issued at a specific initialisation time. The &run= parameter identifies the run by its UTC initialisation datetime, e.g. &run=2025-09-01T00:00.
+L640: The &run= parameter specifies the model's initialisation time — the UTC reference time at which the observations are taken — not the time at which the forecast output becomes publicly available. After initialisation, the model requires additional computation time before results are distributed: typically 4–6 hours for global models (e.g. ECMWF IFS, GFS) and 1–3 hours for regional models. This means a run initialised at 00 UTC is generally accessible from approximately 04–06 UTC onwards.
+L641: The exact availability times for each model are listed on the cite37†model updates page .
+L642: Archival runs are available from 2nd of April 2026 for most models. ECMWF IFS HRES at native 9 km resolution is available from March 14, 2024 (IFS Cycle 49R1 hindcasts). From May 12, 2026 06 UTC, runs use the updated IFS Cycle 50R1. ECMWF IFS HRES is the highest-quality global weather model and the backbone of the cite22†Open-Meteo Historical Weather API .
+L643: Access to individual ECMWF runs is particularly valuable for renewable energy forecasting, where the full forecast horizon from a single run drives production scheduling and trading decisions.
+L644: Weather Provider  | Model  | Region  | Resolution  | Temporal Resolution  | Forecast Horizon  | Run Frequency  | Available From
+L645: --- | --- | --- | --- | --- | --- | --- | ---
+L646: ECMWF  | cite8†IFS HRES 9 km | 🌍 Global  | 9 km (O1280 grid)  | Hourly  | 10 days  | 4× daily (00, 06, 12, 18 UTC)  | 2024-03-14
+L647: Others  | -  | 🌍 Global & Regional  | up to 1 km  | up to 15 minutely  | up to 16 days  | -  | 2026-04-02
+L648: 
+L649: cite47†API Endpoint L650: The API endpoint https://single-runs-api.open-meteo.com/v1/forecast accepts the same parameters as the cite3†Weather Forecast API , with one additional required parameter: run. All weather variables, units, and output formats available in the Forecast API are supported. Data is served from a dedicated archive storage system, so response times may be higher than the real-time forecast API.
+L651: Parameter  | Format  | Required  | Default  | Description
+L652: --- | --- | --- | --- | ---
+L653: run  | ISO 8601 datetime  | Yes  |  | The initialisation date and time of the model run to retrieve. Must be provided in ISO 8601 format without seconds, e.g. &run=2024-06-01T00:00. The time must correspond to a valid run cycle for the selected model (e.g. 00, 06, 12, 18 UTC for most global models). Runs that are not available will return an error.
+L654: All other parameters from the Forecast API — including latitude, longitude, hourly, daily, and others — are also accepted unchanged. Please refer to the cite3†Weather Forecast API documentation for a complete parameter reference.
+L655: 
+L656: cite0†Open-Meteo L657: 
+L658:   * cite1†Features L659:   * cite2†Pricing L660:   * cite48†About us & Contact L661:   * cite49†Licence L662:   * cite50†Terms & Privacy L663: 
+L664: cite3†Weather APIs --------------------------------------------------------------------------------
+API Production Status | Open-Meteo.com (https://open-meteo.com/en/docs/model-updates)
+citeturn80view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://open-meteo.com/en/docs/model-updates","lineno":58}); Total lines: 132
+L0: cite0†Open-Meteo L1: 
+L2: * * *
+L3: 
+L4: cite0†Home cite1†Features cite2†Pricing cite3†API Docs L5: 
+L6: Animations
+L7: 
+L8: * * *
+L9: 
+L10: Toggle theme
+L11: 
+L12: cite4†Image L13: # Model Updates and Data Availability
+L14: 
+L15: Overview of Model Timings and Data Availability via Open-Meteo API
+L16: 
+L17: Model Updates
+L18: 
+L19:   * cite3†Weather Forecast L20:     * cite5†DWD Germany L21:     * cite6†NOAA U.S. L22:     * cite7†Météo-France L23:     * cite8†ECMWF L24:     * cite9†UK Met Office L25:     * cite10†KMA Korea L26:     * cite11†JMA Japan L27:     * cite12†MeteoSwiss L28:     * cite13†MET Norway L29:     * cite14†GEM Canada L30:     * cite15†BOM Australia L31:     * cite16†CMA China L32:     * cite17†KNMI Netherlands L33:     * cite18†DMI Denmark L34:     * cite19†ItaliaMeteo L35:     * cite20†GeoSphere Austria L36:     * cite21†CHMI Aladin L37: 
+L38:   * cite22†Historical Weather L39: 
+L40:     * cite23†Historical Forecast L41:     * cite24†Single Runs L42:     * cite25†Previous Model Runs L43:   * cite26†Ensemble Models L44: 
+L45:     * cite27†Ensemble Mean API L46:     * cite28†Google WeatherNext L47: 
+L48:   * cite29†Seasonal Forecast L49:   * cite30†Climate Change L50:   * cite31†Marine Forecast L51:   * cite32†Air Quality L52:   * cite33†Satellite Radiation L53:   * cite34†Geocoding L54:   * cite35†Elevation L55:   * cite36†Flood L56:   * cite37†Model Updates L57: 
+L58: cite38†Model Updates L59: This page offers a brief overview of all models integrated into Open-Meteo. These models are typically updated every few hours. Open-Meteo aims to download and process the data as soon as it becomes available, immediately after it is released by national weather services.
+L60: Open-Meteo operates with geographically distributed and redundant servers. Data across all Open-Meteo servers is cite39†eventually consistent†en.wikipedia.org , meaning there may be instances where the API indicates a weather model has been updated, but not all servers have been fully updated yet. If you need access to the most recent forecast, it's recommended to wait an additional 10 minutes after the forecast update has been applied.
+L61: Models with a delay exceeding 20 minutes are highlighted in yellow. If multiple weather model updates are missed, the model is marked in red. Minor delays are fairly common.
+L62: 
+L63: To report a model issue, please open a ticket on cite40†GitHub†github.com . Commercial clients can contact us directly via email.
+L64: The free and commercial API services of Open-Meteo operate on different servers, leading to slight variations in update times. Please choose the appropriate type below. Note that API calls to the metadata API are not counted toward daily or monthly request limits.
+L65: 
+L66: Usage licence:
+L67: 
+L68: Non-Commercial Commercial Self-Hosted
+L69: 
+L70: [Input] Global Weather Models
+L71: 
+L72: 🌍
+L73: 
+L74: [Input] Local European Models cite41†Image: european_union L75: 
+L76: [Input] Local North American Models cite42†Image: us cite43†Image: ca L77: [Input] Local Asian Models cite44†Image: jp L78: 
+L79: cite45†Refresh Last refresh: 00:00
+L80: 
+L81: cite46†Metadata API Documentation L82: 
+L83: You can retrieve the update times for each individual model via the API. However, these times do not directly correlate with the update times in the Forecast API, as Open-Meteo automatically selects the most appropriate weather model for each location (referred to as "Best Match"). The table above provides an API link for each model, returning a JSON object with the following fields:
+L84:   * last_run_initialisation_time: The model's initialization time or reference time represented as a Unix timestamp (e.g., 1724796000 for Tue Aug 27, 2024, 22:00:00 GMT+0000).
+L85:   * last_run_modification_time: The time when the data download and conversion were completed, which does not indicate when the data became available on the API.
+L86:   * last_run_availability_time: The time when the data is actually accessible on the API server. Important: Open-Meteo utilises multiple redundant API servers, so there may be slight differences between them while the data is being copied. To ensure all API calls use the most recent data, please wait 10 minutes after the availability time.
+L87:   * temporal_resolution_seconds: The temporal resolution of the model in seconds. By default, the API interpolates the data to a 1-hour resolution. However, the underlying model may only provide data in 3 or 6-hourly steps. A value of 3600 indicates that the data is 1-hourly.
+L88:   * update_interval_seconds: The typical time interval between model updates, such as 3600 seconds for a model that updates every hour.
+L89: Additional attributes, such as spatial resolution, area, grid systems, and more, will be added in the future.
+L90: 
+L91: cite0†Open-Meteo L92: 
+L93:   * cite1†Features L94:   * cite2†Pricing L95:   * cite47†About us & Contact L96:   * cite48†Licence L97:   * cite49†Terms & Privacy L98: 
+L99: cite3†Weather APIs L100: 
+L101:   * cite3†Weather Forecast API L102:   * cite22†Historical Weather API L103:   * cite8†ECMWF API L104:   * cite6†GFS & HRRR Forecast API L105:   * cite7†Météo-France API L106:   * cite5†DWD ICON API L107:   * cite14†GEM API L108:   * cite11†JMA API L109:   * cite13†Met Norway API L110: 
+L111: Other APIs
+L112:   * cite26†Ensemble API L113:   * cite30†Climate Change API L114:   * cite31†Marine Weather API L115:   * cite32†Air Quality API L116:   * cite34†Geocoding API L117:   * cite35†Elevation API L118:   * cite36†Flood API L119: 
+L120: External
+L121: 
+L122:   * cite50†X†x.com L123:   * cite51†Blog†openmeteo.substack.com L124:   * cite52†GitHub†github.com L125:   * cite53†Mastodon†fosstodon.org L126:   * cite54†Service status and uptime†status.open-meteo.com L127:   * cite37†Model Updates Overview L128: 
+L129: Animations
+L130: 
+L131: © 2022-2026 Copyright: cite0†Open-Meteo.com --------------------------------------------------------------------------------
+🌦️ Docs | Open-Meteo.com (https://open-meteo.com/en/docs)
+citeturn80view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://open-meteo.com/en/docs","lineno":719}); Total lines: 941
+L695: apikey  | String  | No  |  | Only required to commercial use to access reserved API resources for customers. The server URL requires the prefix customer-. See cite2†pricing for more information.
+L696: Additional optional URL parameters will be added. For API stability, no required parameters will be added in the future!
+L697: 
+L698: cite66†Hourly Parameter Definition L699: 
+L700: The parameter &hourly= accepts the following values. Most weather variables are given as an instantaneous value for the indicated hour. Some variables like precipitation are calculated from the preceding hour as an average or sum.
+L701: Variable  | Valid time  | Unit  | Description
+L702: --- | --- | --- | ---
+L703: temperature_2m  | Instant  | °C (°F)  | Air temperature at 2 meters above ground
+L704: relative_humidity_2m  | Instant  | %  | Relative humidity at 2 meters above ground
+L705: dew_point_2m  | Instant  | °C (°F)  | Dew point temperature at 2 meters above ground
+L706: apparent_temperature  | Instant  | °C (°F)  | Apparent temperature is the perceived feels-like temperature combining wind chill factor, relative humidity and solar radiation
+L707: pressure_msl
+L708: surface_pressure  | Instant  | hPa  | Atmospheric air pressure reduced to mean sea level (msl) or pressure at surface. Typically pressure on mean sea level is used in meteorology. Surface pressure gets lower with increasing elevation.
+L709: cloud_cover  | Instant  | %  | Total cloud cover as an area fraction
+L710: cloud_cover_low  | Instant  | %  | Low level clouds and fog up to 3 km altitude
+L711: cloud_cover_mid  | Instant  | %  | Mid level clouds from 3 to 8 km altitude
+L712: cloud_cover_high  | Instant  | %  | High level clouds from 8 km altitude
+L713: wind_speed_10m
+L714: wind_speed_80m
+L715: wind_speed_120m
+L716: wind_speed_180m  | Instant  | km/h (mph, m/s, knots)  | Wind speed at 10, 80, 120 or 180 meters above ground. Wind speed on 10 meters is the standard level.
+L717: wind_direction_10m
+L718: wind_direction_80m
+L719: wind_direction_120m
+L720: wind_direction_180m  | Instant  | °  | Wind direction at 10, 80, 120 or 180 meters above ground
+L721: wind_gusts_10m  | Preceding hour max  | km/h (mph, m/s, knots)  | Gusts at 10 meters above ground as a maximum of the preceding hour
+L722: shortwave_radiation  | Preceding hour mean  | W/m²  | Shortwave solar radiation as average of the preceding hour. This is equal to the total global horizontal irradiation
+L723: direct_radiation
+L724: direct_normal_irradiance  | Preceding hour mean  | W/m²  | Direct solar radiation as average of the preceding hour on the horizontal plane and the normal plane (perpendicular to the sun)
+L725: diffuse_radiation  | Preceding hour mean  | W/m²  | Diffuse solar radiation as average of the preceding hour
+L726: global_tilted_irradiance  | Preceding hour mean  | W/m²  | Total radiation received on a tilted pane as average of the preceding hour. The calculation is assuming a fixed albedo of 20% and in isotropic sky. Please specify tilt and azimuth parameter. Tilt ranges from 0° to 90° and is typically around 45°. Azimuth should be close to 0° (0° south, -90° east, 90° west, ±180 north). If azimuth is set to "nan", the calculation assumes a vertical tracker (east-west).
+L727: If tilt is set to "nan", it is assumed that the panel has a horizontal tracker (up-down). If both are set to "nan", a bi-axial tracker is assumed.
+L728: vapour_pressure_deficit  | Instant  | kPa  | Vapour Pressure Deficit (VPD) in kilopascal (kPa). For high VPD (>1.6), water transpiration of plants increases. For low VPD (<0.4), transpiration decreases
+L729: cape  | Instant  | J/kg  | Convective available potential energy. See cite67†Wikipedia†en.wikipedia.org .
+L730: evapotranspiration  | Preceding hour sum  | mm (inch)  | Evapotranspiration from land surface and plants that weather models assumes for this location. Available soil water is considered. 1 mm evapotranspiration per hour equals 1 liter of water per square meter.
+L731: et0_fao_evapotranspiration  | Preceding hour sum  | mm (inch)  | ET₀ Reference Evapotranspiration of a well watered grass field. Based on cite68†FAO-56 Penman-Monteith equations†www.fao.org ET₀ is calculated from temperature, wind speed, humidity and solar radiation. Unlimited soil water is assumed. ET₀ is commonly used to estimate the required irrigation for plants.
+L732: precipitation  | Preceding hour sum  | mm (inch)  | Total precipitation (rain, showers, snow) sum of the preceding hour
+L733: snowfall  | Preceding hour sum  | cm (inch)  | Snowfall amount of the preceding hour in centimeters. For the water equivalent in millimeter, divide by 7. E.g. 7 cm snow = 10 mm precipitation water equivalent
+L734: precipitation_probability  | Preceding hour probability  | %  | Probability of precipitation with more than 0.1 mm of the preceding hour. Probability is based on ensemble weather models with 0.25° (~27 km) resolution. 30 different simulations are computed to better represent future weather conditions.
+L735: rain  | Preceding hour sum  | mm (inch)  | Rain from large scale weather systems of the preceding hour in millimeter
+L736: showers  | Preceding hour sum  | mm (inch)  | Showers from convective precipitation in millimeters from the preceding hour
+L737: weather_code  | Instant  | WMO code  | Weather condition as a numeric code. Follow WMO weather interpretation codes. See table below for details.
+L738: snow_depth  | Instant  | meters  | Snow depth on the ground
+L739: freezing_level_height  | Instant  | meters  | Altitude above sea level of the 0°C level
+L740: visibility  | Instant  | meters  | Viewing distance in meters. Influenced by low clouds, humidity and aerosols.
+L741: soil_temperature_0cm
+L742: soil_temperature_6cm
+L743: soil_temperature_18cm
+L744: soil_temperature_54cm  | Instant  | °C (°F)  | Temperature in the soil at 0, 6, 18 and 54 cm depths. 0 cm is the surface temperature on land or water surface temperature on water.
+L745: soil_moisture_0_to_1cm
+L746: soil_moisture_1_to_3cm
+

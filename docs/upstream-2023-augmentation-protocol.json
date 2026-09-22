@@ -1,0 +1,43 @@
+{
+  "experiment_id": "julho-ceran-2023-augmentation-v1",
+  "status": "DEFINED_BEFORE_FITTING_NOT_EXECUTED",
+  "objective": "Measure whether a historical extreme outside the current2025-2026 training range helps predict14deJulho discharge, without using the missing Muçum peak as a target.",
+  "source_2023": "outputs/historico-cheia-setembro-2023/ons-ceran-source-values.csv",
+  "training_scope": "Local candidate only. Source clock, publication latency and pre-2024 operational regime remain limitations; no operational promotion.",
+  "new_rows": {
+    "range": "2023-09-01 through2023-09-30",
+    "inputs": "Q and I from14deJulho, MonteClaro and CastroAlves, in1000m3/s, plus1h difference and3h/6h slopes. Reproduce the24CERAN features of the frozen reference.",
+    "clock": "Preserve original ONS source clock with explicit assumedUTC-03. Apply60min assumed availability delay, matching frozen15h historical feature inputs. As-of input values expire after90min relative to the delayed lookup time; never interpolate.",
+    "target": "Exact published whole-hour14deJulho Q only. Exclude non-whole-hour23:59 timestamps from targets rather than silently shifting them to24h. Such readings may still be input history after the assumed delay.",
+    "signs": "Q must be finite and nonnegative; finite I may be negative perONS schema. Zero is retained. Missing values stay missing. Do not reject extremes or infer a9999 sentinel.",
+    "other_sources": "No invented rainfall or Carreiro measurements. Restrict both reduced-feature baselines and augmented candidate to the same24CERAN columns."
+  },
+  "families": [
+    "Reference ridge: frozen2025-2026 full feature set",
+    "Reduced ridge: frozen2025-2026 CERAN-only features",
+    "Augmented ridge: same CERAN-only features plusSeptember2023 training rows"
+  ],
+  "ridge_alpha": 1000,
+  "sample_weights": "1+2*(target_flow_in_1000m3_s>2), unchanged for every source year",
+  "leads_h": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "splits": {
+    "validation_training_targets_before": "2025-10-01T00:00:00-03:00",
+    "validation_origins_from": "2025-10-01T00:00:00-03:00",
+    "validation_targets_before": "2026-07-01T00:00:00-03:00",
+    "development_test_origins_from": "2026-07-01T00:00:00-03:00",
+    "development_test_targets_before": "2026-09-21T00:00:00-03:00",
+    "final_fit_targets_before": "2026-09-21T00:00:00-03:00"
+  },
+  "scoring": "Preserve every original evaluation target across families. Report MAE, bias, P90 errors overall and above the unchanged2025 pre-validation95th-percentile threshold. No hyperparameter search or tuning from the development test.",
+  "current_diagnostic_snapshot": "outputs/mucum-hourly-20260921T180020-0300",
+  "known_limitations": [
+    "September2023 has already been inspected; adding it to training cannot be described as validation on an unseen event.",
+    "July-September2026 is an inspected development period, not independent validation.",
+    "ONS rows are agent-reported and not independently validated by ONS.",
+    "Pre-2024 barrage regimes may differ from current operation; improvement must survive independent future events.",
+    "Reduced-feature comparison is needed to separate additional history from removal of rainfall and tributary predictors."
+  ],
+  "promotion": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

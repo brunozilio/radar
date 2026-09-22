@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx?disco",
+    "discovery": "href alternate in already-preserved operation documentation",
+    "requested_at_utc": "2026-09-21T23:57:23.440185+00:00",
+    "status": 200,
+    "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx?disco",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 21 Sep 2026 23:57:18 GMT",
+      "Content-Type": "text/xml; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0",
+      "X-AspNet-Version": "4.0.30319",
+      "X-Powered-By": "ASP.NET",
+      "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "file": "sources/legacy-discovery.xml",
+    "bytes": 727,
+    "sha256": "9ed844977d688a0d43fd6a9d44398213625e390c396af4c0eb93c05d9c575b1b",
+    "collected_at_utc": "2026-09-21T23:57:23.625401+00:00"
+  },
+  {
+    "url": "http://telemetriaws1.ana.gov.br/ServiceANA.asmx?wsdl",
+    "discovery": "contractRef explicitly published by DISCO",
+    "requested_at_utc": "2026-09-21T23:57:44.637075+00:00",
+    "status": 200,
+    "final_url": "http://telemetriaws1.ana.gov.br/ServiceANA.asmx?wsdl",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 21 Sep 2026 23:57:39 GMT",
+      "Content-Type": "text/xml; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0",
+      "X-AspNet-Version": "4.0.30319",
+      "X-Powered-By": "ASP.NET",
+      "X-Frame-Options": "ALLOW-FROM ana.gov.br",
+      "Content-Security-Policy": "frame-ancestors *.ana.gov.br",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+      "Access-Control-Expose-Headers": "Content-Length,Content-Range"
+    },
+    "file": "sources/legacy-wsdl-advertised.xml",
+    "bytes": 65116,
+    "sha256": "f120cc0fd21862f96cc92586bb4483b5cce90c2ed4d503b69b678663f30a0ada",
+    "collected_at_utc": "2026-09-21T23:57:44.945320+00:00"
+  },
+  {
+    "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx?wsdl",
+    "discovery": "Same discovered WSDL query via already-public ANA service reverse-proxy base",
+    "requested_at_utc": "2026-09-21T23:57:44.945369+00:00",
+    "status": 200,
+    "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx?wsdl",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 21 Sep 2026 23:57:39 GMT",
+      "Content-Type": "text/xml; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0",
+      "X-AspNet-Version": "4.0.30319",
+      "X-Powered-By": "ASP.NET",
+      "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "file": "sources/legacy-wsdl-public-proxy.xml",
+    "bytes": 65116,
+    "sha256": "f120cc0fd21862f96cc92586bb4483b5cce90c2ed4d503b69b678663f30a0ada",
+    "collected_at_utc": "2026-09-21T23:57:45.218073+00:00"
+  }
+]

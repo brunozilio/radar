@@ -1,0 +1,96 @@
+{
+  "audited_at": "2026-09-21T22:27:47.726620+00:00",
+  "rule": "Qdef exactly0 AND Qtur,Qvert,Qoutras all finite AND their sum>1m3/s. Tolerance is diagnostic, not official QC. Missing component=>unknown total, never0.",
+  "units": "m3/s",
+  "split_original_timestamp": "2026-07-01 00:00:00; preserved ONS labels, Brasilia interpretation assumption",
+  "source_files": 18,
+  "source_rows": 38764,
+  "duplicate_keys": 0,
+  "counts": [
+    {
+      "id": "JIUHCA",
+      "plant": "Castro Alves",
+      "phase": "before_2026_07_01",
+      "rows": 10943,
+      "Q_missing_nonfinite": 0,
+      "Q_zero": 0,
+      "any_component_unknown_all_Q": 1,
+      "zero_Q_incomplete_components": 0,
+      "flagged_complete_sum_gt1": 0,
+      "zero_Q_complete_sum_le1": 0
+    },
+    {
+      "id": "JIUHCA",
+      "plant": "Castro Alves",
+      "phase": "on_or_after_2026_07_01",
+      "rows": 1978,
+      "Q_missing_nonfinite": 0,
+      "Q_zero": 0,
+      "any_component_unknown_all_Q": 0,
+      "zero_Q_incomplete_components": 0,
+      "flagged_complete_sum_gt1": 0,
+      "zero_Q_complete_sum_le1": 0
+    },
+    {
+      "id": "JIUHMC",
+      "plant": "Monte Claro",
+      "phase": "before_2026_07_01",
+      "rows": 10942,
+      "Q_missing_nonfinite": 0,
+      "Q_zero": 0,
+      "any_component_unknown_all_Q": 0,
+      "zero_Q_incomplete_components": 0,
+      "flagged_complete_sum_gt1": 0,
+      "zero_Q_complete_sum_le1": 0
+    },
+    {
+      "id": "JIUHMC",
+      "plant": "Monte Claro",
+      "phase": "on_or_after_2026_07_01",
+      "rows": 1979,
+      "Q_missing_nonfinite": 0,
+      "Q_zero": 3,
+      "any_component_unknown_all_Q": 0,
+      "zero_Q_incomplete_components": 0,
+      "flagged_complete_sum_gt1": 3,
+      "zero_Q_complete_sum_le1": 0
+    },
+    {
+      "id": "JIUHQJ",
+      "plant": "14 de Julho",
+      "phase": "before_2026_07_01",
+      "rows": 10943,
+      "Q_missing_nonfinite": 0,
+      "Q_zero": 0,
+      "any_component_unknown_all_Q": 0,
+      "zero_Q_incomplete_components": 0,
+      "flagged_complete_sum_gt1": 0,
+      "zero_Q_complete_sum_le1": 0
+    },
+    {
+      "id": "JIUHQJ",
+      "plant": "14 de Julho",
+      "phase": "on_or_after_2026_07_01",
+      "rows": 1979,
+      "Q_missing_nonfinite": 0,
+      "Q_zero": 0,
+      "any_component_unknown_all_Q": 0,
+      "zero_Q_incomplete_components": 0,
+      "flagged_complete_sum_gt1": 0,
+      "zero_Q_complete_sum_le1": 0
+    }
+  ],
+  "flagged_rows": 3,
+  "flagged_days": 1,
+  "zero_Q_unknown_components": 0,
+  "monte_july22": {
+    "rows": 24,
+    "zero_Q": 3,
+    "flagged": 3,
+    "unknown": 0
+  },
+  "all_zero_rows_partition_check": true,
+  "no_model_training": true,
+  "source_changes": false,
+  "official_invalidity_claim": false
+}

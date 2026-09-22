@@ -1,0 +1,890 @@
+
+--- PAGE 1 ---
+         Manual de Procedimentos da Operação
+                          Módulo 5 - Submódulo 5.13
+
+
+
+                                          Rotina Operacional
+
+                          Apuração dos Dados Hidrológicos e Hidráulicos
+
+
+
+               Código                      Revisão                Item                  Vigência
+
+           RO-AO.BR.02                       08                  4.3.2.               02/07/2024
+
+                                                   .
+
+MOTIVO DA REVISÃO
+
+      •  Alterações no subitem 5.2.2.
+
+LISTA DE DISTRIBUIÇÃO
+
+         CNOS             COSR-NCO             COSR-NE             COSR-S             COSR-SE
+
+                                    Agentes de Geração Hidráulica
+
+
+--- PAGE 2 ---
+                                                             Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                                Rotina Operacional                                                Código               Revisão             Item                Vigência
+
+        Apuração dos Dados Hidrológicos e Hidráulicos                                       RO-AO.BR.02                   08              4.3.2.           02/07/2024
+
+
+                                                                                  INDICE
+
+1.        OBJETIVO ................................           ................................   ................................   ................................   ..... 3
+2.        REFERÊNCIAS ................................              ................................   ................................   ................................    3
+3.        CONCEITOS ................................            ................................   ................................   ................................    ... 3
+          3.1.      Dados hidráulicos ou operativos ................................................................................................... 3
+          3.2.      Dados hidrológicos e hidroenergéticos ......................................................................................... 4
+4.        CONSIDERAÇÕES GERAIS ................................                        ................................   ................................    .............. 5
+5.        DESCRIÇÃO DO PROCESSO ................................                          ................................   ................................   ............ 5
+          5.1.      Encaminhamento de dados dos Agentes ao ONS ......................................................................... 5
+          5.2.      Aquisição e consistência de dados pelo ONS ................................................................................ 7
+6.        ATRIBUIÇÕES DOS AGENTES E DO ONS ................................                                  ................................   ..........................    8
+          6.1.      Centros de Operação do Sistema do ONS ..................................................................................... 8
+          6.2.      Gerência de recursos hídricos e meteorologia do ONS................................................................. 8
+          6.3.      Agentes .......................................................................................................................................... 8
+7.        ORIENTAÇÕES TÉCNICAS COMPLEMENTARES                                         ................................  ................................   ................ 9
+          7.1.      Agregações Temporais .................................................................................................................. 9
+8.        ANEXOS................................           ................................   ................................   ................................   ...... 12
+ANEXO 1 – PLANILHA PADRÃO DE COLETA DE DADOS.                                             ................................   ................................   .......... 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Referências:                                                                                                                                                           2 / 13
+
+
+
+
+
+--- PAGE 3 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                        Rotina Operacional                               Código           Revisão        Item           Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                  RO-AO.BR.02            08          4.3.2.       02/07/2024
+
+
+1.  OBJETIVO
+Estabelecer  os  procedimentos  para  apuração  dos  dados  hidráulicos,  hidrológicos  e  hidroenergéticos,
+relativos aos reservatórios das usinas hidráulicas despachadas pelo ONS de acordo com os                      Procedimentos de
+Rede do ONS.
+
+2.  REFERÊNCIAS
+  •    Nota Técnica ONS 011/2002           -Energias Naturais Afluentes no Sistema Interligado Nacional;
+  •    Nota Técnica ONS 076/2005 R2              - Processos de Consolidação de Dados Hidráulicos, Hidrológicos e
+       Hidroenergéticos;
+  •    Nota Técnica ONS 144/2018           – Metodologia de Reconstituição e Tratamento das Vazões Naturais;
+  •    Submódulo 2.12 – Requisitos mínimos de supervisão e controle para a operação;
+  •    Submódulo      4.6 – Análise e tratamento dos dados hidroenergéticos e previsão e geração de cenários
+       de vazões;
+  •    Submódulo 2.4 – Critérios para estudos energéticos e hidrológicos                 .
+
+3.  CONCEITOS
+
+3.1.     DADOS HIDRÁULICOS OU OPERATIVOS
+Entende-se por dados hidráulicos os dados que tratam da dinâmica da água com interferência do homem.
+São tratados nessa rotina operacional os seguintes dados hidráulicos:
+         •    Nível de montante do reservatório, em metros, em relação ao nível do mar.
+O percentual de volume útil correspondente ao nível de montante será obtido pelo ONS a partir das tabelas
+cota X volume fornecidas pelos agentes.
+         •    Nível de jusante do reservatório (canal de fuga), em metros, em relação ao nível do mar.
+         •    Vazão vertida do reservatório – QVER, em m3/s.
+         •    Vazão turbinada – QTUR, em m3/s.
+         •    Vazão de outras estruturas – QOTR, em m3/s.
+
+Deve  ser  contabilizada  como  “Vazão  de  Outras  Estruturas”  a  vazão  restituída  ao  rio  a  jusante  do
+aproveitamento por um caminho diferente do vertedouro e das turbinas das unidades geradoras, como
+eclusas, escadas de peixes, descargas de fundo (quando utiliza             da com objetivo diferente de controle de níveis
+e cheias), vertedouros de tronco, dentre outros.
+         •    Vazão defluente do reservatório – QDEF, em m3/s.
+
+A vazão defluente total do reservatório é a vazão liberada a jusante do aproveitamento, através de turbinas,
+vertedouros, descarga de fundo, eclusa ou escada de peixe, medida em metros cúbicos por segundo (m                             3/s).
+A vazão defluente é dada pela soma da vazão turbinada, da vazão vertida e da vazão de outras estruturas,
+sendo obtida pela expressão:
+                                                    𝑄𝐷𝐸𝐹   =   𝑄𝑇𝑈𝑅   +  𝑄𝑉𝐸𝑅   +  𝑄𝑂𝑇𝑅
+         •    Vazão transferida – QTRA, em m3/s.
+
+Deve ser contabilizada como “Vazão Transferida” a transferência de água para outros reservatórios, por meio
+de  canal,  túnel  ou  estação  de  bombeamento,  não  sendo  incorporada  na  vazão  defluente.  A  “Vazão
+Transferida” será positiva quando o aproveitamento aba                  stecer outro reservatório e negativa quando o
+
+
+
+Referências:                                                                                                                  3 / 13
+
+
+
+
+
+--- PAGE 4 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                         Rotina Operacional                               Código          Revisão         Item          Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                  RO-AO.BR.02             08         4.3.2.        02/07/2024
+
+
+aproveitamento receber água de outro reservatório.
+         •    Vazão afluente do reservatório – QAFL, em m3/s.
+
+A vazão afluente do reservatório é aquela proveniente da própria bacia no local do aproveitamento, calculada
+por balanço hidráulico, a partir das seguintes expressões:
+               𝑄      =  𝑄      +  𝑄      +  Δ𝑉𝑜𝑙𝑢𝑚𝑒            ×  1.000.000     ,para dados em base horária
+                 𝐴𝐹𝐿       𝐷𝐹𝐿       𝑇𝑅𝐴                  ℎ𝑜𝑟𝑎       60  ∙ 60
+                𝑄      =   𝑄      +  𝑄      +  Δ𝑉𝑜𝑙𝑢𝑚𝑒         ×   1.000.000     ,para dados em base diária
+                  𝐴𝐹𝐿        𝐷𝐹𝐿       𝑇𝑅𝐴                 𝑑𝑖𝑎    24  ∙ 60  ∙60
+
+Sendo que o Δ𝑉𝑜𝑙𝑢𝑚𝑒ℎ𝑜𝑟𝑎 e o Δ𝑉𝑜𝑙𝑢𝑚𝑒𝑑𝑖𝑎                  são calculados em hm³.
+
+3.2.     DADOS HIDROLÓGICOS E HIDROENERGÉTICOS
+A metodologia de cálculo dos dados hidrológicos, da Energia Armazenada                    - EAR e da Energia Natural Afluente
+- ENA é detalhada no Submódulo 2.          4 – Critérios para estudos energéticos e hidrológicos            .
+Entende-se por dados hidrológicos, os dados relativos aos fluxos naturais da água. São tratados nessa rotina
+operacional os seguintes dados hidrológicos:
+         •    Vazão natural
+A vazão que ocorreria em uma seção do rio se não houvesse, a montante, ações antrópicas na bacia, como a
+regularização de reservatórios, as transposições de vazão e as captações para diversos fins.
+         •    Vazão incremental
+A vazão proveniente da contribuição entre dois pontos de medição.
+Entende-se por dados hidroenergéticos, os dados obtidos a partir das transformações dos dados hidráulicos
+e hidrológicos em energia. São tratados nessa rotina operacional os seguintes dados hidroenergéticos:
+         •    Energia Natural Afluente (ENA)
+A Energia Natural Afluente (ENA) é calculada a partir das vazões naturais e das produtibilidades equivalentes
+ao armazenamento de 65% do volume útil dos reservatórios dos aproveitamentos hidroelétricos. A ENA pode
+ser  calculada  em  base  diária,  semanal,  men         sal  ou  anual  e,  também,  por  bacia,  por  subsistema  e  por
+Reservatório Equivalente de Energia (REE), de acordo com os sistemas de aproveitamentos hidroelétricos
+existentes nas configurações de bacias hidrográficas e de subsistemas elétricos.
+         •    Energia Armazenada (EAR)
+Energia disponível em um sistema de reservatórios, calculada a partir da energia produzível pelo volume útil
+armazenado nos reservatórios em seus respectivos níveis operativos.
+A EAR de um determinado reservatório é calculada pela integral do produto do volume armazenado neste
+reservatório até esgotar o seu volume útil, pela produtividade acumulada nas usinas localizadas neste rio, do
+reservatório em foco até a última usina a jus         ante, na respectiva cascata.
+A EAR da bacia ou subsistema é calculada pela soma da EAR dos respectivos reservatórios que compõem a
+bacia ou o subsistema. Observa        -se que a EAR é uma grandeza instantânea da situação dos reservatórios.
+         •    Vazão Vertida Não Turbinável
+Vazão Vertida     Não Turbinável (VV      NT) é a vazão     que foi   vertida   e que não poderia ter sido turbinada pelo
+sistema  gerador  da  usina,        por  se  tratar  de  parcela        de  vazão  correspondente  ao           atendimento       de
+condicionantes ambientais que exigem uma vazão pela estrutura do vertedouro ou de testes nas comportas.
+Esta grandeza     não reflete     questões    associadas     ao controle de nível do reservatório ou             à  folga entre     a
+
+
+
+
+Referências:                                                                                                                   4 / 13
+
+
+
+
+
+--- PAGE 5 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                        Rotina Operacional                               Código          Revisão        Item           Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                 RO-AO.BR.02            08          4.3.2.       02/07/2024
+
+
+disponibilidade e geração da usina.
+Situações em que a usina         está disponível, mas       não está gerando por         decisão do ONS e precisa abrir o
+vertedouro para manter uma vazão mínima devem ser caracterizadas como vertimento não turbinável.
+         •    Energia Vertida Turbinável
+Energia Vertida Turbinável (EVT) é a energia vertida que poderia ter sido turbinada pelo sistema gerador da
+usina, mas que por algum motivo não foi.
+A EVT é calculada a partir dos dados de disponibilidade de geração, geração verificada, vazão vertida e vazão
+vertida não turbinável, em base horária, de acordo com a seguinte fórmula:
+                𝐸𝑉𝑇   =  𝑀𝑒𝑛𝑜𝑟 𝑒𝑛𝑡𝑟𝑒 {𝐷𝑖𝑠𝑝onibilidade            −  𝐺𝑒𝑟𝑎çã𝑜 𝑉𝑒𝑟𝑖𝑓𝑖𝑐𝑎𝑑𝑎;         (Vazão vertida
+                                   −  Vazão Vertida Não Turbinável           ) × 𝑃𝑟𝑜𝑑𝑢𝑡𝑖𝑣𝑖𝑑𝑎𝑑𝑒}
+Para fins de cálculo da     EVT, é considerada a disponibilidade real da usina, levando em conta restrição por
+queda, sujeira na grade, máquinas em manutenção, dentre outras. Unidades geradoras desligadas por
+conveniência operativa são consideradas disponíveis.
+A produtividade é obtida pela relação entre geração e vazão turbinada. Quando a vazão turbinada ou a
+geração é igual a zero, é considerada a produtibilidade específica de cadastro, levando-se em conta os níveis
+verificados.
+
+4.  CONSIDERAÇÕES         GERAIS
+A referência de hora para os registros de dados desta Rotina Operacional é o horário oficial de Brasília. No
+primeiro dia de vigência do horário de verão, os valores correspondentes ao primeiro horário são deixados
+em  branco  e  deslocados  para  a  hora  seguin            te.  Quando  do  fim  do  horário  de  verão,  os  valores
+correspondentes à hora excedente do dia são descartados.
+As  atividades  de  apuração  dos  dados  são  feitas  com  a  utilização  do  Sistema  de  Apuração  de  Dados
+Hidrológicos e Hidráulicos      – SADHI.
+
+5.  DESCRIÇÃO DO PROCESSO
+
+5.1.     ENCAMINHAMENTO DE DADOS DOS AGENTES AO ONS
+
+5.1.1.   Os Agentes de Geração são responsáveis pela qualidade dos dados de reservatórios disponibilizados
+         para o ONS. O ONS fará uso dos dados horários para: agregação em outras bases temporais e
+         espaciais; produção de outras grandezas; consistência de dados diári                os e simulação. A validação dos
+         dados horários não é tratada nesta rotina.
+
+5.1.2.   Os dados devem ser encaminhados através dos Sistemas de Supervisão e Controle                         - SSC, conforme
+         estabelecido no Submódulo 2.12. Nesta modalidade de envio, devem ser encaminhados os dados
+         relacionados abaixo, considerando o tempo de varredura definido no submódulo.
+               (a)   Nível montante;
+               (b)   Nível jusante;
+               (c)   Vazão turbinada;
+               (d)   Vazão vertida;
+               (e)   Vazão vertida não turbinável;
+               (f)   Vazão de outras estruturas;
+               (g)   Vazão transferida.
+
+
+
+
+
+
+
+Referências:                                                                                                                 5 / 13
+
+
+
+
+
+--- PAGE 6 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                         Rotina Operacional                               Código           Revisão        Item           Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                   RO-AO.BR.02            08          4.3.2.       02/07/2024
+
+
+5.1.3.   Alternativamente, os dados devem ser encaminhados através de um arquivo texto em formato
+         padrão estabelecido no Anexo 1 desta rotina operacional, disponibilizado em um servidor                             SFTP   –
+         Secure File Transfer Protocol.
+
+5.1.4.   O servidor SFTP onde o arquivo é disponibilizado deve ser escolhido em comum acordo entre o agente
+         de geração e o ONS.
+
+5.1.5.   O nome do arquivo deve ser acordado entre o agente de geração e o ONS e deve ser fixo.
+
+5.1.6.   Os dados devem ser disponibilizados em base horária e o arquivo deve ser atualizado com os novos
+         dados ao longo do dia, assim que cada hora for concluída.
+
+5.1.7.   O arquivo deve conter sempre os dados referentes às 24 horas do dia anterior e os dados do dia
+         corrente até a última hora fechada.
+
+5.1.8.   Os dados a serem disponibilizados no arquivo SFTP são:
+               (a)   Nível montante;
+               (b)   Nível jusante;
+               (c)   Vazão afluente;
+               (d)   Vazão defluente total;
+               (e)   Vazão turbinada;
+               (f)   Vazão vertida;
+               (g)   Vazão vertida não turbinável;
+               (h)   Vazão de outras estruturas;
+               (i)   Vazão transferida;
+               (j)   Indexador (x) com motivo de vertimento;
+               (k)   Indexador (y) com tipo de vazão de outras estruturas.
+
+5.1.9.   O indexador (x) deve ser informado conforme motivos elencados abaixo.
+               (a)   x = 1 – Vertimento para controle do nível do reservatório e/ ou controle de cheias;
+               (b)   x = 2 - Vertimento para motivos ambientais (vazão remanescente, sanitária, qualidade de
+                     água, ictiofauna etc);
+               (c)   x = 3 - Vertimento para razões energéticas;
+               (d)   x = 4 - Vertimento para navegação a jusante;
+               (e)   x = 5 - Vertimento para testes em comportas.
+
+5.1.10. O indexador (y) deve ser informando conforme tipos elencados abaixo. Quando houver mais de uma
+         estrutura de descarga num reservatório cuja vazão se enquadra no item “vazão de outras estruturas”,
+         as diversas vazões ocorridas num mesmo instante devem ser som                         adas para compor uma única
+         grandeza. Esta medida deverá ser indexada com o indexador da maior vazão.
+               (a)   y = 1 – Vazão remanescente ou sanitária;
+               (b)   y = 2 – Vazão de eclusagem;
+               (c)   y = 3 – Vazão em escada de peixe;
+               (d)   y = 4 – Vazão para piscicultura;
+               (e)   y = 5 – Vazão turbinada em vazio.
+               (f)   y = 6 – Vazão em vertedouro de troncos.
+
+5.1.11. Quando houver mais de uma estrutura de descarga num reservatório cuja vazão se enquadra no item
+         “vazão de outras estruturas”, as diversas vazões ocorridas nestas estruturas num mesmo instante
+
+
+
+
+Referências:                                                                                                                   6 / 13
+
+
+
+
+
+--- PAGE 7 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                        Rotina Operacional                               Código           Revisão        Item           Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                  RO-AO.BR.02            08          4.3.2.       02/07/2024
+
+
+         devem ser somadas para compor uma única grandeza. Esta medida deverá ser indexada com o
+         indexador da maior vazão.
+
+5.1.12. O canal de envio dos dados, seja SSC ou SFTP, é uma escolha por parte do agente, com a definida
+         comunicação ao ONS explicitando qual seu canal oficial.
+
+5.1.13. Nos casos de falha no encaminhamento de dados através do SSC ou na atualização do arquivo no
+         servidor   SFTP superiores à janela de entrada de dados (48 horas), os dados horários devem ser
+         encaminhados  para  o  e-mail            acomp_hidro@ons.org.br           com  o  mesmo  formato  do  arquivo
+         disponibilizado no servidor SFTP.
+
+5.1.14. Para novos aproveitamentos, os agentes de geração devem enviar, à Gerência de Recursos Hídricos
+         e  Meteorologia  do  ONS,  a  partir  de  no  mínimo  30  dias  antes  da  data  prevista  para  início  do
+         enchimento:
+               (a)   Um relatório com o plano de enchimento, onde devem ser apresentados os cenários de
+                     evolução do nível do reservatório;
+               (b)   Diariamente, até as 7h, os dados de nível de montante, nível de jusante, vazão afluente e
+                     vazão defluente do reservatório referentes ao dia anterior. Os dados de nível devem ser
+                     referentes à leitura das 23h59 e os dados de vazão devem ser referentes à médi                    a diária.
+               Obs: o envio automático dos dados, conforme itens                5.1.2 e 5.1.3, deve ser estabelecido antes
+               do sincronismo da primeira unidade geradora da usina ao SIN.
+
+5.2.     AQUISIÇÃO E CONSISTÊNCIA DE DADOS PELO ONS
+
+5.2.1.   A cada 30 minutos, o módulo de coleta de dados do SADHI varre os servidores SFTP configurados pelo
+         ONS e grava os dados disponibilizados pelos agentes nos arquivos texto na Base de Dados Técnica do
+         ONS (BDT). No mesmo processo de varredura, os dados instantâneos enviados pelos agentes ao ONS
+         através SSC são coletados, agregados em base horária e gravados na BDT.
+
+5.2.2.   O  processo  de  consistência  dos  dados  é            coordenado       pela  Gerência  de  Recursos  Hídricos  e
+         Meteorologia do ONS e está detalhado na Nota Técnica nº 076/2005R2 - Processos de Consistência e
+         de Consolidação de Dados Hidráulicos, Hidrológicos e Hidroenergéticos e se dá em três níveis, a saber:
+              i.   A  consistência  de  primeiro  nível  é  aplicada  sobre  os  dados  horários  e  diários  e  visa  a
+                   completude dos dados e a identificação de dados com possibilidade de erros, o que é feito
+                   através da aplicação de filtros e balanços. As correções são efetuadas com meto                        dologias
+                   acordadas com os agentes ou a eles submetidas. Assim, os resultados são considerados como
+                   referências da situação hidráulica no momento da operação e são armazenados com a
+                   indicação de “Dados Lidos” na BDT.
+             ii.   A consistência de segundo nível é realizada em conjunto com os respectivos agentes tendo
+                   como  principais  pontos  focais:  (1)  dados  operativos  consistentes  e  coerentes  com  os
+                   resultados da operação; (2) eliminação de erros grosseiros identificados pela consistência de
+                   primeiro  nível  ou  outros  erros  identificados  posteriormente.    Os  dados  resultantes  da
+                   consistência de segundo nível são armazenados com a indicação de “Dados Consistidos” na
+                   BDT.
+            iii.   A consistência de terceiro nível também é realizada em conjunto com os agentes e inclui a
+                   análise  de  séries  hidrológicas  com  a         eliminação  de  vazões  incrementais  negativas,  a
+                   agregação de informações de postos hidrométricos para identificação  de distorções de
+                   valores  e  incompatibilidades  com  as  naturezas  das  bacias.  Nesta  consistência,  são
+
+
+
+Referências:                                                                                                                  7 / 13
+
+
+
+
+
+--- PAGE 8 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                        Rotina Operacional                               Código           Revisão        Item          Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                  RO-AO.BR.02            08          4.3.2.      02/07/2024
+
+
+                   reavaliados os dados operativos hidráulicos para manter a harmonia destes com os dados
+                   hidrológicos. Os dados resultantes desta consistência são armazenados com a indicação de
+                   “Dados Consolidados” na BDT.
+
+5.2.3.   Os dados hidráulicos, hidrológicos e hidroenergéticos tratados nesta rotina e gravados na BDT são
+         disponibilizados para consulta no site do ONS.
+
+6.  ATRIBUIÇÕES DOS AGENTES E DO ONS
+
+6.1.     CENTROS DE OPERAÇÃO DO              SISTEMA DO ONS
+As equipes de Tempo Real dos Centros de Operação do Sistema (COSR) devem efetuar, diariamente, as
+seguintes atividades:
+
+6.1.1.   Manter ativo e operante o aplicativo SADHI, coletando e validando os dados hidráulicos operativos
+         horários;
+
+6.1.2.   Interagir com os agentes de geração quando da identificação de falha no recebimento dos dados
+         horários dentro dos prazos estabelecidos;
+
+6.1.3.   Executar o processo de agregação dos dados horários em diários e concluir a consistência de primeiro
+         nível do dia seguinte à operação, interagindo com os agentes de geração para corrigir dados com
+         erros.
+
+6.2.     GERÊNCIA DE RECURSOS HÍDRICOS E METEOROLOGIA DO ONS
+A Gerência de Recursos Hídricos e Meteorologia do ONS deve efetuar as atividades de consistência de
+segundo e terceiro níveis, sempre interagindo com o agente de geração, quando necessário. Para tal, deve:
+
+6.2.1.   Gerar os dados hidrológicos e hidroenergéticos diários a partir dos dados hidráulicos;
+
+6.2.2.   Disponibilizar os dados consistidos relativos à operação do dia anterior para a área de Tempo Real do
+         CNOS;
+
+6.2.3.   Quando necessário, solicitar dados complementares aos Centros de Operação do Sistema;
+
+6.2.4.   Havendo alteração de algum dado hidráulico, recalcular os dados hidrológicos e hidroenergéticos;
+
+6.2.5.   Após a realização destas consistências, gravar os dados decorrentes tanto da consistência de segundo
+         nível, dados consistidos, como da de terceiro nível, dados consolidados, na BDT;
+
+6.2.6.   Gerar um relatório de divulgação (ACOMPH), informando eventuais alterações nos dados hidráulicos
+         aos Agentes de Geração e Centros de Operação do ONS relacionados ao aproveitamento para o qual
+         foi efetuada a alteração.
+
+6.2.7.   Eventualmente, em função de fato relevante, a equipe de hidrologia do ONS em conjunto com os
+         agentes de geração, pode revisar as séries de dados hidrológicos e hidráulicos, em parte ou em sua
+         totalidade. Os resultados são atualizados na área de dados conso                  lidados do histórico da BDT, em
+         substituição aos dados lá existentes.
+
+6.3.     AGENTES
+Os Agentes de Geração devem efetuar diariamente as seguintes atividades:
+
+
+
+
+Referências:                                                                                                                  8 / 13
+
+
+
+
+
+--- PAGE 9 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                         Rotina Operacional                               Código           Revisão        Item           Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                   RO-AO.BR.02            08          4.3.2.       02/07/2024
+
+
+6.3.1.   Disponibilizar em base horária, os dados hidráulicos no decorrer do dia, assim que for concluída a sua
+         integralização horária, ou seja, na hora seguinte ao registro do dado;
+
+6.3.2.   Reavaliar dados com possibilidade de erros, informados pelo ONS, que não atenderam aos critérios
+         de consistência;
+
+6.3.3.   Disponibilizar aos Centros de Operação do ONS ao qual se relacionam, os dados hidráulicos relativos
+         ao enchimento de novos reservatórios, em base diária, a partir de 30 (trinta) dias antes da data
+         prevista  para  início  do  enchimento,  após  a  conclusão  do  enc              himento  deverá  ser  atendido  os
+         requisitos 6.3.1, 6.3.2 e 6.3.3.
+
+7.  ORIENTAÇÕES TÉCNICAS COMPLEMENTARES
+
+7.1.     AGREGAÇÕES TEMPORAIS
+Os dados hidráulicos diários serão obtidos a partir dos dados horários informados pelos Agentes de acordo
+com a seguinte regra de formação:
+
+                                Grandeza                                           Dado diário
+
+           Afluência (m³/s)                                        Média aritmética das 24 horas
+
+           Descarga total (m³/s)                                   Média aritmética das 24 horas
+
+           Nível (m)                                               Dado da hora 24
+
+           Nível jusante (m)                                       Média aritmética das 24 horas
+
+           Vazão turbinada (m³/s)                                  Média aritmética das 24 horas
+
+           Vazão vertida (m³/s)                                    Média aritmética das 24 horas
+
+           Vazão vertida não turbinável(m³/s)                      Média aritmética das 24 horas
+
+Os dados semanais são calculados de acordo com a semana do Programa Mensal de Operação                                 - PMO, que
+vai de um sábado até a próxima sexta          -feira e os dados mensais de acordo com o mês civil.
+Os dados semanais e mensais são obtidos a partir dos dados diários de acordo com a seguinte regra de
+formação:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referências:                                                                                                                   9 / 13
+
+
+
+
+
+--- PAGE 10 ---
+                                            Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                       Rotina Operacional                             Código         Revisão        Item          Vigência
+
+     Apuração dos Dados Hidrológicos e Hidráulicos                RO-AO.BR.02          08          4.3.2.      02/07/2024
+
+
+                                                  DADOS DE RESERVATÓRIOS
+
+                       Grandeza                         Agregação semanal                     Agregação mensal
+
+         Afluência (m³/s)                                Média aritmética                      Média aritmética
+
+         Descarga total (m³/s)                           Média aritmética                      Média aritmética
+
+         Vazão turbinada (m³/s)                          Média aritmética                      Média aritmética
+
+         Nível (m)                                      Dado da sexta-feira               Dado do último dia do mês
+
+         Nível jusante (m)                               Média aritmética                      Média aritmética
+
+         Vazão incremental (m³/s)                        Média aritmética                      Média aritmética
+
+         Vazão natural (m³/s)                            Média aritmética                      Média aritmética
+
+         Vazão vertida (m³/s)                            Média aritmética                      Média aritmética
+
+         Volume útil (%)                                Dado da sexta-feira               Dado do último dia do mês
+
+         EAR (MWmês)                                    Dado da sexta-feira               Dado do último dia do mês
+
+         EAR (%)                                        Dado da sexta-feira               Dado do último dia do mês
+
+         ENA Armazenável (MWmédio)                       Média aritmética                      Média aritmética
+
+         ENA Bruta (MWmédio)                             Média aritmética                      Média aritmética
+
+
+                                                        DADOS DE BACIA
+
+                      Grandeza                         Agregação semanal                      Agregação mensal
+
+          EAR (%)                                      Dado de sexta-feira               Dado do último dia do mês
+          EAR (MWmês)                                  Dado de sexta-feira               Dado do último dia do mês
+
+          ENA Armazenável % da MLT                    Média Ponderada **                      Média Aritmética
+
+          ENA Armazenável (MWmédio)                     Média Aritmética                      Média Aritmética
+          ENA Bruta % MLT                             Média Ponderada **                      Média Aritmética
+
+          ENA Bruta (MWmédio)                           Média Aritmética                      Média Aritmética
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referências:                                                                                                           10 / 13
+
+
+
+
+
+--- PAGE 11 ---
+                                            Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                       Rotina Operacional                             Código          Revisão       Item          Vigência
+
+     Apuração dos Dados Hidrológicos e Hidráulicos                RO-AO.BR.02           08         4.3.2.      02/07/2024
+
+
+                                                       DADOS DE REGIÃO
+
+                      Grandeza                         Agregação semanal                      Agregação mensal
+          EAR (%)                                      Dado de sexta-feira               Dado do último dia do mês
+
+          EAR (MWmês)                                  Dado de sexta-feira               Dado do último dia do mês
+
+          ENA Armazenável % da MLT                    Média Ponderada **                       Média Aritmética
+
+          ENA Armazenável (MW médio)                    Média Aritmética                       Média Aritmética
+          ENA Bruta % MLT                             Média Ponderada **                       Média Aritmética
+
+          ENA Bruta (MW médio)                          Média Aritmética                       Média Aritmética
+
+         **No caso de semanas que estão inteiramente dentro um mesmo mês civil, a ENA em Percentual de
+         bacia e região é a média aritmética.
+         Quando a semana possui X dias no mês M e Y dias no mês M+1, a MLT da semana é obtida através
+         da média ponderada, conforme abaixo:
+                                       𝑀𝐿𝑇             =  𝑋 ∙ 𝑀𝐿𝑇𝑚ê𝑠 𝑀    +  𝑌  ∙𝑀𝐿𝑇𝑚ê𝑠 𝑀+1
+                                             𝑆𝑒𝑚𝑎𝑛𝑎𝑙                        7
+
+A ENA percentual é obtida pela relação entre a média aritmética da ENA na semana e a MLT                    Semanal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referências:                                                                                                           11 / 13
+
+
+
+
+
+--- PAGE 12 ---
+                                            Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                        Rotina Operacional                             Código          Revisão       Item           Vigência
+
+     Apuração dos Dados Hidrológicos e Hidráulicos                 RO-AO.BR.02           08         4.3.2.       02/07/2024
+
+
+8.  ANEXOS
+
+ANEXO 1 – PLANILHA PADRÃO DE COLETA DE DADOS.
+Data     Hora   Cota    Jusant   Aflu   Turb   Vert   Defl Trans Outra Chuva Inde1 Inde2 V                        NTur
+20050811 01:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 02:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 03:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 04:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 05:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 06:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 07:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 08:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 09:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 10:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 11:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 12:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 13:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 14:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 15:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 16:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 17:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 18:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 19:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 20:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 21:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 22:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 23:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+20050811 24:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 01:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 02:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 03:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 04:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 05:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 06:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 07:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 08:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 09:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 10:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 11:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 12:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 13:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 14:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 15:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 16:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 17:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 18:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 19:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 20:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 21:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 22:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 23:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+21050812 24:00  738.67  605.14   5555   0749   0000   0749 00000 00000 00000    xx    yy 00000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referências:                                                                                                             12 / 13
+
+
+
+
+
+--- PAGE 13 ---
+                                              Manual de Procedimentos da Operação - Módulo5 - Submódulo 5.13
+
+                        Rotina Operacional                               Código          Revisão        Item           Vigência
+
+      Apuração dos Dados Hidrológicos e Hidráulicos                  RO-AO.BR.02           08          4.3.2.       02/07/2024
+
+
+Obs: neste exemplo, o cabeçalho é meramente ilustrativo para identificação das colunas. O alinhamento de
+cada coluna é a direita de cada campo. O arquivo deverá ser tipo texto (*.txt).
+Descrição do conteúdo das colunas:
+
+  Nome                                                Definição                                                 Formato          Campo
+   Data       Data a que se refere o dado                                                                     AAAAMMDD             1 a 8
+   Hora       Hora a que se refere o dado                                                                        HH:MM            9 a 14
+   Cota       Nível de montante do reservatório em relação ao nível do mar                                      CCCC,CC          15 a 22
+ Jusante      Nível de jusante do reservatório em relação ao nível do mar                                         JJJJ,JJ        23 A 30
+    Aflu      Vazão afluente ao reservatório proveniente da própria bacia no local do                             AAAA           31 a 37
+              aproveitamento (m3/s)
+   Turb       Vazão turbinada                                                                                      TTTT          38 a 44
+   Vert       Vazão vertida por vertedouros de superfície e, também, outras estruturas                            VVVV           45 a 51
+              hidráulicas quando utilizadas para controle de níveis e cheias (m3/s)
+              Vazão defluente total do reservatório, liberada a jusante do aproveitamento,
+    Defl      através de turbina, vertedouro, descarga de fundo, eclusa ou escada de                              DDDD           52 a 58
+              peixe (m3/s);
+   Trans      Vazão transferida ou recebida de outro reservatório, por meio de canal,                              TTTT          59 a 64
+              túnel ou estação de bombeamento (m3/s)
+              Vazão restituída ao  rio a jusante do aproveitamento, através de outras
+   Outra      estruturas hidráulicas, como eclusas, escadas de peixes e descarga de fundo                         OOOO           65 a 70
+              quando utilizada com objetivo diferente de controle de níveis e cheias (m3/s)
+  Chuva       Chuva acumulada, desde a zero hora até a hora da leitura, medida no posto                           CCCC           71 a 76
+              principal de coleta de chuva da barragem
+              Vazão vertida, indexador (x)
+              x = 1 – Vertimento para controle do nível do reservatório e/ ou controle de
+                     cheias.
+   Inde1      x = 2 – Vertimento por motivos ambientais (vazão remanescente, sanitária,                             XX           77 a 82
+                     qualidade de água, ictiofauna etc).
+              x = 3 – Vertimento por razões energéticas.
+              x = 4 – Vertimento para navegação a jusante.
+              x = 5 – Vertimento para testes em comportas
+              Vazão de outras estruturas, indexador (y)
+              y = 1 – Vazão remanescente ou sanitária
+              y = 2 – Vazão de eclusagem
+   Inde2      y = 3 – Vazão em escada de peixes                                                                     YY           83 a 88
+              y = 4 – Vazão para piscicultura
+              y = 5 – Vazão turbinada em vazio
+              y = 6 – Vazão em vertedouro de troncos
+              Vazão que foi vertida e que não poderia ter sido turbinada pelo sistema
+  VNTur       gerador da usina, para atendimento a condicionantes ambientais ou testes                            VVVV           89 a 94
+              nas comportas.
+
+
+
+
+
+
+
+
+
+
+
+
+Referências:                                                                                                                13 / 13
+
+
+

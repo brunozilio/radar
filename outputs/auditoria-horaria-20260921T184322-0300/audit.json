@@ -1,0 +1,335 @@
+{
+  "audited_at": "2026-09-21T18:45:12.384080-03:00",
+  "runner": "exit 0; duplicate reference suppressed, no new forecast",
+  "cycles": [
+    {
+      "directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T180020-0300",
+      "reference": "2026-09-21T18:00:00-03:00",
+      "manual_revision": false,
+      "last_observed": {
+        "source": "86510000",
+        "last_time": "2026-09-21T17:30:00-03:00",
+        "delay_minutes": 30.0,
+        "value": 13.45
+      },
+      "emissions": [
+        {
+          "model": "radar_arvores_live_candidate",
+          "recorded_at": "2026-09-21T21:02:09.620438+00:00"
+        },
+        {
+          "model": "hge_arno_live_candidate",
+          "recorded_at": "2026-09-21T21:02:09.728188+00:00"
+        }
+      ],
+      "hashes_checked": 396,
+      "hash_failures": [],
+      "source_responses": 133,
+      "source_errors": [],
+      "source_age_over_180min": [
+        {
+          "source": "86060010",
+          "last_time": "2026-09-21T08:00:00-03:00",
+          "delay_minutes": "600.0",
+          "value": "13.8"
+        },
+        {
+          "source": "86102000",
+          "last_time": "2026-09-21T10:00:00-03:00",
+          "delay_minutes": "480.0",
+          "value": "7.51"
+        },
+        {
+          "source": "86125000",
+          "last_time": "2026-09-21T11:59:00-03:00",
+          "delay_minutes": "361.0",
+          "value": "0.8412999999999999"
+        },
+        {
+          "source": "86200900",
+          "last_time": "2026-09-21T12:00:00-03:00",
+          "delay_minutes": "360.0",
+          "value": "667.03"
+        }
+      ],
+      "above_training_max": 16,
+      "outside_feature_range": 28,
+      "flow_estimates": 28,
+      "max_flow": 19648.205859112284,
+      "training_max_at_max_flow": 9452.0,
+      "max_flow_source": "julho",
+      "castro_contributions_at_max_flow": [
+        {
+          "feature": "castro:Q:delta1h",
+          "contribution_m3_s": 5062.307394992308,
+          "standardized_value": 101.49378981221267
+        },
+        {
+          "feature": "castro:I:slope3h",
+          "contribution_m3_s": 3630.1499758347813,
+          "standardized_value": 80.90674972212835
+        },
+        {
+          "feature": "castro:I:slope6h",
+          "contribution_m3_s": 2845.460832942964,
+          "standardized_value": 47.49475550716688
+        },
+        {
+          "feature": "castro:I:1000m3s",
+          "contribution_m3_s": 2731.5739712578916,
+          "standardized_value": 24.613729147716043
+        },
+        {
+          "feature": "castro:I:delta1h",
+          "contribution_m3_s": 1143.5089919133848,
+          "standardized_value": 73.34293622469404
+        },
+        {
+          "feature": "castro:Q:slope6h",
+          "contribution_m3_s": -1071.7268768264366,
+          "standardized_value": 50.24154882395931
+        },
+        {
+          "feature": "castro:Q:slope3h",
+          "contribution_m3_s": 1051.8888946942964,
+          "standardized_value": 68.10891805553615
+        },
+        {
+          "feature": "castro:Q:1000m3s",
+          "contribution_m3_s": -837.6585526885044,
+          "standardized_value": 21.62906264324636
+        }
+      ],
+      "band_12h": [
+        {
+          "target": "2026-09-22T07:00:00-03:00",
+          "real_lead_h": 12.96399432277778,
+          "radar_m": 17.141754633735324,
+          "hge_m": 30.26226635662486,
+          "difference_m": 13.120511722889535
+        }
+      ],
+      "max_divergence": {
+        "target": "2026-09-22T08:00:00-03:00",
+        "real_lead_h": 13.96399432277778,
+        "radar_m": 17.073602215324712,
+        "hge_m": 30.668867485128512,
+        "difference_m": 13.5952652698038
+      }
+    },
+    {
+      "directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T183305-0300",
+      "reference": "2026-09-21T18:00:00-03:00",
+      "manual_revision": true,
+      "last_observed": {
+        "source": "86510000",
+        "last_time": "2026-09-21T18:00:00-03:00",
+        "delay_minutes": 0.0,
+        "value": 13.87
+      },
+      "emissions": [
+        {
+          "model": "radar_arvores_live_candidate",
+          "recorded_at": "2026-09-21T21:35:00.363259+00:00"
+        },
+        {
+          "model": "hge_arno_live_candidate",
+          "recorded_at": "2026-09-21T21:35:00.457099+00:00"
+        }
+      ],
+      "hashes_checked": 396,
+      "hash_failures": [],
+      "source_responses": 133,
+      "source_errors": [],
+      "source_age_over_180min": [
+        {
+          "source": "86060010",
+          "last_time": "2026-09-21T08:00:00-03:00",
+          "delay_minutes": "600.0",
+          "value": "13.8"
+        },
+        {
+          "source": "86102000",
+          "last_time": "2026-09-21T10:00:00-03:00",
+          "delay_minutes": "480.0",
+          "value": "7.51"
+        },
+        {
+          "source": "86125000",
+          "last_time": "2026-09-21T11:59:00-03:00",
+          "delay_minutes": "361.0",
+          "value": "0.8412999999999999"
+        },
+        {
+          "source": "86200900",
+          "last_time": "2026-09-21T12:00:00-03:00",
+          "delay_minutes": "360.0",
+          "value": "667.03"
+        }
+      ],
+      "above_training_max": 15,
+      "outside_feature_range": 28,
+      "flow_estimates": 28,
+      "max_flow": 17085.12105020058,
+      "training_max_at_max_flow": 9452.0,
+      "max_flow_source": "julho",
+      "castro_contributions_at_max_flow": [
+        {
+          "feature": "castro:I:slope3h",
+          "contribution_m3_s": 3442.095984712708,
+          "standardized_value": 77.84045339110115
+        },
+        {
+          "feature": "castro:I:1000m3s",
+          "contribution_m3_s": 3048.347918881035,
+          "standardized_value": 27.27042354220047
+        },
+        {
+          "feature": "castro:I:slope6h",
+          "contribution_m3_s": 2966.573623312789,
+          "standardized_value": 49.68678971567344
+        },
+        {
+          "feature": "castro:Q:delta1h",
+          "contribution_m3_s": 2161.520838102438,
+          "standardized_value": 43.978405691375094
+        },
+        {
+          "feature": "castro:Q:slope3h",
+          "contribution_m3_s": 1034.4170633242682,
+          "standardized_value": 74.43468963059048
+        },
+        {
+          "feature": "castro:Q:1000m3s",
+          "contribution_m3_s": -1010.9871448134593,
+          "standardized_value": 24.790019183118815
+        },
+        {
+          "feature": "castro:Q:slope6h",
+          "contribution_m3_s": -978.0495330741575,
+          "standardized_value": 52.02230663169789
+        }
+      ],
+      "band_12h": [
+        {
+          "target": "2026-09-22T07:00:00-03:00",
+          "real_lead_h": 12.41656576138889,
+          "radar_m": 17.857580125008727,
+          "hge_m": 28.122015149542573,
+          "difference_m": 10.264435024533846
+        }
+      ],
+      "max_divergence": {
+        "target": "2026-09-22T08:00:00-03:00",
+        "real_lead_h": 13.41656576138889,
+        "radar_m": 17.68745556809328,
+        "hge_m": 28.562982659675242,
+        "difference_m": 10.875527091581962
+      }
+    }
+  ],
+  "history": {
+    "directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T183305-0300/history",
+    "manifest_verified": true,
+    "files_checked": 33,
+    "hash_failures": []
+  },
+  "capture": {
+    "collected_at": "2026-09-21T21:44:15.528479+00:00",
+    "receipt_sha256": "8d392b6313291b476f28651d2b497cba0535d601ae2cb13ad3df6affe3f1cb70",
+    "observations": 170,
+    "new": 0,
+    "revised": 0,
+    "latest": {
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "valid_at": "2026-09-21T18:15:00-03:00",
+      "level_m": 14.1,
+      "quality": "Dado aprovado",
+      "timezone_verified": false,
+      "datum_verified": false,
+      "raw_time": "2026-09-21 18:15:00",
+      "raw_level_cm": "1410.00"
+    }
+  },
+  "report": "/Users/brunozilio/Documents/radar/outputs/monitoramento-prospectivo/reports/20260921T214415530747Z",
+  "goal_eligible_pairs": 0,
+  "status_counts": {
+    "matched": 10,
+    "not_due": 124
+  },
+  "cadence": {
+    "configured": true,
+    "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+    "effective_from": "2026-09-21T21:00:00+00:00",
+    "closed_windows": 0,
+    "complete_windows": 0,
+    "coverage_percent": null,
+    "status_counts": {},
+    "current_window_started_at": "2026-09-21T21:00:00+00:00",
+    "windows": [],
+    "all_recorded_attempts": [
+      {
+        "cycle_sha256": "65b3b7d67c6e4cbb98f7b360004ca1d3225e70f9a167944794dfabb184128887",
+        "started_at": "2026-09-21T20:27:07.658033+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_failed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "1bbb40de9c89f3cd627bb94829af9d4f32de404445a16b6cca169e406f7f9012",
+        "started_at": "2026-09-21T20:29:31.309630+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+        "started_at": "2026-09-21T21:00:20.111770+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+        "started_at": "2026-09-21T21:33:05.230842+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      }
+    ],
+    "unlinked_forecast_issues": 2,
+    "limitations": [
+      "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+      "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+      "An unfinished record does not establish a live process.",
+      "Before the policy effective time, historical coverage remains unproven; recorded failures remain visible separately.",
+      "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+    ]
+  },
+  "pipeline_review": {
+    "path": "/Users/brunozilio/Documents/radar/outputs/revisao-solicitada-20260921T183304-0300/pipeline.log",
+    "error_found": false,
+    "note": "No separate pipeline/errors file in reviewed output folders; collection manifests and terminal ledger records also inspected."
+  },
+  "limitations": [
+    "No new forecast issued. Forecasts retain original recorded times.",
+    "Timezone and gauge datum remain unverified. No 98 percent claim.",
+    "Manual revision remains diagnostic; no exclusions based on extrapolation.",
+    "PET=3mm/day, tau=6h, training cutoff unchanged. No promotion."
+  ],
+  "research": {
+    "directory": "/Users/brunozilio/Documents/radar/outputs/pesquisa-mucum-referencia-20260921T214433Z",
+    "artifact_hashes_verified": 3,
+    "new_primary_sources_accepted": 0,
+    "metadata_resolved": false
+  }
+}

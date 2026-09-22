@@ -1,0 +1,187 @@
+{
+  "configured": true,
+  "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+  "effective_from": "2026-09-21T21:00:00+00:00",
+  "closed_windows": 3,
+  "complete_windows": 3,
+  "coverage_percent": 100.0,
+  "status_counts": {
+    "complete": 3
+  },
+  "current_window_started_at": "2026-09-22T00:00:00+00:00",
+  "windows": [
+    {
+      "start": "2026-09-21T21:00:00+00:00",
+      "end_exclusive": "2026-09-21T22:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+          "started_at": "2026-09-21T21:00:20.111770+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        },
+        {
+          "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+          "started_at": "2026-09-21T21:33:05.230842+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-21T22:00:00+00:00",
+      "end_exclusive": "2026-09-21T23:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+          "started_at": "2026-09-21T22:00:23.957858+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    },
+    {
+      "start": "2026-09-21T23:00:00+00:00",
+      "end_exclusive": "2026-09-22T00:00:00+00:00",
+      "status": "complete",
+      "expected_models": [
+        "hge_arno_live_candidate",
+        "radar_arvores_live_candidate"
+      ],
+      "model_transition_record": null,
+      "attempts": [
+        {
+          "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+          "started_at": "2026-09-21T23:02:35.814320+00:00",
+          "complete_delivery": true,
+          "timely_issues": 2,
+          "late_issues": 0,
+          "missing_models": [],
+          "missing_leads": {
+            "hge_arno_live_candidate": [],
+            "radar_arvores_live_candidate": []
+          },
+          "terminal_states": [
+            "cycle_completed"
+          ],
+          "unfinished_record": false
+        }
+      ]
+    }
+  ],
+  "all_recorded_attempts": [
+    {
+      "cycle_sha256": "65b3b7d67c6e4cbb98f7b360004ca1d3225e70f9a167944794dfabb184128887",
+      "started_at": "2026-09-21T20:27:07.658033+00:00",
+      "before_effective_period": true,
+      "terminal_records": [
+        "cycle_failed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "1bbb40de9c89f3cd627bb94829af9d4f32de404445a16b6cca169e406f7f9012",
+      "started_at": "2026-09-21T20:29:31.309630+00:00",
+      "before_effective_period": true,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+      "started_at": "2026-09-21T21:00:20.111770+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+      "started_at": "2026-09-21T21:33:05.230842+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+      "started_at": "2026-09-21T22:00:23.957858+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+      "started_at": "2026-09-21T23:02:35.814320+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    },
+    {
+      "cycle_sha256": "8fa0ba4428dc007e04e85cc40ec2f27dfa4bd170dd4d7cec964822b0e35143e5",
+      "started_at": "2026-09-22T00:00:23.276039+00:00",
+      "before_effective_period": false,
+      "terminal_records": [
+        "cycle_completed"
+      ],
+      "unfinished_record": false
+    }
+  ],
+  "unlinked_forecast_issues": 2,
+  "limitations": [
+    "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+    "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+    "An unfinished record does not establish a live process.",
+    "Before the policy effective time, historical coverage remains unproven; recorded failures remain visible separately.",
+    "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+  ]
+}

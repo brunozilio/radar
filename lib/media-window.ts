@@ -56,19 +56,16 @@ export function framesFromMostRecentProvider<
     })[0]?.frames || [];
 }
 
-export function synchronizeFramesByTimestamp<
-  R extends { timestamp: string },
-  S extends { timestamp: string },
->(radarFrames: R[], satelliteFrames: S[]) {
-  const satelliteByTimestamp = new Map(
-    satelliteFrames.map((frame) => [Date.parse(frame.timestamp), frame]),
-  );
-
-  return radarFrames.flatMap((radar) => {
-    const timestamp = Date.parse(radar.timestamp);
-    const satellite = satelliteByTimestamp.get(timestamp);
-    return satellite
-      ? [{ timestamp: radar.timestamp, radar, satellite }]
-      : [];
-  });
+export function retainAvailableFrames<T extends { timestamp: string }>(
+  previous: T[],
+  incoming: T[],
+  now = Date.now(),
+) {
+  const cached = framesWithinLatestHour(previous, now);
+  const next = framesWithinLatestHour(incoming, now);
+  if (!next.length) return cached;
+  if (!cached.length) return next;
+  return Date.parse(next.at(-1)!.timestamp) >= Date.parse(cached.at(-1)!.timestamp)
+    ? next
+    : cached;
 }

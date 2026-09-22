@@ -1,0 +1,189 @@
+{
+  "emitido_em": "2026-09-21T12:34:06.332563-03:00",
+  "observacao": {
+    "horario": "2026-09-21T11:45:00-03:00",
+    "nivel_m": 6.95
+  },
+  "taxas_m_h": {
+    "1": 0.6200000000000067,
+    "2": 0.6566666666666631,
+    "3": 0.7520879120879096
+  },
+  "projecao": [
+    {
+      "horario_brasilia": "2026-09-21T13:00:00-03:00",
+      "projecao_m": 7.77,
+      "tendencia_1h_m": 7.73,
+      "tendencia_3h_m": 7.89,
+      "horas_desde_observacao": 1.25
+    },
+    {
+      "horario_brasilia": "2026-09-21T14:00:00-03:00",
+      "projecao_m": 8.43,
+      "tendencia_1h_m": 8.35,
+      "tendencia_3h_m": 8.64,
+      "horas_desde_observacao": 2.25
+    },
+    {
+      "horario_brasilia": "2026-09-21T15:00:00-03:00",
+      "projecao_m": 9.08,
+      "tendencia_1h_m": 8.97,
+      "tendencia_3h_m": 9.39,
+      "horas_desde_observacao": 3.25
+    },
+    {
+      "horario_brasilia": "2026-09-21T16:00:00-03:00",
+      "projecao_m": 9.74,
+      "tendencia_1h_m": 9.59,
+      "tendencia_3h_m": 10.15,
+      "horas_desde_observacao": 4.25
+    },
+    {
+      "horario_brasilia": "2026-09-21T17:00:00-03:00",
+      "projecao_m": 10.4,
+      "tendencia_1h_m": 10.21,
+      "tendencia_3h_m": 10.9,
+      "horas_desde_observacao": 5.25
+    },
+    {
+      "horario_brasilia": "2026-09-21T18:00:00-03:00",
+      "projecao_m": 11.05,
+      "tendencia_1h_m": 10.83,
+      "tendencia_3h_m": 11.65,
+      "horas_desde_observacao": 6.25
+    }
+  ],
+  "retrospecto": [
+    {
+      "horizonte_h": 1,
+      "amostras_sobrepostas": 54,
+      "erro_medio_absoluto_m": 0.164,
+      "maior_erro_absoluto_m": 0.432
+    },
+    {
+      "horizonte_h": 2,
+      "amostras_sobrepostas": 53,
+      "erro_medio_absoluto_m": 0.346,
+      "maior_erro_absoluto_m": 0.835
+    },
+    {
+      "horizonte_h": 3,
+      "amostras_sobrepostas": 52,
+      "erro_medio_absoluto_m": 0.562,
+      "maior_erro_absoluto_m": 1.412
+    },
+    {
+      "horizonte_h": 4,
+      "amostras_sobrepostas": 52,
+      "erro_medio_absoluto_m": 0.834,
+      "maior_erro_absoluto_m": 2.079
+    },
+    {
+      "horizonte_h": 5,
+      "amostras_sobrepostas": 52,
+      "erro_medio_absoluto_m": 1.136,
+      "maior_erro_absoluto_m": 2.737
+    },
+    {
+      "horizonte_h": 6,
+      "amostras_sobrepostas": 52,
+      "erro_medio_absoluto_m": 1.437,
+      "maior_erro_absoluto_m": 3.394
+    }
+  ],
+  "pluviometros_consultados": 24,
+  "pluviometros_consistentes": 20,
+  "montante": [
+    {
+      "estacao": "Santa Tereza",
+      "horario": "2026-09-21T11:45:00-03:00",
+      "nivel_regua_propria_m": 6.33,
+      "variacao_ultima_hora_m": 0.42
+    },
+    {
+      "estacao": "Linha José Júlio",
+      "horario": "2026-09-21T11:30:00-03:00",
+      "nivel_regua_propria_m": 6.92,
+      "variacao_ultima_hora_m": 0.02
+    },
+    {
+      "estacao": "Linha Colombo / Guaporé",
+      "horario": "2026-09-21T11:45:00-03:00",
+      "nivel_regua_propria_m": 2.3,
+      "variacao_ultima_hora_m": 0.4
+    },
+    {
+      "estacao": "Passo Carreiro",
+      "horario": "2026-09-21T11:30:00-03:00",
+      "nivel_regua_propria_m": 3.341,
+      "variacao_ultima_hora_m": 0.58
+    }
+  ],
+  "metodo": "H(t)=H(t0)+slope_OLS_2h*(t-t0); janelas auxiliares de 1h e 3h; sem coeficiente chuva-cota calibrado",
+  "fontes": {
+    "nivel": "https://sace.sgb.gov.br/api/dados/taquari_3_cota.csv",
+    "chuva": "https://sigmameteorologia.com/produtos/cemaden/2026-09-21/1200.txt"
+  },
+  "sha256": {
+    "sigma-station-17560.txt": "71f68e43feee00ad943db40105d2770ba046ef979db0e41d40e9fa6e967cc78f",
+    "har-station-17718.txt": "fb3426f53e377df01cc9c051f3dbeac3e7d1f19909a19d2b1e7979ef4dce52b1",
+    "sigma-station-17561.txt": "2145a03c2861665fa9f8d4634bda4da9c895b06fb711b84c3773077d9e732246",
+    "sources.json": "05b57564dcc58a327b57eae6d34955e356c449d8ca97bdfd8f2839acbd07ef69",
+    "har-weather_flow.txt": "28dbe520d5eec97ee9d2f00d6de6d7b7268534dc2b93f5bc3d9f791b95b92799",
+    "sigma-live-sgb.txt": "b62d9bbdab0e0dd0e876c51d7e27f93f8dd076a27009e5dbf930650e1bd0a513",
+    "sigma-station-16912.txt": "9e4211d65de73cf0b6f0f6ab68a3afb57367dae2b17f55d16da963798f97af86",
+    "har-sgb_cprm.txt": "9f9e8b666839f5e9546bf9b1beed1de5f398e6e1b5e1e1d056657a0321882912",
+    "sigma-station-16913.txt": "11c7d856cb0118997cf3b96b3f8f6e73936528124e3c8a6d11c306c804abbc78",
+    "sigma-station-16917.txt": "3b986b7958ec3b12e86a786e9a6e227a05559a5eb97a9f7d9d25a7b567bf9152",
+    "har-unesp.txt": "39ead5d89b142aa6041f1a9ebbbf7de6010649e20966670d583b28e14889cc8d",
+    "sigma-station-17559.txt": "49e33e0b70d2ec35483aaa7ab34501d04e7eacbcb002a86644b419a38085e543",
+    "har-wu.txt": "850eba00a11980467be0bd9497b7d067b76e4dffcb11dda07a0655de9e32d278",
+    "sigma-station-17558.txt": "7db3969bfaaa260f17e31a95f2edaf037e84e4ca02ffc0a01129eb5bf0ffbdc8",
+    "har-inmet.txt": "d123acf568b9258c84df95d655e5aca60002adf688c690c8bc1a4d3a2446f7f6",
+    "sigma-station-16929.txt": "6daa89a927b688df9192aaaaa0b8cdfea13703b36ab05eb24c113603ab1d0fa4",
+    "sace-32.csv": "1ab3632bda896086240309974aff1fb69d5a740247574178800831774041f469",
+    "sace-55.csv": "ed3c34fb0429028db0c65c1c2413eaa4fef92c73f34508bc6cd7e22877e06266",
+    "har-ambient_weather.txt": "8d35c53a2d8c72d5e81a59de27f8e23d7b0648b007c9e5dcadded5c830ba2e98",
+    "har-cemaden.txt": "06c4f3349d2430f86601cf62bf85f6ba6848aab4a32fb5517490d67373be31c2",
+    "har-wsclima.txt": "a8fd1e3de002a9aa9b9c1fedd3ad836db36cf849d74f646ce2d1863d2d746d0c",
+    "sace-54.csv": "5a4125ec758bc2ec5e1696b5eacc0ec7feb8ce3664be75ce486b95ccb25e4626",
+    "har-simepar.txt": "db1113f65df8f6dbec0e59b0f1cc1156b7c62d8f3bae20670de6eb558df430be",
+    "sigma-station-7377.txt": "de4f1741016074e24f299eda6cc3568bc4321a8e9071f4898e1bb092860a0698",
+    "sace-3.csv": "cc124d4ad741b3417396aa953bb8bbb9d4410e4ccaf085d9d25f14f7f8bb572e",
+    "har-rgpilots.txt": "019448f8c7eae2cca06fc7792b32fc0f147411af94686a2fa0c37d8e8e4d336b",
+    "sigma-station-17717.txt": "fc9d8e3838bdd93fb2543de6a4c7c9d8711b0f581ca1daba702e95f9364d115f",
+    "har-tidesat.txt": "1fdabefde096bbd27ab44eb163529ccb28461d2981419bec5f261723a3c9fc3b",
+    "har-dmh.txt": "c64c3b90355750119164f23d010b7df45a14850a67715c345733651e08cfc888",
+    "har-ipmet.txt": "5c28f8d53d7751aebeeb58c944f0319f807dda4a2ebf62d9c8738a2a7283e8fe",
+    "har-daee.txt": "602b2742e1e3ae9f166792f430e02547cff28891a8cb2fecc94f0c31901b5a13",
+    "har-davis.txt": "1c334418907b0d1df6f5c1f17760cc89442b35b619332f66fad9fecf2efa462d",
+    "har-ciiagro.txt": "61db8b5fd4e4559f97ed1a937940e034cc6f875b082bfac3a3efe3dcbd1eed41",
+    "sace-4.csv": "a51d842ae461703270213d66fb18f5e211317f203a5bc72c3a73b46eabfda709",
+    "sigma-station-16952.txt": "10c8abffee8a852b7999fc8b3c75a1a5e7baf47540c8002559bd7673d1dee1a5",
+    "har-cge.txt": "075fd404a231a8628ec8cfc1bf15863e5db1f5622971b0675c6600d18995a1fa",
+    "sigma-station-16940.txt": "dfe19f23cc453242ec0ce77a7205df9b24591cb22a2b0eb05db23432b21df81d",
+    "har-dcsc.txt": "b29d91203ae9a0fc69ef23a3549192b2dec29b59f7a95adef9e9380c0c440b2f",
+    "sigma-station-17719.txt": "1f055c40276b20ece6a43591923148ad03dce6e14494d5b3335c04e1e94f4b0d",
+    "har-epagri.txt": "8796751befa89c4b0cddfbcfe951b6e4f018b1ee4b3024351df83419c6c3af88",
+    "sigma-station-17718.txt": "98086a69e7a9f51cb4b97fc1751001fba508e121be79c981deb04072571f2d1e",
+    "har-dcbnu.txt": "bf0fd32d1a6b6278b0fc4536e5465d313fb9e94eaa61a64de014d381095ae33b",
+    "sigma-station-7379.txt": "3e346f13cbac36b850c4a56c0f19cba3ffa5b9743ce854641f04749dff89ddbe",
+    "bulletins.html": "9fbc545cc5d1ba621a50872e4b0038d91eb76ea675117251c67b7ae9f027fff1",
+    "har-dcrs.txt": "b377afc68c27317a79d82d0ad6c5000aec8647791e332454194cf93e817d2609",
+    "sigma-station-16930.txt": "1c4fc420acc3053ab3b4b583af5dd4983b1d3ab4433ef20f3c075fedb8a4b9f9",
+    "har-pm_brusque.txt": "ebdc5153115a64872ccf8ffc6da983a072d3f6c9de1681460913fdc733328128",
+    "sigma-live-17718.txt": "2c6954ecef63cae355cfba05ea0f5d2284549e66eb4b6f7c831000ab495dd74b",
+    "sigma-station-16931.txt": "07139de6435162f1b37d3a11b0076a90e26800713aa5018cf396d12bc9921d6f",
+    "sigma-station-16927.txt": "79d80570517cc66933f6cb8918d01a9076a6614071ad1ecadd4ac0ec09d9777d",
+    "sigma-station-16926.txt": "8265b735e950c30b0ccc5e32093ceb6a3569132c5dab4def6bf4479aab440038",
+    "sigma-station-16922.txt": "d6215dfe117f444aa0c8f896999ea7f9e53d0efe20d8253b63495bfd5a360a01",
+    "sigma-station-16936.txt": "cce9a2145d8043b5d353f7c36c66f2ccaaae882816f52d0f8b747c75d36b0014",
+    "rain-selection.json": "9e34cd0a868a254fe8017e97fe0bba281ab36efb4749dfdb327046772d47547e",
+    "har-unisc.txt": "2df6186ee8153cf0ddd58d1140f8e404a42afd2ffd8cf6d07b69a0582669b2a4",
+    "har-redemet.txt": "c05a2400c5c35e0dd802d1939b4a517305450ff7d3847a1d6c68919168937741",
+    "sigma-station-16935.txt": "f2a773c9c49bc02c853fee8463c7f72389ac2b3d7b66d64c3c46e57c5c42df26",
+    "sigma-station-16921.txt": "a06d8d333593356f9bc0d0dcdaa6d60434a1cdaf2d73b0f5a2e5d026ef581094",
+    "sigma-live-cemaden.txt": "f2908d64a1513de805a883d0e082ce46fb82c92edf583032af231daa155cca08",
+    "sigma-station-16920.txt": "859adf207614373c54dc568339876ed4f77173afe3251953b0361392eeccbc3f"
+  }
+}

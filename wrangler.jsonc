@@ -8,6 +8,7 @@
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
   "preview_urls": true,
+  "triggers": { "crons": ["*/15 * * * *"] },
   "routes": [
     {
       "pattern": "radar.brunozilio.com",

@@ -1,0 +1,21 @@
+{
+  "id": "radar-june2024-augmentation-120-v1",
+  "created_before_fit": true,
+  "control": "Frozen observed120models and predictions, reproduced exactly on strictQC recent12912-row matrix before comparing each horizon. No control refit.",
+  "candidate": "Same HistGradientBoostingRegressor recipe as control, add all eligible June15–21/2024 rows chronologically before recent training rows. NativeNaNs; no complete24 restriction.",
+  "features": "Same120observed columns, same QC/delay/rain/ONS as-reported contract in both arms, no new feature or row selection by results.",
+  "cutoffs": [
+    "2025-10-01T00:00:00-03:00",
+    "2026-07-01T00:00:00-03:00"
+  ],
+  "evaluation_stop": "2026-09-21T00:00:00-03:00",
+  "added_boundary": "2024-06-22T00:00:00-03:00",
+  "targets": "Separate shift within each contiguousdataset; added target stays before addedboundary, recent labels before declaredfold cutoff. Same102084evaluation rows as frozencontrol.",
+  "weights": "1+2*(abs(target-base)>=1)+2*(target>=9), identicalformula botharms; preserve all old controls.",
+  "hyperparameters": "All12perhorizonleaf/loss frozen in observed120training.csv; max_iter180,min_samples_leaf35,lr.055,l2=10,noearlystop,seed57. No tuning, blending, clipping, perhorizon modelselection or postresult masking.",
+  "artifacts": "Save prefit masks, target vectors, weights and source hashes before first fit;24newmodels, model replay and metric audit required.",
+  "metrics": "All1..12h, validation/test, all/highobserved>=7, fullschedule/complete24/missing24;hits<=.5m without rounding, failures andmissingtruth explicit, MAE,bias,P98,max;no cherry-picking.",
+  "decision": "No operationalpromotion from this known development evaluation. Report mixed effects or regression; prospective and independent-event gates unchanged.",
+  "limits": "June has postMay altered dam regime, missing Linha/Carreiro and raincoverage gaps, flagged ONS component conflicts. Datum/timezone/publication not certified. All evaluation periods inspected development; results cannot demonstrate98percent or causal hydrology. HGE removed; Radar only.",
+  "goal_achieved": false
+}

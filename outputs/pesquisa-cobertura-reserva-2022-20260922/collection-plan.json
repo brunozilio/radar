@@ -1,0 +1,72 @@
+{
+  "registered_at_utc": "2026-09-22T03:06:22.855732+00:00",
+  "reservation_sha256": "93ec9e3d7120412563511e9f027705184b2fdd0b993a57bcedc99a33e53e0692",
+  "scope": "Coverage/QC only; no training, inference or model selection.",
+  "timestamp_policy": "Literal source timestamps. Working expected grid is not timezone certification.",
+  "windows": [
+    [
+      "2022-04-28",
+      "2022-04-30"
+    ],
+    [
+      "2022-05-01",
+      "2022-05-31"
+    ],
+    [
+      "2022-06-01",
+      "2022-06-30"
+    ]
+  ],
+  "stations": [
+    "86510000",
+    "86472000"
+  ],
+  "max_new_gets": 6,
+  "automatic_retries": 0,
+  "requests": [
+    {
+      "station": "86510000",
+      "start": "2022-04-28",
+      "end": "2022-04-30",
+      "file": "raw/ana-86510000-2022-04-28--2022-04-30.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=28%2F04%2F2022&dataFim=30%2F04%2F2022"
+    },
+    {
+      "station": "86510000",
+      "start": "2022-05-01",
+      "end": "2022-05-31",
+      "file": "raw/ana-86510000-2022-05-01--2022-05-31.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F05%2F2022&dataFim=31%2F05%2F2022"
+    },
+    {
+      "station": "86510000",
+      "start": "2022-06-01",
+      "end": "2022-06-30",
+      "file": "raw/ana-86510000-2022-06-01--2022-06-30.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F06%2F2022&dataFim=30%2F06%2F2022"
+    },
+    {
+      "station": "86472000",
+      "start": "2022-04-28",
+      "end": "2022-04-30",
+      "file": "raw/ana-86472000-2022-04-28--2022-04-30.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=28%2F04%2F2022&dataFim=30%2F04%2F2022"
+    },
+    {
+      "station": "86472000",
+      "start": "2022-05-01",
+      "end": "2022-05-31",
+      "file": "raw/ana-86472000-2022-05-01--2022-05-31.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=01%2F05%2F2022&dataFim=31%2F05%2F2022"
+    },
+    {
+      "station": "86472000",
+      "start": "2022-06-01",
+      "end": "2022-06-30",
+      "file": "raw/ana-86472000-2022-06-01--2022-06-30.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=01%2F06%2F2022&dataFim=30%2F06%2F2022"
+    }
+  ],
+  "reused_probe": "/Users/brunozilio/Documents/radar/outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+  "expected_probe_overlap_rows": 96
+}

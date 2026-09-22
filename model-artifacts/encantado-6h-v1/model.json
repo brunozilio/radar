@@ -1,0 +1,208 @@
+{
+  "id": "encantado-6h-v1",
+  "station": "86720000",
+  "horizonHours": 6,
+  "features": [
+    "86720000:level",
+    "86720000:age_hours",
+    "86720000:change_0.5h",
+    "86720000:change_1h",
+    "86720000:change_2h",
+    "86720000:change_4h",
+    "86720000:change_8h",
+    "86510000:level",
+    "86510000:age_hours",
+    "86510000:change_0.5h",
+    "86510000:change_1h",
+    "86510000:change_2h",
+    "86510000:change_4h",
+    "86510000:change_8h"
+  ],
+  "trainingCutoff": "2026-09-21T00:00:00-03:00",
+  "validationStart": "2026-01-01",
+  "testStart": "2026-07-01",
+  "validationPassed": true,
+  "artifacts": {
+    "forecast-1.joblib": "4073d9f89efe84056c176e58b3fff66e0c526f54ae7866725793df4094f02fa5",
+    "forecast-2.joblib": "6314ce361d4e6ec5f679ad07525890396289b3304df74241cc0779ec69b9dd6c",
+    "forecast-3.joblib": "568770d223e87824b68cac1fc617d573741370bb9ede4303d29e90f62222cde2",
+    "forecast-4.joblib": "a0b3c40ae63727e03be49b2a7d14ca777aff9d73d13dac2bb9fe871073a57244",
+    "forecast-5.joblib": "347cbd6b8dc63532ecf457f10e3ea12f5a23b8a09958918bdd95a8ab6decdfcf",
+    "forecast-6.joblib": "dbe85f03ced2c4eaadb724b4192443e6b89496d973f6096abe562bcf184be9fd"
+  },
+  "levelRange": {
+    "86720000": [
+      0.0,
+      17.08
+    ],
+    "86510000": [
+      0.8,
+      19.86
+    ]
+  },
+  "metrics": [
+    {
+      "lead_hours": 1,
+      "validation": {
+        "n": 25879,
+        "mae_m": 0.01480400865215374,
+        "p90_m": 0.03222053203927576,
+        "persistence_mae_m": 0.04658333011321921
+      },
+      "test": {
+        "n": 11557,
+        "mae_m": 0.046703612687965336,
+        "p90_m": 0.10202724949504532,
+        "persistence_mae_m": 0.1737604914770269
+      },
+      "changing_test": {
+        "n": 762,
+        "mae_m": 0.25888591658845844,
+        "p90_m": 0.5314869212187863,
+        "persistence_mae_m": 0.8192257217847769
+      }
+    },
+    {
+      "lead_hours": 2,
+      "validation": {
+        "n": 25877,
+        "mae_m": 0.022882028791400867,
+        "p90_m": 0.050470533872706884,
+        "persistence_mae_m": 0.07148548904432508
+      },
+      "test": {
+        "n": 11539,
+        "mae_m": 0.07957136679243088,
+        "p90_m": 0.18061779166468298,
+        "persistence_mae_m": 0.2687113268047491
+      },
+      "changing_test": {
+        "n": 1531,
+        "mae_m": 0.26907666330944285,
+        "p90_m": 0.5869546087011877,
+        "persistence_mae_m": 0.8903265839320705
+      }
+    },
+    {
+      "lead_hours": 3,
+      "validation": {
+        "n": 25867,
+        "mae_m": 0.03384678469719539,
+        "p90_m": 0.07514865439151763,
+        "persistence_mae_m": 0.09460586848107627
+      },
+      "test": {
+        "n": 11527,
+        "mae_m": 0.12764305233937676,
+        "p90_m": 0.2900834490886394,
+        "persistence_mae_m": 0.3595575605101067
+      },
+      "changing_test": {
+        "n": 2444,
+        "mae_m": 0.3112529135367985,
+        "p90_m": 0.7365715003961881,
+        "persistence_mae_m": 0.9351923076923078
+      }
+    },
+    {
+      "lead_hours": 4,
+      "validation": {
+        "n": 25865,
+        "mae_m": 0.048859458821382054,
+        "p90_m": 0.10624973162084188,
+        "persistence_mae_m": 0.11565474579547651
+      },
+      "test": {
+        "n": 11515,
+        "mae_m": 0.18165842253926764,
+        "p90_m": 0.41225831208703306,
+        "persistence_mae_m": 0.4448797221016067
+      },
+      "changing_test": {
+        "n": 3416,
+        "mae_m": 0.351915364049099,
+        "p90_m": 0.8177614413633738,
+        "persistence_mae_m": 0.967324355971897
+      }
+    },
+    {
+      "lead_hours": 5,
+      "validation": {
+        "n": 25857,
+        "mae_m": 0.06719358612500051,
+        "p90_m": 0.1448716883684553,
+        "persistence_mae_m": 0.13441311830452105
+      },
+      "test": {
+        "n": 11503,
+        "mae_m": 0.24226746989287198,
+        "p90_m": 0.532355763330909,
+        "persistence_mae_m": 0.5238850734590976
+      },
+      "changing_test": {
+        "n": 4283,
+        "mae_m": 0.41302380633729957,
+        "p90_m": 0.903126060663881,
+        "persistence_mae_m": 1.0042937193555916
+      }
+    },
+    {
+      "lead_hours": 6,
+      "validation": {
+        "n": 25849,
+        "mae_m": 0.08535277225688313,
+        "p90_m": 0.1812886125838882,
+        "persistence_mae_m": 0.15077914039227822
+      },
+      "test": {
+        "n": 11491,
+        "mae_m": 0.3018273633262687,
+        "p90_m": 0.6249482251510011,
+        "persistence_mae_m": 0.5962118179444783
+      },
+      "changing_test": {
+        "n": 5049,
+        "mae_m": 0.47281967760296784,
+        "p90_m": 0.9625648821149408,
+        "persistence_mae_m": 1.0389819766290354
+      }
+    }
+  ],
+  "delayScenariosSeconds": [
+    [
+      0,
+      0
+    ],
+    [
+      1800,
+      1800
+    ],
+    [
+      3600,
+      3600
+    ],
+    [
+      5400,
+      5400
+    ],
+    [
+      0,
+      5400
+    ],
+    [
+      5400,
+      0
+    ]
+  ],
+  "limitations": [
+    "Retrospective availability stress; historical publication timestamps unknown.",
+    "Repeated delay scenarios are not independent observations.",
+    "No 2023/2024 extreme-flood validation; no guaranteed accuracy.",
+    "Observed levels only; rainfall forecasts and dam operations are not direct inputs."
+  ],
+  "inputs": {
+    "outputs/encantado-model-v1/raw/ana-86720000-2025.xml": "5e1db69bcc067c9ae29a95a6496a60713f77c94d6bf4313904f25143da4c3427",
+    "outputs/encantado-model-v1/raw/ana-86720000-2026.xml": "ade1611463a4cf3ab3356ebbef4d8d1a8c48b03eef8ba10e1553cba03a1857eb",
+    "outputs/mucum-propagacao-2026-09-21/raw/normalized-86510000.npz": "484238d46edbe6c83230520849f159d802a8f4dff635c5fc904bd1aefb0678b8"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "NOT_PROMOTED",
+  "reason": "Joint weighted centering corrects a fitting property but does not improve validation high-flow MAE of the current delta model, and does not solve extrapolation. Absolute-response variant improves its own biased baseline but remains worse than the current delta reference in validation floods.",
+  "max_weighted_training_bias_m3_s": 2.3664868924966998e-11,
+  "paired_target_sha256": "a69db06ba61d3016b5045e98a30c1248fe8bf9dbdb8d25dba9edfa783263a2bc",
+  "paired_target_counts": {
+    "reference_delta": 197206,
+    "weighted_delta": 197206,
+    "reference_absolute": 197206,
+    "weighted_absolute": 197206
+  },
+  "summary": [
+    {
+      "source": "julho",
+      "family": "reference_delta",
+      "validation_all_mae_m3_s": 81.98173597620702,
+      "validation_high_flow_mae_m3_s": 285.24054211498526,
+      "test_all_mae_m3_s": 169.23495875920005,
+      "test_high_flow_mae_m3_s": 437.98863562105976,
+      "current_11h_m3_s": 19341.990056527215,
+      "max_weighted_training_bias_m3_s": 17.70307063600155
+    },
+    {
+      "source": "julho",
+      "family": "weighted_delta",
+      "validation_all_mae_m3_s": 81.37415721109006,
+      "validation_high_flow_mae_m3_s": 285.3136372067361,
+      "test_all_mae_m3_s": 169.3003470950716,
+      "test_high_flow_mae_m3_s": 438.42206280110446,
+      "current_11h_m3_s": 19349.349004775137,
+      "max_weighted_training_bias_m3_s": 1.0380799481778609e-11
+    },
+    {
+      "source": "julho",
+      "family": "reference_absolute",
+      "validation_all_mae_m3_s": 176.23332499108534,
+      "validation_high_flow_mae_m3_s": 388.0200920355169,
+      "test_all_mae_m3_s": 173.8999513780995,
+      "test_high_flow_mae_m3_s": 432.1260322526423,
+      "current_11h_m3_s": 19091.764304959615,
+      "max_weighted_training_bias_m3_s": 148.8348017995273
+    },
+    {
+      "source": "julho",
+      "family": "weighted_absolute",
+      "validation_all_mae_m3_s": 75.14302575940448,
+      "validation_high_flow_mae_m3_s": 329.1720555600991,
+      "test_all_mae_m3_s": 161.29316374283331,
+      "test_high_flow_mae_m3_s": 433.56235600889823,
+      "current_11h_m3_s": 19189.782651201993,
+      "max_weighted_training_bias_m3_s": 2.3664868924966998e-11
+    },
+    {
+      "source": "carreiro",
+      "family": "reference_delta",
+      "validation_all_mae_m3_s": 13.52574915029846,
+      "validation_high_flow_mae_m3_s": 77.68591252027632,
+      "test_all_mae_m3_s": 29.678742992328818,
+      "test_high_flow_mae_m3_s": 78.20557806106852,
+      "current_11h_m3_s": 1781.2114130118036,
+      "max_weighted_training_bias_m3_s": 3.6648341764357497e-13
+    },
+    {
+      "source": "carreiro",
+      "family": "weighted_delta",
+      "validation_all_mae_m3_s": 13.52574915029846,
+      "validation_high_flow_mae_m3_s": 77.68591252027632,
+      "test_all_mae_m3_s": 29.678742992328818,
+      "test_high_flow_mae_m3_s": 78.20557806106852,
+      "current_11h_m3_s": 1781.2114130118036,
+      "max_weighted_training_bias_m3_s": 3.6648341764357497e-13
+    },
+    {
+      "source": "carreiro",
+      "family": "reference_absolute",
+      "validation_all_mae_m3_s": 14.930337945347382,
+      "validation_high_flow_mae_m3_s": 79.36745683887291,
+      "test_all_mae_m3_s": 59.45037760985053,
+      "test_high_flow_mae_m3_s": 137.63646101648098,
+      "current_11h_m3_s": 1990.3816256188418,
+      "max_weighted_training_bias_m3_s": 1.0009151908635686e-12
+    },
+    {
+      "source": "carreiro",
+      "family": "weighted_absolute",
+      "validation_all_mae_m3_s": 14.930337945347382,
+      "validation_high_flow_mae_m3_s": 79.36745683887291,
+      "test_all_mae_m3_s": 59.45037760985053,
+      "test_high_flow_mae_m3_s": 137.63646101648098,
+      "current_11h_m3_s": 1990.3816256188418,
+      "max_weighted_training_bias_m3_s": 1.0009151908635686e-12
+    }
+  ],
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

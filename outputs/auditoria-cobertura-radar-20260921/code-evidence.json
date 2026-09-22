@@ -1,0 +1,37 @@
+[
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+    "line": 91,
+    "text": "    X=np.column_stack(cols);phase=np.arange(0,len(t),4);times=t[phase];X=X[phase];H=base[phase];log=X.copy();log[:,rainidx]=np.log1p(np.maximum(log[:,rainidx],0))"
+  },
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+    "line": 114,
+    "text": "        lead=float(h+1);target=shift(truth,-int(lead*4))[phase];valid=np.isfinite(H)&np.isfinite(target)&np.all(np.isfinite(X[:,:24]),axis=1);delta=target-H"
+  },
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+    "line": 115,
+    "text": "        tr=np.where(valid&(times+lead*3600<start))[0];va=np.where(valid&(times>=start)&(times+lead*3600<valend))[0];te=np.where(valid&(times>=valend)&(times+lead*3600<today))[0];td=np.where(valid&(times>=today))[0];final=np.where(valid&(times+lead*3600<today))[0];w=1+2*(abs(delta)>=1)+2*(target>=9)"
+  },
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+    "line": 126,
+    "text": "            score,param=min(options);testp=fit(np.r_[tr,va],te,param);apply=np.r_[td,len(times)-1];current=fit(final,apply,param)"
+  },
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+    "line": 81,
+    "text": "    if not np.isfinite(H[-1]): raise ValueError('No current Muçum level')"
+  },
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+    "line": 91,
+    "text": "        valid=np.isfinite(H)&np.isfinite(target)&np.isfinite(X[:,:24]).all(axis=1)"
+  },
+  {
+    "file": "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+    "line": 97,
+    "text": "        value=float(model.predict(features[-1:])[0]+H[-1])"
+  }
+]

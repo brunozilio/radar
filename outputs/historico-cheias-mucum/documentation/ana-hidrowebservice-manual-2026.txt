@@ -1,0 +1,1155 @@
+
+--- PDF PAGE 1 ---
+  TUTORIAL DE SERVIÇO
+   PARA CONSUMO DE
+        DADOS – API
+     HidroWebService
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           Versão 20.02.2026
+
+
+--- PDF PAGE 2 ---
+Sumário
+1 - INSTRUÇÕES PARA AUTORIZAÇÃO DE BUSCA DE DADOS VIA API .......................... 1
+2 - INSTRUÇÕES SOBRE AUTENTICAÇAO .................................................................... 1
+3 – INSTRUÇÕES PARA CONSULTA DE DADOS ............................................................ 6
+ANEXO I - Exemplo de Consultas Manuais em Alguns dos Métodos Disponíveis no
+Serviço. .................................................................................................................... 9
+ANEXO II - Quadro mostrando os principais códigos de retorno/erro na resposta do
+serviço e quais as ações relacionadas. ..................................................................... 11
+ANEXO III - Exemplo de Requisição Automatizada em Java ..................................... 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            i
+
+
+--- PDF PAGE 3 ---
+1  - INSTRUÇÕES PARA                   AUTORIZAÇÃO DE BUSCA DE
+DADOS VIA API
+
+1.1 – Cadastro de acesso
+
+Os usuários que desejam acessar os dados  e informações da API,                 de forma
+automatizada, devem encaminhar e-mail para hidro@ana.gov.br, com o assunto
+“[Preencher  com  seu  CPF  ou  CNPJ]              - Solicitação  de  acesso  à  API
+HidroWebService para consumo de dados”.
+
+No corpo do e-mail, inclua uma breve explicação (em poucas linhas) sobre a
+motivação da solicitação e forneça as seguintes informações para o cadastro:
+
+Nome completo do usuário e instituição quando for o caso.
+
+   •   CPF ou CNPJ (que será utilizado como usuário)
+
+   •   Endereço de e-mail (será utilizado para o recebimento da senha de acesso)
+Após o recebimento do e-mail, nossa equipe irá avaliar sua solicitação e, caso todas
+as informações estejam corretas, o acesso à API será autorizado. Neste caso será
+encaminhado um e-mail informando sobre os detalhes do acesso.
+
+2 - INSTRUÇÕES SOBRE AUTENTICAÇAO
+
+Acessar o link: https://www.ana.gov.br/hidrowebservice/swagger-ui/index.html
+
+
+
+
+
+
+
+
+
+
+
+2.1 - Clicar em: “WS-EstacoesTelemetricasController”, para mostrar
+todas as rotas disponíveis.
+
+
+
+
+
+                                                                       Versão 20.02.2026
+
+
+--- PDF PAGE 4 ---
+2.2 – Visualize as rotas disponíveis para acesso e utilização.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.3 – Clicar em:                  /EstacoesTelemetricas/OAUth/v1                , para acessar
+e visualizar os campos a serem preenchidos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                2
+
+
+--- PDF PAGE 5 ---
+2.4 – Será mostrado um formulário para preenchimento das credenciais
+de  acesso     (identificador  e  senha)  do  usuário             (ver  item  1.1  para
+informações de como obtê-los).
+
+
+
+
+
+
+
+
+
+
+
+2.5 – Clique em “Try it out” para permitir a inserção dos parâmetros.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.6 – Após inserir os parâmetros clicar em “Execute” para submeter.
+
+
+
+
+
+
+
+                                         Preencha os dois campos
+                                                       obrigatórios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              3
+
+
+--- PDF PAGE 6 ---
+2.7 - O serviço deverá retornar as informações necessárias para
+autenticação (ver imagem abaixo).
+
+
+
+
+                                                                  Token
+
+
+
+
+
+O campo “tokenautenticação” possui validade de 60 minutos. Após esse período,
+uma nova requisição de autenticação deverá ser realizada para obter um token
+válido.
+Importante: A aplicação cliente deve gerenciar o ciclo de vida do token para
+evitar tentativas de autenticações desnecessárias. Requisições de autenticação em
+alta frequência são monitoradas e podem resultar no bloqueio automático do IP
+pelos sistemas de segurança da agência.
+
+2.8 – O conteúdo do campo 'tokenautenticacao' deverá ser copiado,
+sem aspas, para utilização na próxima etapa.
+
+
+
+
+
+
+
+
+
+2.9 – Em seguida, navegar até o topo da página e clicar em
+“Authorize”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              4
+
+
+--- PDF PAGE 7 ---
+2.10 – Colar o “tokenautenticacao” copiado e, em seguida, clique em
+“Authorize” para concluir o processo de autenticação.
+
+
+
+
+
+
+
+
+
+                                                   Cole o token de autenticação aqui
+
+
+
+
+2.11 – Após inserir o token, clicar em “Close” para finalizar o processo.
+A partir deste momento o serviço estará pronto para a realização das
+consultas e interação com os dados conforme necessário.
+
+
+
+
+
+
+
+
+
+
+
+2.12 – Para gerar um novo token de autenticação clicar primeiro em
+“Clear”, reinserir as credenciais e clicar em “Execute”. Repetir os
+passos 2.5 a 2.11 para completar o processo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                               5
+
+
+--- PDF PAGE 8 ---
+3 – INSTRUÇÕES PARA CONSULTA DE DADOS
+
+3.1 – Para realizar a consulta primeiro deve ser selecionado uma rota,
+como   por   exemplo   a   rota         “Series   Telemétricas   Detalhadas”:
+/EstacoesTelemetricasController/gethidroinfoanaserietelemetricaDetalhada/v1
+
+
+
+
+
+
+
+
+
+
+
+3.2 – Clicar em “Try it out” para habilitar a opção de preenchimento
+dos campos e iniciar o teste da funcionalidade.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          6
+
+
+--- PDF PAGE 9 ---
+3.3 – Preencher os campos “Código da Estação” e “Data de Busca” para
+realizar a consulta. Os demais campos devem ser preenchidos conforme
+a necessidade.
+
+
+
+
+
+
+                                                Campo obrigatório
+
+
+
+
+                                                Campo obrigatório
+
+
+
+
+
+
+Atenção!!! Se os campos não forem preenchidos, ou houver algum erro no seu
+preenchimento, não haverá retorno de registros.
+
+3.4 – Após preencher os campos obrigatórios, clicar em “Execute”
+para realizar a busca e visualizar os dados da estação.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            7
+
+
+--- PDF PAGE 10 ---
+3.5 – O resultado da busca será exibido na seção “Response body”,
+onde poderá visualizar todos os detalhes e informações da estação
+consultada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.6 - Os dados podem ser copiados ou baixados no formato JSON.
+
+
+
+
+
+
+
+
+
+
+                                                                            Baixar aqui
+                                                                 Copiar
+                                                                 Taqui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             8
+
+
+--- PDF PAGE 11 ---
+ANEXO I                -   Exemplo              de Consultas Manuais                              em Alguns                dos
+Métodos Disponíveis no Serviço.
+
+Consultando a rota HidroinfoanaSerieTelemetricaAdotada
+
+A seguir é apresentado um exemplo de realização de uma consulta as séries de
+dados das estações telemétricas, que transmitem em tempo quase-real.
+Selecionar         /EstacoesTelemetricas/HidroinfoanaSerieTelemetricaAdotada/v1
+e clicar no botão “Try it out”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Segue o resultado da consulta. Em amarelo é mostrado o significado dos campos.
+{
+  "status": "OK",
+  "code": 200,
+  "message": "Sucesso",
+  "items": [
+    {
+      "Chuva_Adotada": "0.00",  [Precipitação (mm)]
+      "Chuva_Adotada_Status": "0",         [Precipitação QC (0 = ok, 1 = suspeito, 2 = ruim)]
+      "Cota_Adotada": "781.00", [Cota (cm)]
+      "Cota_Adotada_Status": "0",          [Cota QC (0 = ok, 1 = suspeito, 2 = ruim)]
+      "Data_Atualizacao": "2024-01-02 00:28:03.307",    [DataHora da atualização do dado na base]
+      "Data_Hora_Medicao": "2024-01-01 23:00:00.0",   [DataHora da medição/coleta do dado]
+      "Vazao_Adotada": "13225.42",         [Vazão (m3/s)]
+      "Vazao_Adotada_Status": "0",         [Vazão QC (0 = ok, 1 = suspeito, 2 = ruim]
+      "codigoestacao": "15400000"          [Código da Estação]
+    },
+    {
+      "Chuva_Adotada": "0.00",
+      "Chuva_Adotada_Status": "0",
+      "Cota_Adotada": "781.00",
+      "Cota_Adotada_Status": "0",
+      "Data_Atualizacao": "2024-01-02 00:28:03.317",
+      "Data_Hora_Medicao": "2024-01-01 23:15:00.0",
+      "Vazao_Adotada": "13225.42",
+      "Vazao_Adotada_Status": "0",
+      "codigoestacao": "15400000"
+    },
+
+  ]
+}
+
+
+
+                                                                9
+
+
+--- PDF PAGE 12 ---
+Consultando a rota HidroInventarioEstacoes
+
+Selecione a rota                /EstacoesTelemetricas/HidroInventarioEstacoes/v1                                                e clique no
+botão “Try it out”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Segue o resultado da consulta. Em amarelo é mostrado o significado dos campos.
+{
+  "status": "OK",
+  "code": 200,
+  "message": "Sucesso",
+  "items": [
+    {
+      "Altitude": "42.88",
+      "Area_Drenagem": "976000.0",
+      "Bacia_Nome": "RIO AMAZONAS",
+      "Codigo_Adicional": "ANA",
+      "Codigo_Operadora_Unidade_UF": "1",
+      "Data_Periodo_Climatologica_Fim": null,
+      "Data_Periodo_Climatologica_Inicio": null,
+      "Data_Periodo_Desc_Liquida_Fim": null,
+      "Data_Periodo_Desc_liquida_Inicio": "1964-01-01 00:00:00.0",
+      "Data_Periodo_Telemetrica_Inicio": "2001-06-01 00:00:00.0",
+      ...
+      "Data_Ultima_Atualizacao": "2023-12-19 00:00:00.0    [DataHora da atualização na base]
+      "Estacao_Nome": "PORTO VELHO",            [Nome da Estação]
+      "Latitude": "-8.7483",                    [Latitude da Estação]
+      "Longitude": "-63.9169",                                  [Longitude da Estação]
+      "Municipio_Codigo": "1010000",            [Código hidro do município]
+      "Municipio_Nome": "PORTO VELHO", [Nome do município]
+      "Operadora_Codigo": "82",                                 [Código da operadora da estação]
+      "Operadora_Sigla": "CPRM",                [Entidade que Opera (faz a manutenção) da estação]
+      "Responsavel_Sigla": "ANA",               [Entidade Responsável pela Estação]
+      "UF_Estacao": "RO",                       [UF da Estação]
+      "UF_Nome_Estacao": "RONDÔNIA",            [Nome da Estação]
+      "codigobacia": "1",                       [Código da bacia hidrográfica (1 – 9)]
+      "codigoestacao": "15400000                [Nome da Estação]
+      "Operando": "1",                          [Ativo (SIM = 1)]
+      "Tipo_Estacao": "Fluviometrica",          [Tipo da Estação (Fluviométrica, Pluviométrica)]
+    }
+  ]
+}
+
+
+
+
+
+
+
+                                                                         10
+
+
+--- PDF PAGE 13 ---
+ANEXO         II  -  Quadro  mostrando  os               principais  códigos          de
+retorno/erro   na   resposta   do               serviço      e   quais   as   ações
+relacionadas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Se, mesmo seguindo todos os passos corretamente, as mensagens de erro acima
+forem exibidas, verifique os dados inseridos e repita o processo. Caso o problema
+persista, envie um e-mail para hidro@ana.gov.br relatando seu erro e com o título
+“[Seu CPF ou CNPJ] - Solicitação de suporte API HIDRO WEBSERVICE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            11
+
+
+--- PDF PAGE 14 ---
+ANEXO III - Exemplo de Requisição Automatizada em Java
+
+Estrutura de pastas
+
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── example/
+│   │           ├── config/
+│   │           │   └── ApiConfig.java
+│   │           ├── model/
+│   │           │   ├── DevolucaoVO.java
+│   │           │   ├── TokenModelVO.java
+│   │           │   └── TokenModelItemsVO.java
+│   │           ├── service/
+│   │           │   ├── HidroWebService.java
+│   │           │   └── TokenService.java
+│   │           └── App.java
+│   └── resources/
+│       └── application.properties
+└── test/
+    └── java/
+        └── com/
+            └── example/
+                └── AppTest.java
+
+
+Classes e Conteúdo
+
+1. ApiConfig.java - Responsável por manter configurações como URLs de API e outros parâmetros.
+
+package com.example.config;
+
+public class ApiConfig {
+    public static final String HIDRO_WEBSERVICE_URL =
+"https://www.ana.gov.br/hidrowebservice/EstacoesTelemetricas";
+}
+
+2. DevolucaoVO.java - Modelo de resposta.
+
+package com.example.model;
+
+import org.springframework.http.HttpStatus;
+
+public class DevolucaoVO {
+    private HttpStatus status;
+    private Integer code;
+    private String message;
+    private Object items;
+
+    // Getters e Setters
+}
+
+
+
+
+                                                             12
+
+
+--- PDF PAGE 15 ---
+3. TokenModelVO.java - Modelo de token.
+
+package com.example.model;
+
+public class TokenModelVO {
+    private String status;
+    private int code;
+    private String message;
+    private TokenModelItemsVO items;
+
+    // Getters e Setters
+}
+
+4. TokenModelItemsVO.java - Modelo para itens do token.
+
+package com.example.model;
+
+public class TokenModelItemsVO {
+    private String sucesso;
+    private String token;
+    private String validade;
+    private String retorno;
+    private String httpStatus;
+    private String link;
+    private String tokenValido;
+    private String tokenautenticacao;
+    private String respostaautenticacao;
+
+    // Getters e Setters
+}
+
+5. TokenService.java - Serviço para manipulação de tokens.
+
+package com.example.service;
+
+import com.example.config.ApiConfig;
+import com.example.model.TokenModelVO;
+import com.google.gson.Gson;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class TokenService {
+    public TokenModelVO getToken(String identificador, String senha) {
+        try {
+            var obj = new URL(ApiConfig.HIDRO_WEBSERVICE_URL + "/OAUth/v1");
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+            con.setRequestMethod("GET");
+            con.setRequestProperty("Identificador", identificador);
+            con.setRequestProperty("Senha", senha);
+
+            var in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            var response = new StringBuilder();
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+
+
+                                                                 13
+
+
+--- PDF PAGE 16 ---
+            in.close();
+
+            return new Gson().fromJson(response.toString(), TokenModelVO.class);
+        } catch (Exception e) {
+            return new TokenModelVO();
+        }
+    }
+}
+
+6. HidroWebService.java - Serviço principal para consumir os dados.
+
+package com.example.service;
+
+import com.example.config.ApiConfig;
+import com.example.model.DevolucaoVO;
+import com.google.gson.Gson;
+import org.apache.http.HttpHeaders;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+public class HidroWebService {
+    private final TokenService tokenService = new TokenService();
+
+    public void orquestra(String[] estacoes, int threadCount, String identificador, String senha) {
+        if (estacoes == null || estacoes.length == 0) {
+            System.out.println("Nenhuma estação para processar.");
+            return;
+        }
+
+        ExecutorService executor = Executors.newFixedThreadPool(threadCount);
+        var token = tokenService.getToken(identificador, senha);
+
+        if (token != null && token.getItems().getTokenAutenticacao() != null) {
+            Instant tokenCreationTime = token.getCreationTime();
+            CountDownLatch latch = new CountDownLatch(estacoes.length);
+
+            for (String estacao : estacoes) {
+                executor.submit(() -> {
+                    try {
+                        if (isTokenValid(tokenCreationTime)) {
+                            DevolucaoVO response = executeRoute(token.getItems().getTokenAutenticacao(),
+estacao);
+                            System.out.println("Response: " + response);
+                        } else {
+                            System.out.println("Token expirado. Interrompendo execução.");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Erro ao processar: " + e.getMessage());
+                    } finally {
+                        latch.countDown();
+                    }
+                });
+
+
+
+                                                                    14
+
+
+--- PDF PAGE 17 ---
+            }
+
+            try {
+                latch.await();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            } finally {
+                executor.shutdown();
+                try {
+                    if (!executor.awaitTermination(120, TimeUnit.SECONDS)) {
+                        executor.shutdownNow();
+                    }
+                } catch (InterruptedException e) {
+                    executor.shutdownNow();
+                    Thread.currentThread().interrupt();
+                }
+            }
+        } else {
+            System.out.println("Token inválido ou ausente.");
+        }
+    }
+
+    private boolean isTokenValid(Instant tokenCreationTime) {
+        // Verifica se o token foi criado há menos de 15 minutos
+        return Instant.now().isBefore(tokenCreationTime.plus(15, ChronoUnit.MINUTES));
+    }
+
+    private DevolucaoVO executeRoute(String token, String codigoEstacao) {
+        var gson = new Gson();
+        var devolucaoVO = new DevolucaoVO();
+        var url = ApiConfig.HIDRO_WEBSERVICE_URL +
+"/HidroinfoanaSerieTelemetricaAdotada/v1?CodigoDaEstacao="
+                + codigoEstacao +
+"&TipoFiltroData=DATA_LEITURA&RangeIntervaloDeBusca=DIAS_30";
+
+        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+            HttpGet httpGet = new HttpGet(url);
+            httpGet.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
+
+            try (CloseableHttpResponse response = httpClient.execute(httpGet)) {
+                int statusCode = response.getStatusLine().getStatusCode();
+                if (statusCode == 200) {
+                    if (response.getEntity() != null) {
+                        return gson.fromJson(EntityUtils.toString(response.getEntity()), DevolucaoVO.class);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Erro na requisição: " + e.getMessage());
+        }
+        return devolucaoVO;
+    }
+}
+
+7. App.java - Classe principal para executar a aplicação.
+
+package com.example;
+
+import com.example.service.HidroWebService;
+
+
+
+
+                                                                     15
+
+
+--- PDF PAGE 18 ---
+public class App {
+    public static void main(String[] args) {
+        HidroWebService service = new HidroWebService();
+        String[] estacoes = {"123", "456", "789"};
+        service.orquestra(estacoes, 5, "CNPJ", "SENHA");
+    }
+}
+
+8. application.properties - Arquivo para parâmetros configuráveis (caso necessário no futuro).
+
+# Configuração da URL da API
+hidro.webservice.url=https://www.ana.gov.br/hidrowebservice/EstacoesTelemetricas
+
+9. Teste Unitário
+
+Adicione testes em AppTest.java para garantir o funcionamento.
+Pronto!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                16

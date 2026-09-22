@@ -1,0 +1,1724 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/docs/monte-ablation-protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/artifact-hashes.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_monte_ablation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed code snapshot hydro_monte_ablation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed code snapshot hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed code snapshot hydro_hourly_models.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed code snapshot hydro_upstream_audit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_upstream_tree_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed code snapshot hydro_upstream_tree_experiment.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input hash /Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "executed code snapshot hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "protocol matches source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all expected input paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original manifest additional-features.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original manifest experiment.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original manifest frozen-models.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original manifest input-trace.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original manifest predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hourly grid match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "53 columns independently reproduced",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "additional_feature_names physical order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "removed columns exclusively Monte",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dimensions77to61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "protocol removes expected16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_nivelmontante:level",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_nivelmontante:change1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_nivelmontante:slope3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_nivelmontante:slope6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_niveljusante:level",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_niveljusante:change1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_niveljusante:slope3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag julho:val_niveljusante:slope6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_nivelmontante:level",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_nivelmontante:change1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_nivelmontante:slope3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_nivelmontante:slope6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_niveljusante:level",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_niveljusante:change1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_niveljusante:slope3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag monte:val_niveljusante:slope6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_nivelmontante:level",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_nivelmontante:change1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_nivelmontante:slope3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_nivelmontante:slope6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_niveljusante:level",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_niveljusante:change1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_niveljusante:slope3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source trace and lag castro:val_niveljusante:slope6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ablation retains exactly other61 columns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "48 models, only Julho",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no duplicate prediction keys",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "same family pairs and preserved original coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "both families same targets/high labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all predictions finite no lost coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original77 predictions reproduced",
+      "passed": true,
+      "detail": {
+        "max_absolute_difference_m3_s": 0.0,
+        "rows": 102108
+      }
+    },
+    {
+      "check": "0/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "0/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "0/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 5.06559336027427e-16
+      }
+    },
+    {
+      "check": "julho:0:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "0/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "0/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "0/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:0:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 6.21657747696325e-16
+      }
+    },
+    {
+      "check": "julho:0:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "1/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "1/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 8.666231065673477e-16
+      }
+    },
+    {
+      "check": "julho:1:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "1/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "1/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "1/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:1:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 4.8778835931143e-16
+      }
+    },
+    {
+      "check": "julho:1:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "2/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "2/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.524216008055649e-16
+      }
+    },
+    {
+      "check": "julho:2:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "2/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "2/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "2/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:2:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 1.2310824747257338e-15
+      }
+    },
+    {
+      "check": "julho:2:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "3/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "3/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 1.8980918873651747e-16
+      }
+    },
+    {
+      "check": "julho:3:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "3/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "3/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "3/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:3:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.9765911166231575e-16
+      }
+    },
+    {
+      "check": "julho:3:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "4/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "4/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 3.100622457821389e-16
+      }
+    },
+    {
+      "check": "julho:4:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "4/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "4/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "4/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:4:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.914390342153997e-16
+      }
+    },
+    {
+      "check": "julho:4:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "5/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "5/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.6580495809028336e-16
+      }
+    },
+    {
+      "check": "julho:5:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "5/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "5/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "5/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:5:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.5102146593363223e-16
+      }
+    },
+    {
+      "check": "julho:5:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "6/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "6/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 5.828997520563254e-16
+      }
+    },
+    {
+      "check": "julho:6:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "6/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "6/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "6/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:6:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.9933133645472876e-16
+      }
+    },
+    {
+      "check": "julho:6:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "7/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "7/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 3.167147670619431e-16
+      }
+    },
+    {
+      "check": "julho:7:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "7/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "7/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "7/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:7:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.76423148360863e-16
+      }
+    },
+    {
+      "check": "julho:7:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "8/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "8/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.933443220263091e-16
+      }
+    },
+    {
+      "check": "julho:8:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "8/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "8/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "8/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:8:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 5.213655399717011e-16
+      }
+    },
+    {
+      "check": "julho:8:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "9/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "9/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "9/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 3.693561660219137e-16
+      }
+    },
+    {
+      "check": "julho:9:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "9/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "9/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "9/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:9:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 4.956819967772275e-16
+      }
+    },
+    {
+      "check": "julho:9:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "10/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "10/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "10/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 4.425807212032767e-16
+      }
+    },
+    {
+      "check": "julho:10:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "10/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "10/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "10/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:10:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 5.96491557958037e-16
+      }
+    },
+    {
+      "check": "julho:10:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "11/validation: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "11/validation/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:validation:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:validation:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:validation:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "11/validation/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:validation:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:validation:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:validation:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 5.161860839136202e-16
+      }
+    },
+    {
+      "check": "julho:11:validation:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "11/test: strict train cutoff and counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "11/test/level_and_slopes: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:test:level_and_slopes: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:test:level_and_slopes: original frozen model content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:test:level_and_slopes: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "11/test/without_monte: independent partition exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:test:without_monte: model dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:test:without_monte: training-only preprocessing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "julho:11:test:without_monte: frozen solution matches alpha1000 weighted normal equation",
+      "passed": true,
+      "detail": {
+        "relative_residual": 2.610547702894683e-16
+      }
+    },
+    {
+      "check": "julho:11:test:without_monte: independent inference",
+      "passed": true,
+      "detail": {
+        "max_difference_m3_s": 0.0
+      }
+    },
+    {
+      "check": "all audited inputs remain unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/experiment.json": "bd9df1d10b81a1fa46495a06175c7f308f96f997a7d8d95133685fd653f62293",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/protocol.json": "1cd0b2e3142704215f9b993507bf2694197b6fd0aaba820667d46269709e9c6a",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/experiment.json": "f16f5007d45f9a04f17a5d3a5256c1d7ae199d6b89aaefe248feda6d6467648d",
+    "/Users/brunozilio/Documents/radar/docs/monte-ablation-protocol.json": "1cd0b2e3142704215f9b993507bf2694197b6fd0aaba820667d46269709e9c6a",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz": "c8c3fa62bd28850e767d921cd3743edb304b84d11c3b9d3ed48189b5207a4314",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json": "114cf5fc7cc8b0c1196a5b8a879e91395548e337c0f2d583651a151e48c9225e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/predictions.csv": "1921f44b91dbee97cb858e211ab50c1da6ed5d262dada05fb0bd43017d4a254e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/artifact-hashes.json": "bcd3acfc67e6765040165930c2d3ad941ed807673c16ed79af8e15df8944f2d9",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_monte_ablation.py": "c110d5de4eb95c25ea9db50260c43d67664bef04beda7bdd171daa31553a2042",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/code/hydro_monte_ablation.py": "c110d5de4eb95c25ea9db50260c43d67664bef04beda7bdd171daa31553a2042",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py": "2c265b53228f8345a05de279c09c8f324f4025d641ed948b43619a4f477cb85c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/code/hydro_hourly_forecast.py": "2c265b53228f8345a05de279c09c8f324f4025d641ed948b43619a4f477cb85c",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py": "b12cea013b4f580b73c3adbf179140b9fc19618c55c849098c674c83badcd9ac",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/code/hydro_hourly_models.py": "b12cea013b4f580b73c3adbf179140b9fc19618c55c849098c674c83badcd9ac",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/code/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_tree_experiment.py": "4308f9f29f92b2db83ffbaa47f40e7dcaaaea763bc5a37a0dc46530ed537923b",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/code/hydro_upstream_tree_experiment.py": "4308f9f29f92b2db83ffbaa47f40e7dcaaaea763bc5a37a0dc46530ed537923b",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/code/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/input-trace.csv": "8f59b69a54124d3e91e86ac1c24ee2234a4bfaad9b5e79d34c19d031303ff67a",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/frozen-models.json": "a33f840bdcae6517b26c282c04d180a30f020ccf6fde22db7474b518df104b86",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/predictions.csv": "9b0cb5c60865d43938a5c4138d10459ecb6881171aa630bf2c50ed559d598fd9",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/training.csv": "3f319acd2aa61e761d9044b70aefe7cf4f30b0957624c2b036bc39a076968d4f"
+  },
+  "prediction_rows": 204216,
+  "rows_per_family": 102108,
+  "models77": 24,
+  "models61": 24,
+  "original_reproduction_max_m3_s": 0.0,
+  "independent_inference_max_m3_s": 0.0,
+  "normal_equation_max_relative_residual": 1.2310824747257338e-15,
+  "fitted_here": false,
+  "metrics_calculated": false,
+  "causality_certified": false,
+  "limitations": [
+    "Original historical publication and source latency are assumed.",
+    "Monte columns removed are direct predictors; other sources can retain physically correlated information.",
+    "Original evaluation.csv helper emits n/MAE/bias/P90; the main agent has supplied evaluation-extended.csv with RMSE/P98/maximum. This audit does not recalculate performance metrics.",
+    "Previously inspected development periods are not an independent holdout."
+  ],
+  "created_at_utc": "2026-09-21T23:16:19.193126+00:00"
+}

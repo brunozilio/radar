@@ -6,6 +6,8 @@ import {
   severityFor,
 } from "@/lib/hydro";
 
+import { readLevelHistory } from "@/lib/river-levels";
+
 export const dynamic = "force-dynamic";
 
 type LevelRow = {
@@ -58,18 +60,6 @@ export async function GET(request: Request) {
         DCRS_SENSOR.code,
       ) as LevelRow[];
 
-    const saceStatement = database.prepare(`
-      SELECT timestamp, level
-      FROM sace_readings
-      WHERE station = ?
-        AND julianday(timestamp) >= (
-          SELECT MAX(julianday(timestamp)) - (? / 24.0)
-          FROM sace_readings
-          WHERE station = ?
-        )
-      ORDER BY julianday(timestamp) ASC
-    `);
-
     const stations = [
       {
         ...DCRS_SENSOR,
@@ -79,11 +69,7 @@ export async function GET(request: Request) {
         severity: "unavailable",
       },
       ...SACE_LEVEL_SENSORS.map((sensor) => {
-        const history = saceStatement.all(
-          sensor.code,
-          historyHours,
-          sensor.code,
-        ) as LevelRow[];
+        const history = readLevelHistory(database, sensor.code, historyHours);
         const current = history.at(-1) || null;
         const thresholds =
           SACE_STATIONS.find((station) => station.code === sensor.code)
@@ -93,7 +79,7 @@ export async function GET(request: Request) {
           code: sensor.code,
           city: sensor.city,
           name: sensor.name,
-          source: "SACE/SGB",
+          source: current?.source ?? "ANA/SNIRH + SACE/SGB",
           current,
           history,
           thresholds,

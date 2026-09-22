@@ -1,0 +1,366 @@
+{
+  "audited_at": "2026-09-21T18:58:56.618590-03:00",
+  "timezone": "UTC-03 assumed consistently with frozen parser; no new historical contract verification",
+  "units": {
+    "raw_level": "cm",
+    "normalized_level": "m",
+    "flow": "m3/s"
+  },
+  "no_imputation": true,
+  "source_xml": [
+    {
+      "path": "outputs/mucum-12h-2026-09-21/raw/ana-86500000-fresh.xml",
+      "rows": 151,
+      "duplicates": 0,
+      "start": "2026-09-20T00:00:00-03:00",
+      "end": "2026-09-21T13:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 151
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86500000-fresh.xml",
+      "rows": 155,
+      "duplicates": 0,
+      "start": "2026-09-20T00:00:00-03:00",
+      "end": "2026-09-21T14:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 155
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-auditoria-2026-09-21/raw/ana-86500000-fresh.xml",
+      "rows": 151,
+      "duplicates": 0,
+      "start": "2026-09-20T00:00:00-03:00",
+      "end": "2026-09-21T13:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 151
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-chuva-tempo-2026-09-21/raw/ana-86500000-fresh.xml",
+      "rows": 155,
+      "duplicates": 0,
+      "start": "2026-09-20T00:00:00-03:00",
+      "end": "2026-09-21T14:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 155
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T165444-0300/raw/ana-86500000-fresh.xml",
+      "rows": 739,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 739
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T165608-0300/raw/ana-86500000-fresh.xml",
+      "rows": 739,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 739
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T170134-0300/raw/ana-86500000-fresh.xml",
+      "rows": 739,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 739
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T172707-0300/raw/ana-86500000-fresh.xml",
+      "rows": 739,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 739
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T172707-retry/raw/ana-86500000-fresh.xml",
+      "rows": 739,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 739
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T180020-0300/raw/ana-86500000-fresh.xml",
+      "rows": 743,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T17:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 743
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T183305-0300/raw/ana-86500000-fresh.xml",
+      "rows": 743,
+      "duplicates": 0,
+      "start": "2026-09-14T00:00:00-03:00",
+      "end": "2026-09-21T17:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 743
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000-2025.xml",
+      "rows": 26372,
+      "duplicates": 0,
+      "start": "2025-04-01T00:00:00-03:00",
+      "end": "2025-12-31T23:45:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 26343,
+        "None": 28,
+        "Dado suspeito": 1
+      },
+      "q_empty": 28
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000-latest.xml",
+      "rows": 147,
+      "duplicates": 0,
+      "start": "2026-09-20T00:00:00-03:00",
+      "end": "2026-09-21T12:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 147
+      },
+      "q_empty": 0
+    },
+    {
+      "path": "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000.xml",
+      "rows": 23363,
+      "duplicates": 0,
+      "start": "2026-01-01T07:00:00-03:00",
+      "end": "2026-09-21T12:30:00-03:00",
+      "q_qc_counts": {
+        "Dado aprovado": 23175,
+        "None": 179,
+        "Dado suspeito": 9
+      },
+      "q_empty": 179
+    }
+  ],
+  "cache_reproduction_differences": 0,
+  "frozen_raw_q_reproduction_differences": 0,
+  "xml_version_difference_timestamps": 0,
+  "missing_quarter_hours": {
+    "full": {
+      "total": 2183,
+      "with_approved_level": 34,
+      "with_any_numeric_raw_level": 60,
+      "classes": {
+        "no_exact_record": 1966,
+        "q_empty": 207,
+        "q_qc_rejected": 10
+      },
+      "approved_q_other_version": 2
+    },
+    "evaluation": {
+      "total": 1031,
+      "with_approved_level": 34,
+      "with_any_numeric_raw_level": 50,
+      "classes": {
+        "no_exact_record": 855,
+        "q_empty": 176
+      },
+      "approved_q_other_version": 0
+    },
+    "evaluation_with_prefix": {
+      "total": 1129,
+      "with_approved_level": 34,
+      "with_any_numeric_raw_level": 50,
+      "classes": {
+        "no_exact_record": 953,
+        "q_empty": 176
+      },
+      "approved_q_other_version": 0
+    }
+  },
+  "failure_pairs": 4122,
+  "failed_origins": 344,
+  "distinct_missing_dependencies": 512,
+  "failure_pairs_explained_by_dependencies": 4122,
+  "dependency_classes": {
+    "no_exact_record": 425,
+    "q_empty": 87
+  },
+  "later_normalized_archives": [
+    {
+      "path": "outputs/mucum-hourly-20260921T172707-0300/history/ana-86500000.npz",
+      "start": "2025-04-01T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "frozen_missing_q_now_finite": 2,
+      "recovered_times": [
+        "2026-09-21T14:45:00-03:00",
+        "2026-09-21T15:00:00-03:00"
+      ]
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T172707-retry/history/ana-86500000.npz",
+      "start": "2025-04-01T00:00:00-03:00",
+      "end": "2026-09-21T16:30:00-03:00",
+      "frozen_missing_q_now_finite": 2,
+      "recovered_times": [
+        "2026-09-21T14:45:00-03:00",
+        "2026-09-21T15:00:00-03:00"
+      ]
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T180020-0300/history/ana-86500000.npz",
+      "start": "2025-04-01T00:00:00-03:00",
+      "end": "2026-09-21T17:30:00-03:00",
+      "frozen_missing_q_now_finite": 2,
+      "recovered_times": [
+        "2026-09-21T14:45:00-03:00",
+        "2026-09-21T15:00:00-03:00"
+      ]
+    },
+    {
+      "path": "outputs/mucum-hourly-20260921T183305-0300/history/ana-86500000.npz",
+      "start": "2025-04-01T00:00:00-03:00",
+      "end": "2026-09-21T17:30:00-03:00",
+      "frozen_missing_q_now_finite": 2,
+      "recovered_times": [
+        "2026-09-21T14:45:00-03:00",
+        "2026-09-21T15:00:00-03:00"
+      ]
+    }
+  ],
+  "input_manifest": {
+    "outputs/mucum-12h-2026-09-21/raw/ana-86500000-fresh.xml": {
+      "sha256": "c9d65783d17aed4a1d9897d3e1e0f55f3dce33f6e910f8dc91d554a98b88b3d7",
+      "bytes": 127703
+    },
+    "outputs/mucum-atualizacao-15h-2026-09-21/raw/ana-86500000-fresh.xml": {
+      "sha256": "4e99b44a80a39f045e0fc5f0e258f50a5b6d76ac52bec5d41649d997fbd918eb",
+      "bytes": 131035
+    },
+    "outputs/mucum-auditoria-2026-09-21/raw/ana-86500000-fresh.xml": {
+      "sha256": "c9d65783d17aed4a1d9897d3e1e0f55f3dce33f6e910f8dc91d554a98b88b3d7",
+      "bytes": 127703
+    },
+    "outputs/mucum-chuva-tempo-2026-09-21/raw/ana-86500000-fresh.xml": {
+      "sha256": "4e99b44a80a39f045e0fc5f0e258f50a5b6d76ac52bec5d41649d997fbd918eb",
+      "bytes": 131035
+    },
+    "outputs/mucum-hourly-20260921T165444-0300/raw/ana-86500000-fresh.xml": {
+      "sha256": "e41676aaa42fd5794716af8574e860df772339596789cb8a3c1942ba893e8aad",
+      "bytes": 616898
+    },
+    "outputs/mucum-hourly-20260921T165608-0300/raw/ana-86500000-fresh.xml": {
+      "sha256": "e41676aaa42fd5794716af8574e860df772339596789cb8a3c1942ba893e8aad",
+      "bytes": 616898
+    },
+    "outputs/mucum-hourly-20260921T170134-0300/raw/ana-86500000-fresh.xml": {
+      "sha256": "e41676aaa42fd5794716af8574e860df772339596789cb8a3c1942ba893e8aad",
+      "bytes": 616898
+    },
+    "outputs/mucum-hourly-20260921T172707-0300/raw/ana-86500000-fresh.xml": {
+      "sha256": "e41676aaa42fd5794716af8574e860df772339596789cb8a3c1942ba893e8aad",
+      "bytes": 616898
+    },
+    "outputs/mucum-hourly-20260921T172707-retry/raw/ana-86500000-fresh.xml": {
+      "sha256": "e41676aaa42fd5794716af8574e860df772339596789cb8a3c1942ba893e8aad",
+      "bytes": 616898
+    },
+    "outputs/mucum-hourly-20260921T180020-0300/raw/ana-86500000-fresh.xml": {
+      "sha256": "a85c352069da39b7be7aed0519600f14bc0bb00313267b5aca8a54817d7e84c4",
+      "bytes": 620230
+    },
+    "outputs/mucum-hourly-20260921T183305-0300/raw/ana-86500000-fresh.xml": {
+      "sha256": "a85c352069da39b7be7aed0519600f14bc0bb00313267b5aca8a54817d7e84c4",
+      "bytes": 620230
+    },
+    "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000-2025.xml": {
+      "sha256": "e1f72368ab14a8623238252b5b3071435b357a9c533d7e7c1611fb4e35b35dfe",
+      "bytes": 21996906
+    },
+    "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000-latest.xml": {
+      "sha256": "9296e7a588b7c5ebdd3c57f45c8cdbac6d587de06e7ab12755987b2b7e3866d7",
+      "bytes": 124371
+    },
+    "outputs/mucum-propagacao-2026-09-21/raw/ana-86500000.xml": {
+      "sha256": "831a9b929103163c725d27f5419cba5e3064feb2b9a9bfd24f075a1242fded61",
+      "bytes": 19393750
+    },
+    "outputs/mucum-propagacao-2026-09-21/raw/normalized-86500000.npz": {
+      "sha256": "373bebcb75e847ce1aaf7fc5af7ae681ce473c89f778f7b6cb7768b09c637f8b",
+      "bytes": 223167
+    },
+    "outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": {
+      "sha256": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+      "bytes": 6810800
+    },
+    "outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": {
+      "sha256": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+      "bytes": 393982
+    },
+    "outputs/experimento-niveis-ate-mucum-pesos-zero-20260921/failure-causes.csv": {
+      "sha256": "300517d6cc34c78ac4d96cc000920ef490eb19f5ea415a5d1cb53b875e3496fe",
+      "bytes": 547069
+    },
+    "outputs/experimento-niveis-ate-mucum-pesos-zero-20260921/failure-causes.json": {
+      "sha256": "3a2ddf1efae19e88965801761fa4f90e43de1340a51edbf413ecd38a9b3d5c45",
+      "bytes": 1102
+    },
+    "outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv": {
+      "sha256": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6",
+      "bytes": 2224
+    },
+    "outputs/mucum-hourly-20260921T172707-0300/history/ana-86500000.npz": {
+      "sha256": "89a153940885e8831346d165dba9997223a191c038c53d7958db5766d1afb2c0",
+      "bytes": 223376
+    },
+    "outputs/mucum-hourly-20260921T172707-retry/history/ana-86500000.npz": {
+      "sha256": "89a153940885e8831346d165dba9997223a191c038c53d7958db5766d1afb2c0",
+      "bytes": 223376
+    },
+    "outputs/mucum-hourly-20260921T180020-0300/history/ana-86500000.npz": {
+      "sha256": "56671616effe1372bdf70f5849753d8c349e0bda52e25af326b18222a4c23a2c",
+      "bytes": 223418
+    },
+    "outputs/mucum-hourly-20260921T183305-0300/history/ana-86500000.npz": {
+      "sha256": "56671616effe1372bdf70f5849753d8c349e0bda52e25af326b18222a4c23a2c",
+      "bytes": 223418
+    },
+    "scripts/hydro_routing_data.py": {
+      "sha256": "a506817e1a7766c9a7578446b005e92e29fca2986fb3ce498a534af7f748d9db",
+      "bytes": 10352
+    },
+    "scripts/hydro_latency_forecast.py": {
+      "sha256": "021e26a9ac36b6d92a8773f20139e0d3bb8e470a3777ef509c5327dc823e3b32",
+      "bytes": 12523
+    },
+    "scripts/hydro_model.py": {
+      "sha256": "815bb34ba33bb9ec452558312f7220e5a9ac8171bdae69597324a3eb3ecd9ada",
+      "bytes": 18311
+    }
+  }
+}

@@ -1,0 +1,1291 @@
+{
+  "created_at": "2026-09-21T21:00:12.443090+00:00",
+  "event": "2023-09 Taquari-Antas",
+  "status": "AUDIT_ONLY_NO_NEW_HOLDOUT_CLAIM",
+  "previous_exposure": "Sep5 Muçum sample and SGB2023 peak/marks already inspected in previous research",
+  "interpolation": "NONE",
+  "training": "NONE",
+  "ana": {
+    "station": "86510000",
+    "window_id": "ana-mucum",
+    "start_inclusive_source_naive": "2023-09-01T00:00:00",
+    "stop_exclusive_source_naive": "2023-10-01T00:00:00",
+    "role": "AUDIT_ONLY_UNASSIGNED_NO_TRAIN_TEST_ALLOCATION",
+    "timestamp_timezone": "Assumed UTC-03; official convention pending; preserve original naive timestamp",
+    "datum": "Unverified; gauge zero, relocation and validity metadata pending",
+    "rating_curve_and_cross_sections": "Not collected; official validity metadata pending",
+    "raw_rows": 2364,
+    "unique_valid_timestamp_rows": 2364,
+    "rejected_rows": 0,
+    "duplicate_rows": 0,
+    "conflicting_timestamps": [],
+    "nominal_grid_minutes": 15,
+    "expected_grid_slots": 2880,
+    "grid_counts": {
+      "approved": 2023,
+      "suspect": 11,
+      "unavailable_or_other_qc": 330,
+      "no_record": 516
+    },
+    "off_grid_records": 0,
+    "level_counts": {
+      "approved": 2023,
+      "suspect": 11,
+      "unavailable_or_other_qc": 330
+    },
+    "variables": {
+      "ChuvaAcumAdotada": {
+        "numeric_count": 2350,
+        "missing_or_nonfinite": 14,
+        "qc_counts": {
+          "Dado aprovado": 2350,
+          "MISSING_QC": 14
+        },
+        "approved_numeric_count": 2350,
+        "min": 0.0,
+        "max": 695.6
+      },
+      "ChuvaFinal": {
+        "numeric_count": 2350,
+        "missing_or_nonfinite": 14,
+        "qc_counts": {
+          "Dado aprovado": 2350,
+          "MISSING_QC": 14
+        },
+        "approved_numeric_count": 2350,
+        "min": 0.0,
+        "max": 17.2
+      },
+      "NivelSensor": {
+        "numeric_count": 2036,
+        "missing_or_nonfinite": 328,
+        "qc_counts": {
+          "Dado aprovado": 2023,
+          "Dado suspeito": 11,
+          "MISSING_QC": 328,
+          "Dado reprovado": 2
+        },
+        "approved_numeric_count": 2023,
+        "min": 84.0,
+        "max": 65501.0
+      },
+      "NivelDisplay": {
+        "numeric_count": 6,
+        "missing_or_nonfinite": 2358,
+        "qc_counts": {
+          "MISSING_QC": 2358,
+          "Dado aprovado": 5,
+          "Dado suspeito": 1
+        },
+        "approved_numeric_count": 5,
+        "min": 104.0,
+        "max": 1846.0
+      },
+      "NivelManual": {
+        "numeric_count": 0,
+        "missing_or_nonfinite": 2364,
+        "qc_counts": {
+          "MISSING_QC": 2364
+        },
+        "approved_numeric_count": 0,
+        "min": null,
+        "max": null
+      },
+      "NivelFinal": {
+        "numeric_count": 2034,
+        "missing_or_nonfinite": 330,
+        "qc_counts": {
+          "Dado aprovado": 2023,
+          "Dado suspeito": 11,
+          "MISSING_QC": 330
+        },
+        "approved_numeric_count": 2023,
+        "min": 84.0,
+        "max": 2179.0
+      },
+      "VazaoFinal": {
+        "numeric_count": 2034,
+        "missing_or_nonfinite": 330,
+        "qc_counts": {
+          "Dado aprovado": 2023,
+          "Dado suspeito": 11,
+          "MISSING_QC": 330
+        },
+        "approved_numeric_count": 2023,
+        "min": 33.8,
+        "max": 10635.0
+      }
+    },
+    "interpolation": "NONE",
+    "next_official_source": "https://www.snirh.gov.br/hidroweb/serieshistoricas?codigoEstacao=86510000",
+    "official_geometry_api_docs": "https://www.ana.gov.br/hidrowebservice/swagger-ui/index.html"
+  },
+  "ons": [
+    {
+      "reservoir_id": "JIUHQJ",
+      "name": "14 DE JULHO",
+      "codes_in_file": [
+        99.0
+      ],
+      "rows": 714,
+      "expected_hours": 720,
+      "missing_rows": 6,
+      "missing_row_runs": [
+        {
+          "start_hour_end": "2023-09-18 02:00:00",
+          "end_hour_end": "2023-09-18 03:00:00",
+          "hours": 2
+        },
+        {
+          "start_hour_end": "2023-09-18 07:00:00",
+          "end_hour_end": "2023-09-18 09:00:00",
+          "hours": 3
+        },
+        {
+          "start_hour_end": "2023-09-19 16:00:00",
+          "end_hour_end": "2023-09-19 16:00:00",
+          "hours": 1
+        }
+      ],
+      "first_original": "2023-09-01 01:00:00",
+      "last_original": "2023-09-30 23:59:00",
+      "duplicate_timestamps": 0,
+      "timestamps2359": 30,
+      "variables": {
+        "val_nivelmontante": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 103.06,
+          "max": 109.58,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_niveljusante": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 68.45,
+          "max": 91.15,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_volumeutil": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 6.0,
+          "max": 807.54,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaoafluente": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 3.0,
+          "max": 15210.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaodefluente": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 28.0,
+          "max": 15114.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaoturbinada": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 83,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 358.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 02:00:00",
+              "end_hour_end": "2023-09-01 16:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2023-09-02 02:00:00",
+              "end_hour_end": "2023-09-02 12:00:00",
+              "hours": 11
+            },
+            {
+              "start_hour_end": "2023-09-04 13:00:00",
+              "end_hour_end": "2023-09-06 08:00:00",
+              "hours": 44
+            },
+            {
+              "start_hour_end": "2023-09-10 08:00:00",
+              "end_hour_end": "2023-09-10 15:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2023-09-17 09:00:00",
+              "end_hour_end": "2023-09-17 13:00:00",
+              "hours": 5
+            }
+          ]
+        },
+        "val_vazaovertida": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 67,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 15074.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-03 19:00:00",
+              "hours": 67
+            }
+          ]
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 27.0,
+          "max": 40.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaotransferida": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 714,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 0.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-18 01:00:00",
+              "hours": 409
+            },
+            {
+              "start_hour_end": "2023-09-18 04:00:00",
+              "end_hour_end": "2023-09-18 06:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-18 10:00:00",
+              "end_hour_end": "2023-09-19 15:00:00",
+              "hours": 30
+            },
+            {
+              "start_hour_end": "2023-09-19 17:00:00",
+              "end_hour_end": "2023-10-01 00:00:00",
+              "hours": 272
+            }
+          ]
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 82,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 601.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-03 19:00:00",
+              "hours": 67
+            },
+            {
+              "start_hour_end": "2023-09-10 09:00:00",
+              "end_hour_end": "2023-09-10 16:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2023-09-17 08:00:00",
+              "end_hour_end": "2023-09-17 13:00:00",
+              "hours": 6
+            },
+            {
+              "start_hour_end": "2023-09-19 18:00:00",
+              "end_hour_end": "2023-09-19 18:00:00",
+              "hours": 1
+            }
+          ]
+        }
+      },
+      "balance_complete_rows": 714,
+      "balance_abs_residual_gt1": 0,
+      "zeroQ_positive_components": 0
+    },
+    {
+      "reservoir_id": "JIUHMC",
+      "name": "MONTE CLARO",
+      "codes_in_file": [
+        98.0
+      ],
+      "rows": 714,
+      "expected_hours": 720,
+      "missing_rows": 6,
+      "missing_row_runs": [
+        {
+          "start_hour_end": "2023-09-18 02:00:00",
+          "end_hour_end": "2023-09-18 03:00:00",
+          "hours": 2
+        },
+        {
+          "start_hour_end": "2023-09-18 07:00:00",
+          "end_hour_end": "2023-09-18 09:00:00",
+          "hours": 3
+        },
+        {
+          "start_hour_end": "2023-09-19 16:00:00",
+          "end_hour_end": "2023-09-19 16:00:00",
+          "hours": 1
+        }
+      ],
+      "first_original": "2023-09-01 01:00:00",
+      "last_original": "2023-09-30 23:59:00",
+      "duplicate_timestamps": 0,
+      "timestamps2359": 30,
+      "variables": {
+        "val_nivelmontante": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 147.0,
+          "max": 156.02,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_niveljusante": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 104.6,
+          "max": 125.84,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_volumeutil": {
+          "present": 704,
+          "missing": 10,
+          "zeros": 11,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 898.48,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-04 16:00:00",
+              "end_hour_end": "2023-09-05 01:00:00",
+              "hours": 10
+            },
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-01 02:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-01 23:00:00",
+              "end_hour_end": "2023-09-02 03:00:00",
+              "hours": 5
+            },
+            {
+              "start_hour_end": "2023-09-03 09:00:00",
+              "end_hour_end": "2023-09-03 12:00:00",
+              "hours": 4
+            }
+          ]
+        },
+        "val_vazaoafluente": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 19.0,
+          "max": 14823.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaodefluente": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 19.0,
+          "max": 14807.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaoturbinada": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 83,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 362.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 02:00:00",
+              "end_hour_end": "2023-09-01 16:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2023-09-02 02:00:00",
+              "end_hour_end": "2023-09-02 12:00:00",
+              "hours": 11
+            },
+            {
+              "start_hour_end": "2023-09-04 12:00:00",
+              "end_hour_end": "2023-09-05 23:00:00",
+              "hours": 36
+            },
+            {
+              "start_hour_end": "2023-09-06 02:00:00",
+              "end_hour_end": "2023-09-06 09:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2023-09-10 08:00:00",
+              "end_hour_end": "2023-09-10 15:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2023-09-17 09:00:00",
+              "end_hour_end": "2023-09-17 13:00:00",
+              "hours": 5
+            }
+          ]
+        },
+        "val_vazaovertida": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 65,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 14784.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-03 17:00:00",
+              "hours": 65
+            }
+          ]
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 6.0,
+          "max": 22.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaotransferida": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 714,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 0.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-18 01:00:00",
+              "hours": 409
+            },
+            {
+              "start_hour_end": "2023-09-18 04:00:00",
+              "end_hour_end": "2023-09-18 06:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-18 10:00:00",
+              "end_hour_end": "2023-09-19 15:00:00",
+              "hours": 30
+            },
+            {
+              "start_hour_end": "2023-09-19 17:00:00",
+              "end_hour_end": "2023-10-01 00:00:00",
+              "hours": 272
+            }
+          ]
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 3.0,
+          "max": 498.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        }
+      },
+      "balance_complete_rows": 714,
+      "balance_abs_residual_gt1": 0,
+      "zeroQ_positive_components": 0
+    },
+    {
+      "reservoir_id": "JIUHCA",
+      "name": "CASTRO ALVES",
+      "codes_in_file": [
+        97.0
+      ],
+      "rows": 714,
+      "expected_hours": 720,
+      "missing_rows": 6,
+      "missing_row_runs": [
+        {
+          "start_hour_end": "2023-09-18 02:00:00",
+          "end_hour_end": "2023-09-18 03:00:00",
+          "hours": 2
+        },
+        {
+          "start_hour_end": "2023-09-18 07:00:00",
+          "end_hour_end": "2023-09-18 09:00:00",
+          "hours": 3
+        },
+        {
+          "start_hour_end": "2023-09-19 16:00:00",
+          "end_hour_end": "2023-09-19 16:00:00",
+          "hours": 1
+        }
+      ],
+      "first_original": "2023-09-01 01:00:00",
+      "last_original": "2023-09-30 23:59:00",
+      "duplicate_timestamps": 0,
+      "timestamps2359": 30,
+      "variables": {
+        "val_nivelmontante": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 239.0,
+          "max": 246.85,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_niveljusante": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 143.31,
+          "max": 162.98,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_volumeutil": {
+          "present": 706,
+          "missing": 8,
+          "zeros": 7,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 842.64,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-04 16:00:00",
+              "end_hour_end": "2023-09-04 23:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 21:00:00",
+              "end_hour_end": "2023-09-02 03:00:00",
+              "hours": 7
+            }
+          ]
+        },
+        "val_vazaoafluente": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 13.0,
+          "max": 9783.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaodefluente": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 18.0,
+          "max": 9636.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaoturbinada": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 59,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 165.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 02:00:00",
+              "end_hour_end": "2023-09-01 16:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2023-09-02 02:00:00",
+              "end_hour_end": "2023-09-02 13:00:00",
+              "hours": 12
+            },
+            {
+              "start_hour_end": "2023-09-04 13:00:00",
+              "end_hour_end": "2023-09-05 13:00:00",
+              "hours": 25
+            },
+            {
+              "start_hour_end": "2023-09-10 08:00:00",
+              "end_hour_end": "2023-09-10 09:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-17 09:00:00",
+              "end_hour_end": "2023-09-17 13:00:00",
+              "hours": 5
+            }
+          ]
+        },
+        "val_vazaovertida": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 71,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 9609.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-03 23:00:00",
+              "hours": 71
+            }
+          ]
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 0,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 18.0,
+          "max": 27.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": []
+        },
+        "val_vazaotransferida": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 714,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 0.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-18 01:00:00",
+              "hours": 409
+            },
+            {
+              "start_hour_end": "2023-09-18 04:00:00",
+              "end_hour_end": "2023-09-18 06:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-18 10:00:00",
+              "end_hour_end": "2023-09-19 15:00:00",
+              "hours": 30
+            },
+            {
+              "start_hour_end": "2023-09-19 17:00:00",
+              "end_hour_end": "2023-10-01 00:00:00",
+              "hours": 272
+            }
+          ]
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 714,
+          "missing": 0,
+          "zeros": 81,
+          "negative": 0,
+          "value9999_count": 0,
+          "min": 0.0,
+          "max": 171.0,
+          "missing_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-18 02:00:00",
+              "end_hour_end": "2023-09-18 03:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2023-09-18 07:00:00",
+              "end_hour_end": "2023-09-18 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2023-09-19 16:00:00",
+              "end_hour_end": "2023-09-19 16:00:00",
+              "hours": 1
+            }
+          ],
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2023-09-01 01:00:00",
+              "end_hour_end": "2023-09-03 23:00:00",
+              "hours": 71
+            },
+            {
+              "start_hour_end": "2023-09-10 09:00:00",
+              "end_hour_end": "2023-09-10 09:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2023-09-12 19:00:00",
+              "end_hour_end": "2023-09-12 19:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2023-09-13 14:00:00",
+              "end_hour_end": "2023-09-13 14:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2023-09-17 08:00:00",
+              "end_hour_end": "2023-09-17 13:00:00",
+              "hours": 6
+            },
+            {
+              "start_hour_end": "2023-09-19 11:00:00",
+              "end_hour_end": "2023-09-19 11:00:00",
+              "hours": 1
+            }
+          ]
+        }
+      },
+      "balance_complete_rows": 714,
+      "balance_abs_residual_gt1": 1,
+      "zeroQ_positive_components": 0
+    }
+  ]
+}

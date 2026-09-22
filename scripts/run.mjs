@@ -78,6 +78,24 @@ console.log(`▲ Next.js em http://localhost:${port}`);
 console.log(`✓ WebSocket público em /api/live`);
 startWorker();
 
+// Recover the initial forecast after a deploy/restart. Normal refreshes remain
+// driven by the Cloudflare cron, even when no browser is open.
+if (process.env.OBJECT_STORAGE_URL && process.env.PUSH_INTERNAL_SECRET) {
+  void (async () => {
+    const base = `http://127.0.0.1:${port}`;
+    const current = await fetch(`${base}/api/projection`, { signal: AbortSignal.timeout(15_000) });
+    const payload = current.ok ? await current.json() : null;
+    if (payload?.projection && Date.now() - Date.parse(payload.projection.generatedAt) < 15 * 60_000) return;
+    const response = await fetch(`${base}/api/internal/projection-refresh`, {
+      method: "POST",
+      headers: { authorization: `Bearer ${process.env.PUSH_INTERNAL_SECRET}` },
+      signal: AbortSignal.timeout(13 * 60_000),
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    console.log("[projection] initial forecast ready");
+  })().catch(error => console.error("[projection] initial calculation unavailable; cron will retry:", error.message));
+}
+
 async function shutdown(signal = "SIGTERM") {
   if (shuttingDown) return;
   shuttingDown = true;

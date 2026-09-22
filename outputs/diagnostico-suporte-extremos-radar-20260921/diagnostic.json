@@ -1,0 +1,458 @@
+{
+  "original_training_max_response_m": 8.09,
+  "added_extreme_count": 7,
+  "test_case_count": 12,
+  "added_extreme_base_range_m": [
+    13.7,
+    15.11
+  ],
+  "selected_test_base_range_m": [
+    3.21,
+    10.42
+  ],
+  "reproduction": [
+    {
+      "family": "native_control",
+      "trees": 180,
+      "maximum_manual_error_m": 0.0,
+      "training_rows": 10814,
+      "all_leaf_memberships_reproduced": true
+    },
+    {
+      "family": "augmented",
+      "trees": 180,
+      "maximum_manual_error_m": 0.0,
+      "training_rows": 11546,
+      "all_leaf_memberships_reproduced": true
+    }
+  ],
+  "conditional_response": {
+    "base_lower_m": 3.21,
+    "base_upper_m": 10.42,
+    "original_pairs": 2285,
+    "added_pairs": 152,
+    "original_max_response_m": 8.09,
+    "added_max_response_m": 8.009999999999998,
+    "combined_max_response_m": 8.09,
+    "posthoc_descriptive_range": true
+  },
+  "input_sha256": {
+    "outputs/experimento-radar-ausencias-nativas-runtime19-20260921/features.npz": "608eb4d58e34a240bdc6c13c365b21e6b2c4cd108200e25896a09ed3a0388b0c",
+    "outputs/radar-matriz-2024-20260921/features.npz": "ffc71325bad54c551c46fac5700ff82e2ad7d2a89009649d8a70159d174d2316",
+    "outputs/experimento-radar-historico-2024-20260921/training-masks.npz": "cf981546bb9ddb65fd5e74ab0521e161d2f26e2186ee317fbf9c58099037639e",
+    "outputs/experimento-radar-historico-2024-20260921/predictions.csv": "847c67de7cf2a4d8efefc73ab60f1bd93338def0faa015dd039da60790515a93",
+    "outputs/experimento-radar-ausencias-nativas-runtime19-20260921/models/test-candidate-12.joblib": "863910b696fd221cb2a874b0836b96bc0a539a0d588bf8c03f88617dad068b46",
+    "outputs/experimento-radar-historico-2024-20260921/models/test-12.joblib": "e9617d5c1b122684ce9ce3e5c1a9d452087de4ab44ccb0292f9479cd82449e9e"
+  },
+  "first_divergences": [
+    {
+      "column": 5,
+      "feature": "86510000:dH8",
+      "first_divergences": 1815
+    },
+    {
+      "column": 71,
+      "feature": "Carreiro:C48",
+      "first_divergences": 1289
+    },
+    {
+      "column": 45,
+      "feature": "Baixo Antas:P1",
+      "first_divergences": 509
+    },
+    {
+      "column": 127,
+      "feature": "gfs_seamless:location1:P12",
+      "first_divergences": 474
+    },
+    {
+      "column": 12,
+      "feature": "86472600:H",
+      "first_divergences": 472
+    },
+    {
+      "column": 10,
+      "feature": "86472000:dH4",
+      "first_divergences": 472
+    },
+    {
+      "column": 80,
+      "feature": "Prata-Turvo:C6",
+      "first_divergences": 427
+    },
+    {
+      "column": 117,
+      "feature": "Tainhas:P3lag3",
+      "first_divergences": 280
+    },
+    {
+      "column": 11,
+      "feature": "86472000:dH8",
+      "first_divergences": 210
+    },
+    {
+      "column": 101,
+      "feature": "Alto Antas:C48",
+      "first_divergences": 203
+    },
+    {
+      "column": 103,
+      "feature": "Alto Antas:P3lag6",
+      "first_divergences": 196
+    },
+    {
+      "column": 70,
+      "feature": "Carreiro:P48",
+      "first_divergences": 182
+    },
+    {
+      "column": 6,
+      "feature": "86472000:H",
+      "first_divergences": 175
+    },
+    {
+      "column": 83,
+      "feature": "Prata-Turvo:P24",
+      "first_divergences": 168
+    },
+    {
+      "column": 24,
+      "feature": "julho:Q06",
+      "first_divergences": 166
+    },
+    {
+      "column": 147,
+      "feature": "ecmwf_ifs025:location1:P12",
+      "first_divergences": 159
+    },
+    {
+      "column": 119,
+      "feature": "Tainhas:P3lag12",
+      "first_divergences": 155
+    },
+    {
+      "column": 16,
+      "feature": "86472600:dH4",
+      "first_divergences": 155
+    },
+    {
+      "column": 151,
+      "feature": "ecmwf_ifs025:location2:P12",
+      "first_divergences": 147
+    },
+    {
+      "column": 74,
+      "feature": "Carreiro:P3lag12",
+      "first_divergences": 140
+    },
+    {
+      "column": 14,
+      "feature": "86472600:dH1",
+      "first_divergences": 135
+    },
+    {
+      "column": 99,
+      "feature": "Alto Antas:C24",
+      "first_divergences": 132
+    },
+    {
+      "column": 120,
+      "feature": "gfs_seamless:location0:P3",
+      "first_divergences": 128
+    },
+    {
+      "column": 60,
+      "feature": "Carreiro:P1",
+      "first_divergences": 128
+    },
+    {
+      "column": 78,
+      "feature": "Prata-Turvo:C3",
+      "first_divergences": 126
+    },
+    {
+      "column": 8,
+      "feature": "86472000:dH1",
+      "first_divergences": 120
+    },
+    {
+      "column": 7,
+      "feature": "86472000:dH0.5",
+      "first_divergences": 119
+    },
+    {
+      "column": 41,
+      "feature": "castro:dQ1",
+      "first_divergences": 111
+    },
+    {
+      "column": 43,
+      "feature": "castro:dQ4",
+      "first_divergences": 105
+    },
+    {
+      "column": 30,
+      "feature": "julho:dQ8",
+      "first_divergences": 105
+    },
+    {
+      "column": 89,
+      "feature": "Prata-Turvo:P3lag12",
+      "first_divergences": 105
+    },
+    {
+      "column": 172,
+      "feature": "icon_global:location3:P3",
+      "first_divergences": 98
+    },
+    {
+      "column": 27,
+      "feature": "julho:dQ1",
+      "first_divergences": 96
+    },
+    {
+      "column": 143,
+      "feature": "ecmwf_ifs025:location0:P12",
+      "first_divergences": 91
+    },
+    {
+      "column": 167,
+      "feature": "icon_global:location1:P12",
+      "first_divergences": 91
+    },
+    {
+      "column": 69,
+      "feature": "Carreiro:C24",
+      "first_divergences": 84
+    },
+    {
+      "column": 13,
+      "feature": "86472600:dH0.5",
+      "first_divergences": 80
+    },
+    {
+      "column": 174,
+      "feature": "icon_global:location3:P9",
+      "first_divergences": 77
+    },
+    {
+      "column": 93,
+      "feature": "Alto Antas:C3",
+      "first_divergences": 70
+    },
+    {
+      "column": 95,
+      "feature": "Alto Antas:C6",
+      "first_divergences": 70
+    },
+    {
+      "column": 179,
+      "feature": "icon_global:location4:P12",
+      "first_divergences": 70
+    },
+    {
+      "column": 113,
+      "feature": "Tainhas:P24",
+      "first_divergences": 67
+    },
+    {
+      "column": 177,
+      "feature": "icon_global:location4:P6",
+      "first_divergences": 63
+    },
+    {
+      "column": 142,
+      "feature": "ecmwf_ifs025:location0:P9",
+      "first_divergences": 63
+    },
+    {
+      "column": 4,
+      "feature": "86510000:dH4",
+      "first_divergences": 60
+    },
+    {
+      "column": 159,
+      "feature": "ecmwf_ifs025:location4:P12",
+      "first_divergences": 56
+    },
+    {
+      "column": 165,
+      "feature": "icon_global:location1:P6",
+      "first_divergences": 56
+    },
+    {
+      "column": 111,
+      "feature": "Tainhas:P12",
+      "first_divergences": 54
+    },
+    {
+      "column": 1,
+      "feature": "86510000:dH0.5",
+      "first_divergences": 52
+    },
+    {
+      "column": 170,
+      "feature": "icon_global:location2:P9",
+      "first_divergences": 49
+    },
+    {
+      "column": 96,
+      "feature": "Alto Antas:P12",
+      "first_divergences": 48
+    },
+    {
+      "column": 173,
+      "feature": "icon_global:location3:P6",
+      "first_divergences": 42
+    },
+    {
+      "column": 141,
+      "feature": "ecmwf_ifs025:location0:P6",
+      "first_divergences": 42
+    },
+    {
+      "column": 145,
+      "feature": "ecmwf_ifs025:location1:P6",
+      "first_divergences": 42
+    },
+    {
+      "column": 125,
+      "feature": "gfs_seamless:location1:P6",
+      "first_divergences": 38
+    },
+    {
+      "column": 49,
+      "feature": "Baixo Antas:P6",
+      "first_divergences": 36
+    },
+    {
+      "column": 166,
+      "feature": "icon_global:location1:P9",
+      "first_divergences": 36
+    },
+    {
+      "column": 140,
+      "feature": "ecmwf_ifs025:location0:P3",
+      "first_divergences": 35
+    },
+    {
+      "column": 90,
+      "feature": "Alto Antas:P1",
+      "first_divergences": 32
+    },
+    {
+      "column": 157,
+      "feature": "ecmwf_ifs025:location4:P6",
+      "first_divergences": 30
+    },
+    {
+      "column": 87,
+      "feature": "Prata-Turvo:P3lag3",
+      "first_divergences": 28
+    },
+    {
+      "column": 59,
+      "feature": "Baixo Antas:P3lag12",
+      "first_divergences": 26
+    },
+    {
+      "column": 17,
+      "feature": "86472600:dH8",
+      "first_divergences": 22
+    },
+    {
+      "column": 47,
+      "feature": "Baixo Antas:P3",
+      "first_divergences": 21
+    },
+    {
+      "column": 3,
+      "feature": "86510000:dH2",
+      "first_divergences": 18
+    },
+    {
+      "column": 121,
+      "feature": "gfs_seamless:location0:P6",
+      "first_divergences": 16
+    },
+    {
+      "column": 162,
+      "feature": "icon_global:location0:P9",
+      "first_divergences": 15
+    },
+    {
+      "column": 31,
+      "feature": "monte:Q06",
+      "first_divergences": 14
+    },
+    {
+      "column": 29,
+      "feature": "julho:dQ4",
+      "first_divergences": 14
+    },
+    {
+      "column": 35,
+      "feature": "monte:dQ2",
+      "first_divergences": 12
+    },
+    {
+      "column": 68,
+      "feature": "Carreiro:P24",
+      "first_divergences": 11
+    },
+    {
+      "column": 85,
+      "feature": "Prata-Turvo:P48",
+      "first_divergences": 10
+    },
+    {
+      "column": 92,
+      "feature": "Alto Antas:P3",
+      "first_divergences": 9
+    },
+    {
+      "column": 34,
+      "feature": "monte:dQ1",
+      "first_divergences": 9
+    },
+    {
+      "column": 150,
+      "feature": "ecmwf_ifs025:location2:P9",
+      "first_divergences": 7
+    },
+    {
+      "column": 15,
+      "feature": "86472600:dH2",
+      "first_divergences": 6
+    },
+    {
+      "column": 169,
+      "feature": "icon_global:location2:P6",
+      "first_divergences": 5
+    },
+    {
+      "column": 115,
+      "feature": "Tainhas:P48",
+      "first_divergences": 4
+    },
+    {
+      "column": 58,
+      "feature": "Baixo Antas:P3lag6",
+      "first_divergences": 4
+    },
+    {
+      "column": 94,
+      "feature": "Alto Antas:P6",
+      "first_divergences": 4
+    },
+    {
+      "column": 28,
+      "feature": "julho:dQ2",
+      "first_divergences": 1
+    }
+  ],
+  "causal_attribution_established": false,
+  "trained": false,
+  "promoted": false,
+  "goal_achieved": false
+}

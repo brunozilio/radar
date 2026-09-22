@@ -1,0 +1,3133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTable xmlns="http://MRCS/">
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DadosHidrometereologicos" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DadosHidrometereologicos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CodEstacao" type="xs:string" minOccurs="0" />
+                <xs:element name="DataHora" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaAcumAdotada" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuvaFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelSensor" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelDisplay" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelManual" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="NivelFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="CQ_VazaoFinal" type="xs:string" minOccurs="0" />
+                <xs:element name="VazaoFinal" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <DocumentElement xmlns="">
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos1" msdata:rowOrder="0">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 18:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1444.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1444.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5708.52</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos2" msdata:rowOrder="1">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 18:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1425.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1425.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5590.22</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos3" msdata:rowOrder="2">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 18:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1410.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1410.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5497.63</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos4" msdata:rowOrder="3">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1387.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1387.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5357.03</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos5" msdata:rowOrder="4">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 17:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1367.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1367.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5236.14</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos6" msdata:rowOrder="5">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 17:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1345.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2123.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1345.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>5104.62</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos7" msdata:rowOrder="6">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 17:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>554.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1322.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1322.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4968.78</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos8" msdata:rowOrder="7">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>553.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>2.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1297.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1297.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4823.02</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos9" msdata:rowOrder="8">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 16:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>551.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1270.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1270.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4667.86</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos10" msdata:rowOrder="9">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 16:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>551.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1239.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1239.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4492.58</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos11" msdata:rowOrder="10">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 16:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>551.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1204.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1204.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4298.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos12" msdata:rowOrder="11">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>550.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1164.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1164.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>4081.31</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos13" msdata:rowOrder="12">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 15:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>550.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>2.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1118.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1118.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>3838.06</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos14" msdata:rowOrder="13">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 15:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>548.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1069.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1069.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>3586.53</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos15" msdata:rowOrder="14">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 15:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>547.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>1018.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>1018.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>3333.07</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos16" msdata:rowOrder="15">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>547.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>969.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>969.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>3097.61</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos17" msdata:rowOrder="16">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 14:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>547.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>923.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>923.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2883.80</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos18" msdata:rowOrder="17">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 14:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>547.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>881.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>881.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2694.74</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos19" msdata:rowOrder="18">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 14:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>547.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>844.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>844.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2533.08</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos20" msdata:rowOrder="19">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>547.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>2.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>811.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>811.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2392.77</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos21" msdata:rowOrder="20">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 13:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>545.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>788.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>788.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2297.16</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos22" msdata:rowOrder="21">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 13:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>545.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>769.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>769.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2219.54</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos23" msdata:rowOrder="22">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 13:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>544.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>757.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>757.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2171.14</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos24" msdata:rowOrder="23">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>544.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>746.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>746.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2127.21</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos25" msdata:rowOrder="24">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 12:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>544.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>738.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>738.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2095.52</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos26" msdata:rowOrder="25">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 12:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>544.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>1.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>729.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>729.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2060.12</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos27" msdata:rowOrder="26">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 12:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>542.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>4.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>720.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>720.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>2025.01</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos28" msdata:rowOrder="27">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>538.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>708.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>708.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1969.22</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos29" msdata:rowOrder="28">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 11:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>537.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>695.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>695.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1905.43</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos30" msdata:rowOrder="29">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 11:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>537.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>681.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>681.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1837.62</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos31" msdata:rowOrder="30">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 11:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>536.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>665.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>665.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1761.27</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos32" msdata:rowOrder="31">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>536.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>650.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>650.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1690.83</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos33" msdata:rowOrder="32">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 10:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>535.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>633.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>633.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1612.32</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos34" msdata:rowOrder="33">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 10:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>535.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>624.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>624.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1571.33</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos35" msdata:rowOrder="34">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 10:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>534.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>2.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>602.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>602.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1472.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos36" msdata:rowOrder="35">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>532.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>3.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>582.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>582.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1385.44</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos37" msdata:rowOrder="36">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 09:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>528.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>561.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>561.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1295.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos38" msdata:rowOrder="37">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 09:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>528.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>1.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>540.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>540.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1208.59</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos39" msdata:rowOrder="38">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 09:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>527.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>3.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>517.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>517.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1115.69</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos40" msdata:rowOrder="39">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>523.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>493.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>493.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>1021.79</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos41" msdata:rowOrder="40">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 08:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>522.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>466.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>466.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>919.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos42" msdata:rowOrder="41">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 08:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>521.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>1.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>445.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>445.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>843.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos43" msdata:rowOrder="42">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 08:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>520.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>2.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>429.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>429.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>787.13</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos44" msdata:rowOrder="43">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>518.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>4.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>417.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>417.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>745.76</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos45" msdata:rowOrder="44">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 07:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>513.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>7.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>408.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>408.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>715.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos46" msdata:rowOrder="45">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 07:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>506.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>11.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>402.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>402.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>695.26</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos47" msdata:rowOrder="46">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 07:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>494.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>12.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>397.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>397.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>678.72</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos48" msdata:rowOrder="47">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>482.20</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>14.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>395.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>395.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>672.15</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos49" msdata:rowOrder="48">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 06:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>467.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>4.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>393.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>393.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>665.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos50" msdata:rowOrder="49">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 06:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>462.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>9.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>395.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>395.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>672.15</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos51" msdata:rowOrder="50">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 06:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>453.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>10.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>393.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>393.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>665.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos52" msdata:rowOrder="51">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>443.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>15.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>392.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>392.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>662.34</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos53" msdata:rowOrder="52">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 05:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>427.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>3.80</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>393.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>393.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>665.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos54" msdata:rowOrder="53">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 05:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>394.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>394.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>668.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos55" msdata:rowOrder="54">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 05:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>396.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>396.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>675.43</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos56" msdata:rowOrder="55">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>398.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>398.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>682.02</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos57" msdata:rowOrder="56">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 04:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>401.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>401.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>691.94</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos58" msdata:rowOrder="57">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 04:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>401.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>401.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>691.94</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos59" msdata:rowOrder="58">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 04:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>405.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>405.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>705.25</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos60" msdata:rowOrder="59">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>406.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>406.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>708.59</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos61" msdata:rowOrder="60">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 03:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>408.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>408.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>715.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos62" msdata:rowOrder="61">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 03:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>409.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>409.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>718.66</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos63" msdata:rowOrder="62">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 03:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>411.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>411.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>725.40</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos64" msdata:rowOrder="63">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>413.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>413.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>732.16</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos65" msdata:rowOrder="64">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 02:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>415.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>415.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>738.95</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos66" msdata:rowOrder="65">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 02:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>416.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>416.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>742.35</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos67" msdata:rowOrder="66">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 02:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>418.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>418.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>749.18</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos68" msdata:rowOrder="67">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>419.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>419.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>752.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos69" msdata:rowOrder="68">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 01:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>419.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>419.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>752.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos70" msdata:rowOrder="69">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 01:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>419.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>419.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>752.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos71" msdata:rowOrder="70">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 01:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>420.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>420.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>756.03</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos72" msdata:rowOrder="71">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>419.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>419.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>752.60</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos73" msdata:rowOrder="72">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 00:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>417.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>417.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>745.76</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos74" msdata:rowOrder="73">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 00:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>414.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>414.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>735.55</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos75" msdata:rowOrder="74">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 00:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>410.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>410.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>722.03</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos76" msdata:rowOrder="75">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-21 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>405.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>405.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>705.25</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos77" msdata:rowOrder="76">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 23:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>397.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>397.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>678.72</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos78" msdata:rowOrder="77">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 23:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>389.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>389.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>652.58</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos79" msdata:rowOrder="78">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 23:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>379.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>379.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>620.46</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos80" msdata:rowOrder="79">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 23:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>367.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>367.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>582.74</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos81" msdata:rowOrder="80">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 22:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>354.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>354.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>542.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos82" msdata:rowOrder="81">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 22:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>341.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>341.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>504.14</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos83" msdata:rowOrder="82">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 22:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>326.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>326.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>460.79</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos84" msdata:rowOrder="83">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 22:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>314.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>314.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>427.19</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos85" msdata:rowOrder="84">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 21:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>301.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>301.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>391.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos86" msdata:rowOrder="85">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 21:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>290.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>290.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>366.38</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos87" msdata:rowOrder="86">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 21:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>282.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>282.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>348.24</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos88" msdata:rowOrder="87">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 21:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>274.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>274.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>330.45</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos89" msdata:rowOrder="88">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 20:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>268.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>268.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>317.34</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos90" msdata:rowOrder="89">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 20:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>261.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>261.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>302.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos91" msdata:rowOrder="90">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 20:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>255.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>255.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>289.63</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos92" msdata:rowOrder="91">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 20:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>251.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>251.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>281.29</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos93" msdata:rowOrder="92">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 19:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>247.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>247.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>273.04</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos94" msdata:rowOrder="93">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 19:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>245.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>245.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>268.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos95" msdata:rowOrder="94">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 19:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>243.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>243.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>264.89</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos96" msdata:rowOrder="95">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 19:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>242.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>242.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>262.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos97" msdata:rowOrder="96">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 18:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>242.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>242.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>262.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos98" msdata:rowOrder="97">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 18:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>243.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>243.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>264.89</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos99" msdata:rowOrder="98">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 18:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>244.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>244.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>266.92</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos100" msdata:rowOrder="99">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 18:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>247.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>247.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>273.04</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos101" msdata:rowOrder="100">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 17:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>250.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>250.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>279.22</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos102" msdata:rowOrder="101">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 17:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>253.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>253.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>285.45</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos103" msdata:rowOrder="102">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 17:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>258.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>258.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>295.94</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos104" msdata:rowOrder="103">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 17:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>261.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>261.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>302.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos105" msdata:rowOrder="104">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 16:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>266.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>266.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>313.02</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos106" msdata:rowOrder="105">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 16:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>271.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>271.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>323.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos107" msdata:rowOrder="106">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 16:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>276.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>276.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>334.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos108" msdata:rowOrder="107">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 16:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>281.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>281.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>346.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos109" msdata:rowOrder="108">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 15:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>287.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>287.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>359.54</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos110" msdata:rowOrder="109">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 15:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>292.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>292.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>370.97</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos111" msdata:rowOrder="110">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 15:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>297.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>297.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>382.53</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos112" msdata:rowOrder="111">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 15:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>303.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>303.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>396.58</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos113" msdata:rowOrder="112">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 14:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>309.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>309.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>413.47</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos114" msdata:rowOrder="113">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 14:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>314.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>314.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>427.19</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos115" msdata:rowOrder="114">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 14:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>318.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>318.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>438.28</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos116" msdata:rowOrder="115">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 14:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>323.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>323.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>452.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos117" msdata:rowOrder="116">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 13:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>327.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>327.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>463.63</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos118" msdata:rowOrder="117">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 13:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>331.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>331.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>475.07</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos119" msdata:rowOrder="118">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 13:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>334.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>334.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>483.72</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos120" msdata:rowOrder="119">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 13:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>336.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>336.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>489.52</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos121" msdata:rowOrder="120">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 12:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>338.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>338.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>495.35</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos122" msdata:rowOrder="121">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 12:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>340.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>340.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>501.20</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos123" msdata:rowOrder="122">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 12:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>341.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>341.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>504.14</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos124" msdata:rowOrder="123">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 12:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>343.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>343.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>510.03</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos125" msdata:rowOrder="124">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 11:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>344.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>344.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>512.99</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos126" msdata:rowOrder="125">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 11:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>344.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>344.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>512.99</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos127" msdata:rowOrder="126">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 11:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>345.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>345.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>515.95</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos128" msdata:rowOrder="127">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 11:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>346.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>346.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>518.92</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos129" msdata:rowOrder="128">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 10:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>346.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>346.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>518.92</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos130" msdata:rowOrder="129">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 10:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>347.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>347.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>521.89</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos131" msdata:rowOrder="130">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 10:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.60</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>348.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>348.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>524.87</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos132" msdata:rowOrder="131">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 10:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>349.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>349.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>527.86</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos133" msdata:rowOrder="132">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 09:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>350.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>350.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>530.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos134" msdata:rowOrder="133">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 09:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>350.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>350.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>530.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos135" msdata:rowOrder="134">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 09:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>351.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>351.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>533.86</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos136" msdata:rowOrder="135">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 09:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>352.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2125.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>352.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>536.86</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos137" msdata:rowOrder="136">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 08:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>352.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>352.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>536.86</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos138" msdata:rowOrder="137">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 08:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>353.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>353.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>539.88</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos139" msdata:rowOrder="138">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 08:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>353.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>353.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>539.88</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos140" msdata:rowOrder="139">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 08:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>354.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>354.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>542.90</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos141" msdata:rowOrder="140">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 07:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>355.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>355.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>545.92</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos142" msdata:rowOrder="141">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 07:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>355.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>355.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>545.92</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos143" msdata:rowOrder="142">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 07:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>356.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>356.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>548.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos144" msdata:rowOrder="143">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 07:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>357.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>357.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>552.00</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos145" msdata:rowOrder="144">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 06:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>358.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>358.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>555.04</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos146" msdata:rowOrder="145">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 06:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>358.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>358.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>555.04</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos147" msdata:rowOrder="146">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 06:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>359.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>359.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>558.09</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos148" msdata:rowOrder="147">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 06:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>360.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>360.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>561.15</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos149" msdata:rowOrder="148">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 05:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>361.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>361.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>564.22</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos150" msdata:rowOrder="149">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 05:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>362.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>362.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>567.29</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos151" msdata:rowOrder="150">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 05:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>364.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>364.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>573.45</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos152" msdata:rowOrder="151">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 05:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>364.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>364.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>573.45</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos153" msdata:rowOrder="152">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 04:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>365.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>365.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>576.54</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos154" msdata:rowOrder="153">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 04:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>366.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>366.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>579.64</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos155" msdata:rowOrder="154">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 04:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>367.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>367.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>582.74</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos156" msdata:rowOrder="155">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 04:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>368.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>368.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>585.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos157" msdata:rowOrder="156">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 03:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>368.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>368.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>585.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos158" msdata:rowOrder="157">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 03:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>369.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>369.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>588.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos159" msdata:rowOrder="158">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 03:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>370.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>370.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>592.09</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos160" msdata:rowOrder="159">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 03:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>369.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>369.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>588.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos161" msdata:rowOrder="160">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 02:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>369.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>369.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>588.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos162" msdata:rowOrder="161">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 02:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>368.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>368.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>585.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos163" msdata:rowOrder="162">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 02:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>368.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>368.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>585.85</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos164" msdata:rowOrder="163">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 02:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>366.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>366.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>579.64</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos165" msdata:rowOrder="164">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 01:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>364.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>364.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>573.45</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos166" msdata:rowOrder="165">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 01:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>360.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>360.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>561.15</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos167" msdata:rowOrder="166">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 01:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>356.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>356.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>548.96</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos168" msdata:rowOrder="167">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 01:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>351.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>351.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>533.86</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos169" msdata:rowOrder="168">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 00:45:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>423.00</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.20</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>344.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>344.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>512.99</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos170" msdata:rowOrder="169">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 00:30:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>422.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.00</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>334.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>334.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>483.72</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos171" msdata:rowOrder="170">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 00:15:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>422.80</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.40</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>323.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>323.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>452.30</VazaoFinal>
+      </DadosHidrometereologicos>
+      <DadosHidrometereologicos diffgr:id="DadosHidrometereologicos172" msdata:rowOrder="171">
+        <CodEstacao>86510000</CodEstacao>
+        <DataHora>2026-09-20 00:00:00</DataHora>
+        <CQ_ChuvaAcumAdotada>Dado aprovado</CQ_ChuvaAcumAdotada>
+        <ChuvaAcumAdotada>422.40</ChuvaAcumAdotada>
+        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>
+        <ChuvaFinal>0.60</ChuvaFinal>
+        <CQ_NivelSensor>Dado aprovado</CQ_NivelSensor>
+        <NivelSensor>308.00</NivelSensor>
+        <CQ_NivelDisplay />
+        <NivelDisplay>2124.00</NivelDisplay>
+        <CQ_NivelManual />
+        <NivelManual />
+        <CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>
+        <NivelFinal>308.00</NivelFinal>
+        <CQ_VazaoFinal>Dado aprovado</CQ_VazaoFinal>
+        <VazaoFinal>410.75</VazaoFinal>
+      </DadosHidrometereologicos>
+    </DocumentElement>
+  </diffgr:diffgram>
+</DataTable>

@@ -1,0 +1,39 @@
+{
+  "station": "86500000",
+  "source_document_date": "2014-03",
+  "source": "SGB/CPRM Relatório Sistema de Alerta da Bacia do Rio Taquari",
+  "table_5_7_pdf_page_1based": 36,
+  "branches_in_table": [
+    {
+      "c_min_cm": 45,
+      "c_max_cm": 480,
+      "valid_from": "2010-06-19",
+      "valid_until": "2013-12-31"
+    },
+    {
+      "c_min_cm": 480,
+      "c_max_cm": 990,
+      "valid_from": "1940-03-01",
+      "valid_until": "2013-12-31"
+    },
+    {
+      "c_min_cm": 990,
+      "c_max_cm": 2060,
+      "valid_from": "2010-06-19",
+      "valid_until": "2013-12-31"
+    }
+  ],
+  "annex_pdf_page_1based": 59,
+  "annex_coefficients_visually_checked": {
+    "h0": 0.55,
+    "n": 1.95,
+    "a": 31.07,
+    "c1": 100,
+    "c2": 2060
+  },
+  "annex_vs_table_differences": "Anexo apresenta um conjunto e faixa100–2060;Tabela5.7 apresenta tres ramos45–480,480–990,990–2060. Nao reconciliado nem resolvido por ajuste.",
+  "gauge_zero_vertical_reference": null,
+  "validity_for_2026_07_verified": false,
+  "applied_to_missing_observations": false,
+  "curve_fitted": false
+}

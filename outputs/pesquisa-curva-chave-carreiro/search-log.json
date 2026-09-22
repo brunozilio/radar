@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-21T22:07:53.853366+00:00",
+  "queries": [
+    "\"86500000\" \"curva\"",
+    "site.sgb.gov.br \"Passo Carreiro\" \"curva\"",
+    "site.ana.gov.br curvas chave HidroWebService curva chave API",
+    "\"86500000\" \"curva\" \"2024\"",
+    "\"86500000\" \"curva\" \"2026\"",
+    "site.sgb.gov.br \"Passo Carreiro\" \"régua\""
+  ],
+  "official_document_found": "SGB2014",
+  "current_official_curve_found": false,
+  "public_swagger_search_index": "HidroSerieCurvaDescarga/v1 documented; station and period limited366days",
+  "ufsc_search_index_only": "HidroAPP station page says gauge-relative stages; no current official validity contract obtained. Direct fetch failed certificate hostname verification; web fetch502.",
+  "other_failures": [
+    {
+      "url": "https://labhidro.ufsc.br/hidroapp/hidroapp_data/DADOS/86500000/86500000.html",
+      "outcome": "web tool inaccessible"
+    },
+    {
+      "url": "https://www.ana.gov.br/hidrowebservice/swagger-ui/swagger-initializer.js",
+      "outcome": "web tool unsupported JavaScript content type"
+    },
+    {
+      "url": "https://rigeo.sgb.gov.br/bitstream/doc/24596/1/sistema%20de%20alerta_taquari_2014.pdf",
+      "outcome": "web text available; screenshot timeout; reused local PDF and rendered annex"
+    }
+  ],
+  "no_authentication_attempted": true,
+  "no_external_messages": true
+}

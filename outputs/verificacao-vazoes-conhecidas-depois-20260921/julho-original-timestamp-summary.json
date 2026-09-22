@@ -1,0 +1,45 @@
+{
+  "classification_counts_distinct_timestamps": {
+    "no_exact_ons_timestamp": 82,
+    "exact_ons_timestamp_and_q_match": 1854,
+    "exact_ons_timestamp_q_differs": 31
+  },
+  "classification_counts_required_terms": {
+    "no_exact_ons_timestamp": 6330,
+    "exact_ons_timestamp_and_q_match": 144392,
+    "exact_ons_timestamp_q_differs": 2132
+  },
+  "rows_with_at_least_one_case": {
+    "no_exact_ons_timestamp": 6330,
+    "exact_ons_timestamp_and_q_match": 23139,
+    "exact_ons_timestamp_q_differs": 383
+  },
+  "required_unique_timestamps": 1967,
+  "required_terms": 152854,
+  "no_exact_matches_older_ons": 81,
+  "no_exact_age_distribution_minutes": {
+    "1.0": 82
+  },
+  "source_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_04-ceran.csv": "a4c6389ac84da29b21c4afc0ed09c729b3698b3e38872f464d2eaf3956dbfe43",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_05-ceran.csv": "1ed89e1b5a97dfc5536bfe5981fd4b30d7e9ad17b0531e2589d4bafdcc9ea964",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_06-ceran.csv": "95dde05eb28e3f624cdf27b6c64ce59fd6adc1166a6003765c5559c84db21d3b",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_07-ceran.csv": "913cbbe42b7ceb12b06876af6f58438aae3b46f593b429f8795b8bea4cda6017",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_08-ceran.csv": "0419ed00e88c897b3cab91b64c369d1378dc6dff52923f9803d8e6df3008203c",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_09-ceran.csv": "4642659305ef395a6eec9cf40f5d65235576315b2cd1e0db9be6022d4c7ea012",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_10-ceran.csv": "b1f3e40570ca0eb5c62b18da94167e4875c7d823403f7e5f6e27ea0cc2e90149",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_11-ceran.csv": "b937d219a46fe0c4bcf5a6277f9e08f589e7ccec9492cb5f09a8a85a9038dc16",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_12-ceran.csv": "96f53649c2709870eb052dd706936a7d52c46c15b77ff614617706b8a20b9859",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_01-ceran.csv": "013f09c7a6dedc040109fbf94669265debbe1eeaf471c0e3a2ed7c547bf67e56",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_02-ceran.csv": "4839ced9c1c934b7385566ee7be1e3056578250b334c85ad7dace89dfe3e02f1",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_03-ceran.csv": "67346e269772c3fa3955d647167ce96d59b3803d35774941f326f8b1f86b1618",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_04-ceran.csv": "dc1c1e6f31913936a7bcec1464402002ac6349b8a52d3e2658ca2db6a7cef02f",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_05-ceran.csv": "113a5bf0b8ee5ba637119a1d04cc8f7aebd3e37d0b2553678d8bb4d0aba33539",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_06-ceran.csv": "700a8d05b3bdbf881fa622e232dabb4e37f1b0ce92723a67bac9a49ecbaaac43",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_07-ceran.csv": "746cb5b5d5b1d5772f99efa0c21daadf861546fb80c2e0fb3a63073f1690698a",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_08-ceran.csv": "24c6607e34622f1259e0f1e45809280679a303fab85112d321a5a2d4710f7862",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_09-ceran.csv": "c2ab2b5857f040077584b2747dbce7a9affae9356c4ad3dd87d2125a7005b5d1"
+  },
+  "d_julho_identical_raw_asof_grid": true,
+  "interpretation": "No exact timestamp is not a certified measured observation. Older-value matches show consistency with carry, not unique source provenance. Timestamp-equal value differences remain source/version ambiguity. Original timestamp strings unchanged, no23:59 normalization."
+}

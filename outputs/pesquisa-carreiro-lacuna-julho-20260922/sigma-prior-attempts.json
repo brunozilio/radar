@@ -1,0 +1,16 @@
+{
+  "previous_manifest": "outputs/mucum-bacia-2026-09-21/raw/events-fetch-manifest.json",
+  "previous_records": [
+    {
+      "file": "station-86500000-2026-07-21.txt",
+      "url": "https://sigmameteorologia.com/produtos/stations/2026-07-21/86500000.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "file": "station-86500000-2026-07-22.txt",
+      "url": "https://sigmameteorologia.com/produtos/stations/2026-07-22/86500000.txt",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "note": "Earlier404metadata existed without retained response bodies. Current two explicit reprobes preserve bodies; they were avoidable repeats if earlier failure metadata had been inspected before collection, not automatic retries."
+}

@@ -1,0 +1,246 @@
+{
+  "audited_at": "2026-09-21T20:43:33.866934+00:00",
+  "source_rows": 38764,
+  "source_month_files": 18,
+  "sources_merge_counts": {
+    "ONS": 38764,
+    "CERAN_JSON": 9,
+    "CERAN_HTML": 3
+  },
+  "plants": [
+    {
+      "plant": "castro",
+      "rows": 12921,
+      "first": "2025-04-01 01:00:00",
+      "last": "2026-09-21 11:00:00",
+      "missing_rows_interpreted_grid": 2,
+      "duplicates": 0,
+      "timestamps_2359": 538,
+      "null_Q": 0,
+      "null_I": 0,
+      "zero_Q": 0,
+      "zero_I": 0,
+      "negative_Q": 0,
+      "negative_I": 0,
+      "balance_complete_rows": 12920,
+      "balance_abs_gt1": 1,
+      "balance_abs_gtmax10_or1pctQ": 1,
+      "zero_Q_positive_components": 0,
+      "max_Q": 5323.0,
+      "max_I": 5621.0,
+      "min_Q": 16.0,
+      "min_I": 1.0,
+      "unique_flags": 1
+    },
+    {
+      "plant": "julho",
+      "rows": 12922,
+      "first": "2025-04-01 01:00:00",
+      "last": "2026-09-21 11:00:00",
+      "missing_rows_interpreted_grid": 1,
+      "duplicates": 0,
+      "timestamps_2359": 538,
+      "null_Q": 0,
+      "null_I": 0,
+      "zero_Q": 0,
+      "zero_I": 2,
+      "negative_Q": 0,
+      "negative_I": 0,
+      "balance_complete_rows": 12922,
+      "balance_abs_gt1": 1,
+      "balance_abs_gtmax10_or1pctQ": 1,
+      "zero_Q_positive_components": 0,
+      "max_Q": 9452.0,
+      "max_I": 9387.0,
+      "min_Q": 19.0,
+      "min_I": 0.0,
+      "unique_flags": 1
+    },
+    {
+      "plant": "monte",
+      "rows": 12921,
+      "first": "2025-04-01 01:00:00",
+      "last": "2026-09-21 11:00:00",
+      "missing_rows_interpreted_grid": 2,
+      "duplicates": 0,
+      "timestamps_2359": 538,
+      "null_Q": 0,
+      "null_I": 0,
+      "zero_Q": 3,
+      "zero_I": 3,
+      "negative_Q": 0,
+      "negative_I": 0,
+      "balance_complete_rows": 12921,
+      "balance_abs_gt1": 5,
+      "balance_abs_gtmax10_or1pctQ": 1,
+      "zero_Q_positive_components": 3,
+      "max_Q": 9907.0,
+      "max_I": 9999.0,
+      "min_Q": 0.0,
+      "min_I": 0.0,
+      "unique_flags": 6
+    }
+  ],
+  "telemetry_reproduction": [
+    {
+      "key": "castro:Q",
+      "points": 51701,
+      "mismatch_count": 0,
+      "missing_points": 6,
+      "zero_points": 0
+    },
+    {
+      "key": "castro:I",
+      "points": 51701,
+      "mismatch_count": 0,
+      "missing_points": 6,
+      "zero_points": 0
+    },
+    {
+      "key": "julho:Q",
+      "points": 51701,
+      "mismatch_count": 0,
+      "missing_points": 5,
+      "zero_points": 0
+    },
+    {
+      "key": "julho:I",
+      "points": 51701,
+      "mismatch_count": 0,
+      "missing_points": 5,
+      "zero_points": 8
+    },
+    {
+      "key": "monte:Q",
+      "points": 51701,
+      "mismatch_count": 0,
+      "missing_points": 10,
+      "zero_points": 12
+    },
+    {
+      "key": "monte:I",
+      "points": 51701,
+      "mismatch_count": 0,
+      "missing_points": 10,
+      "zero_points": 12
+    }
+  ],
+  "ONS_duplicate_keys": [],
+  "manifest_checks": [
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_04-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_04.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_05-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_05.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_06-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_06.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_07-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_07.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_08-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_08.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_09-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_09.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_10-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_10.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_11-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_11.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2025_12-ceran.csv",
+      "expected_available": true,
+      "match": true,
+      "source_url_in_manifest": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_12.csv"
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_01-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_02-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_03-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_04-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_05-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_06-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_07-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_08-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    },
+    {
+      "file": "DADOS_HIDROLOGICOS_HO_2026_09-ceran.csv",
+      "expected_available": false,
+      "match": null,
+      "source_url_in_manifest": null
+    }
+  ],
+  "anomaly_source_rows": 8,
+  "anomaly_quarterhour_exposures": 32,
+  "frozen_matching_rows": 32,
+  "frozen_compared_rows": 32,
+  "upstream_hourly_feature_exposures": 29,
+  "training_performed": false,
+  "downloads_performed": false
+}

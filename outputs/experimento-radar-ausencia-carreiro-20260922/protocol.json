@@ -1,0 +1,32 @@
+{
+  "id": "radar-carreiro-missing-exposure-v1",
+  "registered_at_utc": "2026-09-22T04:52:36.042129+00:00",
+  "parent": "outputs/experimento-radar-mistura-atrasos-20260922",
+  "hypothesis": "Complete24 training never exposes the tree to a missing Carreiro level block, but evaluation and largest errors contain it. Test controlled input masking, not causal attribution or imputation of real observations. Prior all-native-missing experiments did not resolve the problem; this experiment holds physical sample membership fixed.",
+  "one_change": "For the mixed-profile HGB candidate only, set all six columns18..23 to NaN on selected training origins. Preserve the same one profile/physical origin selected by parent PCG64(57), all other features, bases, targets, response, weights, order, masks, cutoffs and hyperparameters. No duplicate samples. No linear or age component.",
+  "masking": {
+    "selection": "Generator(PCG64(58)).random(len(parent.times)) < 0.25, created once over the entire saved timeline before fold/horizon membership. Same origin selection in all folds/horizons, independent of truth, errors, profile choice, level and missingness.",
+    "probability": 0.25,
+    "columns": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "training_only": true,
+    "gate": "Original selected training columns must all be finite before masking. Exactly6 cells per masked training row becomeNaN; other columns and unselected rows exactly unchanged. Candidate input is a separate copy, original NPZ immutable.",
+    "limitations": "Random per-origin missing blocks do not replicate outage run length, informative missingness, sensor fault process or unseen delay configurations. Fixed probability and seed, no search."
+  },
+  "evaluation": "Same untouched original profileA/B evaluation inputs,204168rows,all12nominalhorizons,twofolds,4families(parent3+carreiro_missing_exposure),1152metrics full/complete24/missing24 times all/observed>=7m. Truth unknown separately and missing forecasts in observed denominator. Reproduce72parent models across both profiles,144applications. Report all gains/regressions versus mixed and profile-dedicated controls.",
+  "planned_models": 24,
+  "limits": [
+    "All periods already known development; no fresh independent test.",
+    "Two profiles represent the same physical observations, not two independent datasets.",
+    "Source timezone, datum, publication and event independence remain unresolved.",
+    "No live issuance, operational promotion, deployment or goal-completion claim."
+  ],
+  "promoted": false,
+  "goal_achieved": false
+}

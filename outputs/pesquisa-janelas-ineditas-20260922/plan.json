@@ -1,0 +1,12 @@
+{
+  "scope": "Pesquisa documental e sondagem de disponibilidade, somente Radar; nenhum treino, matriz ou inferência",
+  "pre_get_review": ["outputs/pesquisa-diversidade-eventos-pre2020-20260922/README.md", "docs/forecast-accuracy-goal.md", "outputs/mucum-propagacao-2026-09-21/raw/sgb-boletins-lista.html", "outputs/mucum-propagacao-2026-09-21/raw/boletins-manifest.json"],
+  "searches_used": 4,
+  "maximum_new_searches": 4,
+  "maximum_telemetry_gets": 4,
+  "planned_telemetry_gets": 2,
+  "station": "86510000",
+  "windows": [{"start": "2018-08-30", "end": "2018-09-05", "justification": "Índice SGB preservado: boletim 02/09/2018 17h"}, {"start": "2018-09-30", "end": "2018-10-06", "justification": "Índice SGB preservado: boletins 03/10/2018 08h/17h/22h"}],
+  "documents": "Ler um boletim oficial por episódio; não inferir inundação em Muçum só pela existência de alerta da bacia",
+  "rules": ["Preservar HTTP/corpos/headers/UTC/hash inclusive falhas; sem retry automático", "Timestamps literais e todos QC; sem arredondar/interpolar", "Sem dados do endpoint não prova ausência em todos acervos", "2019 permanece sem data; 2020 julho já utilizado", "Nenhum dado conhecido será chamado validação inédita"]
+}

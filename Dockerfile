@@ -21,6 +21,10 @@ COPY next-env.d.ts next.config.ts postcss.config.mjs tsconfig.json ./
 
 RUN npm run build
 
+FROM python:3.12-slim-bookworm AS projection-python
+COPY scripts/hydro-hourly-requirements.txt /tmp/requirements.txt
+RUN python -m venv /opt/projection-venv && /opt/projection-venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
+
 FROM node:22.23.1-bookworm-slim AS runtime
 
 WORKDIR /app
@@ -34,6 +38,11 @@ ENV NODE_ENV=production \
 
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev && npm cache clean --force
+RUN apt-get update && apt-get install -y --no-install-recommends libssl3 libsqlite3-0 libbz2-1.0 liblzma5 libffi8 ca-certificates && rm -rf /var/lib/apt/lists/*
+
+COPY --from=projection-python /usr/local/ /usr/local/
+COPY --from=projection-python /opt/projection-venv /opt/projection-venv
+COPY --chown=node:node projection-runtime ./projection-runtime
 
 COPY --from=builder --chown=node:node /app/.next ./.next
 COPY --chown=node:node app ./app

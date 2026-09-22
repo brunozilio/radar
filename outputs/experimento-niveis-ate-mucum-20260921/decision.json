@@ -1,0 +1,17 @@
+{
+  "promoted": false,
+  "goal_achieved": false,
+  "live_issuance": false,
+  "inputs_verified": true,
+  "paired_targets_verified": true,
+  "reason": "Mixed end-to-end performance.12h improves but shorter leads regress; flood accuracy far below98%. Historical availability unverified and forecast coverage incomplete. Preserve candidate for research, keep live models unchanged.",
+  "status_counts": {
+    "missing_or_invalid_forecast_input": 4122,
+    "paired": 18981,
+    "missing_exact_target": 147,
+    "missing_exact_anchor": 288
+  },
+  "prospective_samples_added": 0,
+  "independent_flood_events_added": 0,
+  "uncertainty": "No confidence interval or independent-event claim from these overlapping historical forecasts."
+}

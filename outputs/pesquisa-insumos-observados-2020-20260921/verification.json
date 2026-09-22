@@ -1,0 +1,56 @@
+{
+  "raw_hashes_verified": 8,
+  "raw_rows_exactly_preserved": 2383,
+  "existing_xmls_date_inspected": 190,
+  "preidentified_extreme_origins": 9,
+  "linha_level_lookups": 54,
+  "origins_with_all_six_linha_levels": 9,
+  "spatial_ceiling_warning": "Sum of weights of probed stations with any approved rain, not observed temporal coverage. Other stations not queried.",
+  "spatial_ceilings": [
+    {
+      "group": "Baixo Antas",
+      "any_approved_stations": [
+        "86450000",
+        "86472000"
+      ],
+      "weight_sum_at_best": 0.3670520231213873
+    },
+    {
+      "group": "Carreiro",
+      "any_approved_stations": [
+        "86472000",
+        "86479000"
+      ],
+      "weight_sum_at_best": 0.5273010920436818
+    },
+    {
+      "group": "Prata-Turvo",
+      "any_approved_stations": [
+        "86479000"
+      ],
+      "weight_sum_at_best": 0.014925373134328358
+    },
+    {
+      "group": "Alto Antas",
+      "any_approved_stations": [
+        "86060010",
+        "86160000",
+        "86450000"
+      ],
+      "weight_sum_at_best": 0.27832655432887854
+    },
+    {
+      "group": "Tainhas",
+      "any_approved_stations": [
+        "86060010",
+        "86160000"
+      ],
+      "weight_sum_at_best": 0.8415300546448088
+    }
+  ],
+  "reused_prior_pairs_file": "outputs/viabilidade-historico-antigo-radar-20260921/potential-pairs.csv",
+  "reused_prior_pairs_sha256": "f20762dbd78291fc8eeddf23a00287ffa3c96229e6db47115cdda07add0fffd2",
+  "no_matrix": true,
+  "no_training": true,
+  "no_promotion": true
+}

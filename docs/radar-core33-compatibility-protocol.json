@@ -1,0 +1,16 @@
+{
+  "id": "radar-core33-compatibility-v1",
+  "registered_before_fit": true,
+  "scope": "Local RADAR research only; no operational promotion, live issuance, HGE/ARNO or 2024 augmentation.",
+  "hypothesis": "The effect of adding September2023 may depend on input families with unequal coverage across years. Test a fixed33column subset shared by both datasets, separately from the effect of adding2023. This is an ablation experiment, not a claim that rain or the removed gauges are physically unimportant.",
+  "columns_zero_based": [0,1,2,3,4,5,6,7,8,9,10,11,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44],
+  "columns_meaning": "Muçum and Linha José Júlio H and five H slopes; 14 de Julho, Monte Claro and Castro Alves Q06,Q,I and four Q06 slopes. Remove Santa Tereza/Carreiro H blocks and all rain blocks. Identical indexing, source transforms and delays in both matrices; no filling of remaining gaps.",
+  "families": ["observed_control", "augmented", "core_original", "core_augmented"],
+  "references": "Frozen120column original and120column+2023 models and predictions from experimento-radar-historico-2023-20260921 and experimento-radar-observado-120-20260921. Reproduce all48 frozen models; fit only48 new33column models.",
+  "training": "Same original validation/test masks and all eligible September2023 masks as the frozen augmentation. The original core family uses only original rows; augmented core uses2023 rows first followed by original rows. No complete-input restriction. Targets computed separately per calendar dataset. No2024 data.",
+  "parameters": "Frozen per-horizon loss and max_leaf_nodes; max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. Same runtime and weights1+2*(abs(target-base)>=1)+2*(target>=9). No tuning, reweighting or horizon mixing.",
+  "evaluation": "Same102084 rows, base, exact target, prediction availability and chronological folds. Every horizon1..12, all targets/observed>=7m, full_schedule/complete24/missing24. Hits within0.50m, observed-target denominator including failures, paired fraction, MAE,bias,P98,max. Report all four families and the within-core and within120 addition effects; no cherry-picked promotion.",
+  "limits": "Historical development sets have already been inspected. Input-family removal cannot certify sensor equivalence, publication times, gauge datum, dam regime or absence of distribution shift.2023 target outage remains. No independent holdout or prospective98percent evidence from this experiment.",
+  "promoted": false,
+  "goal_achieved": false
+}

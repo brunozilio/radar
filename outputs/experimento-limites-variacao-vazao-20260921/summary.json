@@ -1,0 +1,130 @@
+[
+  {
+    "source": "julho",
+    "phase": "validation",
+    "family": "level_and_slopes",
+    "mean_lead_score_m3_s": 203.80303874696526,
+    "all": {
+      "predictions_n": 78558,
+      "mae_m3_s": 70.5002082905167,
+      "bias_m3_s": -12.15137315691578
+    },
+    "high_flow": {
+      "predictions_n": 336,
+      "mae_m3_s": 266.57987193612155,
+      "bias_m3_s": 30.75296359245939
+    }
+  },
+  {
+    "source": "julho",
+    "phase": "validation",
+    "family": "level_clipped_flow_changes",
+    "mean_lead_score_m3_s": 210.89268610261672,
+    "all": {
+      "predictions_n": 78558,
+      "mae_m3_s": 72.06672175763322,
+      "bias_m3_s": -11.939241051358422
+    },
+    "high_flow": {
+      "predictions_n": 336,
+      "mae_m3_s": 277.62558010863006,
+      "bias_m3_s": 40.05572423373243
+    }
+  },
+  {
+    "source": "julho",
+    "phase": "test",
+    "family": "level_and_slopes",
+    "mean_lead_score_m3_s": 340.458464409747,
+    "all": {
+      "predictions_n": 23550,
+      "mae_m3_s": 142.356313704207,
+      "bias_m3_s": 26.198120808170316
+    },
+    "high_flow": {
+      "predictions_n": 3252,
+      "mae_m3_s": 396.03283106653487,
+      "bias_m3_s": -96.41072164731452
+    }
+  },
+  {
+    "source": "julho",
+    "phase": "test",
+    "family": "level_clipped_flow_changes",
+    "mean_lead_score_m3_s": 289.5802927857166,
+    "all": {
+      "predictions_n": 23550,
+      "mae_m3_s": 131.69335319635954,
+      "bias_m3_s": 25.43211146865797
+    },
+    "high_flow": {
+      "predictions_n": 3252,
+      "mae_m3_s": 315.6179295743946,
+      "bias_m3_s": -95.18886766482959
+    }
+  },
+  {
+    "source": "carreiro",
+    "phase": "validation",
+    "family": "level_and_slopes",
+    "mean_lead_score_m3_s": 52.47007771778632,
+    "all": {
+      "predictions_n": 74892,
+      "mae_m3_s": 12.875307190424074,
+      "bias_m3_s": -0.1958666473158271
+    },
+    "high_flow": {
+      "predictions_n": 324,
+      "mae_m3_s": 79.17722212980465,
+      "bias_m3_s": 36.41148311329689
+    }
+  },
+  {
+    "source": "carreiro",
+    "phase": "validation",
+    "family": "level_clipped_flow_changes",
+    "mean_lead_score_m3_s": 50.05570614824338,
+    "all": {
+      "predictions_n": 74892,
+      "mae_m3_s": 13.219809014106586,
+      "bias_m3_s": -0.03473347629884974
+    },
+    "high_flow": {
+      "predictions_n": 324,
+      "mae_m3_s": 73.65921829029632,
+      "bias_m3_s": 40.14965342394583
+    }
+  },
+  {
+    "source": "carreiro",
+    "phase": "test",
+    "family": "level_and_slopes",
+    "mean_lead_score_m3_s": 68.43360538288287,
+    "all": {
+      "predictions_n": 20206,
+      "mae_m3_s": 29.493865400565518,
+      "bias_m3_s": -3.1249451026891086
+    },
+    "high_flow": {
+      "predictions_n": 2832,
+      "mae_m3_s": 77.33434919385006,
+      "bias_m3_s": -64.12720817218857
+    }
+  },
+  {
+    "source": "carreiro",
+    "phase": "test",
+    "family": "level_clipped_flow_changes",
+    "mean_lead_score_m3_s": 69.604922989099,
+    "all": {
+      "predictions_n": 20206,
+      "mae_m3_s": 28.402790667750878,
+      "bias_m3_s": -5.304682210170143
+    },
+    "high_flow": {
+      "predictions_n": 2832,
+      "mae_m3_s": 81.83982700277465,
+      "bias_m3_s": -64.50431742098007
+    }
+  }
+]

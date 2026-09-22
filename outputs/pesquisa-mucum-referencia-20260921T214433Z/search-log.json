@@ -1,0 +1,44 @@
+{
+  "collected_at": "2026-09-21T21:44:33.529181+00:00",
+  "method": "web search, three targeted queries in one request; primary result followed with one open",
+  "queries": [
+    {
+      "query": "site.sgb.gov.br \"Muçum\" \"PA 008\" \"nivelamento\"",
+      "assessment": "Retornou tabela SGB com PA008 e 33,985m, tipo de evidencia já presente no acervo; resultado de busca não estabelece vigência."
+    },
+    {
+      "query": "site.ana.gov.br \"DadosHidrometeorologicosGerais\" \"DataHora\" \"horário\"",
+      "assessment": "Nenhum resultado específico do contrato DataHora retornado na resposta combinada da busca."
+    },
+    {
+      "query": "site.sgb.gov.br \"86510000\" \"sensor\" \"2024\" \"instalação\"",
+      "assessment": "Nenhum registro específico de instalação ou troca retornado na resposta combinada; apareceu referência secundária à nota SGB já conhecida, sem prova de vigência."
+    }
+  ],
+  "returned_links": [
+    {
+      "url": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/47272b7d-4953-405a-8bdb-73a188a2279b/content",
+      "title": "Nivelamento da Cheia Inundação de Maio de 2024",
+      "observed_search_excerpt": "Muçum 86510000 PA008 33,985",
+      "status": "SEARCH_EXCERPT_ONLY_NOT_DOWNLOADED",
+      "units": "m as prior primary reference; not independently revalidated here",
+      "timezone": "not provided",
+      "datum": "no temporal validity established",
+      "quality": "search discovery only, no new accepted evidence",
+      "gaps": "validity dates and benchmark-gauge-sensor tie absent from search excerpt",
+      "license": "not verified"
+    },
+    {
+      "url": "https://rigeo.sgb.gov.br/handle/doc/24939.15",
+      "status": "OPEN_FAILED_TIMEOUT",
+      "quality": "not retrieved; not used as new evidence",
+      "units": null,
+      "timezone": null,
+      "datum": null,
+      "gaps": "unavailable in bounded open attempt; newer v19 already locally reviewed",
+      "license": "not verified"
+    }
+  ],
+  "status": "NO_NEW_RESOLVING_PRIMARY_EVIDENCE",
+  "claim_scope": "Negative bounded search, not proof that records do not exist."
+}

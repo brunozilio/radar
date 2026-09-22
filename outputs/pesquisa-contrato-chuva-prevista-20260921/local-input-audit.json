@@ -1,0 +1,551 @@
+{
+  "audited_at_utc": "2026-09-21T22:36:11.715896+00:00",
+  "inputs": [
+    {
+      "model_label_from_local_configuration": "gfs_seamless",
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "bytes": 1556952,
+      "sha256": "10213a6d0e29447e9a9da62ad9f0137af3444d79a5007b1a802cdc557fd04f7c",
+      "source_sidecar": {
+        "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2025-04-01&end_date=2026-09-22&timezone=America%2FSao_Paulo&models=gfs_seamless",
+        "source_lead_hours": 24
+      },
+      "source_sidecar_sha256": "9602a498d6becaf8ba4ac3fc09a4dad26bc7547408d9de1403126557518d7438",
+      "original_url_verified": true,
+      "locations": [
+        {
+          "index": 0,
+          "latitude": -29.11161,
+          "longitude": -51.5625,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 1,
+          "latitude": -28.643013,
+          "longitude": -51.796875,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 2,
+          "latitude": -28.525864,
+          "longitude": -51.328125,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 3,
+          "latitude": -28.877312,
+          "longitude": -50.742188,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 4,
+          "latitude": -29.11161,
+          "longitude": -50.390625,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        }
+      ]
+    },
+    {
+      "model_label_from_local_configuration": "ecmwf_ifs025",
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "bytes": 1556797,
+      "sha256": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313",
+      "source_sidecar": {
+        "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2025-04-01&end_date=2026-09-22&timezone=America%2FSao_Paulo&models=ecmwf_ifs025",
+        "source_lead_hours": 24
+      },
+      "source_sidecar_sha256": "cf488315a5ea0ec8a6c92a5418afc2036a02fa7a9eb3cd6142e7e53585521106",
+      "original_url_verified": true,
+      "locations": [
+        {
+          "index": 0,
+          "latitude": -29.0,
+          "longitude": -51.5,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 1,
+          "latitude": -28.5,
+          "longitude": -51.75,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 2,
+          "latitude": -28.5,
+          "longitude": -51.25,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 3,
+          "latitude": -29.0,
+          "longitude": -50.75,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 4,
+          "latitude": -29.0,
+          "longitude": -50.5,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 0,
+          "nonfinite_intervals": [],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        }
+      ]
+    },
+    {
+      "model_label_from_local_configuration": "icon_global",
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "bytes": 1556895,
+      "sha256": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f",
+      "source_sidecar": null,
+      "source_sidecar_sha256": null,
+      "original_url_verified": false,
+      "locations": [
+        {
+          "index": 0,
+          "latitude": -29.125,
+          "longitude": -51.625,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 77,
+          "nonfinite_intervals": [
+            {
+              "start": "2026-04-09T22:00",
+              "end": "2026-04-13T02:00",
+              "hours": 77
+            }
+          ],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 1,
+          "latitude": -28.625,
+          "longitude": -51.75,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 77,
+          "nonfinite_intervals": [
+            {
+              "start": "2026-04-09T22:00",
+              "end": "2026-04-13T02:00",
+              "hours": 77
+            }
+          ],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 2,
+          "latitude": -28.5,
+          "longitude": -51.375,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 77,
+          "nonfinite_intervals": [
+            {
+              "start": "2026-04-09T22:00",
+              "end": "2026-04-13T02:00",
+              "hours": 77
+            }
+          ],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 3,
+          "latitude": -28.875,
+          "longitude": -50.75,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 77,
+          "nonfinite_intervals": [
+            {
+              "start": "2026-04-09T22:00",
+              "end": "2026-04-13T02:00",
+              "hours": 77
+            }
+          ],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        },
+        {
+          "index": 4,
+          "latitude": -29.125,
+          "longitude": -50.375,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "first": "2025-04-01T00:00",
+          "last": "2026-09-22T23:00",
+          "count": 12960,
+          "nonfinite_count": 77,
+          "nonfinite_intervals": [
+            {
+              "start": "2026-04-09T22:00",
+              "end": "2026-04-13T02:00",
+              "hours": 77
+            }
+          ],
+          "negative_count": 0,
+          "duplicate_time_count": 0,
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_record_run_initialization_present": false,
+          "per_record_publication_present": false
+        }
+      ]
+    }
+  ]
+}

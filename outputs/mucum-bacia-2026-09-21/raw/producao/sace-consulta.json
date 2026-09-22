@@ -1,0 +1,7 @@
+{
+  "sql": "SELECT station,timestamp,level,level_cm FROM sace_readings WHERE station NOT LIKE 'sace-%' ORDER BY timestamp",
+  "read_at": "2026-09-21T16:00:46.125523+00:00",
+  "sha256": "6e6b66d447388f5cf734a5a245a00c9774ca1149e3090d1d9496f7a964d81266",
+  "rows": 861,
+  "rows_written": 0
+}

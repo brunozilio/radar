@@ -1,0 +1,23 @@
+{
+  "id": "radar-june2024-halfweight-sensitivity-v1",
+  "created_before_fit": true,
+  "control": "Frozen observed120models and predictions, reproduced exactly on strictQC recent12912-row matrix before comparing each horizon. No control refit.",
+  "candidate": "Keep allJune rows and120features; multiply onlyJune sample weights by0.5. Recent weights unchanged. One fixed sensitivity, no gridsearch.",
+  "features": "Same120observed columns, same QC/delay/rain/ONS as-reported contract in both arms, no new feature or row selection by results.",
+  "cutoffs": [
+    "2025-10-01T00:00:00-03:00",
+    "2026-07-01T00:00:00-03:00"
+  ],
+  "evaluation_stop": "2026-09-21T00:00:00-03:00",
+  "added_boundary": "2024-06-22T00:00:00-03:00",
+  "targets": "Separate shift within each contiguousdataset; added target stays before addedboundary, recent labels before declaredfold cutoff. Same102084evaluation rows as frozencontrol.",
+  "weights": "First compute w=1+2*(abs(target-base)>=1)+2*(target>=9); multiply exactly theJune prefix by0.5 with floatingdtype, no total renormalization. Keep recent weights unchanged. Store fractional sums exactly.",
+  "hyperparameters": "All12perhorizonleaf/loss frozen in observed120training.csv; max_iter180,min_samples_leaf35,lr.055,l2=10,noearlystop,seed57. No tuning, blending, clipping, perhorizon modelselection or postresult masking.",
+  "artifacts": "Before firstfit save masks, responses, levels, fractionalweights, total/recent/Juneweightsums, sources andcodehashes. Assert masks/responses/levels identical to fullJune experiment; onlyJuneweights change.",
+  "metrics": "Three families: native_control,full_june,half_june;432groups,all12horizons,bothphases,all/hightargets,full/complete24/missing24. Keepallfailures/unknowntruth. Compare eachpair without assembling perhorizon mixtures.",
+  "decision": "No promotion from this known development sensitivity alone; report both gains and regressions. No additional weight values selected in this run.",
+  "limits": "June has postMay altered dam regime, missing Linha/Carreiro and raincoverage gaps, flagged ONS component conflicts. Datum/timezone/publication not certified. All evaluation periods inspected development; results cannot demonstrate98percent or causal hydrology. HGE removed; Radar only. Changing sample weights can also affect weighted binning and effective regularization; the experiment does not isolate one internal mechanism. Tolerance remains0.50m.",
+  "goal_achieved": false,
+  "comparators": "Frozen observed120control and frozen fullJune predictions on identical102084keys. No refit of comparators; reproduce observed120control before eachcandidatefit.",
+  "rationale": "Post-result hypothesis from validation overprediction and June share of high-level trainingweight. Halfweight is a declared sensitivity point, not an optimum or safetybound. Cannot call known evaluation independent."
+}

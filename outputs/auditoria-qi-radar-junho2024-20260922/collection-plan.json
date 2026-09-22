@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-09-22T06:48:28.931908+00:00",
+  "jobs": [
+    {
+      "month": "2024-06",
+      "resource_id": "f3a7b379-7436-4127-911f-18e2d3b92310",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2024_06.csv"
+    }
+  ],
+  "catalog_path": "outputs/historico-vazoes-ceran/raw/catalog.json",
+  "catalog_sha256": "bd0203e0db33546a2ba8ffbc34766b28ea49703d9952dead56615460977cf3da",
+  "script_sha256": "7fdde3454f5c3654065f1c712bb00dc91d9aa748de67434b2213b5f69668f343",
+  "maximum_gets": 1,
+  "maximum_bytes_each": 33554432,
+  "no_retries": true,
+  "stations": {
+    "JIUHQJ": "14 DE JULHO",
+    "JIUHMC": "MONTE CLARO",
+    "JIUHCA": "CASTRO ALVES"
+  },
+  "purpose": "Literal source audit, no fit, inference or operational changes.",
+  "windows_including_warmup": [
+    [
+      "2024-06-12",
+      "2024-06-21"
+    ]
+  ],
+  "time_policy": "Preserve literal timestamps, including23:59; no timezone or publication certification.",
+  "diagnostic_policy": "Keep zeros, negatives and missing fields; flag, never repair or certify. A residual>1m3/s is a diagnostic, not an official QC flag.",
+  "lookup_policy": "For each hourly origin in the central7days, Q current/back1/2/4/8h and I current use a declared60min lag with maximum age90min after query. Publication latency not verified."
+}

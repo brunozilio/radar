@@ -1,0 +1,36 @@
+{
+  "registered_utc": "2026-09-22T06:48:40.799864+00:00",
+  "stations": [
+    {
+      "code": "86472000",
+      "name": "Linha José Júlio",
+      "delay_minutes": 30,
+      "max_age_after_query_minutes": 15
+    },
+    {
+      "code": "86472600",
+      "name": "Santa Tereza",
+      "delay_minutes": 15,
+      "max_age_after_query_minutes": 15
+    },
+    {
+      "code": "86500000",
+      "name": "Passo Carreiro",
+      "delay_minutes": 30,
+      "max_age_after_query_minutes": 15
+    }
+  ],
+  "window_start": "2024-06-15",
+  "window_end": "2024-06-21",
+  "max_new_gets": 3,
+  "no_retry": true,
+  "inventory": "Consulta restrita de source-manifest/plan/raw receipts por datas15–21Jun2024 encontrou somenteMuçum86510000 na pesquisa anterior; fontes hidrologia2024 existentes cobrem março–início maio. Nenhum cache correspondente aos três códigos encontrado.",
+  "identity_note": "Código86472600 corresponde aSantaTereza no boletimSGB preservado. SantaLúcia86580000 não será consultada.",
+  "fields_scope": "Auditar somente nível final/sensor e respectivosQC. CorpoXML/ALL-QC preserva demais campos incidentalmente devolvidos, sem requisitar chuva/usinas separadamente.",
+  "restrictions": [
+    "no interpolation",
+    "no training/matrix",
+    "no timezone/datum/publication certification",
+    "no replacement of invalid final level with sensor"
+  ]
+}

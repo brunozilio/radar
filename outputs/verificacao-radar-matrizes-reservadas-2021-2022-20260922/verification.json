@@ -1,0 +1,3326 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "manifest:outputs/radar-insumos-reservados-2021-2022-20260922",
+      "passed": true
+    },
+    {
+      "name": "manifest:outputs/ons-reserva-2021-2022-20260922",
+      "passed": true
+    },
+    {
+      "name": "manifest:outputs/radar-matrizes-reservadas-2021-2022-20260922",
+      "passed": true
+    },
+    {
+      "name": "27stations",
+      "passed": true
+    },
+    {
+      "name": "ONSsource:2021-04",
+      "passed": true
+    },
+    {
+      "name": "ONSsource:2021-05",
+      "passed": true
+    },
+    {
+      "name": "ONSsource:2022-04",
+      "passed": true
+    },
+    {
+      "name": "ONSsource:2022-05",
+      "passed": true
+    },
+    {
+      "name": "ONSsource:2022-06",
+      "passed": true
+    },
+    {
+      "name": "2021:hourgrid",
+      "passed": true,
+      "cells": 744,
+      "finite": 744,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:quartergrid",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:shape",
+      "passed": true
+    },
+    {
+      "name": "2021:86510000:sorted",
+      "passed": true
+    },
+    {
+      "name": "2021:86510000:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86510000:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3263,
+      "nan": 1,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86472000:sorted",
+      "passed": true
+    },
+    {
+      "name": "2021:86472000:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86472000:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86472600:sorted",
+      "passed": true
+    },
+    {
+      "name": "2021:86472600:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86472600:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86500000:sorted",
+      "passed": true
+    },
+    {
+      "name": "2021:86500000:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86500000:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:base",
+      "passed": true,
+      "cells": 744,
+      "finite": 744,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:strict_truth_quarter",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:explicitly_approved_exact_truth",
+      "passed": true,
+      "cells": 744,
+      "finite": 744,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:leveltrace_size",
+      "passed": true
+    },
+    {
+      "name": "2021:all_leveltrace_values",
+      "passed": true
+    },
+    {
+      "name": "2021:julho:uniqueONS",
+      "passed": true
+    },
+    {
+      "name": "2021:julho:Q:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:julho:Q:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:julho:I:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:julho:I:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:monte:uniqueONS",
+      "passed": true
+    },
+    {
+      "name": "2021:monte:Q:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:monte:Q:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:monte:I:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:monte:I:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:castro:uniqueONS",
+      "passed": true
+    },
+    {
+      "name": "2021:castro:Q:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3263,
+      "nan": 1,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:castro:Q:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3263,
+      "nan": 1,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:castro:I:raw",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3263,
+      "nan": 1,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:castro:I:delayed",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3263,
+      "nan": 1,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:45levels_and_QI",
+      "passed": true,
+      "cells": 33480,
+      "finite": 20088,
+      "nan": 13392,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:86060010:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86099000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86102000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86117000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86125000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86125050:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86160000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86163000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86200900:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86280500:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86298000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86403000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86410800:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86447000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86448000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86450000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86471000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86472000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86472600:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86479000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86488000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86493000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86495500:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86500000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86504900:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86505500:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:86510000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2021:Baixo Antas:P1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 2198,
+      "nan": 1066,
+      "max_abs": 7.993605777301127e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:C1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:P3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3193,
+      "nan": 71,
+      "max_abs": 9.769962616701378e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:C3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:P6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3230,
+      "nan": 34,
+      "max_abs": 1.4210854715202004e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:C6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:P12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3231,
+      "nan": 33,
+      "max_abs": 2.1316282072803006e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:C12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:P24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3199,
+      "nan": 65,
+      "max_abs": 2.842170943040401e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:C24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:P48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3139,
+      "nan": 125,
+      "max_abs": 3.064215547965432e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Baixo Antas:C48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:P1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 1624,
+      "nan": 1640,
+      "max_abs": 2.55351295663786e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:C1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:P3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3242,
+      "nan": 22,
+      "max_abs": 3.9968028886505635e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:C3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:P6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3244,
+      "nan": 20,
+      "max_abs": 5.329070518200751e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:C6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:P12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3228,
+      "nan": 36,
+      "max_abs": 7.438494264988549e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:C12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:P24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3196,
+      "nan": 68,
+      "max_abs": 1.0658141036401503e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:C24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:P48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3136,
+      "nan": 128,
+      "max_abs": 1.4432899320127035e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Carreiro:C48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:P1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:C1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:P3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:C3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:P6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:C6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:P12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:C12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:P24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:C24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:P48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 0,
+      "nan": 3264,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Prata-Turvo:C48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:P1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 1524,
+      "nan": 1740,
+      "max_abs": 9.103828801926284e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:C1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:P3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3119,
+      "nan": 145,
+      "max_abs": 1.1546319456101628e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:C3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:P6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3198,
+      "nan": 66,
+      "max_abs": 1.4210854715202004e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:C6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:P12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3216,
+      "nan": 48,
+      "max_abs": 2.1316282072803006e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:C12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:P24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3180,
+      "nan": 84,
+      "max_abs": 2.1316282072803006e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:C24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:P48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3112,
+      "nan": 152,
+      "max_abs": 2.1316282072803006e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Alto Antas:C48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:P1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3250,
+      "nan": 14,
+      "max_abs": 2.1760371282653068e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:C1:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:P3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3253,
+      "nan": 11,
+      "max_abs": 2.6645352591003757e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:C3:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:P6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3243,
+      "nan": 21,
+      "max_abs": 3.552713678800501e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:C6:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:P12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3228,
+      "nan": 36,
+      "max_abs": 4.263256414560601e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:C12:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:P24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3204,
+      "nan": 60,
+      "max_abs": 4.263256414560601e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:C24:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:P48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3156,
+      "nan": 108,
+      "max_abs": 5.684341886080802e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:Tainhas:C48:allquarters",
+      "passed": true,
+      "cells": 3264,
+      "finite": 3264,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:all120features",
+      "passed": true,
+      "cells": 89280,
+      "finite": 68923,
+      "nan": 20357,
+      "max_abs": 4.973799150320701e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2021:complete24",
+      "passed": true,
+      "cells": 744,
+      "finite": 744,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:names120",
+      "passed": true
+    },
+    {
+      "name": "2021:QItracecount",
+      "passed": true
+    },
+    {
+      "name": "2021:QItrace_to21features",
+      "passed": true,
+      "cells": 15624,
+      "finite": 15624,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2021:all_QI_flags_preserved_withoutmask",
+      "passed": true
+    },
+    {
+      "name": "2021:QIorigin_diagnostics_exact_source",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh1",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h1",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh2",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h2",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh3",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h3",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh4",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h4",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh5",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h5",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh6",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h6",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh7",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h7",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh8",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h8",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh9",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h9",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh10",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h10",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh11",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h11",
+      "passed": true
+    },
+    {
+      "name": "2021:boundaryh12",
+      "passed": true
+    },
+    {
+      "name": "2021:target_schedule_summary_h12",
+      "passed": true
+    },
+    {
+      "name": "2022:hourgrid",
+      "passed": true,
+      "cells": 1464,
+      "finite": 1464,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:quartergrid",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:shape",
+      "passed": true
+    },
+    {
+      "name": "2022:86510000:sorted",
+      "passed": true
+    },
+    {
+      "name": "2022:86510000:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6136,
+      "nan": 8,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86510000:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6135,
+      "nan": 9,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86472000:sorted",
+      "passed": true
+    },
+    {
+      "name": "2022:86472000:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 3109,
+      "nan": 3035,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86472000:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 3109,
+      "nan": 3035,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86472600:sorted",
+      "passed": true
+    },
+    {
+      "name": "2022:86472600:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86472600:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86500000:sorted",
+      "passed": true
+    },
+    {
+      "name": "2022:86500000:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86500000:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:base",
+      "passed": true,
+      "cells": 1464,
+      "finite": 1458,
+      "nan": 6,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:strict_truth_quarter",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6136,
+      "nan": 8,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:explicitly_approved_exact_truth",
+      "passed": true,
+      "cells": 1464,
+      "finite": 1463,
+      "nan": 1,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:leveltrace_size",
+      "passed": true
+    },
+    {
+      "name": "2022:all_leveltrace_values",
+      "passed": true
+    },
+    {
+      "name": "2022:julho:uniqueONS",
+      "passed": true
+    },
+    {
+      "name": "2022:julho:Q:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:julho:Q:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:julho:I:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:julho:I:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:monte:uniqueONS",
+      "passed": true
+    },
+    {
+      "name": "2022:monte:Q:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:monte:Q:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:monte:I:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:monte:I:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:castro:uniqueONS",
+      "passed": true
+    },
+    {
+      "name": "2022:castro:Q:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:castro:Q:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:castro:I:raw",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:castro:I:delayed",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:45levels_and_QI",
+      "passed": true,
+      "cells": 65880,
+      "finite": 43686,
+      "nan": 22194,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:86060010:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86099000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86102000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86117000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86125000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86125050:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86160000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86163000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86200900:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86280500:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86298000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86403000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86410800:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86447000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86448000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86450000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86471000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86472000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86472600:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86479000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86488000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86493000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86495500:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86500000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86504900:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86505500:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:86510000:rain_delay",
+      "passed": true
+    },
+    {
+      "name": "2022:Baixo Antas:P1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 4378,
+      "nan": 1766,
+      "max_abs": 3.941291737419306e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:C1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:P3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6076,
+      "nan": 68,
+      "max_abs": 4.218847493575595e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:C3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:P6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6095,
+      "nan": 49,
+      "max_abs": 6.455946888195285e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:C6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:P12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6107,
+      "nan": 37,
+      "max_abs": 7.294165271787278e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:C12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:P24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6076,
+      "nan": 68,
+      "max_abs": 9.769962616701378e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:C24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:P48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6015,
+      "nan": 129,
+      "max_abs": 9.947598300641403e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Baixo Antas:C48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:P1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:C1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:P3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:C3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:P6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:C6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:P12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:C12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:P24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:C24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:P48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 0,
+      "nan": 6144,
+      "max_abs": 0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Carreiro:C48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:P1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 3066,
+      "nan": 3078,
+      "max_abs": 5.795364188543317e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:C1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:P3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6131,
+      "nan": 13,
+      "max_abs": 7.382983113757291e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:C3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:P6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6124,
+      "nan": 20,
+      "max_abs": 1.0036416142611415e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:C6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:P12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6108,
+      "nan": 36,
+      "max_abs": 1.7852386235972517e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:C12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:P24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6076,
+      "nan": 68,
+      "max_abs": 2.831068712794149e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:C24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:P48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6016,
+      "nan": 128,
+      "max_abs": 5.222489107836736e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Prata-Turvo:C48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:P1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 2998,
+      "nan": 3146,
+      "max_abs": 4.241051954068098e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:C1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:P3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6078,
+      "nan": 66,
+      "max_abs": 4.285460875053104e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:C3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:P6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6117,
+      "nan": 27,
+      "max_abs": 5.684341886080802e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:C6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:P12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6104,
+      "nan": 40,
+      "max_abs": 7.638334409421077e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:C12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:P24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6072,
+      "nan": 72,
+      "max_abs": 8.526512829121202e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:C24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:P48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6012,
+      "nan": 132,
+      "max_abs": 1.5987211554602254e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Alto Antas:C48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:P1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6137,
+      "nan": 7,
+      "max_abs": 9.747758156208874e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:C1:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:P3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6133,
+      "nan": 11,
+      "max_abs": 1.687538997430238e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:C3:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:P6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6123,
+      "nan": 21,
+      "max_abs": 2.2737367544323206e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:C6:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:P12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6108,
+      "nan": 36,
+      "max_abs": 3.268496584496461e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:C12:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:P24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6084,
+      "nan": 60,
+      "max_abs": 4.192202140984591e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:C24:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:P48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6036,
+      "nan": 108,
+      "max_abs": 6.394884621840902e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:Tainhas:C48:allquarters",
+      "passed": true,
+      "cells": 6144,
+      "finite": 6144,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:all120features",
+      "passed": true,
+      "cells": 175680,
+      "finite": 140084,
+      "nan": 35596,
+      "max_abs": 6.323830348264892e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "2022:complete24",
+      "passed": true,
+      "cells": 1464,
+      "finite": 1464,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:names120",
+      "passed": true
+    },
+    {
+      "name": "2022:QItracecount",
+      "passed": true
+    },
+    {
+      "name": "2022:QItrace_to21features",
+      "passed": true,
+      "cells": 30744,
+      "finite": 30744,
+      "nan": 0,
+      "max_abs": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "2022:all_QI_flags_preserved_withoutmask",
+      "passed": true
+    },
+    {
+      "name": "2022:QIorigin_diagnostics_exact_source",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh1",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h1",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh2",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h2",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh3",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h3",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh4",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h4",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh5",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h5",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh6",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h6",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh7",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h7",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh8",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h8",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh9",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h9",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh10",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h10",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh11",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h11",
+      "passed": true
+    },
+    {
+      "name": "2022:boundaryh12",
+      "passed": true
+    },
+    {
+      "name": "2022:target_schedule_summary_h12",
+      "passed": true
+    },
+    {
+      "name": "inputhash:docs/radar-reserved-2021-2022-challenge-protocol.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ons-references.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/audit.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/lag-source-trace.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/origin-diagnostics.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/verification.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_radar_reserved_features.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_radar_2024_features.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_model.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_rain_windows.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2021-04-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2021-05-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:docs/radar-reserved-2021-2022-challenge-protocol.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ons-references.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/audit.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/lag-source-trace.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/origin-diagnostics.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/verification.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_radar_reserved_features.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_radar_2024_features.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_model.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_rain_windows.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2022-04-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2022-05-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2022-06-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:docs/radar-reserved-2021-2022-challenge-protocol.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/audit.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2021-04-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2021-05-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2022-04-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2022-05-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ceran-2022-06-source-values.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/lag-source-trace.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/ons-references.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/ons-reserva-2021-2022-20260922/origin-diagnostics.csv",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86060010-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86099000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86102000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86117000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86125000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86125050-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86160000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86163000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86200900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86280500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86298000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86403000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86410800-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86447000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86448000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86450000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86471000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86472000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86472600-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86479000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86488000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86493000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86495500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86500000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86504900-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86505500-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86510000-all-qc.jsonl",
+      "passed": true
+    },
+    {
+      "name": "inputhash:outputs/radar-insumos-reservados-2021-2022-20260922/verification.json",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_model.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_radar_2024_features.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_radar_reserved_features.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_rain_windows.py",
+      "passed": true
+    },
+    {
+      "name": "inputhash:scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "all264960cells",
+      "passed": true
+    }
+  ],
+  "years": [
+    {
+      "year": 2021,
+      "shape": [
+        744,
+        120
+      ],
+      "cells": 89280,
+      "nan_cells": 20357,
+      "finite_base": 744,
+      "finite_truth": 744,
+      "complete24": 0,
+      "level_traces": 2976,
+      "qi_traces": 13392,
+      "zero_qi_traces": 1,
+      "zero_qi_origins": 1,
+      "target_coverage": [
+        {
+          "year": 2021,
+          "horizon_h": 1,
+          "origin_rows": 744,
+          "within_window": 743,
+          "boundary_excluded": 1,
+          "finite_target": 743,
+          "finite_base": 744,
+          "valid_pairs": 743,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 743,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 2,
+          "origin_rows": 744,
+          "within_window": 742,
+          "boundary_excluded": 2,
+          "finite_target": 742,
+          "finite_base": 744,
+          "valid_pairs": 742,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 742,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 3,
+          "origin_rows": 744,
+          "within_window": 741,
+          "boundary_excluded": 3,
+          "finite_target": 741,
+          "finite_base": 744,
+          "valid_pairs": 741,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 741,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 4,
+          "origin_rows": 744,
+          "within_window": 740,
+          "boundary_excluded": 4,
+          "finite_target": 740,
+          "finite_base": 744,
+          "valid_pairs": 740,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 740,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 5,
+          "origin_rows": 744,
+          "within_window": 739,
+          "boundary_excluded": 5,
+          "finite_target": 739,
+          "finite_base": 744,
+          "valid_pairs": 739,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 739,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 6,
+          "origin_rows": 744,
+          "within_window": 738,
+          "boundary_excluded": 6,
+          "finite_target": 738,
+          "finite_base": 744,
+          "valid_pairs": 738,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 738,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 7,
+          "origin_rows": 744,
+          "within_window": 737,
+          "boundary_excluded": 7,
+          "finite_target": 737,
+          "finite_base": 744,
+          "valid_pairs": 737,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 737,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 8,
+          "origin_rows": 744,
+          "within_window": 736,
+          "boundary_excluded": 8,
+          "finite_target": 736,
+          "finite_base": 744,
+          "valid_pairs": 736,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 736,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 9,
+          "origin_rows": 744,
+          "within_window": 735,
+          "boundary_excluded": 9,
+          "finite_target": 735,
+          "finite_base": 744,
+          "valid_pairs": 735,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 735,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 10,
+          "origin_rows": 744,
+          "within_window": 734,
+          "boundary_excluded": 10,
+          "finite_target": 734,
+          "finite_base": 744,
+          "valid_pairs": 734,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 734,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 11,
+          "origin_rows": 744,
+          "within_window": 733,
+          "boundary_excluded": 11,
+          "finite_target": 733,
+          "finite_base": 744,
+          "valid_pairs": 733,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 733,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        },
+        {
+          "year": 2021,
+          "horizon_h": 12,
+          "origin_rows": 744,
+          "within_window": 732,
+          "boundary_excluded": 12,
+          "finite_target": 732,
+          "finite_base": 744,
+          "valid_pairs": 732,
+          "missing_target_inside": 0,
+          "missing_base_target_finite": 0,
+          "finite_base_in_schedule": 732,
+          "high_observed_targets": 11,
+          "high_valid_pairs": 11
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "shape": [
+        1464,
+        120
+      ],
+      "cells": 175680,
+      "nan_cells": 35596,
+      "finite_base": 1458,
+      "finite_truth": 1463,
+      "complete24": 0,
+      "level_traces": 5856,
+      "qi_traces": 26352,
+      "zero_qi_traces": 0,
+      "zero_qi_origins": 0,
+      "target_coverage": [
+        {
+          "year": 2022,
+          "horizon_h": 1,
+          "origin_rows": 1464,
+          "within_window": 1463,
+          "boundary_excluded": 1,
+          "finite_target": 1462,
+          "finite_base": 1458,
+          "valid_pairs": 1457,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1458,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 2,
+          "origin_rows": 1464,
+          "within_window": 1462,
+          "boundary_excluded": 2,
+          "finite_target": 1461,
+          "finite_base": 1458,
+          "valid_pairs": 1456,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1457,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 3,
+          "origin_rows": 1464,
+          "within_window": 1461,
+          "boundary_excluded": 3,
+          "finite_target": 1460,
+          "finite_base": 1458,
+          "valid_pairs": 1455,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1456,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 4,
+          "origin_rows": 1464,
+          "within_window": 1460,
+          "boundary_excluded": 4,
+          "finite_target": 1459,
+          "finite_base": 1458,
+          "valid_pairs": 1454,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1455,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 5,
+          "origin_rows": 1464,
+          "within_window": 1459,
+          "boundary_excluded": 5,
+          "finite_target": 1458,
+          "finite_base": 1458,
+          "valid_pairs": 1453,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1454,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 6,
+          "origin_rows": 1464,
+          "within_window": 1458,
+          "boundary_excluded": 6,
+          "finite_target": 1457,
+          "finite_base": 1458,
+          "valid_pairs": 1452,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1453,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 7,
+          "origin_rows": 1464,
+          "within_window": 1457,
+          "boundary_excluded": 7,
+          "finite_target": 1456,
+          "finite_base": 1458,
+          "valid_pairs": 1451,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1452,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 8,
+          "origin_rows": 1464,
+          "within_window": 1456,
+          "boundary_excluded": 8,
+          "finite_target": 1455,
+          "finite_base": 1458,
+          "valid_pairs": 1450,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1451,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 9,
+          "origin_rows": 1464,
+          "within_window": 1455,
+          "boundary_excluded": 9,
+          "finite_target": 1454,
+          "finite_base": 1458,
+          "valid_pairs": 1449,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1450,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 10,
+          "origin_rows": 1464,
+          "within_window": 1454,
+          "boundary_excluded": 10,
+          "finite_target": 1453,
+          "finite_base": 1458,
+          "valid_pairs": 1448,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1449,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 11,
+          "origin_rows": 1464,
+          "within_window": 1453,
+          "boundary_excluded": 11,
+          "finite_target": 1452,
+          "finite_base": 1458,
+          "valid_pairs": 1447,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1448,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        },
+        {
+          "year": 2022,
+          "horizon_h": 12,
+          "origin_rows": 1464,
+          "within_window": 1452,
+          "boundary_excluded": 12,
+          "finite_target": 1451,
+          "finite_base": 1458,
+          "valid_pairs": 1446,
+          "missing_target_inside": 1,
+          "missing_base_target_finite": 5,
+          "finite_base_in_schedule": 1447,
+          "high_observed_targets": 312,
+          "high_valid_pairs": 311
+        }
+      ]
+    }
+  ],
+  "total_cells": 264960,
+  "maximum_absolute_cell_difference": 6.394884621840902e-13,
+  "source_sha256": {
+    "outputs/radar-insumos-reservados-2021-2022-20260922/artifact-hashes.json": "8a892754bc8843a5bab581433d7afd83ee9a769172fcc131695796fd5486ae57",
+    "outputs/ons-reserva-2021-2022-20260922/artifact-hashes.json": "1a0d5d84acd255bceddf7c7b4ca369d4c8c7ef90d60c2e02d6044dfb93e609c5",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/artifact-hashes.json": "666902014ecdfe4594f4be76b023bfdb81fbba54e24974a755a8d79ec0159671",
+    "docs/radar-reserved-2021-2022-challenge-protocol.json": "66d32e1aa148c165f01f0527bbe5fc0b47bd952a2f856fa9ba295b060d6ec0e8",
+    "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+    "outputs/auditoria-latencias-chuva-20260921/latencies.json": "f0182f5670b715890c4973324f066b66a6c12810cb5bd76ee39f130c5d47252e",
+    "outputs/ons-reserva-2021-2022-20260922/ons-references.json": "56a715428da290bd540d8c7e35bc6c82ffd9682b08078c62a98aade19d2043cc",
+    "outputs/ons-reserva-2021-2022-20260922/ceran-2021-04-source-values.csv": "b436ae8d645bc5b6d87657003aa6b80e512bcb750563f60cd1a75a18f2e6e17b",
+    "outputs/ons-reserva-2021-2022-20260922/raw/ons-2021-04.csv": "2561160a5763a50dd48981de176cc0a89f61cc0f03e376a795605f74420577a2",
+    "outputs/ons-reserva-2021-2022-20260922/ceran-2021-05-source-values.csv": "e79bd79725da3aad446c2aa499082b9d4e9d3d4ec6bf2fdff98a92107d89fb90",
+    "outputs/ons-reserva-2021-2022-20260922/raw/ons-2021-05.csv": "18c35fd798b06b6d6b038bbe92b6bb1d23d3cdbf0020f79dfe723b3c655b5683",
+    "outputs/ons-reserva-2021-2022-20260922/ceran-2022-04-source-values.csv": "40a015345d54789374f01a14b9188f31f0939b7f316fcd4e0402061edf535114",
+    "outputs/ons-reserva-2021-2022-20260922/raw/ons-2022-04.csv": "5869f8346cae89b1cc7f32457893edf869d34bcfe76b48c57563b9049a1984ab",
+    "outputs/ons-reserva-2021-2022-20260922/ceran-2022-05-source-values.csv": "6fd253cf3e780d438cb6482b295b769420c181cc64f388f75d628da6af0e9d35",
+    "outputs/ons-reserva-2021-2022-20260922/raw/ons-2022-05.csv": "d91040ad8a1f4a61aa1918a54fba1202a01f91c53cdb85d201cefdc355b548a6",
+    "outputs/ons-reserva-2021-2022-20260922/ceran-2022-06-source-values.csv": "9221d306133f5151a81f8c7418761474b39edc6243a1ad7ef8d7978a2cc98cc7",
+    "outputs/ons-reserva-2021-2022-20260922/raw/ons-2022-06.csv": "1ce4ed3b7d7514d1e8adf6e42ba2a1d5f203753fce6fae2f3d82de7da7e3b415",
+    "outputs/ons-reserva-2021-2022-20260922/lag-source-trace.csv": "7759ffda986e76827378381976127913c0fd2d22e3962ad6473a313c61ca74d4",
+    "outputs/ons-reserva-2021-2022-20260922/origin-diagnostics.csv": "1015348380fed2a59ad573e1c4a965397c36b6ec98da2b3fd70fabd075bdc43b",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/features.npz": "895d33626e2248b86d4e01aca182895a37e75a6549b443fb99d6e09ae8594f77",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/quarter-hour.npz": "5d5c836561417dbcce330923fd2bc298f8e33e7607b2d740eeffadb8aaa0117b",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86510000-all-qc.jsonl": "664fa202c05f17a3b9b3b18f54b569b457c40a83c2345fefd9917d0ea9c313d6",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86472000-all-qc.jsonl": "eaeeb6c2bc2c59e03aaa29530339e9ebe7700be3dc6995c02ff01b21be95d1b5",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86472600-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86500000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/level-source-trace.csv": "3db1a537d845eb0005ee16ce0498b65bc3a7da66485dfde5469f1f326c9a8c06",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86060010-all-qc.jsonl": "690437c8fc412952f258f29e20e988cc20f2191675e26e95d548f2046945a4c3",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86099000-all-qc.jsonl": "18343ec9dff4e7d92ad733038e2f8703934a034cbdb6906e6a4e7d6071ece125",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86102000-all-qc.jsonl": "a437b469eeedc6524528ec6af926d6c916a63f82f9bbc398b6a521f2f0e92102",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86117000-all-qc.jsonl": "c311769023cfdde821bafe65e201017082b4e0f9cdafa5a33867b5e2a5f686dc",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86125000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86125050-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86160000-all-qc.jsonl": "2fb3739fda14a5a030c2f986a7b67694ad33ea8ffec1c60b6c4d17534569a5d7",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86163000-all-qc.jsonl": "438a7d4a2db0af08821dd0abd592252ebf23da38a26a5c329053ec42cca4e373",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86200900-all-qc.jsonl": "f6794d1bb26f77fa896e4ea0fe481828eb636626f175d51a354d5b14b4a7b697",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86280500-all-qc.jsonl": "992ea2a168cce379065356423c1917f0b7cabd793f4aa0f1fbbeca6e22988596",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86298000-all-qc.jsonl": "71dd774e83bae9e7882c444cc6fb101d849169c6bd0d82080ea046743dc7945b",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86403000-all-qc.jsonl": "c816d4a6f1cbf510a7bea6aeb73f847d4e55003815303779bde1a3c299db618b",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86410800-all-qc.jsonl": "5a9e558523ca671c61301940914be2ae5efae65dc15f035cc95da171b59d94dc",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86447000-all-qc.jsonl": "2522cabf8113ab6f002bf466ebdf9b678ed8b719d1e28d2a1ee469bb8e94f4ba",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86448000-all-qc.jsonl": "088aa57bbbdcb3c97b19e27f24f4bb0a48bdb385aa14b27e799f356eae3f9f8a",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86450000-all-qc.jsonl": "006a37793bdcd6d225ddd12342b22fbda287b4bc87ef02e19b6adbda26ead2f9",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86471000-all-qc.jsonl": "2869e1d6d035789260b9a287c5299489a05d6a2b779c017a334b55331cdcf213",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86479000-all-qc.jsonl": "89cd8b13ead56218db238a7376e5663d4378bd25c1d5bbff69e4112e7ebbd514",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86488000-all-qc.jsonl": "be78e1615e724388d12c6d261fbb684b0998dbfe2628fa51386acc68c1f6908e",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86493000-all-qc.jsonl": "77fa68e7a1d7c1c9955bef8354488fbce6e003697fc37e00df6149d38ccf26ad",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86495500-all-qc.jsonl": "9cbd34ccc74f502e1c9d7b060511cc28f6dd53cc7e5af2a015a7bdedeaab58db",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86504900-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2021/ana-86505500-all-qc.jsonl": "17c919fb5cef57155cb7dec312c64c63de3a31eedbcb0b62d4648403eb718348",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/qi-origin-diagnostics.csv": "1fb03fc4ba607483e87dc36af85aa611c0a74fce75bd38db39abcfe3f77f3557",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/target-coverage.csv": "2f60482c6f7b97641ef75bf19bdf02faf61e7350cdca2657ee9484100cdbf757",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/features.npz": "a420bcb929ed6e6098d5ee97638f1b9cc0ef5336f2361878a7f4b910c2aeea36",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/quarter-hour.npz": "78dc8f1e555f600fc688eec324577820e405bd8bd1622f522b3618cca049113e",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86510000-all-qc.jsonl": "5c1266c3043ef5d88931de10a870ab3b82da27e64144e878228f4d6cdaa50426",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86472000-all-qc.jsonl": "4664a8382d3c7db2b5e3e7401c98e234f2f920d819e671030602fbc240fa0329",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86472600-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86500000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/level-source-trace.csv": "bcb97d32ac1470e4f07515cef9120fac96c0dfccbdd8b438b0105e62362f116e",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86060010-all-qc.jsonl": "5cead54369d9e65ade09023aab0698fbf8ec10c01f19eb7878a49b8f3f86018d",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86099000-all-qc.jsonl": "33f37c24f5f58921d4ed3a0431a51cd3c0e2dc9d4eda2ead1332fd5d3f24ec9d",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86102000-all-qc.jsonl": "11280bcc93c1b272133d5f121dccfe9c8b84295722f87e42b7afbd4ceaa5d41a",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86117000-all-qc.jsonl": "52c7f9283bb4d94153024a0ade893a61fd19e41b5b842f655d58942b4c27354c",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86125000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86125050-all-qc.jsonl": "54882bd3b580cc3f788a08ae51449dc32d5eb4e355383319ffbbaccbe92c0976",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86160000-all-qc.jsonl": "26c7f2a987085a0265557a95e508e0b07dff86ff8b3402fc7082cd104140b1ae",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86163000-all-qc.jsonl": "484774d994d9b3e405c530174f60024ce9d8586a2982686c19205d2b98e7c5a3",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86200900-all-qc.jsonl": "53ba6b30bd579f636a21d77cdd476e16eaf22b0ca7b3684d45fe05246ff5e7fc",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86280500-all-qc.jsonl": "990b2e672549e423ebb888d7380c376aa14d89a019527d094bbb9bedc8b5c7b7",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86298000-all-qc.jsonl": "d15dcd9c3bed771cdac8d724b028fe94f9c2193f8169c026d46dd4ec360c3b0c",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86403000-all-qc.jsonl": "64eca5b27faa6f5cf0d0b36cc6b9ae1076b99842f17cd03acd99b7b48433a0fd",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86410800-all-qc.jsonl": "5537b7d8a6b193d630f6b0d5beb8ecb0698f59e35cb61e8964f5a9da9c80dee3",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86447000-all-qc.jsonl": "9adff153cd1812d484e12e2f4e1cb49ac9f0d264fa6cfbba08820ebc4f3fb609",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86448000-all-qc.jsonl": "cb0027402664b096f412fb2bb61b9fe5241a784a590ffb43daa8c8f96977bd6d",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86450000-all-qc.jsonl": "6a95218a84de41b6b878703b43a1ae5abaa9fdced19d4342fb1ccef15e2331a8",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86471000-all-qc.jsonl": "91f8f8d5d9416a6683f8ee3a3cb539a46af64c60e3ac503ef4a6134efa21c6b5",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86479000-all-qc.jsonl": "15e5a7453272a1fce60dc155899faa7b76dfc5f66ed7870d40f1e4ad81da3761",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86488000-all-qc.jsonl": "bd3cbe1ff045e4e9cfeccbe069e3a4c3d35832b759e1471f6b6c6afc3de49d0f",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86493000-all-qc.jsonl": "0ca991655426fb0aad03d96ca00ec9099ecbb294067a1cabbfe7599f8b01a11c",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86495500-all-qc.jsonl": "d8bfe34ede449e76f5a820c9ba841b286e49fdbc741cc0bfc922aaa4a43aaea8",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86504900-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-reservados-2021-2022-20260922/stations/2022/ana-86505500-all-qc.jsonl": "a06583f3b104b359b849591f94b4c19a65c22b69c90a8d275257c72b7531219f",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/qi-origin-diagnostics.csv": "66707131a8f0f658258cd78fa071180cbe15f0eb5e8a4b792967969dd5b31c95",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/target-coverage.csv": "e735873fb03a0072e8ce18f739220247ada24e8e9836b4e8a673094d340764da",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2021/preparation.json": "d60d78f74048dd345a10df2a0af8e08a0db2be5612b3b48dbc5116f9b906a1b8",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/preparation.json": "7a1e027149f1c89da02a0c1910b2f42879cb5192085508dd415625169566ab44",
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/preparation.json": "3007ee9addbcb9b442b08a4c36c9150d7e410efb3eb88fa92130d4954d48a3c1"
+  },
+  "limitations": [
+    "No inference/training/error calculation.",
+    "SourceALL-QC was previously compared fieldwise to XML; current audit uses immutable hashes and JSONL.",
+    "ONS literalCSV and originalhashes verified, not a new decode of original CSV here.",
+    "Timezone/datum/physical regime and historic availability remain assumed, not certified by numerical agreement.",
+    "Source-reported zeros/negatives retained; diagnostic flags never modify matrix."
+  ]
+}

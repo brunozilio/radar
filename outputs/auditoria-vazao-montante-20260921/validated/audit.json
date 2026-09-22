@@ -1,0 +1,31 @@
+{
+  "source_snapshot": "outputs/mucum-hourly-20260921T170134-0300",
+  "source_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "outputs/mucum-hourly-20260921T170134-0300/dados-roteamento.npz": "32124899827e870aecbec98f1f6b723fe142b5cfdcdb5b72901add3bab9db645",
+    "outputs/mucum-hourly-20260921T170134-0300/telemetria-latencia.npz": "13ec6c8a4a437fc9f3be0dd34b84e2cdae767c061ccc9b5a6276a933eaaccbfb",
+    "outputs/mucum-hourly-20260921T170134-0300/previsao-vazoes-montante.csv": "47d0734a5031b43891ca3bd7b54640cd153dd6a7413b75072f3339557b30fd8e",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_flow_diagnostics.py": "c0137dcebebe20591185de43ed65fc31c701ac9465ea5478b39b0a48252455e6",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py": "cc83810472b4d9569c75806a227388bb94f2b0ce1327ee5c84461e302525ed92",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py": "b12cea013b4f580b73c3adbf179140b9fc19618c55c849098c674c83badcd9ac",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae"
+  },
+  "development_validation": "2025-10-01 to 2026-07-01 exclusive targets",
+  "development_test": "2026-07-01 to 2026-09-21 exclusive targets; previously inspected, not new independent holdout",
+  "high_flow_definition": "95th percentile of source flow before 2025-10-01; not a flood warning threshold",
+  "gain_candidates": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "selection_score": "validation MAE all + 0.5 * validation MAE high flow",
+  "model_promoted": false,
+  "goal_achieved": false,
+  "live_issuance": false,
+  "maximum_reproduction_error_m3_s": 1.0913936421275139e-11,
+  "out_of_range_feature_rows": 384
+}

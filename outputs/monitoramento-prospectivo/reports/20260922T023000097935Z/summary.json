@@ -1,0 +1,665 @@
+{
+  "created_at": "2026-09-22T02:30:00.097935+00:00",
+  "records": 2058,
+  "ledger_tip_sha256": "33a00fb7d21e6e0ad16bd7ca861dfc87e6409b0a5bd58d1d0b5edafbe1ca356f",
+  "report_code": [
+    {
+      "path": "code/hydro_prospective_ledger.py",
+      "sha256": "28bc3a656e1eb5ff4446c5df930bde4bc4001c4b37f4ce81eb091610f9166bae"
+    },
+    {
+      "path": "code/hydro_cadence.py",
+      "sha256": "0a084d290f345172676e51fbcf602b9619f4601d62855be3fb4b9475ffff1d86"
+    },
+    {
+      "path": "code/hydro_flood_events.py",
+      "sha256": "4276bafcc716f8643e4045381eadc5277568fb1a0994541e55ee8d59177aaea3"
+    },
+    {
+      "path": "code/hydro_verification_metrics.py",
+      "sha256": "bdf2a6d0400c4335b9ae4b0671dedde7adc1e9d04d8ee8116bd0322020696381"
+    }
+  ],
+  "retired_model_pairs_preserved": 109,
+  "pairs": 137,
+  "status_counts": {
+    "matched": 40,
+    "not_due": 97
+  },
+  "goal_eligible_pairs": 0,
+  "goal_achieved": false,
+  "scorecard": [],
+  "limitations": [
+    "Local hash chain is not an external time authority.",
+    "Lead h means at least h and less than h+1 real hours before target; never the nominal calculation label.",
+    "No event independence or sample-size sufficiency is certified by this report.",
+    "Imported old calculations never count toward the prospective target.",
+    "Delivery coverage is audited separately from paired prediction accuracy; scheduler execution is not inferred from pair count."
+  ],
+  "delivery_coverage": {
+    "configured": true,
+    "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+    "effective_from": "2026-09-21T21:00:00+00:00",
+    "closed_windows": 5,
+    "complete_windows": 5,
+    "coverage_percent": 100.0,
+    "status_counts": {
+      "complete": 5
+    },
+    "current_window_started_at": "2026-09-22T02:00:00+00:00",
+    "windows": [
+      {
+        "start": "2026-09-21T21:00:00+00:00",
+        "end_exclusive": "2026-09-21T22:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+            "started_at": "2026-09-21T21:00:20.111770+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          },
+          {
+            "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+            "started_at": "2026-09-21T21:33:05.230842+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      },
+      {
+        "start": "2026-09-21T22:00:00+00:00",
+        "end_exclusive": "2026-09-21T23:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+            "started_at": "2026-09-21T22:00:23.957858+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      },
+      {
+        "start": "2026-09-21T23:00:00+00:00",
+        "end_exclusive": "2026-09-22T00:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+            "started_at": "2026-09-21T23:02:35.814320+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      },
+      {
+        "start": "2026-09-22T00:00:00+00:00",
+        "end_exclusive": "2026-09-22T01:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "hge_arno_live_candidate",
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": null,
+        "attempts": [
+          {
+            "cycle_sha256": "8fa0ba4428dc007e04e85cc40ec2f27dfa4bd170dd4d7cec964822b0e35143e5",
+            "started_at": "2026-09-22T00:00:23.276039+00:00",
+            "complete_delivery": true,
+            "timely_issues": 2,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "hge_arno_live_candidate": [],
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      },
+      {
+        "start": "2026-09-22T01:00:00+00:00",
+        "end_exclusive": "2026-09-22T02:00:00+00:00",
+        "status": "complete",
+        "expected_models": [
+          "radar_arvores_live_candidate"
+        ],
+        "model_transition_record": "2764921193cdf9ff93d1593d6620b83abea247fea0e38208ccdde1347e6f881a",
+        "attempts": [
+          {
+            "cycle_sha256": "062cae31a22442ebda546ced55e077b9d4199cac49fb4bc242e83e0118607485",
+            "started_at": "2026-09-22T01:00:10.620523+00:00",
+            "complete_delivery": true,
+            "timely_issues": 1,
+            "late_issues": 0,
+            "missing_models": [],
+            "missing_leads": {
+              "radar_arvores_live_candidate": []
+            },
+            "terminal_states": [
+              "cycle_completed"
+            ],
+            "unfinished_record": false
+          }
+        ]
+      }
+    ],
+    "all_recorded_attempts": [
+      {
+        "cycle_sha256": "65b3b7d67c6e4cbb98f7b360004ca1d3225e70f9a167944794dfabb184128887",
+        "started_at": "2026-09-21T20:27:07.658033+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_failed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "1bbb40de9c89f3cd627bb94829af9d4f32de404445a16b6cca169e406f7f9012",
+        "started_at": "2026-09-21T20:29:31.309630+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+        "started_at": "2026-09-21T21:00:20.111770+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "022edb1c8f1a00d88a847c2e2f155fde7616713164d32017fa6502b74a5f0170",
+        "started_at": "2026-09-21T21:33:05.230842+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "1aa6188910015e2ae6f54a5736cb5fbc16ffc7d86e8f3b850bb6b1a87ae7ef2c",
+        "started_at": "2026-09-21T22:00:23.957858+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "eec54a0250732878b2f3b0c9acfb44ce570b8ef21e640131f3bd10253a547ab6",
+        "started_at": "2026-09-21T23:02:35.814320+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "8fa0ba4428dc007e04e85cc40ec2f27dfa4bd170dd4d7cec964822b0e35143e5",
+        "started_at": "2026-09-22T00:00:23.276039+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "062cae31a22442ebda546ced55e077b9d4199cac49fb4bc242e83e0118607485",
+        "started_at": "2026-09-22T01:00:10.620523+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "63484856300d49e540b9bce80372c567bf870d566f6ec4401d687a232b5e87aa",
+        "started_at": "2026-09-22T02:00:14.981803+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      }
+    ],
+    "unlinked_forecast_issues": 2,
+    "limitations": [
+      "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+      "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+      "An unfinished record does not establish a live process.",
+      "Before the policy effective time, historical coverage remains unproven; recorded failures remain visible separately.",
+      "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+    ]
+  },
+  "flood_event_inventory": {
+    "configured": true,
+    "policy_record": "bcfecae790d46a1db8555388913de8c0c0494a7ade5aea4a172d8fea74ad613c",
+    "policy": {
+      "dry_separation_hours": 72,
+      "independence_certified": false,
+      "max_observation_gap_minutes": 20,
+      "policy_id": "mucum-observed-clusters-v1",
+      "provenance": "Group latest approved Muçum observations per station and datum. Keep open, left-censored, and gap-affected episodes. Inventory may change with revisions; retain source receipt IDs, report cutoff and ledger tip.",
+      "rationale": "Conservative operational grouping, fixed without examining forecast residuals.72h is an analyst choice to be reviewed against basin event structure; it is not a calibrated or published Muçum independence criterion.",
+      "reference": "https://nrfa.ceh.ac.uk/data/about-data/peak-flow-data/data-types/peaks-over-threshold-pot",
+      "reference_scope": "NRFA documents that several peaks can belong to one event and that separation needs hydrological criteria. Its flow recession ratio is not directly transferred to gauge levels with an arbitrary datum. This policy does not claim to implement FEH/NRFA.",
+      "separation_role": "Require at least72h continuously sampled below7m on each side, with no adjacent approved samples separated by more than20min. Invalid/revised/missing observations reset the below-threshold run. Never infer a separating recession across a gap.",
+      "station_id": "86510000",
+      "status": "diagnostic grouping candidate; independence not certified",
+      "threshold_m": 7,
+      "threshold_role": "Analytical flood subset of the existing accuracy objective; not an official warning level."
+    },
+    "observed_clusters": 1,
+    "complete_observed_clusters": 0,
+    "certified_independent_events": 0,
+    "events": [
+      {
+        "event_id": "9f2806d96e56e502689c8137",
+        "station_id": "86510000",
+        "datum_id": "ANA:86510000:reference-unverified",
+        "first_exceedance_at": "2026-09-21T15:00:00+00:00",
+        "last_exceedance_at": "2026-09-22T02:00:00+00:00",
+        "peak_at": "2026-09-22T02:00:00+00:00",
+        "peak_level_m": 17.07,
+        "high_observation_count": 45,
+        "left_censored": false,
+        "closed_at": null,
+        "right_censored": true,
+        "has_observation_gaps": false,
+        "all_metadata_verified": false,
+        "separation_start_at": "2026-09-14T03:00:00+00:00",
+        "first_observation_receipt": "33a00fb7d21e6e0ad16bd7ca861dfc87e6409b0a5bd58d1d0b5edafbe1ca356f",
+        "last_observation_receipt": "33a00fb7d21e6e0ad16bd7ca861dfc87e6409b0a5bd58d1d0b5edafbe1ca356f",
+        "independence_certified": false,
+        "complete_observed_cluster": false
+      }
+    ],
+    "scorecard": [
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+        "lead_h": 0,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 4,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+        "lead_h": 1,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 4,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+        "lead_h": 2,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 3,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+        "lead_h": 3,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 2,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+        "lead_h": 4,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+        "lead_h": 0,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 2,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+        "lead_h": 1,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 2,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+        "lead_h": 2,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 2,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+        "lead_h": 3,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 2,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+        "lead_h": 4,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 2,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+        "lead_h": 5,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+        "lead_h": 0,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+        "lead_h": 1,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+        "lead_h": 2,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+        "lead_h": 3,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+        "lead_h": 4,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+        "lead_h": 5,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_live_candidate",
+        "model_version": "hourly-live-weather-v1:fd40fd74e87486e7",
+        "lead_h": 0,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": -1,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 0,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 1,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 2,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 3,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 4,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 5,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      },
+      {
+        "model_id": "radar_arvores_previsao_chuva",
+        "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+        "lead_h": 6,
+        "event_id": "9f2806d96e56e502689c8137",
+        "diagnostic_matched_pairs": 1,
+        "goal_eligible_pairs": 0,
+        "hits": 0,
+        "accuracy_percent": null,
+        "complete_observed_cluster": false,
+        "independence_certified": false
+      }
+    ],
+    "goal_achieved": false,
+    "limitations": [
+      "A 72-hour below-threshold run is a conservative operational grouping candidate, not a verified independence criterion for this basin.",
+      "Open, left-censored and gap-affected clusters remain visible; missing data cannot establish separation.",
+      "Only exact approved observations define exceedances. Metadata validity is tracked separately.",
+      "Repeated forecasts for one episode do not become multiple independent events.",
+      "This inventory does not certify ten independent floods or infer uncertainty from treating hourly samples as independent.",
+      "A later observation revision can change the inventory; every report retains its ledger cutoff and source receipts."
+    ]
+  }
+}

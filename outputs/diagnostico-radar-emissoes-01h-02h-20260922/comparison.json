@@ -1,0 +1,36 @@
+{
+  "previous_issue": "b81cc15cedec3251abcd7a8a8be6b7b70652a99564065fbfe0506637e5c05e76",
+  "new_issue": "fd47d506fd134b2e47e40ec7d74be104d68af7500a4512cda18340f5a1853fd8",
+  "shared_targets": 13,
+  "maximum_revision": {
+    "valid_at": "2026-09-22T07:00:00-03:00",
+    "previous_level_m": 18.565743602805167,
+    "new_level_m": 19.22825367238508,
+    "difference_m": 0.6625100695799127
+  },
+  "previous_maximum_hourly_point": {
+    "valid_at": "2026-09-22T04:00:00-03:00",
+    "nominal_lead_h": 3,
+    "level_m": 19.27500148828672
+  },
+  "new_maximum_hourly_point": {
+    "valid_at": "2026-09-22T06:00:00-03:00",
+    "nominal_lead_h": 4,
+    "level_m": 19.442013038482525
+  },
+  "common_precutoff_rows": 12912,
+  "precutoff_truth_exact": true,
+  "precutoff_derived_changed_cells": 144159,
+  "precutoff_derived_changed_columns": 75,
+  "source_sha256": {
+    "outputs/mucum-hourly-20260922T010016-0300/run-result.json": "2acf5fe8fda28f46d2f1687a17458383879494019a63d78858f425e28407892a",
+    "outputs/mucum-hourly-20260922T010016-0300/radar-features.npz": "c2d95c3c50f82d99918ac0f89362411ceaa9ced5f4be95976919a2dd831fe930",
+    "outputs/mucum-hourly-20260922T020011-0300/run-result.json": "16337c0e86554418a3d4560032d1ac9fcdcf328ec21c9785f278608af9fdba12",
+    "outputs/mucum-hourly-20260922T020011-0300/radar-features.npz": "27222a7701bab41b10317faef1c83d00b5d7483ba04e6fe10bd3f39bef45822b"
+  },
+  "limitations": [
+    "Forecast revisions compare different issue times and available information; they are not forecast errors or a confidence interval.",
+    "Derived historical input differences alone do not distinguish latency changes from raw-source revision.",
+    "No prediction or model was modified."
+  ]
+}

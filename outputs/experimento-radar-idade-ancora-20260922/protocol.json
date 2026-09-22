@@ -1,0 +1,21 @@
+{
+  "id": "radar-anchor-age-feature-v1",
+  "registered_at_utc": "2026-09-22T04:24:01.135046+00:00",
+  "purpose": "Test whether explicitly describing the age of the anchor helps the mixed delay-profile model. Previous mixture improved some6h errors but regressed12h. This is a separate registered development experiment, not a promotion or new independent test.",
+  "parent": "outputs/experimento-radar-mistura-atrasos-20260922",
+  "one_change": "Append one feature, anchor_measurement_age_minutes, to the180 unchanged mixed-profile inputs. For each profile and historical origin, reproduce the actual asof lookup that generated its saved Muçum base: last source record at or before origin minus the profile applied Muçum delay, with max_age900seconds at that query. Preserve revised missing values; do not skip a missing latest record to fetch an older finite value. When the saved base is finite, age equals origin minus the source measurement timestamp, in minutes. Otherwise age is NaN.",
+  "age_gate": "Before fitting require the reconstructed base to equal the saved profile base exactly including NaNs, age missingness to equal base missingness, no future measurement selected, and finite ages between applied delay and applied delay plus15minutes. Reconstruct from the sealed cumulative ANA86510000 source arrays, not forecast errors or future targets. No clipping or replacement.",
+  "preserved": "Use the exact saved PCG64(57) assignment,24common training masks, chronological order, targets, responses, weights and hyperparameters from the parent mixed-profile candidate. Each origin contributes once. Select age from the same profile selected for its180inputs andbase. Fit exactly24new models: two folds and12horizons. No new seed, hyperparameter search, memberships, years or altered data.",
+  "controls": "Reproduce all72parent frozen models on both profile inputs (144applications). Primary comparison: aged mixed candidate against parent unaged mixed candidate on the same rows. Also retain each profile-specific control and report comparison to the matching control. Only the added age column changes the primary training comparison.",
+  "evaluation": "Same204168rows, two views of102084scheduled origin/horizon pairs, both temporal folds and nominalh1..12. Four families and all/missing24/complete24 populations, all/observed>=7m subsets,1152metrics. Retain missing target counts and missing prediction failures in observed-target denominators. Report hits<=0.50m,MAE,bias,P98,max separately for each profile; no favorable profile/horizon selection.",
+  "limitations": [
+    "Age is measurement age in the reconstructed profile, not certified original publication lag or present issue age including runtime.",
+    "Both profiles are constructed from contemporary source delays applied to historical data.",
+    "In these two profiles anchor age is strongly correlated with other source delays; a gain cannot identify the independent causal effect of Muçum age or prove generalization to unseen delay configurations.",
+    "The periods and previous results are already known development data; no fresh independent accuracy claim.",
+    "No operational change, live issuance,98percent claim, or promotion."
+  ],
+  "planned_models": 24,
+  "promoted": false,
+  "goal_achieved": false
+}

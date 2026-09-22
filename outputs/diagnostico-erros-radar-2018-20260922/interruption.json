@@ -1,0 +1,5 @@
+{
+  "reason": "Repeated access to lazy NpzFile in per-row diagnostic loop repeatedly decompressed feature matrix. Stopped own process18073 withSIGTERM after confirming command; session55212 terminal. No models, predictions or input sources altered.",
+  "replacement": "outputs/diagnostico-erros-radar-2018-20260922-v2",
+  "fix": "Load arrays once into dictionary; all diagnostic formulas preserved."
+}

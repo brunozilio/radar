@@ -1,0 +1,19 @@
+{
+  "id": "radar-2018-hourly-augmentation-v1",
+  "scope": "Local48model paired development experiment, no operational promotion, issuance or HGE.",
+  "question": "Does adding every eligible example from the two prepared2018windows improve a120observed-feature Radar model when both families use the same explicit Muçum exactO-1h anchor, absent0.5h derivative, strictANAquality and fixed source delays?",
+  "families": {
+    "hourly_control": "Newly fit control using only the rebuilt2025/2026matrix.",
+    "hourly_plus2018": "Same model configuration and same original rows, plus all eligible2018rows, ordered chronologically before original rows. No selective event, level or horizon inclusion."
+  },
+  "inputs": "Use only sealed, independently verified radar-matriz-recente-ancora-horaria-20260922 and radar-matrizes-observadas-2018-20260922. Each has120columns. No further2020/2021/2022/2023/2024augmentation, NWP, agecolumn, linearcomponent or syntheticmasking.",
+  "targets": "Compute future targets separately inside each contiguous dataset, exact approved levels; never shift across2018windowgap or2018to2025gap. Finitebase and finitetarget are required for fitting, auxiliaryNaNs retained without complete24restriction. Include every scheduled evaluation row; absentbase produces forecastfailure and missingtruth remainsunknown.",
+  "folds": "Validation train targets before2025-10-01; evaluate origins>=2025-10-01 with targets before2026-07-01. Test train union of that initial block and origins>=2025-10-01 with targets before2026-07-01, preserving Octoberboundary exclusions; evaluate origins>=2026-07-01 with targets before2026-09-21.2018examples precede bothcutoffs. Both evaluation sets are already known development periods, not untouchedholdouts.",
+  "parameters": "12horizons, twofolds, twofamilies=48newHGBmodels. Perhorizon loss/leaf_nodes frozen from mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv; max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. Same runtime as recent experiments. No hyperparameter search, perhorizon family selection or operational model loading.",
+  "weights": "1+2*(abs(target-base)>=1)+2*(target>=9), identical formula pertrainingexample in bothfamilies; no renormalization or duplicated2018rows.",
+  "prefit_evidence": "Before any fitting, seal input/code/protocol hashes,24recent masks,12masks per2018window, trainingresponses/weights and trainingplan. Preserve models, all predictions, actual targets, coverage, failures and metrics afterward.",
+  "evaluation": "Perphase/h1..12, alltargets and observed>=7m, fullschedule plus complete_upstream18/missing_upstream18 (columns6..23 finite). Record scheduled,missingtruth,observed,pairs,failures,hits<=0.50m,paired andobserved-target hitfractions,MAE,bias,P98,max. The halfhourMu column is always absent; do not pretend complete24is a useful split. No droppingfailed predictions from observedtarget denominator.",
+  "interpretation": "Only attribute paired changes to adding2018under this newcontrol recipe. Do not call these controls exact reproductions of operational or earlier120models. Source regime, datum/timezone, revision/publication and historical availability are not certified. Numerical benefit on known development periods is not evidence of prospective98percent or permission for promotion.",
+  "goal_achieved": false,
+  "promoted": false
+}

@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/experimento-correcao-tau-6h-20260921/predictions.csv": "8ce84ba1024136bec7bbbf8b5a5a1af31ffaab8548ef72f51e5549d604c6101b",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-correcao-tau-2h-20260921/predictions.csv": "f94186059f8992d1f95cb8a515b3911ad273ff1f5d6d1bcaa5d29dc47842b132",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-correcao-tau-12h-20260921/predictions.csv": "206a5d2fe0419429f70fe755073c799949e0d174c7a99aee34f3aeb78742a91e",
+    "/Users/brunozilio/Documents/radar/outputs/verificacao-integral-chuva-mucum-20260921/recomputed-levels.csv": "60fda3b6fdee6e26e4e2f35ba14c4795febd9a3b9147eff03d576e157cc4f717",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4"
+  },
+  "scheduled_rows": 23538,
+  "paired_by_tau_family": {
+    "6:reference": 23103,
+    "6:julho_levels": 23103,
+    "2:reference": 23103,
+    "2:julho_levels": 23103,
+    "12:reference": 23103,
+    "12:julho_levels": 23103
+  },
+  "independent_component_checks": 216,
+  "component_max_error_m": 7.105427357601002e-15,
+  "promoted": false,
+  "goal_achieved": false,
+  "historical_availability_verified": false,
+  "limitations": [
+    "Previously inspected historical development; no independent selection validation.",
+    "Same 15-minute anchor and all other parameters; no tau selection per horizon.",
+    "Residual correction is statistical, not a physical water-balance flux.",
+    "Independent component check reuses prior full replay of six origins; not a fresh simulation of every origin.",
+    "Overlapping targets are not independent flood events."
+  ]
+}

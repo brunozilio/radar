@@ -1,0 +1,550 @@
+--- PDF PAGE 1 ---
+ 
+ 
+ 
+ 
+DESCRIÇÃO PARA DISPONIBILIZAR  
+ 
+DADOS HIDROMETEOROLÓGICOS  
+ 
+DOS SISTEMAS 
+ 
+TELEMETRIA 1 E HIDRO 
+ 
+ 
+ 
+ 
+ 
+Implementado em: MAIO 2011 
+Atualizado em: JUNHO 2013 
+ 
+ 
+JUNHO 2013 
+--- PDF PAGE 2 ---
+ 
+Sumário 
+1 Introdução .................................................................................................................................. 4 
+2 Layout do Arquivo XML ............................................................................................................... 4 
+2.1 Dados Hidrometeorológicos (DadosHidrometeorologicos) ............................................... 4 
+2.1.1 Para obtenção dos Dados Hidrometeorológicos (Telemetria 1), são necessários: ...... 4 
+2.1.2 Dados de retorno: ........................................................................................................ 4 
+2.1.3 Formato do XML (Modelo): ....................................................................................... 4 
+2.1.4 Formato do XML (Retorno): ...................................................................................... 4 
+2.1.5 Acesso via URL: ......................................................................................................... 5 
+2.2 Lista das Estações Telemétricas (ListaEstacoesTelemetricas) ........................................... 5 
+2.2.1 Para obtenção dos dados sobre as Estações (Telemetria 1), são necessários: ............. 5 
+2.2.2 Dados de retorno: ........................................................................................................ 6 
+2.2.3 Formato do XML (Modelo): ....................................................................................... 6 
+2.2.4 Formato do XML (Retorno): ...................................................................................... 6 
+2.2.5 Acesso via URL: ......................................................................................................... 8 
+2.3 HIDRO - Lista das Bacias e Sub-Bacias (HidroBaciaSubBacia) ....................................... 8 
+2.3.1 Para obtenção dos dados referentes às Bacias e Sub-Bacias (HIDRO), são 
+necessários: ................................................................................................................................. 8 
+2.3.2 Dados de retorno: ........................................................................................................ 8 
+2.3.3 Formato do XML (Modelo): ....................................................................................... 8 
+2.3.4 Formato do XML (Retorno): ...................................................................................... 8 
+2.3.5 Acesso via URL: ......................................................................................................... 9 
+2.4 HIDRO - Lista das Entidades (HidroEntidades) ................................................................ 9 
+2.4.1 Para obtenção dos dados referentes às Entidades (HIDRO), são necessários: ........... 9 
+2.4.2 Dados de retorno: ........................................................................................................ 9 
+2.4.3 Formato do XML (Modelo): ....................................................................................... 9 
+2.4.4 Formato do XML (Retorno): .................................................................................... 10 
+2.4.5 Acesso via URL: ....................................................................................................... 10 
+2.5 HIDRO - Lista de Estados (HidroEstado) ........................................................................ 10 
+2.5.1 Para obtenção dos dados referentes os Estados (HIDRO), são necessários: ............. 10 
+2.5.2 Dados de retorno: ...................................................................................................... 10 
+2.5.3 Formato do XML (Modelo): ..................................................................................... 11 
+2.5.4 Formato do XML (Retorno): .................................................................................... 11 
+2.5.5 Acesso via URL: ....................................................................................................... 11 
+2.6 HIDRO - Lista de Estações - Inventário (HidroInventario) ............................................. 12 
+2.6.1 Para obtenção dos dados referentes às Estações (HIDRO), são necessários: ........... 12 
+--- PDF PAGE 3 ---
+ 
+2.6.2 Dados de retorno: ...................................................................................................... 12 
+2.6.3 Formato do XML (Modelo): ..................................................................................... 14 
+2.6.4 Formato do XML (Retorno): .................................................................................... 14 
+2.6.5 Acesso via URL: ....................................................................................................... 16 
+2.7 HIDRO - Lista de Município (HidroMunicipio) .............................................................. 16 
+2.7.1 Para obtenção dos dados referentes aos Municipios (HIDRO), são necessários: ..... 16 
+2.7.2 Dados de retorno: ...................................................................................................... 16 
+2.7.3 Formato do XML (Modelo): ..................................................................................... 16 
+2.7.4 Formato do XML (Retorno): .................................................................................... 16 
+2.7.5 Acesso via URL: ....................................................................................................... 17 
+2.8 HIDRO - Lista de Rios (HidroRio) ................................................................................... 17 
+2.8.1 Para obtenção dos dados referentes aos Rios (HIDRO), são necessários: ................ 17 
+2.8.2 Dados de retorno: ...................................................................................................... 17 
+2.8.3 Formato do XML (Modelo): ..................................................................................... 17 
+2.8.4 Formato do XML (Retorno): .................................................................................... 18 
+2.8.5 Acesso via URL: ....................................................................................................... 18 
+2.9 HIDRO - Lista de Rios (HidroSerieHistorica) ................................................................. 18 
+2.9.1 Para obtenção dos dados referentes a Série Historica (HIDRO), são necessários: ... 18 
+2.9.2 Dados de retorno por tipo de dados: ........................................................................ 19 
+2.9.3 Formato do XML (Modelo): ..................................................................................... 20 
+2.9.4 Acesso via URL: ....................................................................................................... 21 
+3 Orientações Finais ..................................................................................................................... 22 
+ 
+ 
+ 
+--- PDF PAGE 4 ---
+ 
+ 
+1 Introdução 
+ Este documento visa demonstrar as funcionalidades implementadas no WebService 
+(http://telemetriaws1.ana.gov.br/), com o intuito de disponibilizar os dados cadastrados nos bancos 
+de dados que são facilmente visualizados nos Sistema de Telemetria 1 e HIDRO. 
+ 
+2 Layout do Arquivo XML 
+2.1 Dados Hidrometeorológicos (DadosHidrometeorologicos) 
+2.1.1 Para obtenção dos Dados Hidrometeorológicos cadastrados no Sistema de Telemetria 1, 
+são necessários: 
+ Código da Estação (CodEstacao): Campo obrigatório e composto apenas por números; 
+ Data de Inicio (DataInicio): Campo não obrigatório, no entanto, aconselha-se o 
+preenchimento, pois poderá acarretar a lentidão na consulta; e 
+ Data de Fim (DataFim): Campo não obrigatório. Caso não seja preenchido retornará os 
+dados até a data e hora atual. 
+2.1.2 Dados de retorno: 
+ Código da Estação (CodEstacao); 
+ Data e Hora (DataHora); 
+ Vazão (Vazao); e 
+ Nível (Nivel). 
+2.1.3 Formato do XML (Modelo): 
+ Endereço: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=DadosHidrometeorologicos 
+ 
+2.1.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+--- PDF PAGE 5 ---
+ 
+ 
+2.1.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/DadosHidrometeorologicos?Co
+dEstacao=10200000&DataInicio=01/06/2011&DataFim=15/06/2011 
+2.2 Lista das Estações Telemétricas (ListaEstacoesTelemetricas) 
+       Os campos não são obrigatórios. 
+2.2.1 Para obtenção dos dados sobre as Estações Telemétricas cadastradas no Sistema de 
+Telemetria 1, são necessários: 
+ Status das Estações (statusEstacoes): Para listar todas as estações (Ativas e Manutenção), 
+não preencha o campo. 
+--- PDF PAGE 6 ---
+ 
+0 – Ativo; e 
+1 – Manutenção. 
+ Origem (origem): 
+0 – Todas; 
+1 – ANA/INPE; 
+2 – ANA/SIVAM; 
+3 – Res_Conj_03;  
+4 – Cota Online; e 
+5 – Projetos Especiais. 
+Obs.: O serviço retornará todas as estações telemétricas cadastradas na falta do preenchimento dos 
+campos. 
+2.2.2 Dados de retorno: 
+ Nome da Estação (NomeEstacao); 
+ Código da Estação (CodEstacao); 
+ Bacia (Bacia); 
+ Sub-bacia (SubBacia);  
+ Operadora (Operadora); 
+ Responsável (Responsavel); 
+ Município mais UF (Municipio-UF); 
+ Latitude (Latitude); 
+ Longitude (Longitude); 
+ Altitude (Altitude); 
+ Código do Rio (CodRio); 
+ Nome do Rio (NomeRio); 
+ Origem (Origem); e 
+ Status da Estação (StatusEstacao). 
+2.2.3 Formato do XML (Modelo): 
+ Endereço: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=ListaEstacoesTelemetricas 
+ 
+2.2.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+--- PDF PAGE 7 ---
+ 
+ 
+--- PDF PAGE 8 ---
+ 
+2.2.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/ListaEstacoesTelemetricas?statu
+sEstacoes=0&origem=0 
+ 
+2.3 HIDRO - Lista das Bacias e Sub-Bacias (HidroBaciaSubBacia) 
+       Os campos não são obrigatórios. 
+2.3.1 Para obtenção dos dados referentes às Bacias e Sub-Bacias cadastradas no Sistema de 
+HIDRO, são necessários: 
+ Código da Bacia (codBacia): Recebe o código da Bacia. 
+ Código da Sub-Bacia (codSubBacia): Recebe o código da Sub-Bacia. 
+Obs.: Campos não obrigatórios. O não preenchimento dos campos poderá acarretar lentidão no 
+retorno dos dados do serviço, pois retornará todas às Bacias e Sub-Bacias cadastradas. 
+2.3.2 Dados de retorno: 
+ Código da Bacia (codBacia); 
+ Nome da Bacia (nmBacia); 
+ Código da Sub-Bacia (codSubBacia); 
+ Nome da Sub-Bacia (nmSubBacia); 
+2.3.3 Formato do XML (Modelo): 
+ Endereço: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroBaciaSubBacia 
+ 
+2.3.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+ 
+--- PDF PAGE 9 ---
+ 
+ 
+2.3.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroBaciaSubBacia?codBacia
+=1&codSubBacia=10 
+ 
+ 
+2.4 HIDRO - Lista das Entidades (HidroEntidades) 
+       Os campos não são obrigatórios. 
+2.4.1 Para obtenção dos dados referentes às Entidades cadastradas no Sistema de HIDRO, são 
+necessários: 
+ Código da Entidade (codEntidade): Recebe o código da Entidade. 
+Obs.: Campo não obrigatório. O não preenchimento do campo poderá acarretar lentidão no 
+retorno dos dados do serviço, pois retornará todas às Entidades cadastradas. 
+2.4.2 Dados de retorno: 
+ Código da Entidade (Codigo); 
+ Sigla da Entidade (Sigla); 
+ Nome da Entidade (Nome). 
+2.4.3 Formato do XML (Modelo): 
+ Endereço: http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroEntidades 
+--- PDF PAGE 10 ---
+ 
+ 
+2.4.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+ 
+2.4.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroEntidades?codEntidade=1 
+ 
+2.5 HIDRO - Lista de Estados (HidroEstado) 
+       Os campos não são obrigatórios. 
+2.5.1 Para obtenção dos dados referentes os Estados cadastrados no Sistema de HIDRO, são 
+necessários: 
+ Código do Estado (codUf): Recebe o código do Estado. 
+Obs.: Campo não obrigatório. O não preenchimento do campo poderá acarretar lentidão no 
+retorno dos dados do serviço, pois retornará todos os Estados cadastrados. 
+2.5.2 Dados de retorno: 
+ Código do Estado (Codigo); 
+--- PDF PAGE 11 ---
+ 
+ Código do Estado IBGE (CodigoIBGE); 
+ Sigla do Estado (Sigla); 
+ Nome do Estado (Nome). 
+2.5.3 Formato do XML (Modelo): 
+ Endereço: http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroEstado 
+ 
+2.5.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+ 
+2.5.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroEstado?codUf=27 
+ 
+ 
+--- PDF PAGE 12 ---
+ 
+2.6 HIDRO - Lista de Estações - Inventário (HidroInventario) 
+       Os campos não são obrigatórios. 
+2.6.1 Para obtenção dos dados referentes às Estações cadastradas no Sistema de HIDRO, são 
+necessários: 
+ Cód. da estação DE (codEstDE): Código de 8 dígitos da estação - INICIAL (Ex: 00047000); 
+ Cód. da estação ATE (codEstATE): Código de 8 dígitos da estação - FINAL (Ex: 00047000); 
+ Tipo da estação (tpEst):  (1-Flu ou 2-Plu); 
+ Nome da Estação (nmEst): (Ex.: Barra Mansa); 
+ Código da Sub-Bacia hidrográfica (codSubBacia): (Ex.: 10); 
+ Código da Bacia hidrográfica (codBacia): (Ex.: 1); 
+ Nome do Município (nmMunicipio): (Ex.: Itaperuna); 
+ Nome do Estado (nmEstado): (Ex.: Rio de Janeiro); 
+ Sigla do Responsável (sgResp): (Ex.: ANA); 
+ Sigla da Operadora (sgOper): (Ex.: CPRM); 
+ Estação Telemétrica (telemétrica): (Ex: 1-SIM ou 0-NÃO). 
+Obs.: Campo não obrigatório. O não preenchimento do campo poderá acarretar lentidão no 
+retorno dos dados do serviço, pois retornará todas as Estações cadastradas. 
+2.6.2 Dados de retorno: 
+ Cód. da Bacia (BaciaCodigo) 
+ Cód. da Sub-Bacia (SubBaciaCodigo):  
+ Cód. do Rio (RioCodigo):  
+ Cód. do Estado (EstadoCodigo):  
+ Nome do Estado (nmEstado):  
+ (MunicipioCodigo):  
+ (nmMunicipio):  
+ (ResponsavelCodigo):  
+ (ResponsavelSigla):  
+ (ResponsavelUnidade):  
+ (ResponsavelJurisdicao):  
+ (OperadoraCodigo):  
+ (OperadoraSigla):  
+ (OperadoraUnidade):  
+ (OperadoraSubUnidade):  
+ (TipoEstacao):  
+ (Codigo):  
+ (Nome):  
+ (CodigoAdicional):  
+ (Latitude):  
+ (Longitude):  
+ (Altitude):  
+ (AreaDrenagem):  
+ (TipoEstacaoEscala):  
+ (TipoEstacaoRegistradorNivel):  
+ (TipoEstacaoDescLiquida):  
+--- PDF PAGE 13 ---
+ 
+ (TipoEstacaoSedimentos):  
+ (TipoEstacaoQualAgua):  
+ (TipoEstacaoPluviometro):  
+ (TipoEstacaoRegistradorChuva):  
+ (TipoEstacaoTanqueEvapo):  
+ (TipoEstacaoClimatologica):  
+ (TipoEstacaoPiezometria):  
+ (TipoEstacaoTelemetrica):  
+ (PeriodoEscalaInicio):  
+ (PeriodoEscalaFim):  
+ (PeriodoRegistradorNivelInicio):  
+ (PeriodoRegistradorNivelFim):  
+ (PeriodoDescLiquidaInicio):  
+ (PeriodoDescLiquidaFim):  
+ (PeriodoSedimentosInicio):  
+ (PeriodoSedimentosFim):  
+ (PeriodoQualAguaInicio):  
+ (PeriodoQualAguaFim):  
+ (PeriodoPluviometroInicio):  
+ (PeriodoPluviometroFim):  
+ (PeriodoRegistradorChuvaInicio):  
+ (PeriodoRegistradorChuvaFim):  
+ (PeriodoTanqueEvapoInicio):  
+ (PeriodoTanqueEvapoFim):  
+ (PeriodoClimatologicaInicio):  
+ (PeriodoClimatologicaFim):  
+ (PeriodoPiezometriaInicio):  
+ (PeriodoPiezometriaFim):  
+ (PeriodoTelemetricaInicio):  
+ (PeriodoTelemetricaFim):  
+ (TipoRedeBasica):  
+ (TipoRedeEnergetica):  
+ (TipoRedeNavegacao):  
+ (TipoRedeCursoDagua):  
+ (TipoRedeEstrategica):  
+ (TipoRedeCaptacao):  
+ (TipoRedeSedimentos):  
+ (TipoRedeQualAgua):  
+ (TipoRedeClasseVazao):  
+ (UltimaAtualizacao):  
+ (Operando):  
+ (Descricao):  
+ (NumImagens):  
+ (DataIns):  
+ (DataAlt): 
+--- PDF PAGE 14 ---
+ 
+2.6.3 Formato do XML (Modelo): 
+ Endereço: http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroEstado 
+ 
+2.6.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+--- PDF PAGE 15 ---
+ 
+ 
+--- PDF PAGE 16 ---
+ 
+2.6.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroInventario?codEstDE=101
+00000&codEstATE=10100000&tpEst=1&nmEst=tabatinga&codSubBacia=10&c
+odBacia=1&nmMunicipio=3041000&nmEstado=3&sgResp=1&sgOper=100&tel
+emetrica=1 
+ 
+ 
+2.7 HIDRO - Lista de Município (HidroMunicipio) 
+       Os campos não são obrigatórios. 
+2.7.1 Para obtenção dos dados referentes aos Municipios cadastrados no Sistema de HIDRO, são 
+necessários: 
+ Código do Município (codMunicipio). 
+Obs.: Campo não obrigatório. O não preenchimento do campo poderá acarretar lentidão no 
+retorno dos dados do serviço, pois retornará todos os Municípios cadastrados. 
+2.7.2 Dados de retorno: 
+ Cód. do Estado (EstadoCodigo); 
+ Cód do Município (Codigo); 
+ Cód do Município IBGE (CodigoIBGE); 
+ Nome do Município (Nome).  
+2.7.3 Formato do XML (Modelo): 
+ Endereço: http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroEstado 
+ 
+2.7.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+--- PDF PAGE 17 ---
+ 
+ 
+2.7.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroMunicipio?codMunicipio=
+27001000 
+ 
+2.8 HIDRO - Lista de Rios (HidroRio) 
+       Os campos não são obrigatórios. 
+2.8.1 Para obtenção dos dados referentes aos Rios cadastrados no Sistema de HIDRO, são 
+necessários: 
+ Código do Rio (codRio). 
+Obs.: Campo não obrigatório. O não preenchimento do campo poderá acarretar lentidão no 
+retorno dos dados do serviço, pois retornará todos os Rios cadastrados. 
+2.8.2 Dados de retorno: 
+ Cód. do Rio (codRio).  
+2.8.3 Formato do XML (Modelo): 
+ Endereço: http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroRio 
+--- PDF PAGE 18 ---
+ 
+ 
+2.8.4 Formato do XML (Retorno): 
+ Após o preenchimento do formulário, será exibido o XML com os dados encontrados: 
+ 
+2.8.5 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroRio?codRio=10001000 
+ 
+2.9 HIDRO - Lista de Rios (HidroSerieHistorica) 
+       Os campos não são obrigatórios. 
+2.9.1 Para obtenção dos dados referentes aos Rios cadastrados no Sistema de HIDRO, são 
+necessários: 
+ Código da Estação (CodEstacao): Campo obrigatório e composto apenas por números; 
+ Data de Inicio (dataInicio): Campo não obrigatório, no entanto, aconselha-se o 
+preenchimento, pois poderá acarretar a lentidão na consulta; e 
+--- PDF PAGE 19 ---
+ 
+ Data de Fim (dataFim): Campo não obrigatório. Caso não seja preenchido retornará os 
+dados até a data e hora atual. 
+ Tipo do Dado (tipoDados): Campo Obrigatório. 1-Cotas; 2-Chuvas ou 3-Vazões; 
+ Nível de Consistência do dado (nivelConsistencia): 1-Consistido ou 2-Bruto. 
+Obs.: Campos obrigatórios (Cód da Estacao e Tipo do Dado). Os demais não são obrigatórios. 
+O não preenchimento deles poderá acarretar lentidão no retorno dos dados do serviço, pois 
+retornará toda a Série Histórica para a Estação e o Tipo dos dados cadastrados. 
+2.9.2 Dados de retorno por tipo de dados: 
+ 
+COTAS CHUVAS VAZÕES 
+EstacaoCodigo EstacaoCodigo EstacaoCodigo 
+NivelConsistencia NivelConsistencia NivelConsistencia 
+DataHora DataHora DataHora 
+MediaDiaria TipoMedicaoChuvas MediaDiaria 
+TipoMedicaoCotas Maxima MetodoObtencaoVazoes 
+Maxima Total Maxima 
+Minima DiaMaxima Minima 
+Media NumDiasDeChuva Media 
+DiaMaxima MaximaStatus DiaMaxima 
+DiaMinima TotalStatus DiaMinima 
+MaximaStatus NumDiasDeChuvaStatus MaximaStatus 
+MinimaStatus TotalAnual MinimaStatus 
+MediaStatus TotalAnualStatus MediaStatus 
+MediaAnual Chuva01 MediaAnual 
+MediaAnualStatus Chuva02 MediaAnualStatus 
+Cota01 Chuva03 Vazao01 
+Cota02 Chuva04 Vazao02 
+Cota03 Chuva05 Vazao03 
+Cota04 Chuva06 Vazao04 
+Cota05 Chuva07 Vazao05 
+Cota06 Chuva08 Vazao06 
+Cota07 Chuva09 Vazao07 
+Cota08 Chuva10 Vazao08 
+Cota09 Chuva11 Vazao09 
+Cota10 Chuva12 Vazao10 
+Cota11 Chuva13 Vazao11 
+Cota12 Chuva14 Vazao12 
+Cota13 Chuva15 Vazao13 
+Cota14 Chuva16 Vazao14 
+Cota15 Chuva17 Vazao15 
+Cota16 Chuva18 Vazao16 
+Cota17 Chuva19 Vazao17 
+Cota18 Chuva20 Vazao18 
+Cota19 Chuva21 Vazao19 
+Cota20 Chuva22 Vazao20 
+Cota21 Chuva23 Vazao21 
+Cota22 Chuva24 Vazao22 
+Cota23 Chuva25 Vazao23 
+Cota24 Chuva26 Vazao24 
+Cota25 Chuva27 Vazao25 
+Cota26 Chuva28 Vazao26 
+--- PDF PAGE 20 ---
+ 
+Cota27 Chuva29 Vazao27 
+Cota28 Chuva30 Vazao28 
+Cota29 Chuva31 Vazao29 
+Cota30 Chuva01Status Vazao30 
+Cota31 Chuva02Status Vazao31 
+Cota01Status Chuva03Status Vazao01Status 
+Cota02Status Chuva04Status Vazao02Status 
+Cota03Status Chuva05Status Vazao03Status 
+Cota04Status Chuva06Status Vazao04Status 
+Cota05Status Chuva07Status Vazao05Status 
+Cota06Status Chuva08Status Vazao06Status 
+Cota07Status Chuva09Status Vazao07Status 
+Cota08Status Chuva10Status Vazao08Status 
+Cota09Status Chuva11Status Vazao09Status 
+Cota10Status Chuva12Status Vazao10Status 
+Cota11Status Chuva13Status Vazao11Status 
+Cota12Status Chuva14Status Vazao12Status 
+Cota13Status Chuva15Status Vazao13Status 
+Cota14Status Chuva16Status Vazao14Status 
+Cota15Status Chuva17Status Vazao15Status 
+Cota16Status Chuva18Status Vazao16Status 
+Cota17Status Chuva19Status Vazao17Status 
+Cota18Status Chuva20Status Vazao18Status 
+Cota19Status Chuva21Status Vazao19Status 
+Cota20Status Chuva22Status Vazao20Status 
+Cota21Status Chuva23Status Vazao21Status 
+Cota22Status Chuva24Status Vazao22Status 
+Cota23Status Chuva25Status Vazao23Status 
+Cota24Status Chuva26Status Vazao24Status 
+Cota25Status Chuva27Status Vazao25Status 
+Cota26Status Chuva28Status Vazao26Status 
+Cota27Status Chuva29Status Vazao27Status 
+Cota28Status Chuva30Status Vazao28Status 
+Cota29Status Chuva31Status Vazao29Status 
+Cota30Status DataIns Vazao30Status 
+Cota31Status  Vazao31Status 
+DataIns  DataIns 
+ 
+2.9.3 Formato do XML (Modelo): 
+ Endereço: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx?op=HidroSerieHistorica 
+ 
+--- PDF PAGE 21 ---
+ 
+2.9.4 Acesso via URL: 
+ Exemplo: 
+http://telemetriaws1.ana.gov.br/ServiceANA.asmx/HidroSerieHistorica?codEstaca
+o=60473000&dataInicio=01/11/2012&dataFim=01/11/2013&tipoDados=3&nivel
+Consistencia=1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- PDF PAGE 22 ---
+ 
+ 
+3 Orientações Finais 
+O WebService foi desenvolvido para facilitar o acesso aos dados hidrometeorológicos e, para 
+dúvidas e/ou sugestões, entrar em contato: 
+ Email: telemetria@ana.gov.br; 
+ Endereço: 
+o Agência Nacional de Águas (ANA). 
+o Setor Policial, Área 5, Quadra 3, Bloco L. 
+o Brasília – DF, Brasil. 
+o CEP 70610-200. 
+ Telefones: 
+o (61)2109-5391; 
+o (61)2109-5309; 
+o (61)2109-5513. 
+ Contatos: 
+o Valdemar Santos Guimarães - Superintendência de Gestão da Rede 
+Hidrometeorológica (SGH);  
+o Walszon Terllizzie Araújo Lopes - Gerente de Dados e Informações 
+Hidrometeorológicos (GEINF);  
+o João Carlos Carvalho - Especialista em Recursos Hídricos (GPLAN). 
+ 

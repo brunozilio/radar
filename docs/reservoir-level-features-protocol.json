@@ -1,0 +1,27 @@
+{
+  "experiment_id": "upstream-reservoir-level-features-v1",
+  "scope": "Historical local development experiment only; no current forecast, live changes or promotion.",
+  "sources": ["julho", "carreiro"],
+  "families": ["reference", "level_and_slopes", "slopes_only"],
+  "baseline": "Original 53 frozen15h latency predictors and original ridge implementation; no centering change, anomaly masks or2023 augmentation.",
+  "additional_features": "ONS val_nivelmontante and val_niveljusante for each of julho,monte,castro: delayed level, change1h, slope3h, slope6h. level_and_slopes appends24 columns; slopes_only appends18 change/slope columns. Levels are meters, without conversion to storage or subtraction between different gauges.",
+  "availability": "Assume UTC-03 and60min publication delay, as-of age at most90min after delayed lookup. Preserve23:59 source time as recorded, never relabel as midnight. Actual historical publication/version history is unavailable; this is a development assumption, not prospective proof.",
+  "quality": "Keep all finite numeric values, including zero and negatives, and report anomalies separately. A nonfinite newest observation remains missing and must not be bypassed by an earlier finite value. Reject duplicate plant/time keys. Fit imputation and scaling on training rows only.",
+  "alpha": 1000,
+  "weights": "Unchanged1+2*(target>2 in1000m3/s)",
+  "response": "target-known, restore known before nonnegative output clipping, identical for all families",
+  "leads_h": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "splits": {
+    "validation_train_targets_before": "2025-10-01T00:00:00-03:00",
+    "validation_origins_from": "2025-10-01T00:00:00-03:00",
+    "validation_targets_before": "2026-07-01T00:00:00-03:00",
+    "test_train_targets_before": "2026-07-01T00:00:00-03:00",
+    "test_origins_from": "2026-07-01T00:00:00-03:00",
+    "test_targets_before": "2026-09-21T00:00:00-03:00"
+  },
+  "selection": "No tuning. Compare MAE,bias,P90 overall and high-flow at source95th-percentile threshold before validation; identical target pairs required. Mean across leads of validation MAEall+0.5MAEhigh is a diagnostic selection score only. Preserve every result; all periods already examined are development, not fresh independent holdout.",
+  "source_manifest": "outputs/pesquisa-armazenamento-ceran/reused-source-manifest.json",
+  "promotion": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

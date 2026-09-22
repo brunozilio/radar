@@ -1,0 +1,89 @@
+[
+  {
+    "file": "raw/ana-86510000-05-09-2023.xml",
+    "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=05%2F09%2F2023&dataFim=05%2F09%2F2023",
+    "retrieved_at": "2026-09-21T19:36:01.886300+00:00",
+    "status": 200,
+    "bytes": 55221,
+    "sha256": "73db0694249bc89142bc1e641c81c38815ab611d2f64e66aa534f9b6f0e3d81c",
+    "rows": 76,
+    "snippet": "\n        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>\r\n        <ChuvaFinal>5.20</ChuvaFinal>\r\n        <CQ_NivelSensor />\r\n        <NivelSensor />\r\n        <CQ_NivelDisplay />\r\n        <NivelDisplay />\r\n        <CQ_NivelManual />\r\n        <NivelManual />\r\n        <CQ_NivelFinal />\r\n        <NivelFinal />\r\n        <CQ_VazaoFinal />\r\n        <VazaoFinal />\r\n      </DadosHidrometereologicos>\r\n    </DocumentElement>\r\n  </diffgr:diffgram>\r\n</DataTable>",
+    "cache_used": true,
+    "cache_source": "outputs/pesquisa-hidrologica-2026-09-21/ana-86510000-05-09-2023.xml",
+    "parsed_rows": 76,
+    "source_errors": []
+  },
+  {
+    "file": "raw/ana-01-09-2023--04-09-2023.xml",
+    "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F09%2F2023&dataFim=04%2F09%2F2023",
+    "retrieved_at": "2026-09-21T20:58:55.031436+00:00",
+    "cache_used": false,
+    "http_status": 200,
+    "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F09%2F2023&dataFim=04%2F09%2F2023",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 21 Sep 2026 20:58:50 GMT",
+      "Content-Type": "text/xml; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0",
+      "X-AspNet-Version": "4.0.30319",
+      "X-Powered-By": "ASP.NET",
+      "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "bytes": 314246,
+    "sha256": "cb3d0f921425a3741ee09a9311f5848634e3ad6ac7673a35a416a803cfce6bdf",
+    "parsed_rows": 376,
+    "source_errors": []
+  },
+  {
+    "file": "raw/ana-06-09-2023--30-09-2023.xml",
+    "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=06%2F09%2F2023&dataFim=30%2F09%2F2023",
+    "retrieved_at": "2026-09-21T20:58:55.466317+00:00",
+    "cache_used": false,
+    "http_status": 200,
+    "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=06%2F09%2F2023&dataFim=30%2F09%2F2023",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 21 Sep 2026 20:58:50 GMT",
+      "Content-Type": "text/xml; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0",
+      "X-AspNet-Version": "4.0.30319",
+      "X-Powered-By": "ASP.NET",
+      "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "bytes": 1562903,
+    "sha256": "776140cd53acba6d415263d145239673c95c898047b383d9b8a957fbb9c5f4fd",
+    "parsed_rows": 1912,
+    "source_errors": []
+  },
+  {
+    "file": "raw/ons-2023-09.parquet",
+    "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_09.parquet",
+    "retrieved_at": "2026-09-21T20:58:56.053787+00:00",
+    "cache_used": false,
+    "http_status": 200,
+    "final_url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2023_09.parquet",
+    "headers": {
+      "x-amz-request-id": "A6ZP0W8KDBZQ9XH6",
+      "x-amz-id-2": "1812hMiCx0Nt+CBTMQzuFePVfrmNVBDSJByGVkBE5kRb0DdoZrjvUWdQH9tIXaOoyE5M8OQcsKtrp8Vomm2BrA4JyvAzYN0b",
+      "Content-Length": "1200245",
+      "Accept-Ranges": "bytes",
+      "Date": "Mon, 21 Sep 2026 20:58:57 GMT",
+      "Server": "AmazonS3",
+      "Last-Modified": "Thu, 13 Feb 2025 18:35:13 GMT",
+      "ETag": "\"ba5a6fdd25d82c58977b0f57d1c14c23\"",
+      "Content-Type": "binary/octet-stream",
+      "x-amz-server-side-encryption": "AES256",
+      "Connection": "close"
+    },
+    "bytes": 1200245,
+    "sha256": "3e464e549e30cfd156f534c55776712a6614866d467dc43bd6644429f3ab4e83"
+  }
+]

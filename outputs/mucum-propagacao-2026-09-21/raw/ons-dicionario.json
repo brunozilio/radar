@@ -1,0 +1,77 @@
+{
+	"titulo": "DicionarioDados_DadosHidrologicosHorarios",
+	"dicionario_simplificado": [
+		{
+			"descricao": "Identificador do subsistema",
+			"codigo": "id_subsistema"
+		},
+		{
+			"descricao": "Nome do subsistema",
+			"codigo": "nom_subsistema"
+		},
+		{
+			"descricao": "Tipo do reservatório",
+			"codigo": "tip_reservatorio"
+		},
+		{
+			"descricao": "Nome da bacia em que o reservatório está localizado",
+			"codigo": "nom_bacia"
+		},
+		{
+			"descricao": "Identificador do reservatório",
+			"codigo": "id_reservatorio"
+		},
+		{
+			"descricao": "Nome do reservatório",
+			"codigo": "nom_reservatorio"
+		},
+		{
+			"descricao": "Código da usina nos modelos de otimização",
+			"codigo": "cod_usina"
+		},
+		{
+			"descricao": "DataNota: A Hora Fim (01:00) representa o intervalo entre 00:00 até 00:59",
+			"codigo": "din_instante"
+		},
+		{
+			"descricao": "Nível montante, em metros",
+			"codigo": "val_nivelmontante"
+		},
+		{
+			"descricao": "Nível jusante, em metros",
+			"codigo": "val_niveljusante"
+		},
+		{
+			"descricao": "Valor do volume útil (%)",
+			"codigo": "val_volumeutil"
+		},
+		{
+			"descricao": "Vazão afluente em m3/s",
+			"codigo": "val_vazaoafluente"
+		},
+		{
+			"descricao": "Vazão da defluencia, em m3/s",
+			"codigo": "val_vazaodefluente"
+		},
+		{
+			"descricao": "Vazão turbinada, em m3/s",
+			"codigo": "val_vazaoturbinada"
+		},
+		{
+			"descricao": "Vazão vertida, em m3/s",
+			"codigo": "val_vazaovertida"
+		},
+		{
+			"descricao": "Vazão de outras estruturadas, em m3/s",
+			"codigo": "val_vazaooutrasestruturas"
+		},
+		{
+			"descricao": "Vazão transferida, em m3/s",
+			"codigo": "val_vazaotransferida"
+		},
+		{
+			"descricao": "Vazão vertida não turbinável, em m3/s",
+			"codigo": "val_vazaovertidanaoturbinavel"
+		}
+	]
+}

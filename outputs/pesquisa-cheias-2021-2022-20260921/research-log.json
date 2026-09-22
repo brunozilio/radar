@@ -1,0 +1,33 @@
+{
+  "recorded_at_utc": "2026-09-22T02:35:40.802564+00:00",
+  "scope": "Documentary only. Two searches, five distinct official URLs opened (two report landing pages, their twoPDFs, oneDefenseCivil page timeout). Repeated navigation within samePDFs is not additional source discovery. No ANA or ONS data requests.",
+  "search_queries": [
+    "site.sgb.gov.br Taquari 2022 inunda\u00e7\u00e3o Mu\u00e7um 2021 cheia",
+    "site.defesacivil.rs.gov.br 2022 Taquari Mu\u00e7um cheia maio outubro"
+  ],
+  "sources": [
+    {
+      "url": "https://rigeo.sgb.gov.br/handle/doc/22570",
+      "status": "metadata read",
+      "pdf": "sources/sgb-2021.pdf"
+    },
+    {
+      "url": "https://rigeo.sgb.gov.br/handle/doc/23700",
+      "status": "metadata read",
+      "pdf": "sources/sgb-2022.pdf"
+    },
+    {
+      "url": "https://defesacivil.rs.gov.br/alerta-de-cheia-no-taquari",
+      "status": "webopen timeout; search snippet only",
+      "snippet_publication": "07/06/2022 09:21",
+      "independent_evidence_not_used_for_peak": true
+    }
+  ],
+  "budgets": {
+    "searches": 2,
+    "distinct_source_urls": 5,
+    "combined": 7,
+    "limit": 8
+  },
+  "limits": "Web-tool exactrequesttimestamps unavailable; PDF directGETtimestamps and headers preserved separately."
+}

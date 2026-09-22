@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "original_prediction_membership",
+      "horizon_h": 1,
+      "phase": "test",
+      "passed": true,
+      "expected": 1350,
+      "preserved": 1350,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "check": "original_prediction_membership",
+      "horizon_h": 1,
+      "phase": "today",
+      "passed": true,
+      "expected": 14,
+      "preserved": 14,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "check": "original_prediction_membership",
+      "horizon_h": 6,
+      "phase": "test",
+      "passed": true,
+      "expected": 1343,
+      "preserved": 1343,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "check": "original_prediction_membership",
+      "horizon_h": 6,
+      "phase": "today",
+      "passed": true,
+      "expected": 9,
+      "preserved": 9,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "check": "original_prediction_membership",
+      "horizon_h": 12,
+      "phase": "test",
+      "passed": true,
+      "expected": 1337,
+      "preserved": 1337,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "check": "original_prediction_membership",
+      "horizon_h": 12,
+      "phase": "today",
+      "passed": true,
+      "expected": 3,
+      "preserved": 3,
+      "missing": 0,
+      "extra": 0
+    }
+  ],
+  "quarter_hour_rows": 51709,
+  "hourly_origins": 12928,
+  "telemetry_columns": 120,
+  "weather_columns_not_needed_for_X24_filter": 60,
+  "current_feature_origin": "2026-09-21T15:00:00-03:00",
+  "current_H_finite": true,
+  "current_X24_complete": true,
+  "source_sha256": [
+    {
+      "path": "/Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+      "sha256": "021e26a9ac36b6d92a8773f20139e0d3bb8e470a3777ef509c5327dc823e3b32",
+      "bytes": 12523
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "sha256": "fd40fd74e87486e7df586d2b223096b216dfc556b69c20a384f2ae610480e650",
+      "bytes": 13722
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "sha256": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae",
+      "bytes": 12571
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "sha256": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+      "bytes": 6810800
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/idades-fontes.csv",
+      "sha256": "5efc0fdc95da2a68021e303e7adb97e251020743351e87c76f0f4ca08af50b89",
+      "bytes": 1447
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv",
+      "sha256": "f40d62328b4f8e861dff65260d65fe35f359b1ab1111746f07a80b8aff7417be",
+      "bytes": 2988
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/retrospectivas-latencia.csv",
+      "sha256": "301c355cf51a837d8b6e360738af8eabc4a1176d2fea5ac968c811531c19aa31",
+      "bytes": 5079312
+    },
+    {
+      "path": "/private/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+      "sha256": "82619e3ae89af1625dea1d4245d0d4a9e2eb85e0d034790fbd89a1bb51d7e996",
+      "bytes": 92859
+    }
+  ],
+  "scope": "Coverage audit only. No training, HGE execution, network or live changes."
+}

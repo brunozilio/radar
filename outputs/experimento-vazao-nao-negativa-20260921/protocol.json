@@ -1,0 +1,15 @@
+{
+  "experiment_id": "upstream-nonnegative-level-ridge-v1",
+  "scope": "Local development experiment for14deJulho discharge, with frozen15h historical latency features and18h current snapshot. No live replacement or promotion.",
+  "families": ["reference_delta_full", "level_ridge_unconstrained", "level_ridge_nonnegative"],
+  "features": "For each of the same7flow variables, use delayed levels at0,1,3,6h instead of differences/slopes. Retain the same25causal rainfall features. No2023 augmentation and no anomaly masks in this comparison.",
+  "solver": "Ridge alpha1000, training-only medians/means/scales and missing indicators, weights1+2*(target>2 in1000m3/s). Absolute-flow response for both level models. Constrain coefficients of the53numeric predictors to>=0 in the nonnegative family; missing-indicator coefficients and intercept remain unconstrained. This ensures monotone response holding other inputs and missing flags fixed, not water conservation or a physical upper bound.",
+  "intercept": "Weighted target mean as in the reference fitter; not independently optimized.",
+  "leads_h": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "splits": "Same chronological boundaries: training targets<2025-10-01; validation origins>=2025-10-01 and targets<2026-07-01; test origins>=2026-07-01 and targets<2026-09-21; final training targets<2026-09-21. Explicit UTC-03.",
+  "target_membership": "Identical to existing14deJulho experiment for all families. Unknown targets/reference excluded identically; difficult cases retained.",
+  "selection": "Compare general/high-flow MAE,bias,P90 at each lead and aggregate, with unchanged pre-validation95th-percentile threshold. No hyperparameter search. Previously inspected development periods cannot prove independent improvement.",
+  "source_snapshot": "outputs/mucum-hourly-20260921T180020-0300",
+  "promotion": false,
+  "goal_achieved": false
+}

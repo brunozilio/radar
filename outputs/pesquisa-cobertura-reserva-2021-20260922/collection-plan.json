@@ -1,0 +1,63 @@
+{
+  "registered_at_utc": "2026-09-22T03:05:25.535280+00:00",
+  "scope": "Coverage/QC only, reserved2021 remains excluded from fit/tuning. No model inference/errors/features/weights.",
+  "max_get_requests": 4,
+  "no_automatic_retries": true,
+  "reused": [],
+  "jobs": [
+    {
+      "station": "86510000",
+      "start": "2021-04-28",
+      "end": "2021-04-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=28%2F04%2F2021&dataFim=30%2F04%2F2021",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "28/04/2021",
+        "dataFim": "30/04/2021"
+      },
+      "file": "raw/ana-86510000-2021-04-28--2021-04-30.xml"
+    },
+    {
+      "station": "86510000",
+      "start": "2021-05-01",
+      "end": "2021-05-31",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F05%2F2021&dataFim=31%2F05%2F2021",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "01/05/2021",
+        "dataFim": "31/05/2021"
+      },
+      "file": "raw/ana-86510000-2021-05-01--2021-05-31.xml"
+    },
+    {
+      "station": "86472000",
+      "start": "2021-04-28",
+      "end": "2021-04-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=28%2F04%2F2021&dataFim=30%2F04%2F2021",
+      "parameters": {
+        "codEstacao": "86472000",
+        "dataInicio": "28/04/2021",
+        "dataFim": "30/04/2021"
+      },
+      "file": "raw/ana-86472000-2021-04-28--2021-04-30.xml"
+    },
+    {
+      "station": "86472000",
+      "start": "2021-05-01",
+      "end": "2021-05-31",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=01%2F05%2F2021&dataFim=31%2F05%2F2021",
+      "parameters": {
+        "codEstacao": "86472000",
+        "dataInicio": "01/05/2021",
+        "dataFim": "31/05/2021"
+      },
+      "file": "raw/ana-86472000-2021-05-01--2021-05-31.xml"
+    }
+  ],
+  "reference_hashes": {
+    "docs/radar-historical-evaluation-reservation.json": "93ec9e3d7120412563511e9f027705184b2fdd0b993a57bcedc99a33e53e0692",
+    "outputs/pesquisa-fase-horaria-2022-20260921/source.json": "7e88189d2c5c3c7a969c3e71dde4e39305f15de2fe8633b47b31fc4407befc93"
+  },
+  "timezone": "Literal naive DataHora retained; BRT not certified by this audit.",
+  "normalization": "No interpolation, rounding, zero filling or unit conversion; all original field text/QC retained."
+}

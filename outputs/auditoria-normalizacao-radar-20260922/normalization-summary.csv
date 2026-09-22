@@ -1,0 +1,7 @@
+dataset,source_shape,audited_shape,rain_cells,finite_rain_cells,nan_rain_cells,max_abs_perturbation,changed_finite_rain_cells,input_zeros,output_zeros,nonzero_to_zero,input_negative_zero,output_negative_zero,coverage_point5_comparison_changes,decimal_exact_binary_disagreement_cells,decimal_short_repr_disagreement_cells,decimal_exact_binary_disagreement_unique_values,decimal_short_repr_disagreement_unique_values,exact_binary_half_ties,short_repr_half_ties,max_numpy_vs_decimal_discrepancy
+original2025_2026,"[12928, 180]","[12928, 120]",969600,963723,5877,4.999677227779387e-09,590874,310550,310550,0,0,0,0,0,0,0,0,0,0,0.0
+added2020,"[480, 120]","[480, 120]",36000,28439,7561,4.997399827288973e-09,22231,4696,4696,0,0,0,0,0,0,0,0,0,0,0.0
+original2021,"[744, 120]","[744, 120]",55800,48835,6965,4.997093863701174e-09,32036,13377,13377,0,0,0,0,0,0,0,0,0,0,0.0
+original2022,"[1464, 120]","[1464, 120]",109800,96398,13402,4.997096639258736e-09,69699,18705,18705,0,0,0,0,0,0,0,0,0,0,0.0
+reconstructed2021,"[744, 120]","[744, 120]",55800,48835,6965,4.9970947102462304e-09,32031,13377,13377,0,0,0,0,0,0,0,0,0,0,0.0
+reconstructed2022,"[1464, 120]","[1464, 120]",109800,96398,13402,4.9970960702694356e-09,69665,18705,18705,0,0,0,0,0,0,0,0,0,0,0.0

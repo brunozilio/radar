@@ -1,0 +1,997 @@
+{
+  "source": {
+    "station": "86510000",
+    "year": 2022,
+    "source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+    "sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+    "source_metadata": {
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=04%2F05%2F2022&dataFim=04%2F05%2F2022",
+      "requested_at_utc": "2026-09-22T02:58:06.253769+00:00",
+      "status": "preserved",
+      "http_status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Tue, 22 Sep 2026 02:58:02 GMT",
+        "Content-Type": "text/xml; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "X-Powered-By": "ASP.NET",
+        "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "collected_at_utc": "2026-09-22T02:58:06.744812+00:00",
+      "bytes": 82411,
+      "sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed"
+    },
+    "usage": "overlap_audit_only; not appended to canonical series"
+  },
+  "records": 96,
+  "identical": 96,
+  "mismatching_or_missing": 0,
+  "comparisons": [
+    {
+      "timestamp_literal": "2022-05-04 23:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 1,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 23:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 2,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 23:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 3,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 23:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 4,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 22:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 5,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 22:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 6,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 22:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 7,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 22:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 8,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 21:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 9,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 21:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 10,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 21:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 11,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 21:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 12,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 20:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 13,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 20:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 14,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 20:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 15,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 20:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 16,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 19:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 17,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 19:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 18,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 19:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 19,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 19:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 20,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 18:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 21,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 18:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 22,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 18:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 23,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 18:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 24,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 17:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 25,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 17:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 26,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 17:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 27,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 17:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 28,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 16:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 29,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 16:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 30,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 16:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 31,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 16:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 32,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 15:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 33,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 15:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 34,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 15:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 35,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 15:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 36,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 14:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 37,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 14:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 38,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 14:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 39,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 14:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 40,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 13:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 41,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 13:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 42,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 13:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 43,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 13:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 44,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 12:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 45,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 12:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 46,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 12:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 47,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 12:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 48,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 11:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 49,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 11:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 50,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 11:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 51,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 11:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 52,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 10:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 53,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 10:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 54,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 10:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 55,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 10:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 56,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 09:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 57,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 09:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 58,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 09:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 59,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 09:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 60,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 08:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 61,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 08:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 62,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 08:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 63,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 08:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 64,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 07:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 65,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 07:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 66,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 07:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 67,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 07:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 68,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 06:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 69,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 06:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 70,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 06:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 71,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 06:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 72,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 05:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 73,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 05:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 74,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 05:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 75,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 05:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 76,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 04:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 77,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 04:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 78,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 04:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 79,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 04:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 80,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 03:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 81,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 03:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 82,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 03:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 83,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 03:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 84,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 02:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 85,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 02:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 86,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 02:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 87,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 02:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 88,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 01:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 89,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 01:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 90,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 01:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 91,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 01:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 92,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 00:45:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 93,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 00:30:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 94,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 00:15:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 95,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    },
+    {
+      "timestamp_literal": "2022-05-04 00:00:00",
+      "probe_source_file": "outputs/pesquisa-fase-horaria-2022-20260921/response.xml",
+      "probe_source_sha256": "74ecc48550ba069977befad90da0e888652518bdeaa9f0db0af9d0732e1225ed",
+      "probe_source_record_index": 96,
+      "monthly_matches": 1,
+      "all_fields_identical": true,
+      "probe_fields": null,
+      "monthly_records": null
+    }
+  ],
+  "policy": "Audit only; not appended or used to revise monthly primary records."
+}

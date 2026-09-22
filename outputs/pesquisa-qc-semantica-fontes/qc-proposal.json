@@ -1,0 +1,45 @@
+{
+  "status": "PROPOSED_DIAGNOSTIC_ONLY_NOT_IMPLEMENTED",
+  "created_at": "2026-09-21T20:54:33.890091+00:00",
+  "source_contracts": {
+    "ONS": {
+      "equation": "QDEF=QTUR+QVER+QOTR",
+      "transfer_excluded": true,
+      "non_turbinable_spill_is_not_additional_component": true,
+      "zero_allowed": true,
+      "negative_allowed": [
+        "val_vazaoafluente",
+        "val_vazaotransferida"
+      ],
+      "quality_assurance": "AGENT_REPORTED_UNVALIDATED_EXPORT"
+    },
+    "CERAN": {
+      "equation": "UNVERIFIED_PUBLIC_CONTRACT",
+      "observed_sample_equation": "QDEF=QTUR+QVERTIDA",
+      "remanescente_inclusion": "appears included in vertida in sampled pairs; not generalized"
+    }
+  },
+  "numeric_tolerance": null,
+  "tolerance_basis_required": [
+    "quantization_and_rounding",
+    "instrument_uncertainty",
+    "same_time_interval",
+    "non_overlapping_component_partition"
+  ],
+  "sentinel_9999": {
+    "status": "UNVERIFIED",
+    "automatic_rejection": false
+  },
+  "flags": [
+    "MISSING",
+    "SCHEMA_SIGN_REVIEW",
+    "SEMANTICS_UNVERIFIED",
+    "COMPONENT_CONFLICT",
+    "POSSIBLE_OUTAGE",
+    "EXTREME_REVIEW"
+  ],
+  "automatic_replacement": false,
+  "automatic_interpolation": false,
+  "automatic_extreme_clipping": false,
+  "tuned_using_model_error": false
+}

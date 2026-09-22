@@ -1,0 +1,76 @@
+{
+  "status": "NOT_PROMOTED",
+  "reason": "Added2023 CERAN-only ridge worsened validation high-flow MAE against both baselines; current extrapolation also increased. No hyperparameter retuning after observing this result.",
+  "historical_reference_reproduction_max_error_m3_s": 0.0,
+  "paired_target_membership_sha256": "5d4f24793b380d96c8395eb53b2079deb151d5199760793440b434d7cfa3586b",
+  "paired_target_counts": {
+    "reference_full": 102108,
+    "reference_ceran_only": 102108,
+    "augmented_ceran_2023": 102108
+  },
+  "input_hashes_verified": 14,
+  "summary": [
+    {
+      "phase": "validation",
+      "family": "reference_full",
+      "all_n": 78558,
+      "all_mae_m3_s": 81.98173597620702,
+      "all_bias_m3_s": 16.851690041630434,
+      "high_flow_n": 336,
+      "high_flow_mae_m3_s": 285.24054211498526,
+      "high_flow_bias_m3_s": 19.75339125181602
+    },
+    {
+      "phase": "validation",
+      "family": "reference_ceran_only",
+      "all_n": 78558,
+      "all_mae_m3_s": 74.86254732599383,
+      "all_bias_m3_s": 20.2440228842412,
+      "high_flow_n": 336,
+      "high_flow_mae_m3_s": 324.88965693309876,
+      "high_flow_bias_m3_s": -101.5507221354668
+    },
+    {
+      "phase": "validation",
+      "family": "augmented_ceran_2023",
+      "all_n": 78558,
+      "all_mae_m3_s": 84.48771998212332,
+      "all_bias_m3_s": 33.46251471665738,
+      "high_flow_n": 336,
+      "high_flow_mae_m3_s": 406.71189386995337,
+      "high_flow_bias_m3_s": -116.13594421464023
+    },
+    {
+      "phase": "test",
+      "family": "reference_full",
+      "all_n": 23550,
+      "all_mae_m3_s": 169.23495875920005,
+      "all_bias_m3_s": -8.977182474282625,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 437.98863562105976,
+      "high_flow_bias_m3_s": -152.16243217649117
+    },
+    {
+      "phase": "test",
+      "family": "reference_ceran_only",
+      "all_n": 23550,
+      "all_mae_m3_s": 173.8103211455428,
+      "all_bias_m3_s": -7.259038008142634,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 491.8776406782688,
+      "high_flow_bias_m3_s": -83.59215438646248
+    },
+    {
+      "phase": "test",
+      "family": "augmented_ceran_2023",
+      "all_n": 23550,
+      "all_mae_m3_s": 175.24759081807667,
+      "all_bias_m3_s": -11.794190891541856,
+      "high_flow_n": 3252,
+      "high_flow_mae_m3_s": 454.7154342311529,
+      "high_flow_bias_m3_s": -131.29632608751336
+    }
+  ],
+  "live_issuance": false,
+  "goal_achieved": false
+}

@@ -1,0 +1,231 @@
+{
+  "source_manifest_sha256": "61a83240001370d94409e70a6a7de321f43f51131dc2c8a94636650afb8a9d53",
+  "contrasts": 864,
+  "summary": [
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 2,
+        "regressed": 9,
+        "unchanged": 1
+      },
+      "mae_horizons": {
+        "regressed": 9,
+        "improved": 3
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "all",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "improved": 5,
+        "regressed": 7
+      },
+      "mae_horizons": {
+        "improved": 9,
+        "regressed": 3
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 10,
+        "regressed": 1,
+        "unchanged": 1
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "improved": 11,
+        "regressed": 1
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 9,
+        "regressed": 3
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "all",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "improved": 8,
+        "regressed": 4
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 12
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "improved": 11,
+        "regressed": 1
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 10,
+        "regressed": 2
+      },
+      "mae_horizons": {
+        "regressed": 6,
+        "improved": 6
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "all",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "unchanged": 1,
+        "improved": 11
+      },
+      "mae_horizons": {
+        "improved": 11,
+        "regressed": 1
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "unchanged": 2,
+        "improved": 8,
+        "regressed": 2
+      },
+      "mae_horizons": {
+        "improved": 8,
+        "regressed": 4
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "unchanged": 2,
+        "regressed": 5,
+        "improved": 5
+      },
+      "mae_horizons": {
+        "improved": 5,
+        "regressed": 7
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "all",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "improved": 11,
+        "regressed": 1
+      },
+      "mae_horizons": {
+        "improved": 10,
+        "regressed": 2
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "all",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "unchanged": 1,
+        "improved": 11
+      },
+      "mae_horizons": {
+        "improved": 12
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "matching_profile",
+      "hit_horizons": {
+        "unchanged": 1,
+        "regressed": 6,
+        "improved": 5
+      },
+      "mae_horizons": {
+        "regressed": 8,
+        "improved": 4
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "relation": "primary_tree_only",
+      "hit_horizons": {
+        "unchanged": 1,
+        "regressed": 6,
+        "improved": 5
+      },
+      "mae_horizons": {
+        "improved": 6,
+        "regressed": 6
+      }
+    }
+  ],
+  "independent_test": false,
+  "promoted": false,
+  "goal_achieved": false
+}

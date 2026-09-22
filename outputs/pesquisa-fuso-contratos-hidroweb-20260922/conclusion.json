@@ -1,0 +1,24 @@
+{
+  "audited_at_utc": "2026-09-22T04:24:49.798552+00:00",
+  "station": "86510000",
+  "target_operation": "DadosHidrometeorologicosGerais",
+  "target_field": "DataHora",
+  "target_years": [
+    2025,
+    2026
+  ],
+  "explicit_timezone_contract_found": false,
+  "explicit_DST_contract_found": false,
+  "presentation_product_UTCminus3_found": true,
+  "legacy_convention_currently_corroborated_not_certified": true,
+  "new_network_requests": 0,
+  "new_primary_sources": 0,
+  "authentication_or_external_messages": false,
+  "changed_eligibility_flags": false,
+  "missing": [
+    "Official statement binding timezone/DST to this operation/field, with applicable dates/versions.",
+    "Meaning of measurement vs reception/publication timestamps in legacy response.",
+    "Historical release/revision evidence; administrativeDataIns isnot firstpublication."
+  ],
+  "reason_no_new_sources": "PreviousWSDL/DISCO/manual/backend tracing already completed; newly recovered conventionaldocumentation adds no targetoperation timezone link. No discovered unreviewed primary endpoint with stronger evidence; avoid repeating searches/downloads."
+}

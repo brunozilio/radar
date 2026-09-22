@@ -1,0 +1,21 @@
+{
+  "rows": 13,
+  "largest_revision": {
+    "valid_at": "2026-09-22T07:00:00-03:00",
+    "old_issued_m": 18.565743602805167,
+    "reused_old_models_at_new_inputs_m": 19.10654979667524,
+    "new_issued_m": 19.22825367238508,
+    "joint_new_inputs_base_and_horizon_m": 0.5408061938700719,
+    "retraining_effect_at_new_inputs_m": 0.12170387570984076,
+    "total_same_target_revision_m": 0.6625100695799127,
+    "new_nominal_lead_h": 5
+  },
+  "source_manifests_sha256": {
+    "outputs/diagnostico-radar-pesos-inputs-fixos-20260922/artifact-hashes.json": "e19764d3b355ae6e915a32e540b5d64fa0304a3b2ff530c7500e3b3f1c5f637d",
+    "outputs/diagnostico-radar-emissoes-01h-02h-20260922/artifact-hashes.json": "61987d82abd00592e54dd3fe3ca7ac418cd566f527322ed133761ea1f570b9d3"
+  },
+  "interpretation": "Exact ordered computational decomposition: first reuse old fitted models at new origin inputs/base and the new nominal lead for the same target, then replace fitted models. Effects depend on this chosen order and are not causal accuracy improvements.",
+  "fit": false,
+  "forecast_issued": false,
+  "goal_achieved": false
+}

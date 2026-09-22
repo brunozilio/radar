@@ -1,0 +1,18 @@
+{
+  "id": "radar-native-missing-training-runtime19-v2",
+  "scope": "Radar only. Local historical development, no live issuance or promotion.",
+  "problem": "Original retrospective evaluation required all first24 telemetry features finite, whereas current inference only requires finite Mu\u00e7um base level. Evaluate both controls and candidates on every scheduled historical origin/target, preserving unavailable base levels and targets.",
+  "features": "Original120 telemetry predictors plus60 previous_day1 weather accumulations, identical order and source snapshot from mucum-atualizacao-15h-2026-09-21. No HGE component, reservoir augmentation, new observations, imputation or clipping.",
+  "baseline": "Original arvores_previsao_chuva hyperparameters and historical membership, refitted under current operational sklearn1.9.1; complete24-input training restriction preserved. Report numerical differences versus archived1.6.1 test forecasts without claiming equivalence.",
+  "candidate": "Same HistGradientBoostingRegressor and180 features; training requires finite H and target only. Native missing branches handle missing auxiliary predictors. Inference also requires only H, for both baseline and candidate.",
+  "parameters": "Per-horizon parameters frozen from BASE/previsao-atualizada.csv. max_iter180,min_samples_leaf35,learning_rate0.055,l2_regularization10,early_stoppingFalse,random_state57. Unchanged sample weights1+2*(abs(delta)>=1)+2*(target>=9), delta=target-H. No new search.",
+  "validation": "Training labels before2025-10-01; evaluate origins fromOct1 with targets beforeJuly1/2026. Parameters had already been selected on this validation period: descriptive development, not independent validation.",
+  "test": "Use union of original preOct training and Oct-to-July validation origins, each with target strictly before its original cutoff, matching historical baseline membership. This deliberately preserves the small Oct boundary exclusion of the original audit; operational runner uses a single later cutoff and is not silently changed. Test all origins July1 through targets beforeSeptember21.",
+  "evaluation": "Every scheduled row, both families, all nominal horizons1..12, all targets and observed>=7m. Separately label original complete24-input sample and missing24-input sample. Count missing targets, base levels, pairs, failures and coverage. Report hits<=0.50m,MAE,bias,P98,max per horizon. Missing auxiliary data must not select a favorable evaluation sample.",
+  "limits": "Fixed source-delay assumptions, revised history and previous_day1 archived forecasts do not prove source availability at historical issue times. All periods were already inspected. Keep original observations and every failure; no 98percent or prospective claim.",
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false,
+  "runtime": "Run both reference and candidate under operational numpy2.5.3/sklearn1.9.1; save full versions. The original historical1.6.1 model is not expected to reproduce under1.9.1; preserve per-horizon differences on old rows. Independent h1 replay in original preserved runtime reproduces1350/1350 exactly, establishing why the first attempt halted. The modern reference is a fresh refit, not the historical emitted prediction.",
+  "amendment": "Registered after runtime diagnostic and before new complete comparison. Original failed run, code and protocol remain in experimento-radar-ausencias-nativas-20260921. No candidate test results were seen before this amendment."
+}

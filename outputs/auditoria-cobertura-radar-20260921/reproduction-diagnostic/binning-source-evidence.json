@@ -1,0 +1,74 @@
+[
+  {
+    "version": "1.6.1",
+    "path": "/tmp/radar-hydro-libs/sklearn/ensemble/_hist_gradient_boosting/binning.py",
+    "snapshot": "sources/sklearn-1.6.1-binning.py",
+    "sha256": "279aba55b68326850bb43e5b8bc1a4d6832b5959b0147f3623361d34cd0b905b",
+    "excerpts": [
+      {
+        "line": 25,
+        "text": "def _find_binning_thresholds(col_data, max_bins):"
+      },
+      {
+        "line": 65,
+        "text": "midpoints = percentile(col_data, percentiles, method=\"midpoint\").astype(X_DTYPE)"
+      },
+      {
+        "line": 172,
+        "text": "def fit(self, X, y=None):"
+      }
+    ]
+  },
+  {
+    "version": "1.6.1",
+    "path": "/tmp/radar-hydro-libs/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "snapshot": "sources/sklearn-1.6.1-gradient_boosting.py",
+    "sha256": "69407a81fd513f0eaa4c75cab2b23c8842a4ee41433b37fae8b3eacf7b711d15",
+    "excerpts": [
+      {
+        "line": 1178,
+        "text": "X_binned = self._bin_mapper.fit_transform(X)  # F-aligned array"
+      }
+    ]
+  },
+  {
+    "version": "1.9.1",
+    "path": "/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/binning.py",
+    "snapshot": "sources/sklearn-1.9.1-binning.py",
+    "sha256": "7a7d2557967e885bb9c9e4ecaf3ded585f9c874f51ebf18e8a659e303d757342",
+    "excerpts": [
+      {
+        "line": 31,
+        "text": "def _find_binning_thresholds(col_data, max_bins, sample_weight=None):"
+      },
+      {
+        "line": 90,
+        "text": "col_data, percentiles, method=\"averaged_inverted_cdf\""
+      },
+      {
+        "line": 98,
+        "text": "_weighted_percentile(col_data, sample_weight, percentile, average=True)"
+      },
+      {
+        "line": 212,
+        "text": "def fit(self, X, y=None, sample_weight=None):"
+      }
+    ]
+  },
+  {
+    "version": "1.9.1",
+    "path": "/tmp/radar-hge-venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "snapshot": "sources/sklearn-1.9.1-gradient_boosting.py",
+    "sha256": "82619e3ae89af1625dea1d4245d0d4a9e2eb85e0d034790fbd89a1bb51d7e996",
+    "excerpts": [
+      {
+        "line": 1122,
+        "text": "X_binned = self._bin_mapper.fit_transform("
+      },
+      {
+        "line": 1123,
+        "text": "X, sample_weight=sample_weight"
+      }
+    ]
+  }
+]

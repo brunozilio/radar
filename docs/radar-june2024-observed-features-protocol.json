@@ -1,0 +1,40 @@
+{
+  "id": "radar-june2024-observed-quarterhour-v1",
+  "scope": "Prepare research matrices and audited comparability only; no training, inference, forecast issuance or promotion.",
+  "windows": [
+    {
+      "warmup_start": "2024-06-12",
+      "origin_start": "2024-06-15",
+      "stop_exclusive": "2024-06-22"
+    }
+  ],
+  "feature_catalog": "Fixed120observed predictors: four levels x6, three ONS plants x7, five rainfall groups x15. No weather forecasts, reanalysis or event identifiers.",
+  "level_contract": {
+    "86510000": [
+      900,
+      900
+    ],
+    "86472000": [
+      1800,
+      900
+    ],
+    "86472600": [
+      900,
+      900
+    ],
+    "86500000": [
+      1800,
+      900
+    ]
+  },
+  "quality": "Only explicitly Dado aprovado, finite nonnegative ANA final values; rain<=150mm. No sensor substitution, interpolation, invalid-record skipping or zero fill. Exact final Muçum truth at target.",
+  "rain": "Fixed regional weights and lag steps from the15h frozen recipe. Existing ended-interval integration with0<dt<=5400, partial boundary proportional to interval, regionalcoverage>=0.5, no renormalization; missing remains missing.",
+  "ons": "Use literal as-reported Q/I, with60min lag/max90min; preserve23:59 and all source flags. No correction by component sum and no retrospective masking in this preparation. The same as-reported policy applies to recent comparator. Conflicts remain a documented limitation, not a certifiedQC flag. Qpower retains max(Q/1000,0)^0.6 as fixed formula.",
+  "schedule": "All168central origins; targeth1..12 stays within centralweek. Keep featureNaNs; no complete24 requirement. Separate missingtruth, basefailures and finalboundary.",
+  "recent_control": "Rebuild120features from audited strictlatest ANA sources, using the samequarterhour delay contract and fixedrainrecipe; Q/I from frozen15hsnapshot. Verify exact equivalence to existing120observed reference before reusing any control predictions. If different, stop and preregister a refit, never substitute silently.",
+  "time_regime_limits": "UTC-3 is computational assumption only. Datum continuity, firstpublication, event independence and postMay dam regime not certified. June may be used only as explicitly heterogeneous exploratory development data; cannot satisfy prospective goal or be called freshholdout after inspection.",
+  "future_experiment": "Separate preregistered experiment needed. Compare recentcontrol vs recent+June with same features/QC/ONS policy, temporalcutoffs, hyperparameters, weights and evaluationrows; allhorizons and failures reported. No promotion from known development results alone.",
+  "fits": 0,
+  "promoted": false,
+  "goal_achieved": false
+}

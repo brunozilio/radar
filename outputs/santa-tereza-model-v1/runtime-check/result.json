@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-22T00:13:25.772633-03:00",
+  "referenceAt": "2026-09-22T00:00:00-03:00",
+  "experimental": true,
+  "intervalMinutes": 15,
+  "modelVersion": "forecast-6h-v1",
+  "horizonHours": 6,
+  "observation": {
+    "timestamp": "2026-09-21T23:45:00-03:00",
+    "level": 17.45
+  },
+  "models": [
+    {
+      "id": "radar_arvores_live_candidate",
+      "label": "Modelo de previsão",
+      "points": [
+        {
+          "timestamp": "2026-09-22T01:00:00-03:00",
+          "level": 18.069355396405417
+        },
+        {
+          "timestamp": "2026-09-22T02:00:00-03:00",
+          "level": 18.79558075655613
+        },
+        {
+          "timestamp": "2026-09-22T03:00:00-03:00",
+          "level": 19.227368560450138
+        },
+        {
+          "timestamp": "2026-09-22T04:00:00-03:00",
+          "level": 19.35656502224801
+        },
+        {
+          "timestamp": "2026-09-22T05:00:00-03:00",
+          "level": 19.257599890059435
+        },
+        {
+          "timestamp": "2026-09-22T06:00:00-03:00",
+          "level": 18.996980159099046
+        }
+      ]
+    }
+  ],
+  "encantado": {
+    "schema": 1,
+    "station": "encantado",
+    "generatedAt": "2026-09-22T00:13:25.727416-03:00",
+    "referenceAt": "2026-09-22T00:00:00-03:00",
+    "experimental": true,
+    "intervalMinutes": 15,
+    "horizonHours": 6,
+    "modelVersion": "encantado-6h-v1",
+    "observation": {
+      "timestamp": "2026-09-21T23:45:00-03:00",
+      "level": 14.51
+    },
+    "models": [
+      {
+        "id": "radar_encantado_v1",
+        "label": "Modelo de previsão de Encantado",
+        "points": [
+          {
+            "timestamp": "2026-09-22T01:00:00-03:00",
+            "level": 15.021538170856733
+          },
+          {
+            "timestamp": "2026-09-22T02:00:00-03:00",
+            "level": 15.484984779960852
+          },
+          {
+            "timestamp": "2026-09-22T03:00:00-03:00",
+            "level": 15.901304925659945
+          },
+          {
+            "timestamp": "2026-09-22T04:00:00-03:00",
+            "level": 15.936015285291328
+          },
+          {
+            "timestamp": "2026-09-22T05:00:00-03:00",
+            "level": 15.9787601635222
+          },
+          {
+            "timestamp": "2026-09-22T06:00:00-03:00",
+            "level": 16.30739982212588
+          }
+        ]
+      }
+    ]
+  },
+  "santa-tereza": {
+    "schema": 1,
+    "station": "santa-tereza",
+    "generatedAt": "2026-09-22T00:13:25.772604-03:00",
+    "referenceAt": "2026-09-22T00:00:00-03:00",
+    "experimental": true,
+    "intervalMinutes": 15,
+    "horizonHours": 6,
+    "modelVersion": "santa-tereza-6h-v1",
+    "observation": {
+      "timestamp": "2026-09-21T23:45:00-03:00",
+      "level": 16.52
+    },
+    "models": [
+      {
+        "id": "radar_santa_tereza_v1",
+        "label": "Modelo de previsão de Santa Tereza",
+        "points": [
+          {
+            "timestamp": "2026-09-22T01:00:00-03:00",
+            "level": 17.438428835136747
+          },
+          {
+            "timestamp": "2026-09-22T02:00:00-03:00",
+            "level": 17.835263081283475
+          },
+          {
+            "timestamp": "2026-09-22T03:00:00-03:00",
+            "level": 18.235429820729607
+          },
+          {
+            "timestamp": "2026-09-22T04:00:00-03:00",
+            "level": 18.486727336237973
+          },
+          {
+            "timestamp": "2026-09-22T05:00:00-03:00",
+            "level": 18.632677893398238
+          },
+          {
+            "timestamp": "2026-09-22T06:00:00-03:00",
+            "level": 18.919173869036037
+          }
+        ]
+      }
+    ]
+  }
+}

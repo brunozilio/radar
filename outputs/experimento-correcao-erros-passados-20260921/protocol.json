@@ -1,0 +1,16 @@
+{
+  "id": "past-error-median-calibration-v1",
+  "scope": "Local historical development diagnostic, not an independent holdout or prospective result. No base model refit, live issuance or promotion.",
+  "baseline": "julho_levels_m in outputs/experimento-proxy-carreiro-20260921/predictions.csv, all23538rows, unchanged models/observations and explicit Carreiro estimates.",
+  "rule": "For each horizon1..12 separately and each originO, collect ORIGINAL forecast-minus-observed errors with target timeT in [O-24h,O-15min]. Require earlier forecast origins and finite original forecast and approved exact actual. If at least6 errors, subtract their median from current original forecast; otherwise preserve original. Window24h,delay15min,min6,gain1 fixed before execution. No tuning, flood filtering or weighting by eventual error. Never feed corrected forecast errors back into the rule.",
+  "window_hours": 24,
+  "observation_delay_minutes": 15,
+  "minimum_errors": 6,
+  "start": "Cold start from first preserved July1origin; no invented pre-July residuals. Include every target and missing forecast. A missing current baseline remains missing even when past errors are available.",
+  "observations": "Only original exact raw Muçum targets already checked against explicitly approved source observations by the event-stratification audit. Preserve all missing targets and statuses. Historical15min availability is assumed, not a verified publication record.",
+  "outputs": "Persist every point, correction, supporting residual count, latest supporting target and forecast origin, plus coverage/failures, MAE,bias,P90,P98,max and hit rate within0.50m separately per horizon and actual>=7m. Count lost/gained hits. No clipping of the corrected gauge level: finite negative values, if any, remain explicit and scored.",
+  "limits": "Past completed errors can come from the ongoing event; this is a causal adaptive method, not a fixed model tested on entirely unobserved events. Slow publication/revisions and regime changes may invalidate or weaken operational use. No uncertainty interval inferred from overlapping residuals.",
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

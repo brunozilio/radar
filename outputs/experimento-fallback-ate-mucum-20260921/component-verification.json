@@ -1,0 +1,19 @@
+{
+  "comparisons": 144,
+  "origins": 6,
+  "affected_origins": 3,
+  "max_absolute_difference_m": 7.105427357601002e-15,
+  "tolerance_m": 1e-08,
+  "passed": true,
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4",
+    "/Users/brunozilio/Documents/radar/outputs/verificacao-integral-chuva-mucum-20260921/recomputed-levels.csv": "60fda3b6fdee6e26e4e2f35ba14c4795febd9a3b9147eff03d576e157cc4f717",
+    "/Users/brunozilio/Documents/radar/outputs/verificacao-integral-chuva-mucum-20260921/computation.json": "bd23419b47f5d6fe1654aa6f00f512467d04b3abb4e7fa0c20f1ee1a9d7ace8c",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-fallback-componentes-20260921/predictions.csv": "5efa057f33c874cadf98f462fe60f60cfbb5ec32e095ce96247c9cb3da082d78",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-fallback-ate-mucum-20260921/predictions.csv": "1a772cc2e806a3e4ca6f8fa7b625ec175d20c76d098cbc4768b3b65583fd83f7"
+  },
+  "method": "Recompute fullJuly routing from source history and frozenfuturepredictions. Sum preserved independently replayedCarreiro,HGE and residual components; no inversion of baseline level or delta helper.",
+  "limitation": "Six origin audit with previously independently simulated components; not fresh fullHGE simulation of all23538rows or historic availability proof."
+}

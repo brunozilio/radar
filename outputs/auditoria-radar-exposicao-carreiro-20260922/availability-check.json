@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "contrasts": 6,
+  "metric_groups": 12,
+  "results": [
+    {
+      "profile": "A",
+      "horizon_h": 6,
+      "carreiro_availability": "complete",
+      "family": "mixed_profile_candidate",
+      "observed_targets": 140,
+      "pairs": 140,
+      "failures": 0,
+      "hits": 113,
+      "mae_m": 0.35922334210765844
+    },
+    {
+      "profile": "A",
+      "horizon_h": 6,
+      "carreiro_availability": "complete",
+      "family": "carreiro_missing_exposure",
+      "observed_targets": 140,
+      "pairs": 140,
+      "failures": 0,
+      "hits": 102,
+      "mae_m": 0.396282357301141
+    },
+    {
+      "profile": "A",
+      "horizon_h": 6,
+      "carreiro_availability": "fully_missing",
+      "family": "mixed_profile_candidate",
+      "observed_targets": 82,
+      "pairs": 81,
+      "failures": 1,
+      "hits": 42,
+      "mae_m": 1.0957975834612639
+    },
+    {
+      "profile": "A",
+      "horizon_h": 6,
+      "carreiro_availability": "fully_missing",
+      "family": "carreiro_missing_exposure",
+      "observed_targets": 82,
+      "pairs": 81,
+      "failures": 1,
+      "hits": 41,
+      "mae_m": 1.0215901844238335
+    },
+    {
+      "profile": "A",
+      "horizon_h": 12,
+      "carreiro_availability": "fully_missing",
+      "family": "mixed_profile_candidate",
+      "observed_targets": 88,
+      "pairs": 87,
+      "failures": 1,
+      "hits": 14,
+      "mae_m": 1.9506427911805175
+    },
+    {
+      "profile": "A",
+      "horizon_h": 12,
+      "carreiro_availability": "fully_missing",
+      "family": "carreiro_missing_exposure",
+      "observed_targets": 88,
+      "pairs": 87,
+      "failures": 1,
+      "hits": 16,
+      "mae_m": 1.8646299220914517
+    },
+    {
+      "profile": "B",
+      "horizon_h": 6,
+      "carreiro_availability": "complete",
+      "family": "mixed_profile_candidate",
+      "observed_targets": 140,
+      "pairs": 140,
+      "failures": 0,
+      "hits": 109,
+      "mae_m": 0.3753687215344353
+    },
+    {
+      "profile": "B",
+      "horizon_h": 6,
+      "carreiro_availability": "complete",
+      "family": "carreiro_missing_exposure",
+      "observed_targets": 140,
+      "pairs": 140,
+      "failures": 0,
+      "hits": 99,
+      "mae_m": 0.40674740725170805
+    },
+    {
+      "profile": "B",
+      "horizon_h": 6,
+      "carreiro_availability": "fully_missing",
+      "family": "mixed_profile_candidate",
+      "observed_targets": 82,
+      "pairs": 81,
+      "failures": 1,
+      "hits": 42,
+      "mae_m": 1.1648299981444747
+    },
+    {
+      "profile": "B",
+      "horizon_h": 6,
+      "carreiro_availability": "fully_missing",
+      "family": "carreiro_missing_exposure",
+      "observed_targets": 82,
+      "pairs": 81,
+      "failures": 1,
+      "hits": 40,
+      "mae_m": 1.0899550115682466
+    },
+    {
+      "profile": "B",
+      "horizon_h": 12,
+      "carreiro_availability": "fully_missing",
+      "family": "mixed_profile_candidate",
+      "observed_targets": 88,
+      "pairs": 87,
+      "failures": 1,
+      "hits": 15,
+      "mae_m": 2.0138867653880155
+    },
+    {
+      "profile": "B",
+      "horizon_h": 12,
+      "carreiro_availability": "fully_missing",
+      "family": "carreiro_missing_exposure",
+      "observed_targets": 88,
+      "pairs": 87,
+      "failures": 1,
+      "hits": 19,
+      "mae_m": 1.932669013415668
+    }
+  ],
+  "input_sha256": {
+    "outputs/experimento-radar-ausencia-carreiro-20260922/predictions.csv": "961dcb356a66a5dbe2a294b31ecf451750937c3235530082f8dbea094bc4d6d6",
+    "outputs/experimento-radar-mistura-atrasos-20260922/prepared-inputs.npz": "b2b6bec9438135dfe5f6d94722cd6c9f40ebd077232c15c9d09283cd2f916d06",
+    "outputs/analise-radar-ausencia-carreiro-20260922/availability-strata.csv": "ddce4416f522f5e3b0758c19ca13c82c30dfb76d22ef7b84f28b48bf35a89aea",
+    "outputs/analise-radar-ausencia-carreiro-20260922/artifact-hashes.json": "67b19e721ddb2a19fd21a1023909887f2c99f9ce99d5a4fa338b73210907a9a4"
+  }
+}

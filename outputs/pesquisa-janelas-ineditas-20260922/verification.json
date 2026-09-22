@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "check": "ana-20180830-20180905.xml XML to JSONL all fields/indices exact",
+      "passed": true
+    },
+    {
+      "check": "ana-20180830-20180905.xml station86510000",
+      "passed": true
+    },
+    {
+      "check": "ana-20180830-20180905.xml bulletin exact approved numerical match",
+      "passed": true
+    },
+    {
+      "check": "ana-20180930-20181006.xml XML to JSONL all fields/indices exact",
+      "passed": true
+    },
+    {
+      "check": "ana-20180930-20181006.xml station86510000",
+      "passed": true
+    },
+    {
+      "check": "ana-20180930-20181006.xml bulletin exact approved numerical match",
+      "passed": true
+    },
+    {
+      "check": "sgb-20180902-17.pdf.receipt.json body hash",
+      "passed": true
+    },
+    {
+      "check": "ana-20180930-20181006.xml.receipt.json body hash",
+      "passed": true
+    },
+    {
+      "check": "ana-20180830-20180905.xml.receipt.json body hash",
+      "passed": true
+    },
+    {
+      "check": "sgb-20181003-22.pdf.receipt.json body hash",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "telemetry_gets": 2,
+  "document_gets": 2,
+  "search_queries": 4,
+  "notes": [
+    "Only two windows checked, no mass collection",
+    "JSONL retains all strings and QC; no resampling",
+    "Anchor coverage is a contract admissibility check, not a forecast or fit"
+  ]
+}

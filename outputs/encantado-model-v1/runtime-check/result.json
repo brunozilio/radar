@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-21T22:56:31.330641-03:00",
+  "referenceAt": "2026-09-21T22:00:00-03:00",
+  "experimental": true,
+  "intervalMinutes": 15,
+  "modelVersion": "forecast-6h-v1",
+  "horizonHours": 6,
+  "observation": {
+    "timestamp": "2026-09-21T21:30:00-03:00",
+    "level": 16.17
+  },
+  "models": [
+    {
+      "id": "radar_arvores_live_candidate",
+      "label": "Modelo de previsão",
+      "points": [
+        {
+          "timestamp": "2026-09-21T23:00:00-03:00",
+          "level": 16.85627218042998
+        },
+        {
+          "timestamp": "2026-09-22T00:00:00-03:00",
+          "level": 17.639199301474637
+        },
+        {
+          "timestamp": "2026-09-22T01:00:00-03:00",
+          "level": 18.000239803438884
+        },
+        {
+          "timestamp": "2026-09-22T02:00:00-03:00",
+          "level": 18.26612896436389
+        },
+        {
+          "timestamp": "2026-09-22T03:00:00-03:00",
+          "level": 18.195040397450477
+        },
+        {
+          "timestamp": "2026-09-22T04:00:00-03:00",
+          "level": 17.943395373020913
+        }
+      ]
+    }
+  ],
+  "encantado": {
+    "schema": 1,
+    "station": "encantado",
+    "generatedAt": "2026-09-21T22:56:31.330606-03:00",
+    "referenceAt": "2026-09-21T22:00:00-03:00",
+    "experimental": true,
+    "intervalMinutes": 15,
+    "horizonHours": 6,
+    "modelVersion": "encantado-6h-v1",
+    "observation": {
+      "timestamp": "2026-09-21T22:00:00-03:00",
+      "level": 13.7
+    },
+    "models": [
+      {
+        "id": "radar_encantado_v1",
+        "label": "Modelo de previsão de Encantado",
+        "points": [
+          {
+            "timestamp": "2026-09-21T23:00:00-03:00",
+            "level": 14.265481305988603
+          },
+          {
+            "timestamp": "2026-09-22T00:00:00-03:00",
+            "level": 14.737474485858352
+          },
+          {
+            "timestamp": "2026-09-22T01:00:00-03:00",
+            "level": 15.20365514992019
+          },
+          {
+            "timestamp": "2026-09-22T02:00:00-03:00",
+            "level": 15.520531731279567
+          },
+          {
+            "timestamp": "2026-09-22T03:00:00-03:00",
+            "level": 15.80969216986008
+          },
+          {
+            "timestamp": "2026-09-22T04:00:00-03:00",
+            "level": 15.985514469859979
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "unavailable-upstream-information-exact-diagnostic-v2",
+  "uses_information_unavailable_at_issuance": true,
+  "scope": "NON-FORECAST reconstruction to isolate sensitivity to upstream estimates; never issue or count toward98percent goal. Older all-observed forcing reconstruction is not this matched conditional comparison.",
+  "scenarios": [
+    "reference",
+    "observed_julho",
+    "observed_carreiro",
+    "observed_both"
+  ],
+  "change": "Replace only nonnegative-relativelead terms of upstream kernels with exact historicalobservedQ at origin+k. Such observations were not necessarily available at issue, including k=0. Never replace missing observations with estimates; mark diagnostic unavailable. Exactlyzeroweight terms require no observation. Keep pastflow history/proxies, HGE rainfall/state, anchors, rating and correction fixed.",
+  "reference": "Frozen July77/Carreiro53 with regionalproxy for missingCarreiroinference from experimentoproxycarreiro. Reproduce original upstream evaluation then preserve its23538Mu\u00e7umtargets. No fit or optimization.",
+  "metrics": "All12nominal horizons/all/high>=7, individualcoverage and intersection of4scenarios. Hits<=0.50m are reconstruction-only, never prospectivescore. MissingfutureQ must be reported as a coverage reduction. Negative resultingQ is failure, not clipping.",
+  "interpretation": "Not a theoretical bestaccuracy or achievable operational ceiling: compensating model errors can make measuredforcing worsen reconstruction. Any remaining error can include pastflowproxy, local runoff, anchor, rating, routing and measurement inconsistency; cannot attribute all to routing alone.",
+  "verification": "Preserve inputs/hashes/targets and referencelevels. Check Carreiro horizons before firstnonzerolag remain exact. Independently recompute representative fullrouting/components including missingobservation cases before conclusion.",
+  "eligible_for_goal": false,
+  "live_issuance": false,
+  "promotion": false,
+  "julho_observation_contract": "ExactONSrecordat requestedtimestamp, finiteQ and agreementwithin1e-7m3/s with frozenbaselineflow. Missingexactrecord or disagreement => diagnosticmissing, no carryforward or imputation. RawONSandbaselinevaluesbothpreserved in observationaudit. Carreiro usesexactrawANAgrid (max_age0), retainedoriginalqualitypolicy."
+}

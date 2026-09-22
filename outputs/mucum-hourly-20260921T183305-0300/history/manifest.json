@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "parent_directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T180020-0300/history",
+  "parent_manifest_sha256": "d09afb704a678741cfead0b8bd2aab0ff1837b129ecd627deb782c434b81ce20",
+  "collection_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T183305-0300/collection-manifest.json",
+  "collection_manifest_sha256": "92153a6ee1a1bf829697a70c73432d57d9a1c23726c36123953e468aa42ddac5",
+  "latest_collection_by_source": {
+    "ana-86060010-fresh.xml": "2026-09-21T18:33:05.726175-03:00",
+    "ana-86099000-fresh.xml": "2026-09-21T18:33:05.795096-03:00",
+    "ana-86102000-fresh.xml": "2026-09-21T18:33:05.729197-03:00",
+    "ana-86117000-fresh.xml": "2026-09-21T18:33:06.261550-03:00",
+    "ana-86125000-fresh.xml": "2026-09-21T18:33:06.382538-03:00",
+    "ana-86125050-fresh.xml": "2026-09-21T18:33:06.284208-03:00",
+    "ana-86160000-fresh.xml": "2026-09-21T18:33:06.931602-03:00",
+    "ana-86163000-fresh.xml": "2026-09-21T18:33:06.967699-03:00",
+    "ana-86200900-fresh.xml": "2026-09-21T18:33:06.880640-03:00",
+    "ana-86280500-fresh.xml": "2026-09-21T18:33:07.412071-03:00",
+    "ana-86298000-fresh.xml": "2026-09-21T18:33:07.610942-03:00",
+    "ana-86403000-fresh.xml": "2026-09-21T18:33:07.407621-03:00",
+    "ana-86410800-fresh.xml": "2026-09-21T18:33:08.050108-03:00",
+    "ana-86447000-fresh.xml": "2026-09-21T18:33:08.041209-03:00",
+    "ana-86448000-fresh.xml": "2026-09-21T18:33:08.224426-03:00",
+    "ana-86450000-fresh.xml": "2026-09-21T18:33:08.976850-03:00",
+    "ana-86471000-fresh.xml": "2026-09-21T18:33:08.841212-03:00",
+    "ana-86472000-fresh.xml": "2026-09-21T18:33:08.828068-03:00",
+    "ana-86472600-fresh.xml": "2026-09-21T18:33:09.646389-03:00",
+    "ana-86479000-fresh.xml": "2026-09-21T18:33:09.292706-03:00",
+    "ana-86488000-fresh.xml": "2026-09-21T18:33:09.546526-03:00",
+    "ana-86493000-fresh.xml": "2026-09-21T18:33:09.800733-03:00",
+    "ana-86495500-fresh.xml": "2026-09-21T18:33:09.878827-03:00",
+    "ana-86500000-fresh.xml": "2026-09-21T18:33:10.358057-03:00",
+    "ana-86504900-fresh.xml": "2026-09-21T18:33:10.164165-03:00",
+    "ana-86505500-fresh.xml": "2026-09-21T18:33:10.402151-03:00",
+    "ana-86510000-fresh.xml": "2026-09-21T18:33:11.210529-03:00",
+    "ceran-julho-fresh.html": "2026-09-21T18:33:10.894247-03:00",
+    "ceran-monte-fresh.html": "2026-09-21T18:33:10.949844-03:00",
+    "ceran-castro-fresh.html": "2026-09-21T18:33:11.429236-03:00",
+    "weather-gfs_seamless.json": "2026-09-21T18:33:14.661356-03:00",
+    "weather-ecmwf_ifs025.json": "2026-09-21T18:33:14.672201-03:00",
+    "weather-icon_global.json": "2026-09-21T18:33:14.679410-03:00"
+  },
+  "files": {
+    "ana-86060010.npz": "f0f9c1a36041c02698bb4f23d8ca976a3024c1bb8fb593ff2c0d3df5659a38ec",
+    "ana-86099000.npz": "499979fb6b644bf573671601ca6c776bc49e914640e02428572c5c79db203043",
+    "ana-86102000.npz": "8a1f24cb12746d618b641a21b0777fc23bc332425bdd9d911b24f8fbe8e4bfa0",
+    "ana-86117000.npz": "0e7a555310532bbae5880d794bacf0647be96f0dd389992ef4b917e9c7c57ea9",
+    "ana-86125000.npz": "fb80820d74aba99307160a6cd63162572d43c1a0db7a2477605b76c8fe0d673b",
+    "ana-86125050.npz": "4e1e2678d055eeb2d7217816b903e47980020f271bbbe95770cd46ada6922db6",
+    "ana-86160000.npz": "18a3a0306eaa7c358ddd4c9a7fe86716682f131ade16e204f07370c074f86a44",
+    "ana-86163000.npz": "0e14616ed5e14be4f2d60b5cc4bf45df3cf33c7cb4653c2f28547ac4ffd1fa75",
+    "ana-86200900.npz": "deeb73edb0e337770ce733b493eb2c0e7a9c3cfc0f5c3cbbea27ca3b6534df61",
+    "ana-86280500.npz": "7e1a39c0d724d597c330b2a361923a5954b82baa8da201a612721dbb1192d655",
+    "ana-86298000.npz": "ae551f9cc2ff16df8418b7e6695e1457a1266752b3b685e0cf62ed2f465f3a0d",
+    "ana-86403000.npz": "9d6152ea6fa350318438e941965135de4a81c12d50179dcf3fd4a3de416232bd",
+    "ana-86410800.npz": "845dcf62f18b9dfaa8b81e3da0394d47c493f23ed64704c107feccc7c08844eb",
+    "ana-86447000.npz": "ac2160f037d3e18e9dd008cc1deeff57d4570e2ba14a77dd242e8bdbc0842c57",
+    "ana-86448000.npz": "c4b3ec4eac574f0379db52590faacbb78030ff155b5b45dd562ff28d81039f21",
+    "ana-86450000.npz": "b3e7a2d9b98213f827b68cce6387cdf935b305d560312b29499b23746d060148",
+    "ana-86471000.npz": "2a13f2223aae45cce3b463c13a5456f3118c843e40d4e722d470029b91f63891",
+    "ana-86472000.npz": "5aa982ad1d8e12dc72a797a6356efa68b47813a0eec03623db7075e14d4330b9",
+    "ana-86472600.npz": "2d7283f273e6c04f31b44a302eb2f4fbd3640ce100c35a4c788faf8ef7184c40",
+    "ana-86479000.npz": "1ced7abe20604bccc4b1ccc3eb612926450f2374d2bbe3fd65aab150b483a648",
+    "ana-86488000.npz": "1f609ad78ffa73c5ba49b39172e3f51d339c1fd7125e9f930e9f1a20c93214b1",
+    "ana-86493000.npz": "5deb8b9d6c4fe4817ca09e1e5029544ade7b394fff67fa2ccb2cc2f24544f146",
+    "ana-86495500.npz": "d09befe1c64f5f4180b28a1edd5ed659c713fbd10a057502f10727396cdcc7b7",
+    "ana-86500000.npz": "56671616effe1372bdf70f5849753d8c349e0bda52e25af326b18222a4c23a2c",
+    "ana-86504900.npz": "45a913795f1ea9ace9859d4e527d7f1b2ffc897a5a9cb7b39afde075608813c3",
+    "ana-86505500.npz": "fa14cd909c389692ad4eae3cabd2701f231d17524a4f15e4588a9f36a0dfd5b2",
+    "ana-86510000.npz": "b763aff5ac4c100e72170f2d3f09ac743a4eda7342490c593dbf5a5a0cb52485",
+    "ceran-castro.npz": "8015143ee200a81b5ba1f88e31c725560fd2b71611379c19aa998882d56352d5",
+    "ceran-julho.npz": "6db904fae491da1df86002bfb7e0df8d090a28601d712ec2b68c0baba158355b",
+    "ceran-monte.npz": "f73102559e55a5cdbbb2360d99455b17526cb3deef4fa8a6f63dea69cd487f82",
+    "weather-ecmwf_ifs025.json": "8dc7ca4d016a0da628c562b8304ff08897c1bf987512ac9e3f5242da298d75c9",
+    "weather-gfs_seamless.json": "f2d289dc0eea2895fa07be9c75dc50e4b475e518687c9b0aec2a51c39c5258e0",
+    "weather-icon_global.json": "0ff94e3c4656cdd82e0b9e75574361702bcce09ff2b65ee5286136d96e32bc4d"
+  },
+  "audit": [
+    {
+      "source": "ana-86060010-fresh.xml",
+      "retained_rows": 12823,
+      "incoming_rows": 177,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86099000-fresh.xml",
+      "retained_rows": 12508,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86102000-fresh.xml",
+      "retained_rows": 12801,
+      "incoming_rows": 179,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86117000-fresh.xml",
+      "retained_rows": 12469,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86125000-fresh.xml",
+      "retained_rows": 9745,
+      "incoming_rows": 54,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86125050-fresh.xml",
+      "retained_rows": 12924,
+      "incoming_rows": 187,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86160000-fresh.xml",
+      "retained_rows": 51331,
+      "incoming_rows": 744,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86163000-fresh.xml",
+      "retained_rows": 12545,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86200900-fresh.xml",
+      "retained_rows": 12843,
+      "incoming_rows": 181,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86280500-fresh.xml",
+      "retained_rows": 11584,
+      "incoming_rows": 160,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86298000-fresh.xml",
+      "retained_rows": 15135,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86403000-fresh.xml",
+      "retained_rows": 12925,
+      "incoming_rows": 187,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86410800-fresh.xml",
+      "retained_rows": 12571,
+      "incoming_rows": 184,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86447000-fresh.xml",
+      "retained_rows": 12215,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86448000-fresh.xml",
+      "retained_rows": 12884,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86450000-fresh.xml",
+      "retained_rows": 16965,
+      "incoming_rows": 739,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86471000-fresh.xml",
+      "retained_rows": 15477,
+      "incoming_rows": 745,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86472000-fresh.xml",
+      "retained_rows": 51619,
+      "incoming_rows": 743,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86472600-fresh.xml",
+      "retained_rows": 50155,
+      "incoming_rows": 745,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86479000-fresh.xml",
+      "retained_rows": 12307,
+      "incoming_rows": 185,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86488000-fresh.xml",
+      "retained_rows": 11862,
+      "incoming_rows": 159,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86493000-fresh.xml",
+      "retained_rows": 12861,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86495500-fresh.xml",
+      "retained_rows": 12847,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86500000-fresh.xml",
+      "retained_rows": 49755,
+      "incoming_rows": 743,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86504900-fresh.xml",
+      "retained_rows": 12331,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86505500-fresh.xml",
+      "retained_rows": 12848,
+      "incoming_rows": 186,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ana-86510000-fresh.xml",
+      "retained_rows": 51578,
+      "incoming_rows": 746,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ceran-julho-fresh.html",
+      "retained_rows": 51706,
+      "incoming_rows": 48,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ceran-monte-fresh.html",
+      "retained_rows": 51706,
+      "incoming_rows": 48,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "ceran-castro-fresh.html",
+      "retained_rows": 51706,
+      "incoming_rows": 48,
+      "future_observations_excluded": 0
+    },
+    {
+      "source": "weather-gfs_seamless.json",
+      "kind": "model_estimate",
+      "retained_hours": 240,
+      "explicit_grid_transition": false
+    },
+    {
+      "source": "weather-ecmwf_ifs025.json",
+      "kind": "model_estimate",
+      "retained_hours": 240,
+      "explicit_grid_transition": false
+    },
+    {
+      "source": "weather-icon_global.json",
+      "kind": "model_estimate",
+      "retained_hours": 240,
+      "explicit_grid_transition": false
+    }
+  ],
+  "limitations": [
+    "Baseline CERAN input is an existing 15-minute as-of grid; new receipts retain actual source timestamps.",
+    "Model weather is not observed rain; unknown precipitation remains unknown.",
+    "Snapshot records information available by collection; it does not establish historical availability of the baseline."
+  ]
+}

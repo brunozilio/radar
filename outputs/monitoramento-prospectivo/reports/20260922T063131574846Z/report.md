@@ -1,0 +1,126 @@
+# Verificação das previsões — registro local
+
+Gerado em 2026-09-22T06:31:31.574846+00:00. Pares elegíveis à meta: **0**.
+A meta de 98% não foi demonstrada.
+Este relatório acompanha somente Radar. Modelos retirados permanecem nos recibos históricos.
+
+`diagnostic-scorecard.json` detalha MAE, viés, P90/P98 e erro máximo, separando
+importações antigas das emissões registradas. Valores com fuso/datum pendentes
+podem aparecer no diagnóstico, mas não são promovidos a evidência da meta.
+O arquivo também mostra alvos únicos e episódios; pares horários dependentes
+não fornecem por si só um intervalo de confiança nem eventos independentes.
+
+Episódios observados agrupados: 1;
+com começo/fim observados e sem lacunas: 0.
+Eventos independentes certificados: 0.
+Veja `flood-events.json`. O agrupamento diagnóstico não comprova independência;
+várias previsões durante a mesma cheia não viram várias cheias na contagem.
+
+Cobertura de entrega: 9/9
+janelas horárias encerradas e avaliáveis. Percentual: 100.00%.
+Sem janelas encerradas, não se informa 100% nem 0%. Veja `cadence.json` para
+tentativas ausentes, falhas, entregas incompletas e limitações. Registro iniciado
+sem fechamento não comprova processo ativo. Cobertura não é precisão do nível.
+
+| Modelo | Horário BRT | Previsto (m) | Observado (m) | Erro (m) | Exclusões da meta |
+|---|---|---:|---:|---:|---|
+| radar_arvores_previsao_chuva | 21/09 16:00 | 10.35 | 11.64 | 1.29 | archival_import,registered_after_target,outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 17:00 | 11.21 | 12.97 | 1.76 | archival_import,outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 18:00 | 11.50 | 13.87 | 2.37 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 19:00 | 11.65 | 14.61 | 2.96 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 20:00 | 12.40 | 15.26 | 2.86 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 21:00 | 12.10 | 15.85 | 3.75 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 22:00 | 13.45 | 16.45 | 3.00 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 21/09 23:00 | 13.63 | 17.07 | 3.44 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 22/09 00:00 | 14.16 | 17.59 | 3.43 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 22/09 01:00 | 13.98 | 18.10 | 4.12 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 22/09 02:00 | 13.80 | 18.47 | 4.67 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_previsao_chuva | 22/09 03:00 | 13.74 | 18.68 | 4.94 | archival_import,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 18:00 | 13.43 | 13.87 | 0.44 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 19:00 | 13.81 | 14.61 | 0.80 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 20:00 | 13.86 | 15.26 | 1.40 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 21:00 | 14.09 | 15.85 | 1.76 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 14.51 | 16.45 | 1.94 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 16.06 | 17.07 | 1.01 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 16.22 | 17.59 | 1.37 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 16.36 | 18.10 | 1.74 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 16.08 | 18.47 | 2.39 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 16.30 | 18.68 | 2.38 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 18:00 | 13.86 | 13.87 | 0.01 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 19:00 | 14.72 | 14.61 | 0.11 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 20:00 | 15.03 | 15.26 | 0.23 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 21:00 | 15.15 | 15.85 | 0.70 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 15.35 | 16.45 | 1.10 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 15.35 | 17.07 | 1.72 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 17.07 | 17.59 | 0.52 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 17.52 | 18.10 | 0.58 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 17.33 | 18.47 | 1.14 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 17.03 | 18.68 | 1.65 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 19:00 | 14.66 | 14.61 | 0.05 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 20:00 | 15.51 | 15.26 | 0.25 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 21:00 | 15.29 | 15.85 | 0.56 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 15.93 | 16.45 | 0.52 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 15.45 | 17.07 | 1.62 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 15.99 | 17.59 | 1.60 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 17.47 | 18.10 | 0.63 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 17.26 | 18.47 | 1.21 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 17.14 | 18.68 | 1.54 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 19:00 | 14.72 | 14.61 | 0.11 | manual_revision_outside_scheduled_sample,outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 20:00 | 15.62 | 15.26 | 0.36 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 21:00 | 15.93 | 15.85 | 0.08 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 16.33 | 16.45 | 0.12 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 16.31 | 17.07 | 0.76 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 16.41 | 17.59 | 1.18 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 17.65 | 18.10 | 0.45 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 17.81 | 18.47 | 0.66 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 18.21 | 18.68 | 0.47 | manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 20:00 | 15.45 | 15.26 | 0.19 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 21:00 | 15.99 | 15.85 | 0.14 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 16.48 | 16.45 | 0.03 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 16.83 | 17.07 | 0.24 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 16.66 | 17.59 | 0.93 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 16.73 | 18.10 | 1.37 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 17.84 | 18.47 | 0.63 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 17.60 | 18.68 | 1.08 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 21:00 | 15.81 | 15.85 | 0.04 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 16.65 | 16.45 | 0.20 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 17.06 | 17.07 | 0.01 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 17.34 | 17.59 | 0.25 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 17.50 | 18.10 | 0.60 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 17.27 | 18.47 | 1.20 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 18.25 | 18.68 | 0.43 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 22:00 | 16.34 | 16.45 | 0.11 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 17.04 | 17.07 | 0.03 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 17.48 | 17.59 | 0.11 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 17.85 | 18.10 | 0.25 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 17.55 | 18.47 | 0.92 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 17.60 | 18.68 | 1.08 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 21/09 23:00 | 17.14 | 17.07 | 0.07 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 17.69 | 17.59 | 0.10 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 18.16 | 18.10 | 0.06 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 18.34 | 18.47 | 0.13 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 18.08 | 18.68 | 0.60 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 00:00 | 17.51 | 17.59 | 0.08 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 18.08 | 18.10 | 0.02 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 18.71 | 18.47 | 0.24 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 18.63 | 18.68 | 0.05 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 01:00 | 18.04 | 18.10 | 0.06 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 18.63 | 18.47 | 0.16 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 19.18 | 18.68 | 0.50 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 02:00 | 18.71 | 18.47 | 0.24 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 19.12 | 18.68 | 0.44 | timezone_unverified,datum_unverified |
+| radar_arvores_live_candidate | 22/09 03:00 | 18.88 | 18.68 | 0.20 | outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified |
+
+Importações de cálculos antigos ficam disponíveis para diagnóstico e nunca são
+convertidas retroativamente em previsões registradas antes do evento. O horário real
+do registro é independente da referência temporal usada no cálculo. Apenas medições
+no horário exato, aprovadas pela origem, entram nos pares; não há interpolação.
+
+O placar usa antecedência efetiva mínima: 1h significa de 1 até menos de 2 horas
+reais entre registro e alvo, e assim por diante. A antecedência nominal é preservada
+apenas para auditoria. Isso não permite contar uma previsão de 40 minutos como 1h.
+Para avaliar 12h, o ciclo precisa emitir também alvos com ao menos 12h restantes.
+
+Pendências de fuso/referência da régua, revisões e fontes indisponíveis são explícitas.
+O registro é local, encadeado por hashes e sem sobrescrita pela ferramenta; não é
+carimbo de tempo externo nem prova de disponibilidade de todos os ciclos horários.

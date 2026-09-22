@@ -1,0 +1,37 @@
+{
+  "station": "86403000",
+  "year": 2022,
+  "start": "2022-06-01",
+  "end": "2022-06-30",
+  "parameters": {
+    "codEstacao": "86403000",
+    "dataInicio": "01/06/2022",
+    "dataFim": "30/06/2022"
+  },
+  "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86403000&dataInicio=01%2F06%2F2022&dataFim=30%2F06%2F2022",
+  "file": "raw/2022/ana-86403000-2022-06-01--2022-06-30.xml",
+  "status": "body_preserved",
+  "requested_at_utc": "2026-09-22T03:14:14.730393+00:00",
+  "plan_sha256": "a8a053484f46f4fd3bddc0a9f5832e22d3bc369a0eccc4f68836905f7303e155",
+  "attempt_number": 1,
+  "http_status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Tue, 22 Sep 2026 03:14:11 GMT",
+    "Content-Type": "text/xml; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Cache-Control": "private, max-age=0",
+    "X-AspNet-Version": "4.0.30319",
+    "X-Powered-By": "ASP.NET",
+    "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff"
+  },
+  "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86403000&dataInicio=01%2F06%2F2022&dataFim=30%2F06%2F2022",
+  "source_file": "outputs/radar-insumos-reservados-2021-2022-20260922/raw/2022/ana-86403000-2022-06-01--2022-06-30.xml",
+  "collected_at_utc": "2026-09-22T03:14:15.528058+00:00",
+  "bytes": 560393,
+  "sha256": "95241364a1d9a820157a455b1854325ceb01f4160519d36265b7488df0a3233e",
+  "finished_at_utc": "2026-09-22T03:14:15.528966+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "file": "outputs/pesquisa-hidrologica-2026-09-21/et0-era5-2025-04-01--2026-09-20.json",
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-29.1&longitude=-51.61&start_date=2025-04-01&end_date=2026-09-20&hourly=et0_fao_evapotranspiration&models=era5&timezone=UTC",
+  "status": 200,
+  "retrieved_at": "2026-09-21T19:37:12.581744+00:00",
+  "sha256": "aefa759427246c4bb357fd52b787d8eb574f86f52d4cd693df6612338cca559d",
+  "bytes": 310169,
+  "hours": 12912,
+  "non_null": 12792,
+  "first_non_null": "2025-04-01T00:00",
+  "last_non_null": "2026-09-15T23:00",
+  "units": {
+    "time": "iso8601",
+    "et0_fao_evapotranspiration": "mm"
+  },
+  "grid_coordinate": [
+    -29.0,
+    -51.5
+  ],
+  "classification": "reanalysis_estimated_reference_ET0_not_observed_actual_ET_not_issued_forecast",
+  "method": "FAO56 Penman-Monteith; reference grass with unlimited soil water; preceding-hour sum",
+  "usage": "local noncommercial research experiment only"
+}

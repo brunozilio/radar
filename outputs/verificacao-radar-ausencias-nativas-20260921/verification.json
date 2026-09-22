@@ -1,0 +1,3468 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/docs/radar-native-missing-runtime19-protocol.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/previsao-atualizada.csv",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/retrospectivas-latencia.csv",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_radar_native_missing.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "passed": true
+    },
+    {
+      "name": "input_hash:/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_radar_native_missing.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:code/hydro_routing_fit.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:evaluation.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:experiment.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:features.npz",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-1.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-10.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-11.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-12.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-2.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-3.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-4.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-5.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-6.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-7.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-8.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-baseline-9.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-1.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-10.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-11.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-12.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-2.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-3.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-4.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-5.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-6.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-7.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-8.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/test-candidate-9.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-1.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-10.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-11.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-12.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-2.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-3.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-4.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-5.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-6.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-7.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-8.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-baseline-9.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-1.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-10.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-11.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-12.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-2.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-3.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-4.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-5.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-6.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-7.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-8.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:models/validation-candidate-9.joblib",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:predictions.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:protocol.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:report.py",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:runtime-comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash:training.csv",
+      "passed": true
+    },
+    {
+      "name": "amended_protocol_snapshot",
+      "passed": true
+    },
+    {
+      "name": "amendment_runtime_explicit",
+      "passed": true
+    },
+    {
+      "name": "runtime_matches",
+      "passed": true
+    },
+    {
+      "name": "not_promoted",
+      "passed": true
+    },
+    {
+      "name": "feature_times",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12928,
+      "tolerance": 0
+    },
+    {
+      "name": "base_level",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12844,
+      "tolerance": 0
+    },
+    {
+      "name": "hourly_truth",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12851,
+      "tolerance": 0
+    },
+    {
+      "name": "complete24_mask",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 12928,
+      "tolerance": 0
+    },
+    {
+      "name": "telemetry_120",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1535325,
+      "tolerance": 0
+    },
+    {
+      "name": "hour_grid",
+      "passed": true
+    },
+    {
+      "name": "shape_180",
+      "passed": true
+    },
+    {
+      "name": "five_weather_locations:gfs_seamless",
+      "passed": true
+    },
+    {
+      "name": "five_weather_locations:ecmwf_ifs025",
+      "passed": true
+    },
+    {
+      "name": "five_weather_locations:icon_global",
+      "passed": true
+    },
+    {
+      "name": "weather_60_original_order",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 774010,
+      "tolerance": 0
+    },
+    {
+      "name": "unique_keys",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6511,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6517,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:1",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6511,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6511,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1944,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1944,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:1",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h1",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1944,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:1",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:1",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1944,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:1",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6510,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6516,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:2",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6510,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6510,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1943,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1943,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:2",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h2",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1943,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:2",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:2",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1943,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:2",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6509,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6515,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:3",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6509,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6509,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1942,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1942,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:3",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h3",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1942,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:3",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:3",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1942,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:3",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6508,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6514,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:4",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6508,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6508,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1941,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1941,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:4",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h4",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1941,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:4",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:4",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1941,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:4",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6507,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6513,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:5",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6507,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6507,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1940,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1940,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:5",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h5",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1940,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:5",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:5",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1940,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:5",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6506,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6512,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:6",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6506,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6506,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1939,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1939,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:6",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h6",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1939,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:6",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:6",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1939,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:6",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6505,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6511,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:7",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6505,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6505,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1938,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1938,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:7",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h7",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1938,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:7",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:7",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1938,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:7",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6504,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6510,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:8",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6504,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6504,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1937,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1937,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:8",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h8",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1937,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:8",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:8",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1937,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:8",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6503,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6509,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:9",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6503,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6503,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1936,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1936,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:9",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h9",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1936,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:9",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:9",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1936,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:9",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6502,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6508,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:10",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6502,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6502,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1935,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1935,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:10",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h10",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1935,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:10",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:10",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1935,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:10",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6501,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6507,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:11",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6501,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6501,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1934,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1934,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:11",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h11",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1934,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:11",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:11",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1934,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:11",
+      "passed": true
+    },
+    {
+      "name": "base_rows:validation:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6500,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:validation:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6506,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:validation:12",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:baseline:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:baseline:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6500,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:validation:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:validation:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:validation:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:validation:candidate:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:validation:candidate:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 6500,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:validation:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "base_rows:test:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1933,
+      "tolerance": 0
+    },
+    {
+      "name": "target_rows:test:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1933,
+      "tolerance": 0
+    },
+    {
+      "name": "target_time_and_complete:test:12",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "original_train_order_h12",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:baseline:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:baseline:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1933,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:baseline:12",
+      "passed": true
+    },
+    {
+      "name": "membership_metadata:test:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "frozen_parameters:test:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "tree_root_sample_counts:test:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "weighted_initial_intercept:test:candidate:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1,
+      "tolerance": 1e-12
+    },
+    {
+      "name": "inference_all_scheduled:test:candidate:12",
+      "passed": true,
+      "max_abs_difference": 0.0,
+      "finite_values": 1933,
+      "tolerance": 1e-10
+    },
+    {
+      "name": "only_missing_base_blocks_prediction:test:candidate:12",
+      "passed": true
+    },
+    {
+      "name": "all_scheduled_keys_preserved",
+      "passed": true
+    },
+    {
+      "name": "48_models",
+      "passed": true
+    },
+    {
+      "name": "all_archived_pairs_compared",
+      "passed": true
+    },
+    {
+      "name": "runtime_differences_preserved",
+      "passed": true,
+      "max_difference_m": 1.1783888025628855
+    },
+    {
+      "name": "evaluation_coverage:validation:1:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:1:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:2:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:3:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:4:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:5:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:6:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:7:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:8:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:9:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:10:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:11:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:validation:12:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:1:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:2:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:3:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:4:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:5:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:6:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:7:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:8:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:9:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:10:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:11:level_ge_7m:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:all:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:all:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:all:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:all:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:all:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:all:missing24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:level_ge_7m:full_schedule:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:level_ge_7m:full_schedule:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:level_ge_7m:complete24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:level_ge_7m:complete24:candidate",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:level_ge_7m:missing24:baseline",
+      "passed": true
+    },
+    {
+      "name": "evaluation_coverage:test:12:level_ge_7m:missing24:candidate",
+      "passed": true
+    }
+  ],
+  "rows": 102084,
+  "models": 48,
+  "limitations": [
+    "Models were loaded and inferred, never refitted. Training membership corroborated through source, metadata, root counts and weighted initial intercept; this does not reconstruct every split independently.",
+    "Amendment content and preserved artifacts inspected; exact pre-execution chronology relies on parent record, not a new signed receipt.",
+    "New runtime baseline is a refit, not an exactly reproduced historical forecast. Both compared families use the same operational runtime.",
+    "Source publication availability and datum remain assumptions. Previously inspected development; no promotion or prospective accuracy claim."
+  ]
+}

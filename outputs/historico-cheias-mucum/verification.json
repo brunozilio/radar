@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-09-21T19:46:02.875895+00:00",
+  "checks": [
+    "5 raw XML SHA256 checks passed",
+    "Offline run used5verified cached responses and zero network requests",
+    "QC partitions sum to all valid station timestamps",
+    "All approved levels have source QC Dado aprovado",
+    "All suspect levels have source QC Dado suspeito",
+    "All approved conversions equal source cm/100",
+    "No conflicting duplicate timestamps",
+    "No off-grid records",
+    "Expected15minute grid completely accounted",
+    "Script syntax parsed with ast"
+  ],
+  "limitations": [
+    "Not eligible for train/test pending metadata and event audit",
+    "Source QC does not prove physical datum consistency",
+    "No hidden holdout allocation was made",
+    "No interpolation or training performed"
+  ]
+}

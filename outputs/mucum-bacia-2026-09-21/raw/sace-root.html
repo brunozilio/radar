@@ -1,0 +1,928 @@
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta http-equiv="cache-control" content="no-cache"/>
+	<meta http-equiv="expires" content="0"/>
+
+	<title>CPRM</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+	<!-- Leaflet - Biblioteca de mapas -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="css/leaflet-custom.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124055750-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-124055750-1');
+	</script>
+
+	<script type="text/javascript">
+  		contextPath = '/taquari';
+  		urlProxyJson = "/taquari/proxyJson?url=";
+  		admin = false;
+
+  		
+		  
+		  	user = false;
+		  
+		  
+		
+	</script>
+
+	<!-- FrameWork -->
+ 	<script type="text/javascript">/* Start adding members resolved by '/bundles/cprm.css'. Bundle id is: '/bundles/cprm.css' */</script>
+<script type="text/javascript">if(!JAWR){var JAWR = {};};;JAWR.jawr_dwr_path='/taquari/dwr';JAWR.app_context_path='/taquari';</script>
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.button.css?d=1323511338" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.slider.css?d=720768566" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.dialog.css?d=428507617" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.theme.css?d=1439591710" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.resizable.css?d=1636570633" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.tabs.css?d=847314685" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.base.css?d=1431037953" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.accordion.css?d=592450794" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.datepicker.css?d=631245015" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.selectable.css?d=113819818" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery-ui.css?d=774522167" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.core.css?d=586947190" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.progressbar.css?d=1061790056" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.all.css?d=522032514" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/jquery.ui.autocomplete.css?d=500091325" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.accordion.min.css?d=1470088292" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.base.min.css?d=1503685882" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.progressbar.min.css?d=866153344" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.datepicker.min.css?d=600484453" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.selectable.min.css?d=2142940372" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.button.min.css?d=520943189" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.tabs.min.css?d=2012048486" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery-ui.min.css?d=1908657080" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.autocomplete.min.css?d=236481503" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.dialog.min.css?d=1465569807" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.theme.min.css?d=1355682646" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.all.min.css?d=196257825" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.resizable.min.css?d=1573432507" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.slider.min.css?d=1238947758" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/themes/base/minified/jquery.ui.core.min.css?d=1334159808" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/jquery.loadmask.css?d=1431237164" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/checkList/jquery.toChecklist.css?d=1274719059" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/treeView/jquery.checkboxtree.css?d=509086920" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/jqGrid/css/ui.jqgrid.css?d=1704579747" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/formValidator/css/validationEngine.jquery.css?d=814884415" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/formValidator/css/template.css?d=1617217333" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/flexigrid/css/flexigrid.css?d=1122131361" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/alert/css/jquery.alerts.css?d=316246445" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/button/css/buttons.css?d=1639151816" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/checkBoxSwitch/checkBoxSwitch.css?d=2009331236" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/image-picker/image-picker.css?d=1214570984" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/google/style.css?d=2065784129" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/google/google.css?d=330409239" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/jquery/login/css/style.css?d=2038513377" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/SpryTabbedPanels.css?d=1340741479" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/forms.css?d=1653507950" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/cprm.css?d=335268823" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/toolbar.css?d=967560373" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/modal.print.css?d=1523015223" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/modal.reports.css?d=2033366969" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/modal.markers.css?d=232206197" />
+<link rel="stylesheet" type="text/css" media="screen" href="/taquari/cssJawrPath/css/cadastro.nav.css?d=510014921" />
+<script type="text/javascript">/* Finished adding members resolved by /bundles/cprm.css */</script>
+
+	<script type='text/javascript' src='/taquari/jquery/jquery-1.7.2.min.js'></script>
+	<script type='text/javascript' src='/taquari/jquery/ui/minified/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='/taquari/jquery/util/jquery.form.js'></script>
+	<script type='text/javascript' src='/taquari/jquery/util/jquery.util.js'></script>
+
+
+	<!-- DWR  -->
+	<script type='text/javascript' src='customDwr/engine.js'></script>
+	<script type='text/javascript' src='dwr/util.js'></script>
+	<script type="text/javascript">/* Start adding members resolved by '/bundles/dwrall.js'. Bundle id is: '/bundles/dwrall.js' */</script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/ui/i18n/jquery.ui.datepicker-pt-BR.js?d=1752011331" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/external/jquery.layout.min.js?d=92490840" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/layout/jquery.layout-latest.js?d=719042028" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/htmlEditor/nicEdit.js?d=638239199" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/external/jquery.loadmask.js?d=1592185951" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/external/jquery.sortElements.js?d=1618964393" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/formValidator/js/jquery.validationEngine-pt.js?d=1354906542" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/formValidator/js/jquery.validationEngine.js?d=1241175206" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.decimalMask.js?d=442015311" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.alphanumeric.js?d=1332059654" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.textLimit.js?d=1962833295" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/checkList/jquery.toChecklist.js?d=1053746780" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.timepicker.js?d=778768405" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.bind.js?d=1817259415" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/multipleFileUpload/jquery.MultiFile.js?d=2101856771" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/treeView/jquery.checkboxtree.js?d=679749754" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/jqprint/jquery.jqprint.js?d=1465902086" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/jqGrid/js/i18n/grid.locale-pt-br.js?d=1623693455" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/jqGrid/js/jquery.jqGrid.min.js?d=1601003822" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.filestyle.mini.js?d=1931422438" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/flexigrid/flexigrid.js?d=2103552543" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/flexigrid/jquery.editinplace.js?d=69667474" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/alert/jquery.alerts.js?d=1838169779" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/button/buttonJquery.js?d=1923858593" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/jquery.select.js?d=1778423178" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/spatialUtil/spatialConverter.js?d=2032122751" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/json/jsonreport.js?d=369889918" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/highcharts/js/highcharts.src.js?d=2138624734" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/highcharts/js/modules/exporting.src.js?d=1702641745" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/util/autoNumeric-1.7.4.js?d=1193420427" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/colorpicker/js/jquery.simple-color.js?d=1932677957" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/mask/jquery.maskedinput.min.js?d=766895872" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/image-picker/image-picker.js?d=11781816" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/js/geo/GeoJsonJavaScriptClient.js?d=1567945594" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/seguranca/grupoAcesso/grupoAcessoScript.js?d=122705118" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/seguranca/permissao/permissaoScript.js?d=236702151" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/seguranca/auditoria/auditoriaScript.js?d=2010760766" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/seguranca/grupoUsuario/grupoUsuarioScript.js?d=389309092" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/seguranca/usuario/usuarioScript.js?d=796680542" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/previsao/previsao/previsaoScript.js?d=1439649423" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/previsao/simulacaoPrevisao/simulacaoPrevisaoScript.js?d=262673007" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/previsao/formulaPrevisao/formulaPrevisaoScript.js?d=931382152" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/previsao/alertaInfo/alertaInfoScript.js?d=9333239" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/previsao/curvaChave/curvaChaveScript.js?d=1360864860" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/previsao/incoerencia/incoerenciaScript.js?d=152248077" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/templatePrevisao/templatePrevisaoScript.js?d=516224067" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/configuracaoUrl/configuracaoUrlScript.js?d=1475686124" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/formatoArquivo/formatoArquivoScript.js?d=968226424" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/configuracaoEntrada/configuracaoEntradaScript.js?d=1963540891" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/configuracaoEntrada/disparoSincronizacaoScript.js?d=1389783465" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/configuracaoDiretorio/configuracaoDiretorioScript.js?d=1528614729" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/parceiro/parceiroScript.js?d=1387272801" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/statusConexao/statusConexaoScript.js?d=1790952711" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/template/templateScript.js?d=454034433" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/configuracaoFtp/configuracaoFtpScript.js?d=1373498429" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/entrada/conversor/conversorScript.js?d=98757917" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/modeloEmail/modeloEmailScript.js?d=180173619" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/exibirDados/exibirDadosScript.js?d=1543750839" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/boletim/boletimScript.js?d=1428348642" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/chuvaAcumulada/chuvaAcumuladaScript.js?d=409338195" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/identify/identifyScript.js?d=1740581817" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/textoBoletim/textoBoletimScript.js?d=2068822233" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/templateGrafico/templateGraficoScript.js?d=929978254" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/exportacaoDados/exportacaoDadosScript.js?d=772157901" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/enviarBoletim/enviarBoletimScript.js?d=1274223685" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/publicacao/email/emailScript.js?d=121252675" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/spatials/mapas/mapaScript.js?d=872116070" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/spatials/mapas/anexosPM.js?d=1714863015" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/spatials/pontoMonitoramentoSpatial/pontoMonitoramentoSpatialScript.js?d=863786538" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/spatials/camadas/camadasScript.js?d=1075746303" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/administracao/recuperarSenhaScript.js?d=1993145545" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/administracao/releaseNote/releaseNoteScript.js?d=874838517" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/relatorio/boletimAcompanhamentoHidrologico/boletimAcompanhamentoHidrologicoScript.js?d=1937546599" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/importacao/importacaoPrevisoes/importacaoPrevisoes.js?d=312838698" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/importacao/importacaoCurvaChave/importacaoCurvaChave.js?d=1778612381" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/importacao/importacaoMedicoes/importacaoMedicoes.js?d=723721294" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/modeloPrevisao/modeloPrevisaoScript.js?d=1795875519" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/medicaoBruta/medicaoBrutaScript.js?d=1453879246" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/estacaoMedicao/estacaoMedicaoScript.js?d=1696552021" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/sensor/sensorScript.js?d=1969130425" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/responsavel/responsavelScript.js?d=1288012511" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/filtro/filtroScript.js?d=771007573" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/parametro/parametroScript.js?d=804417046" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/unidade/unidadeScript.js?d=697925425" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/fonteAquisicaoDados/fonteAquisicaoDadosScript.js?d=20744688" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/instituicaoResponsavel/instituicaoResponsavelScript.js?d=1624599622" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/equacaoConversao/equacaoConversaoScript.js?d=904604954" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/medicaoPrevisao/medicaoPrevisaoScript.js?d=1523389119" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/pontoMonitoramento/pontoMonitoramentoScript.js?d=681247202" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/medicaoConvertida/medicaoConvertidaScript.js?d=817411032" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/medicao/tipoFiltro/tipoFiltroScript.js?d=743452155" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/telas/dados/entradaCompleta/entradaCompletaScript.js?d=1343945194" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jquery/login/js/login.js?d=318830774" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/js/eventToolbar.js?d=1483501843" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/js/webgis.js?d=1836600877" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/js/legend.js?d=318518747" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/js/toolbar.js?d=816236883" ></script>
+<script type="text/javascript" src="/taquari/jsJawrPath/jawr_generator.js?generationConfigParam=dwr%3A_**" ></script>
+<script type="text/javascript">/* Finished adding members resolved by /bundles/dwrall.js */</script>
+
+
+	<!-- WMS Layers Configuration -->
+	<script type="text/javascript">
+		window.wmsLayersConfig = null;
+
+		function loadWmsConfig() {
+			fetch('/taquari/wms-config')
+				.then(function(response) {
+					if (!response.ok) {
+						console.error('[WMS Config] Failed to load config: ' + response.status);
+						return null;
+					}
+					return response.json();
+				})
+				.then(function(config) {
+					if (!config) return;
+					window.wmsLayersConfig = config;
+					var titles = [];
+					if (config.camadas && Array.isArray(config.camadas)) {
+						for (var i = 0; i < config.camadas.length; i++) {
+							titles.push(config.camadas[i].title);
+						}
+					}
+					console.log('[WMS Config] Loaded ' + (titles.length || 0) + ' WMS layers: ' + titles.join(', '));
+				})
+				.catch(function(error) {
+					console.error('[WMS Config] Error loading config:', error);
+				});
+		}
+
+		loadWmsConfig();
+	</script>
+
+	<!-- Scripts do sistema (JAWR). Inclui webgis.js (agora Leaflet) -->
+	<script type="text/javascript">/* Start adding members resolved by '/bundles/cprm.js'. Bundle id is: '/bundles/cprm.js' */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/ui/i18n/jquery.ui.datepicker-pt-BR.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/external/jquery.layout.min.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/layout/jquery.layout-latest.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/htmlEditor/nicEdit.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/external/jquery.loadmask.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/external/jquery.sortElements.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/formValidator/js/jquery.validationEngine-pt.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/formValidator/js/jquery.validationEngine.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.decimalMask.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.alphanumeric.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.textLimit.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/checkList/jquery.toChecklist.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.timepicker.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.bind.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/multipleFileUpload/jquery.MultiFile.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/treeView/jquery.checkboxtree.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/jqprint/jquery.jqprint.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/jqGrid/js/i18n/grid.locale-pt-br.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/jqGrid/js/jquery.jqGrid.min.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.filestyle.mini.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/flexigrid/flexigrid.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/flexigrid/jquery.editinplace.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/alert/jquery.alerts.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/button/buttonJquery.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/jquery.select.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/spatialUtil/spatialConverter.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/json/jsonreport.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/highcharts/js/highcharts.src.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/highcharts/js/modules/exporting.src.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/util/autoNumeric-1.7.4.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/colorpicker/js/jquery.simple-color.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/mask/jquery.maskedinput.min.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/image-picker/image-picker.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/js/geo/GeoJsonJavaScriptClient.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/seguranca/grupoAcesso/grupoAcessoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/seguranca/permissao/permissaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/seguranca/auditoria/auditoriaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/seguranca/grupoUsuario/grupoUsuarioScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/seguranca/usuario/usuarioScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/previsao/previsao/previsaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/previsao/simulacaoPrevisao/simulacaoPrevisaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/previsao/formulaPrevisao/formulaPrevisaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/previsao/alertaInfo/alertaInfoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/previsao/curvaChave/curvaChaveScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/previsao/incoerencia/incoerenciaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/templatePrevisao/templatePrevisaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/configuracaoUrl/configuracaoUrlScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/formatoArquivo/formatoArquivoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/configuracaoEntrada/configuracaoEntradaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/configuracaoEntrada/disparoSincronizacaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/configuracaoDiretorio/configuracaoDiretorioScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/parceiro/parceiroScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/statusConexao/statusConexaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/template/templateScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/configuracaoFtp/configuracaoFtpScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/entrada/conversor/conversorScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/modeloEmail/modeloEmailScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/exibirDados/exibirDadosScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/boletim/boletimScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/chuvaAcumulada/chuvaAcumuladaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/identify/identifyScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/textoBoletim/textoBoletimScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/templateGrafico/templateGraficoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/exportacaoDados/exportacaoDadosScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/enviarBoletim/enviarBoletimScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/publicacao/email/emailScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/spatials/mapas/mapaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/spatials/mapas/anexosPM.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/spatials/pontoMonitoramentoSpatial/pontoMonitoramentoSpatialScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/spatials/camadas/camadasScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/administracao/recuperarSenhaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/administracao/releaseNote/releaseNoteScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/relatorio/boletimAcompanhamentoHidrologico/boletimAcompanhamentoHidrologicoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/importacao/importacaoPrevisoes/importacaoPrevisoes.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/importacao/importacaoCurvaChave/importacaoCurvaChave.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/importacao/importacaoMedicoes/importacaoMedicoes.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/modeloPrevisao/modeloPrevisaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/medicaoBruta/medicaoBrutaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/estacaoMedicao/estacaoMedicaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/sensor/sensorScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/responsavel/responsavelScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/filtro/filtroScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/parametro/parametroScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/unidade/unidadeScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/fonteAquisicaoDados/fonteAquisicaoDadosScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/instituicaoResponsavel/instituicaoResponsavelScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/equacaoConversao/equacaoConversaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/medicaoPrevisao/medicaoPrevisaoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/pontoMonitoramento/pontoMonitoramentoScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/medicaoConvertida/medicaoConvertidaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/medicao/tipoFiltro/tipoFiltroScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/telas/dados/entradaCompleta/entradaCompletaScript.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/jquery/login/js/login.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/js/eventToolbar.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/js/webgis.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/js/legend.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Skipping resource '/js/toolbar.js' since it is already included in the page. */</script>
+<script type="text/javascript">/* Finished adding members resolved by /bundles/cprm.js */</script>
+
+
+	<!-- <script src="jquery/highcharts/js/modules/exporting.js"></script> -->
+
+	<!-- TRATAR CONSOLE.LOG DO FIREFOX NO IE -->
+    <!--[if IE]>
+    	<script type="text/javascript">
+	    	function classe(){}
+
+			classe.prototype =
+			{
+			    log: function(){}
+			}
+			var console = new classe ();
+
+		</script>
+	<![endif]-->
+  <script type="text/javascript">
+
+  	function errh (errorMsg, exception){
+	    $(".loadingCprm").css("display", "none");
+	    $(".loadingTelaCprm").removeClass('loadingTelaCprm');
+	    $("div").unloadmask();
+		jAlert(errorMsg,"Aten\u00e7\u00e3o");
+	}
+
+	dwr.engine.setErrorHandler(errh);
+
+	dwr.engine.setTextHtmlHandler(function() {
+		jError('Sua sess\u00e3o expirou.\n Efetue o login novamente.', 'Aten\u00e7\u00e3o', function(r) {
+			if (r){
+				document.location = contextPath+'/logout';
+			}else{
+				document.location = contextPath+'/logout';
+			}
+		});
+	});
+
+	
+
+	function getNameTimeZone(){
+		var d = new Date();
+		var usertime = d.toLocaleString();
+
+		var offset = -1*d.getTimezoneOffset()/60;
+		offset = "GMT" + (offset >= 0 ? "+" + offset : offset);
+
+		return offset;
+	}
+
+	LoginService.setTimeZone(getNameTimeZone());
+
+
+	function abreLogin(){
+		if ($('#loginBox').is(":visible")==false){
+			$('#loginBox').hide();
+		}else{
+			$('#loginBox').show();
+			$('#username').focus();
+		}
+	}
+
+	function updateAlerta(){
+
+		var fn = function(alertaInfo) {
+			$("#infoAlerta").html(alertaInfo.quantidadeAlertasNaoLiberados);
+			$("#infoAlertaVisualizados").html(alertaInfo.quantidadeAlertasNaoVisualizados);
+		};
+		AlertaService.obtemInfoAlertas('GPP',{callback: fn});
+
+	 }
+
+	function ajustaLayoutMapa(){
+		// Leaflet: o mapa é re-renderizado automaticamente
+		if (map && typeof map.invalidateSize === 'function') {
+			map.invalidateSize();
+		}
+	}
+
+	function montaWest(){
+		  var layoutSettings_Outer;
+	  		layoutSettings_Outer = {
+			west: {onopen_start: ajustaLayoutMapa, onclose_end: ajustaLayoutMapa},
+			north: {onopen_start: ajustaLayoutMapa, onclose_end: ajustaLayoutMapa},
+			south: {onopen_start: ajustaLayoutMapa, onclose_end: ajustaLayoutMapa}
+		};
+		
+			layoutSettings_Outer.west.initClosed=true;
+		
+	 	myLayout = $('body').layout(layoutSettings_Outer);
+	  if (typeof myLayout.panes.west != 'undefined'){
+		  myLayout.panes.west.css('border', 'none').css('backgroundImage', 'url(img/menu.jpg)').css('backgroundRepeat','no-repeat').css('margin','0').css('padding', '0').css('backgroundColor', '#99b3cc');
+
+	 }
+  }
+
+  $(document).ready(function(){
+	 populaSelect(PontoMonitoramentoService, $('#sel_pontoMonitoramentoSpatialSelect'), 'id', 'nome', false,'GPM');
+	
+	  
+	  
+	  	$.get("telas/administracao/logos.html",function(data){$("#menu").html( data );});
+	  	 montaWest();
+	  
+	
+	
+
+  	setUpEmail();
+  	setUpExibirDados();
+
+	montaParceiros();
+});
+
+	function visualizarUltimoBoletimIdentity(){
+		startLoading();
+		var fn = function(boletim) {
+			stopLoading();
+			if (boletim) {
+				openDownloadDialog(boletim);
+			} else {
+				jAlert("N&atilde;o existe nenhum boletim a ser exibido.", 'Aten\u00e7\u00e3o');
+			}
+		};
+		BoletimService.obtemUltimoBoletim({callback: fn,errorHandler: function(){stopLoading(); jAlert("N&atilde;o existe nenhum boletim a ser exibido.", 'Aten\u00e7\u00e3o');}});
+	}
+
+  </script>
+
+  <!--[if IE]>
+		<style>
+		form {
+			padding: 0px;
+			margin-top: -3px;
+		}
+		</style>
+  <![EndIf]-->
+
+
+</head>
+ <body onload="montaWest(); initMap(); setUpCamadas();">
+
+	<div class="loadingCprm" style="display: none;"></div>
+ 	<div id="dlgCamadas" title="Camadas"></div>
+ 	<div id="dlgAnexos" title="Anexos"><div style="padding-top:5px;" id="gridAnexos"></div></div>
+ 	<div id="divMapaLayer" title="Mapas"></div>
+
+	
+
+	<div id="dlgRecuperarSenhaCadastro" title="Alterar senha"></div>
+	<div id="dlgEnviarSenhaCadastro" title="Recuperar senha"></div>
+	<div id="dlgEmailCadastro" title="Cadastro de email"></div>
+	<div id="dlgExibirDados"></div>
+
+	<div id="chart" title="Gr&aacute;fico" style="width: 50%; margin: 0 auto;"></div>
+
+	<div style="display: none" id="dlgListagemTransparencia" title="TransparÃ«Â¯Â£ia">
+        <div id="DivT1">
+	        <label for="minbeds">&nbsp;</label>
+        </div>
+
+        <script>
+            $(function() {
+	            $( "#slider" ).slider({
+		            value:0,
+		            min: 0,
+		            max: 100,
+		            step: 10,
+		            slide: function( event, ui ) {
+			            $( "#amount" ).val( ui.value + "%" );
+		            }
+	            });
+	            $( "#amount" ).val( $( "#slider" ).slider( "value" ) + "%" );
+
+            });
+        </script>
+
+        <div>
+            <label for="amount">Percentual de TransparÃ«Â¯Â£ia:&nbsp;</label>
+            <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" size="4" />
+
+            <div id="slider"></div>
+        </div>
+
+
+    </div>
+
+     <div id="loginBox">
+          <form id="loginForm" name="loginForm" action="j_security_check" method="post">
+              <fieldset id="body">
+                  <fieldset>
+                      <label style="text-align: left;" for="email">Usu&aacute;rio</label>
+                      <input type="text" name="j_username" id="username" />
+                  </fieldset>
+                  <fieldset>
+                      <label  style="text-align: left;" for="password">Senha</label>
+                      <input type="password" name="j_password" id="password"  />
+               		
+						
+					
+                  </fieldset>
+                  <input type="submit" id="login" value="Entrar" />
+                  <input type="button" id="login" value="Alterar senha"  onclick="abreRecuperarSenha()" />
+              </fieldset>
+              <span>
+              <a href="#" onclick="abreEnviarSenha()" class="link">Esqueceu sua senha? Clique aqui.</a>
+              </span>
+          </form>
+      </div>
+
+	<!-- header d4dc3b -->
+	<div class="ui-layout-north ui-widget-content"  id="header">
+		<!-- toolbar -->
+		<div class="fg-toolbar ui-widget-header ui-corner-all ui-helper-clearfix">
+
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td style="padding-right: 20px;">
+						
+						  
+						  	<div  onmouseover="myLayout.allowOverflow('north')">
+							  <a href="#" id="loginButton" onclick="abreLogin();" ><span>Login</span><em></em></a>
+			               <div style="clear:both"></div>
+			            </div>
+						  
+						  
+						
+					</td>
+					<td id="td_botoes_mapa">
+						<div class="fg-buttonset fg-buttonset-single">
+							<a href="#" class="fg-button ui-state-disabledComFundo fg-button-icon-solo ui-corner-left" title="Full extent" onclick="setMapCenter();"><span class="ui-icon fullextent"></span> Full Extent</a>
+							<a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-state-active" title="Navega&ccedil;&atilde;o" name="pan" onclick="toggleControl(this);"><span class="ui-icon pointer"></span> Mouse</a>
+							<a href="#" class="fg-button ui-state-disabledComFundo fg-button-icon-solo" title="Legenda" name="legenda" onclick="setUpLegendPanel();"><span class="ui-icon legenda"></span> Legenda</a>
+							<a href="#" class="fg-button ui-state-disabledComFundo fg-button-icon-solo ui-corner-right" title="Camadas" name="camadas" onclick="abreCamadas();"><span class="ui-icon layers"></span> Camadas</a>
+						</div>
+					</td>
+					<td>
+						<style type="text/css">
+							a:link {text-decoration:none}
+							a:visited {text-decoration:none}
+							a:active {text-decoration:none}
+							a:hover {text-decoration:none}
+							a img {
+								border-width:0;
+							}
+						</style>
+			            <div >
+			            	<table cellpadding="0" cellspacing="0" border="0">
+			            		<tr>
+			            			<td style="padding-right: 5px;">
+			            				<a href="#" onclick="abreMapa();" title="Mapas de visualiza&ccedil;&atilde;o" style="padding-right: 5px;"><img src="img/icons/ff/shape_move_back.png" height="18"/></a>
+			            			</td>
+			            			<!--<td style="padding-right: 5px;">
+			            				<a href="#" onclick="abreEmail()" style="padding-right: 5px;"><img title="Cadastro de email para recebimento de informa&ccedil;&otilde;es" src="img/email.png" height="18"/></a>
+			            			</td>-->
+			            			
+			            			<td style="padding-right: 10px;">
+				            			<select style="width: 200px;" name="sel_pontoMonitoramentoSpatialSelect" id="sel_pontoMonitoramentoSpatialSelect" onchange="zoomExtendPontoMonitoramentoSelect(this);" class="text ui-widget-content ui-corner-all" >
+											<option value="">..::Ponto de monitoramento::..</option>
+										</select>
+			            			</td>
+			            		</tr>
+			            	</table>
+						</div>
+					</td>
+					<td>
+						<span style="font-family: sans-serif; font-size: 13px; font-weight:bold; padding:4px; color:#000000;" ></span>
+					</td>
+					<td>
+
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+
+
+		<!-- layout-west -->
+		<div class="ui-layout-west">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 100%">
+				<tr>
+					<td valign="top" style="height: 35px;">
+						<div align="center" >
+							<a href="http://www.cprm.gov.br/" target="_blank">
+								<img style="border-style:none" src="img/logo.png" alt="CPRM - Companhia de Pesquisa de Recursos Minerais" id="logo"></img>
+							</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<div id="menu">
+
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" style="padding-left: 10px; padding-bottom: 3px;">
+						
+						<br></br>
+						<a href="https://www.sgb.gov.br/sace/" target="_blank"> <img
+								src="img/logosmalhorizontal.png" height="40" />
+						</a>
+						<p>
+						Ver.: 2.8.7.10
+						</p> 
+						<br/>
+						
+					</td>
+				</tr>
+
+			</table>
+
+
+		</div>
+
+	<!-- mapa -->
+	<div class="ui-layout-center" id="map"></div>
+
+	<!-- footer -->
+	<div class="ui-layout-south"  id="footer" >
+			<!-- toolbar inferior -->
+			<div class="fg-toolbar ui-widget-header ui-corner-all ui-helper-clearfix">
+			  <div class="fg-buttonset fg-buttonset-single" style="padding-top:6px; padding-bottom:5px;">
+       			<span style="font-size:12px; color:#666666;">
+                            	Coordenadas:<span id="coord"></span>
+                </span>
+
+			  </div>
+				<div class="fg-buttonset fg-buttonset-single" style="padding-top:6px; padding-bottom:5px;" >
+					<span id="escala" style="font-size:12px;color:#666666;">...</span>
+				</div>
+
+              	<style type="text/css">
+				a:link {text-decoration:none}
+				a:visited {text-decoration:none}
+				a:active {text-decoration:none}
+				a:hover {text-decoration:none}
+				a img {
+					border-width:0;
+				}
+			</style>
+                <div align="right"  class="Texto_copyright" >
+					<div id="div_parceiros"></div>
+				</div>
+			</div>
+
+	</div>
+
+<!-- Print -->
+    <div style="display: none" id="dlgPrinter" title="Imprimir">
+        <form id="formPrint">
+			<fieldset>
+            <legend>Informa&ccedil;&otilde;es do mapa</legend>
+            <table class="TabInp" id="IDTabInp">
+                <tr>
+                    <td style="width: 20px;">
+                        &nbsp;
+                    </td>
+                    <td style="width: 120px;">
+                        <label for="txtTitulo">
+                            TÃ­Â­tulo do mapa</label>
+                    </td>
+                    <td>
+                        <input type="text" name="txtTitulo" id="txtTitulo" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20px;">
+                        &nbsp;
+                    </td>
+                    <td style="width: 120px;">
+                        <label for="txtTitulo">
+                            Subtitulo</label>
+                    </td>
+                    <td>
+                        <input type="text" name="txtSubtitulo" id="txtSubtitulo" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20px;">
+                        &nbsp;
+                    </td>
+                    <td style="width: 120px;">
+                        <label for="txtTitulo">
+                            Elaborado por</label>
+                    </td>
+                    <td>
+                        <input type="text" name="txtElaborado" id="txtElaborado" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20px;">
+                        &nbsp;
+                    </td>
+                    <td style="width: 120px;">
+                        <label for="txtTitulo">
+                            Revis&atilde;o</label>
+                    </td>
+                    <td>
+                        <input type="text" name="txtRevisao" id="txtRevisao" />
+                    </td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>Configura&ccedil;&otilde;es de impress&atilde;o</legend>
+                <div style="width: 150px; float: left;">
+                    <table class="TabInp">
+                        <tr>
+                            <td colspan="2">
+                                Formato
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="radio" name="meuradio" id="meuradio1" style="width: 20px;" onclick="opImpr('Vertical');"   />Retrato
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="radio" name="meuradio" id="meuradio2" style="width: 20px;" onclick="opImpr('Horizontal');"  checked />Paisagem
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Tamanho
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="radio" name="radTam" id="radTam1" style="width: 20px;" onclick="opTam('21,0','29,7','A4');"
+                                    value="A4" checked />A4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="radio" name="radTam" id="radTam2" style="width: 20px;" onclick="opTam('29,7','42,0','A3');"
+                                    value="A3" />A3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="radio" name="radTam" id="radTam3" style="width: 20px;" onclick="opTam('42,0','59,4','A2');"
+                                    value="A2" />A2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="radio" name="radTam" id="radTam4" style="width: 20px;" onclick="opTam('84,0','118,8','A0');"
+                                    value="A0" />A0
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="width: 150px; float: left;">
+                    <table class="TabInp">
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                Visualiza&ccedil;&atilde;o
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <label id="txtLar">
+                                    Largura 29,2</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="txtAlt">
+                                    Altura 21,0</label>
+                            </td>
+                            <td>
+<!--                                 <img id="ImgIlustrativa" src="img/ImgPaisagem.JPG" /> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="font-size: xx-small; text-align: center">
+                                Imagem ilustrativa
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <input id="HiOp" name="HiOp" type="hidden" value="Horizontal" />
+                <br />
+                <br />
+                <br />
+                <div style="clear: both;">
+                </div>
+                <p style="text-align: justify; font-size: x-small">
+                    <strong>OBS:</strong> Ajuste as propriedades da impressora de acordo com as op&ccedil;&otilde;Âµes
+                    selecionadas.
+                </p>
+            </fieldset>
+        </fieldset>
+		</form>
+    </div>
+
+	<div id="dlgPrinterPreview" title="Pre-visualiza&ccedil;&atilde;o"></div>
+
+	<div style="display:none" id="dlgListagemRelatorio" title="Relat&oacute;rios">
+		Selecione a se&ccedil;&atilde;o para listar os diret&oacute;rios<br />
+		<div id="reportsAccordion">
+			<h3><a href="#">Quadril&aacute;tero Ferr&iacute;fero</a></h3>
+			<div>
+				<div class="reportlist">
+					<ul>
+						<li class="reportlist"><a href="pdf/Hidrologia.pdf" target="_blank">Hidrologia</a></li>
+					</ul>
+				</div>
+			</div>
+			<h3><a href="#">Quadril&aacute;tero Ferr&iacute;fero2</a></h3>
+			<div>
+				<div class="reportlist">
+					<ul>
+						<li class="reportlist"><a href="pdf/Hidrologia.pdf" target="_blank">Hidrologia</a></li>
+					</ul>
+				</div>
+			</div>
+			<h3><a href="#">Quadril&aacute;tero Ferr&iacute;fero3</a></h3>
+			<div>
+				<div class="reportlist">
+					<ul>
+						<li class="reportlist"><a href="pdf/Hidrologia.pdf" target="_blank">Hidrologia</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display:none" id="dlgListagemMarcadores" title="Ir para">
+	    <div id="mapGetIrParaContent">
+		</div>
+
+	</div>
+
+	<div style="display:none" id="dlgMapGetLegend" title="Legenda">
+		<div id="mapGetLegendContent" style="padding: 10px;">
+		</div>
+	</div>
+	<div style="display:none" id="dlgModeloPrevisaoListagem" title="Listagem de modelo de previs&atilde;o">
+		<div id="dlgModeloPrevisaoCadastro" title="Cadatro de modelo de previs&atilde;o">
+		</div>
+	</div>
+
+	<div id="dlgReleaseNote" title="Release Notes"></div>
+	<div id="dlgReleaseNoteCadastro" title="Cadastro de release Notes"></div>
+	<div id="dlgReleaseNoteListagem" title="Listegem de release Notes"></div>
+	<div id="dlgChuvaAcumulada" title="Chuva acumulada"></div>
+	<div id="dlgMapaChuva" title="Mapa de chuva"></div>
+
+</body>
+</html>

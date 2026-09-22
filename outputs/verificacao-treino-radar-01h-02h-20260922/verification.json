@@ -1,0 +1,1650 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-22T05:13:39.124193+00:00",
+  "checks_count": 381,
+  "checks": [
+    {
+      "check": "coordinator compare.py",
+      "passed": true
+    },
+    {
+      "check": "coordinator comparison.json",
+      "passed": true
+    },
+    {
+      "check": "coordinator feature-changes-before-cutoff.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator history-revisions-before-cutoff.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator membership.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator raw-revisions-before-cutoff.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator source-ages.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/diagnostico-treino-radar-01h-02h-20260922/compare.py",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/radar-features.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/idades-fontes.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/run-result.json",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/radar-features.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/idades-fontes.csv",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/run-result.json",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/auditoria-suporte-radar-live-01h-20260922/training-indices.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/auditoria-suporte-radar-live-02h-20260922/training-indices.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T010016-0300/history/ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "coordinator source /Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260922T020011-0300/history/ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T010016-0300/ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "history hash mucum-hourly-20260922T020011-0300/ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "same source inventory",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "history time ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "114 historyfields unchanged",
+      "passed": true
+    },
+    {
+      "check": "same grids",
+      "passed": true
+    },
+    {
+      "check": "raw quarter unchanged",
+      "passed": true
+    },
+    {
+      "check": "75columns144159cells",
+      "passed": true
+    },
+    {
+      "check": "coordinator columns exact",
+      "passed": true
+    },
+    {
+      "check": "base/truth unchanged",
+      "passed": true
+    },
+    {
+      "check": "860600100rain available",
+      "passed": true
+    },
+    {
+      "check": "860600101rain available",
+      "passed": true
+    },
+    {
+      "check": "860990000rain available",
+      "passed": true
+    },
+    {
+      "check": "860990001rain available",
+      "passed": true
+    },
+    {
+      "check": "861020000rain available",
+      "passed": true
+    },
+    {
+      "check": "861020001rain available",
+      "passed": true
+    },
+    {
+      "check": "861170000rain available",
+      "passed": true
+    },
+    {
+      "check": "861170001rain available",
+      "passed": true
+    },
+    {
+      "check": "861250000rain available",
+      "passed": true
+    },
+    {
+      "check": "861250001rain available",
+      "passed": true
+    },
+    {
+      "check": "861250500rain available",
+      "passed": true
+    },
+    {
+      "check": "861250501rain available",
+      "passed": true
+    },
+    {
+      "check": "861600000rain available",
+      "passed": true
+    },
+    {
+      "check": "861600001rain available",
+      "passed": true
+    },
+    {
+      "check": "861630000rain available",
+      "passed": true
+    },
+    {
+      "check": "861630001rain available",
+      "passed": true
+    },
+    {
+      "check": "862009000rain available",
+      "passed": true
+    },
+    {
+      "check": "862009001rain available",
+      "passed": true
+    },
+    {
+      "check": "862805000rain available",
+      "passed": true
+    },
+    {
+      "check": "862805001rain available",
+      "passed": true
+    },
+    {
+      "check": "862980000rain available",
+      "passed": true
+    },
+    {
+      "check": "862980001rain available",
+      "passed": true
+    },
+    {
+      "check": "864030000rain available",
+      "passed": true
+    },
+    {
+      "check": "864030001rain available",
+      "passed": true
+    },
+    {
+      "check": "864108000rain available",
+      "passed": true
+    },
+    {
+      "check": "864108001rain available",
+      "passed": true
+    },
+    {
+      "check": "864470000rain available",
+      "passed": true
+    },
+    {
+      "check": "864470001rain available",
+      "passed": true
+    },
+    {
+      "check": "864480000rain available",
+      "passed": true
+    },
+    {
+      "check": "864480001rain available",
+      "passed": true
+    },
+    {
+      "check": "864500000rain available",
+      "passed": true
+    },
+    {
+      "check": "864500001rain available",
+      "passed": true
+    },
+    {
+      "check": "864710000rain available",
+      "passed": true
+    },
+    {
+      "check": "864710001rain available",
+      "passed": true
+    },
+    {
+      "check": "864720000rain available",
+      "passed": true
+    },
+    {
+      "check": "864720001rain available",
+      "passed": true
+    },
+    {
+      "check": "864726000rain available",
+      "passed": true
+    },
+    {
+      "check": "864726001rain available",
+      "passed": true
+    },
+    {
+      "check": "864790000rain available",
+      "passed": true
+    },
+    {
+      "check": "864790001rain available",
+      "passed": true
+    },
+    {
+      "check": "864880000rain available",
+      "passed": true
+    },
+    {
+      "check": "864880001rain available",
+      "passed": true
+    },
+    {
+      "check": "864930000rain available",
+      "passed": true
+    },
+    {
+      "check": "864930001rain available",
+      "passed": true
+    },
+    {
+      "check": "864955000rain available",
+      "passed": true
+    },
+    {
+      "check": "864955001rain available",
+      "passed": true
+    },
+    {
+      "check": "865000000rain available",
+      "passed": true
+    },
+    {
+      "check": "865000001rain available",
+      "passed": true
+    },
+    {
+      "check": "865049000rain available",
+      "passed": true
+    },
+    {
+      "check": "865049001rain available",
+      "passed": true
+    },
+    {
+      "check": "865055000rain available",
+      "passed": true
+    },
+    {
+      "check": "865055001rain available",
+      "passed": true
+    },
+    {
+      "check": "865100000rain available",
+      "passed": true
+    },
+    {
+      "check": "865100001rain available",
+      "passed": true
+    },
+    {
+      "check": "cycle1rainNaNs",
+      "passed": true
+    },
+    {
+      "check": "cycle1rain reconstruction",
+      "passed": true
+    },
+    {
+      "check": "cycle2rainNaNs",
+      "passed": true
+    },
+    {
+      "check": "cycle2rain reconstruction",
+      "passed": true
+    },
+    {
+      "check": "cycle1h1membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h1membership",
+      "passed": true
+    },
+    {
+      "check": "h1same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h1same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h2membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h2membership",
+      "passed": true
+    },
+    {
+      "check": "h2same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h2same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h3membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h3membership",
+      "passed": true
+    },
+    {
+      "check": "h3same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h3same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h4membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h4membership",
+      "passed": true
+    },
+    {
+      "check": "h4same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h4same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h5membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h5membership",
+      "passed": true
+    },
+    {
+      "check": "h5same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h5same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h6membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h6membership",
+      "passed": true
+    },
+    {
+      "check": "h6same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h6same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h7membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h7membership",
+      "passed": true
+    },
+    {
+      "check": "h7same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h7same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h8membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h8membership",
+      "passed": true
+    },
+    {
+      "check": "h8same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h8same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h9membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h9membership",
+      "passed": true
+    },
+    {
+      "check": "h9same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h9same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h10membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h10membership",
+      "passed": true
+    },
+    {
+      "check": "h10same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h10same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h11membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h11membership",
+      "passed": true
+    },
+    {
+      "check": "h11same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h11same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h12membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h12membership",
+      "passed": true
+    },
+    {
+      "check": "h12same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h12same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h13membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h13membership",
+      "passed": true
+    },
+    {
+      "check": "h13same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h13same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "cycle1h14membership",
+      "passed": true
+    },
+    {
+      "check": "cycle2h14membership",
+      "passed": true
+    },
+    {
+      "check": "h14same indices/bases/targets",
+      "passed": true
+    },
+    {
+      "check": "h14same responses/weights",
+      "passed": true
+    },
+    {
+      "check": "root14memberships",
+      "passed": true
+    },
+    {
+      "check": "seven changed rain delays",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged scripts/hydro_latency_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged scripts/hydro_rain_windows.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/artifact-hashes.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/compare.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/feature-changes-before-cutoff.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/history-revisions-before-cutoff.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/membership.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/raw-revisions-before-cutoff.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/diagnostico-treino-radar-01h-02h-20260922/source-ages.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged scripts/hydro_hourly_forecast.py",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/radar-features.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/idades-fontes.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/run-result.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/radar-features.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/telemetria-latencia.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/idades-fontes.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/run-result.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/auditoria-suporte-radar-live-01h-20260922/training-indices.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/auditoria-suporte-radar-live-02h-20260922/training-indices.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86060010.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86099000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86102000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86117000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86125000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86125050.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86160000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86163000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86200900.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86280500.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86298000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86403000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86410800.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86447000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86448000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86450000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86471000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86472000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86472600.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86479000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86488000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86493000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86495500.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86500000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86504900.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86505500.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ana-86510000.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ceran-castro.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ceran-julho.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/history/ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/history/ceran-monte.npz",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T010016-0300/run.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-hourly-20260922T020011-0300/run.json",
+      "passed": true
+    },
+    {
+      "check": "unchanged outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true
+    }
+  ],
+  "history_fields": 114,
+  "changed_history_fields": 0,
+  "changed_feature_columns": 75,
+  "changed_feature_cells": 144159,
+  "rain_delay_changes": [
+    {
+      "station": "86060010",
+      "regions": "Alto Antas;Tainhas",
+      "cycle1_rain_last": "2026-09-21T08:00:00-03:00",
+      "cycle1_rain_delay_minutes": 1020.0,
+      "cycle1_steps": 68,
+      "cycle1_level_delay_minutes": 1020.0,
+      "cycle2_rain_last": "2026-09-21T08:00:00-03:00",
+      "cycle2_rain_delay_minutes": 1080.0,
+      "cycle2_steps": 72,
+      "cycle2_level_delay_minutes": 1080.0,
+      "steps_delta": 4
+    },
+    {
+      "station": "86102000",
+      "regions": "Alto Antas;Tainhas",
+      "cycle1_rain_last": "2026-09-21T10:00:00-03:00",
+      "cycle1_rain_delay_minutes": 900.0,
+      "cycle1_steps": 60,
+      "cycle1_level_delay_minutes": 900.0,
+      "cycle2_rain_last": "2026-09-21T10:00:00-03:00",
+      "cycle2_rain_delay_minutes": 960.0,
+      "cycle2_steps": 64,
+      "cycle2_level_delay_minutes": 960.0,
+      "steps_delta": 4
+    },
+    {
+      "station": "86125000",
+      "regions": "Prata-Turvo;Alto Antas",
+      "cycle1_rain_last": "2026-09-21T11:59:00-03:00",
+      "cycle1_rain_delay_minutes": 781.0,
+      "cycle1_steps": 52,
+      "cycle1_level_delay_minutes": 781.0,
+      "cycle2_rain_last": "2026-09-21T11:59:00-03:00",
+      "cycle2_rain_delay_minutes": 841.0,
+      "cycle2_steps": 56,
+      "cycle2_level_delay_minutes": 841.0,
+      "steps_delta": 4
+    },
+    {
+      "station": "86200900",
+      "regions": "Alto Antas",
+      "cycle1_rain_last": "2026-09-21T11:00:00-03:00",
+      "cycle1_rain_delay_minutes": 840.0,
+      "cycle1_steps": 56,
+      "cycle1_level_delay_minutes": 780.0,
+      "cycle2_rain_last": "2026-09-21T11:00:00-03:00",
+      "cycle2_rain_delay_minutes": 900.0,
+      "cycle2_steps": 60,
+      "cycle2_level_delay_minutes": 840.0,
+      "steps_delta": 4
+    },
+    {
+      "station": "86298000",
+      "regions": "Alto Antas",
+      "cycle1_rain_last": "2026-09-21T19:00:00-03:00",
+      "cycle1_rain_delay_minutes": 360.0,
+      "cycle1_steps": 24,
+      "cycle1_level_delay_minutes": 360.0,
+      "cycle2_rain_last": "2026-09-21T19:00:00-03:00",
+      "cycle2_rain_delay_minutes": 420.0,
+      "cycle2_steps": 28,
+      "cycle2_level_delay_minutes": 420.0,
+      "steps_delta": 4
+    },
+    {
+      "station": "86403000",
+      "regions": "Carreiro;Prata-Turvo",
+      "cycle1_rain_last": "2026-09-21T23:00:00-03:00",
+      "cycle1_rain_delay_minutes": 120.0,
+      "cycle1_steps": 8,
+      "cycle1_level_delay_minutes": 120.0,
+      "cycle2_rain_last": "2026-09-22T01:00:00-03:00",
+      "cycle2_rain_delay_minutes": 60.0,
+      "cycle2_steps": 4,
+      "cycle2_level_delay_minutes": 60.0,
+      "steps_delta": -4
+    },
+    {
+      "station": "86448000",
+      "regions": "Baixo Antas;Alto Antas",
+      "cycle1_rain_last": "2026-09-21T19:00:00-03:00",
+      "cycle1_rain_delay_minutes": 360.0,
+      "cycle1_steps": 24,
+      "cycle1_level_delay_minutes": 360.0,
+      "cycle2_rain_last": "2026-09-21T19:00:00-03:00",
+      "cycle2_rain_delay_minutes": 420.0,
+      "cycle2_steps": 28,
+      "cycle2_level_delay_minutes": 420.0,
+      "steps_delta": 4
+    }
+  ],
+  "rain_reconstruction": [
+    {
+      "cycle": 1,
+      "cells": 968400,
+      "max_difference_millimeters_or_fraction": 8.866518630412656e-14,
+      "NaNs_exact": true
+    },
+    {
+      "cycle": 2,
+      "cells": 968400,
+      "max_difference_millimeters_or_fraction": 8.866518630412656e-14,
+      "NaNs_exact": true
+    }
+  ],
+  "membership_same_all14": true,
+  "fit_network_or_operational_execution": false,
+  "limitations": [
+    "Normalized sealed numeric histories compared, not every historical raw XML QC field.",
+    "Rain source delay separately reconstructed; idades-fontes is not rain delay metadata.",
+    "Current delay reused across historical grid changes fitted input matrix despite fixed cutoff; no claim about future error.",
+    "Reconstructed normalized history is not original publication-time certification."
+  ]
+}

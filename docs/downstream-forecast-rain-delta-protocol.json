@@ -1,0 +1,13 @@
+{
+  "id": "downstream-forecast-rain-delta-v1",
+  "scope": "Paired local historical development comparison. No training, live issuance or promotion.",
+  "baseline": "Preserved Julho-level candidate from outputs/experimento-proxy-carreiro-20260921, including unchanged explicit Carreiro missing-input estimates. All23538origin-target rows retained.",
+  "candidate": "Replace only future Julho discharge inference with frozen pre-July97feature forecast-rain model; reference is frozen77feature model. Both from outputs/experimento-chuva-prevista-montante-20260921 phase=test. Infer for every origin without selecting by future upstream truth.",
+  "method": "For each finite baseline, compute common anchor offset Hanchor-stage(Qanchor), invert the fixed monotonic stage(q)=a*(q/1000)^b+c to baseline totalQ, add the weighted difference of new versus old future JulhoQ for nonnegative relative leads, then reapply stage and identical offset. Keep baseline float unchanged. Exact positive-lag routing implies past inputs and origin/-1h reconstructed anchors do not change. HGE rain/state/runoff, Carreiro/proxy, residualtau6, rating, weights, observation anchors and targets remain fixed.",
+  "safeguards": "Require positive rating a,b, nonnegative unit-sum Julho kernel and all lags>=1. A baseline below rating minimum by more than1e-10m is an error, not corrected data. Only inverse-roundoff within1e-10m may clamp tozero. Candidate totalQ<0 becomes an explicit forecast failure, never clipped or removed. Missing baseline/anchor or required future inference remains missing.",
+  "assessment": "Reproduce frozen upstream predictions and check rating inversion roundtrip. Report every horizon1..12, all and observed>=7m: coverage, failures, MAE,bias,P90,P98,max and fraction within0.50m for each model, plus identical common-pair comparison. Keep source-missing targets and anchors explicit. Evaluation originsJuly1..Sep21exclusive and targetsbeforeSep21 unchanged.",
+  "causality": "No future observed upstream discharge or observed future rainfall enters the delta. Weather availability follows the explicitly assumed previous_day1 contract. This is not fresh independent validation or prospective evidence.",
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

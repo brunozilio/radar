@@ -1,0 +1,2656 @@
+{
+  "created_utc": "2026-09-21T20:11:32.805452+00:00",
+  "duckdb_version": "1.4.4",
+  "inference_policy": "23:59 end-of-day interpretation and Brasília timezone explicitly labelled; no imputation, validation, training or model promotion",
+  "source_inventory": [
+    {
+      "month": "2024-05",
+      "all_source_rows": 117720,
+      "all_source_reservoirs": 163,
+      "selected_rows": 1670,
+      "source_sha256": "0bee1eb4f83825e4dd8ed6d2f47ee21dc27c800a4e821c027b36f8e994dda34a",
+      "schema": [
+        [
+          "id_subsistema",
+          "object"
+        ],
+        [
+          "nom_subsistema",
+          "object"
+        ],
+        [
+          "tip_reservatorio",
+          "object"
+        ],
+        [
+          "nom_bacia",
+          "object"
+        ],
+        [
+          "id_reservatorio",
+          "object"
+        ],
+        [
+          "nom_reservatorio",
+          "object"
+        ],
+        [
+          "cod_usina",
+          "float64"
+        ],
+        [
+          "din_instante",
+          "datetime64[us]"
+        ],
+        [
+          "val_nivelmontante",
+          "float64"
+        ],
+        [
+          "val_niveljusante",
+          "float64"
+        ],
+        [
+          "val_volumeutil",
+          "float64"
+        ],
+        [
+          "val_vazaoafluente",
+          "float64"
+        ],
+        [
+          "val_vazaodefluente",
+          "float64"
+        ],
+        [
+          "val_vazaoturbinada",
+          "float64"
+        ],
+        [
+          "val_vazaovertida",
+          "float64"
+        ],
+        [
+          "val_vazaooutrasestruturas",
+          "float64"
+        ],
+        [
+          "val_vazaotransferida",
+          "float64"
+        ],
+        [
+          "val_vazaovertidanaoturbinavel",
+          "float64"
+        ]
+      ]
+    },
+    {
+      "month": "2020-07",
+      "all_source_rows": 115769,
+      "all_source_reservoirs": 158,
+      "selected_rows": 2232,
+      "source_sha256": "93c03aa2f04396556d6184e25c4d33e855051137568d283f2f78e17566baca7c",
+      "schema": [
+        [
+          "id_subsistema",
+          "object"
+        ],
+        [
+          "nom_subsistema",
+          "object"
+        ],
+        [
+          "tip_reservatorio",
+          "object"
+        ],
+        [
+          "nom_bacia",
+          "object"
+        ],
+        [
+          "id_reservatorio",
+          "object"
+        ],
+        [
+          "nom_reservatorio",
+          "object"
+        ],
+        [
+          "cod_usina",
+          "int32"
+        ],
+        [
+          "din_instante",
+          "datetime64[us]"
+        ],
+        [
+          "val_nivelmontante",
+          "float64"
+        ],
+        [
+          "val_niveljusante",
+          "float64"
+        ],
+        [
+          "val_volumeutil",
+          "float64"
+        ],
+        [
+          "val_vazaoafluente",
+          "float64"
+        ],
+        [
+          "val_vazaodefluente",
+          "float64"
+        ],
+        [
+          "val_vazaoturbinada",
+          "float64"
+        ],
+        [
+          "val_vazaovertida",
+          "float64"
+        ],
+        [
+          "val_vazaooutrasestruturas",
+          "float64"
+        ],
+        [
+          "val_vazaotransferida",
+          "float64"
+        ],
+        [
+          "val_vazaovertidanaoturbinavel",
+          "float64"
+        ]
+      ]
+    }
+  ],
+  "plant_months": [
+    {
+      "month": "2024-05",
+      "id_reservatorio": "JIUHQJ",
+      "name": "14 DE JULHO",
+      "cod_usina": 99,
+      "source_basin_labels": [
+        "JACUI"
+      ],
+      "source_rows": 552,
+      "nominal_month_hours": 744,
+      "duplicate_original_timestamps": 0,
+      "duplicate_interpreted_hour_ends": 0,
+      "timestamps_2359": 22,
+      "other_off_grid_rows": 0,
+      "missing_rows_on_interpreted_grid": 192,
+      "missing_row_runs": [
+        {
+          "start_hour_end": "2024-05-01 10:00:00",
+          "end_hour_end": "2024-05-05 01:00:00",
+          "hours": 88
+        },
+        {
+          "start_hour_end": "2024-05-05 10:00:00",
+          "end_hour_end": "2024-05-06 00:00:00",
+          "hours": 15
+        },
+        {
+          "start_hour_end": "2024-05-06 06:00:00",
+          "end_hour_end": "2024-05-06 06:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-06 10:00:00",
+          "end_hour_end": "2024-05-08 00:00:00",
+          "hours": 39
+        },
+        {
+          "start_hour_end": "2024-05-08 08:00:00",
+          "end_hour_end": "2024-05-09 13:00:00",
+          "hours": 30
+        },
+        {
+          "start_hour_end": "2024-05-10 00:00:00",
+          "end_hour_end": "2024-05-10 00:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-10 03:00:00",
+          "end_hour_end": "2024-05-10 15:00:00",
+          "hours": 13
+        },
+        {
+          "start_hour_end": "2024-05-13 05:00:00",
+          "end_hour_end": "2024-05-13 05:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-17 01:00:00",
+          "end_hour_end": "2024-05-17 01:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-17 22:00:00",
+          "end_hour_end": "2024-05-17 23:00:00",
+          "hours": 2
+        },
+        {
+          "start_hour_end": "2024-05-26 11:00:00",
+          "end_hour_end": "2024-05-26 11:00:00",
+          "hours": 1
+        }
+      ],
+      "outside_interpreted_grid": [],
+      "variables": {
+        "val_nivelmontante": {
+          "present": 521,
+          "null": 31,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 88.56,
+          "max": 242.51,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 03:00:00",
+              "hours": 114
+            },
+            {
+              "start_hour_end": "2024-05-06 05:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_niveljusante": {
+          "present": 549,
+          "null": 3,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 71.65,
+          "max": 151.26,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 88
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 00:00:00",
+              "hours": 39
+            },
+            {
+              "start_hour_end": "2024-05-08 08:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 30
+            },
+            {
+              "start_hour_end": "2024-05-10 00:00:00",
+              "end_hour_end": "2024-05-10 00:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-21 03:00:00",
+              "end_hour_end": "2024-05-21 03:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-21 15:00:00",
+              "end_hour_end": "2024-05-21 15:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-23 08:00:00",
+              "end_hour_end": "2024-05-23 08:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_volumeutil": {
+          "present": 25,
+          "null": 527,
+          "zero": 0,
+          "negative": 10,
+          "zero_hour_end_runs": [],
+          "min": -96.86,
+          "max": 584.61,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-12 10:00:00",
+              "hours": 265
+            },
+            {
+              "start_hour_end": "2024-05-13 03:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 454
+            }
+          ]
+        },
+        "val_vazaoafluente": {
+          "present": 525,
+          "null": 27,
+          "zero": 82,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-12 14:00:00",
+              "end_hour_end": "2024-05-12 14:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-12 18:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 11
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-13 15:00:00",
+              "hours": 10
+            },
+            {
+              "start_hour_end": "2024-05-13 18:00:00",
+              "end_hour_end": "2024-05-13 21:00:00",
+              "hours": 4
+            },
+            {
+              "start_hour_end": "2024-05-13 23:00:00",
+              "end_hour_end": "2024-05-14 11:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-14 16:00:00",
+              "end_hour_end": "2024-05-16 09:00:00",
+              "hours": 42
+            },
+            {
+              "start_hour_end": "2024-05-24 11:00:00",
+              "end_hour_end": "2024-05-24 11:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 5732.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaodefluente": {
+          "present": 552,
+          "null": 0,
+          "zero": 1,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-24 11:00:00",
+              "end_hour_end": "2024-05-24 11:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 5853.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 88
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 00:00:00",
+              "hours": 39
+            },
+            {
+              "start_hour_end": "2024-05-08 08:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 30
+            },
+            {
+              "start_hour_end": "2024-05-10 00:00:00",
+              "end_hour_end": "2024-05-10 00:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaoturbinada": {
+          "present": 525,
+          "null": 27,
+          "zero": 521,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 01:00:00",
+              "end_hour_end": "2024-05-01 09:00:00",
+              "hours": 9
+            },
+            {
+              "start_hour_end": "2024-05-06 01:00:00",
+              "end_hour_end": "2024-05-06 05:00:00",
+              "hours": 5
+            },
+            {
+              "start_hour_end": "2024-05-06 07:00:00",
+              "end_hour_end": "2024-05-06 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2024-05-10 16:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 61
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-14 11:00:00",
+              "hours": 30
+            },
+            {
+              "start_hour_end": "2024-05-14 16:00:00",
+              "end_hour_end": "2024-05-17 00:00:00",
+              "hours": 57
+            },
+            {
+              "start_hour_end": "2024-05-17 02:00:00",
+              "end_hour_end": "2024-05-17 21:00:00",
+              "hours": 20
+            },
+            {
+              "start_hour_end": "2024-05-18 00:00:00",
+              "end_hour_end": "2024-05-26 10:00:00",
+              "hours": 203
+            },
+            {
+              "start_hour_end": "2024-05-26 12:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 133
+            }
+          ],
+          "min": 0.0,
+          "max": 159.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaovertida": {
+          "present": 525,
+          "null": 27,
+          "zero": 1,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-24 11:00:00",
+              "end_hour_end": "2024-05-24 11:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 5245.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 517,
+          "null": 35,
+          "zero": 182,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-16 16:00:00",
+              "end_hour_end": "2024-05-16 16:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-24 11:00:00",
+              "end_hour_end": "2024-05-26 10:00:00",
+              "hours": 48
+            },
+            {
+              "start_hour_end": "2024-05-26 12:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 133
+            }
+          ],
+          "min": 0.0,
+          "max": 36.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaotransferida": {
+          "present": 517,
+          "null": 35,
+          "zero": 517,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 01:00:00",
+              "end_hour_end": "2024-05-01 09:00:00",
+              "hours": 9
+            },
+            {
+              "start_hour_end": "2024-05-10 16:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 61
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-17 00:00:00",
+              "hours": 91
+            },
+            {
+              "start_hour_end": "2024-05-17 02:00:00",
+              "end_hour_end": "2024-05-17 21:00:00",
+              "hours": 20
+            },
+            {
+              "start_hour_end": "2024-05-18 00:00:00",
+              "end_hour_end": "2024-05-26 10:00:00",
+              "hours": 203
+            },
+            {
+              "start_hour_end": "2024-05-26 12:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 133
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 508,
+          "null": 44,
+          "zero": 1,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-24 11:00:00",
+              "end_hour_end": "2024-05-24 11:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 799.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-16 17:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 9
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-22 23:00:00",
+              "end_hour_end": "2024-05-22 23:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        }
+      },
+      "balance_check": {
+        "formula": "QDEF-QTUR-QVER-QOTR; no missing-as-zero",
+        "complete_component_rows": 517,
+        "abs_residual_gt_1_m3s": 326,
+        "max_abs_residual": 19.0
+      },
+      "first_timestamp_original": "2024-05-01 01:00:00",
+      "last_timestamp_original": "2024-05-31 23:59:00"
+    },
+    {
+      "month": "2024-05",
+      "id_reservatorio": "JIUHMC",
+      "name": "MONTE CLARO",
+      "cod_usina": 98,
+      "source_basin_labels": [
+        "JACUI"
+      ],
+      "source_rows": 554,
+      "nominal_month_hours": 744,
+      "duplicate_original_timestamps": 0,
+      "duplicate_interpreted_hour_ends": 0,
+      "timestamps_2359": 23,
+      "other_off_grid_rows": 0,
+      "missing_rows_on_interpreted_grid": 190,
+      "missing_row_runs": [
+        {
+          "start_hour_end": "2024-05-01 10:00:00",
+          "end_hour_end": "2024-05-05 01:00:00",
+          "hours": 88
+        },
+        {
+          "start_hour_end": "2024-05-05 10:00:00",
+          "end_hour_end": "2024-05-06 00:00:00",
+          "hours": 15
+        },
+        {
+          "start_hour_end": "2024-05-06 06:00:00",
+          "end_hour_end": "2024-05-06 06:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-06 10:00:00",
+          "end_hour_end": "2024-05-08 06:00:00",
+          "hours": 45
+        },
+        {
+          "start_hour_end": "2024-05-08 15:00:00",
+          "end_hour_end": "2024-05-09 13:00:00",
+          "hours": 23
+        },
+        {
+          "start_hour_end": "2024-05-10 03:00:00",
+          "end_hour_end": "2024-05-10 15:00:00",
+          "hours": 13
+        },
+        {
+          "start_hour_end": "2024-05-13 05:00:00",
+          "end_hour_end": "2024-05-13 05:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-17 01:00:00",
+          "end_hour_end": "2024-05-17 01:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-17 22:00:00",
+          "end_hour_end": "2024-05-17 23:00:00",
+          "hours": 2
+        },
+        {
+          "start_hour_end": "2024-05-26 11:00:00",
+          "end_hour_end": "2024-05-26 11:00:00",
+          "hours": 1
+        }
+      ],
+      "outside_interpreted_grid": [],
+      "variables": {
+        "val_nivelmontante": {
+          "present": 554,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 139.34,
+          "max": 155.14,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 88
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 23
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_niveljusante": {
+          "present": 517,
+          "null": 37,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 105.0,
+          "max": 115.49,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_volumeutil": {
+          "present": 541,
+          "null": 13,
+          "zero": 0,
+          "negative": 8,
+          "zero_hour_end_runs": [],
+          "min": -531.0,
+          "max": 927.28,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 88
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 49
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaoafluente": {
+          "present": 525,
+          "null": 29,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 206.0,
+          "max": 9998.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaodefluente": {
+          "present": 553,
+          "null": 1,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 206.0,
+          "max": 9964.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 88
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 15
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 23
+            },
+            {
+              "start_hour_end": "2024-05-10 01:00:00",
+              "end_hour_end": "2024-05-10 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaoturbinada": {
+          "present": 524,
+          "null": 30,
+          "zero": 517,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 01:00:00",
+              "end_hour_end": "2024-05-01 02:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-06 01:00:00",
+              "end_hour_end": "2024-05-06 05:00:00",
+              "hours": 5
+            },
+            {
+              "start_hour_end": "2024-05-06 07:00:00",
+              "end_hour_end": "2024-05-06 09:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2024-05-10 16:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 61
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-16 23:00:00",
+              "hours": 90
+            },
+            {
+              "start_hour_end": "2024-05-17 02:00:00",
+              "end_hour_end": "2024-05-17 21:00:00",
+              "hours": 20
+            },
+            {
+              "start_hour_end": "2024-05-18 00:00:00",
+              "end_hour_end": "2024-05-26 10:00:00",
+              "hours": 203
+            },
+            {
+              "start_hour_end": "2024-05-26 12:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 133
+            }
+          ],
+          "min": 0.0,
+          "max": 177.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 00:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaovertida": {
+          "present": 525,
+          "null": 29,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 200.0,
+          "max": 9964.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-06 00:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 06:00:00",
+              "end_hour_end": "2024-05-06 06:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 102
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 517,
+          "null": 37,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 2.0,
+          "max": 18.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaotransferida": {
+          "present": 516,
+          "null": 38,
+          "zero": 516,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 01:00:00",
+              "end_hour_end": "2024-05-01 09:00:00",
+              "hours": 9
+            },
+            {
+              "start_hour_end": "2024-05-10 16:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 61
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-16 23:00:00",
+              "hours": 90
+            },
+            {
+              "start_hour_end": "2024-05-17 02:00:00",
+              "end_hour_end": "2024-05-17 21:00:00",
+              "hours": 20
+            },
+            {
+              "start_hour_end": "2024-05-18 00:00:00",
+              "end_hour_end": "2024-05-26 10:00:00",
+              "hours": 203
+            },
+            {
+              "start_hour_end": "2024-05-26 12:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 133
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 00:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 508,
+          "null": 46,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 1.0,
+          "max": 398.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 10:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 222
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-16 17:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 9
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-22 23:00:00",
+              "end_hour_end": "2024-05-22 23:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        }
+      },
+      "balance_check": {
+        "formula": "QDEF-QTUR-QVER-QOTR; no missing-as-zero",
+        "complete_component_rows": 516,
+        "abs_residual_gt_1_m3s": 325,
+        "max_abs_residual": 18.0
+      },
+      "first_timestamp_original": "2024-05-01 01:00:00",
+      "last_timestamp_original": "2024-05-31 23:59:00"
+    },
+    {
+      "month": "2024-05",
+      "id_reservatorio": "JIUHCA",
+      "name": "CASTRO ALVES",
+      "cod_usina": 97,
+      "source_basin_labels": [
+        "JACUI"
+      ],
+      "source_rows": 564,
+      "nominal_month_hours": 744,
+      "duplicate_original_timestamps": 0,
+      "duplicate_interpreted_hour_ends": 0,
+      "timestamps_2359": 23,
+      "other_off_grid_rows": 0,
+      "missing_rows_on_interpreted_grid": 180,
+      "missing_row_runs": [
+        {
+          "start_hour_end": "2024-05-01 11:00:00",
+          "end_hour_end": "2024-05-05 01:00:00",
+          "hours": 87
+        },
+        {
+          "start_hour_end": "2024-05-05 10:00:00",
+          "end_hour_end": "2024-05-06 01:00:00",
+          "hours": 16
+        },
+        {
+          "start_hour_end": "2024-05-06 10:00:00",
+          "end_hour_end": "2024-05-08 06:00:00",
+          "hours": 45
+        },
+        {
+          "start_hour_end": "2024-05-08 15:00:00",
+          "end_hour_end": "2024-05-09 00:00:00",
+          "hours": 10
+        },
+        {
+          "start_hour_end": "2024-05-09 10:00:00",
+          "end_hour_end": "2024-05-09 13:00:00",
+          "hours": 4
+        },
+        {
+          "start_hour_end": "2024-05-10 03:00:00",
+          "end_hour_end": "2024-05-10 15:00:00",
+          "hours": 13
+        },
+        {
+          "start_hour_end": "2024-05-13 05:00:00",
+          "end_hour_end": "2024-05-13 05:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-17 01:00:00",
+          "end_hour_end": "2024-05-17 01:00:00",
+          "hours": 1
+        },
+        {
+          "start_hour_end": "2024-05-17 22:00:00",
+          "end_hour_end": "2024-05-17 23:00:00",
+          "hours": 2
+        },
+        {
+          "start_hour_end": "2024-05-26 11:00:00",
+          "end_hour_end": "2024-05-26 11:00:00",
+          "hours": 1
+        }
+      ],
+      "outside_interpreted_grid": [],
+      "variables": {
+        "val_nivelmontante": {
+          "present": 563,
+          "null": 1,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 24.06,
+          "max": 246.23,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 87
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 16
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-09 00:00:00",
+              "hours": 10
+            },
+            {
+              "start_hour_end": "2024-05-09 09:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 5
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_niveljusante": {
+          "present": 555,
+          "null": 9,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 146.4,
+          "max": 160.26,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-09 01:00:00",
+              "hours": 11
+            },
+            {
+              "start_hour_end": "2024-05-09 10:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 4
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_volumeutil": {
+          "present": 563,
+          "null": 1,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 165.02,
+          "max": 841.33,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 87
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 16
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-09 01:00:00",
+              "hours": 11
+            },
+            {
+              "start_hour_end": "2024-05-09 10:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 4
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaoafluente": {
+          "present": 530,
+          "null": 34,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 258.0,
+          "max": 8372.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-09 01:00:00",
+              "hours": 64
+            },
+            {
+              "start_hour_end": "2024-05-09 06:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 34
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaodefluente": {
+          "present": 563,
+          "null": 1,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 284.0,
+          "max": 8272.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-05 01:00:00",
+              "hours": 87
+            },
+            {
+              "start_hour_end": "2024-05-05 10:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 16
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-08 06:00:00",
+              "hours": 45
+            },
+            {
+              "start_hour_end": "2024-05-08 15:00:00",
+              "end_hour_end": "2024-05-09 00:00:00",
+              "hours": 10
+            },
+            {
+              "start_hour_end": "2024-05-09 09:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 5
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaoturbinada": {
+          "present": 547,
+          "null": 17,
+          "zero": 39,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-06 02:00:00",
+              "end_hour_end": "2024-05-06 09:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2024-05-12 10:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 19
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-13 16:00:00",
+              "hours": 11
+            },
+            {
+              "start_hour_end": "2024-05-30 10:00:00",
+              "end_hour_end": "2024-05-30 10:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 166.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-09 01:00:00",
+              "hours": 64
+            },
+            {
+              "start_hour_end": "2024-05-09 10:00:00",
+              "end_hour_end": "2024-05-09 13:00:00",
+              "hours": 4
+            },
+            {
+              "start_hour_end": "2024-05-10 03:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 13
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaovertida": {
+          "present": 530,
+          "null": 34,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 212.0,
+          "max": 8272.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-06 01:00:00",
+              "hours": 111
+            },
+            {
+              "start_hour_end": "2024-05-06 10:00:00",
+              "end_hour_end": "2024-05-09 01:00:00",
+              "hours": 64
+            },
+            {
+              "start_hour_end": "2024-05-09 06:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 34
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 518,
+          "null": 46,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 7.0,
+          "max": 23.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 221
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaotransferida": {
+          "present": 518,
+          "null": 46,
+          "zero": 518,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 01:00:00",
+              "end_hour_end": "2024-05-01 10:00:00",
+              "hours": 10
+            },
+            {
+              "start_hour_end": "2024-05-10 16:00:00",
+              "end_hour_end": "2024-05-13 04:00:00",
+              "hours": 61
+            },
+            {
+              "start_hour_end": "2024-05-13 06:00:00",
+              "end_hour_end": "2024-05-17 00:00:00",
+              "hours": 91
+            },
+            {
+              "start_hour_end": "2024-05-17 02:00:00",
+              "end_hour_end": "2024-05-17 21:00:00",
+              "hours": 20
+            },
+            {
+              "start_hour_end": "2024-05-18 00:00:00",
+              "end_hour_end": "2024-05-26 10:00:00",
+              "hours": 203
+            },
+            {
+              "start_hour_end": "2024-05-26 12:00:00",
+              "end_hour_end": "2024-06-01 00:00:00",
+              "hours": 133
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 221
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 01:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 510,
+          "null": 54,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 1.0,
+          "max": 156.0,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2024-05-01 11:00:00",
+              "end_hour_end": "2024-05-10 15:00:00",
+              "hours": 221
+            },
+            {
+              "start_hour_end": "2024-05-13 05:00:00",
+              "end_hour_end": "2024-05-13 05:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2024-05-16 17:00:00",
+              "end_hour_end": "2024-05-17 01:00:00",
+              "hours": 9
+            },
+            {
+              "start_hour_end": "2024-05-17 22:00:00",
+              "end_hour_end": "2024-05-17 23:00:00",
+              "hours": 2
+            },
+            {
+              "start_hour_end": "2024-05-26 11:00:00",
+              "end_hour_end": "2024-05-26 11:00:00",
+              "hours": 1
+            }
+          ]
+        }
+      },
+      "balance_check": {
+        "formula": "QDEF-QTUR-QVER-QOTR; no missing-as-zero",
+        "complete_component_rows": 518,
+        "abs_residual_gt_1_m3s": 326,
+        "max_abs_residual": 20.0
+      },
+      "first_timestamp_original": "2024-05-01 01:00:00",
+      "last_timestamp_original": "2024-05-31 23:59:00"
+    },
+    {
+      "month": "2020-07",
+      "id_reservatorio": "JIUHQJ",
+      "name": "14 DE JULHO",
+      "cod_usina": 99,
+      "source_basin_labels": [
+        "JACUI"
+      ],
+      "source_rows": 744,
+      "nominal_month_hours": 744,
+      "duplicate_original_timestamps": 0,
+      "duplicate_interpreted_hour_ends": 0,
+      "timestamps_2359": 31,
+      "other_off_grid_rows": 0,
+      "missing_rows_on_interpreted_grid": 0,
+      "missing_row_runs": [],
+      "outside_interpreted_grid": [],
+      "variables": {
+        "val_nivelmontante": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 103.07,
+          "max": 108.97,
+          "unavailable_hour_end_runs": []
+        },
+        "val_niveljusante": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 69.18,
+          "max": 87.45,
+          "unavailable_hour_end_runs": []
+        },
+        "val_volumeutil": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 7.0,
+          "max": 726.59,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaoafluente": {
+          "present": 744,
+          "null": 0,
+          "zero": 6,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-08 10:00:00",
+              "end_hour_end": "2020-07-08 15:00:00",
+              "hours": 6
+            }
+          ],
+          "min": 0.0,
+          "max": 9984.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaodefluente": {
+          "present": 744,
+          "null": 0,
+          "zero": 8,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-08 10:00:00",
+              "end_hour_end": "2020-07-08 17:00:00",
+              "hours": 8
+            }
+          ],
+          "min": 0.0,
+          "max": 9826.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaoturbinada": {
+          "present": 744,
+          "null": 0,
+          "zero": 58,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-07 23:00:00",
+              "end_hour_end": "2020-07-09 09:00:00",
+              "hours": 35
+            },
+            {
+              "start_hour_end": "2020-07-12 16:00:00",
+              "end_hour_end": "2020-07-13 10:00:00",
+              "hours": 19
+            },
+            {
+              "start_hour_end": "2020-07-28 06:00:00",
+              "end_hour_end": "2020-07-28 09:00:00",
+              "hours": 4
+            }
+          ],
+          "min": 0.0,
+          "max": 358.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaovertida": {
+          "present": 744,
+          "null": 0,
+          "zero": 144,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-05 04:00:00",
+              "end_hour_end": "2020-07-05 08:00:00",
+              "hours": 5
+            },
+            {
+              "start_hour_end": "2020-07-05 10:00:00",
+              "end_hour_end": "2020-07-05 17:00:00",
+              "hours": 8
+            },
+            {
+              "start_hour_end": "2020-07-08 10:00:00",
+              "end_hour_end": "2020-07-08 16:00:00",
+              "hours": 7
+            },
+            {
+              "start_hour_end": "2020-07-24 03:00:00",
+              "end_hour_end": "2020-07-28 06:00:00",
+              "hours": 100
+            },
+            {
+              "start_hour_end": "2020-07-28 19:00:00",
+              "end_hour_end": "2020-07-28 21:00:00",
+              "hours": 3
+            },
+            {
+              "start_hour_end": "2020-07-30 18:00:00",
+              "end_hour_end": "2020-07-30 18:00:00",
+              "hours": 1
+            },
+            {
+              "start_hour_end": "2020-07-31 05:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 20
+            }
+          ],
+          "min": 0.0,
+          "max": 9971.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 744,
+          "null": 0,
+          "zero": 1,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-05 09:00:00",
+              "end_hour_end": "2020-07-05 09:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 37.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaotransferida": {
+          "present": 744,
+          "null": 0,
+          "zero": 744,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 0,
+          "null": 744,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": null,
+          "max": null,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ]
+        }
+      },
+      "balance_check": {
+        "formula": "QDEF-QTUR-QVER-QOTR; no missing-as-zero",
+        "complete_component_rows": 744,
+        "abs_residual_gt_1_m3s": 8,
+        "max_abs_residual": 10008.0
+      },
+      "first_timestamp_original": "2020-07-01 01:00:00",
+      "last_timestamp_original": "2020-07-31 23:59:00"
+    },
+    {
+      "month": "2020-07",
+      "id_reservatorio": "JIUHMC",
+      "name": "MONTE CLARO",
+      "cod_usina": 98,
+      "source_basin_labels": [
+        "JACUI"
+      ],
+      "source_rows": 744,
+      "nominal_month_hours": 744,
+      "duplicate_original_timestamps": 0,
+      "duplicate_interpreted_hour_ends": 0,
+      "timestamps_2359": 31,
+      "other_off_grid_rows": 0,
+      "missing_rows_on_interpreted_grid": 0,
+      "missing_row_runs": [],
+      "outside_interpreted_grid": [],
+      "variables": {
+        "val_nivelmontante": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 147.02,
+          "max": 154.31,
+          "unavailable_hour_end_runs": []
+        },
+        "val_niveljusante": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 104.43,
+          "max": 123.54,
+          "unavailable_hour_end_runs": []
+        },
+        "val_volumeutil": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 1.89,
+          "max": 834.32,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaoafluente": {
+          "present": 744,
+          "null": 0,
+          "zero": 15,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-08 04:00:00",
+              "end_hour_end": "2020-07-08 18:00:00",
+              "hours": 15
+            }
+          ],
+          "min": 0.0,
+          "max": 9662.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaodefluente": {
+          "present": 744,
+          "null": 0,
+          "zero": 14,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-08 05:00:00",
+              "end_hour_end": "2020-07-08 18:00:00",
+              "hours": 14
+            }
+          ],
+          "min": 0.0,
+          "max": 9915.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaoturbinada": {
+          "present": 744,
+          "null": 0,
+          "zero": 88,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-07 20:00:00",
+              "end_hour_end": "2020-07-09 22:00:00",
+              "hours": 51
+            },
+            {
+              "start_hour_end": "2020-07-12 11:00:00",
+              "end_hour_end": "2020-07-13 22:00:00",
+              "hours": 36
+            },
+            {
+              "start_hour_end": "2020-07-28 19:00:00",
+              "end_hour_end": "2020-07-28 19:00:00",
+              "hours": 1
+            }
+          ],
+          "min": 0.0,
+          "max": 376.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaovertida": {
+          "present": 744,
+          "null": 0,
+          "zero": 14,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-08 05:00:00",
+              "end_hour_end": "2020-07-08 18:00:00",
+              "hours": 14
+            }
+          ],
+          "min": 0.0,
+          "max": 9915.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 744,
+          "null": 0,
+          "zero": 744,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaotransferida": {
+          "present": 744,
+          "null": 0,
+          "zero": 744,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 0,
+          "null": 744,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": null,
+          "max": null,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ]
+        }
+      },
+      "balance_check": {
+        "formula": "QDEF-QTUR-QVER-QOTR; no missing-as-zero",
+        "complete_component_rows": 744,
+        "abs_residual_gt_1_m3s": 0,
+        "max_abs_residual": 1.0
+      },
+      "first_timestamp_original": "2020-07-01 01:00:00",
+      "last_timestamp_original": "2020-07-31 23:59:00"
+    },
+    {
+      "month": "2020-07",
+      "id_reservatorio": "JIUHCA",
+      "name": "CASTRO ALVES",
+      "cod_usina": 97,
+      "source_basin_labels": [
+        "JACUI"
+      ],
+      "source_rows": 744,
+      "nominal_month_hours": 744,
+      "duplicate_original_timestamps": 0,
+      "duplicate_interpreted_hour_ends": 0,
+      "timestamps_2359": 31,
+      "other_off_grid_rows": 0,
+      "missing_rows_on_interpreted_grid": 0,
+      "missing_row_runs": [],
+      "outside_interpreted_grid": [],
+      "variables": {
+        "val_nivelmontante": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 239.13,
+          "max": 246.04,
+          "unavailable_hour_end_runs": []
+        },
+        "val_niveljusante": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 141.0,
+          "max": 160.07,
+          "unavailable_hour_end_runs": []
+        },
+        "val_volumeutil": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 13.0,
+          "max": 816.49,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaoafluente": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 116.0,
+          "max": 7938.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaodefluente": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 113.0,
+          "max": 7878.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaoturbinada": {
+          "present": 744,
+          "null": 0,
+          "zero": 22,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-08 02:00:00",
+              "end_hour_end": "2020-07-08 23:00:00",
+              "hours": 22
+            }
+          ],
+          "min": 0.0,
+          "max": 172.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaovertida": {
+          "present": 744,
+          "null": 0,
+          "zero": 86,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-26 11:00:00",
+              "end_hour_end": "2020-07-29 16:00:00",
+              "hours": 78
+            },
+            {
+              "start_hour_end": "2020-07-31 17:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 8
+            }
+          ],
+          "min": 0.0,
+          "max": 7854.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaooutrasestruturas": {
+          "present": 744,
+          "null": 0,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": 18.0,
+          "max": 25.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaotransferida": {
+          "present": 744,
+          "null": 0,
+          "zero": 744,
+          "negative": 0,
+          "zero_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ],
+          "min": 0.0,
+          "max": 0.0,
+          "unavailable_hour_end_runs": []
+        },
+        "val_vazaovertidanaoturbinavel": {
+          "present": 0,
+          "null": 744,
+          "zero": 0,
+          "negative": 0,
+          "zero_hour_end_runs": [],
+          "min": null,
+          "max": null,
+          "unavailable_hour_end_runs": [
+            {
+              "start_hour_end": "2020-07-01 01:00:00",
+              "end_hour_end": "2020-08-01 00:00:00",
+              "hours": 744
+            }
+          ]
+        }
+      },
+      "balance_check": {
+        "formula": "QDEF-QTUR-QVER-QOTR; no missing-as-zero",
+        "complete_component_rows": 744,
+        "abs_residual_gt_1_m3s": 0,
+        "max_abs_residual": 1.0
+      },
+      "first_timestamp_original": "2020-07-01 01:00:00",
+      "last_timestamp_original": "2020-07-31 23:59:00"
+    }
+  ]
+}

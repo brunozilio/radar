@@ -1,0 +1,103 @@
+{
+  "configured": true,
+  "policy_record": "bcfecae790d46a1db8555388913de8c0c0494a7ade5aea4a172d8fea74ad613c",
+  "policy": {
+    "dry_separation_hours": 72,
+    "independence_certified": false,
+    "max_observation_gap_minutes": 20,
+    "policy_id": "mucum-observed-clusters-v1",
+    "provenance": "Group latest approved Muçum observations per station and datum. Keep open, left-censored, and gap-affected episodes. Inventory may change with revisions; retain source receipt IDs, report cutoff and ledger tip.",
+    "rationale": "Conservative operational grouping, fixed without examining forecast residuals.72h is an analyst choice to be reviewed against basin event structure; it is not a calibrated or published Muçum independence criterion.",
+    "reference": "https://nrfa.ceh.ac.uk/data/about-data/peak-flow-data/data-types/peaks-over-threshold-pot",
+    "reference_scope": "NRFA documents that several peaks can belong to one event and that separation needs hydrological criteria. Its flow recession ratio is not directly transferred to gauge levels with an arbitrary datum. This policy does not claim to implement FEH/NRFA.",
+    "separation_role": "Require at least72h continuously sampled below7m on each side, with no adjacent approved samples separated by more than20min. Invalid/revised/missing observations reset the below-threshold run. Never infer a separating recession across a gap.",
+    "station_id": "86510000",
+    "status": "diagnostic grouping candidate; independence not certified",
+    "threshold_m": 7,
+    "threshold_role": "Analytical flood subset of the existing accuracy objective; not an official warning level."
+  },
+  "observed_clusters": 1,
+  "complete_observed_clusters": 0,
+  "certified_independent_events": 0,
+  "events": [
+    {
+      "event_id": "9f2806d96e56e502689c8137",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "first_exceedance_at": "2026-09-21T15:00:00+00:00",
+      "last_exceedance_at": "2026-09-21T20:45:00+00:00",
+      "peak_at": "2026-09-21T20:45:00+00:00",
+      "peak_level_m": 13.67,
+      "high_observation_count": 24,
+      "left_censored": false,
+      "closed_at": null,
+      "right_censored": true,
+      "has_observation_gaps": false,
+      "all_metadata_verified": false,
+      "separation_start_at": "2026-09-14T03:00:00+00:00",
+      "first_observation_receipt": "6c6d055a4f666f0072bdf0557713796f75532c2d207d34e1bb3f1517413babbc",
+      "last_observation_receipt": "6c6d055a4f666f0072bdf0557713796f75532c2d207d34e1bb3f1517413babbc",
+      "independence_certified": false,
+      "complete_observed_cluster": false
+    }
+  ],
+  "scorecard": [
+    {
+      "model_id": "hge_arno_reference",
+      "model_version": "source-snapshot:d8332f95bbfd60c4dbbb13b6d9ca331df3f026f8732a65a32fb72f09af67ef15",
+      "lead_h": -1,
+      "event_id": "9f2806d96e56e502689c8137",
+      "diagnostic_matched_pairs": 1,
+      "goal_eligible_pairs": 0,
+      "hits": 0,
+      "accuracy_percent": null,
+      "complete_observed_cluster": false,
+      "independence_certified": false
+    },
+    {
+      "model_id": "hge_arno_reference",
+      "model_version": "source-snapshot:d8332f95bbfd60c4dbbb13b6d9ca331df3f026f8732a65a32fb72f09af67ef15",
+      "lead_h": 0,
+      "event_id": "9f2806d96e56e502689c8137",
+      "diagnostic_matched_pairs": 1,
+      "goal_eligible_pairs": 0,
+      "hits": 0,
+      "accuracy_percent": null,
+      "complete_observed_cluster": false,
+      "independence_certified": false
+    },
+    {
+      "model_id": "radar_arvores_previsao_chuva",
+      "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+      "lead_h": -1,
+      "event_id": "9f2806d96e56e502689c8137",
+      "diagnostic_matched_pairs": 1,
+      "goal_eligible_pairs": 0,
+      "hits": 0,
+      "accuracy_percent": null,
+      "complete_observed_cluster": false,
+      "independence_certified": false
+    },
+    {
+      "model_id": "radar_arvores_previsao_chuva",
+      "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+      "lead_h": 0,
+      "event_id": "9f2806d96e56e502689c8137",
+      "diagnostic_matched_pairs": 1,
+      "goal_eligible_pairs": 0,
+      "hits": 0,
+      "accuracy_percent": null,
+      "complete_observed_cluster": false,
+      "independence_certified": false
+    }
+  ],
+  "goal_achieved": false,
+  "limitations": [
+    "A 72-hour below-threshold run is a conservative operational grouping candidate, not a verified independence criterion for this basin.",
+    "Open, left-censored and gap-affected clusters remain visible; missing data cannot establish separation.",
+    "Only exact approved observations define exceedances. Metadata validity is tracked separately.",
+    "Repeated forecasts for one episode do not become multiple independent events.",
+    "This inventory does not certify ten independent floods or infer uncertainty from treating hourly samples as independent.",
+    "A later observation revision can change the inventory; every report retains its ledger cutoff and source receipts."
+  ]
+}

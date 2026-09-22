@@ -41,11 +41,12 @@ import {
 import {
   accumulatedRain,
   parseAnaRecords,
-  parseSaceLevelRows,
   MUCUM_UPSTREAM_RAIN_STATIONS,
   SACE_LEVEL_SENSORS,
   saoPauloDate,
 } from "../lib/hydro.ts";
+import { collectMediaItems, recentMediaItems } from "../lib/media-collection.ts";
+import { collectLevelReadings, readLevelHistory } from "../lib/river-levels.ts";
 import type {
   AlertRainWindow,
   AlertRuleKind,
@@ -59,6 +60,7 @@ import {
   inmetSatelliteTimestamp,
   parseCeranTable,
   parseEpagriRadarFiles,
+  parseNoaaSatelliteFrames,
   parseRadarTimestampText,
   parseSaceBulletins,
 } from "../lib/sources.ts";
@@ -1701,7 +1703,7 @@ async function radarTimestamp(bytes: Buffer) {
 
 async function ingestRadar() {
   const cacheBust = Date.now().toString(36);
-  const slots = await Promise.all(
+  const results = await Promise.allSettled(
     Array.from({ length: 24 }, async (_, offset) => {
       const index = offset + 1;
       const sourceUrl = `${RADAR_BASE}/radar_poa_${index}.png`;
@@ -1709,100 +1711,50 @@ async function ingestRadar() {
       const response = await fetch(requestUrl, {
         method: "HEAD",
         cache: "no-store",
-        headers: {
-          "cache-control": "no-cache, no-store",
-          pragma: "no-cache",
-        },
+        headers: { "cache-control": "no-cache, no-store", pragma: "no-cache" },
         signal: AbortSignal.timeout(8_000),
       });
       if (!response.ok) throw new Error(`Radar ${index}: HTTP ${response.status}`);
       const etag = response.headers.get("etag")?.replaceAll('"', "");
       const modified = response.headers.get("last-modified") || "";
-      return {
-        index,
-        sourceUrl,
-        requestUrl,
-        sourceKey: `radar:${etag || `${sourceUrl}:${modified}`}`,
-        modifiedMs: Date.parse(modified),
-      };
+      return { index, sourceUrl, requestUrl, sourceKey: `radar:${etag || `${sourceUrl}:${modified}`}` };
     }),
   );
-
-  const candidates: Array<{
-    id: string;
-    bytes: Buffer;
-    mimeType: string;
-    sourceUrl: string;
-    sourceKey: string;
-    capturedAt: string;
-  }> = [];
-  const candidateIds = new Set<string>();
-
-  for (const slot of slots.sort((a, b) => b.index - a.index)) {
-    if (hasMediaSource.get(slot.sourceKey)) continue;
+  const slots = results.flatMap((result) => {
+    if (result.status === "fulfilled") return [result.value];
+    console.error("[worker] radar: falha ao consultar quadro:", result.reason);
+    return [];
+  });
+  // Climatempo slot 1 is the newest image; serve it before rebuilding history.
+  await collectMediaItems(slots.sort((a, b) => a.index - b.index), async (slot) => {
+    if (hasMediaSource.get(slot.sourceKey)) return 0;
     const response = await fetch(slot.requestUrl, {
       cache: "no-store",
-      headers: {
-        "cache-control": "no-cache, no-store",
-        pragma: "no-cache",
-      },
+      headers: { "cache-control": "no-cache, no-store", pragma: "no-cache" },
       signal: AbortSignal.timeout(15_000),
     });
-    if (!response.ok) continue;
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const bytes = Buffer.from(await response.arrayBuffer());
     const id = createHash("sha256").update(bytes).digest("hex");
-    if (hasMediaId.get(id) || candidateIds.has(id)) continue;
+    if (hasMediaId.get(id)) return 0;
     const capturedAt = await radarTimestamp(bytes);
-    if (!capturedAt) {
-      console.error(
-        `[worker] radar: horário não reconhecido em ${slot.sourceUrl}`,
-      );
-      continue;
-    }
-    candidateIds.add(id);
-    candidates.push({
-      id,
-      bytes,
-      mimeType: response.headers.get("content-type") || "image/png",
-      sourceUrl: slot.sourceUrl,
-      sourceKey: slot.sourceKey,
-      capturedAt,
-    });
-  }
-
-  let changes = 0;
-  for (const candidate of candidates.sort(
-    (a, b) => Date.parse(a.capturedAt) - Date.parse(b.capturedAt),
-  )) {
+    if (!capturedAt) throw new Error("horário não reconhecido");
+    if (!recentMediaItems([{ timestamp: capturedAt }]).length) return 0;
+    // OCR is shared and serialized; another slot may contain the same image.
+    if (hasMediaId.get(id)) return 0;
+    const mimeType = response.headers.get("content-type") || "image/png";
     const createdAt = nowIso();
     const filePath = await storeMediaObject({
-      id: candidate.id,
-      extension: "png",
-      bytes: candidate.bytes,
-      mimeType: candidate.mimeType,
-      kind: "radar",
-      capturedAt: candidate.capturedAt,
-      sourceUrl: candidate.sourceUrl,
-      sourceKey: candidate.sourceKey,
-      createdAt,
+      id, extension: "png", bytes, mimeType, kind: "radar", capturedAt,
+      sourceUrl: slot.sourceUrl, sourceKey: slot.sourceKey, createdAt,
     });
-    if (
-      inserted(
-        insertMedia,
-        candidate.id,
-        "radar",
-        candidate.capturedAt,
-        filePath,
-        candidate.mimeType,
-        candidate.sourceUrl,
-        candidate.sourceKey,
-        createdAt,
-      )
-    ) {
-      changes += 1;
-    }
-  }
-  broadcastMediaUpdate("radar", "radar", changes);
+    const changes = Number(inserted(insertMedia, id, "radar", capturedAt, filePath,
+      mimeType, slot.sourceUrl, slot.sourceKey, createdAt));
+    broadcastMediaUpdate("radar", "radar", changes);
+    return changes;
+  }, (error, slot) => {
+    console.error(`[worker] radar ${slot.sourceUrl}:`, error instanceof Error ? error.message : error);
+  });
 }
 
 let epagriBaseMapPromise: Promise<Buffer> | null = null;
@@ -1982,9 +1934,9 @@ async function ingestInmetSatellite() {
     hour: string;
     timestamp: string;
   }> = [];
-  for (const option of dates.slice(0, 2)) {
+  await collectMediaItems(dates.slice(0, 2), async (option) => {
     const date = option.sigla.slice(0, 10);
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return 0;
     const hours = await inmetJson<InmetOption[]>(
       `/horas/GOES/S/${INMET_SATELLITE_PRODUCT}/${encodeURIComponent(date)}`,
     );
@@ -1994,14 +1946,12 @@ async function ingestInmetSatellite() {
         slots.push({ date, dateKey: option.sigla, hour, timestamp });
       }
     }
-  }
+    return 0;
+  }, (error, option) => {
+    console.error(`[worker] satélite INMET horários ${option.sigla}:`, error instanceof Error ? error.message : error);
+  });
 
-  let changes = 0;
-  const recentSlots = slots
-    .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))
-    .slice(0, 50)
-    .reverse();
-  for (const { date, dateKey, hour, timestamp } of recentSlots) {
+  return collectMediaItems(recentMediaItems(slots), async ({ date, dateKey, hour, timestamp }) => {
     const sourceKey =
       `satellite:${INMET_SATELLITE_PRODUCT}:${date}:${hour}`;
     const legacySourceKey =
@@ -2010,14 +1960,15 @@ async function ingestInmetSatellite() {
       hasMediaSource.get(key),
     );
     if (existingSourceKey) {
-      changes += Number(
+      const changes = Number(
         updateMediaTimestamp.run(
           timestamp,
           existingSourceKey,
           timestamp,
         ).changes,
       );
-      continue;
+      broadcastMediaUpdate("satellite", INMET_SATELLITE_KIND, changes);
+      return changes;
     }
     const image = await inmetJson<InmetImage>(
       `/GOES/S/${INMET_SATELLITE_PRODUCT}/${encodeURIComponent(date)}/${encodeURIComponent(hour)}`,
@@ -2025,10 +1976,11 @@ async function ingestInmetSatellite() {
     const match = image.base64?.match(
       /^data:(image\/(?:jpeg|jpg|png));base64,(.+)$/,
     );
-    if (!match) continue;
+    if (!match) throw new Error("resposta sem imagem válida");
     const bytes = Buffer.from(match[2], "base64");
     const id = createHash("sha256").update(bytes).digest("hex");
-    if (hasMediaId.get(id)) continue;
+    if (hasMediaId.get(id)) return 0;
+    await sharp(bytes).metadata();
     const extension = match[1].includes("png") ? "png" : "jpg";
     const mimeType =
       match[1] === "image/jpg" ? "image/jpeg" : match[1];
@@ -2046,23 +1998,13 @@ async function ingestInmetSatellite() {
       sourceKey,
       createdAt,
     });
-    if (
-      inserted(
-        insertMedia,
-        id,
-        INMET_SATELLITE_KIND,
-        timestamp,
-        filePath,
-        mimeType,
-        sourceUrl,
-        sourceKey,
-        createdAt,
-      )
-    ) {
-      changes += 1;
-    }
-  }
-  return changes;
+    const changes = Number(inserted(insertMedia, id, INMET_SATELLITE_KIND,
+      timestamp, filePath, mimeType, sourceUrl, sourceKey, createdAt));
+    broadcastMediaUpdate("satellite", INMET_SATELLITE_KIND, changes);
+    return changes;
+  }, (error, slot) => {
+    console.error(`[worker] satélite INMET ${slot.date} ${slot.hour}:`, error instanceof Error ? error.message : error);
+  });
 }
 
 async function ingestCptecSatellite() {
@@ -2082,16 +2024,17 @@ async function ingestCptecSatellite() {
     throw new Error(`CPTEC respondeu HTTP ${response.status}`);
   }
   const logs = (await response.json()) as CptecSatelliteLog[];
-  let changes = 0;
-
-  for (const log of logs.slice().reverse()) {
-    if (!log.url || !log.filePath || !log.fileDate || !log.fileTime) continue;
+  const slots = logs.flatMap((log) => {
+    if (!log.url || !log.filePath || !log.fileDate || !log.fileTime) return [];
     const timestamp = cptecSatelliteTimestamp(log.fileDate, log.fileTime);
-    if (!timestamp) continue;
+    return timestamp ? [{ ...log, timestamp, url: log.url, filePath: log.filePath }] : [];
+  });
+  return collectMediaItems(recentMediaItems(slots), async (log) => {
+    const { timestamp } = log;
     const sourceKey =
       `satellite:CPTEC:1222:${CPTEC_SATELLITE_REGION_VERSION}:` +
       `${log.fileDate}:${log.fileTime}`;
-    if (hasMediaSource.get(sourceKey)) continue;
+    if (hasMediaSource.get(sourceKey)) return 0;
 
     const mapUrl = new URL(CPTEC_SATELLITE_MAP);
     mapUrl.search = new URLSearchParams({
@@ -2119,10 +2062,11 @@ async function ingestCptecSatellite() {
       },
       signal: AbortSignal.timeout(20_000),
     });
-    if (!imageResponse.ok) continue;
+    if (!imageResponse.ok) throw new Error(`HTTP ${imageResponse.status}`);
     const bytes = Buffer.from(await imageResponse.arrayBuffer());
     const id = createHash("sha256").update(bytes).digest("hex");
-    if (hasMediaId.get(id)) continue;
+    if (hasMediaId.get(id)) return 0;
+    await sharp(bytes).metadata();
     const mimeType =
       imageResponse.headers.get("content-type") || "image/png";
     const extension = mimeType.includes("png") ? "png" : "jpg";
@@ -2138,104 +2082,117 @@ async function ingestCptecSatellite() {
       sourceKey,
       createdAt,
     });
-    if (
-      inserted(
-        insertMedia,
-        id,
-        INMET_SATELLITE_KIND,
-        timestamp,
-        filePath,
-        mimeType,
-        log.url,
-        sourceKey,
-        createdAt,
-      )
-    ) {
-      changes += 1;
+    const changes = Number(inserted(insertMedia, id, INMET_SATELLITE_KIND,
+      timestamp, filePath, mimeType, log.url, sourceKey, createdAt));
+    broadcastMediaUpdate("satellite", INMET_SATELLITE_KIND, changes);
+    return changes;
+  }, (error, slot) => {
+    console.error(`[worker] satélite CPTEC ${slot.timestamp}:`, error instanceof Error ? error.message : error);
+  });
+}
+
+async function ingestNoaaSatellite() {
+  const response = await fetch(
+    "https://www.star.nesdis.noaa.gov/GOES/sector_band.php?band=13&length=12&sat=G19&sector=ssa",
+    { signal: AbortSignal.timeout(20_000) },
+  );
+  if (!response.ok) throw new Error(`NOAA respondeu HTTP ${response.status}`);
+  const slots = recentMediaItems(parseNoaaSatelliteFrames(await response.text()));
+  if (!slots.length) throw new Error("NOAA sem imagens recentes");
+  let available = false;
+  const changes = await collectMediaItems(slots, async ({ sourceUrl, timestamp }) => {
+    const sourceKey = `satellite:NOAA:ssa:13:${timestamp}`;
+    if (hasMediaSource.get(sourceKey)) {
+      available = true;
+      return 0;
     }
-  }
+    const image = await fetch(sourceUrl, { signal: AbortSignal.timeout(20_000) });
+    if (!image.ok) throw new Error(`HTTP ${image.status}`);
+    const bytes = Buffer.from(await image.arrayBuffer());
+    await sharp(bytes).metadata();
+    const id = createHash("sha256").update(bytes).digest("hex");
+    if (hasMediaId.get(id)) {
+      available = true;
+      return 0;
+    }
+    const createdAt = nowIso();
+    const filePath = await storeMediaObject({
+      id, extension: "jpg", bytes, mimeType: "image/jpeg",
+      kind: INMET_SATELLITE_KIND, capturedAt: timestamp,
+      sourceUrl, sourceKey, createdAt,
+    });
+    const count = Number(inserted(insertMedia, id, INMET_SATELLITE_KIND,
+      timestamp, filePath, "image/jpeg", sourceUrl, sourceKey, createdAt));
+    available = true;
+    broadcastMediaUpdate("satellite", INMET_SATELLITE_KIND, count);
+    return count;
+  }, (error, slot) => {
+    console.error(`[worker] satélite NOAA ${slot.timestamp}:`, error instanceof Error ? error.message : error);
+  });
+  if (!available) throw new Error("NOAA sem downloads disponíveis");
   return changes;
 }
 
 async function ingestSatellite() {
-  const results = await Promise.allSettled([
-    ingestInmetSatellite(),
-    ingestCptecSatellite(),
-  ]);
-  let changes = 0;
-  for (const result of results) {
-    if (result.status === "fulfilled") {
-      changes += result.value;
-    } else {
-      const message =
-        result.reason instanceof Error
-          ? result.reason.message
-          : String(result.reason);
-      console.error(`[worker] satélite redundante: ${message}`);
+  await Promise.all([
+    { source: "satellite-inmet", collect: ingestInmetSatellite },
+    { source: "satellite-cptec", collect: ingestCptecSatellite },
+    { source: "satellite-noaa", collect: ingestNoaaSatellite },
+  ].map(async ({ source, collect }) => {
+    try {
+      await collect();
+      upsertSourceStatus.run(source, "ok", nowIso(), null);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      const cause = error instanceof Error ? error.cause as { code?: string } | undefined : undefined;
+      const code = cause?.code && /^[A-Z_]+$/.test(cause.code) ? cause.code : null;
+      const reason = code || message.match(/HTTP \d{3}/)?.[0] ||
+        (error instanceof Error && error.name === "TimeoutError" ? "TIMEOUT" : "FETCH_ERROR");
+      upsertSourceStatus.run(source, "error", nowIso(), reason);
+      console.error(`[worker] ${source}: ${message}${code ? ` (${code})` : ""}`);
     }
-  }
-  broadcastMediaUpdate(
-    "satellite",
-    INMET_SATELLITE_KIND,
-    changes,
-  );
+  }));
 }
 
-async function ingestSace() {
-  const cutoff = Date.now() - 48 * 60 * 60 * 1000;
-  let changes = 0;
+async function ingestRiverLevels() {
   const latestReadings: Array<{
     sourceId: string;
     sourceName: string;
     timestamp: string;
     level: number;
   }> = [];
-  await Promise.allSettled(
+  await Promise.all(
     SACE_LEVEL_SENSORS.map(async (sensor) => {
-      const rows = parseSaceLevelRows(
-        await fetchText(sensor.csv, 8_000, true),
-      );
-      const latest = rows.reduce<(typeof rows)[number] | null>(
-        (current, row) =>
-          !current || Date.parse(row.timestamp) > Date.parse(current.timestamp)
-            ? row
-            : current,
-        null,
-      );
-      for (const row of rows) {
-        if (Date.parse(row.timestamp) < cutoff) continue;
-        if (
-          inserted(
-            insertSaceReading,
-            sensor.code,
-            row.timestamp,
-            row.level,
-            row.levelCm,
-            nowIso(),
-          )
-        ) {
-          changes += 1;
-          if (
-            latest?.timestamp === row.timestamp &&
-            Date.now() - Date.parse(row.timestamp) <= 20 * 60 * 1000
-          ) {
-            latestReadings.push({
-              sourceId: sensor.code,
-              sourceName: `${sensor.city} — ${sensor.name}`,
-              timestamp: row.timestamp,
-              level: row.level,
-            });
-          }
+      const previous = readLevelHistory(database, sensor.code, 1).at(-1);
+      const results = await collectLevelReadings(sensor, fetchText, (source, rows) => {
+        let changes = 0;
+        for (const row of rows) {
+          const changed = source === "SACE/SGB"
+            ? inserted(insertSaceReading, sensor.code, row.timestamp, row.level, row.levelCm, nowIso())
+            : inserted(insertRiverReading, sensor.code, row.timestamp, row.level, row.levelCm,
+                null, "unknown", source, nowIso());
+          if (changed) changes += 1;
         }
+        if (changes) {
+          broadcast("sace", { inserted: changes, stations: [sensor.code], source });
+        }
+      });
+      for (const { source, error } of results) {
+        upsertSourceStatus.run(`river-level:${source}:${sensor.code}`, error ? "error" : "ok", nowIso(), error);
+        if (error) console.error(`[worker] nível ${source} ${sensor.code}: ${error}`);
+      }
+      const latest = readLevelHistory(database, sensor.code, 1).at(-1);
+      if (latest && (!previous || Date.parse(latest.timestamp) > Date.parse(previous.timestamp)) &&
+          Date.now() - Date.parse(latest.timestamp) <= 20 * 60 * 1000) {
+        latestReadings.push({
+          sourceId: sensor.code,
+          sourceName: `${sensor.city} — ${sensor.name}`,
+          timestamp: latest.timestamp,
+          level: latest.level,
+        });
       }
     }),
   );
-  if (changes) {
-    broadcast("sace", {
-      inserted: changes,
-      stations: SACE_LEVEL_SENSORS.map((sensor) => sensor.code),
-    });
-  }
   const configured = new Set(
     (await alertTargets("river_level")).map((target) => target.sourceId),
   );
@@ -3096,7 +3053,7 @@ every("radar SC", 30_000, ingestEpagriRadar);
 every("satélite", 30_000, ingestSatellite);
 every("boletins", 60_000, ingestBulletins);
 every("alertas", 60_000, ingestAlerts);
-every("SACE Muçum", 60_000, ingestSace);
+every("níveis ANA + SACE", 60_000, ingestRiverLevels);
 every("CERAN", 5 * 60_000, ingestCeran);
 every("chuva ANA", 15 * 60_000, ingestRain);
 every("histórico DCRS", 5 * 60_000, ingestDcrsHistoric);

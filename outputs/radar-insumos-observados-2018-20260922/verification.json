@@ -1,0 +1,1296 @@
+{
+  "passed": true,
+  "check_count": 319,
+  "new_gets": 54,
+  "reused_sources": 8,
+  "source_count": 62,
+  "raw_records": 9626,
+  "output_records": 9626,
+  "identical_records_merged": 0,
+  "conflicting_timestamps": 0,
+  "status_counts": {
+    "parsed": 42,
+    "no_data_api": 20
+  },
+  "http_status_counts": {
+    "200": 62
+  },
+  "checks": [
+    {
+      "check": "27 station scope",
+      "passed": true
+    },
+    {
+      "check": "54 new +8 reused",
+      "passed": true
+    },
+    {
+      "check": "map unchanged",
+      "passed": true
+    },
+    {
+      "check": "requests registered before network",
+      "passed": true
+    },
+    {
+      "check": "new request scope exactly plan",
+      "passed": true
+    },
+    {
+      "check": "54 preserved attempt records",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-08-30--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-08-30--2018-09-05.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-08-30--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-08-30--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-08-30--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-08-30--2018-09-05.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-08-30--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-08-30--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-08-30--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-08-30--2018-09-05.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-08-30--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-08-30--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-08-30--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-08-30--2018-09-05.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-08-30--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-08-30--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-09-30--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-09-30--2018-10-06.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-09-30--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-09-30--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-09-30--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-09-30--2018-10-06.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-09-30--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-09-30--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-09-30--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-09-30--2018-10-06.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-09-30--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-09-30--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-09-30--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-09-30--2018-10-06.xml original hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-09-30--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-09-30--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-08-27--2018-08-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-08-27--2018-08-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-08-27--2018-08-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-08-27--2018-08-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-08-27--2018-08-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-08-27--2018-08-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-08-27--2018-08-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-08-27--2018-08-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-08-27--2018-08-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-08-27--2018-09-05.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-08-27--2018-09-05.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-08-27--2018-09-05.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-08-27--2018-08-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-08-27--2018-08-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-08-27--2018-08-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-09-27--2018-09-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-09-27--2018-09-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-09-27--2018-09-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-09-27--2018-09-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-09-27--2018-09-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-09-27--2018-09-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-09-27--2018-09-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-09-27--2018-09-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-09-27--2018-09-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-09-27--2018-10-06.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-09-27--2018-10-06.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-09-27--2018-10-06.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-09-27--2018-09-29.xml hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-09-27--2018-09-29.xml identity",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-09-27--2018-09-29.xml segment bounds",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86060010-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86099000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86102000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86117000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86125000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86125050-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86160000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86163000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86200900-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86280500-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86298000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86403000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86410800-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86447000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86448000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86450000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86471000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86472000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86472600-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86479000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86488000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86493000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86495500-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86500000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86504900-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86505500-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-08-27/ana-86510000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86060010-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86099000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86102000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86117000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86125000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86125050-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86160000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86163000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86200900-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86280500-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86298000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86403000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86410800-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86447000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86448000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86450000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86471000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86472000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86472600-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86479000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86488000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86493000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86495500-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86500000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86504900-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86505500-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "stations/2018-09-27/ana-86510000-all-qc.jsonl full XML dictionary roundtrip",
+      "passed": true
+    },
+    {
+      "check": "each source record represented once",
+      "passed": true
+    },
+    {
+      "check": "raw minus exact duplicate merges equals output",
+      "passed": true
+    },
+    {
+      "check": "54 series output",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-08-30--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-08-30--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-08-30--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-08-30--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86510000-2018-09-30--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472000-2018-09-30--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86472600-2018-09-30--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/reused-86500000-2018-09-30--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-08-27--2018-08-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-08-27--2018-08-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-08-27--2018-08-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-08-27--2018-09-05.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-08-27--2018-08-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86060010-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86099000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86102000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86117000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86125050-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86160000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86163000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86200900-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86280500-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86298000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86403000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86410800-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86447000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86448000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86450000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86471000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472000-2018-09-27--2018-09-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86472600-2018-09-27--2018-09-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86479000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86488000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86493000-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86495500-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86500000-2018-09-27--2018-09-29.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86504900-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86505500-2018-09-27--2018-10-06.xml final source hash",
+      "passed": true
+    },
+    {
+      "check": "raw/ana-86510000-2018-09-27--2018-09-29.xml final source hash",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "searched_at": "2026-09-21T20:54:33.890091+00:00",
+  "queries": [
+    "site.ons.org.br \"9999\" \"vazão\"",
+    "site.ceran.com.br \"defluência\" \"remanescente\"",
+    "site.ons.org.br \"RO-AO.BR.02\" \"Rev.09\"",
+    "site.ons.org.br \"076/2005\" \"consistência\"",
+    "\"9999\" \"hidráulicos\" domain:ons.org.br",
+    "\"9999\" \"vazão\" domains:ceran.com.br,dados.ons.org.br",
+    "\"076/2005R2\" OR \"076-2005\" OR \"076/2005\" domain:ons.org.br",
+    "\"9999\" \"SADHI\"",
+    "\"9999\" \"DADOS_HIDROLOGICOS_HO\"",
+    "\"dados hidrológicos\" \"cálculo\" site:ceran.com.br"
+  ],
+  "relevant_public_endpoints": [
+    "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHCA.php",
+    "https://dados.ons.org.br/dataset/dados_hidrologicos_ho"
+  ],
+  "outcomes": {
+    "sentinel_9999_definition": "NOT_FOUND",
+    "ceran_component_contract": "NOT_FOUND",
+    "ons_076_2005_R2_full_text": "NOT_FOUND",
+    "ons_RO_AO_BR02_newer_than_rev08_confirmed": "NOT_FOUND"
+  },
+  "discarded_matches": "Unrelated equipment manuals, energy-model input-format sentinel conventions, non-primary reproductions, and unrelated search noise were not used as evidence.",
+  "scope": "Bounded search, not proof of absence. No new source-download performed; primary cache retained."
+}

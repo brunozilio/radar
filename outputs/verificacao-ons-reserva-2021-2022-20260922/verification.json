@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "artifact_hashes_verified": 23,
+  "raw_csv_responses": 5,
+  "raw_rows_scanned": 556183,
+  "all_fields_reconciled_rows": 10941,
+  "all_asof_queries_reconciled": 39744,
+  "all_origins_reconciled": 2208,
+  "source_timestamps_modified": false,
+  "model_access": false,
+  "no_claim_of_physical_QI_validity": true,
+  "origin_coverage": [
+    {
+      "year": 2021,
+      "origins": 744,
+      "all_18_lookups_available": 744,
+      "uses_any_zero": 1,
+      "uses_any_negative": 0,
+      "uses_Q_zero_positive_components": 0,
+      "uses_Q_balance_residual_gt1": 0
+    },
+    {
+      "year": 2022,
+      "origins": 1464,
+      "all_18_lookups_available": 1464,
+      "uses_any_zero": 0,
+      "uses_any_negative": 0,
+      "uses_Q_zero_positive_components": 0,
+      "uses_Q_balance_residual_gt1": 0
+    }
+  ]
+}

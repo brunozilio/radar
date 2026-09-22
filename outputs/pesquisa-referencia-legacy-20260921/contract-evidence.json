@@ -1,0 +1,50 @@
+{
+  "inspected_at_utc": "2026-09-22T00:02:18.733800+00:00",
+  "new_urls_count": 3,
+  "same_wsdl_bytes_at_advertised_and_public_proxy": true,
+  "request_parameters": [
+    {
+      "minOccurs": "0",
+      "maxOccurs": "1",
+      "name": "codEstacao",
+      "type": "s:string"
+    },
+    {
+      "minOccurs": "0",
+      "maxOccurs": "1",
+      "name": "dataInicio",
+      "type": "s:string"
+    },
+    {
+      "minOccurs": "0",
+      "maxOccurs": "1",
+      "name": "dataFim",
+      "type": "s:string"
+    }
+  ],
+  "response_schema": "<xs:element xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" name=\"DadosHidrometeorologicosGeraisResponse\">\n        <xs:complexType>\n          <xs:sequence>\n            <xs:element minOccurs=\"0\" maxOccurs=\"1\" name=\"DadosHidrometeorologicosGeraisResult\">\n              <xs:complexType>\n                <xs:sequence>\n                  <xs:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\n                  <xs:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\" processContents=\"lax\" />\n                </xs:sequence>\n              </xs:complexType>\n            </xs:element>\n          </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n      ",
+  "response_has_explicit_DataHora": false,
+  "other_operations_owning_DataHora_parameter": [
+    "IncluirDados_CotaOnline",
+    "Excluir_CotaOnline"
+  ],
+  "operation_documentation_excerpt": "Sem a validação dos filtros (dados gerais).",
+  "operation_documentation_line": 588,
+  "bounded_literal_search": {
+    "UTC": [],
+    "GMT": [],
+    "Brasília": [],
+    "Brasilia": [],
+    "timezone": [],
+    "fuso": [],
+    "86510000": [],
+    "NivelFinal": [],
+    "datum": []
+  },
+  "conclusion": {
+    "legacy_DataHora_timezone_certified": false,
+    "station_level_reference_validity_2025_2026_certified": false,
+    "absence_scope": "Only inspected WSDL and reused public evidence; not a claim that no documentation exists elsewhere."
+  },
+  "caution": "DataHora parameters belong to write/delete methods, not to the target read response. No such write/delete method was called. No QC flags changed."
+}

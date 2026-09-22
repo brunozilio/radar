@@ -1,0 +1,58 @@
+{
+  "gate": [
+    {
+      "phase": "validation",
+      "subset": "all",
+      "reference_mae_m3_s": 70.5002082905167,
+      "candidate_mae_m3_s": 75.37711942470263,
+      "change_percent": 6.91758400782192,
+      "passed": false,
+      "n": 78558
+    },
+    {
+      "phase": "validation",
+      "subset": "high_flow",
+      "reference_mae_m3_s": 266.5798719361216,
+      "candidate_mae_m3_s": 277.15090309301775,
+      "change_percent": 3.9654273520804972,
+      "passed": false,
+      "n": 336
+    },
+    {
+      "phase": "test",
+      "subset": "all",
+      "reference_mae_m3_s": 142.356313704207,
+      "candidate_mae_m3_s": 130.89031316391322,
+      "change_percent": -8.05443765853493,
+      "passed": true,
+      "n": 23550
+    },
+    {
+      "phase": "test",
+      "subset": "high_flow",
+      "reference_mae_m3_s": 396.0328310665349,
+      "candidate_mae_m3_s": 301.95836947214497,
+      "change_percent": -23.754207786521896,
+      "passed": true,
+      "n": 3252
+    }
+  ],
+  "proceed_to_downstream_evaluation": false,
+  "promoted": false,
+  "goal_achieved": false,
+  "live_issuance": false,
+  "identical_source_target_pairs": 102108,
+  "prediction_failures_in_evaluation": 0,
+  "reference_metrics_reproduction_max_difference": 1.3642420526593924e-12,
+  "caveats": [
+    "All periods are previously inspected development; no independent or prospective gain.",
+    "Pooled rows overlap horizons and events and are not independent sample size.",
+    "July22 vs remainder is post-hoc diagnosis, not a replacement gate.",
+    "No claim about source correctness or physical importance of Monte Claro.",
+    "Same baseline exclusions for missing target or known origin flow remain."
+  ],
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/predictions.csv": "9b0cb5c60865d43938a5c4138d10459ecb6881171aa630bf2c50ed559d598fd9",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-sem-monte-20260921/protocol.json": "1cd0b2e3142704215f9b993507bf2694197b6fd0aaba820667d46269709e9c6a"
+  }
+}

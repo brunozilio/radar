@@ -1,0 +1,43 @@
+{
+  "scope": "Post-evaluation numerical diagnostic only; no data/model/score changes.",
+  "origin": "2022-05-29T23:00:00-03:00",
+  "year": 2022,
+  "family": "candidate120_plus2020",
+  "horizon_h": 4,
+  "base_m": 9.03,
+  "actual_m": 12.03,
+  "original_forecast_m": 11.945531397437842,
+  "reconstructed_forecast_m": 11.9162217457247,
+  "difference_m": -0.029309651713141704,
+  "trees": 180,
+  "trees_with_different_leaf": 1,
+  "changed_trees": [
+    {
+      "tree": 29,
+      "original_leaf": 27,
+      "reconstructed_leaf": 28,
+      "original_leaf_value": 0.027564367806613775,
+      "reconstructed_leaf_value": -0.0017452839065277793,
+      "contribution_change": -0.029309651713141555,
+      "first_divergence": {
+        "node": 26,
+        "feature": 115,
+        "feature_name": "Tainhas:P48",
+        "threshold": 76.2868852459016,
+        "original_value": 76.28688524590146,
+        "reconstructed_value": 76.28688524590164,
+        "original_left": true,
+        "reconstructed_left": false
+      }
+    }
+  ],
+  "input_sha256": {
+    "outputs/radar-matrizes-reservadas-2021-2022-20260922/2022/features.npz": "a420bcb929ed6e6098d5ee97638f1b9cc0ef5336f2361878a7f4b910c2aeea36",
+    "outputs/verificacao-radar-matrizes-reservadas-2021-2022-20260922/reconstructed-2022.npz": "05a37969842303b2537d713fce6ccc1cdb29adc5a3da7c657b51fdf86c60ef36",
+    "outputs/verificacao-radar-matrizes-reservadas-2021-2022-20260922/feature-catalog.csv": "f6c5d8728775025ddc0599ee989209c56fe6b3a1ab43747794c4a1cae93fbed9",
+    "outputs/congelamento-radar-reserva-2021-2022-20260922/models/candidate120_plus2020-4.joblib": "a500371abbe176f7a623211b565331ae857087053a03fafd8afc6069661f9419"
+  },
+  "inference_role": "Audit replay, not a new candidate or forecast issue.",
+  "model_modified": false,
+  "inputs_modified": false
+}

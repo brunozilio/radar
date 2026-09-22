@@ -1,0 +1,16 @@
+{
+  "scope": "Post-result descriptive training-weight composition, all24models; nofit orselection",
+  "source_hashes": {
+    "outputs/experimento-radar-historico-junho2024-20260922/prefit-masks.npz": "a36ca446454c68e867e50b5831916a082d09a26764ee562d5b6984454df778ff",
+    "outputs/experimento-radar-historico-junho2024-20260922/prefit-vectors.npz": "629c090a4613ef840ee2c48633556b94a6a146c90c5d74fa605d84c68d75278c",
+    "outputs/radar-matriz-recente-ancora-15min-20260922/features.npz": "2ea85131f130bc4ef0e954d8a24f6f77aa4d35d930b9ab8b6332cbbb95f5476b",
+    "outputs/radar-matriz-observada-junho2024-20260922/2024-06-15-features.npz": "3e74bf37377725b047d99c011b24289cdd63f7ade49f28f88f76e04247580ee8"
+  },
+  "groups": [
+    "all",
+    "target_ge7",
+    "target_ge9",
+    "abs_delta_ge1"
+  ],
+  "limitations": "Groups overlap; target used only for training diagnosis. Addedweight influence is descriptive, not attribution of forecast error."
+}

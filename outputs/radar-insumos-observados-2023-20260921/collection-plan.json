@@ -1,0 +1,789 @@
+{
+  "registered_at_utc": "2026-09-22T01:46:43.691209+00:00",
+  "window": [
+    "2023-08-29",
+    "2023-09-30"
+  ],
+  "warmup": [
+    "2023-08-29",
+    "2023-08-31"
+  ],
+  "potential_origins": "September2023; no matrix or labels constructed",
+  "stations": [
+    "86060010",
+    "86099000",
+    "86102000",
+    "86117000",
+    "86125000",
+    "86125050",
+    "86160000",
+    "86163000",
+    "86200900",
+    "86280500",
+    "86298000",
+    "86403000",
+    "86410800",
+    "86447000",
+    "86448000",
+    "86450000",
+    "86471000",
+    "86472000",
+    "86472600",
+    "86479000",
+    "86488000",
+    "86493000",
+    "86495500",
+    "86500000",
+    "86504900",
+    "86505500",
+    "86510000"
+  ],
+  "max_new_gets": 27,
+  "no_retry_without_review": true,
+  "new_jobs": [
+    {
+      "station": "86060010",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86060010",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86060010-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86099000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86099000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86099000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86099000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86102000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86102000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86102000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86102000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86117000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86117000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86117000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86117000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86125000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86125000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86125000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86125050",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86125050",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86125050-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86160000",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86160000",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86160000-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86163000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86163000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86163000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86163000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86200900",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86200900&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86200900",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86200900-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86280500",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86280500&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86280500",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86280500-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86298000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86298000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86298000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86298000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86403000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86403000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86403000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86403000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86410800",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86410800&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86410800",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86410800-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86447000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86447000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86447000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86447000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86448000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86448000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86448000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86448000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86450000",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86450000",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86450000-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86471000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86471000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86471000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86471000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86472000",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86472000",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86472000-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86472600",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86472600",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86472600-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86479000",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86479000",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86479000-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86488000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86488000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86488000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86488000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86493000",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86493000&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86493000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86493000-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86495500",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86495500&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86495500",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86495500-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86500000",
+      "start": "2023-09-05",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=05%2F09%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86500000",
+        "dataInicio": "05/09/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86500000-2023-09-05--2023-09-30.xml"
+    },
+    {
+      "station": "86504900",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86504900&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86504900",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86504900-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86505500",
+      "start": "2023-08-29",
+      "end": "2023-09-30",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86505500&dataInicio=29%2F08%2F2023&dataFim=30%2F09%2F2023",
+      "parameters": {
+        "codEstacao": "86505500",
+        "dataInicio": "29/08/2023",
+        "dataFim": "30/09/2023"
+      },
+      "file": "raw/ana-86505500-2023-08-29--2023-09-30.xml"
+    },
+    {
+      "station": "86510000",
+      "start": "2023-08-29",
+      "end": "2023-08-31",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=29%2F08%2F2023&dataFim=31%2F08%2F2023",
+      "parameters": {
+        "codEstacao": "86510000",
+        "dataInicio": "29/08/2023",
+        "dataFim": "31/08/2023"
+      },
+      "file": "raw/ana-86510000-2023-08-29--2023-08-31.xml"
+    }
+  ],
+  "reused": [
+    {
+      "station": "86060010",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86060010.xml",
+      "source_metadata": {
+        "station": "86060010",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86060010",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:28.786416+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:23 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86060010&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:29.267670+00:00",
+        "file": "raw/ana-86060010.xml",
+        "bytes": 123857,
+        "sha256": "54dc2d65a3b5373292ae4a11de177a1df51e813729e18a3c9a9ec7fce397c372"
+      },
+      "sha256": "54dc2d65a3b5373292ae4a11de177a1df51e813729e18a3c9a9ec7fce397c372",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86125050",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86125050.xml",
+      "source_metadata": {
+        "station": "86125050",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86125050",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:29.268331+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:23 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86125050&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:29.654373+00:00",
+        "file": "raw/ana-86125050.xml",
+        "bytes": 132027,
+        "sha256": "033e4f43933cc44ea64e440c62abe4c62fadb26285382a3ac8c91ba910119112"
+      },
+      "sha256": "033e4f43933cc44ea64e440c62abe4c62fadb26285382a3ac8c91ba910119112",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86160000",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86160000.xml",
+      "source_metadata": {
+        "station": "86160000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86160000",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:29.655152+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:24 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86160000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:30.253256+00:00",
+        "file": "raw/ana-86160000.xml",
+        "bytes": 527975,
+        "sha256": "4954f1ef09aae4b256a5ad3a0fd7184bcc8300325c5ee280e33a6a0417d3165d"
+      },
+      "sha256": "4954f1ef09aae4b256a5ad3a0fd7184bcc8300325c5ee280e33a6a0417d3165d",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86450000",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86450000.xml",
+      "source_metadata": {
+        "station": "86450000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86450000",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:30.253709+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:24 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86450000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:30.724010+00:00",
+        "file": "raw/ana-86450000.xml",
+        "bytes": 115867,
+        "sha256": "a3f505e1ebb4f0d37a00bfaf4a796121440321ca4b4510a37a3499eda444a4c2"
+      },
+      "sha256": "a3f505e1ebb4f0d37a00bfaf4a796121440321ca4b4510a37a3499eda444a4c2",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86472000",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86472000.xml",
+      "source_metadata": {
+        "station": "86472000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86472000",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:30.724730+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:25 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:31.366586+00:00",
+        "file": "raw/ana-86472000.xml",
+        "bytes": 561242,
+        "sha256": "90157d7321fc07a8f9d2de758b8c7edbe15aae0e05a19f1c028d8a024b0a9308"
+      },
+      "sha256": "90157d7321fc07a8f9d2de758b8c7edbe15aae0e05a19f1c028d8a024b0a9308",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86472600",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86472600.xml",
+      "source_metadata": {
+        "station": "86472600",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86472600",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:31.367094+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:26 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:31.694298+00:00",
+        "file": "raw/ana-86472600.xml",
+        "bytes": 1193,
+        "sha256": "53c31320701a00b8d178cba432810ff76160014b7be7c9992198ee70f40ea02e"
+      },
+      "sha256": "53c31320701a00b8d178cba432810ff76160014b7be7c9992198ee70f40ea02e",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86479000",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86479000.xml",
+      "source_metadata": {
+        "station": "86479000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86479000",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:31.694801+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:26 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86479000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:32.163944+00:00",
+        "file": "raw/ana-86479000.xml",
+        "bytes": 120896,
+        "sha256": "c9290f4eb39409842f4d396d28fa5bec0998000912b63185a05bb5cfe3e4a46e"
+      },
+      "sha256": "c9290f4eb39409842f4d396d28fa5bec0998000912b63185a05bb5cfe3e4a46e",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86500000",
+      "start": "2023-08-29",
+      "end": "2023-09-04",
+      "source_path": "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86500000.xml",
+      "source_metadata": {
+        "station": "86500000",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "parameters": {
+          "codEstacao": "86500000",
+          "dataInicio": "29/08/2023",
+          "dataFim": "04/09/2023"
+        },
+        "requested_at_utc": "2026-09-22T01:40:32.164706+00:00",
+        "status": "response_preserved",
+        "http_status": 200,
+        "headers": {
+          "Server": "nginx",
+          "Date": "Tue, 22 Sep 2026 01:40:26 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "response_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=29%2F08%2F2023&dataFim=04%2F09%2F2023",
+        "collected_at_utc": "2026-09-22T01:40:32.557803+00:00",
+        "file": "raw/ana-86500000.xml",
+        "bytes": 1193,
+        "sha256": "4b2bcb9463a93a4949f0a83ff3e2cb3365eacf36642a9802017b06242df47e1f"
+      },
+      "sha256": "4b2bcb9463a93a4949f0a83ff3e2cb3365eacf36642a9802017b06242df47e1f",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86510000",
+      "start": "2023-09-05",
+      "end": "2023-09-05",
+      "source_path": "outputs/historico-cheia-setembro-2023/raw/ana-86510000-05-09-2023.xml",
+      "source_metadata": {
+        "file": "raw/ana-86510000-05-09-2023.xml",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=05%2F09%2F2023&dataFim=05%2F09%2F2023",
+        "retrieved_at": "2026-09-21T19:36:01.886300+00:00",
+        "status": 200,
+        "bytes": 55221,
+        "sha256": "73db0694249bc89142bc1e641c81c38815ab611d2f64e66aa534f9b6f0e3d81c",
+        "rows": 76,
+        "snippet": "\n        <CQ_ChuvaFinal>Dado aprovado</CQ_ChuvaFinal>\r\n        <ChuvaFinal>5.20</ChuvaFinal>\r\n        <CQ_NivelSensor />\r\n        <NivelSensor />\r\n        <CQ_NivelDisplay />\r\n        <NivelDisplay />\r\n        <CQ_NivelManual />\r\n        <NivelManual />\r\n        <CQ_NivelFinal />\r\n        <NivelFinal />\r\n        <CQ_VazaoFinal />\r\n        <VazaoFinal />\r\n      </DadosHidrometereologicos>\r\n    </DocumentElement>\r\n  </diffgr:diffgram>\r\n</DataTable>",
+        "cache_used": true,
+        "cache_source": "outputs/pesquisa-hidrologica-2026-09-21/ana-86510000-05-09-2023.xml",
+        "parsed_rows": 76,
+        "source_errors": []
+      },
+      "sha256": "73db0694249bc89142bc1e641c81c38815ab611d2f64e66aa534f9b6f0e3d81c",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86510000",
+      "start": "2023-09-01",
+      "end": "2023-09-04",
+      "source_path": "outputs/historico-cheia-setembro-2023/raw/ana-01-09-2023--04-09-2023.xml",
+      "source_metadata": {
+        "file": "raw/ana-01-09-2023--04-09-2023.xml",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F09%2F2023&dataFim=04%2F09%2F2023",
+        "retrieved_at": "2026-09-21T20:58:55.031436+00:00",
+        "cache_used": false,
+        "http_status": 200,
+        "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F09%2F2023&dataFim=04%2F09%2F2023",
+        "headers": {
+          "Server": "nginx",
+          "Date": "Mon, 21 Sep 2026 20:58:50 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "bytes": 314246,
+        "sha256": "cb3d0f921425a3741ee09a9311f5848634e3ad6ac7673a35a416a803cfce6bdf",
+        "parsed_rows": 376,
+        "source_errors": []
+      },
+      "sha256": "cb3d0f921425a3741ee09a9311f5848634e3ad6ac7673a35a416a803cfce6bdf",
+      "status": "verified_reuse"
+    },
+    {
+      "station": "86510000",
+      "start": "2023-09-06",
+      "end": "2023-09-30",
+      "source_path": "outputs/historico-cheia-setembro-2023/raw/ana-06-09-2023--30-09-2023.xml",
+      "source_metadata": {
+        "file": "raw/ana-06-09-2023--30-09-2023.xml",
+        "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=06%2F09%2F2023&dataFim=30%2F09%2F2023",
+        "retrieved_at": "2026-09-21T20:58:55.466317+00:00",
+        "cache_used": false,
+        "http_status": 200,
+        "final_url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=06%2F09%2F2023&dataFim=30%2F09%2F2023",
+        "headers": {
+          "Server": "nginx",
+          "Date": "Mon, 21 Sep 2026 20:58:50 GMT",
+          "Content-Type": "text/xml; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close",
+          "Cache-Control": "private, max-age=0",
+          "X-AspNet-Version": "4.0.30319",
+          "X-Powered-By": "ASP.NET",
+          "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Content-Type-Options": "nosniff"
+        },
+        "bytes": 1562903,
+        "sha256": "776140cd53acba6d415263d145239673c95c898047b383d9b8a957fbb9c5f4fd",
+        "parsed_rows": 1912,
+        "source_errors": []
+      },
+      "sha256": "776140cd53acba6d415263d145239673c95c898047b383d9b8a957fbb9c5f4fd",
+      "status": "verified_reuse"
+    }
+  ],
+  "existing2023_xml_inventory": [
+    "outputs/historico-cheia-setembro-2023/raw/ana-01-09-2023--04-09-2023.xml",
+    "outputs/historico-cheia-setembro-2023/raw/ana-06-09-2023--30-09-2023.xml",
+    "outputs/historico-cheia-setembro-2023/raw/ana-86510000-05-09-2023.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86060010.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86125050.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86160000.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86450000.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86472000.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86472600.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86479000.xml",
+    "outputs/pesquisa-insumos-observados-2023-20260921/raw/ana-86500000.xml"
+  ],
+  "reference_hashes": {
+    "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+    "outputs/auditoria-latencias-chuva-20260921/latencies.json": "f0182f5670b715890c4973324f066b66a6c12810cb5bd76ee39f130c5d47252e",
+    "outputs/pesquisa-insumos-observados-2023-20260921/source-manifest.json": "3d5b05b9f4011699d79cfca92d19dd7157af81cefa15b7ae96e6a66fbeccf561",
+    "outputs/historico-cheia-setembro-2023/source-manifest.json": "9c311f85a25a153378221a3f6425aa51448b6364c801584d5f377894b769f3dd"
+  },
+  "exclusions": [
+    "No NWP requests",
+    "No ONS request",
+    "No training/matrix/imputation",
+    "No HGE/ARNO",
+    "Literal timestamps and ALL QC retained"
+  ]
+}

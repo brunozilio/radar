@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "station": "encantado",
+  "generatedAt": "2026-09-21T22:56:06.317629-03:00",
+  "referenceAt": "2026-09-21T22:00:00-03:00",
+  "experimental": true,
+  "intervalMinutes": 15,
+  "horizonHours": 6,
+  "modelVersion": "encantado-6h-v1",
+  "observation": {
+    "timestamp": "2026-09-21T22:00:00-03:00",
+    "level": 13.7
+  },
+  "models": [
+    {
+      "id": "radar_encantado_v1",
+      "label": "Modelo de previs\u00e3o de Encantado",
+      "points": [
+        {
+          "timestamp": "2026-09-21T23:00:00-03:00",
+          "level": 14.273827421881437
+        },
+        {
+          "timestamp": "2026-09-22T00:00:00-03:00",
+          "level": 14.722709151267397
+        },
+        {
+          "timestamp": "2026-09-22T01:00:00-03:00",
+          "level": 15.209722296363175
+        },
+        {
+          "timestamp": "2026-09-22T02:00:00-03:00",
+          "level": 15.502775646660634
+        },
+        {
+          "timestamp": "2026-09-22T03:00:00-03:00",
+          "level": 15.667830189305656
+        },
+        {
+          "timestamp": "2026-09-22T04:00:00-03:00",
+          "level": 15.99449347629878
+        }
+      ]
+    }
+  ]
+}

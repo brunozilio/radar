@@ -1,0 +1,118 @@
+{
+  "source_manifest_sha256": "dc86055d4618dbeb612c6f490bb3589b2b49184ee606896040252b43e67f03f3",
+  "contrasts": 576,
+  "candidate_vs_matching_control": [
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "all",
+      "hit_horizons": {
+        "unchanged": 1,
+        "regressed": 9,
+        "improved": 2
+      },
+      "mae_horizons": {
+        "regressed": 12
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "hit_horizons": {
+        "improved": 5,
+        "unchanged": 2,
+        "regressed": 5
+      },
+      "mae_horizons": {
+        "improved": 5,
+        "regressed": 7
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "all",
+      "hit_horizons": {
+        "regressed": 7,
+        "improved": 5
+      },
+      "mae_horizons": {
+        "regressed": 7,
+        "improved": 5
+      }
+    },
+    {
+      "phase": "test",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "hit_horizons": {
+        "unchanged": 2,
+        "improved": 4,
+        "regressed": 6
+      },
+      "mae_horizons": {
+        "regressed": 8,
+        "improved": 4
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "all",
+      "hit_horizons": {
+        "improved": 3,
+        "regressed": 9
+      },
+      "mae_horizons": {
+        "regressed": 10,
+        "improved": 2
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "A",
+      "subset": "level_ge_7m",
+      "hit_horizons": {
+        "unchanged": 4,
+        "improved": 6,
+        "regressed": 2
+      },
+      "mae_horizons": {
+        "improved": 9,
+        "regressed": 3
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "all",
+      "hit_horizons": {
+        "improved": 7,
+        "regressed": 5
+      },
+      "mae_horizons": {
+        "regressed": 7,
+        "improved": 5
+      }
+    },
+    {
+      "phase": "validation",
+      "profile": "B",
+      "subset": "level_ge_7m",
+      "hit_horizons": {
+        "unchanged": 2,
+        "regressed": 6,
+        "improved": 4
+      },
+      "mae_horizons": {
+        "regressed": 10,
+        "improved": 2
+      }
+    }
+  ],
+  "paired_profile_views_are_not_independent_events": true,
+  "independent_test": false,
+  "promoted": false,
+  "goal_achieved": false
+}

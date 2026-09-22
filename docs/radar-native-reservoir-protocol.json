@@ -1,0 +1,14 @@
+{
+  "id": "radar-native-missing-plus-reservoirs-v1",
+  "scope": "Radar only; historical development, no live issuance or promotion.",
+  "motivation": "The reservoir-only candidate had mixed historical gains and17/24 reservoir inputs outside actual test-training ranges in the21h snapshot. Complete24 training excludes many historical flood rows. Evaluate the previously untested combination, without claiming new independent validation.",
+  "families": ["baseline", "native_only", "reservoir_only", "combined"],
+  "change": "Fit24 combined models on the frozen204-column reservoir feature matrix. Require finite Muçum base and target, but do not require first24 telemetry predictors to be finite. Preserve native missing handling for all predictors, weights and original horizon-specific tree parameters.",
+  "controls": "Reuse predictions and all72 frozen baseline/native-only/reservoir-only models from the previous two experiments. Never refit controls. Confirm keys, target, base, baseline forecasts and availability exactly equal between archived experiments.",
+  "training": "Original chronological training_masks candidate memberships, original validation and test cutoffs/boundary exclusions; max_iter180, min_samples_leaf35, learning_rate0.055, l2_regularization10, early_stoppingFalse, seed57, leaf/loss fixed per horizon. Weights1+2*(abs(target-base)>=1)+2*(target>=9). Same runtime as both prior experiments. No search, clipping, imputation, outlier removal, horizon mixing or posthoc membership changes.",
+  "evaluation": "Same102084 scheduled rows, nominal horizons1..12, both historical phases, all and level>=7m subsets, full_schedule/complete24/missing24 populations. Report coverage, failures, hits within0.50m, MAE,bias,P98,max for all four families; preserve predictions with unknown target.",
+  "limits": "All periods previously inspected development; original validation used for parameter selection. Source latency/timezone/datum/revisions and forecast-vintage assumptions unchanged. No prospective or98percent claim. Fit expansion cannot create evidence for extremes absent from the archive. Promotion requires independent temporal event validation.",
+  "live_issuance": false,
+  "promoted": false,
+  "goal_achieved": false
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "phase": "validation",
+    "subset": "all",
+    "horizons": 12,
+    "hit_better": 10,
+    "hit_worse": 2,
+    "hit_equal": 0,
+    "mae_better": 9,
+    "mae_worse": 3,
+    "maximum_error_worse": 5
+  },
+  {
+    "phase": "validation",
+    "subset": "level_ge_7m",
+    "horizons": 12,
+    "hit_better": 4,
+    "hit_worse": 5,
+    "hit_equal": 3,
+    "mae_better": 4,
+    "mae_worse": 8,
+    "maximum_error_worse": 5
+  },
+  {
+    "phase": "test",
+    "subset": "all",
+    "horizons": 12,
+    "hit_better": 8,
+    "hit_worse": 4,
+    "hit_equal": 0,
+    "mae_better": 9,
+    "mae_worse": 3,
+    "maximum_error_worse": 6
+  },
+  {
+    "phase": "test",
+    "subset": "level_ge_7m",
+    "horizons": 12,
+    "hit_better": 8,
+    "hit_worse": 3,
+    "hit_equal": 1,
+    "mae_better": 9,
+    "mae_worse": 3,
+    "maximum_error_worse": 6
+  }
+]

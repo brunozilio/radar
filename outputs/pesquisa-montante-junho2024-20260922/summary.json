@@ -1,0 +1,265 @@
+{
+  "generated_utc": "2026-09-22T06:50:13.442195+00:00",
+  "stations": [
+    {
+      "station": "86472000",
+      "name": "Linha José Júlio",
+      "response_status": "records",
+      "http_status": 200,
+      "error_texts": [],
+      "records": 672,
+      "unique_timestamps": 672,
+      "first_literal": "2024-06-15 00:00:00",
+      "last_literal": "2024-06-21 23:45:00",
+      "cadence_seconds": {
+        "900": 671
+      },
+      "expected_quarter_rows": 672,
+      "missing_quarter_timestamps": 0,
+      "missing_exact_hour_timestamps": 0,
+      "duplicates": 0,
+      "conflicts": 0,
+      "fields": {
+        "NivelFinal": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 672,
+          "finite": 0,
+          "qc": {
+            "<empty>": 672
+          },
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelSensor": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 672,
+          "finite": 0,
+          "qc": {
+            "<empty>": 672
+          },
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelManual": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 672,
+          "finite": 0,
+          "qc": {
+            "<empty>": 672
+          },
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelDisplay": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 672,
+          "finite": 0,
+          "qc": {
+            "<empty>": 672
+          },
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        }
+      },
+      "final_sensor_both_finite": 0,
+      "final_sensor_equal": 0,
+      "anchor_origins": 168,
+      "anchor_eligible": 0,
+      "anchor_reasons": {
+        "no_record_at_or_before_query": 1,
+        "missing_final_level": 167
+      },
+      "delay_minutes": 30,
+      "max_age_after_query_minutes": 15
+    },
+    {
+      "station": "86472600",
+      "name": "Santa Tereza",
+      "response_status": "records",
+      "http_status": 200,
+      "error_texts": [],
+      "records": 672,
+      "unique_timestamps": 672,
+      "first_literal": "2024-06-15 00:00:00",
+      "last_literal": "2024-06-21 23:45:00",
+      "cadence_seconds": {
+        "900": 671
+      },
+      "expected_quarter_rows": 672,
+      "missing_quarter_timestamps": 0,
+      "missing_exact_hour_timestamps": 0,
+      "duplicates": 0,
+      "conflicts": 0,
+      "fields": {
+        "NivelFinal": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 0,
+          "finite": 672,
+          "qc": {
+            "Dado aprovado": 672
+          },
+          "finite_approved": 672,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": 152.0,
+          "approved_max": 1638.0,
+          "approved_max_at": [
+            "2024-06-17 11:00:00"
+          ]
+        },
+        "NivelSensor": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 0,
+          "finite": 672,
+          "qc": {
+            "Dado aprovado": 672
+          },
+          "finite_approved": 672,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": 152.0,
+          "approved_max": 1638.0,
+          "approved_max_at": [
+            "2024-06-17 11:00:00"
+          ]
+        },
+        "NivelManual": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 672,
+          "finite": 0,
+          "qc": {
+            "<empty>": 672
+          },
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelDisplay": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 672,
+          "finite": 0,
+          "qc": {
+            "<empty>": 672
+          },
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        }
+      },
+      "final_sensor_both_finite": 672,
+      "final_sensor_equal": 672,
+      "anchor_origins": 168,
+      "anchor_eligible": 167,
+      "anchor_reasons": {
+        "no_record_at_or_before_query": 1,
+        "available": 167
+      },
+      "delay_minutes": 15,
+      "max_age_after_query_minutes": 15
+    },
+    {
+      "station": "86500000",
+      "name": "Passo Carreiro",
+      "response_status": "explicit_sem_dados",
+      "http_status": 200,
+      "error_texts": [
+        "Sem dados para esta estação (Código: 86500000) no período solicitado!"
+      ],
+      "records": 0,
+      "unique_timestamps": 0,
+      "first_literal": null,
+      "last_literal": null,
+      "cadence_seconds": {},
+      "expected_quarter_rows": 672,
+      "missing_quarter_timestamps": 672,
+      "missing_exact_hour_timestamps": 168,
+      "duplicates": 0,
+      "conflicts": 0,
+      "fields": {
+        "NivelFinal": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 0,
+          "finite": 0,
+          "qc": {},
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelSensor": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 0,
+          "finite": 0,
+          "qc": {},
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelManual": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 0,
+          "finite": 0,
+          "qc": {},
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        },
+        "NivelDisplay": {
+          "field_omitted": 0,
+          "null_or_nonfinite": 0,
+          "finite": 0,
+          "qc": {},
+          "finite_approved": 0,
+          "negative": 0,
+          "zero": 0,
+          "approved_min": null,
+          "approved_max": null,
+          "approved_max_at": []
+        }
+      },
+      "final_sensor_both_finite": 0,
+      "final_sensor_equal": 0,
+      "anchor_origins": 168,
+      "anchor_eligible": 0,
+      "anchor_reasons": {
+        "no_record_at_or_before_query": 168
+      },
+      "delay_minutes": 30,
+      "max_age_after_query_minutes": 15
+    }
+  ],
+  "no_matrix_or_model": true,
+  "units": "ANA original fields preserved. SantaTereza bulletin expressly cm; two timestamp comparisons below. No per-record unit or timezone in XML.",
+  "time_interpretation": "Literal timezone-naive source times; no DST conversion/rounding. Delay is experiment convention, not certified historic publication availability.",
+  "no_invalid_record_bypass": true
+}

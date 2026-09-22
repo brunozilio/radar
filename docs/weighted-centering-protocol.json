@@ -1,0 +1,19 @@
+{
+  "experiment_id": "upstream-weighted-centering-v1",
+  "families": ["reference_delta", "weighted_delta", "reference_absolute", "weighted_absolute"],
+  "sources": ["julho", "carreiro"],
+  "scope": "Local ridge experiment. No live changes,2023 augmentation, anomaly masks or nonnegative coefficient restrictions.",
+  "change": "Use weighted predictor centering and weighted target mean to fit an unpenalized intercept jointly with ridge slopes. Preserve unweighted training standard deviations and medians so centering is the isolated change within each response family.",
+  "alpha": 1000,
+  "weights": "1+2*(target>2 in1000m3/s), normalized to mean1 on training rows",
+  "features": "Unchanged full53features from frozen15h latency inputs, including delta/slope features. Both response families use the identical feature matrix.",
+  "responses": "Delta=target-known with known restored at prediction; absolute=target. Compare centering within each response before comparing to the operational reference.",
+  "splits": "Same previously inspected chronological development partitions at2025-10-01,2026-07-01,2026-09-21 UTC-03; training targets strictly before the respective boundary.",
+  "leads_h": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "selection": "Fixed parameters; record MAE,bias,P90 overall and high-flow at unchanged source95th-percentile threshold before validation. No tuning on results. Paired targets must be identical across all families.",
+  "numeric_checks": "Independent augmented least-squares test with unpenalized intercept; uniform-weight equivalence; training-only transforms; normal-equation residual and weighted mean training residual checked before clipping.",
+  "current_source": "outputs/mucum-hourly-20260921T180020-0300",
+  "promotion": false,
+  "live_issuance": false,
+  "goal_achieved": false
+}

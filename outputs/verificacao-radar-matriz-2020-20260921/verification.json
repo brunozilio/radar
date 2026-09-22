@@ -1,0 +1,547 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "hourly_times",
+      "cells": 480,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86510000 raw exact",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86510000 delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86472000 raw exact",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86472000 delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "86472600 raw exact",
+      "cells": 2208,
+      "max_abs": 0
+    },
+    {
+      "name": "86472600 delayed",
+      "cells": 2208,
+      "max_abs": 0
+    },
+    {
+      "name": "86500000 raw exact",
+      "cells": 2208,
+      "max_abs": 0
+    },
+    {
+      "name": "86500000 delayed",
+      "cells": 2208,
+      "max_abs": 0
+    },
+    {
+      "name": "base",
+      "cells": 480,
+      "max_abs": 0.0
+    },
+    {
+      "name": "truth exact",
+      "cells": 480,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoQ raw",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoQ delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoI raw",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "julhoI delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteQ raw",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteQ delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteI raw",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "monteI delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroQ raw",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroQ delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroI raw",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "castroI delayed",
+      "cells": 2208,
+      "max_abs": 0.0
+    },
+    {
+      "name": "all45 level and ONS fields",
+      "cells": 21600,
+      "max_abs": 0.0
+    },
+    {
+      "name": "36000 rain cells independently integrated",
+      "cells": 36000,
+      "max_abs": 2.2737367544323206e-13
+    },
+    {
+      "name": "all120 columns",
+      "cells": 57600,
+      "max_abs": 2.2737367544323206e-13
+    },
+    {
+      "name": "8640 QI traces mapped to10080 matrix cells",
+      "cells": 10080,
+      "max_abs": 0.0
+    }
+  ],
+  "shape": [
+    480,
+    120
+  ],
+  "nan_cells": 13634,
+  "finite_base": 453,
+  "finite_truth": 454,
+  "level_trace_rows": 1920,
+  "ons": [
+    {
+      "plant": "julho",
+      "field": "Q",
+      "finite_hourly": 480,
+      "literal_2359_selected": 20
+    },
+    {
+      "plant": "julho",
+      "field": "I",
+      "finite_hourly": 480,
+      "literal_2359_selected": 20
+    },
+    {
+      "plant": "monte",
+      "field": "Q",
+      "finite_hourly": 480,
+      "literal_2359_selected": 20
+    },
+    {
+      "plant": "monte",
+      "field": "I",
+      "finite_hourly": 480,
+      "literal_2359_selected": 20
+    },
+    {
+      "plant": "castro",
+      "field": "Q",
+      "finite_hourly": 480,
+      "literal_2359_selected": 20
+    },
+    {
+      "plant": "castro",
+      "field": "I",
+      "finite_hourly": 480,
+      "literal_2359_selected": 20
+    }
+  ],
+  "rain_stations": [
+    {
+      "station": "86060010",
+      "rows": 504,
+      "valid_intervals": 487,
+      "effective_delay_seconds": 25200
+    },
+    {
+      "station": "86099000",
+      "rows": 537,
+      "valid_intervals": 532,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86102000",
+      "rows": 543,
+      "valid_intervals": 541,
+      "effective_delay_seconds": 18000
+    },
+    {
+      "station": "86117000",
+      "rows": 547,
+      "valid_intervals": 544,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86125000",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 10800
+    },
+    {
+      "station": "86125050",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86160000",
+      "rows": 2172,
+      "valid_intervals": 2050,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86163000",
+      "rows": 247,
+      "valid_intervals": 246,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86200900",
+      "rows": 552,
+      "valid_intervals": 540,
+      "effective_delay_seconds": 14400
+    },
+    {
+      "station": "86280500",
+      "rows": 160,
+      "valid_intervals": 156,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86298000",
+      "rows": 543,
+      "valid_intervals": 478,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86403000",
+      "rows": 546,
+      "valid_intervals": 541,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86410800",
+      "rows": 551,
+      "valid_intervals": 525,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86447000",
+      "rows": 91,
+      "valid_intervals": 42,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86448000",
+      "rows": 397,
+      "valid_intervals": 386,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86450000",
+      "rows": 164,
+      "valid_intervals": 134,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86471000",
+      "rows": 534,
+      "valid_intervals": 461,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86472000",
+      "rows": 2208,
+      "valid_intervals": 2207,
+      "effective_delay_seconds": 1800
+    },
+    {
+      "station": "86472600",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 900
+    },
+    {
+      "station": "86479000",
+      "rows": 549,
+      "valid_intervals": 547,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86488000",
+      "rows": 550,
+      "valid_intervals": 548,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86493000",
+      "rows": 547,
+      "valid_intervals": 495,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86495500",
+      "rows": 545,
+      "valid_intervals": 505,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86500000",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 1800
+    },
+    {
+      "station": "86504900",
+      "rows": 0,
+      "valid_intervals": 0,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86505500",
+      "rows": 549,
+      "valid_intervals": 547,
+      "effective_delay_seconds": 3600
+    },
+    {
+      "station": "86510000",
+      "rows": 2208,
+      "valid_intervals": 2202,
+      "effective_delay_seconds": 900
+    }
+  ],
+  "target_coverage": [
+    {
+      "horizon_h": 1,
+      "valid_pairs": 447,
+      "finite_targets": 453,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 1,
+      "base_missing_target_finite": 6,
+      "base_finite_target_missing": 6,
+      "maximum_response_m": 1.7199999999999989
+    },
+    {
+      "horizon_h": 2,
+      "valid_pairs": 445,
+      "finite_targets": 452,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 2,
+      "base_missing_target_finite": 7,
+      "base_finite_target_missing": 8,
+      "maximum_response_m": 3.0
+    },
+    {
+      "horizon_h": 3,
+      "valid_pairs": 443,
+      "finite_targets": 451,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 3,
+      "base_missing_target_finite": 8,
+      "base_finite_target_missing": 10,
+      "maximum_response_m": 4.210000000000001
+    },
+    {
+      "horizon_h": 4,
+      "valid_pairs": 441,
+      "finite_targets": 450,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 4,
+      "base_missing_target_finite": 9,
+      "base_finite_target_missing": 12,
+      "maximum_response_m": 5.380000000000001
+    },
+    {
+      "horizon_h": 5,
+      "valid_pairs": 439,
+      "finite_targets": 449,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 5,
+      "base_missing_target_finite": 10,
+      "base_finite_target_missing": 14,
+      "maximum_response_m": 6.529999999999999
+    },
+    {
+      "horizon_h": 6,
+      "valid_pairs": 437,
+      "finite_targets": 448,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 6,
+      "base_missing_target_finite": 11,
+      "base_finite_target_missing": 16,
+      "maximum_response_m": 7.6
+    },
+    {
+      "horizon_h": 7,
+      "valid_pairs": 435,
+      "finite_targets": 447,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 7,
+      "base_missing_target_finite": 12,
+      "base_finite_target_missing": 18,
+      "maximum_response_m": 8.499999999999998
+    },
+    {
+      "horizon_h": 8,
+      "valid_pairs": 433,
+      "finite_targets": 446,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 8,
+      "base_missing_target_finite": 13,
+      "base_finite_target_missing": 20,
+      "maximum_response_m": 9.25
+    },
+    {
+      "horizon_h": 9,
+      "valid_pairs": 431,
+      "finite_targets": 445,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 9,
+      "base_missing_target_finite": 14,
+      "base_finite_target_missing": 22,
+      "maximum_response_m": 9.990000000000002
+    },
+    {
+      "horizon_h": 10,
+      "valid_pairs": 429,
+      "finite_targets": 444,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 10,
+      "base_missing_target_finite": 15,
+      "base_finite_target_missing": 24,
+      "maximum_response_m": 10.740000000000002
+    },
+    {
+      "horizon_h": 11,
+      "valid_pairs": 427,
+      "finite_targets": 443,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 11,
+      "base_missing_target_finite": 16,
+      "base_finite_target_missing": 26,
+      "maximum_response_m": 11.25
+    },
+    {
+      "horizon_h": 12,
+      "valid_pairs": 426,
+      "finite_targets": 442,
+      "target_missing_within_grid": 26,
+      "target_beyond_window": 12,
+      "base_missing_target_finite": 16,
+      "base_finite_target_missing": 27,
+      "maximum_response_m": 11.530000000000001
+    }
+  ],
+  "base_vs_truth": {
+    "origins": 480,
+    "base_missing": 27,
+    "truth_current_missing": 26,
+    "both_missing": 22,
+    "base_finite_truth_missing": 4,
+    "base_missing_truth_finite": 5,
+    "base_source_exact_query": 480,
+    "base_source_carried_after_query": 0,
+    "base_missing_qc": {
+      "None": 4,
+      "Dado suspeito": 23
+    },
+    "truth_missing_qc": {
+      "None": 3,
+      "Dado suspeito": 23
+    }
+  },
+  "qi_trace_count": 8640,
+  "zero_qi_trace_count": 131,
+  "origins_with_zero_qi": 23,
+  "origins_with_contradictory_components": 16,
+  "qi_flags_did_not_modify_values": true,
+  "limits": [
+    "All-QC normalization previously compared fieldwise against raw XML; this audit verifies hashes and reconstructs source selection/integration.",
+    "Monthly ONS normalized source CSVs used verbatim and raw hashes verified; JulyParquet not independently redecoded here.",
+    "Presumed2026availability lags applied to2020; not certified issue/receipt logs, timezone, gauge datum or plant regime.",
+    "No training, new queries, interpolation, rounding, promotion or changes to2021/22."
+  ],
+  "source_sha256": {
+    "outputs/radar-matriz-observada-2020-20260921/artifact-hashes.json": "5e3ae47b0ce3b64bb7c7ff03d6c40f474569f01966fb09836bb92226630360ce",
+    "outputs/radar-insumos-observados-2020-20260921/artifact-hashes.json": "ac991a60c31c3fd9efdf7b68a916e21a5c28e463173920026740e7772067b084",
+    "outputs/auditoria-qi-radar-2020-20260921/artifact-hashes.json": "c765b8ffac4bc1a7a2750d6be4f3e77f69135a8607416e43e698d83813bab4b5",
+    "outputs/auditoria-latencias-chuva-20260921/artifact-hashes.json": "56d9866727adcc2a43634432569b4194448716dd66e63685000e3d6c7c4acb4d",
+    "outputs/radar-matriz-observada-2020-20260921/preparation.json": "2b8359df84974ff3a8d68c0b4e8e4a8c3b1f308a8b0ab684250eb27ef4009af9",
+    "outputs/radar-matriz-observada-2020-20260921/features.npz": "d69aa99cbec4351108a2ef3f07bbb9347ab1e9811f1a27cc6329cdbba53d2fde",
+    "outputs/radar-matriz-observada-2020-20260921/quarter-hour.npz": "62584cbd7ee1326349720054f8043ffdc1c1fcbe0bf26ad8a88415a440cecb47",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86510000-all-qc.jsonl": "eaafb3967adaea459806956ec7ab504eb34180d6bf5ce4522ebf10135997276f",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86472000-all-qc.jsonl": "a4f130980db1de10fc4ae8ef84addcc8e81966d30b343df8dba22bf449e61383",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86472600-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86500000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-matriz-observada-2020-20260921/level-source-trace.csv": "d101ac4906140ed3fa60fb2863f3289263071c660f9ddd758c8fdff2dd3705cc",
+    "outputs/auditoria-qi-radar-2020-20260921/ons-references.json": "2206693275b5d11446f8db8f6a000051f6ab9a3f232d1f518d7d1dd5b9856552",
+    "outputs/auditoria-qi-radar-2020-20260921/ceran-2020-06-source-values.csv": "27f212dce67e82365a5405b8e9dbd73c33f25deeb894bcaaa2bd5aa0418a1d6b",
+    "outputs/historico-vazoes-ceran/ceran-2020-07-source-values.csv": "5b58aeea332e4ec3e0482093415aceef928b41f65f91707cddcb346a9b13ac90",
+    "outputs/mucum-propagacao-2026-09-21/chuva-pesos.json": "1bc4a606e65065819d5ff0fdcf70f81e4bbb4a963383fd97dfa3f4da2f1203a3",
+    "outputs/auditoria-latencias-chuva-20260921/latencies.json": "f0182f5670b715890c4973324f066b66a6c12810cb5bd76ee39f130c5d47252e",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86060010-all-qc.jsonl": "4aeddfa4b68b88f8215a07c189ab31b90b134cb625aaa71b8b88f7997083df1b",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86099000-all-qc.jsonl": "2fdbf61d2bc548139d13420b79cf561a083e78dfb72910b69a3d8a2143b2b4c1",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86102000-all-qc.jsonl": "93039aeea28329df75145550d5ec2cc12e6f8b3458ccd3e3504ed00deda01f5c",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86117000-all-qc.jsonl": "cdb7bd93521ec8f10243e72ba76cb7bd327061db65fdb1448a72602e5de62226",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86125000-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86125050-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86160000-all-qc.jsonl": "3e8f477d8abc45139f28ec2d30ffb31595261fbf831f65c5e66ecfcc32a0508f",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86163000-all-qc.jsonl": "efa8f2b831feac518fa7427f9d9bd62a27a00b06428e768877e0bb197824698c",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86200900-all-qc.jsonl": "28e5e523145b329dbb0550edd54250b1a6c1e3a61335dcebc8e8241244ebb8b1",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86280500-all-qc.jsonl": "ac8e532a442f3fc5001293a4cb7cfc6b161e7f4aa6ebaee74c5f49af3433422e",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86298000-all-qc.jsonl": "3ac603cbfb16e6c7e4451f1d6c6c8e9de094cc4e7a3e6044a882e13b292d2bbd",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86403000-all-qc.jsonl": "c8f3aa2821b33538e0f929f0d8bc74b26af06f446c80262f27969a514973c79e",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86410800-all-qc.jsonl": "3b986b575940042fda07cddfd7b48a2c5e1b4e0b028ee0afaa351a24a04b738c",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86447000-all-qc.jsonl": "25782b55f726d6ea1cedfe086241cd61075226bfb0774cec6eb7145d2f9238a2",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86448000-all-qc.jsonl": "d0418f1bfddde84322eb56cdafd3ce587a27abe9ffa36e06c958c82c123f4c17",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86450000-all-qc.jsonl": "895c9a35ffa748b808d2f43e3bdcf5637233fe11d5a89f72bf5fd2022e0920ab",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86471000-all-qc.jsonl": "c3eab09817e1193d8b8bb51e5603d3d6aed7ad302dc8965e9da7c558fa24c4ad",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86479000-all-qc.jsonl": "1ee96d733ed9cace552533c1bef2f4eb43d0f7d22442418e6914c33fd9d33f50",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86488000-all-qc.jsonl": "421e692f282da239a9eab56fa1f6ce4875c22ea8886674087cd1725604fa1b2b",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86493000-all-qc.jsonl": "729e5afc7de8a8fc8b835f421f4b4a853e860b2ce9037e4fc67e6a2018a9293f",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86495500-all-qc.jsonl": "3bc9ff400cc198c563ae3d2722deda2906f02f978c98144cbb480b642844c414",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86504900-all-qc.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/radar-insumos-observados-2020-20260921/stations/ana-86505500-all-qc.jsonl": "4dd69ffc837ddce8d626059e064475c8e8f9b2558babc680da3684830776a9c5",
+    "outputs/radar-matriz-observada-2020-20260921/target-coverage.csv": "50bd6a3c139eb8f782f96c95597c726bdc1d61ee3a766d7e1b39fa743c029ed7",
+    "outputs/auditoria-qi-radar-2020-20260921/lag-source-trace.csv": "bd9ac96151e9b49b5b9c47f8cd835096c169878b94cb18161d0d4127f258123d",
+    "outputs/auditoria-qi-radar-2020-20260921/audit.json": "a5645294d200175b99cb9a5998d5c0059f55889b9e92af58274e4c3c7cdd92e2",
+    "outputs/auditoria-qi-radar-2020-20260921/origin-diagnostics.csv": "5ff4d29de89367b2dc0d3fe8e9dfde40156f015bcccd25355e824a3cd9889783"
+  }
+}

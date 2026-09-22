@@ -1,0 +1,190 @@
+{
+  "aggregate": [
+    {
+      "source": "julho",
+      "phase": "validation",
+      "family": "level_and_slopes",
+      "mean_lead_score_m3_s": 203.80303874696526,
+      "all": {
+        "predictions_n": 78558,
+        "mae_m3_s": 70.5002082905167,
+        "bias_m3_s": -12.15137315691578
+      },
+      "high_flow": {
+        "predictions_n": 336,
+        "mae_m3_s": 266.57987193612155,
+        "bias_m3_s": 30.75296359245939
+      }
+    },
+    {
+      "source": "julho",
+      "phase": "validation",
+      "family": "levels_forecast_rain",
+      "mean_lead_score_m3_s": 189.6163339364032,
+      "all": {
+        "predictions_n": 78558,
+        "mae_m3_s": 68.82157658629211,
+        "bias_m3_s": -8.157349050766774
+      },
+      "high_flow": {
+        "predictions_n": 336,
+        "mae_m3_s": 241.56562240699913,
+        "bias_m3_s": 15.490773882599719
+      }
+    },
+    {
+      "source": "julho",
+      "phase": "test",
+      "family": "level_and_slopes",
+      "mean_lead_score_m3_s": 340.458464409747,
+      "all": {
+        "predictions_n": 23550,
+        "mae_m3_s": 142.356313704207,
+        "bias_m3_s": 26.198120808170316
+      },
+      "high_flow": {
+        "predictions_n": 3252,
+        "mae_m3_s": 396.03283106653487,
+        "bias_m3_s": -96.41072164731452
+      }
+    },
+    {
+      "source": "julho",
+      "phase": "test",
+      "family": "levels_forecast_rain",
+      "mean_lead_score_m3_s": 336.0457102544252,
+      "all": {
+        "predictions_n": 23550,
+        "mae_m3_s": 141.16093445757616,
+        "bias_m3_s": 23.452630001373336
+      },
+      "high_flow": {
+        "predictions_n": 3252,
+        "mae_m3_s": 389.60110763415975,
+        "bias_m3_s": -100.94279212714184
+      }
+    },
+    {
+      "source": "carreiro",
+      "phase": "validation",
+      "family": "level_and_slopes",
+      "mean_lead_score_m3_s": 52.47007771778632,
+      "all": {
+        "predictions_n": 74892,
+        "mae_m3_s": 12.875307190424074,
+        "bias_m3_s": -0.1958666473158271
+      },
+      "high_flow": {
+        "predictions_n": 324,
+        "mae_m3_s": 79.17722212980465,
+        "bias_m3_s": 36.41148311329689
+      }
+    },
+    {
+      "source": "carreiro",
+      "phase": "validation",
+      "family": "levels_forecast_rain",
+      "mean_lead_score_m3_s": 53.73709319183732,
+      "all": {
+        "predictions_n": 74892,
+        "mae_m3_s": 13.023757476951785,
+        "bias_m3_s": 0.6489507268470738
+      },
+      "high_flow": {
+        "predictions_n": 324,
+        "mae_m3_s": 81.41404555250718,
+        "bias_m3_s": 30.387071762647842
+      }
+    },
+    {
+      "source": "carreiro",
+      "phase": "test",
+      "family": "level_and_slopes",
+      "mean_lead_score_m3_s": 68.43360538288287,
+      "all": {
+        "predictions_n": 20206,
+        "mae_m3_s": 29.493865400565518,
+        "bias_m3_s": -3.1249451026891086
+      },
+      "high_flow": {
+        "predictions_n": 2832,
+        "mae_m3_s": 77.33434919385006,
+        "bias_m3_s": -64.12720817218857
+      }
+    },
+    {
+      "source": "carreiro",
+      "phase": "test",
+      "family": "levels_forecast_rain",
+      "mean_lead_score_m3_s": 69.22647168922533,
+      "all": {
+        "predictions_n": 20206,
+        "mae_m3_s": 29.918165589411988,
+        "bias_m3_s": -3.1125939064718744
+      },
+      "high_flow": {
+        "predictions_n": 2832,
+        "mae_m3_s": 78.05819547892017,
+        "bias_m3_s": -65.18928073680719
+      }
+    }
+  ],
+  "lead_comparisons": [
+    {
+      "source": "julho",
+      "phase": "validation",
+      "subset": "all",
+      "leads_with_lower_mae": 9,
+      "total_leads": 12
+    },
+    {
+      "source": "julho",
+      "phase": "validation",
+      "subset": "high_flow",
+      "leads_with_lower_mae": 8,
+      "total_leads": 12
+    },
+    {
+      "source": "julho",
+      "phase": "test",
+      "subset": "all",
+      "leads_with_lower_mae": 11,
+      "total_leads": 12
+    },
+    {
+      "source": "julho",
+      "phase": "test",
+      "subset": "high_flow",
+      "leads_with_lower_mae": 11,
+      "total_leads": 12
+    },
+    {
+      "source": "carreiro",
+      "phase": "validation",
+      "subset": "all",
+      "leads_with_lower_mae": 0,
+      "total_leads": 12
+    },
+    {
+      "source": "carreiro",
+      "phase": "validation",
+      "subset": "high_flow",
+      "leads_with_lower_mae": 3,
+      "total_leads": 12
+    },
+    {
+      "source": "carreiro",
+      "phase": "test",
+      "subset": "all",
+      "leads_with_lower_mae": 1,
+      "total_leads": 12
+    },
+    {
+      "source": "carreiro",
+      "phase": "test",
+      "subset": "high_flow",
+      "leads_with_lower_mae": 2,
+      "total_leads": 12
+    }
+  ]
+}

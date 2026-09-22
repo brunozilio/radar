@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_run.py", line 205, in main
+    statistical(out);routing_diagnostic(out)
+  File "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py", line 119, in routing_diagnostic
+    rain=d['amount']+np.maximum(1-d['coverage'],0)*np.array([nwp(at) for at in t])
+  File "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py", line 119, in <listcomp>
+    rain=d['amount']+np.maximum(1-d['coverage'],0)*np.array([nwp(at) for at in t])
+  File "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py", line 118, in nwp
+    def nwp(at):return float(np.nanmean([m.get(at,np.nan) for m in lookup]))
+  File "/tmp/radar-hydro-libs/numpy/lib/_nanfunctions_impl.py", line 1062, in nanmean
+    tot = np.sum(arr, axis=axis, dtype=dtype, out=out, keepdims=keepdims,
+  File "/tmp/radar-hydro-libs/numpy/_core/fromnumeric.py", line 2389, in sum
+    return _wrapreduction(
+  File "/tmp/radar-hydro-libs/numpy/_core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+TypeError: unsupported operand type(s) for +: 'float' and 'NoneType'

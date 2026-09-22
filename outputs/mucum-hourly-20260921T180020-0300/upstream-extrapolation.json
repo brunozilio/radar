@@ -1,0 +1,4426 @@
+[
+  {
+    "source": "julho",
+    "lead_h": 0,
+    "forecast_m3_s": 7650.033111971451,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 717.813732409145,
+        "standardized_value": 68.1315915841916
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 578.3853369368665,
+        "standardized_value": 101.52785287264663
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": 488.13539456890004,
+        "standardized_value": 50.25697260976623
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 321.1405733027172,
+        "standardized_value": 24.621976592561595
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 255.19806821933443,
+        "standardized_value": 47.508835775963355
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": -245.72476953900974,
+        "standardized_value": 73.34598225926544
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": -191.55058404422812,
+        "standardized_value": 80.92926111302853
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -155.60835124713253,
+        "standardized_value": 8.358081349754565
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": 130.91583792080894,
+        "standardized_value": 21.636563692065838
+      },
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": 113.04585773004347,
+        "standardized_value": 21.406643100709033
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 1,
+    "forecast_m3_s": 9798.272755034945,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 1483.724036196001,
+        "standardized_value": 101.523920832025
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1342.054145214554,
+        "standardized_value": 68.12899924414653
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 675.6865577259377,
+        "standardized_value": 24.621034073710888
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 570.1753552934938,
+        "standardized_value": 47.5074849663291
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": 531.2875675209965,
+        "standardized_value": 50.25510130640189
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -313.517520036518,
+        "standardized_value": 8.35778366179441
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": -231.42779085067352,
+        "standardized_value": 73.34373339180604
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": -206.73261830939083,
+        "standardized_value": 80.92618230266478
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": 202.62538352224104,
+        "standardized_value": 21.635736396994215
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -188.6833261909018,
+        "standardized_value": 17.605347662803375
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 2,
+    "forecast_m3_s": 11984.00677789258,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 2485.3283924147945,
+        "standardized_value": 101.52002049238237
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1672.8080883215662,
+        "standardized_value": 68.12645308283436
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 1021.2051753686337,
+        "standardized_value": 24.62010263172475
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 1018.5268086453045,
+        "standardized_value": 47.50572307971375
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -446.1003399209001,
+        "standardized_value": 8.357497496014625
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": 437.21924831810554,
+        "standardized_value": 50.25329013719747
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": -351.1725856856749,
+        "standardized_value": 73.34299884548966
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -247.07970474028153,
+        "standardized_value": 17.60544831935029
+      },
+      {
+        "feature": "julho:I:slope3h",
+        "contribution_m3_s": 235.45645251071224,
+        "standardized_value": 16.744559130062683
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": 205.7988136983502,
+        "standardized_value": 21.634909028450444
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 3,
+    "forecast_m3_s": 14074.657531324507,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 3470.2329222351377,
+        "standardized_value": 101.51630840199303
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1613.597457919776,
+        "standardized_value": 68.12395624663876
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 1404.4480621612684,
+        "standardized_value": 47.50394101405415
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 1375.5076024559846,
+        "standardized_value": 24.61920107123703
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -564.398661765039,
+        "standardized_value": 8.357217958558465
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 497.7184786343208,
+        "standardized_value": 80.92027180114766
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": 351.8766731307356,
+        "standardized_value": 50.25150653493268
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -339.30725081642356,
+        "standardized_value": 17.60594483095887
+      },
+      {
+        "feature": "julho:I:slope6h",
+        "contribution_m3_s": 258.7944328667839,
+        "standardized_value": 16.56530881856302
+      },
+      {
+        "feature": "julho:I:slope3h",
+        "contribution_m3_s": 224.92772541450287,
+        "standardized_value": 16.74438069678138
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 4,
+    "forecast_m3_s": 15773.059343711704,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4059.2683551008595,
+        "standardized_value": 101.51246903480401
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 1741.0094034967367,
+        "standardized_value": 24.618253693008025
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 1708.1281396875188,
+        "standardized_value": 47.502296041085096
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1362.6549912359135,
+        "standardized_value": 68.12144294760019
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 1310.9071434364714,
+        "standardized_value": 80.92078843232045
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -660.9486725952501,
+        "standardized_value": 8.35694852148521
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -455.84776942830166,
+        "standardized_value": 17.606950002008187
+      },
+      {
+        "feature": "julho:I:slope6h",
+        "contribution_m3_s": 304.85126916496176,
+        "standardized_value": 16.56466844636172
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": 242.975521455224,
+        "standardized_value": 24.278459342281714
+      },
+      {
+        "feature": "julho:I:slope3h",
+        "contribution_m3_s": 228.4354234640906,
+        "standardized_value": 16.743782255927655
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 5,
+    "forecast_m3_s": 17028.491222848254,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4295.420375809694,
+        "standardized_value": 101.50870444383615
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 2271.697768286493,
+        "standardized_value": 80.91771776538273
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2028.7927617472833,
+        "standardized_value": 24.617339799403723
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 1937.7078859092999,
+        "standardized_value": 47.50045497543753
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1141.4799501021619,
+        "standardized_value": 68.11901900930559
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -732.8281215419668,
+        "standardized_value": 8.356669825797924
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -608.288401076777,
+        "standardized_value": 17.608395078353837
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": 395.1757262768298,
+        "standardized_value": 24.277634167733897
+      },
+      {
+        "feature": "julho:I:slope6h",
+        "contribution_m3_s": 386.4457869962417,
+        "standardized_value": 16.5647992005793
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -330.3809755546354,
+        "standardized_value": 19.30442596808525
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 6,
+    "forecast_m3_s": 17947.66276641342,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4428.73975230458,
+        "standardized_value": 101.5049301130197
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 2705.8936995985587,
+        "standardized_value": 80.9145997174802
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2250.4991477814506,
+        "standardized_value": 24.61642000898536
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 2234.4850673260144,
+        "standardized_value": 47.498808459730455
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1010.7104206577912,
+        "standardized_value": 68.1165980233905
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -809.6471879303549,
+        "standardized_value": 8.356342481153408
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -687.0811415373156,
+        "standardized_value": 17.60818976422488
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 680.4818346447219,
+        "standardized_value": 73.3482210831706
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -457.9014933710174,
+        "standardized_value": 19.303679745936456
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": 450.37235409386983,
+        "standardized_value": 24.27669538345487
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 7,
+    "forecast_m3_s": 18777.285836158084,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4570.048514885794,
+        "standardized_value": 101.50142408353678
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 2979.469893872017,
+        "standardized_value": 80.91217485379562
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 2473.503280798986,
+        "standardized_value": 47.49804145993463
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2440.81443550999,
+        "standardized_value": 24.61555437945247
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1074.5652124939832,
+        "standardized_value": 68.11413188581132
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 994.106955373753,
+        "standardized_value": 73.34701133396764
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -886.1087392146824,
+        "standardized_value": 8.356014826499901
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -675.4627170661623,
+        "standardized_value": 17.608037505475174
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -578.1392217121031,
+        "standardized_value": 19.302933494943215
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -478.840758871815,
+        "standardized_value": 50.24409197878293
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 8,
+    "forecast_m3_s": 19361.618316742948,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4879.948989436496,
+        "standardized_value": 101.49766771599506
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 3300.162257482364,
+        "standardized_value": 80.90910401457872
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 2617.5220112197885,
+        "standardized_value": 47.49632064647627
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2606.7979130068306,
+        "standardized_value": 24.61465350638734
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1153.8273523897933,
+        "standardized_value": 68.1115463044901
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1060.9968500241255,
+        "standardized_value": 73.34540006228045
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -960.2022328647486,
+        "standardized_value": 8.355686415597193
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -775.4061933078256,
+        "standardized_value": 50.24277163965894
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -716.1481043067126,
+        "standardized_value": 19.302227261009858
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -633.7428740892635,
+        "standardized_value": 17.607393081323252
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 9,
+    "forecast_m3_s": 19648.205859112284,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 5062.307394992308,
+        "standardized_value": 101.49378981221267
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 3630.1499758347813,
+        "standardized_value": 80.90674972212835
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 2845.460832942964,
+        "standardized_value": 47.49475550716688
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2731.5739712578916,
+        "standardized_value": 24.613729147716043
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1143.5089919133848,
+        "standardized_value": 73.34293622469404
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -1071.7268768264366,
+        "standardized_value": 50.24154882395931
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1051.8888946942964,
+        "standardized_value": 68.10891805553615
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -1020.9755861680756,
+        "standardized_value": 8.35535961985382
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -844.71216247178,
+        "standardized_value": 19.30151192252739
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -837.6585526885044,
+        "standardized_value": 21.62906264324636
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 10,
+    "forecast_m3_s": 19596.97335037948,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 5085.34380502127,
+        "standardized_value": 101.48986055944486
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 3761.961334096179,
+        "standardized_value": 80.9061013494654
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 3184.7743030608885,
+        "standardized_value": 47.49291554010512
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2839.561267042767,
+        "standardized_value": 24.612817716086468
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -1350.3575686233676,
+        "standardized_value": 50.23960238581277
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1267.747060234108,
+        "standardized_value": 73.3400965502093
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -1066.1978107117782,
+        "standardized_value": 8.355036416306417
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -1039.0359257190796,
+        "standardized_value": 21.628222598442772
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -941.3015487812835,
+        "standardized_value": 19.30078289069583
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 816.5249515494359,
+        "standardized_value": 68.10627956995309
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 11,
+    "forecast_m3_s": 19329.296003142474,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4845.64322264275,
+        "standardized_value": 101.48592702701299
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 3735.808733484932,
+        "standardized_value": 80.9032567260503
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 3568.6816475830524,
+        "standardized_value": 47.49111179444528
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2925.5034183054413,
+        "standardized_value": 24.611905447603682
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -1606.1425028030712,
+        "standardized_value": 50.237655280874236
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1375.8855214672426,
+        "standardized_value": 73.34308130189643
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -1217.3340999823427,
+        "standardized_value": 21.627382503043087
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -1095.4504059482192,
+        "standardized_value": 8.35472548750707
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -1002.9970652229596,
+        "standardized_value": 19.300199050614378
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 682.6368841074283,
+        "standardized_value": 68.10733043327006
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 12,
+    "forecast_m3_s": 18946.579610348217,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4540.6168877929185,
+        "standardized_value": 101.48199326922285
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 4013.298953180153,
+        "standardized_value": 80.90473183640137
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 3846.696888404662,
+        "standardized_value": 47.48947771706898
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2978.9025262605132,
+        "standardized_value": 24.610956616031253
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -1863.2986965529542,
+        "standardized_value": 50.235708135088025
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -1394.5747440005662,
+        "standardized_value": 21.626542373128796
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1283.3276489057334,
+        "standardized_value": 73.34091252662222
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -1124.5338075281475,
+        "standardized_value": 8.354413798430558
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -1048.3303097875332,
+        "standardized_value": 19.300886929145612
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -767.394366322397,
+        "standardized_value": 17.60661097868229
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "julho",
+    "lead_h": 13,
+    "forecast_m3_s": 18719.947097008993,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 4481.019360190453,
+        "standardized_value": 80.90386294450062
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 4190.809503226727,
+        "standardized_value": 101.51639434410177
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 4133.747429980532,
+        "standardized_value": 47.487721209968555
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 3021.0653417951844,
+        "standardized_value": 24.610002591197357
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -2087.5166836429466,
+        "standardized_value": 50.233760970478606
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -1509.4945564511645,
+        "standardized_value": 21.625702209192664
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1174.7383405109658,
+        "standardized_value": 73.34244530098285
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -1140.7045614174085,
+        "standardized_value": 8.354106004175197
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -1064.7308540163556,
+        "standardized_value": 19.304745937975202
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -877.325695559004,
+        "standardized_value": 17.60674688649586
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 0,
+    "forecast_m3_s": 522.4126534504599,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": -238.1699375323921,
+        "standardized_value": 100.10980376665492
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 227.7180850699822,
+        "standardized_value": 46.96085443845709
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": -137.36908351164493,
+        "standardized_value": 80.03208366187106
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": -96.12671787488587,
+        "standardized_value": 72.71749833725815
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": -83.18507474716043,
+        "standardized_value": 67.19999252321232
+      },
+      {
+        "feature": "monte:Q:1000m3s",
+        "contribution_m3_s": 68.66327441500815,
+        "standardized_value": 13.343892796524202
+      },
+      {
+        "feature": "monte:I:1000m3s",
+        "contribution_m3_s": 51.188186245439844,
+        "standardized_value": 13.296642052186774
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": 44.41517212994576,
+        "standardized_value": 49.59959394442459
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -31.537230429183133,
+        "standardized_value": 21.493924709727597
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -30.318371885298774,
+        "standardized_value": 5.565706030085471
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 1,
+    "forecast_m3_s": 850.2136199888989,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": 358.2350147088634,
+        "standardized_value": 21.22096447517117
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": -302.30844220488643,
+        "standardized_value": 24.11190173746426
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": -269.39284735240034,
+        "standardized_value": 100.17667521831842
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 181.8867705882086,
+        "standardized_value": 46.97141047020232
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 143.127358542608,
+        "standardized_value": 80.04062390173348
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": -89.35018823449941,
+        "standardized_value": 72.71848869541121
+      },
+      {
+        "feature": "monte:Q:slope3h",
+        "contribution_m3_s": -49.763077616704464,
+        "standardized_value": 15.766043829989979
+      },
+      {
+        "feature": "monte:I:delta1h",
+        "contribution_m3_s": 49.28335676626257,
+        "standardized_value": 15.228421811433934
+      },
+      {
+        "feature": "monte:I:1000m3s",
+        "contribution_m3_s": 40.27357503737163,
+        "standardized_value": 13.311518969118406
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -38.753363645537064,
+        "standardized_value": 5.567579294848207
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 2,
+    "forecast_m3_s": 1154.9841051429928,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 340.2462302776016,
+        "standardized_value": 80.05355462461134
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": 222.24481715527025,
+        "standardized_value": 24.199560403345256
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -175.67469608884812,
+        "standardized_value": 49.64574899108471
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": -108.63587118196807,
+        "standardized_value": 72.71539243061453
+      },
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": 76.8479288144734,
+        "standardized_value": 21.28319112047373
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 71.6895320863879,
+        "standardized_value": 67.23685405475334
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 62.46034053602945,
+        "standardized_value": 46.984153923323134
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -45.15982236490055,
+        "standardized_value": 5.569565168430723
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": -43.37827943330712,
+        "standardized_value": 17.217651246328998
+      },
+      {
+        "feature": "julho:I:slope6h",
+        "contribution_m3_s": -32.91401825526323,
+        "standardized_value": 16.702574252217513
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 3,
+    "forecast_m3_s": 1430.292693936249,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 255.2664192912673,
+        "standardized_value": 80.07666022751508
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": 241.21913575895587,
+        "standardized_value": 24.29305300641917
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 220.9767309953795,
+        "standardized_value": 100.1763134866438
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -196.43029118953362,
+        "standardized_value": 49.67723264763326
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 112.44327072830416,
+        "standardized_value": 72.72628830261696
+      },
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": 66.695847685632,
+        "standardized_value": 21.349271882963603
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -53.879403039747906,
+        "standardized_value": 5.571477095677433
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -47.8772417378838,
+        "standardized_value": 17.76170284802573
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": -46.580222692723495,
+        "standardized_value": 17.233128800888963
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 37.29610536739151,
+        "standardized_value": 24.489296969630885
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 4,
+    "forecast_m3_s": 1501.1974004039562,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "monte:Q:slope3h",
+        "contribution_m3_s": 281.1766549963284,
+        "standardized_value": 15.805754190072838
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 242.77669024212375,
+        "standardized_value": 80.09469669028272
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": -210.0423165703398,
+        "standardized_value": 17.273431342032993
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 152.7047784771487,
+        "standardized_value": 100.21688055644783
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 126.59400894477538,
+        "standardized_value": 72.7349765312076
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 100.29859305818074,
+        "standardized_value": 47.03081818903387
+      },
+      {
+        "feature": "monte:I:delta1h",
+        "contribution_m3_s": 74.4345824914085,
+        "standardized_value": 15.222078679933402
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -64.58356113126912,
+        "standardized_value": 5.57354759533214
+      },
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": -61.307059152641,
+        "standardized_value": 21.41437663499552
+      },
+      {
+        "feature": "monte:Q:delta1h",
+        "contribution_m3_s": -52.688775215077655,
+        "standardized_value": 15.49389458105591
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 5,
+    "forecast_m3_s": 1376.4727513249552,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 255.289305522224,
+        "standardized_value": 100.23579539771156
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 204.52613997562648,
+        "standardized_value": 80.11176066652965
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": -203.47680714315706,
+        "standardized_value": 67.32689562394576
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": 194.70699134820254,
+        "standardized_value": 17.320966353934427
+      },
+      {
+        "feature": "monte:Q:delta1h",
+        "contribution_m3_s": -122.89317840755226,
+        "standardized_value": 15.510037274405484
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 120.01537735781996,
+        "standardized_value": 47.0632865121877
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -71.62712913538752,
+        "standardized_value": 5.57309122277214
+      },
+      {
+        "feature": "monte:Q:slope3h",
+        "contribution_m3_s": 71.14152211241928,
+        "standardized_value": 15.840073597722332
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 62.57464236553655,
+        "standardized_value": 72.73977902522402
+      },
+      {
+        "feature": "Prata-Turvo:P12/100mm",
+        "contribution_m3_s": 53.331215115178985,
+        "standardized_value": 9.215143318260221
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 6,
+    "forecast_m3_s": 1439.4716326722448,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "monte:Q:delta1h",
+        "contribution_m3_s": 199.0727288752007,
+        "standardized_value": 15.531975572854938
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 191.00773910452585,
+        "standardized_value": 80.13446243360875
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 174.96222757821477,
+        "standardized_value": 47.09902669109218
+      },
+      {
+        "feature": "monte:I:delta1h",
+        "contribution_m3_s": -113.1161312638391,
+        "standardized_value": 15.250804112053846
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 110.54134637855373,
+        "standardized_value": 72.74478617148007
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": 90.70035217963874,
+        "standardized_value": 17.346551186926543
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": -81.71738394615791,
+        "standardized_value": 67.38017620984147
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -80.80100207549299,
+        "standardized_value": 5.572752139485262
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 78.97063962640826,
+        "standardized_value": 100.35925289553623
+      },
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": -70.54343893211747,
+        "standardized_value": 21.524339652688568
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 7,
+    "forecast_m3_s": 1360.4218764935476,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 278.0076807882624,
+        "standardized_value": 80.21037549663077
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 176.7979560453372,
+        "standardized_value": 47.14714332733994
+      },
+      {
+        "feature": "monte:I:delta1h",
+        "contribution_m3_s": 146.05129141609672,
+        "standardized_value": 15.250209408987464
+      },
+      {
+        "feature": "monte:Q:slope6h",
+        "contribution_m3_s": -103.37872262683723,
+        "standardized_value": 21.544552522615025
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -89.31742033780348,
+        "standardized_value": 5.572632369880208
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": 86.41889410277089,
+        "standardized_value": 24.55122986268656
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": 78.84053962503863,
+        "standardized_value": 17.350831216532193
+      },
+      {
+        "feature": "monte:Q:1000m3s",
+        "contribution_m3_s": -73.7132735615703,
+        "standardized_value": 13.509793823627001
+      },
+      {
+        "feature": "monte:Q:slope3h",
+        "contribution_m3_s": -72.90842867386722,
+        "standardized_value": 15.85780559053735
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -72.634470406805,
+        "standardized_value": 17.83452084743594
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 8,
+    "forecast_m3_s": 1640.6183433537117,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 241.61025975241506,
+        "standardized_value": 47.20348162103686
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 226.60489047329628,
+        "standardized_value": 80.27967139790174
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 163.22740645240503,
+        "standardized_value": 100.42104589598009
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 152.6372698907631,
+        "standardized_value": 67.45197626615479
+      },
+      {
+        "feature": "monte:I:slope3h",
+        "contribution_m3_s": -137.1544180791948,
+        "standardized_value": 17.354335146389857
+      },
+      {
+        "feature": "monte:Q:delta1h",
+        "contribution_m3_s": 107.96356792168888,
+        "standardized_value": 15.529975309789956
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -99.84832296184959,
+        "standardized_value": 5.57237637702524
+      },
+      {
+        "feature": "monte:I:slope6h",
+        "contribution_m3_s": -92.00463279237206,
+        "standardized_value": 24.5817486187108
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": 82.63999489146,
+        "standardized_value": 49.88640474866333
+      },
+      {
+        "feature": "Prata-Turvo:P12/100mm",
+        "contribution_m3_s": 75.71628672526138,
+        "standardized_value": 9.21265294127929
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 9,
+    "forecast_m3_s": 1563.2154919268498,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 323.4004257623996,
+        "standardized_value": 80.35693918048985
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 253.14857684610516,
+        "standardized_value": 100.39681571012677
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 213.8850348604305,
+        "standardized_value": 47.2529010080968
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 161.11624531130914,
+        "standardized_value": 67.47533859774514
+      },
+      {
+        "feature": "monte:I:delta1h",
+        "contribution_m3_s": -125.67214537033807,
+        "standardized_value": 15.24664605013307
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -108.90590091088123,
+        "standardized_value": 5.572232405974188
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 90.04436553873653,
+        "standardized_value": 72.87144043611852
+      },
+      {
+        "feature": "monte:Q:1000m3s",
+        "contribution_m3_s": -80.59075244878275,
+        "standardized_value": 13.597838689854015
+      },
+      {
+        "feature": "monte:Q:delta1h",
+        "contribution_m3_s": -79.51725039382548,
+        "standardized_value": 15.52012163323023
+      },
+      {
+        "feature": "Prata-Turvo:P12/100mm",
+        "contribution_m3_s": 74.49887299866454,
+        "standardized_value": 9.21264843437009
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 10,
+    "forecast_m3_s": 1548.4120086739827,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": false,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3505000000000001,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 381.7290376626053,
+        "standardized_value": 80.40483324199045
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 358.582436079995,
+        "standardized_value": 47.3082548150291
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 158.83567260148078,
+        "standardized_value": 67.52589338604723
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -117.58444390785108,
+        "standardized_value": 5.572588028894736
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -97.26790721724393,
+        "standardized_value": 17.956814231417873
+      },
+      {
+        "feature": "Prata-Turvo:P6/100mm",
+        "contribution_m3_s": 90.1382048949728,
+        "standardized_value": 11.737958149161603
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "contribution_m3_s": 71.84188561596794,
+        "standardized_value": 23.89360937964289
+      },
+      {
+        "feature": "Prata-Turvo:P12/100mm",
+        "contribution_m3_s": 62.125740907601475,
+        "standardized_value": 9.210097399312415
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "contribution_m3_s": -60.207953990725855,
+        "standardized_value": 17.64312294023265
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -53.884421199353895,
+        "standardized_value": 21.68157901223918
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 11,
+    "forecast_m3_s": 1765.6235198750378,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3413333333333332,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 664.5607022876536,
+        "standardized_value": 80.47677990835992
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 239.71479800345517,
+        "standardized_value": 47.378519059585585
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 222.13298914672325,
+        "standardized_value": 67.59606956357219
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -127.21734101212246,
+        "standardized_value": 5.573125422522685
+      },
+      {
+        "feature": "Prata-Turvo:P6/100mm",
+        "contribution_m3_s": 105.46305157676733,
+        "standardized_value": 11.730788349217587
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -101.78237944769192,
+        "standardized_value": 17.994529277111333
+      },
+      {
+        "feature": "julho:I:slope6h",
+        "contribution_m3_s": -70.45210069996999,
+        "standardized_value": 16.886291108994428
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "contribution_m3_s": 68.99804874113306,
+        "standardized_value": 23.900055547017196
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "contribution_m3_s": -59.00134745374885,
+        "standardized_value": 17.662740343286195
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -57.20502136323404,
+        "standardized_value": 21.70348555341585
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 12,
+    "forecast_m3_s": 1978.6918262325867,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.2955000000000001,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 808.0623165697136,
+        "standardized_value": 80.5337357310805
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 278.7475728353532,
+        "standardized_value": 100.57715399799804
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 171.5586756783703,
+        "standardized_value": 67.67169999835714
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 135.67110645339002,
+        "standardized_value": 47.466587984437325
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -134.77605326023183,
+        "standardized_value": 5.573628404636747
+      },
+      {
+        "feature": "Prata-Turvo:P6/100mm",
+        "contribution_m3_s": 115.73340500635297,
+        "standardized_value": 11.726940405464706
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -86.52093428710712,
+        "standardized_value": 18.038034514581206
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -82.72803719335172,
+        "standardized_value": 50.17480667981965
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "contribution_m3_s": 69.74101771573578,
+        "standardized_value": 23.901727406327186
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -65.63991033579447,
+        "standardized_value": 21.727320632028764
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  {
+    "source": "carreiro",
+    "lead_h": 13,
+    "forecast_m3_s": 1877.8594005238092,
+    "training_max_target_m3_s": 1681.7,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.26433333333333336,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 665.2087241936806,
+        "standardized_value": 80.67154354630044
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 308.6503386947538,
+        "standardized_value": 100.68525545506749
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 218.1999169517946,
+        "standardized_value": 73.00984802856598
+      },
+      {
+        "feature": "86500000:Q:1000m3s",
+        "contribution_m3_s": -141.3131110758212,
+        "standardized_value": 5.574146118878593
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 115.51188090056962,
+        "standardized_value": 47.60089825625339
+      },
+      {
+        "feature": "Prata-Turvo:P6/100mm",
+        "contribution_m3_s": 94.99966616484473,
+        "standardized_value": 11.724443614238357
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -92.27268328560707,
+        "standardized_value": 21.753950135612282
+      },
+      {
+        "feature": "julho:Q:slope6h",
+        "contribution_m3_s": -88.4299889060236,
+        "standardized_value": 18.069728929417877
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 85.99582641653862,
+        "standardized_value": 67.76161990960625
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "contribution_m3_s": 77.64223574572918,
+        "standardized_value": 23.903940038474236
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  }
+]

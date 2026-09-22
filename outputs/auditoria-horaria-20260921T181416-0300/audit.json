@@ -1,0 +1,341 @@
+{
+  "audited_at": "2026-09-21T18:14:16.900809-03:00",
+  "runner_status": "duplicate suppressed; no new forecast issued by this audit",
+  "run_directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T180020-0300",
+  "source_hashes_verified": 133,
+  "collection_errors": [],
+  "artifact_hashes_verified": 56,
+  "input_receipts_verified": 207,
+  "history_index": {
+    "directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T180020-0300/history",
+    "manifest_sha256": "d09afb704a678741cfead0b8bd2aab0ff1837b129ecd627deb782c434b81ce20"
+  },
+  "history_files_verified": 33,
+  "pipeline_errors": [],
+  "stale_auxiliary_sources_over_90min_at_origin": [
+    {
+      "source": "86060010",
+      "last_time": "2026-09-21T08:00:00-03:00",
+      "delay_minutes": "600.0",
+      "value": "13.8"
+    },
+    {
+      "source": "86102000",
+      "last_time": "2026-09-21T10:00:00-03:00",
+      "delay_minutes": "480.0",
+      "value": "7.51"
+    },
+    {
+      "source": "86125000",
+      "last_time": "2026-09-21T11:59:00-03:00",
+      "delay_minutes": "361.0",
+      "value": "0.8412999999999999"
+    },
+    {
+      "source": "86200900",
+      "last_time": "2026-09-21T12:00:00-03:00",
+      "delay_minutes": "360.0",
+      "value": "667.03"
+    }
+  ],
+  "packets": [
+    {
+      "model": "radar_arvores_live_candidate",
+      "recorded_at": "2026-09-21T21:02:09.620438+00:00",
+      "real_bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "min_lead_h": 0.9639943227777777,
+      "max_lead_h": 13.96399432277778,
+      "maximum": {
+        "valid_at": "2026-09-22T05:00:00-03:00",
+        "nominal_lead_h": 11,
+        "level_m": 17.679066862287904
+      },
+      "cycle": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224"
+    },
+    {
+      "model": "hge_arno_live_candidate",
+      "recorded_at": "2026-09-21T21:02:09.728188+00:00",
+      "real_bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "min_lead_h": 0.9639643922222222,
+      "max_lead_h": 13.963964392222222,
+      "maximum": {
+        "valid_at": "2026-09-22T08:00:00-03:00",
+        "nominal_lead_h": 14,
+        "level_m": 30.668867485128512
+      },
+      "cycle": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224"
+    }
+  ],
+  "maximum_divergence": {
+    "target": "2026-09-22T08:00:00-03:00",
+    "radar_m": 17.073602215324712,
+    "hge_m": 30.668867485128512,
+    "difference_m": 13.5952652698038
+  },
+  "max_common_target_change": {
+    "model": "hge_arno_live_candidate",
+    "valid_at": "2026-09-22T07:00:00-03:00",
+    "change_m": 5.210767996027666
+  },
+  "upstream_above_training_max": 16,
+  "upstream_models_outside_input_range": 28,
+  "maximum_julho_flow_and_contributions": {
+    "source": "julho",
+    "lead_h": 9,
+    "forecast_m3_s": 19648.205859112284,
+    "training_max_target_m3_s": 9452.0,
+    "above_training_max": true,
+    "features_outside_training_range": [
+      {
+        "feature": "julho:Q:slope6h",
+        "current_value": 0.6872583333333333,
+        "training_min": -0.3953333333333333,
+        "training_max": 0.677
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "current_value": 7.58635,
+        "training_min": 0.016,
+        "training_max": 5.323
+      },
+      {
+        "feature": "castro:Q:delta1h",
+        "current_value": 2.71563,
+        "training_min": -0.2549999999999999,
+        "training_max": 0.6199999999999997
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "current_value": 1.5860833333333335,
+        "training_min": -0.25200000000000006,
+        "training_max": 0.5336666666666665
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "current_value": 1.063525,
+        "training_min": -0.23916666666666667,
+        "training_max": 0.45249999999999996
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "current_value": 8.69677,
+        "training_min": 0.001,
+        "training_max": 5.621
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "current_value": 2.3010800000000016,
+        "training_min": -0.371,
+        "training_max": 0.6929999999999996
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "current_value": 1.8427133333333334,
+        "training_min": -0.26700000000000007,
+        "training_max": 0.548
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "current_value": 0.9771600000000001,
+        "training_min": -0.25383333333333336,
+        "training_max": 0.43850000000000006
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "current_value": 1.3253121387283207,
+        "training_min": 0.0,
+        "training_max": 0.7129306358381489
+      },
+      {
+        "feature": "Baixo Antas:P24/100mm",
+        "current_value": 1.3271329479768752,
+        "training_min": 0.0,
+        "training_max": 1.1600809248554864
+      },
+      {
+        "feature": "Tainhas:P3/100mm",
+        "current_value": 0.347415300546442,
+        "training_min": 0.0,
+        "training_max": 0.3451420765027345
+      },
+      {
+        "feature": "Tainhas:P6/100mm",
+        "current_value": 0.6268415300546362,
+        "training_min": 0.0,
+        "training_max": 0.4150327868852524
+      },
+      {
+        "feature": "Tainhas:P12/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 0.7293661202185878
+      },
+      {
+        "feature": "Tainhas:P24/100mm",
+        "current_value": 1.4968852459016284,
+        "training_min": 0.0,
+        "training_max": 1.0772021857923524
+      },
+      {
+        "feature": "Tainhas:P48/100mm",
+        "current_value": 1.7350218579234766,
+        "training_min": 0.0,
+        "training_max": 1.4477267759562937
+      }
+    ],
+    "largest_linear_contributions": [
+      {
+        "feature": "castro:Q:delta1h",
+        "contribution_m3_s": 5062.307394992308,
+        "standardized_value": 101.49378981221267
+      },
+      {
+        "feature": "castro:I:slope3h",
+        "contribution_m3_s": 3630.1499758347813,
+        "standardized_value": 80.90674972212835
+      },
+      {
+        "feature": "castro:I:slope6h",
+        "contribution_m3_s": 2845.460832942964,
+        "standardized_value": 47.49475550716688
+      },
+      {
+        "feature": "castro:I:1000m3s",
+        "contribution_m3_s": 2731.5739712578916,
+        "standardized_value": 24.613729147716043
+      },
+      {
+        "feature": "castro:I:delta1h",
+        "contribution_m3_s": 1143.5089919133848,
+        "standardized_value": 73.34293622469404
+      },
+      {
+        "feature": "castro:Q:slope6h",
+        "contribution_m3_s": -1071.7268768264366,
+        "standardized_value": 50.24154882395931
+      },
+      {
+        "feature": "castro:Q:slope3h",
+        "contribution_m3_s": 1051.8888946942964,
+        "standardized_value": 68.10891805553615
+      },
+      {
+        "feature": "julho:Q:1000m3s",
+        "contribution_m3_s": -1020.9755861680756,
+        "standardized_value": 8.35535961985382
+      },
+      {
+        "feature": "Baixo Antas:P12/100mm",
+        "contribution_m3_s": -844.71216247178,
+        "standardized_value": 19.30151192252739
+      },
+      {
+        "feature": "castro:Q:1000m3s",
+        "contribution_m3_s": -837.6585526885044,
+        "standardized_value": 21.62906264324636
+      }
+    ],
+    "note": "Describes extrapolation, not a physical cap or calibrated uncertainty interval."
+  },
+  "capture_receipt": "75ec8f8f50b84ef7dfc89cbeb68e9dd06da1dda2f4f272a209481bf9ad6f618c",
+  "capture_observations": 168,
+  "capture_new_observations": [],
+  "capture_revisions": [],
+  "latest_observation": {
+    "datum_id": "ANA:86510000:reference-unverified",
+    "datum_verified": false,
+    "level_m": 13.67,
+    "quality": "Dado aprovado",
+    "raw_level_cm": "1367.00",
+    "raw_time": "2026-09-21 17:45:00",
+    "station_id": "86510000",
+    "timezone_verified": false,
+    "valid_at": "2026-09-21T17:45:00-03:00"
+  },
+  "verification_report": "/Users/brunozilio/Documents/radar/outputs/monitoramento-prospectivo/reports/20260921T211326675414Z",
+  "verification_status": {
+    "matched": 4,
+    "missing_exact_observation": 6,
+    "not_due": 96
+  },
+  "goal_eligible_pairs": 0,
+  "cadence": {
+    "configured": true,
+    "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+    "effective_from": "2026-09-21T21:00:00+00:00",
+    "closed_windows": 0,
+    "complete_windows": 0,
+    "coverage_percent": null,
+    "status_counts": {},
+    "current_window_started_at": "2026-09-21T21:00:00+00:00",
+    "windows": [],
+    "all_recorded_attempts": [
+      {
+        "cycle_sha256": "65b3b7d67c6e4cbb98f7b360004ca1d3225e70f9a167944794dfabb184128887",
+        "started_at": "2026-09-21T20:27:07.658033+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_failed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "1bbb40de9c89f3cd627bb94829af9d4f32de404445a16b6cca169e406f7f9012",
+        "started_at": "2026-09-21T20:29:31.309630+00:00",
+        "before_effective_period": true,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      },
+      {
+        "cycle_sha256": "845c28277b6e238c141413be71c27b2f85ee895e17af215c055fa0711a2ee224",
+        "started_at": "2026-09-21T21:00:20.111770+00:00",
+        "before_effective_period": false,
+        "terminal_records": [
+          "cycle_completed"
+        ],
+        "unfinished_record": false
+      }
+    ],
+    "unlinked_forecast_issues": 2,
+    "limitations": [
+      "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+      "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+      "An unfinished record does not establish a live process.",
+      "Before the policy effective time, historical coverage remains unproven; recorded failures remain visible separately.",
+      "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+    ]
+  },
+  "no_promotion": true
+}

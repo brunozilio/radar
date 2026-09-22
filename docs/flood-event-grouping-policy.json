@@ -1,0 +1,15 @@
+{
+  "policy_id": "mucum-observed-clusters-v1",
+  "station_id": "86510000",
+  "threshold_m": 7,
+  "dry_separation_hours": 72,
+  "max_observation_gap_minutes": 20,
+  "status": "diagnostic grouping candidate; independence not certified",
+  "threshold_role": "Analytical flood subset of the existing accuracy objective; not an official warning level.",
+  "separation_role": "Require at least72h continuously sampled below7m on each side, with no adjacent approved samples separated by more than20min. Invalid/revised/missing observations reset the below-threshold run. Never infer a separating recession across a gap.",
+  "provenance": "Group latest approved Muçum observations per station and datum. Keep open, left-censored, and gap-affected episodes. Inventory may change with revisions; retain source receipt IDs, report cutoff and ledger tip.",
+  "independence_certified": false,
+  "rationale": "Conservative operational grouping, fixed without examining forecast residuals.72h is an analyst choice to be reviewed against basin event structure; it is not a calibrated or published Muçum independence criterion.",
+  "reference": "https://nrfa.ceh.ac.uk/data/about-data/peak-flow-data/data-types/peaks-over-threshold-pot",
+  "reference_scope": "NRFA documents that several peaks can belong to one event and that separation needs hydrological criteria. Its flow recession ratio is not directly transferred to gauge levels with an arbitrary datum. This policy does not claim to implement FEH/NRFA."
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "file": "outputs/pesquisa-ana-qualidade-20260921T231424Z/ana-telemetria1ws-2013.pdf",
+    "url": "https://www.ana.gov.br/telemetria1ws/Telemetria1ws.pdf",
+    "scope": "manual2013; distinct operation DadosHidrometeorologicos",
+    "sha256": "a41339b569012a3bf6f09d94c0842f665e842f33765cb4fb8eb2a8c226d51bf6",
+    "bytes": 1015137,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/pesquisa-ana-qualidade-20260921T231424Z/source-manifest.json",
+    "original_provenance_sha256": "c17814657c7d71b797d73f839490a8b3d4112929e59434b34eb3d4cc0dd599ef"
+  },
+  {
+    "file": "outputs/pesquisa-referencia-legacy-20260921/sources/legacy-wsdl-public-proxy.xml",
+    "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx?wsdl",
+    "scope": "target-operation generic response schema",
+    "sha256": "f120cc0fd21862f96cc92586bb4483b5cce90c2ed4d503b69b678663f30a0ada",
+    "bytes": 65116,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/pesquisa-referencia-legacy-20260921/new-source-manifest.json",
+    "original_provenance_sha256": "a68763bf4a2281795a0f910dd6de5ef985ec455a1e0db6e81246912b8c1418ea"
+  },
+  {
+    "file": "outputs/pesquisa-referencia-legacy-20260921/contract-evidence.json",
+    "url": null,
+    "scope": "prior bounded WSDL/DISCO interpretation",
+    "sha256": "a9dd3b79efc7dde18d5fb87514962207fdadc3499fcf8cf318d1a4a50e0f664f",
+    "bytes": 2204,
+    "newly_downloaded": false
+  },
+  {
+    "file": "outputs/verificacao-contrato-temporal-mucum/raw/ana-form-mucum-data.html",
+    "url": "https://www.snirh.gov.br/hidrotelemetria/gerarGrafico.aspx",
+    "scope": "selected86510000; public presentationUTC−3",
+    "sha256": "0a4a505bedd4e97fdc762f749a6e6d3d1128a56a323fc02d7637a1b83bc22dab",
+    "bytes": 654725,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/verificacao-contrato-temporal-mucum/manifest.json",
+    "original_provenance_sha256": "7524eec23daecc5659e6f9967e69d5203abf8608b0e05905cf6deb374f259b5b"
+  },
+  {
+    "file": "outputs/verificacao-contrato-temporal-mucum/comparison-summary.json",
+    "url": null,
+    "scope": "73nominal records comparison and ArcGIS crosscheck",
+    "sha256": "fb5142b012967e62cf29fb9a0acce7c4d08e66909ab213ccdb0aa8fb3da68b20",
+    "bytes": 1946,
+    "newly_downloaded": false
+  },
+  {
+    "file": "outputs/verificacao-contrato-temporal-mucum/README.md",
+    "url": null,
+    "scope": "prior public routing/backend trace limits",
+    "sha256": "b273218b4985ce83f3196273504249ce0809f592dbf61155d85c2b98ab606e54",
+    "bytes": 7390,
+    "newly_downloaded": false
+  },
+  {
+    "file": "outputs/verificacao-contrato-temporal-mucum/raw/sace-root.html",
+    "url": "https://sace.sgb.gov.br/taquari/",
+    "scope": "public SACE timezone session script",
+    "sha256": "2e501141c60f397a9b5047538f5158da2c1b1a3345f09d235bfb35667032ed11",
+    "bytes": 58008,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/verificacao-contrato-temporal-mucum/manifest.json",
+    "original_provenance_sha256": "7524eec23daecc5659e6f9967e69d5203abf8608b0e05905cf6deb374f259b5b"
+  },
+  {
+    "file": "outputs/historico-cheias-mucum/documentation/ana-progestao-referencias-2020.pdf",
+    "url": "https://progestao.ana.gov.br/destaque-superior/eventos/webinarios/cotas-de-alerta/3-definicao-de-valores-de-referencia.pdf",
+    "scope": "ANA2020 presentation interface timezone; not legacy operation contract",
+    "sha256": "6abaaaa1bc7c454e2d3376f81bb09cccf894c2a689ca914aad7fcea8faa16714",
+    "bytes": 1060992,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/historico-cheias-mucum/documentation/manifest.json",
+    "original_provenance_sha256": "1c6b831ade792d89835ee50df5a456c739639af5391c48e9c4cb9f9f4fd70590"
+  },
+  {
+    "file": "outputs/historico-cheias-mucum/documentation/ana-hidrowebservice-manual-2026.pdf",
+    "url": "https://www.gov.br/ana/pt-br/assuntos/monitoramento-e-eventos-criticos/monitoramento-hidrologico/orientacoes-manuais/manuais/manual-hidrowebservice_publica.pdf",
+    "scope": "newAPI manual2026 distinct measurement/update times",
+    "sha256": "89e2929cb436241b4aae2bbb04c4077edd55379886f39c9a32eb7fec0c8faba3",
+    "bytes": 1322670,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/historico-cheias-mucum/documentation/reference-investigation-manifest.json",
+    "original_provenance_sha256": "b50708bbf5b4e2dd81b85658003e471d5a1199f359c46f83be238a93acbe1e5e"
+  },
+  {
+    "file": "outputs/historico-cheias-mucum/documentation/ana-hidrowebservice-manual-2026.txt",
+    "url": null,
+    "scope": "text derived from preceding PDF",
+    "sha256": "e4e655e81e0deb99fee6bb8b06d162e5ec643ef2828521f1b99d585bbd3ab4fa",
+    "bytes": 20236,
+    "newly_downloaded": false
+  },
+  {
+    "file": "outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/ana-formato-hidro.pdf",
+    "url": "https://www.ana.gov.br/arquivos/infohidrologicas/cadastro/OrientacoesParaEnvioDosDadosHidrologicosColetadosDuranteaResolucaoANEEL_396_1998.pdf",
+    "scope": "HIDRO2012 month/hour/daily-mean layout",
+    "sha256": "5cb985c484148becd0f504aeeee166afd69f89cf291d84f5028f4650a0053833",
+    "bytes": 1598130,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/ana-formato-hidro.pdf.source.json",
+    "original_provenance_sha256": "1e8edab9d42895f26c72c49149a02d65bd4aa77e18f5861f08abd91db99ae97b"
+  },
+  {
+    "file": "outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/ana-formato-hidro.txt",
+    "url": null,
+    "scope": "text derived from preceding PDF",
+    "sha256": "a97a0bca66a5b0164d49b3ae7cc3c3c220a671d0a08dfb49d61c99e5fc76343c",
+    "bytes": 104779,
+    "newly_downloaded": false
+  },
+  {
+    "file": "outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/new-api-v1-openapi.json",
+    "url": "https://www.ana.gov.br/hidrowebservice/api-docs/Vers%C3%A3o%20-%20v1.0.3984.2",
+    "scope": "newAPI public OpenAPI; notlegacy",
+    "sha256": "f6c5abb49476926f2451785e36780ee7cdbc6802f72d3c1166efc6c23f895808",
+    "bytes": 38721,
+    "newly_downloaded": false,
+    "original_provenance_file": "outputs/pesquisa-hidroweb-convencional-mucum-20260922/sources/new-api-v1-openapi.json.source.json",
+    "original_provenance_sha256": "5124219d12ecfafb131f10b63fbc7737a8749ef5c93cd60c5e78574c65dcd484"
+  },
+  {
+    "file": "outputs/pesquisa-hidroweb-convencional-mucum-20260922/records-original-fields.jsonl",
+    "url": null,
+    "scope": "12conventional monthly source records",
+    "sha256": "4b0866c94a27521e9b23d063c144c5718f134ddac254a1ab90ecc07cf3d6790d",
+    "bytes": 18217,
+    "newly_downloaded": false
+  },
+  {
+    "file": "outputs/historico-cheias-mucum/documentation/reference-investigation-report.md",
+    "url": null,
+    "scope": "gaugezero/currentvalidity limits",
+    "sha256": "e5595d693d1d237f8a4300cd7e88f30199a0b0c3d8c0ef903fa164d344ef6def",
+    "bytes": 6632,
+    "newly_downloaded": false
+  }
+]

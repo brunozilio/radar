@@ -1,0 +1,35 @@
+{
+  "duckdb_version": "1.4.4",
+  "selected_rows": 6060,
+  "input_sha256": {
+    "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_03.parquet": "8291a820bec78c1ca7b34e482519bf8fbad3fd45506749dd23f6edb0d32bed90",
+    "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_04.parquet": "16e77c1c90a97e2935a5e94463c5a58b4182604814baed5e037e62c65ff03152",
+    "outputs/historico-vazoes-ceran/raw/ons-2024-05.parquet": "0bee1eb4f83825e4dd8ed6d2f47ee21dc27c800a4e821c027b36f8e994dda34a"
+  },
+  "fields": [
+    "id_subsistema",
+    "nom_subsistema",
+    "tip_reservatorio",
+    "nom_bacia",
+    "id_reservatorio",
+    "nom_reservatorio",
+    "cod_usina",
+    "din_instante",
+    "val_nivelmontante",
+    "val_niveljusante",
+    "val_volumeutil",
+    "val_vazaoafluente",
+    "val_vazaodefluente",
+    "val_vazaoturbinada",
+    "val_vazaovertida",
+    "val_vazaooutrasestruturas",
+    "val_vazaotransferida",
+    "val_vazaovertidanaoturbinavel"
+  ],
+  "timestamps_shifted": false,
+  "values_corrected": false,
+  "normalized_for_model": false,
+  "trained": false,
+  "promoted": false,
+  "code_sha256": "5dfb4a2093008c1e2c842fac905f826621ca9892e9a674ad9a208c471fbab55d"
+}

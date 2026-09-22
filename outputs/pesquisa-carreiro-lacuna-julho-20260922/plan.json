@@ -1,0 +1,37 @@
+{
+  "registered_at_utc": "2026-09-22T05:01:35.236851+00:00",
+  "max_direct_requests": 6,
+  "planned_requests": 5,
+  "max_search_queries": 4,
+  "search_queries_used": 4,
+  "no_retries": true,
+  "no_auth": true,
+  "no_fill": true,
+  "requests": [
+    {
+      "file": "sigma-20260721.txt",
+      "url": "https://sigmameteorologia.com/produtos/stations/2026-07-21/86500000.txt",
+      "reason": "Public SIGMA republication; station/date path used in existing collector. Not independently government-owned."
+    },
+    {
+      "file": "sigma-20260722.txt",
+      "url": "https://sigmameteorologia.com/produtos/stations/2026-07-22/86500000.txt",
+      "reason": "Same known public dated archive contract."
+    },
+    {
+      "file": "sace-current.csv",
+      "url": "https://sace.sgb.gov.br/api/dados/taquari_54_cota.csv",
+      "reason": "Existing official SGB export, station54 linked to86500000 by preserved point metadata; may only be rolling recent data."
+    },
+    {
+      "file": "ana-window.xml",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=21%2F07%2F2026&dataFim=22%2F07%2F2026",
+      "reason": "Known public ANA endpoint; compare current response/revision, not independent measurement."
+    },
+    {
+      "file": "rs-bulletin.html",
+      "url": "https://www3.estado.rs.gov.br/centro-de-monitoramento-da-defesa-civil-do-rs-atualiza-prognostico-de-resposta-hidrologica",
+      "reason": "Official state page discovered by bounded search; possible publication link, not presumed station series."
+    }
+  ]
+}

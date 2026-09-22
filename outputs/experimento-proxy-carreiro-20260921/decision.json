@@ -1,0 +1,12 @@
+{
+  "promoted": false,
+  "live_issuance": false,
+  "goal_achieved": false,
+  "decision": "Retain as a historical coverage candidate only.",
+  "reason": "Recovers missing-input forecasts with every previously finite prediction unchanged. Twelve-hour high-water accuracy remains 30.2%, far below the 98% target. Previously inspected development periods and assumed input publication times do not supply independent or prospective proof.",
+  "next_evidence_needed": [
+    "Evaluate estimated upstream flow on observed held-out events and realistic missingness patterns without tuning against this test period.",
+    "Stratify recovered downstream predictions by flood event and origin trend.",
+    "Require independent temporal/event validation before any live candidate promotion."
+  ]
+}

@@ -1,0 +1,1271 @@
+{
+  "audited_at_utc": "2026-09-22T01:32:17.340222+00:00",
+  "passed": true,
+  "check_count": 124,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "matrix_hash:code/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:code/hydro_latency_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:code/hydro_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:code/hydro_radar_2024_features.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:code/hydro_rain_windows.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:code/hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:feature-coverage.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:features.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:level-source-trace.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:preparation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:quarter-hour.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:rain-coverage.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "matrix_hash:rain-delays.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:docs/radar-2024-features-protocol.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/mucum-propagacao-2026-09-21/chuva-pesos.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/auditoria-latencias-chuva-20260921/latencies.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/auditoria-latencias-chuva-20260921/regional-comparison.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/ons-ceran-source-values.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:scripts/hydro_radar_2024_features.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:scripts/hydro_hourly_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:scripts/hydro_latency_forecast.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:scripts/hydro_model.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:scripts/hydro_rain_windows.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:scripts/hydro_routing_fit.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86060010-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86099000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86102000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86117000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86125000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86125050-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86160000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86163000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86200900-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86280500-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86298000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86403000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86410800-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86447000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86448000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86450000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86471000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86472000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86472600-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86479000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86488000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86493000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86495500-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86500000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86504900-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86505500-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-hidrologia-20260921/stations/ana-86510000-all-qc.jsonl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-meteorologia-20260921/raw/gfs_seamless.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-meteorologia-20260921/raw/ecmwf_ifs025.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_hash:outputs/radar-insumos-2024-meteorologia-20260921/raw/icon_global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "origin_grid",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "quarter_hour_grid",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "feature_shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_duplicate_origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all44640_weather_cells_vs_independent_audit",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744,
+          60
+        ],
+        "shape_b": [
+          744,
+          60
+        ],
+        "atol": 1e-12,
+        "exact_equal": false,
+        "max_abs_diff": 1.4210854715202004e-14
+      }
+    },
+    {
+      "name": "weather_audit_keys_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all44640_weather_cells_vs_raw_hourly",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744,
+          60
+        ],
+        "shape_b": [
+          744,
+          60
+        ],
+        "atol": 1e-12,
+        "exact_equal": false,
+        "max_abs_diff": 1.4210854715202004e-14
+      }
+    },
+    {
+      "name": "raw_level:86510000",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "delayed_level:86510000",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "no_future_level_source:86510000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_level:86472000",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "delayed_level:86472000",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "no_future_level_source:86472000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_level:86472600",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "delayed_level:86472600",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "no_future_level_source:86472600",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_level:86500000",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": null
+      }
+    },
+    {
+      "name": "delayed_level:86500000",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": null
+      }
+    },
+    {
+      "name": "no_future_level_source:86500000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all2976_level_trace_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all17856_first24_cells",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744,
+          24
+        ],
+        "shape_b": [
+          744,
+          24
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "base_is_delayed_mucum",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "truth_is_current_exact_mucum",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "complete24_mask",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "carreiro_all_missing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_complete24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h1",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h2",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h3",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h4",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h5",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h6",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h7",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h8",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h9",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h10",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h11",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "target_alignment_h12",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744
+        ],
+        "shape_b": [
+          744
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "target_cutoff_h12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all89280_telemetry_cells_vs_quarter_hour",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744,
+          120
+        ],
+        "shape_b": [
+          744,
+          120
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_unique_source_times:julho",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ons_source_join:raw:julho:Q",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:julho:Q",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:raw:julho:I",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:julho:I",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_unique_source_times:monte",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ons_source_join:raw:monte:Q",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:monte:Q",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:raw:monte:I",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:monte:I",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_unique_source_times:castro",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ons_source_join:raw:castro:Q",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:castro:Q",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:raw:castro:I",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_source_join:castro:I",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          3264
+        ],
+        "shape_b": [
+          3264
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "ons_no_future_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ons_expiry_after_delayed_query",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all15624_flow_features_vs_ONS_source",
+      "passed": true,
+      "detail": {
+        "shape_a": [
+          744,
+          21
+        ],
+        "shape_b": [
+          744,
+          21
+        ],
+        "atol": 0,
+        "exact_equal": true,
+        "max_abs_diff": 0.0
+      }
+    }
+  ],
+  "target_alignment": [
+    {
+      "horizon_h": 1,
+      "origins": 744,
+      "finite_future_targets": 743,
+      "missing_future_targets": 1,
+      "expected_finite": 743,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 2,
+      "origins": 744,
+      "finite_future_targets": 742,
+      "missing_future_targets": 2,
+      "expected_finite": 742,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 3,
+      "origins": 744,
+      "finite_future_targets": 741,
+      "missing_future_targets": 3,
+      "expected_finite": 741,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 4,
+      "origins": 744,
+      "finite_future_targets": 740,
+      "missing_future_targets": 4,
+      "expected_finite": 740,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 5,
+      "origins": 744,
+      "finite_future_targets": 739,
+      "missing_future_targets": 5,
+      "expected_finite": 739,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 6,
+      "origins": 744,
+      "finite_future_targets": 738,
+      "missing_future_targets": 6,
+      "expected_finite": 738,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 7,
+      "origins": 744,
+      "finite_future_targets": 737,
+      "missing_future_targets": 7,
+      "expected_finite": 737,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 8,
+      "origins": 744,
+      "finite_future_targets": 736,
+      "missing_future_targets": 8,
+      "expected_finite": 736,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 9,
+      "origins": 744,
+      "finite_future_targets": 735,
+      "missing_future_targets": 9,
+      "expected_finite": 735,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 10,
+      "origins": 744,
+      "finite_future_targets": 734,
+      "missing_future_targets": 10,
+      "expected_finite": 734,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 11,
+      "origins": 744,
+      "finite_future_targets": 733,
+      "missing_future_targets": 11,
+      "expected_finite": 733,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    },
+    {
+      "horizon_h": 12,
+      "origins": 744,
+      "finite_future_targets": 732,
+      "missing_future_targets": 12,
+      "expected_finite": 732,
+      "last_finite_target": "2024-05-01T23:00:00-03:00"
+    }
+  ],
+  "ons_source_checks": [
+    {
+      "plant": "julho",
+      "hourly_field_queries": 1488,
+      "usable": 1464,
+      "missing": 24,
+      "selected_literal_2359": 62,
+      "max_age_after_query_seconds_usable": 3600.0,
+      "max_total_source_age_seconds_usable": 7200.0,
+      "literal_2359_examples": [
+        {
+          "plant": "julho",
+          "field": "Q",
+          "origin": "2024-04-01T01:00:00-03:00",
+          "query_time": "2024-04-01T00:00:00-03:00",
+          "source_time": "2024-03-31T23:59:00-03:00",
+          "age_after_query_seconds": 60.0,
+          "source_value": 189.0,
+          "usable": true,
+          "source_row": 744,
+          "source_file": "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_03.parquet"
+        },
+        {
+          "plant": "julho",
+          "field": "Q",
+          "origin": "2024-04-02T01:00:00-03:00",
+          "query_time": "2024-04-02T00:00:00-03:00",
+          "source_time": "2024-04-01T23:59:00-03:00",
+          "age_after_query_seconds": 60.0,
+          "source_value": 159.0,
+          "usable": true,
+          "source_row": 768,
+          "source_file": "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_04.parquet"
+        }
+      ]
+    },
+    {
+      "plant": "monte",
+      "hourly_field_queries": 1488,
+      "usable": 1464,
+      "missing": 24,
+      "selected_literal_2359": 62,
+      "max_age_after_query_seconds_usable": 3600.0,
+      "max_total_source_age_seconds_usable": 7200.0,
+      "literal_2359_examples": [
+        {
+          "plant": "monte",
+          "field": "Q",
+          "origin": "2024-04-01T01:00:00-03:00",
+          "query_time": "2024-04-01T00:00:00-03:00",
+          "source_time": "2024-03-31T23:59:00-03:00",
+          "age_after_query_seconds": 60.0,
+          "source_value": 52.0,
+          "usable": true,
+          "source_row": 744,
+          "source_file": "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_03.parquet"
+        },
+        {
+          "plant": "monte",
+          "field": "Q",
+          "origin": "2024-04-02T01:00:00-03:00",
+          "query_time": "2024-04-02T00:00:00-03:00",
+          "source_time": "2024-04-01T23:59:00-03:00",
+          "age_after_query_seconds": 60.0,
+          "source_value": 67.0,
+          "usable": true,
+          "source_row": 768,
+          "source_file": "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_04.parquet"
+        }
+      ]
+    },
+    {
+      "plant": "castro",
+      "hourly_field_queries": 1488,
+      "usable": 1466,
+      "missing": 22,
+      "selected_literal_2359": 62,
+      "max_age_after_query_seconds_usable": 3600.0,
+      "max_total_source_age_seconds_usable": 7200.0,
+      "literal_2359_examples": [
+        {
+          "plant": "castro",
+          "field": "Q",
+          "origin": "2024-04-01T01:00:00-03:00",
+          "query_time": "2024-04-01T00:00:00-03:00",
+          "source_time": "2024-03-31T23:59:00-03:00",
+          "age_after_query_seconds": 60.0,
+          "source_value": 41.0,
+          "usable": true,
+          "source_row": 744,
+          "source_file": "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_03.parquet"
+        },
+        {
+          "plant": "castro",
+          "field": "Q",
+          "origin": "2024-04-02T01:00:00-03:00",
+          "query_time": "2024-04-02T00:00:00-03:00",
+          "source_time": "2024-04-01T23:59:00-03:00",
+          "age_after_query_seconds": 60.0,
+          "source_value": 47.0,
+          "usable": true,
+          "source_row": 768,
+          "source_file": "outputs/radar-insumos-2024-hidrologia-20260921/raw/ons-2024_04.parquet"
+        }
+      ]
+    }
+  ],
+  "no_refit": true,
+  "no_pipeline_execution": true,
+  "limits": [
+    "This verifies the preserved inputs and transformations; it does not certify original observation publication time or vertical reference.",
+    "Regional observed-rain aggregation was not independently reconstructed from ANA sources in this audit. Rain telemetry derivatives match quarter-hour; ONS flow features were independently reconstructed from source-values CSV, not original Parquet.",
+    "truth stores current H(O), not H(O+h); future training labels require a negative h shift and exclusion when target>=2024-05-02.",
+    "Fixed delays borrowed from2026 remain assumptions for2024; weather fixed-lead vintage is not individually certified."
+  ]
+}

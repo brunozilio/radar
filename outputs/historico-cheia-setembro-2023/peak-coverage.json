@@ -1,0 +1,86 @@
+{
+  "ONS": [
+    {
+      "id": "JIUHCA",
+      "name": "CASTRO ALVES",
+      "maxima_original_timestamps": {
+        "val_vazaoafluente": {
+          "din_instante": "2023-09-04 18:00:00",
+          "val_vazaoafluente": 9783.0
+        },
+        "val_vazaodefluente": {
+          "din_instante": "2023-09-04 19:00:00",
+          "val_vazaodefluente": 9636.0
+        }
+      },
+      "Sep3_to6_rows": 96,
+      "Sep3_to6_expected": 96,
+      "QI_nonnull": 96
+    },
+    {
+      "id": "JIUHMC",
+      "name": "MONTE CLARO",
+      "maxima_original_timestamps": {
+        "val_vazaoafluente": {
+          "din_instante": "2023-09-04 20:00:00",
+          "val_vazaoafluente": 14823.0
+        },
+        "val_vazaodefluente": {
+          "din_instante": "2023-09-04 20:00:00",
+          "val_vazaodefluente": 14807.0
+        }
+      },
+      "Sep3_to6_rows": 96,
+      "Sep3_to6_expected": 96,
+      "QI_nonnull": 96
+    },
+    {
+      "id": "JIUHQJ",
+      "name": "14 DE JULHO",
+      "maxima_original_timestamps": {
+        "val_vazaoafluente": {
+          "din_instante": "2023-09-04 22:00:00",
+          "val_vazaoafluente": 15210.0
+        },
+        "val_vazaodefluente": {
+          "din_instante": "2023-09-04 22:00:00",
+          "val_vazaodefluente": 15114.0
+        }
+      },
+      "Sep3_to6_rows": 96,
+      "Sep3_to6_expected": 96,
+      "QI_nonnull": 96
+    }
+  ],
+  "ANA_last_approved_before_failure": {
+    "CodEstacao": 86510000,
+    "timestamp_source_naive": "2023-09-04T19:30:00",
+    "timestamp_utc_assuming_minus03": "2023-09-04T22:30:00+00:00",
+    "timezone_status": "ASSUMED_UTC_MINUS03_NOT_VERIFIED",
+    "datum_status": "UNVERIFIED",
+    "NivelFinal": 2179.0,
+    "level_m": 21.79,
+    "CQ_NivelFinal": "Dado aprovado",
+    "duplicate_conflict": false,
+    "source_file": "raw/ana-01-09-2023--04-09-2023.xml"
+  },
+  "ANA_first_approved_after_failure": {
+    "CodEstacao": 86510000,
+    "timestamp_source_naive": "2023-09-08T14:15:00",
+    "timestamp_utc_assuming_minus03": "2023-09-08T17:15:00+00:00",
+    "timezone_status": "ASSUMED_UTC_MINUS03_NOT_VERIFIED",
+    "datum_status": "UNVERIFIED",
+    "NivelFinal": 661.0,
+    "level_m": 6.61,
+    "CQ_NivelFinal": "Dado aprovado",
+    "duplicate_conflict": false,
+    "source_file": "raw/ana-06-09-2023--30-09-2023.xml"
+  },
+  "retrospective_SGB_peak": {
+    "level_m": 26.108,
+    "approx_local_time": "2023-09-05T02:30:00",
+    "survey_date": "2023-09-08",
+    "status": "RETROSPECTIVE_LEVELLED_MARK_NOT_TELEMETRY_NOT_INSERTED",
+    "datum_link_to_current_gauge": "UNVERIFIED"
+  }
+}

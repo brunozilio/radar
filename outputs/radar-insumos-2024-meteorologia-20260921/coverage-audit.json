@@ -1,0 +1,1184 @@
+{
+  "audited_at_utc": "2026-09-22T01:12:11.888878+00:00",
+  "requested_valid_start": "2024-03-29T00:00",
+  "requested_valid_end": "2024-05-02T23:00",
+  "expected_hours_per_location": 840,
+  "origins_start": "2024-04-01T00:00:00-03:00",
+  "origins_end": "2024-05-01T23:00:00-03:00",
+  "origins_per_location": 744,
+  "windows_hours": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "origin_excluded": true,
+  "models": [
+    {
+      "model": "gfs_seamless",
+      "source": {
+        "model_requested": "gfs_seamless",
+        "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2024-03-29&end_date=2024-05-02&timezone=America%2FSao_Paulo&models=gfs_seamless",
+        "parameters": {
+          "latitude": "-29.10130785468805,-28.617206724785383,-28.53539152408411,-28.896465738401762,-29.094079778427865",
+          "longitude": "-51.61242071623862,-51.80616783479565,-51.34454479607806,-50.73053255734869,-50.3763042754807",
+          "hourly": "precipitation_previous_day1",
+          "start_date": "2024-03-29",
+          "end_date": "2024-05-02",
+          "timezone": "America/Sao_Paulo",
+          "models": "gfs_seamless"
+        },
+        "requested_at_utc": "2026-09-22T01:11:59.779053+00:00",
+        "status": "response_preserved",
+        "coordinate_source_sha256": "332b461a6590399daa9a65492300620710bfaf1c087561a1a45ca1d33c2220f4",
+        "http_status": 200,
+        "response_url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2024-03-29&end_date=2024-05-02&timezone=America%2FSao_Paulo&models=gfs_seamless",
+        "headers": {
+          "Date": "Tue, 22 Sep 2026 01:12:00 GMT",
+          "Content-Type": "application/json; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close"
+        },
+        "collected_at_utc": "2026-09-22T01:12:01.361829+00:00",
+        "file": "raw/gfs_seamless.json",
+        "bytes": 102455,
+        "sha256": "01f0b358aa59e71a4491c6f4bc19d097d59fa8a0f5274da9a3ecf7e6829dd405"
+      },
+      "locations": [
+        {
+          "requested": {
+            "index": 0,
+            "group": "Baixo Antas",
+            "latitude_requested": -29.10130785468805,
+            "longitude_requested": -51.61242071623862
+          },
+          "response_position": 0,
+          "location_id": 0,
+          "returned_grid_latitude": -29.11161,
+          "returned_grid_longitude": -51.5625,
+          "elevation_m": 283.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 14.2,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 1,
+            "group": "Carreiro",
+            "latitude_requested": -28.617206724785383,
+            "longitude_requested": -51.80616783479565
+          },
+          "response_position": 1,
+          "location_id": 1,
+          "returned_grid_latitude": -28.643013,
+          "returned_grid_longitude": -51.796875,
+          "elevation_m": 603.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 17.8,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 2,
+            "group": "Prata-Turvo",
+            "latitude_requested": -28.53539152408411,
+            "longitude_requested": -51.34454479607806
+          },
+          "response_position": 2,
+          "location_id": 2,
+          "returned_grid_latitude": -28.525864,
+          "returned_grid_longitude": -51.328125,
+          "elevation_m": 746.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 11.7,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 3,
+            "group": "Alto Antas",
+            "latitude_requested": -28.896465738401762,
+            "longitude_requested": -50.73053255734869
+          },
+          "response_position": 3,
+          "location_id": 3,
+          "returned_grid_latitude": -28.877312,
+          "returned_grid_longitude": -50.742188,
+          "elevation_m": 841.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 30.9,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 4,
+            "group": "Tainhas",
+            "latitude_requested": -29.094079778427865,
+            "longitude_requested": -50.3763042754807
+          },
+          "response_position": 4,
+          "location_id": 4,
+          "returned_grid_latitude": -29.11161,
+          "returned_grid_longitude": -50.390625,
+          "elevation_m": 850.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 14.5,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        }
+      ],
+      "hash_verified": true
+    },
+    {
+      "model": "ecmwf_ifs025",
+      "source": {
+        "model_requested": "ecmwf_ifs025",
+        "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2024-03-29&end_date=2024-05-02&timezone=America%2FSao_Paulo&models=ecmwf_ifs025",
+        "parameters": {
+          "latitude": "-29.10130785468805,-28.617206724785383,-28.53539152408411,-28.896465738401762,-29.094079778427865",
+          "longitude": "-51.61242071623862,-51.80616783479565,-51.34454479607806,-50.73053255734869,-50.3763042754807",
+          "hourly": "precipitation_previous_day1",
+          "start_date": "2024-03-29",
+          "end_date": "2024-05-02",
+          "timezone": "America/Sao_Paulo",
+          "models": "ecmwf_ifs025"
+        },
+        "requested_at_utc": "2026-09-22T01:12:01.362096+00:00",
+        "status": "response_preserved",
+        "coordinate_source_sha256": "332b461a6590399daa9a65492300620710bfaf1c087561a1a45ca1d33c2220f4",
+        "http_status": 200,
+        "response_url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2024-03-29&end_date=2024-05-02&timezone=America%2FSao_Paulo&models=ecmwf_ifs025",
+        "headers": {
+          "Date": "Tue, 22 Sep 2026 01:12:02 GMT",
+          "Content-Type": "application/json; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close"
+        },
+        "collected_at_utc": "2026-09-22T01:12:02.885030+00:00",
+        "file": "raw/ecmwf_ifs025.json",
+        "bytes": 102417,
+        "sha256": "6d6e729be177aa3bc121076d1bd31f1505b519474731cba7859a530490c69c49"
+      },
+      "locations": [
+        {
+          "requested": {
+            "index": 0,
+            "group": "Baixo Antas",
+            "latitude_requested": -29.10130785468805,
+            "longitude_requested": -51.61242071623862
+          },
+          "response_position": 0,
+          "location_id": 0,
+          "returned_grid_latitude": -29.0,
+          "returned_grid_longitude": -51.5,
+          "elevation_m": 283.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 11.3,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 1,
+            "group": "Carreiro",
+            "latitude_requested": -28.617206724785383,
+            "longitude_requested": -51.80616783479565
+          },
+          "response_position": 1,
+          "location_id": 1,
+          "returned_grid_latitude": -28.5,
+          "returned_grid_longitude": -51.75,
+          "elevation_m": 603.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 14.3,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 2,
+            "group": "Prata-Turvo",
+            "latitude_requested": -28.53539152408411,
+            "longitude_requested": -51.34454479607806
+          },
+          "response_position": 2,
+          "location_id": 2,
+          "returned_grid_latitude": -28.5,
+          "returned_grid_longitude": -51.25,
+          "elevation_m": 746.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 11.9,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 3,
+            "group": "Alto Antas",
+            "latitude_requested": -28.896465738401762,
+            "longitude_requested": -50.73053255734869
+          },
+          "response_position": 3,
+          "location_id": 3,
+          "returned_grid_latitude": -29.0,
+          "returned_grid_longitude": -50.75,
+          "elevation_m": 841.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 11.9,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 4,
+            "group": "Tainhas",
+            "latitude_requested": -29.094079778427865,
+            "longitude_requested": -50.3763042754807
+          },
+          "response_position": 4,
+          "location_id": 4,
+          "returned_grid_latitude": -29.0,
+          "returned_grid_longitude": -50.5,
+          "elevation_m": 850.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 6.9,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        }
+      ],
+      "hash_verified": true
+    },
+    {
+      "model": "icon_global",
+      "source": {
+        "model_requested": "icon_global",
+        "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2024-03-29&end_date=2024-05-02&timezone=America%2FSao_Paulo&models=icon_global",
+        "parameters": {
+          "latitude": "-29.10130785468805,-28.617206724785383,-28.53539152408411,-28.896465738401762,-29.094079778427865",
+          "longitude": "-51.61242071623862,-51.80616783479565,-51.34454479607806,-50.73053255734869,-50.3763042754807",
+          "hourly": "precipitation_previous_day1",
+          "start_date": "2024-03-29",
+          "end_date": "2024-05-02",
+          "timezone": "America/Sao_Paulo",
+          "models": "icon_global"
+        },
+        "requested_at_utc": "2026-09-22T01:12:02.886344+00:00",
+        "status": "response_preserved",
+        "coordinate_source_sha256": "332b461a6590399daa9a65492300620710bfaf1c087561a1a45ca1d33c2220f4",
+        "http_status": 200,
+        "response_url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=-29.10130785468805%2C-28.617206724785383%2C-28.53539152408411%2C-28.896465738401762%2C-29.094079778427865&longitude=-51.61242071623862%2C-51.80616783479565%2C-51.34454479607806%2C-50.73053255734869%2C-50.3763042754807&hourly=precipitation_previous_day1&start_date=2024-03-29&end_date=2024-05-02&timezone=America%2FSao_Paulo&models=icon_global",
+        "headers": {
+          "Date": "Tue, 22 Sep 2026 01:12:03 GMT",
+          "Content-Type": "application/json; charset=utf-8",
+          "Transfer-Encoding": "chunked",
+          "Connection": "close"
+        },
+        "collected_at_utc": "2026-09-22T01:12:04.412382+00:00",
+        "file": "raw/icon_global.json",
+        "bytes": 102433,
+        "sha256": "123c322e2ee53d2e7dcc42a73503a68894a40cd63145c9e975988c076f7882aa"
+      },
+      "locations": [
+        {
+          "requested": {
+            "index": 0,
+            "group": "Baixo Antas",
+            "latitude_requested": -29.10130785468805,
+            "longitude_requested": -51.61242071623862
+          },
+          "response_position": 0,
+          "location_id": 0,
+          "returned_grid_latitude": -29.125,
+          "returned_grid_longitude": -51.625,
+          "elevation_m": 283.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 14.2,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 1,
+            "group": "Carreiro",
+            "latitude_requested": -28.617206724785383,
+            "longitude_requested": -51.80616783479565
+          },
+          "response_position": 1,
+          "location_id": 1,
+          "returned_grid_latitude": -28.625,
+          "returned_grid_longitude": -51.75,
+          "elevation_m": 603.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 26.3,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 2,
+            "group": "Prata-Turvo",
+            "latitude_requested": -28.53539152408411,
+            "longitude_requested": -51.34454479607806
+          },
+          "response_position": 2,
+          "location_id": 2,
+          "returned_grid_latitude": -28.5,
+          "returned_grid_longitude": -51.375,
+          "elevation_m": 746.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 20.9,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 3,
+            "group": "Alto Antas",
+            "latitude_requested": -28.896465738401762,
+            "longitude_requested": -50.73053255734869
+          },
+          "response_position": 3,
+          "location_id": 3,
+          "returned_grid_latitude": -28.875,
+          "returned_grid_longitude": -50.75,
+          "elevation_m": 841.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 21.1,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        },
+        {
+          "requested": {
+            "index": 4,
+            "group": "Tainhas",
+            "latitude_requested": -29.094079778427865,
+            "longitude_requested": -50.3763042754807
+          },
+          "response_position": 4,
+          "location_id": 4,
+          "returned_grid_latitude": -29.125,
+          "returned_grid_longitude": -50.375,
+          "elevation_m": 850.0,
+          "timezone": "America/Sao_Paulo",
+          "utc_offset_seconds": -10800,
+          "hourly_units": {
+            "time": "iso8601",
+            "precipitation_previous_day1": "mm"
+          },
+          "checks": {
+            "count_840": true,
+            "exact_expected_times": true,
+            "no_duplicate_times": true,
+            "mm": true,
+            "timezone": true,
+            "utc_offset_minus10800": true,
+            "location_id": true,
+            "hash": true
+          },
+          "finite_values": 840,
+          "nulls": 0,
+          "other_nonfinite": 0,
+          "negative": 0,
+          "min_mm": 0.0,
+          "max_mm": 18.0,
+          "null_intervals": [],
+          "window_coverage": {
+            "3": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "6": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "9": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            },
+            "12": {
+              "complete": 744,
+              "total": 744,
+              "incomplete": 0
+            }
+          },
+          "top_level_keys": [
+            "latitude",
+            "longitude",
+            "generationtime_ms",
+            "utc_offset_seconds",
+            "timezone",
+            "timezone_abbreviation",
+            "elevation",
+            "location_id",
+            "hourly_units",
+            "hourly"
+          ],
+          "per_value_run_or_publication_present": false
+        }
+      ],
+      "hash_verified": true
+    }
+  ],
+  "failures": [],
+  "certified_historical_publication": false
+}

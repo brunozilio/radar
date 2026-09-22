@@ -1,0 +1,203 @@
+{
+  "reference": "2026-09-21T21:00:00-03:00",
+  "sources": [
+    {
+      "plant": "julho",
+      "rows": 48,
+      "earliest": "2026-09-19T21:00:00-03:00",
+      "latest": "2026-09-21T20:00:00-03:00",
+      "headers": [
+        "Data / Hora",
+        "Nível Montante (m)",
+        "Nível Justante (m)",
+        "Vazão Afluente (㎥/s)",
+        "Vazão Turbinada (㎥/s)",
+        "Vazão Vertida (㎥/s)",
+        "Vazão Remanescente (㎥/s)",
+        "Defluência (㎥/s)"
+      ],
+      "collected_at": "2026-09-21T21:00:28.289587-03:00",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHQJ.php",
+      "latest_age_at_reference_min": 60.0,
+      "sha256": "8ea17956e32e4efb5e2adcaa1e1818e876d536aa2199770ccb5eafce6116ce8a"
+    },
+    {
+      "plant": "monte",
+      "rows": 48,
+      "earliest": "2026-09-19T21:00:00-03:00",
+      "latest": "2026-09-21T20:00:00-03:00",
+      "headers": [
+        "Data / Hora",
+        "Nível Montante (m)",
+        "Nível Justante (m)",
+        "Vazão Afluente (㎥/s)",
+        "Vazão Turbinada (㎥/s)",
+        "Vazão Vertida (㎥/s)",
+        "Vazão Remanescente (㎥/s)",
+        "Defluência (㎥/s)"
+      ],
+      "collected_at": "2026-09-21T21:00:28.332699-03:00",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHMC.php",
+      "latest_age_at_reference_min": 60.0,
+      "sha256": "d972d354afc66f7e74742090f58956bad664df4c18bc3a02e0e3e4b29d9dea0a"
+    },
+    {
+      "plant": "castro",
+      "rows": 48,
+      "earliest": "2026-09-19T21:00:00-03:00",
+      "latest": "2026-09-21T20:00:00-03:00",
+      "headers": [
+        "Data / Hora",
+        "Nível Montante (m)",
+        "Nível Justante (m)",
+        "Vazão Afluente (㎥/s)",
+        "Vazão Turbinada (㎥/s)",
+        "Vazão Vertida (㎥/s)",
+        "Vazão Remanescente (㎥/s)",
+        "Defluência (㎥/s)"
+      ],
+      "collected_at": "2026-09-21T21:00:28.493512-03:00",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHCA.php",
+      "latest_age_at_reference_min": 60.0,
+      "sha256": "bddab03f05fddb97868597ba7f701aafda0f218d978fe4c6dcf87f4bafb56020"
+    }
+  ],
+  "comparisons": [
+    {
+      "plant": "JIUHQJ",
+      "field": "val_nivelmontante",
+      "live_rows": 48,
+      "paired": 37,
+      "equal_within_1e_9m": 37,
+      "max_abs_difference_m": 0.0,
+      "median_abs_difference_m": 0.0
+    },
+    {
+      "plant": "JIUHQJ",
+      "field": "val_niveljusante",
+      "live_rows": 48,
+      "paired": 37,
+      "equal_within_1e_9m": 37,
+      "max_abs_difference_m": 0.0,
+      "median_abs_difference_m": 0.0
+    },
+    {
+      "plant": "JIUHMC",
+      "field": "val_nivelmontante",
+      "live_rows": 48,
+      "paired": 37,
+      "equal_within_1e_9m": 37,
+      "max_abs_difference_m": 0.0,
+      "median_abs_difference_m": 0.0
+    },
+    {
+      "plant": "JIUHMC",
+      "field": "val_niveljusante",
+      "live_rows": 48,
+      "paired": 37,
+      "equal_within_1e_9m": 37,
+      "max_abs_difference_m": 0.0,
+      "median_abs_difference_m": 0.0
+    },
+    {
+      "plant": "JIUHCA",
+      "field": "val_nivelmontante",
+      "live_rows": 48,
+      "paired": 37,
+      "equal_within_1e_9m": 37,
+      "max_abs_difference_m": 0.0,
+      "median_abs_difference_m": 0.0
+    },
+    {
+      "plant": "JIUHCA",
+      "field": "val_niveljusante",
+      "live_rows": 48,
+      "paired": 37,
+      "equal_within_1e_9m": 37,
+      "max_abs_difference_m": 0.0,
+      "median_abs_difference_m": 0.0
+    }
+  ],
+  "cross_snapshot_pairs": 270,
+  "cross_snapshot_revisions": [
+    {
+      "plant": "JIUHCA",
+      "time": "2026-09-21T17:00:00-03:00",
+      "field": "val_nivelmontante",
+      "earlier_m": 246.22,
+      "later_m": 246.17,
+      "delta_m": -0.05000000000001137,
+      "earlier_collected_at": "2026-09-21T18:00:26.394573-03:00",
+      "later_collected_at": "2026-09-21T21:00:28.493512-03:00"
+    }
+  ],
+  "live_features_finite": 24,
+  "live_features_total": 24,
+  "training_sets_with_missing_reservoir_features": 0,
+  "training_sets": 24,
+  "outside_names_by_phase": {
+    "validation": [
+      "castro:val_niveljusante:level",
+      "castro:val_niveljusante:slope3",
+      "castro:val_niveljusante:slope6",
+      "castro:val_nivelmontante:change1",
+      "castro:val_nivelmontante:level",
+      "castro:val_nivelmontante:slope3",
+      "castro:val_nivelmontante:slope6",
+      "julho:val_niveljusante:level",
+      "julho:val_niveljusante:slope3",
+      "julho:val_niveljusante:slope6",
+      "julho:val_nivelmontante:level",
+      "julho:val_nivelmontante:slope6",
+      "monte:val_niveljusante:level",
+      "monte:val_niveljusante:slope3",
+      "monte:val_niveljusante:slope6",
+      "monte:val_nivelmontante:level",
+      "monte:val_nivelmontante:slope3",
+      "monte:val_nivelmontante:slope6"
+    ],
+    "test": [
+      "castro:val_niveljusante:level",
+      "castro:val_niveljusante:slope3",
+      "castro:val_niveljusante:slope6",
+      "castro:val_nivelmontante:change1",
+      "castro:val_nivelmontante:level",
+      "castro:val_nivelmontante:slope3",
+      "castro:val_nivelmontante:slope6",
+      "julho:val_niveljusante:level",
+      "julho:val_niveljusante:slope3",
+      "julho:val_niveljusante:slope6",
+      "julho:val_nivelmontante:level",
+      "monte:val_niveljusante:level",
+      "monte:val_niveljusante:slope3",
+      "monte:val_niveljusante:slope6",
+      "monte:val_nivelmontante:level",
+      "monte:val_nivelmontante:slope3",
+      "monte:val_nivelmontante:slope6"
+    ]
+  },
+  "utc_minus_3_assumed": true,
+  "same_datum_certified": false,
+  "historical_publication_latency_certified": false,
+  "candidate_issued": false,
+  "model_promoted": false,
+  "input_sha256": {
+    "outputs/auditoria-compatibilidade-ceran-radar-20260921/audit.py": "74c4ded8558bf03a703850eab592c4d4d4ab31614a487baf29d939edc48818c8",
+    "outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_09-ceran.csv": "c2ab2b5857f040077584b2747dbce7a9affae9356c4ad3dd87d2125a7005b5d1",
+    "outputs/mucum-hourly-20260921T210023-0300/collection-manifest.json": "9c6ddbbad23c68b8037f908de1620365223cfbb1260ff38450ad73a9420e1521",
+    "outputs/mucum-hourly-20260921T210023-0300/run.json": "4db7c1a098bb13ebe865b3d5aaee4d2cdac22fcb04668f6189bdf548d247b5bd",
+    "outputs/experimento-radar-niveis-reservatorios-20260921/features.npz": "f258f76dc5096d0f3fba1c5492b427870293e873c063362df077d112a0456cfe",
+    "outputs/experimento-radar-niveis-reservatorios-20260921/training.csv": "c501cb1e7ff66d7576c642c98d975461cc3c1ad111b965461e8b68e2e017e793",
+    "scripts/hydro_reservoir_level_experiment.py": "155cc6541bf852f52de9a2e7121aaf847d9f2966025ec9f9eca11cf322f9e97f",
+    "scripts/hydro_radar_native_missing.py": "be7bbb6f14f709b4c21c7cfb9a1d2dceffd961857b859a3f0eeb08796ef43e09",
+    "scripts/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae",
+    "scripts/hydro_hourly_forecast.py": "fd40fd74e87486e7df586d2b223096b216dfc556b69c20a384f2ae610480e650",
+    "outputs/mucum-hourly-20260921T210023-0300/raw/ceran-julho-fresh.html": "8ea17956e32e4efb5e2adcaa1e1818e876d536aa2199770ccb5eafce6116ce8a",
+    "outputs/mucum-hourly-20260921T210023-0300/raw/ceran-monte-fresh.html": "d972d354afc66f7e74742090f58956bad664df4c18bc3a02e0e3e4b29d9dea0a",
+    "outputs/mucum-hourly-20260921T210023-0300/raw/ceran-castro-fresh.html": "bddab03f05fddb97868597ba7f701aafda0f218d978fe4c6dcf87f4bafb56020",
+    "outputs/mucum-hourly-20260921T180020-0300/collection-manifest.json": "76b8da30a6330f63be82d4d95b4a342214f22939494f8a29581646ee553dac9d",
+    "outputs/mucum-hourly-20260921T180020-0300/raw/ceran-julho-fresh.html": "8e03522d71d8ad546954c4931ce334a5ac66f3ab6fb9896705edebeebffdcb6f",
+    "outputs/mucum-hourly-20260921T180020-0300/raw/ceran-monte-fresh.html": "9f51328cef27573618f23678e80ad059c753b2d526242551d9d7b87feff73dd1",
+    "outputs/mucum-hourly-20260921T180020-0300/raw/ceran-castro-fresh.html": "161e08145ab4695376be6387455b06b121c535f12b5e13a6e55df268cf293913"
+  }
+}

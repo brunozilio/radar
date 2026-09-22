@@ -23,7 +23,7 @@ export async function GET() {
         WHERE kind = 'radar'
           AND julianday(captured_at) >= julianday(?)
           AND julianday(captured_at) <= julianday(?)
-        ORDER BY julianday(captured_at) ASC
+        ORDER BY julianday(captured_at) DESC
         LIMIT 60
       `)
       .all(cutoff, now) as Array<{ id: string; captured_at: string }>;

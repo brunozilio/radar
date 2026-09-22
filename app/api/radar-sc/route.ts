@@ -24,7 +24,7 @@ export async function GET() {
           AND source_key LIKE 'radar-sc:CHP:0:basin-overlay-v2:%'
           AND julianday(captured_at) >= julianday(?)
           AND julianday(captured_at) <= julianday(?)
-        ORDER BY julianday(captured_at) ASC, julianday(created_at) ASC
+        ORDER BY julianday(captured_at) DESC, julianday(created_at) DESC
         LIMIT 60
       `)
       .all(cutoff, now) as Array<{ id: string; captured_at: string }>;

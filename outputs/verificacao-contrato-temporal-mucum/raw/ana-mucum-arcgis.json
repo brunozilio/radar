@@ -1,0 +1,139 @@
+{
+ "displayFieldName": "Parametro",
+ "fieldAliases": {
+  "estcodigo": "estcodigo",
+  "Codigo": "Codigo",
+  "Parametro": "Parametro",
+  "Nome": "Nome",
+  "Bacia": "Bacia",
+  "SubBacia": "SubBacia",
+  "Municipio": "Municipio",
+  "Estado": "Estado",
+  "Responsavel": "Responsavel",
+  "Operadora": "Operadora",
+  "Projeto": "Projeto",
+  "Status_Estacao": "Status_Estacao",
+  "Data_ult_dado": "Data_ult_dado",
+  "Ult_Dado": "Ult_Dado",
+  "Status_Dado": "Status_Dado"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "estcodigo",
+   "type": "esriFieldTypeOID",
+   "alias": "estcodigo"
+  },
+  {
+   "name": "Codigo",
+   "type": "esriFieldTypeInteger",
+   "alias": "Codigo"
+  },
+  {
+   "name": "Parametro",
+   "type": "esriFieldTypeString",
+   "alias": "Parametro",
+   "length": 10
+  },
+  {
+   "name": "Nome",
+   "type": "esriFieldTypeString",
+   "alias": "Nome",
+   "length": 50
+  },
+  {
+   "name": "Bacia",
+   "type": "esriFieldTypeString",
+   "alias": "Bacia",
+   "length": 50
+  },
+  {
+   "name": "SubBacia",
+   "type": "esriFieldTypeString",
+   "alias": "SubBacia",
+   "length": 50
+  },
+  {
+   "name": "Municipio",
+   "type": "esriFieldTypeString",
+   "alias": "Municipio",
+   "length": 50
+  },
+  {
+   "name": "Estado",
+   "type": "esriFieldTypeString",
+   "alias": "Estado",
+   "length": 50
+  },
+  {
+   "name": "Responsavel",
+   "type": "esriFieldTypeString",
+   "alias": "Responsavel",
+   "length": 15
+  },
+  {
+   "name": "Operadora",
+   "type": "esriFieldTypeString",
+   "alias": "Operadora",
+   "length": 15
+  },
+  {
+   "name": "Projeto",
+   "type": "esriFieldTypeString",
+   "alias": "Projeto",
+   "length": 30
+  },
+  {
+   "name": "Status_Estacao",
+   "type": "esriFieldTypeString",
+   "alias": "Status_Estacao",
+   "length": 15
+  },
+  {
+   "name": "Data_ult_dado",
+   "type": "esriFieldTypeDate",
+   "alias": "Data_ult_dado",
+   "length": 8
+  },
+  {
+   "name": "Ult_Dado",
+   "type": "esriFieldTypeDouble",
+   "alias": "Ult_Dado"
+  },
+  {
+   "name": "Status_Dado",
+   "type": "esriFieldTypeString",
+   "alias": "Status_Dado",
+   "length": 40
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "estcodigo": 291051520,
+    "Codigo": 86510000,
+    "Parametro": "Nivel",
+    "Nome": "MUÇUM",
+    "Bacia": "ATLÂNTICO, TRECHO SUDESTE",
+    "SubBacia": "RIO TAQUARI",
+    "Municipio": "MUÇUM",
+    "Estado": "RIO GRANDE DO SUL",
+    "Responsavel": "ANA",
+    "Operadora": "SGB-CPRM",
+    "Projeto": "RHN",
+    "Status_Estacao": "Ativo",
+    "Data_ult_dado": 1790024400000,
+    "Ult_Dado": 1387.0,
+    "Status_Dado": "Acima_10%_permanencia"
+   },
+   "geometry": {
+    "x": -51.868599999999958,
+    "y": -29.16719999999998
+   }
+  }
+ ]
+}

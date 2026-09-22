@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-09-21T20:26:43.597139+00:00",
+  "records": 182,
+  "pairs": 50,
+  "status_counts": {
+    "matched": 4,
+    "not_due": 46
+  },
+  "goal_eligible_pairs": 0,
+  "goal_achieved": false,
+  "scorecard": [],
+  "limitations": [
+    "Local hash chain is not an external time authority.",
+    "Lead h means at least h and less than h+1 real hours before target; never the nominal calculation label.",
+    "No event independence or sample-size sufficiency is certified by this report.",
+    "Imported old calculations never count toward the prospective target.",
+    "Delivery coverage is audited separately from paired prediction accuracy; scheduler execution is not inferred from pair count."
+  ],
+  "delivery_coverage": {
+    "configured": true,
+    "policy_record": "5242812cf00b58aebbbef0870e5b09fe272a0a5fc66d203a456ae28117153ff8",
+    "effective_from": "2026-09-21T21:00:00+00:00",
+    "closed_windows": 0,
+    "complete_windows": 0,
+    "coverage_percent": null,
+    "status_counts": {},
+    "current_window_started_at": null,
+    "windows": [],
+    "unlinked_forecast_issues": 2,
+    "limitations": [
+      "Coverage is delivery within preregistered hourly windows, not proof of the scheduler trigger or exact-on-the-hour execution.",
+      "No start record means no recorded attempt; it does not prove whether the computer or application was off.",
+      "An unfinished record does not establish a live process.",
+      "Before the policy effective time, historical coverage remains unproven.",
+      "Delivery coverage is not level accuracy and cannot satisfy the 98% accuracy target."
+    ]
+  }
+}

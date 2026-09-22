@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "message": "Optimization terminated successfully",
+  "incremental_area_km2": 1273.3799363219698,
+  "train_n": 8880,
+  "test_n": 1505,
+  "test_level_reconstruction": {
+    "mae_m": 0.4259648222851739,
+    "rmse_m": 0.5714187334812386,
+    "bias_m": -0.003153858715075489,
+    "p90_abs_m": 0.8134332940800462,
+    "max_abs_m": 3.0547574044421513,
+    "n": 1505
+  },
+  "rainfall_runoff_fraction": 0.4321897351273632,
+  "baseflow_1000m3s": 0.02579825446583483,
+  "mean_delay_julho_h": 5.419662064592277,
+  "mean_delay_carreiro_h": 10.595608130673027,
+  "rating_parameters": [
+    4.596200698577397,
+    0.6251844913989489,
+    0.3897658563365486
+  ],
+  "use": "Diagnostic reconstruction from observed forcings; not a prospective forecast. Future discharges and rainfall are not filled with invented values."
+}

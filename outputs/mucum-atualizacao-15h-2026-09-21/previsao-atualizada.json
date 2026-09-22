@@ -1,0 +1,381 @@
+{
+  "origin": "2026-09-21T15:00:00-03:00",
+  "last_observed_mucum": {
+    "source": "86510000",
+    "last_time": "2026-09-21T14:45:00-03:00",
+    "delay_minutes": 15.0,
+    "value": 9.23
+  },
+  "issued_at": "2026-09-21T15:16:47.720694-03:00",
+  "forecast": [
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 1.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T16:00:00-03:00",
+      "forecast_m": 10.354225675568127,
+      "lower_m": 9.965048902733244,
+      "upper_m": 10.74340244840301,
+      "validation_score": 0.1976888747312884,
+      "parameters": "(7, 'squared_error')",
+      "test_mae_m": 0.029791323928759602,
+      "today_mae_m": 0.1453162869937141,
+      "today_n": 14,
+      "today_p90_abs_m": 0.3891767728348825
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 2.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T17:00:00-03:00",
+      "forecast_m": 11.209646933704338,
+      "lower_m": 10.239485512252797,
+      "upper_m": 12.17980835515588,
+      "validation_score": 0.14188075530804986,
+      "parameters": "(15, 'squared_error')",
+      "test_mae_m": 0.05301901621329195,
+      "today_mae_m": 0.3442369475117764,
+      "today_n": 13,
+      "today_p90_abs_m": 0.9701614214515413
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 3.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T18:00:00-03:00",
+      "forecast_m": 11.501219284075743,
+      "lower_m": 9.723671411245304,
+      "upper_m": 13.278767156906182,
+      "validation_score": 0.16902311400264974,
+      "parameters": "(15, 'absolute_error')",
+      "test_mae_m": 0.06604189170818238,
+      "today_mae_m": 0.5776572645010326,
+      "today_n": 12,
+      "today_p90_abs_m": 1.7775478728304392
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 4.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T19:00:00-03:00",
+      "forecast_m": 11.650989959045251,
+      "lower_m": 9.187340768979825,
+      "upper_m": 14.114639149110678,
+      "validation_score": 0.1875152267003747,
+      "parameters": "(15, 'absolute_error')",
+      "test_mae_m": 0.09168131118710222,
+      "today_mae_m": 0.9968684416508935,
+      "today_n": 11,
+      "today_p90_abs_m": 2.4636491900654267
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 5.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T20:00:00-03:00",
+      "forecast_m": 12.403635040443014,
+      "lower_m": 9.602402387587315,
+      "upper_m": 15.204867693298713,
+      "validation_score": 0.2500889519736444,
+      "parameters": "(15, 'absolute_error')",
+      "test_mae_m": 0.12985514201917617,
+      "today_mae_m": 1.4035995813140818,
+      "today_n": 10,
+      "today_p90_abs_m": 2.801232652855699
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 6.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T21:00:00-03:00",
+      "forecast_m": 12.103225906054362,
+      "lower_m": 8.796864935819476,
+      "upper_m": 15.409586876289248,
+      "validation_score": 0.3241094780159018,
+      "parameters": "(15, 'absolute_error')",
+      "test_mae_m": 0.18169918844503566,
+      "today_mae_m": 1.7939927120970565,
+      "today_n": 9,
+      "today_p90_abs_m": 3.3063609702348864
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 7.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T22:00:00-03:00",
+      "forecast_m": 13.445622097751722,
+      "lower_m": 9.983808235898666,
+      "upper_m": 16.907435959604776,
+      "validation_score": 0.3497625932204881,
+      "parameters": "(15, 'squared_error')",
+      "test_mae_m": 0.22390116977432814,
+      "today_mae_m": 2.115980644804862,
+      "today_n": 8,
+      "today_p90_abs_m": 3.461813861853056
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 8.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-21T23:00:00-03:00",
+      "forecast_m": 13.629904539529917,
+      "lower_m": 9.47080518300551,
+      "upper_m": 17.789003896054325,
+      "validation_score": 0.38840099697658936,
+      "parameters": "(15, 'squared_error')",
+      "test_mae_m": 0.28217491149456975,
+      "today_mae_m": 2.6304880296378443,
+      "today_n": 7,
+      "today_p90_abs_m": 4.1590993565244085
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 9.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-22T00:00:00-03:00",
+      "forecast_m": 14.164101359105347,
+      "lower_m": 9.90482670419831,
+      "upper_m": 18.423376014012383,
+      "validation_score": 0.4729511881395206,
+      "parameters": "(15, 'squared_error')",
+      "test_mae_m": 0.33536429648476235,
+      "today_mae_m": 2.9736186297404514,
+      "today_n": 6,
+      "today_p90_abs_m": 4.259274654907037
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 10.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-22T01:00:00-03:00",
+      "forecast_m": 13.977466606446058,
+      "lower_m": 9.576147983851616,
+      "upper_m": 18.3787852290405,
+      "validation_score": 0.5768094433346136,
+      "parameters": "(7, 'squared_error')",
+      "test_mae_m": 0.3895284660856389,
+      "today_mae_m": 3.33736060918189,
+      "today_n": 5,
+      "today_p90_abs_m": 4.401318622594441
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 11.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-22T02:00:00-03:00",
+      "forecast_m": 13.799682357580576,
+      "lower_m": 9.328330593356483,
+      "upper_m": 18.271034121804668,
+      "validation_score": 0.7639738376990177,
+      "parameters": "(7, 'squared_error')",
+      "test_mae_m": 0.4259493663280163,
+      "today_mae_m": 3.700719462692533,
+      "today_n": 4,
+      "today_p90_abs_m": 4.471351764224092
+    },
+    {
+      "model": "arvores_previsao_chuva",
+      "lead_h": 12.0,
+      "origin": "2026-09-21T15:00:00-03:00",
+      "time": "2026-09-22T03:00:00-03:00",
+      "forecast_m": 13.737598273980495,
+      "lower_m": 9.47784871293944,
+      "upper_m": 17.99734783502155,
+      "validation_score": 1.0071341205204285,
+      "parameters": "(7, 'squared_error')",
+      "test_mae_m": 0.45204161699412354,
+      "today_mae_m": 3.823401482320944,
+      "today_n": 3,
+      "today_p90_abs_m": 4.259749561041055
+    }
+  ],
+  "family_validation_scores": {
+    "arvores": 0.41380857429265044,
+    "arvores_previsao_chuva": 0.40244488171854725,
+    "linear_log": 0.43001754519176577
+  },
+  "selection": "One family across the full horizon, chosen by mean historical validation score only.",
+  "source_ages": [
+    {
+      "source": "86060010",
+      "last_time": "2026-09-21T08:00:00-03:00",
+      "delay_minutes": 420.0,
+      "value": 13.8
+    },
+    {
+      "source": "86099000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 6.07
+    },
+    {
+      "source": "86102000",
+      "last_time": "2026-09-21T10:00:00-03:00",
+      "delay_minutes": 300.0,
+      "value": 7.51
+    },
+    {
+      "source": "86117000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 3.44
+    },
+    {
+      "source": "86125000",
+      "last_time": "2026-09-21T11:59:00-03:00",
+      "delay_minutes": 181.0,
+      "value": 0.8412999999999999
+    },
+    {
+      "source": "86125050",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 1.07
+    },
+    {
+      "source": "86160000",
+      "last_time": "2026-09-21T14:45:00-03:00",
+      "delay_minutes": 15.0,
+      "value": 5.68
+    },
+    {
+      "source": "86163000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 1.27
+    },
+    {
+      "source": "86200900",
+      "last_time": "2026-09-21T12:00:00-03:00",
+      "delay_minutes": 180.0,
+      "value": 667.03
+    },
+    {
+      "source": "86280500",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 5.7688
+    },
+    {
+      "source": "86298000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 7.61
+    },
+    {
+      "source": "86403000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 9.0
+    },
+    {
+      "source": "86410800",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 0.38
+    },
+    {
+      "source": "86447000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 5.55
+    },
+    {
+      "source": "86448000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 151.5
+    },
+    {
+      "source": "86450000",
+      "last_time": "2026-09-21T14:45:00-03:00",
+      "delay_minutes": 15.0,
+      "value": 13.88
+    },
+    {
+      "source": "86471000",
+      "last_time": "2026-09-21T14:45:00-03:00",
+      "delay_minutes": 15.0,
+      "value": 3.27
+    },
+    {
+      "source": "86472000",
+      "last_time": "2026-09-21T14:30:00-03:00",
+      "delay_minutes": 30.0,
+      "value": 12.92
+    },
+    {
+      "source": "86472600",
+      "last_time": "2026-09-21T14:45:00-03:00",
+      "delay_minutes": 15.0,
+      "value": 10.13
+    },
+    {
+      "source": "86479000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 0.1
+    },
+    {
+      "source": "86488000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 0.62
+    },
+    {
+      "source": "86493000",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 372.11
+    },
+    {
+      "source": "86495500",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 330.95
+    },
+    {
+      "source": "86500000",
+      "last_time": "2026-09-21T14:30:00-03:00",
+      "delay_minutes": 30.0,
+      "value": 4.869
+    },
+    {
+      "source": "86504900",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 7.03
+    },
+    {
+      "source": "86505500",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 1.15
+    },
+    {
+      "source": "86510000",
+      "last_time": "2026-09-21T14:45:00-03:00",
+      "delay_minutes": 15.0,
+      "value": 9.23
+    },
+    {
+      "source": "julho",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 3962.18
+    },
+    {
+      "source": "monte",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 4641.38
+    },
+    {
+      "source": "castro",
+      "last_time": "2026-09-21T14:00:00-03:00",
+      "delay_minutes": 60.0,
+      "value": 2828.1
+    }
+  ],
+  "latency_note": "Fixed current source ages imposed in retrospective inputs; availability stress test, not historical publication-log reconstruction."
+}

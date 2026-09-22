@@ -1,0 +1,24 @@
+{
+  "id": "radar-historical-evaluation-reservation-v1",
+  "registered_at_utc": "2026-09-22T02:34:56.263970+00:00",
+  "scope": "Local RADAR research. Reserve the listed windows from future fitting/tuning/feature selection until the first predeclared historical evaluation is completed. This does not certify independent flood events or prospective accuracy.",
+  "windows": [
+    {
+      "start_inclusive_local": "2021-05-01T00:00:00-03:00",
+      "stop_exclusive_local": "2021-06-01T00:00:00-03:00",
+      "purpose": "Entire May2021, including documented lateMay event; prior report peak/date information is already known."
+    },
+    {
+      "start_inclusive_local": "2022-05-01T00:00:00-03:00",
+      "stop_exclusive_local": "2022-07-01T00:00:00-03:00",
+      "purpose": "Entire MayJune2022, including reported events; does not silently repair conflicting document dates."
+    }
+  ],
+  "prior_exposure": "SGB documentary reports and peak/date descriptions are being inspected for source discovery. No2021May/2022MayJune date references were found in the current scripts/docs search before this reservation; no model inference on these windows is performed in this turn. This scoped check is not a proof that no historical model anywhere ever used the years.",
+  "collection_rules": "Preserve original timestamps/QC and immutable raw responses withURL/retrieval/hash. Collection and input/target coverage audit are allowed before evaluation; do not calculate model errors or select candidate parameters using these windows. Missing series or offgrid timestamps must be reported, never rounded, interpolated or converted to zero to meet eligibility.",
+  "candidate_freeze": "Before first inference, register one candidate family and frozen training membership, parameters, feature/source contract and control version independently of these windows. Freeze model/input hashes. Evaluate all1..12 horizons, all scheduled rows and observed>=7m subset, including failures; no selection of favorable events/horizons.",
+  "uncertainty": "If raw sources do not support the declared exact timestamp contract, report unavailable coverage rather than redefining the evaluation after seeing model errors. Datum/timezone/publication/regime andevent independence require separate checks. Historical comparison never replaces1000prospective forecasts perhorizon and10certified independent floods.",
+  "after_first_evaluation": "If results are used to modify the model, these windows become development data. A later comparison on them must not be presented as a fresh independent test.",
+  "promotion": false,
+  "goal_achieved": false
+}

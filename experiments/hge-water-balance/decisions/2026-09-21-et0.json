@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-09-21T19:40:49.856581+00:00",
+  "goal_achieved": false,
+  "candidate_id": "hge-era5-et0-2026-09-21",
+  "status": "not_promoted",
+  "reason": "Flood reconstruction MAE regressed; prospective validation remains absent.",
+  "reference_result": "outputs/mucum-hge-experimental-2026-09-21/resultado.json",
+  "candidate_result": "outputs/mucum-hge-et0-candidato-2026-09-21/resultado.json",
+  "candidate_result_sha256": "1719d0c868740eb7d538112de061b0508ed7c04aec0a6683933baba16be26521",
+  "adapter_sha256": "5a5b2e3d340af9896cb8d8dc64f0e1034314e8f335ab771f890df8b62bbb362e",
+  "reference_flood_metrics": {
+    "model": "hge_pet_3",
+    "subset": "level_ge_7m",
+    "n": 167,
+    "mae_m": 0.8878369441431644,
+    "rmse_m": 1.0857005584699995,
+    "bias_m": 0.6211497463598685
+  },
+  "candidate_flood_metrics": {
+    "model": "hge_pet_3",
+    "subset": "level_ge_7m",
+    "n": 167,
+    "mae_m": 0.9027309174447065,
+    "rmse_m": 1.0968471999291214,
+    "bias_m": 0.6557239522820696
+  },
+  "reference_all_metrics": {
+    "model": "hge_pet_3",
+    "subset": "all",
+    "n": 1506,
+    "mae_m": 0.4106196619675364,
+    "rmse_m": 0.5547086852629822,
+    "bias_m": 0.012335485182512141
+  },
+  "candidate_all_metrics": {
+    "model": "hge_pet_3",
+    "subset": "all",
+    "n": 1506,
+    "mae_m": 0.41160536891438193,
+    "rmse_m": 0.5601896293603773,
+    "bias_m": 0.03234667257039816
+  },
+  "tests_passed": {
+    "hge_physics_and_et0": 6,
+    "scorecard": 3
+  },
+  "next_data_priority": "Quality-controlled flood events2020 and2024, upstream flow/river gauge datum and rating curves; do not keep tuning against the same test set."
+}

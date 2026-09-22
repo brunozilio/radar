@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://MRCS/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://MRCS/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://MRCS/">
+      <s:element name="DadosHidrometeorologicos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codEstacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataFim" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DadosHidrometeorologicosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DadosHidrometeorologicosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DadosHidrometeorologicosGerais">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codEstacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataFim" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DadosHidrometeorologicosGeraisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DadosHidrometeorologicosGeraisResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaEstacoesTelemetricas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="statusEstacoes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="origem" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaEstacoesTelemetricasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaEstacoesTelemetricasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IncluirDados_CotaOnline">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodEstacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataHora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Chuva" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cota" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vazao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IncluirDados_CotaOnlineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IncluirDados_CotaOnlineResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir_CotaOnline">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodEstacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataHora" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Excluir_CotaOnlineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Excluir_CotaOnlineResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroInventario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codEstDE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codEstATE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tpEst" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmEst" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmRio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codSubBacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codBacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmMunicipio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sgResp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sgOper" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telemetrica" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroInventarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroInventarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroSerieHistorica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codEstacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dataFim" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipoDados" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nivelConsistencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroSerieHistoricaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroSerieHistoricaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroEntidades">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codEntidade" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroEntidadesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroEntidadesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroBaciaSubBacia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codBacia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codSubBacia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroBaciaSubBaciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroBaciaSubBaciaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroRio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codRio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroRioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroRioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codUf" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroEstadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroMunicipio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codMunicipio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HidroMunicipioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HidroMunicipioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DadosHidrometeorologicosSoapIn">
+    <wsdl:part name="parameters" element="tns:DadosHidrometeorologicos" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosSoapOut">
+    <wsdl:part name="parameters" element="tns:DadosHidrometeorologicosResponse" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosGeraisSoapIn">
+    <wsdl:part name="parameters" element="tns:DadosHidrometeorologicosGerais" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosGeraisSoapOut">
+    <wsdl:part name="parameters" element="tns:DadosHidrometeorologicosGeraisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstacoesTelemetricasSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaEstacoesTelemetricas" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstacoesTelemetricasSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaEstacoesTelemetricasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IncluirDados_CotaOnlineSoapIn">
+    <wsdl:part name="parameters" element="tns:IncluirDados_CotaOnline" />
+  </wsdl:message>
+  <wsdl:message name="IncluirDados_CotaOnlineSoapOut">
+    <wsdl:part name="parameters" element="tns:IncluirDados_CotaOnlineResponse" />
+  </wsdl:message>
+  <wsdl:message name="Excluir_CotaOnlineSoapIn">
+    <wsdl:part name="parameters" element="tns:Excluir_CotaOnline" />
+  </wsdl:message>
+  <wsdl:message name="Excluir_CotaOnlineSoapOut">
+    <wsdl:part name="parameters" element="tns:Excluir_CotaOnlineResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroInventarioSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroInventario" />
+  </wsdl:message>
+  <wsdl:message name="HidroInventarioSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroInventarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroSerieHistoricaSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroSerieHistorica" />
+  </wsdl:message>
+  <wsdl:message name="HidroSerieHistoricaSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroSerieHistoricaResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroEntidadesSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroEntidades" />
+  </wsdl:message>
+  <wsdl:message name="HidroEntidadesSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroEntidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroBaciaSubBaciaSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroBaciaSubBacia" />
+  </wsdl:message>
+  <wsdl:message name="HidroBaciaSubBaciaSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroBaciaSubBaciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroRioSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroRio" />
+  </wsdl:message>
+  <wsdl:message name="HidroRioSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroRioResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroEstado" />
+  </wsdl:message>
+  <wsdl:message name="HidroEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="HidroMunicipioSoapIn">
+    <wsdl:part name="parameters" element="tns:HidroMunicipio" />
+  </wsdl:message>
+  <wsdl:message name="HidroMunicipioSoapOut">
+    <wsdl:part name="parameters" element="tns:HidroMunicipioResponse" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosHttpGetIn">
+    <wsdl:part name="codEstacao" type="s:string" />
+    <wsdl:part name="dataInicio" type="s:string" />
+    <wsdl:part name="dataFim" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosGeraisHttpGetIn">
+    <wsdl:part name="codEstacao" type="s:string" />
+    <wsdl:part name="dataInicio" type="s:string" />
+    <wsdl:part name="dataFim" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosGeraisHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstacoesTelemetricasHttpGetIn">
+    <wsdl:part name="statusEstacoes" type="s:string" />
+    <wsdl:part name="origem" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstacoesTelemetricasHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="IncluirDados_CotaOnlineHttpGetIn">
+    <wsdl:part name="Login" type="s:string" />
+    <wsdl:part name="Senha" type="s:string" />
+    <wsdl:part name="CodEstacao" type="s:string" />
+    <wsdl:part name="DataHora" type="s:string" />
+    <wsdl:part name="Chuva" type="s:string" />
+    <wsdl:part name="Cota" type="s:string" />
+    <wsdl:part name="Vazao" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IncluirDados_CotaOnlineHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Excluir_CotaOnlineHttpGetIn">
+    <wsdl:part name="Login" type="s:string" />
+    <wsdl:part name="Senha" type="s:string" />
+    <wsdl:part name="CodEstacao" type="s:string" />
+    <wsdl:part name="DataHora" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Excluir_CotaOnlineHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="HidroInventarioHttpGetIn">
+    <wsdl:part name="codEstDE" type="s:string" />
+    <wsdl:part name="codEstATE" type="s:string" />
+    <wsdl:part name="tpEst" type="s:string" />
+    <wsdl:part name="nmEst" type="s:string" />
+    <wsdl:part name="nmRio" type="s:string" />
+    <wsdl:part name="codSubBacia" type="s:string" />
+    <wsdl:part name="codBacia" type="s:string" />
+    <wsdl:part name="nmMunicipio" type="s:string" />
+    <wsdl:part name="nmEstado" type="s:string" />
+    <wsdl:part name="sgResp" type="s:string" />
+    <wsdl:part name="sgOper" type="s:string" />
+    <wsdl:part name="telemetrica" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroInventarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroSerieHistoricaHttpGetIn">
+    <wsdl:part name="codEstacao" type="s:string" />
+    <wsdl:part name="dataInicio" type="s:string" />
+    <wsdl:part name="dataFim" type="s:string" />
+    <wsdl:part name="tipoDados" type="s:string" />
+    <wsdl:part name="nivelConsistencia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroSerieHistoricaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="HidroEntidadesHttpGetIn">
+    <wsdl:part name="codEntidade" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroEntidadesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroBaciaSubBaciaHttpGetIn">
+    <wsdl:part name="codBacia" type="s:string" />
+    <wsdl:part name="codSubBacia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroBaciaSubBaciaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroRioHttpGetIn">
+    <wsdl:part name="codRio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroRioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroEstadoHttpGetIn">
+    <wsdl:part name="codUf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroEstadoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroMunicipioHttpGetIn">
+    <wsdl:part name="codMunicipio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroMunicipioHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosHttpPostIn">
+    <wsdl:part name="codEstacao" type="s:string" />
+    <wsdl:part name="dataInicio" type="s:string" />
+    <wsdl:part name="dataFim" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosGeraisHttpPostIn">
+    <wsdl:part name="codEstacao" type="s:string" />
+    <wsdl:part name="dataInicio" type="s:string" />
+    <wsdl:part name="dataFim" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DadosHidrometeorologicosGeraisHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstacoesTelemetricasHttpPostIn">
+    <wsdl:part name="statusEstacoes" type="s:string" />
+    <wsdl:part name="origem" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListaEstacoesTelemetricasHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="IncluirDados_CotaOnlineHttpPostIn">
+    <wsdl:part name="Login" type="s:string" />
+    <wsdl:part name="Senha" type="s:string" />
+    <wsdl:part name="CodEstacao" type="s:string" />
+    <wsdl:part name="DataHora" type="s:string" />
+    <wsdl:part name="Chuva" type="s:string" />
+    <wsdl:part name="Cota" type="s:string" />
+    <wsdl:part name="Vazao" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IncluirDados_CotaOnlineHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="Excluir_CotaOnlineHttpPostIn">
+    <wsdl:part name="Login" type="s:string" />
+    <wsdl:part name="Senha" type="s:string" />
+    <wsdl:part name="CodEstacao" type="s:string" />
+    <wsdl:part name="DataHora" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Excluir_CotaOnlineHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="HidroInventarioHttpPostIn">
+    <wsdl:part name="codEstDE" type="s:string" />
+    <wsdl:part name="codEstATE" type="s:string" />
+    <wsdl:part name="tpEst" type="s:string" />
+    <wsdl:part name="nmEst" type="s:string" />
+    <wsdl:part name="nmRio" type="s:string" />
+    <wsdl:part name="codSubBacia" type="s:string" />
+    <wsdl:part name="codBacia" type="s:string" />
+    <wsdl:part name="nmMunicipio" type="s:string" />
+    <wsdl:part name="nmEstado" type="s:string" />
+    <wsdl:part name="sgResp" type="s:string" />
+    <wsdl:part name="sgOper" type="s:string" />
+    <wsdl:part name="telemetrica" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroInventarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroSerieHistoricaHttpPostIn">
+    <wsdl:part name="codEstacao" type="s:string" />
+    <wsdl:part name="dataInicio" type="s:string" />
+    <wsdl:part name="dataFim" type="s:string" />
+    <wsdl:part name="tipoDados" type="s:string" />
+    <wsdl:part name="nivelConsistencia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroSerieHistoricaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="HidroEntidadesHttpPostIn">
+    <wsdl:part name="codEntidade" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroEntidadesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroBaciaSubBaciaHttpPostIn">
+    <wsdl:part name="codBacia" type="s:string" />
+    <wsdl:part name="codSubBacia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroBaciaSubBaciaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroRioHttpPostIn">
+    <wsdl:part name="codRio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroRioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroEstadoHttpPostIn">
+    <wsdl:part name="codUf" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroEstadoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HidroMunicipioHttpPostIn">
+    <wsdl:part name="codMunicipio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HidroMunicipioHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceANASoap">
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar o dados Hidrometeorológicos por estação.&lt;/b&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DadosHidrometeorologicosSoapIn" />
+      <wsdl:output message="tns:DadosHidrometeorologicosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar o dados Hidrometeorológicos transmitidos pelas estações. Sem a validação dos filtros (dados gerais).&lt;/b&gt;&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DadosHidrometeorologicosGeraisSoapIn" />
+      <wsdl:output message="tns:DadosHidrometeorologicosGeraisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar as estações telemétricas cadastradas.&lt;/b&gt;&lt;br&gt;&lt;b&gt;statusEstacoes:&lt;/b&gt; 0-Ativo ou 1-Manutenção&lt;br&gt;&lt;b&gt;Origem:&lt;/b&gt; 0-Todas, 1-ANA/INPE, 2-ANA/SIVAM, 3-RES_CONJ_03, 4-CotaOnline, 5-Projetos Especiais&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos vazios retorná todas as estações cadastradas.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ListaEstacoesTelemetricasSoapIn" />
+      <wsdl:output message="tns:ListaEstacoesTelemetricasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para inserir dados.&lt;/b&gt;&lt;br /&gt;Serviço disponível para inclusão dos dados provindo do Sistema CotaOnline.&lt;br /&gt;&lt;span style="color:red"&gt;Obs.: Para mais informações, entrar em contato por email: telemetria@ana.gov.br ou tel: (61)2109-5391.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:IncluirDados_CotaOnlineSoapIn" />
+      <wsdl:output message="tns:IncluirDados_CotaOnlineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para excluir dados.&lt;/b&gt;&lt;br /&gt;Serviço disponível para exclusão dos dados provindo do Sistema CotaOnline.&lt;br /&gt;&lt;span style="color:red"&gt;Obs.: Para mais informações, entrar em contato por email: telemetria@ana.gov.br ou tel: (61)2109-5391.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:Excluir_CotaOnlineSoapIn" />
+      <wsdl:output message="tns:Excluir_CotaOnlineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Inventário pluviométrico/fluviométrico atualizado.&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEstDE:&lt;/b&gt; Código de 8 dígitos da estação - INICIAL (Ex.: 00047000)&lt;br&gt;&lt;b&gt;codEstATE:&lt;/b&gt; Código de 8 dígitos da estação - FINAL (Ex.: 90300000)&lt;br&gt;&lt;b&gt;tpEst:&lt;/b&gt; Tipo da estação (1-Flu ou 2-Plu)&lt;br&gt;&lt;b&gt;nmEst:&lt;/b&gt; Nome da Estação (Ex.: Barra Mansa)&lt;br&gt;&lt;b&gt;nmRio:&lt;/b&gt; Nome do Rio (Ex.: Rio Javari)&lt;br&gt;&lt;b&gt;codSubBacia:&lt;/b&gt; Código da Sub-Bacia hidrografica (Ex.: 10)&lt;br&gt;&lt;b&gt;codBacia:&lt;/b&gt; Código da Bacia hidrografica (Ex.: 1)&lt;br&gt;&lt;b&gt;nmMunicipio:&lt;/b&gt; Município (Ex.: Itaperuna)&lt;br&gt;&lt;b&gt;nmEstado:&lt;/b&gt; Estado (Ex.: Rio de Janeiro)&lt;br&gt;&lt;b&gt;sgResp:&lt;/b&gt; Sigla do Responsável pela estação (Ex.: ANA)&lt;br&gt;&lt;b&gt;sgOper:&lt;/b&gt; Sigla da Operadora da estação (Ex.: CPRM)&lt;br&gt;&lt;b&gt;telemetrica:&lt;/b&gt; (Ex: 1-SIM ou 0-NÃO)&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos não obrigatórios. Se vazios, retornão todas as estações cadastradas.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroInventarioSoapIn" />
+      <wsdl:output message="tns:HidroInventarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Série Histórica estação - HIDRO.&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEstacao:&lt;/b&gt; Código Plu ou Flu&lt;br&gt;&lt;b&gt;dataInicio&lt;/b&gt;&lt;br&gt;&lt;b&gt;dataFim:&lt;/b&gt; Caso não preenchido, trará até o último dado mais recente armazenado&lt;br&gt;&lt;b&gt;tipoDados:&lt;/b&gt; 1-Cotas, 2-Chuvas ou 3-Vazões&lt;br&gt;&lt;b&gt;nivelConsistencia:&lt;/b&gt; 1-Bruto ou 2-Consistido</wsdl:documentation>
+      <wsdl:input message="tns:HidroSerieHistoricaSoapIn" />
+      <wsdl:output message="tns:HidroSerieHistoricaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Entidades (responsáveis e operadoras) - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEntidade:&lt;/b&gt; Recebe o codigo da entidade. Campo não obrigatório.</wsdl:documentation>
+      <wsdl:input message="tns:HidroEntidadesSoapIn" />
+      <wsdl:output message="tns:HidroEntidadesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Bacia e SubBacia - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codBacia:&lt;/b&gt; Recebe o codigo da Bacia.&lt;br&gt;&lt;b&gt;codSubBacia:&lt;/b&gt; Recebe o codigo da SubBacia.&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos não obrigatórios. Se vazios, retornão todas as Bacias e SubBacias.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroBaciaSubBaciaSoapIn" />
+      <wsdl:output message="tns:HidroBaciaSubBaciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Rios - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codRio:&lt;/b&gt; Recebe o codigo do rio.&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os rios cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroRioSoapIn" />
+      <wsdl:output message="tns:HidroRioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Estados (UF) - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codUf:&lt;/b&gt; Recebe o codigo do Estado (UF).&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os Estados cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroEstadoSoapIn" />
+      <wsdl:output message="tns:HidroEstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Municipio - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codMunicipio:&lt;/b&gt; Recebe o codigo do Estado (UF).&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os Municipios cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroMunicipioSoapIn" />
+      <wsdl:output message="tns:HidroMunicipioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceANAHttpGet">
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar o dados Hidrometeorológicos por estação.&lt;/b&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DadosHidrometeorologicosHttpGetIn" />
+      <wsdl:output message="tns:DadosHidrometeorologicosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar o dados Hidrometeorológicos transmitidos pelas estações. Sem a validação dos filtros (dados gerais).&lt;/b&gt;&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DadosHidrometeorologicosGeraisHttpGetIn" />
+      <wsdl:output message="tns:DadosHidrometeorologicosGeraisHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar as estações telemétricas cadastradas.&lt;/b&gt;&lt;br&gt;&lt;b&gt;statusEstacoes:&lt;/b&gt; 0-Ativo ou 1-Manutenção&lt;br&gt;&lt;b&gt;Origem:&lt;/b&gt; 0-Todas, 1-ANA/INPE, 2-ANA/SIVAM, 3-RES_CONJ_03, 4-CotaOnline, 5-Projetos Especiais&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos vazios retorná todas as estações cadastradas.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ListaEstacoesTelemetricasHttpGetIn" />
+      <wsdl:output message="tns:ListaEstacoesTelemetricasHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para inserir dados.&lt;/b&gt;&lt;br /&gt;Serviço disponível para inclusão dos dados provindo do Sistema CotaOnline.&lt;br /&gt;&lt;span style="color:red"&gt;Obs.: Para mais informações, entrar em contato por email: telemetria@ana.gov.br ou tel: (61)2109-5391.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:IncluirDados_CotaOnlineHttpGetIn" />
+      <wsdl:output message="tns:IncluirDados_CotaOnlineHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para excluir dados.&lt;/b&gt;&lt;br /&gt;Serviço disponível para exclusão dos dados provindo do Sistema CotaOnline.&lt;br /&gt;&lt;span style="color:red"&gt;Obs.: Para mais informações, entrar em contato por email: telemetria@ana.gov.br ou tel: (61)2109-5391.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:Excluir_CotaOnlineHttpGetIn" />
+      <wsdl:output message="tns:Excluir_CotaOnlineHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Inventário pluviométrico/fluviométrico atualizado.&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEstDE:&lt;/b&gt; Código de 8 dígitos da estação - INICIAL (Ex.: 00047000)&lt;br&gt;&lt;b&gt;codEstATE:&lt;/b&gt; Código de 8 dígitos da estação - FINAL (Ex.: 90300000)&lt;br&gt;&lt;b&gt;tpEst:&lt;/b&gt; Tipo da estação (1-Flu ou 2-Plu)&lt;br&gt;&lt;b&gt;nmEst:&lt;/b&gt; Nome da Estação (Ex.: Barra Mansa)&lt;br&gt;&lt;b&gt;nmRio:&lt;/b&gt; Nome do Rio (Ex.: Rio Javari)&lt;br&gt;&lt;b&gt;codSubBacia:&lt;/b&gt; Código da Sub-Bacia hidrografica (Ex.: 10)&lt;br&gt;&lt;b&gt;codBacia:&lt;/b&gt; Código da Bacia hidrografica (Ex.: 1)&lt;br&gt;&lt;b&gt;nmMunicipio:&lt;/b&gt; Município (Ex.: Itaperuna)&lt;br&gt;&lt;b&gt;nmEstado:&lt;/b&gt; Estado (Ex.: Rio de Janeiro)&lt;br&gt;&lt;b&gt;sgResp:&lt;/b&gt; Sigla do Responsável pela estação (Ex.: ANA)&lt;br&gt;&lt;b&gt;sgOper:&lt;/b&gt; Sigla da Operadora da estação (Ex.: CPRM)&lt;br&gt;&lt;b&gt;telemetrica:&lt;/b&gt; (Ex: 1-SIM ou 0-NÃO)&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos não obrigatórios. Se vazios, retornão todas as estações cadastradas.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroInventarioHttpGetIn" />
+      <wsdl:output message="tns:HidroInventarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Série Histórica estação - HIDRO.&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEstacao:&lt;/b&gt; Código Plu ou Flu&lt;br&gt;&lt;b&gt;dataInicio&lt;/b&gt;&lt;br&gt;&lt;b&gt;dataFim:&lt;/b&gt; Caso não preenchido, trará até o último dado mais recente armazenado&lt;br&gt;&lt;b&gt;tipoDados:&lt;/b&gt; 1-Cotas, 2-Chuvas ou 3-Vazões&lt;br&gt;&lt;b&gt;nivelConsistencia:&lt;/b&gt; 1-Bruto ou 2-Consistido</wsdl:documentation>
+      <wsdl:input message="tns:HidroSerieHistoricaHttpGetIn" />
+      <wsdl:output message="tns:HidroSerieHistoricaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Entidades (responsáveis e operadoras) - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEntidade:&lt;/b&gt; Recebe o codigo da entidade. Campo não obrigatório.</wsdl:documentation>
+      <wsdl:input message="tns:HidroEntidadesHttpGetIn" />
+      <wsdl:output message="tns:HidroEntidadesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Bacia e SubBacia - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codBacia:&lt;/b&gt; Recebe o codigo da Bacia.&lt;br&gt;&lt;b&gt;codSubBacia:&lt;/b&gt; Recebe o codigo da SubBacia.&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos não obrigatórios. Se vazios, retornão todas as Bacias e SubBacias.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroBaciaSubBaciaHttpGetIn" />
+      <wsdl:output message="tns:HidroBaciaSubBaciaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Rios - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codRio:&lt;/b&gt; Recebe o codigo do rio.&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os rios cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroRioHttpGetIn" />
+      <wsdl:output message="tns:HidroRioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Estados (UF) - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codUf:&lt;/b&gt; Recebe o codigo do Estado (UF).&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os Estados cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroEstadoHttpGetIn" />
+      <wsdl:output message="tns:HidroEstadoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Municipio - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codMunicipio:&lt;/b&gt; Recebe o codigo do Estado (UF).&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os Municipios cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroMunicipioHttpGetIn" />
+      <wsdl:output message="tns:HidroMunicipioHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceANAHttpPost">
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar o dados Hidrometeorológicos por estação.&lt;/b&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DadosHidrometeorologicosHttpPostIn" />
+      <wsdl:output message="tns:DadosHidrometeorologicosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar o dados Hidrometeorológicos transmitidos pelas estações. Sem a validação dos filtros (dados gerais).&lt;/b&gt;&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DadosHidrometeorologicosGeraisHttpPostIn" />
+      <wsdl:output message="tns:DadosHidrometeorologicosGeraisHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para Listar as estações telemétricas cadastradas.&lt;/b&gt;&lt;br&gt;&lt;b&gt;statusEstacoes:&lt;/b&gt; 0-Ativo ou 1-Manutenção&lt;br&gt;&lt;b&gt;Origem:&lt;/b&gt; 0-Todas, 1-ANA/INPE, 2-ANA/SIVAM, 3-RES_CONJ_03, 4-CotaOnline, 5-Projetos Especiais&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos vazios retorná todas as estações cadastradas.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ListaEstacoesTelemetricasHttpPostIn" />
+      <wsdl:output message="tns:ListaEstacoesTelemetricasHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para inserir dados.&lt;/b&gt;&lt;br /&gt;Serviço disponível para inclusão dos dados provindo do Sistema CotaOnline.&lt;br /&gt;&lt;span style="color:red"&gt;Obs.: Para mais informações, entrar em contato por email: telemetria@ana.gov.br ou tel: (61)2109-5391.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:IncluirDados_CotaOnlineHttpPostIn" />
+      <wsdl:output message="tns:IncluirDados_CotaOnlineHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Opção para excluir dados.&lt;/b&gt;&lt;br /&gt;Serviço disponível para exclusão dos dados provindo do Sistema CotaOnline.&lt;br /&gt;&lt;span style="color:red"&gt;Obs.: Para mais informações, entrar em contato por email: telemetria@ana.gov.br ou tel: (61)2109-5391.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:Excluir_CotaOnlineHttpPostIn" />
+      <wsdl:output message="tns:Excluir_CotaOnlineHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Inventário pluviométrico/fluviométrico atualizado.&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEstDE:&lt;/b&gt; Código de 8 dígitos da estação - INICIAL (Ex.: 00047000)&lt;br&gt;&lt;b&gt;codEstATE:&lt;/b&gt; Código de 8 dígitos da estação - FINAL (Ex.: 90300000)&lt;br&gt;&lt;b&gt;tpEst:&lt;/b&gt; Tipo da estação (1-Flu ou 2-Plu)&lt;br&gt;&lt;b&gt;nmEst:&lt;/b&gt; Nome da Estação (Ex.: Barra Mansa)&lt;br&gt;&lt;b&gt;nmRio:&lt;/b&gt; Nome do Rio (Ex.: Rio Javari)&lt;br&gt;&lt;b&gt;codSubBacia:&lt;/b&gt; Código da Sub-Bacia hidrografica (Ex.: 10)&lt;br&gt;&lt;b&gt;codBacia:&lt;/b&gt; Código da Bacia hidrografica (Ex.: 1)&lt;br&gt;&lt;b&gt;nmMunicipio:&lt;/b&gt; Município (Ex.: Itaperuna)&lt;br&gt;&lt;b&gt;nmEstado:&lt;/b&gt; Estado (Ex.: Rio de Janeiro)&lt;br&gt;&lt;b&gt;sgResp:&lt;/b&gt; Sigla do Responsável pela estação (Ex.: ANA)&lt;br&gt;&lt;b&gt;sgOper:&lt;/b&gt; Sigla da Operadora da estação (Ex.: CPRM)&lt;br&gt;&lt;b&gt;telemetrica:&lt;/b&gt; (Ex: 1-SIM ou 0-NÃO)&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos não obrigatórios. Se vazios, retornão todas as estações cadastradas.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroInventarioHttpPostIn" />
+      <wsdl:output message="tns:HidroInventarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Série Histórica estação - HIDRO.&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEstacao:&lt;/b&gt; Código Plu ou Flu&lt;br&gt;&lt;b&gt;dataInicio&lt;/b&gt;&lt;br&gt;&lt;b&gt;dataFim:&lt;/b&gt; Caso não preenchido, trará até o último dado mais recente armazenado&lt;br&gt;&lt;b&gt;tipoDados:&lt;/b&gt; 1-Cotas, 2-Chuvas ou 3-Vazões&lt;br&gt;&lt;b&gt;nivelConsistencia:&lt;/b&gt; 1-Bruto ou 2-Consistido</wsdl:documentation>
+      <wsdl:input message="tns:HidroSerieHistoricaHttpPostIn" />
+      <wsdl:output message="tns:HidroSerieHistoricaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Entidades (responsáveis e operadoras) - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codEntidade:&lt;/b&gt; Recebe o codigo da entidade. Campo não obrigatório.</wsdl:documentation>
+      <wsdl:input message="tns:HidroEntidadesHttpPostIn" />
+      <wsdl:output message="tns:HidroEntidadesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Bacia e SubBacia - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codBacia:&lt;/b&gt; Recebe o codigo da Bacia.&lt;br&gt;&lt;b&gt;codSubBacia:&lt;/b&gt; Recebe o codigo da SubBacia.&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campos não obrigatórios. Se vazios, retornão todas as Bacias e SubBacias.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroBaciaSubBaciaHttpPostIn" />
+      <wsdl:output message="tns:HidroBaciaSubBaciaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Rios - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codRio:&lt;/b&gt; Recebe o codigo do rio.&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os rios cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroRioHttpPostIn" />
+      <wsdl:output message="tns:HidroRioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Estados (UF) - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codUf:&lt;/b&gt; Recebe o codigo do Estado (UF).&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os Estados cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroEstadoHttpPostIn" />
+      <wsdl:output message="tns:HidroEstadoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Lista de Municipio - HIDRO&lt;/b&gt;&lt;br&gt;&lt;b&gt;codMunicipio:&lt;/b&gt; Recebe o codigo do Estado (UF).&lt;br&gt;&lt;span style="color:red"&gt;Obs.: Campo não obrigatório. Se vazio, retorná todos os Municipios cadastrados.&lt;/span&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HidroMunicipioHttpPostIn" />
+      <wsdl:output message="tns:HidroMunicipioHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceANASoap" type="tns:ServiceANASoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <soap:operation soapAction="http://MRCS/DadosHidrometeorologicos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <soap:operation soapAction="http://MRCS/DadosHidrometeorologicosGerais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <soap:operation soapAction="http://MRCS/ListaEstacoesTelemetricas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <soap:operation soapAction="http://MRCS/IncluirDados_CotaOnline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <soap:operation soapAction="http://MRCS/Excluir_CotaOnline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <soap:operation soapAction="http://MRCS/HidroInventario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <soap:operation soapAction="http://MRCS/HidroSerieHistorica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <soap:operation soapAction="http://MRCS/HidroEntidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <soap:operation soapAction="http://MRCS/HidroBaciaSubBacia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <soap:operation soapAction="http://MRCS/HidroRio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <soap:operation soapAction="http://MRCS/HidroEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <soap:operation soapAction="http://MRCS/HidroMunicipio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceANASoap12" type="tns:ServiceANASoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <soap12:operation soapAction="http://MRCS/DadosHidrometeorologicos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <soap12:operation soapAction="http://MRCS/DadosHidrometeorologicosGerais" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <soap12:operation soapAction="http://MRCS/ListaEstacoesTelemetricas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <soap12:operation soapAction="http://MRCS/IncluirDados_CotaOnline" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <soap12:operation soapAction="http://MRCS/Excluir_CotaOnline" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <soap12:operation soapAction="http://MRCS/HidroInventario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <soap12:operation soapAction="http://MRCS/HidroSerieHistorica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <soap12:operation soapAction="http://MRCS/HidroEntidades" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <soap12:operation soapAction="http://MRCS/HidroBaciaSubBacia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <soap12:operation soapAction="http://MRCS/HidroRio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <soap12:operation soapAction="http://MRCS/HidroEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <soap12:operation soapAction="http://MRCS/HidroMunicipio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceANAHttpGet" type="tns:ServiceANAHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <http:operation location="/DadosHidrometeorologicos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <http:operation location="/DadosHidrometeorologicosGerais" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <http:operation location="/ListaEstacoesTelemetricas" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <http:operation location="/IncluirDados_CotaOnline" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <http:operation location="/Excluir_CotaOnline" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <http:operation location="/HidroInventario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <http:operation location="/HidroSerieHistorica" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <http:operation location="/HidroEntidades" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <http:operation location="/HidroBaciaSubBacia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <http:operation location="/HidroRio" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <http:operation location="/HidroEstado" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <http:operation location="/HidroMunicipio" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceANAHttpPost" type="tns:ServiceANAHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="DadosHidrometeorologicos">
+      <http:operation location="/DadosHidrometeorologicos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DadosHidrometeorologicosGerais">
+      <http:operation location="/DadosHidrometeorologicosGerais" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaEstacoesTelemetricas">
+      <http:operation location="/ListaEstacoesTelemetricas" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncluirDados_CotaOnline">
+      <http:operation location="/IncluirDados_CotaOnline" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir_CotaOnline">
+      <http:operation location="/Excluir_CotaOnline" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroInventario">
+      <http:operation location="/HidroInventario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroSerieHistorica">
+      <http:operation location="/HidroSerieHistorica" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEntidades">
+      <http:operation location="/HidroEntidades" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroBaciaSubBacia">
+      <http:operation location="/HidroBaciaSubBacia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroRio">
+      <http:operation location="/HidroRio" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroEstado">
+      <http:operation location="/HidroEstado" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HidroMunicipio">
+      <http:operation location="/HidroMunicipio" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceANA">
+    <wsdl:port name="ServiceANASoap" binding="tns:ServiceANASoap">
+      <soap:address location="http://telemetriaws1.ana.gov.br/ServiceANA.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceANASoap12" binding="tns:ServiceANASoap12">
+      <soap12:address location="http://telemetriaws1.ana.gov.br/ServiceANA.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceANAHttpGet" binding="tns:ServiceANAHttpGet">
+      <http:address location="http://telemetriaws1.ana.gov.br/ServiceANA.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceANAHttpPost" binding="tns:ServiceANAHttpPost">
+      <http:address location="http://telemetriaws1.ana.gov.br/ServiceANA.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

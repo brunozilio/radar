@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "origin": "2026-06-01T00:00:00-03:00",
+      "modified_observed_rain_from": "2026-06-01T00:00:00-03:00",
+      "prefix_states_identical": true,
+      "anchor_forecast_local_identical": true,
+      "anchor_reproduced": true
+    },
+    {
+      "origin": "2026-07-22T09:00:00-03:00",
+      "modified_observed_rain_from": "2026-07-22T09:00:00-03:00",
+      "prefix_states_identical": true,
+      "anchor_forecast_local_identical": true,
+      "anchor_reproduced": true
+    },
+    {
+      "origin": "2026-08-14T06:00:00-03:00",
+      "modified_observed_rain_from": "2026-08-14T06:00:00-03:00",
+      "prefix_states_identical": true,
+      "anchor_forecast_local_identical": true,
+      "anchor_reproduced": true
+    }
+  ],
+  "full_local_series_reproduced": true,
+  "limitations": "Checks numerical causality of finalized HGE states and forecast-rain anchor. Does not certify real source publication times, prior-day weather availability or raw-source accuracy."
+}

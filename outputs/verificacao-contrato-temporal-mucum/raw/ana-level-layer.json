@@ -1,0 +1,683 @@
+{
+ "currentVersion": 11.5,
+ "cimVersion": "3.5.0",
+ "id": 2,
+ "name": "Cotas de Referencia Novo",
+ "type": "Feature Layer",
+ "description": "CotasReferencia",
+ "geometryType": "esriGeometryPoint",
+ "sourceSpatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326,
+  "xyTolerance": 8.983152841195215E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "spatialReference": {
+  "wkid": 4674,
+  "latestWkid": 4674,
+  "xyTolerance": 8.983152841195215E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "Status_Dado",
+   "defaultSymbol": {
+    "type": "esriPMS",
+    "url": "bf2883d12b93892de85d997977f3b346",
+    "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAFElEQVQokWNhIBGwjGogAgyHUAIANKMALQsBlfgAAAAASUVORK5CYII=",
+    "contentType": "image/png",
+    "width": 9,
+    "height": 8,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0
+   },
+   "defaultLabel": "",
+   "uniqueValueGroups": [
+    {
+     "heading": "Status do Dado",
+     "classes": [
+      {
+       "label": "Cota de Atenção (SGB/CPRM) ou Acima da Permanência Anual de 10%",
+       "description": "Cota de Atenção (SGB/CPRM) ou Acima da Permanência Anual de 10%",
+       "symbol": {
+        "type": "esriPMS",
+        "url": "391eac27ddb75bb4ef639ee9525a0fbf",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAjUlEQVQYlYXP6w2DMAxG0VvJSwASS8AcHaOMAVmjY5Q1yBKVSJdAApmQ0FIe/pXHyRdbAN6QclE5ONGFwAsoTqwFyhkDFdAdyRHMEjr3YJ1/vZf+zKCNWGuAu0C/gR/FYROxDuD8xeMLt/rrH17SjazYpn6WWD9Y03swN6jDUIdYK4PGQRKGOsWhnb3zCaA7Hrfh9D/wAAAAAElFTkSuQmCC",
+        "contentType": "image/png",
+        "width": 8,
+        "height": 7,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0
+       },
+       "values": [
+        [
+         "Acima_10%_permanencia"
+        ]
+       ]
+      },
+      {
+       "label": "Cota Normal - Entre Cotas de Atenção (SGB/CPRM) ou Entre Permanências Anuais de 10 e 90% ",
+       "description": "Cota Normal - Entre Cotas de Atenção (SGB/CPRM) ou Entre Permanências Anuais de 10 e 90% ",
+       "symbol": {
+        "type": "esriPMS",
+        "url": "c5b1eb72cdd1bf38c5959405e5a3adfb",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAn0lEQVQYlYWPTQ6CMBCFH2Y8hCXhEnoO1y5wK8fAXoMtxrCWa9hLmDAcwipk2jTgT/VbNG3my5s+grC7KfyjyZjcZUkXDFhHxQQGwMbLDxRY4BqPHbScXj4rgz2bSHqFOm0nWbjbLYi6N7HHE1V4THKTMXKWwWEmt27rhyxYq0HkZSlVq2I+fpVdeqeBpAyl4rJwSo/IeRVK/ZbDd74wAn5sLU4TgxrJAAAAAElFTkSuQmCC",
+        "contentType": "image/png",
+        "width": 8,
+        "height": 7,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0
+       },
+       "values": [
+        [
+         "Normal"
+        ]
+       ]
+      },
+      {
+       "label": "Cota de Estiagem - Abaixo da  Permanência Anual de 90%",
+       "description": "Cota de Estiagem - Abaixo da  Permanência Anual de 90%",
+       "symbol": {
+        "type": "esriPMS",
+        "url": "459433a5df809271720e6c1b12c50108",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApklEQVQYlYXP0Q2CMBCA4f+AJXQNfYC4g49EHEDGUNZgAXiWGQyawBjqFHCmTUogCt5L27uv114AsCtY8yduCa/AbDrhCmwWbAtsLVaPVHqaWdqTmcXiR0wblvb2V3eBvD5SDdiEr+w74TmGqrzVJ3fnAZsBopJc4eRynlDVsX1xim1RyToZcFsfSMf1CTbdw4IM4eyGmsUm7gmXqGTlhlrE7ju/8h897jC/e7Cp5gAAAABJRU5ErkJggg==",
+        "contentType": "image/png",
+        "width": 8,
+        "height": 7,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0
+       },
+       "values": [
+        [
+         "Abaixo_90%_permanencia"
+        ]
+       ]
+      },
+      {
+       "label": "Sem Dados Atualizados",
+       "description": "Sem Dados Atualizados",
+       "symbol": {
+        "type": "esriPMS",
+        "url": "973ea2c8ed037da4626a6fb776fc636f",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdElEQVQYlYWP0RFAMBAF9yNN0AZ1KIMy0IYyaEPKEG2YR85kGLEfmUyy9+7OcVHyT3DxMgNVRvRAbXIHrBl51OGSSv+RPgFLKosG2B7iHuWTVA7xo03elKiOL9lmM1mSdrl5ykpXQW9L5WQxAIUt9SfbOC8OXrwURu/m550AAAAASUVORK5CYII=",
+        "contentType": "image/png",
+        "width": 8,
+        "height": 7,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0
+       },
+       "values": [
+        [
+         "Sem dados atualizados"
+        ]
+       ]
+      },
+      {
+       "label": "Sem Dados de Referência",
+       "description": "Sem Dados de Referência",
+       "symbol": {
+        "type": "esriPMS",
+        "url": "9ad445c5c3676d81bc1d70e1e7023f12",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlElEQVQYlYXP6xHCIBAE4OUmTWgbWodlaBf3KsMyTBtShtoFOJcRJj4S9w8EvjmyAwCo6hZ/oqr3ITZEdAGwW7EZwH7CAE4Arkuy1mqxTpiZs7vnhelnERk7jpRSDkR0+4CPwO2j4yjg7nFxnOExXv3Cr+lGRA1nZo4uPW84ppuZpZSklVrEERFRd9+0Uqu4/c6v8yf8Mzg91D8ZBgAAAABJRU5ErkJggg==",
+        "contentType": "image/png",
+        "width": 8,
+        "height": 7,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0
+       },
+       "values": [
+        [
+         "Sem dados de referencia"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "391eac27ddb75bb4ef639ee9525a0fbf",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAjUlEQVQYlYXP6w2DMAxG0VvJSwASS8AcHaOMAVmjY5Q1yBKVSJdAApmQ0FIe/pXHyRdbAN6QclE5ONGFwAsoTqwFyhkDFdAdyRHMEjr3YJ1/vZf+zKCNWGuAu0C/gR/FYROxDuD8xeMLt/rrH17SjazYpn6WWD9Y03swN6jDUIdYK4PGQRKGOsWhnb3zCaA7Hrfh9D/wAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 8,
+      "height": 7,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Acima_10%_permanencia",
+     "label": "Cota de Atenção (SGB/CPRM) ou Acima da Permanência Anual de 10%"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "c5b1eb72cdd1bf38c5959405e5a3adfb",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAn0lEQVQYlYWPTQ6CMBCFH2Y8hCXhEnoO1y5wK8fAXoMtxrCWa9hLmDAcwipk2jTgT/VbNG3my5s+grC7KfyjyZjcZUkXDFhHxQQGwMbLDxRY4BqPHbScXj4rgz2bSHqFOm0nWbjbLYi6N7HHE1V4THKTMXKWwWEmt27rhyxYq0HkZSlVq2I+fpVdeqeBpAyl4rJwSo/IeRVK/ZbDd74wAn5sLU4TgxrJAAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "width": 8,
+      "height": 7,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Normal",
+     "label": "Cota Normal - Entre Cotas de Atenção (SGB/CPRM) ou Entre Permanências Anuais de 10 e 90% "
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "459433a5df809271720e6c1b12c50108",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAApklEQVQYlYXP0Q2CMBCA4f+AJXQNfYC4g49EHEDGUNZgAXiWGQyawBjqFHCmTUogCt5L27uv114AsCtY8yduCa/AbDrhCmwWbAtsLVaPVHqaWdqTmcXiR0wblvb2V3eBvD5SDdiEr+w74TmGqrzVJ3fnAZsBopJc4eRynlDVsX1xim1RyToZcFsfSMf1CTbdw4IM4eyGmsUm7gmXqGTlhlrE7ju/8h897jC/e7Cp5gAAAABJRU5ErkJggg==",
+      "contentType": "image/png",
+      "width": 8,
+      "height": 7,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Abaixo_90%_permanencia",
+     "label": "Cota de Estiagem - Abaixo da  Permanência Anual de 90%"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "973ea2c8ed037da4626a6fb776fc636f",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdElEQVQYlYWP0RFAMBAF9yNN0AZ1KIMy0IYyaEPKEG2YR85kGLEfmUyy9+7OcVHyT3DxMgNVRvRAbXIHrBl51OGSSv+RPgFLKosG2B7iHuWTVA7xo03elKiOL9lmM1mSdrl5ykpXQW9L5WQxAIUt9SfbOC8OXrwURu/m550AAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 8,
+      "height": 7,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Sem dados atualizados",
+     "label": "Sem Dados Atualizados"
+    },
+    {
+     "symbol": {
+      "type": "esriPMS",
+      "url": "9ad445c5c3676d81bc1d70e1e7023f12",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlElEQVQYlYXP6xHCIBAE4OUmTWgbWodlaBf3KsMyTBtShtoFOJcRJj4S9w8EvjmyAwCo6hZ/oqr3ITZEdAGwW7EZwH7CAE4Arkuy1mqxTpiZs7vnhelnERk7jpRSDkR0+4CPwO2j4yjg7nFxnOExXv3Cr+lGRA1nZo4uPW84ppuZpZSklVrEERFRd9+0Uqu4/c6v8yf8Mzg91D8ZBgAAAABJRU5ErkJggg==",
+      "contentType": "image/png",
+      "width": 8,
+      "height": 7,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "value": "Sem dados de referencia",
+     "label": "Sem Dados de Referência"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        189,
+        252,
+        225,
+        255
+       ],
+       "toColor": [
+        189,
+        252,
+        225,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        244,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        244,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        207,
+        182,
+        255
+       ],
+       "toColor": [
+        252,
+        207,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        210,
+        252,
+        255
+       ],
+       "toColor": [
+        179,
+        210,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        238,
+        252,
+        179,
+        255
+       ],
+       "toColor": [
+        238,
+        252,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        187,
+        204,
+        255
+       ],
+       "toColor": [
+        252,
+        187,
+        204,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        179,
+        252,
+        255
+       ],
+       "toColor": [
+        199,
+        179,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        252,
+        185,
+        255
+       ],
+       "toColor": [
+        182,
+        252,
+        185,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        204,
+        241,
+        252,
+        255
+       ],
+       "toColor": [
+        204,
+        241,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        252,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        246,
+        252,
+        215,
+        255
+       ],
+       "toColor": [
+        246,
+        252,
+        215,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        218,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        218,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        200,
+        197,
+        252,
+        255
+       ],
+       "toColor": [
+        200,
+        197,
+        252,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": false,
+ "extent": {
+  "xmin": -73.66439999999994,
+  "ymin": -33.50220000086882,
+  "xmax": -34.88329999999996,
+  "ymax": 4.630600000152127,
+  "spatialReference": {
+   "wkid": 4674,
+   "latestWkid": 4674,
+   "xyTolerance": 8.983152841195215E-9,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "xyUnits": 9.999999999999999E8,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "Parametro",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "estcodigo",
+   "type": "esriFieldTypeOID",
+   "alias": "estcodigo",
+   "domain": null
+  },
+  {
+   "name": "Codigo",
+   "type": "esriFieldTypeInteger",
+   "alias": "Codigo",
+   "domain": null
+  },
+  {
+   "name": "Parametro",
+   "type": "esriFieldTypeString",
+   "alias": "Parametro",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "Nome",
+   "type": "esriFieldTypeString",
+   "alias": "Nome",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "Bacia",
+   "type": "esriFieldTypeString",
+   "alias": "Bacia",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "SubBacia",
+   "type": "esriFieldTypeString",
+   "alias": "SubBacia",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "Municipio",
+   "type": "esriFieldTypeString",
+   "alias": "Municipio",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "Estado",
+   "type": "esriFieldTypeString",
+   "alias": "Estado",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "Responsavel",
+   "type": "esriFieldTypeString",
+   "alias": "Responsavel",
+   "length": 15,
+   "domain": null
+  },
+  {
+   "name": "Operadora",
+   "type": "esriFieldTypeString",
+   "alias": "Operadora",
+   "length": 15,
+   "domain": null
+  },
+  {
+   "name": "Projeto",
+   "type": "esriFieldTypeString",
+   "alias": "Projeto",
+   "length": 30,
+   "domain": null
+  },
+  {
+   "name": "Status_Estacao",
+   "type": "esriFieldTypeString",
+   "alias": "Status_Estacao",
+   "length": 15,
+   "domain": null
+  },
+  {
+   "name": "Data_ult_dado",
+   "type": "esriFieldTypeDate",
+   "alias": "Data_ult_dado",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "Ult_Dado",
+   "type": "esriFieldTypeDouble",
+   "alias": "Ult_Dado",
+   "domain": null
+  },
+  {
+   "name": "Status_Dado",
+   "type": "esriFieldTypeString",
+   "alias": "Status_Dado",
+   "length": 40,
+   "domain": null
+  },
+  {
+   "name": "Geom",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Geom",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "Geom",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Geom"
+ },
+ "indexes": null,
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "maxSelectionCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true,
+  "supportsCurrentUserQueries": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true,
+ "uniqueIdInfo": {
+  "type": "simple",
+  "fields": [
+   "estcodigo"
+  ],
+  "OIDFieldContainsHashValue": false
+ },
+ "maxUniqueIDCount": 100000,
+ "serviceItemId": "4087a48347724c3da3091c861119b3e6"
+}

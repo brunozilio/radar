@@ -1,0 +1,581 @@
+{
+  "audited_at": "2026-09-22T02:04:00.627750+00:00",
+  "run": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T230014-0300",
+  "report": "/Users/brunozilio/Documents/radar/outputs/monitoramento-prospectivo/reports/20260922T020232538593Z",
+  "initial_invocation": "lock occupied; process 82699 verified; no duplicate cycle",
+  "retry": "exit 0 duplicate suppressed",
+  "audit_log_copy_issue": "Original /tmp pipeline moved concurrently; recovered from cycle/pipeline.log. Forecast and capture/report completed.",
+  "cycle_terminal_records": [
+    {
+      "kind": "cycle_completed",
+      "payload": {
+        "cycle_sha256": "63484856300d49e540b9bce80372c567bf870d566f6ec4401d687a232b5e87aa"
+      },
+      "previous_sha256": "cf0512133a9b6cac4f3e292c8f1dbfc4667e5546e25d8bee984b3bd55fc6ddbe",
+      "recorded_at": "2026-09-22T02:02:10.944140+00:00",
+      "schema": 1,
+      "sequence": 2055,
+      "sha256": "8c96bd407b25a4cc306295fdb12e6595fce3edf84835a906533dc419e0d60e6d"
+    }
+  ],
+  "forecast_issued_at": "2026-09-22T02:02:10.864694+00:00",
+  "forecasts": [
+    {
+      "level_m": 17.51152569704853,
+      "nominal_lead_h": 1,
+      "valid_at": "2026-09-22T00:00:00-03:00",
+      "actual_lead_h": 0.9636486961111111,
+      "real_band_h": 0,
+      "change_vs_previous_m": -0.1759793231261746
+    },
+    {
+      "level_m": 18.082919068118766,
+      "nominal_lead_h": 2,
+      "valid_at": "2026-09-22T01:00:00-03:00",
+      "actual_lead_h": 1.963648696111111,
+      "real_band_h": 1,
+      "change_vs_previous_m": -0.07354429154868924
+    },
+    {
+      "level_m": 18.70806871606997,
+      "nominal_lead_h": 3,
+      "valid_at": "2026-09-22T02:00:00-03:00",
+      "actual_lead_h": 2.963648696111111,
+      "real_band_h": 2,
+      "change_vs_previous_m": 0.37128148034745223
+    },
+    {
+      "level_m": 18.630779187000797,
+      "nominal_lead_h": 4,
+      "valid_at": "2026-09-22T03:00:00-03:00",
+      "actual_lead_h": 3.963648696111111,
+      "real_band_h": 3,
+      "change_vs_previous_m": 0.5535846471034809
+    },
+    {
+      "level_m": 18.5960941430735,
+      "nominal_lead_h": 5,
+      "valid_at": "2026-09-22T04:00:00-03:00",
+      "actual_lead_h": 4.963648696111111,
+      "real_band_h": 4,
+      "change_vs_previous_m": 0.49292715272872556
+    },
+    {
+      "level_m": 18.411192076976512,
+      "nominal_lead_h": 6,
+      "valid_at": "2026-09-22T05:00:00-03:00",
+      "actual_lead_h": 5.963648696111111,
+      "real_band_h": 5,
+      "change_vs_previous_m": 0.2790268788762411
+    },
+    {
+      "level_m": 18.382882320322594,
+      "nominal_lead_h": 7,
+      "valid_at": "2026-09-22T06:00:00-03:00",
+      "actual_lead_h": 6.963648696111111,
+      "real_band_h": 6,
+      "change_vs_previous_m": 0.5607655777393923
+    },
+    {
+      "level_m": 18.253439830460177,
+      "nominal_lead_h": 8,
+      "valid_at": "2026-09-22T07:00:00-03:00",
+      "actual_lead_h": 7.963648696111111,
+      "real_band_h": 7,
+      "change_vs_previous_m": 0.4454324565081862
+    },
+    {
+      "level_m": 17.97283319560853,
+      "nominal_lead_h": 9,
+      "valid_at": "2026-09-22T08:00:00-03:00",
+      "actual_lead_h": 8.963648696111111,
+      "real_band_h": 8,
+      "change_vs_previous_m": 0.7058008265270246
+    },
+    {
+      "level_m": 17.90298622380851,
+      "nominal_lead_h": 10,
+      "valid_at": "2026-09-22T09:00:00-03:00",
+      "actual_lead_h": 9.96364869611111,
+      "real_band_h": 9,
+      "change_vs_previous_m": 0.7919701901946397
+    },
+    {
+      "level_m": 17.638103106177226,
+      "nominal_lead_h": 11,
+      "valid_at": "2026-09-22T10:00:00-03:00",
+      "actual_lead_h": 10.96364869611111,
+      "real_band_h": 10,
+      "change_vs_previous_m": 0.3882981273582473
+    },
+    {
+      "level_m": 17.506397157068086,
+      "nominal_lead_h": 12,
+      "valid_at": "2026-09-22T11:00:00-03:00",
+      "actual_lead_h": 11.96364869611111,
+      "real_band_h": 11,
+      "change_vs_previous_m": -0.11055812224685724
+    },
+    {
+      "level_m": 17.789529313102506,
+      "nominal_lead_h": 13,
+      "valid_at": "2026-09-22T12:00:00-03:00",
+      "actual_lead_h": 12.96364869611111,
+      "real_band_h": 12,
+      "change_vs_previous_m": 0.4516559780399376
+    },
+    {
+      "level_m": 17.563718362126234,
+      "nominal_lead_h": 14,
+      "valid_at": "2026-09-22T13:00:00-03:00",
+      "actual_lead_h": 13.96364869611111,
+      "real_band_h": 13,
+      "change_vs_previous_m": null
+    }
+  ],
+  "last_observed": {
+    "source": "86510000",
+    "last_time": "2026-09-21T22:30:00-03:00",
+    "delay_minutes": 30.0,
+    "value": 16.75
+  },
+  "source_count": 133,
+  "source_errors": [],
+  "source_retry_records": [],
+  "source_ages": [
+    {
+      "source": "86060010",
+      "last_time": "2026-09-21T08:00:00-03:00",
+      "delay_minutes": "900.0",
+      "value": "13.8"
+    },
+    {
+      "source": "86099000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "6.01"
+    },
+    {
+      "source": "86102000",
+      "last_time": "2026-09-21T10:00:00-03:00",
+      "delay_minutes": "780.0",
+      "value": "7.51"
+    },
+    {
+      "source": "86117000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "2.25"
+    },
+    {
+      "source": "86125000",
+      "last_time": "2026-09-21T11:59:00-03:00",
+      "delay_minutes": "661.0",
+      "value": "0.8412999999999999"
+    },
+    {
+      "source": "86125050",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "1.47"
+    },
+    {
+      "source": "86160000",
+      "last_time": "2026-09-21T21:45:00-03:00",
+      "delay_minutes": "75.0",
+      "value": "4.72"
+    },
+    {
+      "source": "86163000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "1.22"
+    },
+    {
+      "source": "86200900",
+      "last_time": "2026-09-21T12:00:00-03:00",
+      "delay_minutes": "660.0",
+      "value": "667.03"
+    },
+    {
+      "source": "86280500",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "4.725"
+    },
+    {
+      "source": "86298000",
+      "last_time": "2026-09-21T19:00:00-03:00",
+      "delay_minutes": "240.0",
+      "value": "12.71"
+    },
+    {
+      "source": "86403000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "8.35"
+    },
+    {
+      "source": "86410800",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "0.0"
+    },
+    {
+      "source": "86447000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "4.95"
+    },
+    {
+      "source": "86448000",
+      "last_time": "2026-09-21T19:00:00-03:00",
+      "delay_minutes": "240.0",
+      "value": "153.55"
+    },
+    {
+      "source": "86450000",
+      "last_time": "2026-09-21T20:15:00-03:00",
+      "delay_minutes": "165.0",
+      "value": "19.89"
+    },
+    {
+      "source": "86471000",
+      "last_time": "2026-09-21T22:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "3.71"
+    },
+    {
+      "source": "86472000",
+      "last_time": "2026-09-21T22:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "19.38"
+    },
+    {
+      "source": "86472600",
+      "last_time": "2026-09-21T22:45:00-03:00",
+      "delay_minutes": "15.0",
+      "value": "15.9"
+    },
+    {
+      "source": "86479000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "0.22"
+    },
+    {
+      "source": "86488000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "2.43"
+    },
+    {
+      "source": "86493000",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "371.83"
+    },
+    {
+      "source": "86495500",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "330.43"
+    },
+    {
+      "source": "86500000",
+      "last_time": "2026-09-21T22:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "4.494"
+    },
+    {
+      "source": "86504900",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "5.91"
+    },
+    {
+      "source": "86505500",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "1.15"
+    },
+    {
+      "source": "86510000",
+      "last_time": "2026-09-21T22:30:00-03:00",
+      "delay_minutes": "30.0",
+      "value": "16.75"
+    },
+    {
+      "source": "julho",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "10943.07"
+    },
+    {
+      "source": "monte",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "11649.76"
+    },
+    {
+      "source": "castro",
+      "last_time": "2026-09-21T22:00:00-03:00",
+      "delay_minutes": "60.0",
+      "value": "8161.13"
+    }
+  ],
+  "auxiliary_ages_over_6h": [
+    {
+      "source": "86060010",
+      "last_time": "2026-09-21T08:00:00-03:00",
+      "delay_minutes": "900.0",
+      "value": "13.8"
+    },
+    {
+      "source": "86102000",
+      "last_time": "2026-09-21T10:00:00-03:00",
+      "delay_minutes": "780.0",
+      "value": "7.51"
+    },
+    {
+      "source": "86125000",
+      "last_time": "2026-09-21T11:59:00-03:00",
+      "delay_minutes": "661.0",
+      "value": "0.8412999999999999"
+    },
+    {
+      "source": "86200900",
+      "last_time": "2026-09-21T12:00:00-03:00",
+      "delay_minutes": "660.0",
+      "value": "667.03"
+    }
+  ],
+  "pipeline_errors": [],
+  "integrity_check_count": 617,
+  "integrity_failures": [],
+  "input_receipts": 202,
+  "artifacts": 22,
+  "history_files": 33,
+  "current_history": {
+    "directory": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260921T230014-0300/history",
+    "manifest_sha256": "2b42c8e01ab105eb6376c3d300365d22180619cfed643e43feea43c3b462d2e1"
+  },
+  "capture": {
+    "new": 0,
+    "revised": 0,
+    "last": {
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "valid_at": "2026-09-21T22:30:00-03:00",
+      "level_m": 16.75,
+      "quality": "Dado aprovado",
+      "timezone_verified": false,
+      "datum_verified": false,
+      "raw_time": "2026-09-21 22:30:00",
+      "raw_level_cm": "1675.00"
+    }
+  },
+  "status_counts": {
+    "matched": 31,
+    "missing_exact_observation": 9,
+    "not_due": 97
+  },
+  "goal_eligible_pairs": 0,
+  "certified_events": 0,
+  "closed_windows": 5,
+  "complete_windows": 5,
+  "problem_closed_windows": [],
+  "current_window": "open; no percentage; cycle completed",
+  "new_target_22h_diagnostic": [
+    {
+      "forecast_record": "cad2d809bd5618a95964025893ca9aa8943849f4101560f74b96c32da4aa4c86",
+      "evidence_kind": "archival_forecast_import",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_previsao_chuva",
+      "model_version": "source-snapshot:22d28c1163abf41d8b6a0f4924f3ae2a43e536ca7014bcce090470f0361e710f",
+      "registered_at": "2026-09-21T19:48:15.175215+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "7.0",
+      "actual_lead_h": "5.1957846625",
+      "minimum_verified_lead_h": "5",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "13.445622097751722",
+      "observed_m": "16.45",
+      "abs_error_m": "3.0043779022482777",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "False",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "archival_import,timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "a902a27977447df91473e8635f7fbd08691551605395f344255d363ee2bff369",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:6618f3723be5a3b3",
+      "registered_at": "2026-09-21T20:01:10.071258+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "6",
+      "actual_lead_h": "4.980535761666666",
+      "minimum_verified_lead_h": "4",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "14.507678811472015",
+      "observed_m": "16.45",
+      "abs_error_m": "1.942321188527984",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "False",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "ad0f135386ab111c85f9db922cd9fd67361446bf9d616bd888be02671f8fef2c",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+      "registered_at": "2026-09-21T20:31:09.277372+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "5",
+      "actual_lead_h": "4.480756285555556",
+      "minimum_verified_lead_h": "4",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "15.348342778009691",
+      "observed_m": "16.45",
+      "abs_error_m": "1.1016572219903082",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "False",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "971a360ec71a51cf033cb732230d29ecf3db0b1657199019814d504f3753851a",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:5e5d62467a8ec22d",
+      "registered_at": "2026-09-21T21:02:09.620438+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "4",
+      "actual_lead_h": "3.963994322777778",
+      "minimum_verified_lead_h": "3",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "15.933228222373168",
+      "observed_m": "16.45",
+      "abs_error_m": "0.5167717776268308",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "False",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "4291fc462eca9b448f6950b435232d04b1754d905e3091175ef70b0b0ec4de4d",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+      "registered_at": "2026-09-21T21:35:00.363259+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "4",
+      "actual_lead_h": "3.416565761388889",
+      "minimum_verified_lead_h": "3",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "16.334541896715105",
+      "observed_m": "16.45",
+      "abs_error_m": "0.11545810328489381",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "True",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "manual_revision_outside_scheduled_sample,timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "b31d299f358563172a98bf233a20c0c68216f592fde27f6af61686f6dbec89d4",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+      "registered_at": "2026-09-21T22:02:15.832959+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "3",
+      "actual_lead_h": "2.9622686225000003",
+      "minimum_verified_lead_h": "2",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "16.479325382724674",
+      "observed_m": "16.45",
+      "abs_error_m": "0.02932538272467511",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "True",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "d81951889c96952a8718a5420d0090d30e15932904ff6cd96296b9cf507368f9",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+      "registered_at": "2026-09-21T23:04:38.599665+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "2",
+      "actual_lead_h": "1.9226112041666668",
+      "minimum_verified_lead_h": "1",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "16.647527558130452",
+      "observed_m": "16.45",
+      "abs_error_m": "0.19752755813045297",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "True",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "timezone_unverified,datum_unverified"
+    },
+    {
+      "forecast_record": "ab68649c464d53c610c4f97b80976b71a030b851c0731aa912081fae1c0bddd4",
+      "evidence_kind": "forecast_issue",
+      "station_id": "86510000",
+      "datum_id": "ANA:86510000:reference-unverified",
+      "model_id": "radar_arvores_live_candidate",
+      "model_version": "hourly-live-weather-v1:2c265b53228f8345",
+      "registered_at": "2026-09-22T00:02:20.346907+00:00",
+      "valid_at": "2026-09-21T22:00:00-03:00",
+      "nominal_lead_h": "1",
+      "actual_lead_h": "0.9610147480555555",
+      "minimum_verified_lead_h": "0",
+      "shorter_than_nominal_lead": "True",
+      "forecast_m": "16.34494395216809",
+      "observed_m": "16.45",
+      "abs_error_m": "0.10505604783190847",
+      "observation_record": "990b2548c2827a36c76da28a83d153382ff91f449ec73f38f294673ad8ce30b0",
+      "goal_eligible": "False",
+      "hit_within_050m": "True",
+      "flood_event_id": "9f2806d96e56e502689c8137",
+      "status": "matched",
+      "exclusion_reasons": "outside_1_to_12h_actual_lead_buckets,timezone_unverified,datum_unverified"
+    }
+  ],
+  "training_cutoff": "2026-09-21T00:00:00-03:00",
+  "limitations": [
+    "Current meteorological forecasts differ from previous-day training predictors; new candidate version.",
+    "Nominal hours 13-14 use frozen hour-12 hyperparameters; no accuracy validation at those horizons.",
+    "Datum and legacy endpoint timezone not independently verified."
+  ]
+}

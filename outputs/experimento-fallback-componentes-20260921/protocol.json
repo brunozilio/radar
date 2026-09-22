@@ -1,0 +1,15 @@
+{
+  "experiment_id":"ons-component-conflict-conditional-fallback-v1",
+  "scope":"Local inspected-history diagnostic only. Retrospective discovery of three source conflicts and prior model ablation means no independent improvement or promotion can be claimed.",
+  "rule":"ONS MonteClaro Qdef exactly0, all Qtur/Qvert/Qoutras finite, sum>1m3/s. Unknown is not zero. Do not add transfers or non-turbinable spilling twice. Diagnostic tolerance, not official rejection. Recompute across every available source row without date masks.",
+  "lags_h":[0,1,3,6],
+  "source_delay_seconds":3600,
+  "max_age_seconds":5400,
+  "dependency":"For each origin and feature-history offset, select latest source row at or before origin-offset-delay; expire older than90min at that cutoff. Flag origin if any of the4MonteQ inputs is flagged. Confirm flagged rawQ equals frozen feature input. This is an assumed availability trace, not historic publication proof.",
+  "application":"Only for affected origins choose frozen61featurewithoutMonte prediction from preceding ablation. Otherwise preserve exact77featureprediction. No new fit, observed target changes, corrected source value, interpolation or recursive estimates.",
+  "comparison":"Identical102108origin-target pairs and all horizons0..11; reproduce unflagged predictions exactly. Report all/highflow perphase/perlead, MAE,bias,P90,P98,max and affected/unaffected counts. Measure test outcome but do not select thresholds/dates/model using it.",
+  "promotion":"Forbidden from this diagnostic alone: validation has no independently evaluated conflict cases. A future independent event and verified source semantics/availability are required. CERAN current web components have a different unverified contract and cannot inherit this ONS rule automatically.",
+  "limitations":"Conflict does not determine which column is wrong or provide a true replacementQ. No automatic imputation. Model withoutMonte remains statistically correlated with Monte through other plants. Previously inspected historical data, no real emission, no goal eligibility.",
+  "live_issuance":false,
+  "goal_achieved":false
+}

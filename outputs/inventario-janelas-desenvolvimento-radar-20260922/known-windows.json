@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-09-22T05:39:06.764299+00:00",
+  "purpose": "Prevent reuse of known development windows as unseen validation; not a complete source or event catalog",
+  "timezone": "UTC-3 assumption of existing contracts, not source certification",
+  "windows": [
+    {
+      "start_inclusive_date": "2020-07-01",
+      "end_inclusive_date": "2020-07-20",
+      "status": "known_development",
+      "note": "Treino histórico e avaliação já realizados. Coleta inclui aquecimento desde28/06.",
+      "source": "docs/radar-2020-augmentation-protocol.json",
+      "source_sha256": "1072e5a7ccb40ebb490966123a489ff54b1408e0b80f48fdbf82d5e28d8e54f6"
+    },
+    {
+      "start_inclusive_date": "2021-05-01",
+      "end_inclusive_date": "2021-05-31",
+      "status": "known_development",
+      "note": "Antiga reserva já avaliada; não reutilizar como teste inédito.",
+      "source": "docs/radar-reserved-2021-2022-challenge-protocol.json",
+      "source_sha256": "66d32e1aa148c165f01f0527bbe5fc0b47bd952a2f856fa9ba295b060d6ec0e8"
+    },
+    {
+      "start_inclusive_date": "2022-05-01",
+      "end_inclusive_date": "2022-06-30",
+      "status": "known_development",
+      "note": "Antiga reserva já avaliada; não reutilizar como teste inédito.",
+      "source": "docs/radar-reserved-2021-2022-challenge-protocol.json",
+      "source_sha256": "66d32e1aa148c165f01f0527bbe5fc0b47bd952a2f856fa9ba295b060d6ec0e8"
+    },
+    {
+      "start_inclusive_date": "2023-09-01",
+      "end_inclusive_date": "2023-09-30",
+      "status": "known_development",
+      "note": "Treino histórico e avaliação já realizados.",
+      "source": "outputs/experimento-radar-historico-2023-20260921/protocol.json",
+      "source_sha256": "dce2e092f4c600d68f3230efb484d54bd286ef46f0f057337c822bf8be1087e3"
+    },
+    {
+      "start_inclusive_date": "2024-04-01",
+      "end_inclusive_date": "2024-05-01",
+      "status": "known_development",
+      "note": "Treino histórico e avaliação já realizados. Alvos antes de02/05.",
+      "source": "outputs/experimento-radar-historico-2024-20260921/protocol.json",
+      "source_sha256": "d7aff2d30550425bc41f6b149dc38ba21ebe22ff59ec92b6c2cc04d38e05851c"
+    },
+    {
+      "start_inclusive_date": null,
+      "end_inclusive_date": "2026-09-20",
+      "status": "known_development",
+      "note": "Blocos originais2025/2026 já usados repetidamente; fronteiras de alvo01/10/2025 e01/07/2026. Não inferir data inicial deste inventário.",
+      "source": "docs/radar-delay-profile-mixture-protocol.json",
+      "source_sha256": "38f94ccdca7d60b237abe38cf1bdd2c23df283594f78211f195b4642b0470585"
+    }
+  ]
+}

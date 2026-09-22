@@ -1,0 +1,49 @@
+{
+  "selection_by_validation_only": {
+    "julho": {
+      "family": "ridge_reference",
+      "validation_scores": {
+        "ridge_reference": 224.6189511108014,
+        "tree_delta": 234.83381012490827,
+        "tree_level": 604.4274968046826
+      }
+    },
+    "carreiro": {
+      "family": "ridge_reference",
+      "validation_scores": {
+        "ridge_reference": 52.375514874023224,
+        "tree_delta": 60.830617604010335,
+        "tree_level": 100.99710409097578
+      }
+    }
+  },
+  "parameters": {
+    "max_iter": 180,
+    "max_leaf_nodes": 7,
+    "min_samples_leaf": 35,
+    "learning_rate": 0.055,
+    "l2_regularization": 10,
+    "loss": "absolute_error",
+    "early_stopping": false,
+    "random_state": 57
+  },
+  "source_snapshot": "outputs/mucum-hourly-20260921T172707-retry",
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "outputs/mucum-hourly-20260921T172707-retry/dados-roteamento.npz": "0d8fc41267fc3a98ed9a98da9a0b08f69d50c189547186feb1619e3300870e9b",
+    "outputs/mucum-hourly-20260921T172707-retry/telemetria-latencia.npz": "1f1c7b1bb59ba43ef33d3691f2c9a4c1df1746d79912782fc9f2354854c9fd33",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_tree_experiment.py": "baa3afc68662f56079a0e096f6be9bcaa1c045af106e77480f382d0427203be4",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_forecast.py": "5e5d62467a8ec22d7281502c592e264073404ae96d45bc0383f99e75e37014bf",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_hourly_models.py": "b12cea013b4f580b73c3adbf179140b9fc19618c55c849098c674c83badcd9ac",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_upstream_audit.py": "a4b1c19b545bc57159efe53a89ae0caea9b5c9f10c61ecf98345aea6af44c966",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_flow_diagnostics.py": "c0137dcebebe20591185de43ed65fc31c701ac9465ea5478b39b0a48252455e6",
+    "/Users/brunozilio/Documents/radar/scripts/hydro_routing_fit.py": "63a317f851bb780919ea3477d5372c67e38207f048b5bd76957d438f8acc84ae"
+  },
+  "alpha_reference": 1000.0,
+  "comparison": "All methods share the frozen 15h historical latency features; this ridge is not claimed to reproduce the refitted hourly live model.",
+  "test_status": "Previously inspected July–September2026 development period; not independent new holdout.",
+  "live_issuance": false,
+  "promoted": false,
+  "goal_achieved": false
+}

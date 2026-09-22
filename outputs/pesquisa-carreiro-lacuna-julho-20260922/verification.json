@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-09-22T05:03:50.714816+00:00",
+  "checks": [
+    {
+      "check": "five requests under cap",
+      "passed": true
+    },
+    {
+      "check": "new body raw/sigma-20260721.txt",
+      "passed": true
+    },
+    {
+      "check": "new body raw/sigma-20260722.txt",
+      "passed": true
+    },
+    {
+      "check": "new body raw/sace-current.csv",
+      "passed": true
+    },
+    {
+      "check": "new body raw/ana-window.xml",
+      "passed": true
+    },
+    {
+      "check": "new body raw/rs-bulletin.html",
+      "passed": true
+    },
+    {
+      "check": "192 stationidentified",
+      "passed": true
+    },
+    {
+      "check": "unique",
+      "passed": true
+    },
+    {
+      "check": "literal complete two day quartergrid",
+      "passed": true
+    },
+    {
+      "check": "four manual final",
+      "passed": true
+    },
+    {
+      "check": "sensor192 rejected",
+      "passed": true
+    },
+    {
+      "check": "old-new allfields identical",
+      "passed": true
+    },
+    {
+      "check": "fresh and old window membership",
+      "passed": true
+    },
+    {
+      "check": "SACE identity",
+      "passed": true
+    },
+    {
+      "check": "SACE no requested dates",
+      "passed": true
+    }
+  ],
+  "checks_count": 15,
+  "direct_requests": 5,
+  "search_queries": 4,
+  "approved_subhourly_alternative_recovered": false,
+  "old_all_fields_identical": true,
+  "authentication_or_messages": false,
+  "fit_or_pipeline_change": false
+}

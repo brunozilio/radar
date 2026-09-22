@@ -1,0 +1,57 @@
+{
+  "collected_at": "2026-09-22T02:02:48.720Z",
+  "queries": [
+    {
+      "q": "\"86510000\" \"manutenção\" \"2025\"",
+      "domains": [
+        "sgb.gov.br",
+        "ana.gov.br",
+        "gov.br"
+      ]
+    },
+    {
+      "q": "\"Muçum\" \"régua\" \"reinstalação\"",
+      "domains": [
+        "sgb.gov.br",
+        "ana.gov.br",
+        "gov.br"
+      ]
+    },
+    {
+      "q": "\"86510000\" \"monografia\" \"2024\"",
+      "domains": [
+        "sgb.gov.br",
+        "ana.gov.br",
+        "gov.br"
+      ]
+    }
+  ],
+  "response": "Empty search results\nNo results were found for the provided queries",
+  "status": "NO_NEW_RESOLVING_PRIMARY_EVIDENCE",
+  "claim_scope": "Busca delimitada sem resultados; não prova inexistência de registros.",
+  "sources_accepted": [],
+  "prior_context": [
+    "/Users/brunozilio/.codex/automations/recalcular-previs-es-de-mu-um/memory.md",
+    "outputs/historico-cheias-mucum/documentation/fuso-e-referencia.md",
+    "outputs/historico-cheias-mucum/documentation/reference-status.json",
+    "outputs/pesquisa-mucum-reinstalacao-20260922T010222Z/search-log.json",
+    "outputs/pesquisa-mucum-20260922T001359Z/search-log.json",
+    "outputs/pesquisa-mucum-referencia-20260921T214433Z/search-log.json"
+  ],
+  "metadata": {
+    "station": "86510000",
+    "units": "Nenhuma nova série; nível em m/cm precisa de fonte específica.",
+    "timezone": "Contrato do endpoint atual permanece não verificado.",
+    "datum": "Zero 33,985 m MAPGEO2015 / PA008 versus 33,96 m sem conciliação temporal; vínculo régua-sensor atual não comprovado.",
+    "quality": "Nenhuma ficha de manutenção/monografia nova aceita.",
+    "gaps": [
+      "Data de reinstalação após destruição em 2024",
+      "Vigência das referências zero/régua/sensor",
+      "Continuidade entre 2020, 2024 e sensor atual",
+      "Contrato explícito de fuso do endpoint"
+    ],
+    "license": "Nenhum novo documento coletado ou redistribuído."
+  },
+  "training_or_shared_edits": false,
+  "external_messages": false
+}

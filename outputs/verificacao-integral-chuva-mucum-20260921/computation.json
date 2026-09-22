@@ -1,0 +1,138 @@
+{
+  "origins": [
+    "2026-07-01T00:00",
+    "2026-07-02T21:00",
+    "2026-07-22T08:00",
+    "2026-07-22T09:00",
+    "2026-07-22T11:00",
+    "2026-08-13T09:00"
+  ],
+  "rows": 72,
+  "fit_performed": false,
+  "method": "Full independent routing and HGE state/future simulation; no inversion of saved levels and no delta update",
+  "max_numerical_water_balance_error_mm": 2.842170943040401e-14,
+  "input_sha256": {
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz": "c8c3fa62bd28850e767d921cd3743edb304b84d11c3b9d3ed48189b5207a4314",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json": "114cf5fc7cc8b0c1196a5b8a879e91395548e337c0f2d583651a151e48c9225e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921/frozen-models.json": "e609457a77b32d3c2f436c30ad0ca76b99e02966e4abdf70817d5fbf805ba438",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921/forecast-rain-features.npz": "65a9910e1ad0a7415ecfda1156f6758a12ac3ea40bf7fa8e1860714822050675",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/modeled-carreiro-inputs.npz": "406c603ddbadb52cb744ded82e895cd33082cfba0223afca9f098d82b53ec07e",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/proxy-models.json": "8b818ff34d8e788cb34915609447f60334645a2e088af5b3390688fedcafd772",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/protocol.json": "f2056560809b14e0b8e862cbb143724659477675186c48ee2a72dad48f036e56",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/predictions.csv": "c4b95775c5b088467629a2b3ff3dec375dc3a29192943a6271c378670f331369",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json": "79a5734092cbfaa2238934bf5769942539d5edad842c3be12517ec032e3872bf",
+    "/Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py": "1675720deb96c34a28550ba902cd1820ed44c4e2c2a7ce73c446e4982f2ab47e",
+    "/Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py": "1c41801b512df0befab47cdba7f03a00758b2dc10c41cac7a3fee3f228cf84e5",
+    "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921/code/hydro_reservoir_mucum_experiment.py": "1399b2752ae44510a576bd3ae16d5a1803bd6e27171abce43088f602185db854",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json": "10213a6d0e29447e9a9da62ad9f0137af3444d79a5007b1a802cdc557fd04f7c",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313",
+    "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f"
+  },
+  "prior_provenance_checks": [
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "sha256": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "sha256": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz",
+      "sha256": "c8c3fa62bd28850e767d921cd3743edb304b84d11c3b9d3ed48189b5207a4314"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json",
+      "sha256": "114cf5fc7cc8b0c1196a5b8a879e91395548e337c0f2d583651a151e48c9225e"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/conferencia-balanco.json",
+      "sha256": "b454c9511024f894b4115db87513c84848f65549f7162032622dc682e2ab73f4"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/roteamento-vazao-pesos.csv",
+      "sha256": "5d3a86b5297a2b788ffdf02ab6d86db4de7e1f1a9e42634171bb0ca5823270d6"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-hge-experimental-2026-09-21/parametros.json",
+      "sha256": "79a5734092cbfaa2238934bf5769942539d5edad842c3be12517ec032e3872bf"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/experiments/hge-water-balance/run.py",
+      "sha256": "1675720deb96c34a28550ba902cd1820ed44c4e2c2a7ce73c446e4982f2ab47e"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/experiments/hge-water-balance/vendor/hydrological_model.py",
+      "sha256": "1c41801b512df0befab47cdba7f03a00758b2dc10c41cac7a3fee3f228cf84e5"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "sha256": "10213a6d0e29447e9a9da62ad9f0137af3444d79a5007b1a802cdc557fd04f7c"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "sha256": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-proxy-carreiro-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "sha256": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/dados-roteamento.npz",
+      "sha256": "e23c1ba581c956aa579616875075c7d90b592228f7542a3fa45cb7f446080ae8"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/telemetria-latencia.npz",
+      "sha256": "cc3de62a6347f421c35668a9397e59ce8d4f41a564ccd7236764c1d294ea4573"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/additional-features.npz",
+      "sha256": "c8c3fa62bd28850e767d921cd3743edb304b84d11c3b9d3ed48189b5207a4314"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/experimento-niveis-reservatorios-20260921/frozen-models.json",
+      "sha256": "114cf5fc7cc8b0c1196a5b8a879e91395548e337c0f2d583651a151e48c9225e"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-gfs_seamless.json",
+      "sha256": "10213a6d0e29447e9a9da62ad9f0137af3444d79a5007b1a802cdc557fd04f7c"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/chuva-previsao-historica-ecmwf_ifs025.json",
+      "sha256": "8f3a83667b21f8e405ed80af454709dccbf285f900a6b30988d214ce97706313"
+    },
+    {
+      "experiment": "/Users/brunozilio/Documents/radar/outputs/experimento-chuva-prevista-montante-20260921",
+      "input": "/Users/brunozilio/Documents/radar/outputs/mucum-atualizacao-15h-2026-09-21/nwp-historical-icon.json",
+      "sha256": "fbdbe8a8e709bebfa77f665712ded887090091f488735eaa5c3a29aa5909911f"
+    }
+  ],
+  "rating": [
+    4.596200698577397,
+    0.6251844913989489,
+    0.3897658563365486
+  ],
+  "created_at_utc": "2026-09-21T22:43:30.335480+00:00"
+}

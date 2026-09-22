@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "phase": "validation",
+      "horizon_h": 12,
+      "trees": 180,
+      "tree_attribute_fields_compared": 2700,
+      "all_tree_fields_equal": true,
+      "nonleaf_splits_using_age_column180": 0,
+      "baseline_prediction_equal": true,
+      "old_model": "outputs/experimento-radar-mistura-atrasos-20260922/models/validation-mixed_profile_candidate-12.joblib",
+      "old_sha256": "c98f48a438d10909cc1a4cc7aa9659e8a59252f746ae17be7182c5e8fc0a8ebc",
+      "new_model": "outputs/experimento-radar-idade-ancora-20260922/models/validation-age_mixed_candidate-12.joblib",
+      "new_sha256": "dbe89425f36e01294183faadf5c71534a6090ea7ce857a9d419aa15a918e8006"
+    },
+    {
+      "phase": "test",
+      "horizon_h": 12,
+      "trees": 180,
+      "tree_attribute_fields_compared": 2700,
+      "all_tree_fields_equal": true,
+      "nonleaf_splits_using_age_column180": 0,
+      "baseline_prediction_equal": true,
+      "old_model": "outputs/experimento-radar-mistura-atrasos-20260922/models/test-mixed_profile_candidate-12.joblib",
+      "old_sha256": "0f4a16043497db7d8985f4b572ed53e11e88e48e78dfb7bbdecbd706878905d8",
+      "new_model": "outputs/experimento-radar-idade-ancora-20260922/models/test-age_mixed_candidate-12.joblib",
+      "new_sha256": "47b7f15df232b15d9ba11ce6df863fdfc229e6d13c2ffe32e7952f9e9a403b3b"
+    }
+  ],
+  "scope": "Onlyh12twofolds. Treefields/bitsets/intercept checked; no fit or change of models."
+}
