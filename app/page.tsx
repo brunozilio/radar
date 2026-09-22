@@ -236,16 +236,16 @@ const RIVER_CITIES = [
     sensors: ["sace-86510000", "dcrs-00091"],
   },
   {
-    city: "Encantado",
-    sensors: ["sace-86720000"],
-  },
-  {
     city: "Santa Tereza",
     sensors: ["sace-86472600", "sace-86472000"],
   },
   {
     city: "Guaporé",
     sensors: ["sace-86560000", "sace-86500000"],
+  },
+  {
+    city: "Encantado",
+    sensors: ["sace-86720000"],
   },
 ] as const;
 
