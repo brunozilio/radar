@@ -1,0 +1,197 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Monitoramento" [level=1] [ref=e5]
+        - button "Ativar notificações" [ref=e7] [cursor=pointer]
+      - region "Alertas ativos para Muçum e Vale do Taquari" [ref=e12]:
+        - generic [ref=e13]: Alertas ativos
+        - alert [ref=e18]: Não foi possível consultar os alertas oficiais agora. A coleta tentará novamente automaticamente.
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - heading "Níveis do rio" [level=2] [ref=e22]
+          - group "Janela de tempo" [ref=e23]:
+            - button "3h" [pressed] [ref=e24] [cursor=pointer]
+            - button "6h" [ref=e25] [cursor=pointer]
+            - button "8h" [ref=e26] [cursor=pointer]
+            - button "12h" [ref=e27] [cursor=pointer]
+        - generic [ref=e28]:
+          - article [ref=e29]:
+            - generic [ref=e30]:
+              - heading "Muçum" [level=3] [ref=e31]
+              - link "Visualizar Plano de Contingência de Muçum" [ref=e32] [cursor=pointer]:
+                - /url: https://mucum.rs.gov.br/portal/defesa-civil/PLANO%20DE%20CONTING%C3%8ANCIA%20DE%20MU%C3%87UM%20-%20DEFESA%20CIVIL.pdf
+                - text: Plano de contingência
+          - article [ref=e36]:
+            - heading "Santa Tereza" [level=3] [ref=e38]
+          - article [ref=e39]:
+            - heading "Guaporé" [level=3] [ref=e41]
+          - article [ref=e42]:
+            - heading "Encantado" [level=3] [ref=e44]
+        - generic [ref=e45]: Worker ainda não inicializou o banco
+      - generic [ref=e48]:
+        - heading "Barragens" [level=2] [ref=e51]
+        - generic [ref=e52]:
+          - article [ref=e53]:
+            - heading "UHE Castro Alves Nova Pádua" [level=3] [ref=e54]:
+              - generic [ref=e55]: UHE Castro Alves
+              - generic [ref=e56]: Nova Pádua
+            - generic [ref=e57]:
+              - generic [ref=e58]: Vazão defluente
+              - strong [ref=e59]: — m³/s
+              - generic [ref=e60]:
+                - generic [ref=e65]: Estável
+                - generic [ref=e66]: 1h indisponível
+              - time [ref=e67]: Sem atualização
+            - strong [ref=e74]: Aguardando medições
+          - article [ref=e75]:
+            - heading "UHE Monte Claro Veranópolis" [level=3] [ref=e76]:
+              - generic [ref=e77]: UHE Monte Claro
+              - generic [ref=e78]: Veranópolis
+            - generic [ref=e79]:
+              - generic [ref=e80]: Vazão defluente
+              - strong [ref=e81]: — m³/s
+              - generic [ref=e82]:
+                - generic [ref=e87]: Estável
+                - generic [ref=e88]: 1h indisponível
+              - time [ref=e89]: Sem atualização
+            - strong [ref=e96]: Aguardando medições
+          - article [ref=e97]:
+            - heading "UHE 14 de Julho Cotiporã" [level=3] [ref=e98]:
+              - generic [ref=e99]: UHE 14 de Julho
+              - generic [ref=e100]: Cotiporã
+            - generic [ref=e101]:
+              - generic [ref=e102]: Vazão defluente
+              - strong [ref=e103]: — m³/s
+              - generic [ref=e104]:
+                - generic [ref=e109]: Estável
+                - generic [ref=e110]: 1h indisponível
+              - time [ref=e111]: Sem atualização
+            - strong [ref=e118]: Aguardando medições
+      - region [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - text: PREVISÃO DE ATÉ 6 HORAS
+            - heading "Previsão de Muçum" [level=2] [ref=e122]
+          - generic [ref=e126]: Experimental
+        - generic "Previsão de Muçum" [ref=e127]:
+          - status [ref=e128]: Aguardando o primeiro cálculo.
+      - region [ref=e129]:
+        - heading "Câmeras ao vivo" [level=2] [ref=e132]
+        - generic [ref=e133]:
+          - article [ref=e134]:
+            - iframe [ref=e136]:
+              - generic [ref=f1e1]:
+                - generic "Player de vídeo do YouTube" [ref=f1e3]
+                - generic [ref=f1e5]:
+                  - generic:
+                    - generic:
+                      - button "Assistir vídeo" [ref=f1e10] [cursor=pointer]
+                      - button "Ocultar controles do player" [ref=f1e14] [cursor=pointer]
+                      - generic [ref=f1e16]:
+                        - generic [ref=f1e21]:
+                          - generic [ref=f1e22]:
+                            - link "#18 INÍCIO DO RIO TAQUARI, NO ENCONTRO DO CARREIRO E ANTAS" [ref=f1e23] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=kn1qx5Sin20
+                            - link "Projeto Vale Vivo" [ref=f1e24] [cursor=pointer]:
+                              - /url: /channel/UCVT44GDQePOsKk-EZKeO1DQ
+                          - generic [ref=f1e26]:
+                            - button [ref=f1e27] [cursor=pointer]:
+                              - img "thumbnail-image" [ref=f1e28]
+                            - generic [ref=f1e30]:
+                              - generic: Projeto Vale Vivo
+                              - generic: 4,96 mil inscritos
+                        - generic [ref=f1e31]:
+                          - button "Compartilhar" [ref=f1e34] [cursor=pointer]
+                          - link "Assistir no YouTube" [ref=f1e45] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=kn1qx5Sin20
+                            - generic [ref=f1e46]: Assista no
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - heading "Início do Rio Taquari" [level=3] [ref=e139]
+                - paragraph [ref=e140]: Encontro dos rios Carreiro e Antas
+              - link "Abrir câmera Início do Rio Taquari no YouTube (nova aba)" [ref=e141] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=kn1qx5Sin20
+                - text: YouTube
+          - article [ref=e146]:
+            - iframe [ref=e148]:
+              - generic [ref=f2e1]:
+                - generic "Player de vídeo do YouTube" [ref=f2e3]
+                - generic [ref=f2e5]:
+                  - generic:
+                    - generic:
+                      - button "Assistir vídeo" [ref=f2e10] [cursor=pointer]
+                      - button "Ocultar controles do player" [ref=f2e14] [cursor=pointer]
+                      - generic [ref=f2e16]:
+                        - generic [ref=f2e21]:
+                          - generic [ref=f2e22]:
+                            - link "#3 PONTE DA ERS-129, ENTRE ENCANTADO E MUÇUM" [ref=f2e23] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=K7IAHQftZMk
+                            - link "A Hora TV" [ref=f2e24] [cursor=pointer]:
+                              - /url: /channel/UCbauUKiZFs0HwCfPee68pQw
+                          - generic [ref=f2e26]:
+                            - button [ref=f2e27] [cursor=pointer]:
+                              - img "thumbnail-image" [ref=f2e28]
+                            - generic [ref=f2e30]:
+                              - generic: A Hora TV
+                              - generic: 15,2 mil inscritos
+                        - generic [ref=f2e31]:
+                          - button "Compartilhar" [ref=f2e34] [cursor=pointer]
+                          - link "Assistir no YouTube" [ref=f2e45] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=K7IAHQftZMk
+                            - generic [ref=f2e46]: Assista no
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Ponte entre Muçum e Encantado" [level=3] [ref=e151]
+                - paragraph [ref=e152]: Barra do Guaporé
+              - link "Abrir câmera Ponte entre Muçum e Encantado no YouTube (nova aba)" [ref=e153] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=K7IAHQftZMk
+                - text: YouTube
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - heading "Radar Porto Alegre" [level=2] [ref=e162]
+          - strong [ref=e169]: Aguardando imagens do radar
+          - time [ref=e170]: —
+        - generic [ref=e171]:
+          - heading "Radar Concórdia" [level=2] [ref=e174]
+          - strong [ref=e181]: Aguardando imagens de Concórdia
+          - time [ref=e182]: —
+        - generic [ref=e183]:
+          - heading "Satélite" [level=2] [ref=e186]
+          - strong [ref=e193]: Imagem de satélite indisponível
+          - time [ref=e194]: —
+      - article [ref=e196]:
+        - generic [ref=e197]:
+          - heading "Chuva acumulada" [level=2] [ref=e199]
+          - group "Janela de chuva acumulada" [ref=e200]:
+            - button "1h" [ref=e201] [cursor=pointer]
+            - button "3h" [ref=e202] [cursor=pointer]
+            - button "6h" [ref=e203] [cursor=pointer]
+            - button "8h" [ref=e204] [cursor=pointer]
+            - button "12h" [ref=e205] [cursor=pointer]
+            - button "24h" [pressed] [ref=e206] [cursor=pointer]
+            - button "48h" [ref=e207] [cursor=pointer]
+        - generic [ref=e208]:
+          - generic "Mapa de chuva acumulada na Bacia do Taquari" [ref=e209]:
+            - generic:
+              - generic [ref=e210]:
+                - button "Zoom in" [ref=e211] [cursor=pointer]: +
+                - button "Zoom out" [ref=e212] [cursor=pointer]: −
+              - generic [ref=e213]:
+                - link "Leaflet" [ref=e214] [cursor=pointer]:
+                  - /url: https://leafletjs.com
+                - text: "| © OpenStreetMap © CARTO"
+          - button "Ampliar mapa de chuva acumulada" [ref=e219] [cursor=pointer]
+        - generic [ref=e225]:
+          - generic [ref=e226]: Fraca < 50 mm
+          - generic [ref=e228]: Atenção 50–80 mm
+          - generic [ref=e230]: Crítica > 80 mm
+      - region [ref=e232]:
+        - heading "Informação clara também protege." [level=2] [ref=e234]
+        - generic [ref=e235]:
+          - paragraph [ref=e236]: Em momentos de risco, informações importantes ficam espalhadas entre diferentes sites e redes sociais. Conteúdos antigos também podem reaparecer como se fossem atuais, gerando dúvida e preocupação.
+          - paragraph [ref=e237]: Este sistema reúne, em um só lugar, dados atualizados sobre rios, chuva, barragens, alertas, radar e satélite. As informações vêm da ANA/SNIRH, SACE/SGB, Defesa Civil do RS, CERAN, INMET, CPTEC/INPE, Climatempo e Epagri/Ciram.
+          - paragraph [ref=e238]: É uma ferramenta de apoio para facilitar o acesso à informação. Em uma emergência, siga sempre as orientações oficiais.
+        - paragraph [ref=e239]: Bruno Zilio
+  - button "Open Next.js Dev Tools" [ref=e245] [cursor=pointer]
+  - alert [ref=e249]

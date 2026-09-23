@@ -1,0 +1,31 @@
+{
+  "attemptId": "2c321ea1-8afb-4221-888a-c552fde69cb7",
+  "datum": "ANA station reference; absolute datum not independently verified",
+  "error": null,
+  "generatedAt": null,
+  "missing": [
+    "No newer complete observation hour within the three-hour age limit",
+    "86472600: approved river level missing at 2026-09-23T11:00:00+00:00",
+    "Carreiro: same-hour rain coverage 8.7% below 50%",
+    "Alto Antas: same-hour rain coverage 12.1% below 50%",
+    "Tainhas: same-hour rain coverage 0.0% below 50%"
+  ],
+  "objects": [
+    {
+      "bytes": 8833845,
+      "key": "projection/blobs/b269fb1f430b583bcc73dedcdbdaad2396fe9b4d019e81e4ea6d396e6ae2f588.tar.gz",
+      "role": "runtime",
+      "sha256": "b269fb1f430b583bcc73dedcdbdaad2396fe9b4d019e81e4ea6d396e6ae2f588"
+    },
+    {
+      "bytes": 313198,
+      "key": "projection/blobs/8128e505dfd678caa7680d180ec9e24a5eebd5cd96a163b7e982604007c05eea.tar.gz",
+      "role": "attempt",
+      "sha256": "8128e505dfd678caa7680d180ec9e24a5eebd5cd96a163b7e982604007c05eea"
+    }
+  ],
+  "referenceAt": "2026-09-23T11:00:00+00:00",
+  "retention": "No automatic time-based expiration",
+  "schema": "radar-archive-receipt/v1",
+  "status": "waiting_for_data"
+}

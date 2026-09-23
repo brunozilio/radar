@@ -32,14 +32,27 @@ def merged(code):
 
 def prepare_current():
     old=dict(np.load(PREV/'telemetria.npz'));origin=epoch(os.environ.get('HYDRO_ORIGIN','2026-09-21T14:00:00'));grid=np.arange(old['times'][0],origin+1,900);rainweights=json.loads((PREV/'chuva-pesos.json').read_text());codes=sorted({c for g in rainweights for c in g['weights']});data={c:merged(c) for c in codes};raw={};delayed={};ages=[];windows={}
+    unavailable_rain = set()
+    if os.environ.get('HYDRO_REQUIRE_COMPLETE') == '1':
+        readiness = json.loads((OUT/'input-readiness.json').read_text())
+        if readiness.get('status') != 'ready' or epoch(readiness['referenceAt']) != origin:
+            raise ValueError('Exact ready input report required for feature coverage')
+        unavailable_rain = set(readiness.get('unavailableRainSources', {}))
     for code,d in data.items():
+        if f'ana-{code}-fresh.xml' in unavailable_rain:
+            # A cached observation must never become current coverage for a
+            # source missing from this collection. Preserve the stored history.
+            d = {**d, 'rain': d['rain'].copy()}
+            d['rain'][(d['times'] > origin-3600) & (d['times'] <= origin)] = np.nan
         for key,field in [('H','level'),('Q','flow')]:
             valid=(d['times']<=origin)&np.isfinite(d[field]);ix=np.where(valid)[0]
             if not len(ix):raw[code+':'+key]=np.full(len(grid),np.nan);delayed[code+':'+key]=np.full(len(grid),np.nan);continue
             latest=d['times'][ix[-1]];lag=origin-latest;raw[code+':'+key]=asof(d['times'],d[field],grid,max_age=0)
             delayed[code+':'+key]=asof(d['times'],d[field],grid-lag,max_age=900)
             if key=='H':ages.append({'source':code,'last_time':iso(latest),'delay_minutes':lag/60,'value':float(d[field][ix[-1]])})
-        valid=(d['times']<=origin)&np.isfinite(d['rain']);latest=d['times'][np.where(valid)[0][-1]];lag=origin-latest
+        valid=(d['times']<=origin)&np.isfinite(d['rain'])
+        latest=d['times'][np.where(valid)[0][-1]] if valid.any() else origin
+        lag=0 if os.environ.get('HYDRO_REQUIRE_COMPLETE')=='1' else origin-latest
         # Move measurement availability, not measured rainfall itself. Integrals use
         # actual interval endpoints and only increments published under this stress delay.
         base=observed_rain_windows(d['times'],d['rain'],grid)

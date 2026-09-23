@@ -1,0 +1,159 @@
+{
+  "status": "waiting_for_data",
+  "attemptId": "7ebdfdb5-dda0-4268-883d-dc79f6a46637",
+  "referenceAt": "2026-09-23T09:00:00-03:00",
+  "checkedReferenceAt": "2026-09-23T09:00:00-03:00",
+  "checkedAt": "2026-09-23T09:58:57.598902-03:00",
+  "missing": [
+    "No newer complete observation hour within the three-hour age limit",
+    "86472600: approved river level missing at 2026-09-23T09:00:00-03:00",
+    "Alto Antas: same-hour rain coverage 31.9% below 50%",
+    "Tainhas: same-hour rain coverage 1.1% below 50%"
+  ],
+  "referenceSelection": {
+    "checkedReferenceAt": "2026-09-23T09:00:00-03:00",
+    "checkedAt": "2026-09-23T09:58:57.598902-03:00",
+    "afterReferenceAt": null,
+    "maximumReferenceAgeHours": 3,
+    "selectedReferenceAt": null,
+    "candidates": [
+      {
+        "referenceAt": "2026-09-23T09:00:00-03:00",
+        "referenceAgeSeconds": 3537.598902,
+        "status": "waiting_for_data",
+        "checkedAt": "2026-09-23T09:58:57.598902-03:00",
+        "missing": [
+          "86472600: approved river level missing at 2026-09-23T09:00:00-03:00",
+          "Alto Antas: same-hour rain coverage 31.9% below 50%",
+          "Tainhas: same-hour rain coverage 1.1% below 50%"
+        ],
+        "levels": {
+          "86472000": 8.55,
+          "86472600": null,
+          "86500000": 2.5780000000000003,
+          "86510000": 8.15
+        },
+        "flows": {
+          "julho": [
+            1724.72,
+            1724.72
+          ],
+          "monte": [
+            1711.92,
+            1695.25
+          ],
+          "castro": [
+            985.91,
+            926.69
+          ]
+        },
+        "rainCoverage": {
+          "Baixo Antas": 0.7312138728323699,
+          "Carreiro": 0.8502340093603745,
+          "Prata-Turvo": 0.7505330490405118,
+          "Alto Antas": 0.3190005810575247,
+          "Tainhas": 0.01092896174863388
+        },
+        "unavailableRainSources": {
+          "ana-86060010-fresh.xml": "source unavailable",
+          "ana-86102000-fresh.xml": "source unavailable",
+          "ana-86125000-fresh.xml": "source unavailable"
+        },
+        "rainPolicy": "Five regions, each >=50% measured coverage in (H-1h,H], ending at H; zero is valid rain. Unavailable non-level rain gauges contribute zero coverage."
+      },
+      {
+        "referenceAt": "2026-09-23T08:00:00-03:00",
+        "referenceAgeSeconds": 7137.598902,
+        "status": "waiting_for_data",
+        "checkedAt": "2026-09-23T09:58:57.598902-03:00",
+        "missing": [
+          "Alto Antas: same-hour rain coverage 44.5% below 50%"
+        ],
+        "levels": {
+          "86472000": 8.8,
+          "86472600": 7.51,
+          "86500000": 2.609,
+          "86510000": 8.38
+        },
+        "flows": {
+          "julho": [
+            1724.72,
+            1676.39
+          ],
+          "monte": [
+            1743.89,
+            1760.56
+          ],
+          "castro": [
+            1018.55,
+            974.13
+          ]
+        },
+        "rainCoverage": {
+          "Baixo Antas": 0.9450867052023121,
+          "Carreiro": 0.8892355694227769,
+          "Prata-Turvo": 0.7505330490405118,
+          "Alto Antas": 0.44450900639163277,
+          "Tainhas": 0.6202185792349727
+        },
+        "unavailableRainSources": {
+          "ana-86060010-fresh.xml": "source unavailable",
+          "ana-86102000-fresh.xml": "source unavailable",
+          "ana-86125000-fresh.xml": "source unavailable"
+        },
+        "rainPolicy": "Five regions, each >=50% measured coverage in (H-1h,H], ending at H; zero is valid rain. Unavailable non-level rain gauges contribute zero coverage."
+      },
+      {
+        "referenceAt": "2026-09-23T07:00:00-03:00",
+        "referenceAgeSeconds": 10737.598902,
+        "status": "waiting_for_data",
+        "checkedAt": "2026-09-23T09:58:57.598902-03:00",
+        "missing": [
+          "Alto Antas: same-hour rain coverage 47.2% below 50%"
+        ],
+        "levels": {
+          "86472000": 9.14,
+          "86472600": 7.68,
+          "86500000": 2.627,
+          "86510000": 8.58
+        },
+        "flows": {
+          "julho": [
+            2041.57,
+            2170.46
+          ],
+          "monte": [
+            1851.12,
+            1867.79
+          ],
+          "castro": [
+            1042.36,
+            997.94
+          ]
+        },
+        "rainCoverage": {
+          "Baixo Antas": 1.0,
+          "Carreiro": 0.8892355694227769,
+          "Prata-Turvo": 0.7878464818763327,
+          "Alto Antas": 0.47181871005229514,
+          "Tainhas": 0.6202185792349727
+        },
+        "unavailableRainSources": {
+          "ana-86060010-fresh.xml": "source unavailable",
+          "ana-86102000-fresh.xml": "source unavailable",
+          "ana-86125000-fresh.xml": "source unavailable"
+        },
+        "rainPolicy": "Five regions, each >=50% measured coverage in (H-1h,H], ending at H; zero is valid rain. Unavailable non-level rain gauges contribute zero coverage."
+      },
+      {
+        "referenceAt": "2026-09-23T06:00:00-03:00",
+        "referenceAgeSeconds": 14337.598902,
+        "status": "reference_too_old",
+        "missing": [
+          "Reference age exceeds three hours"
+        ]
+      }
+    ]
+  },
+  "archiveReceiptKey": "projection/receipts/7ebdfdb5-dda0-4268-883d-dc79f6a46637.json"
+}

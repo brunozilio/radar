@@ -12,16 +12,17 @@ BASE = ROOT / 'outputs/mucum-atualizacao-15h-2026-09-21'
 def dump(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)+'\n')
 
-def collect(out, now):
-    raw = out / 'raw'
-    raw.mkdir(parents=True, exist_ok=False)
+def collection_jobs(now, *, hydrometric_only=False):
     jobs = []
-    codes = sorted(p.name.split('-')[1] for p in (BASE/'raw').glob('ana-*-fresh.xml'))
+    codes = ('86472000', '86472600', '86500000', '86510000') if hydrometric_only else sorted(
+        p.name.split('-')[1] for p in (BASE/'raw').glob('ana-*-fresh.xml'))
     for code in codes:
         query = urllib.parse.urlencode({'codEstacao':code, 'dataInicio':(now-timedelta(days=7)).strftime('%d/%m/%Y'), 'dataFim':now.strftime('%d/%m/%Y')})
         jobs.append((f'ana-{code}-fresh.xml','https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?'+query,'ANA'))
     for plant, code in [('julho','UHQJ'),('monte','UHMC'),('castro','UHCA')]:
         jobs.append((f'ceran-{plant}-fresh.html',f'https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_{code}.php','CERAN'))
+    if hydrometric_only:
+        return jobs
     for path in sorted((BASE/'raw').glob('sigma-*.txt')):
         sid = path.stem.removeprefix('sigma-')
         jobs.append((path.name,f'https://sigmameteorologia.com/produtos/stations/{now:%Y-%m-%d}/{sid}.txt','SIGMA'))
@@ -30,6 +31,13 @@ def collect(out, now):
     for model in ['gfs_seamless','ecmwf_ifs025','icon_global']:
         params = {'latitude':coordinates['latitude'][0], 'longitude':coordinates['longitude'][0], 'hourly':'precipitation', 'models':model, 'timezone':'America/Sao_Paulo', 'past_days':7, 'forecast_days':3}
         jobs.append((f'weather-{model}.json','https://api.open-meteo.com/v1/forecast?'+urllib.parse.urlencode(params),'Open-Meteo'))
+    return jobs
+
+
+def collect(out, now, *, hydrometric_only=False):
+    raw = out / 'raw'
+    raw.mkdir(parents=True, exist_ok=False)
+    jobs = collection_jobs(now, hydrometric_only=hydrometric_only)
     def fetch(job):
         name,url,source = job
         item = {'file':name,'source':source,'url':url,'requested_at':datetime.now(TZ).isoformat(),'issued_at':None,'issuance_note':'Not exposed by this endpoint; collection time is not model issuance.'}
@@ -50,9 +58,18 @@ def collect(out, now):
                 item['error']=str(retry_exc)
         item['collected_at']=datetime.now(TZ).isoformat()
         return item
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        manifest=list(pool.map(fetch,jobs))
+    # Save receipts as responses finish. A cooperative timeout cancels queued
+    # requests, retains completed evidence and waits only for in-flight requests.
+    manifest=[]
     dump(out/'collection-manifest.json',manifest)
+    pool=concurrent.futures.ThreadPoolExecutor(max_workers=3)
+    try:
+        futures=[pool.submit(fetch,job) for job in jobs]
+        for future in concurrent.futures.as_completed(futures):
+            manifest.append(future.result())
+            dump(out/'collection-manifest.json',sorted(manifest,key=lambda row:row['file']))
+    finally:
+        pool.shutdown(wait=True,cancel_futures=True)
     return manifest
 
 if __name__ == '__main__':

@@ -1,0 +1,28 @@
+{
+  "status": "calculated",
+  "attemptId": "3ff483aa-1a3e-43cf-8ccd-2adc285165c4",
+  "referenceAt": "2026-09-23T09:00:00-03:00",
+  "checkedReferenceAt": "2026-09-23T10:00:00-03:00",
+  "generatedAt": "2026-09-23T10:31:52.424067-03:00",
+  "referenceSelection": {
+    "checkedReferenceAt": "2026-09-23T10:00:00-03:00",
+    "modelVersion": "mucum-hydrometry-public-v1",
+    "rainRequired": false,
+    "candidates": [
+      {
+        "referenceAt": "2026-09-23T10:00:00-03:00",
+        "reason": "Missing reference-hour hydrometry: 86510000:H, 86472000:H, 86472600:H, 86500000:H"
+      }
+    ],
+    "referenceAt": "2026-09-23T09:00:00-03:00",
+    "referenceAgeSeconds": 5512.424067
+  },
+  "archiveReceiptKey": "projection/receipts/3ff483aa-1a3e-43cf-8ccd-2adc285165c4.json",
+  "shadow": {
+    "status": "calculated",
+    "generatedAt": "2026-09-23T10:31:52.424067-03:00",
+    "archiveReceiptKey": "projection/receipts/3ff483aa-1a3e-43cf-8ccd-2adc285165c4.json",
+    "modelVersion": "mucum-hydrometry-shadow-v1",
+    "referenceAt": "2026-09-23T09:00:00-03:00"
+  }
+}

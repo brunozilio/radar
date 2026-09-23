@@ -1,0 +1,157 @@
+{
+  "checkedAt": "2026-09-23T12:59:03.227Z",
+  "worker": {
+    "id": "ff55df7b-7888-4073-ad02-51147b8ffd0c",
+    "createdAt": "2026-09-23T12:48:31.856439Z",
+    "versions": [
+      {
+        "version_id": "2985726d-15b4-40d7-b692-907f6726fbc8",
+        "percentage": 100
+      }
+    ]
+  },
+  "application": {
+    "id": "a039a738-b702-4f15-b273-7e22b92be8d8",
+    "name": "sofik-monitoramento-taquari-monitoramentocontainer",
+    "image": "registry.cloudflare.com/f695d3055326e4346d3954d5cf1c0a17/sofik-monitoramento-taquari-monitoramentocontainer@sha256:57122428ee49041423c660a860994b0053e1f8d07c8f3a7aadbcd6b32d081fc6",
+    "maxInstances": 1,
+    "version": 65
+  },
+  "instances": [
+    {
+      "id": "aa18abdb8e20468fb4cbc44e234dc30ae71ca2a4bc75f08a3e8275c79b7cd71f",
+      "name": "rio-taquari",
+      "state": "running",
+      "location": "ewr12",
+      "version": 65,
+      "created": "2026-09-23T12:49:05.668999936Z"
+    }
+  ],
+  "latest": {
+    "referenceAt": "2026-09-22T21:00:00-03:00",
+    "generatedAt": "2026-09-22T21:31:54.903151-03:00",
+    "modelVersion": "forecast-6h-v1",
+    "sha256": "f2ccd10bbed900e65e2e21ed265a0e31b55c1ced9c42f42ecbc7657538a103f4"
+  },
+  "publicState": {
+    "projection": {
+      "schema": 1,
+      "generatedAt": "2026-09-22T21:31:54.903151-03:00",
+      "referenceAt": "2026-09-22T21:00:00-03:00",
+      "experimental": true,
+      "intervalMinutes": 15,
+      "modelVersion": "forecast-6h-v1",
+      "horizonHours": 6,
+      "observation": {
+        "timestamp": "2026-09-22T21:00:00-03:00",
+        "level": 10.96
+      },
+      "models": [
+        {
+          "id": "radar_arvores_live_candidate",
+          "label": "Modelo de previsão",
+          "points": [
+            {
+              "timestamp": "2026-09-22T22:00:00-03:00",
+              "level": 10.599535637583358
+            },
+            {
+              "timestamp": "2026-09-22T23:00:00-03:00",
+              "level": 10.283796020929453
+            },
+            {
+              "timestamp": "2026-09-23T00:00:00-03:00",
+              "level": 10.118247600341988
+            },
+            {
+              "timestamp": "2026-09-23T01:00:00-03:00",
+              "level": 9.846133040430445
+            },
+            {
+              "timestamp": "2026-09-23T02:00:00-03:00",
+              "level": 9.70991999426923
+            },
+            {
+              "timestamp": "2026-09-23T03:00:00-03:00",
+              "level": 9.607215392870183
+            }
+          ]
+        }
+      ]
+    },
+    "rounds": [
+      "2026-09-23T00:00:00.000Z",
+      "2026-09-22T23:00:00.000Z",
+      "2026-09-22T22:00:00.000Z",
+      "2026-09-22T21:00:00.000Z",
+      "2026-09-22T20:00:00.000Z",
+      "2026-09-22T19:00:00.000Z",
+      "2026-09-22T18:00:00.000Z",
+      "2026-09-22T17:00:00.000Z",
+      "2026-09-22T16:00:00.000Z",
+      "2026-09-22T15:00:00.000Z",
+      "2026-09-22T14:00:00.000Z",
+      "2026-09-22T13:00:00.000Z",
+      "2026-09-22T12:00:00.000Z",
+      "2026-09-22T11:00:00.000Z",
+      "2026-09-22T10:00:00.000Z",
+      "2026-09-22T09:00:00.000Z",
+      "2026-09-22T08:00:00.000Z",
+      "2026-09-22T07:00:00.000Z",
+      "2026-09-22T06:00:00.000Z",
+      "2026-09-22T05:00:00.000Z",
+      "2026-09-22T04:00:00.000Z",
+      "2026-09-22T03:00:00.000Z",
+      "2026-09-22T02:00:00.000Z",
+      "2026-09-22T01:00:00.000Z",
+      "2026-09-22T00:00:00.000Z"
+    ],
+    "refresh": {
+      "status": "waiting_for_data",
+      "referenceAt": "2026-09-23T12:00:00+00:00",
+      "checkedReferenceAt": "2026-09-23T12:00:00.000Z",
+      "generatedAt": "2026-09-22T21:31:54.903151-03:00",
+      "missing": [
+        "No newer complete observation hour within the three-hour age limit",
+        "86472600: approved river level missing at 2026-09-23T12:00:00+00:00",
+        "Carreiro: same-hour rain coverage 8.7% below 50%",
+        "Alto Antas: same-hour rain coverage 12.1% below 50%",
+        "Tainhas: same-hour rain coverage 0.0% below 50%"
+      ],
+      "checkedAt": "2026-09-23T12:50:38.714Z"
+    },
+    "failed": false,
+    "stale": true
+  },
+  "archiveReceipts": [
+    {
+      "key": "projection/receipts/2c321ea1-8afb-4221-888a-c552fde69cb7.json",
+      "lastModified": "2026-09-23T11:49:56.425Z"
+    },
+    {
+      "key": "projection/receipts/2ee34b8d-34e3-4074-805e-d2cf56b65ed2.json",
+      "lastModified": "2026-09-23T12:15:57.046Z"
+    },
+    {
+      "key": "projection/receipts/4bd594c5-4244-4e16-9689-e50f8c26363c.json",
+      "lastModified": "2026-09-23T12:30:58.913Z"
+    },
+    {
+      "key": "projection/receipts/50fbcd75-5cdf-4175-ad1d-497a16cc6555.json",
+      "lastModified": "2026-09-23T12:01:01.829Z"
+    },
+    {
+      "key": "projection/receipts/e4b3995d-a83e-49dc-b2de-082008a8a184.json",
+      "lastModified": "2026-09-23T01:00:57.755Z"
+    },
+    {
+      "key": "projection/receipts/fbae349f-5102-45d4-b243-5140f57f5786.json",
+      "lastModified": "2026-09-23T12:45:59.611Z"
+    },
+    {
+      "key": "projection/receipts/fbe1255e-ff33-437c-8215-45f404fa32f0.json",
+      "lastModified": "2026-09-23T12:50:38.672Z"
+    }
+  ],
+  "localRuntimeManifestSha256": "888d9386671ae967cd972b4ba7195995f7043316a5334b36fc931e12939e9e11"
+}

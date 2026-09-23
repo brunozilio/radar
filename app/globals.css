@@ -2171,11 +2171,6 @@ footer {
 .projection-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .projection-heading h2 { display: flex; align-items: center; gap: 8px; font-size: 19px; font-weight: 600; margin: 6px 0 0; }
 .projection-eyebrow { font-size: 10px; letter-spacing: .09em; color: var(--muted); }
-.projection-stations { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-.projection-stations button { min-height: 44px; padding: 8px 16px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: var(--muted); font: inherit; font-size: 13px; cursor: pointer; }
-.projection-stations button[aria-pressed="true"] { background: #edf3ef; border-color: #abc8b7; color: #285b47; font-weight: 600; }
-.projection-stations button:hover { background: #f4f7f4; }
-.projection-stations button:focus-visible { outline: 2px solid #37836b; outline-offset: 3px; }
 .projection-badge { font-size: 11px; padding: 5px 9px; border-radius: 20px; background: #edf3ef; color: #426453; }
 .projection-chart { width: 100%; height: auto; max-height: 260px; display: block; margin: 12px 0; color: var(--muted); overflow: visible; }
 .projection-chart text { fill: currentColor; font-size: 11px; font-variant-numeric: tabular-nums; }

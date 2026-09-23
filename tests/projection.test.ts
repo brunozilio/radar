@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { validProjection, projectionIsStale, projectionForStation, preserveStationProjections, type Projection } from "../lib/projection.ts";
+import { validProjection, mucumProjection, projectionIsStale, projectionForStation, preserveStationProjections, type Projection } from "../lib/projection.ts";
 import { runProjectionSchedule } from "../cloudflare/projection-schedule.js";
 import { isProjectionObjectKey } from "../cloudflare/projection-storage.js";
 
@@ -15,6 +15,26 @@ function encantadoFixture(): Projection {
   p.models[0].id = "radar_encantado_v1";
   return p;
 }
+
+function delayedFixture(firstLead = 3): Projection {
+  const p = fixture();
+  p.generatedAt = new Date(Date.parse(p.referenceAt) + (firstLead - 1) * 3_600_000 + 5 * 60_000).toISOString();
+  p.forecastStartLeadHours = firstLead;
+  p.models[0].points = p.models[0].points.slice(firstLead - 1);
+  return p;
+}
+
+test("publicação de Muçum descarta previsões antigas sem alterar o histórico nem os metadados", () => {
+  const mucum = { ...delayedFixture(), archiveReceiptKey: "projection/receipts/fixture.json" };
+  const legacy = { ...mucum, encantado: { invalid: true }, "santa-tereza": { invalid: true }, stationErrors: { encantado: "unavailable" } };
+  const before = structuredClone(legacy);
+  assert.deepEqual(mucumProjection(legacy), mucum);
+  assert.deepEqual(legacy, before);
+  assert.equal(mucumProjection(encantadoFixture()), null);
+  assert.equal(mucumProjection({ ...mucum, station: "santa-tereza" }), null);
+  assert.equal(mucumProjection({ ...mucum, models: [] }), null);
+  assert.equal(mucumProjection(null), null);
+});
 
 test("cada cidade exige sua própria identidade e modelo, inclusive em rodadas antigas", () => {
   const legacy = fixture();
@@ -73,7 +93,7 @@ test("ponte R2 aceita somente os arquivos de previsão previstos, sem travessia"
   for (const key of ["projection/../assets/file", "projection/rounds/../../latest.json", "projection/private.json", "projection/rounds/not-a-date.json", "other/latest.json"]) assert.equal(isProjectionObjectKey(key), false, key);
 });
 
-test("aceita somente seis alvos horários finitos e ainda futuros", () => {
+test("sem declaração de atraso aceita somente seis alvos horários finitos e ainda futuros", () => {
   assert.ok(validProjection(fixture()));
   const short = fixture(); short.models[0].points = short.models[0].points.slice(0, 5);
   assert.equal(validProjection(short), false);
@@ -85,6 +105,65 @@ test("aceita somente seis alvos horários finitos e ainda futuros", () => {
   assert.equal(validProjection(disorder), false);
   const future = fixture(); future.observation.timestamp = "2026-09-21T21:15:00Z";
   assert.equal(validProjection(future), false);
+});
+
+test("atraso declarado conserva a referência e todos os alvos ainda futuros até H+6", () => {
+  for (let firstLead = 1; firstLead <= 6; firstLead++) {
+    const p = delayedFixture(firstLead);
+    assert.ok(validProjection(p), `H+${firstLead}`);
+    assert.equal(p.models[0].points.length, 7 - firstLead);
+    assert.equal(p.referenceAt, "2026-09-21T21:00:00Z");
+    assert.equal(p.observation.timestamp, p.referenceAt);
+    assert.equal(Date.parse(p.models[0].points.at(-1)!.timestamp), Date.parse(p.referenceAt) + 6 * 3_600_000);
+  }
+  const undeclared = delayedFixture();
+  delete undeclared.forecastStartLeadHours;
+  assert.equal(validProjection(undeclared), false);
+  const fullLegacy = fixture(); fullLegacy.generatedAt = "2026-09-21T22:05:00Z";
+  assert.equal(validProjection(fullLegacy), false);
+});
+
+test("a primeira antecedência é exatamente a primeira hora futura na emissão", () => {
+  const p = delayedFixture();
+  p.generatedAt = "2026-09-21T23:00:00Z";
+  assert.ok(validProjection(p));
+  p.generatedAt = "2026-09-21T22:59:59.999Z";
+  assert.equal(validProjection(p), false, "não pode omitir H+2 quando ainda é futuro");
+  p.generatedAt = "2026-09-22T00:00:00Z";
+  assert.equal(validProjection(p), false, "não pode incluir um alvo que coincide com a emissão");
+  p.generatedAt = "2026-09-22T03:00:00Z";
+  assert.equal(validProjection(p), false, "não publica quando todos os alvos venceram");
+});
+
+test("rejeita atraso inválido, lacunas, prefixos cortados e extensão além de H+6", () => {
+  for (const forecastStartLeadHours of [0, 7, 1.5, NaN, "3", null]) {
+    assert.equal(validProjection({ ...delayedFixture(), forecastStartLeadHours }), false, String(forecastStartLeadHours));
+  }
+  const mismatched = delayedFixture(); mismatched.forecastStartLeadHours = 4;
+  assert.equal(validProjection(mismatched), false);
+  const short = delayedFixture(); short.models[0].points.pop();
+  assert.equal(validProjection(short), false);
+  const gap = delayedFixture(); gap.models[0].points[1].timestamp = gap.models[0].points[2].timestamp;
+  assert.equal(validProjection(gap), false);
+  const beyond = delayedFixture(); beyond.models[0].points.push({ timestamp: "2026-09-22T04:00:00Z", level: 13 });
+  assert.equal(validProjection(beyond), false);
+  const bad = delayedFixture(); bad.models[0].points[0].level = Infinity;
+  assert.equal(validProjection(bad), false);
+});
+
+test("cada cidade valida o próprio atraso e preserva sua emissão original", () => {
+  const mucum = delayedFixture(3);
+  const encantado = { ...delayedFixture(2), station: "encantado" as const };
+  encantado.models[0].id = "radar_encantado_v1";
+  const previous = { ...mucum, encantado };
+  assert.ok(validProjection(previous));
+  const retained = preserveStationProjections(delayedFixture(4), previous);
+  assert.ok(validProjection(retained));
+  assert.equal(retained.encantado?.forecastStartLeadHours, 2);
+  assert.equal(retained.encantado?.generatedAt, encantado.generatedAt);
+  assert.deepEqual(retained.encantado?.models[0].points, encantado.models[0].points);
+  delete encantado.forecastStartLeadHours;
+  assert.equal(validProjection(previous), false);
 });
 
 test("marca atraso sem invalidar rodadas históricas", () => {

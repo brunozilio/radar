@@ -1,0 +1,433 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Monitoramento" [level=1] [ref=e5]
+        - button "Ativar notificações" [ref=e7] [cursor=pointer]
+      - region "Alertas ativos para Muçum e Vale do Taquari" [ref=e12]:
+        - generic [ref=e13]: Alertas ativos
+        - button "Atenção Defesa Civil RS O Centro de Monitoramento da Defesa Civil Estadual atualiza as condições meteorológicas para os próximos dias no RS Válido até 23/09, 23:59" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - generic [ref=e21]: Atenção
+              - generic [ref=e22]: Defesa Civil RS
+            - generic [ref=e23]: O Centro de Monitoramento da Defesa Civil Estadual atualiza as condições meteorológicas para os próximos dias no RS
+          - time [ref=e24]: Válido até 23/09, 23:59
+      - region "Boletins" [ref=e28]:
+        - article [ref=e35]:
+          - generic [ref=e40]: Boletim 23/09/2026 (06h)
+          - time [ref=e42]: 23/09, 06:00
+          - link "Visualizar Boletim 23/09/2026 (06h)" [ref=e43] [cursor=pointer]:
+            - /url: /api/assets/175fbfa89f868524991631c233d68acc53120e1ba90ed1746a748aa83f23b875
+            - text: Visualizar
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Níveis do rio" [level=2] [ref=e50]
+          - group "Janela de tempo" [ref=e51]:
+            - button "3h" [pressed] [ref=e52] [cursor=pointer]
+            - button "6h" [ref=e53] [cursor=pointer]
+            - button "8h" [ref=e54] [cursor=pointer]
+            - button "12h" [ref=e55] [cursor=pointer]
+        - generic [ref=e56]:
+          - article [ref=e57]:
+            - generic [ref=e58]:
+              - heading "Muçum" [level=3] [ref=e59]
+              - link "Visualizar Plano de Contingência de Muçum" [ref=e60] [cursor=pointer]:
+                - /url: https://mucum.rs.gov.br/portal/defesa-civil/PLANO%20DE%20CONTING%C3%8ANCIA%20DE%20MU%C3%87UM%20-%20DEFESA%20CIVIL.pdf
+                - text: Plano de contingência
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - generic [ref=e66]:
+                  - generic [ref=e67]: Sensor na Cidade de Muçum
+                  - generic [ref=e69]:
+                    - strong [ref=e70]:
+                      - generic [ref=e71]: "7"
+                      - generic [ref=e72]: ","
+                      - generic [ref=e73]: "9"
+                      - generic [ref=e74]: "8"
+                    - generic [ref=e75]: m
+                  - generic [ref=e76]:
+                    - generic [ref=e80]: Baixando
+                    - generic [ref=e81]: −23 cm última hora
+                  - time [ref=e82]: 23/09, 09:45 · SACE/SGB
+                  - generic "Limites do nível do rio" [ref=e83]:
+                    - 'generic "Atenção: 5 metros" [ref=e84]': Atenção · 5 m
+                    - 'generic "Alerta: 9 metros" [ref=e85]': Alerta · 9 m
+                    - 'generic "Inundação: 18 metros" [ref=e86]': Inundação · 18 m
+                - generic "Evolução do nível no Sensor na Cidade de Muçum, Muçum, nas últimas 3 horas" [ref=e89]
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - generic [ref=e92]:
+                    - generic [ref=e93]: Sensor na Barra do Guaporé
+                    - status "Atualizando em tempo real" [ref=e94]
+                  - generic [ref=e96]:
+                    - strong [ref=e97]:
+                      - generic [ref=e98]: "8"
+                      - generic [ref=e99]: ","
+                      - generic [ref=e100]: "1"
+                      - generic [ref=e101]: "0"
+                    - generic [ref=e102]: m
+                  - generic [ref=e103]:
+                    - generic [ref=e107]: Baixando
+                    - generic [ref=e108]: −26 cm última hora
+                  - time [ref=e109]: 23/09, 10:35:00 · Rede RS
+                - generic "Evolução do nível no Sensor na Barra do Guaporé, Muçum, nas últimas 3 horas" [ref=e112]
+          - article [ref=e113]:
+            - heading "Santa Tereza" [level=3] [ref=e115]
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e119]: Sensor na Cidade de Santa Tereza
+                  - generic [ref=e121]:
+                    - strong [ref=e122]:
+                      - generic [ref=e123]: "7"
+                      - generic [ref=e124]: ","
+                      - generic [ref=e125]: "0"
+                      - generic [ref=e126]: "8"
+                    - generic [ref=e127]: m
+                  - generic [ref=e128]:
+                    - generic [ref=e132]: Baixando
+                    - generic [ref=e133]: −23 cm última hora
+                  - time [ref=e134]: 23/09, 09:45 · SACE/SGB
+                - generic "Evolução do nível no Sensor na Cidade de Santa Tereza, Santa Tereza, nas últimas 3 horas" [ref=e137]
+              - generic [ref=e138]:
+                - generic [ref=e139]:
+                  - generic [ref=e140]: Sensor na Linha José Júlio
+                  - generic [ref=e142]:
+                    - strong [ref=e143]:
+                      - generic [ref=e144]: "8"
+                      - generic [ref=e145]: ","
+                      - generic [ref=e146]: "5"
+                      - generic [ref=e147]: "1"
+                    - generic [ref=e148]: m
+                  - generic [ref=e149]:
+                    - generic [ref=e153]: Baixando
+                    - generic [ref=e154]: −11 cm última hora
+                  - time [ref=e155]: 23/09, 09:30 · SACE/SGB
+                - generic "Evolução do nível no Sensor na Linha José Júlio, Santa Tereza, nas últimas 3 horas" [ref=e158]
+          - article [ref=e159]:
+            - heading "Guaporé" [level=3] [ref=e161]
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]:
+                  - generic [ref=e165]: Sensor na Linha Colombo
+                  - generic [ref=e167]:
+                    - strong [ref=e168]:
+                      - generic [ref=e169]: "2"
+                      - generic [ref=e170]: ","
+                      - generic [ref=e171]: "3"
+                      - generic [ref=e172]: "4"
+                    - generic [ref=e173]: m
+                  - generic [ref=e174]:
+                    - generic [ref=e178]: Baixando
+                    - generic [ref=e179]: −2 cm última hora
+                  - time [ref=e180]: 23/09, 09:45 · SACE/SGB
+                - generic "Evolução do nível no Sensor na Linha Colombo, Guaporé, nas últimas 3 horas" [ref=e183]
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - generic [ref=e186]: Sensor no Passo Carreiro
+                  - generic [ref=e188]:
+                    - strong [ref=e189]:
+                      - generic [ref=e190]: "2"
+                      - generic [ref=e191]: ","
+                      - generic [ref=e192]: "5"
+                      - generic [ref=e193]: "7"
+                    - generic [ref=e194]: m
+                  - generic [ref=e195]:
+                    - generic [ref=e199]: Baixando
+                    - generic [ref=e200]: −2 cm última hora
+                  - time [ref=e201]: 23/09, 09:30 · SACE/SGB
+                - generic "Evolução do nível no Sensor no Passo Carreiro, Guaporé, nas últimas 3 horas" [ref=e204]
+          - article [ref=e205]:
+            - heading "Encantado" [level=3] [ref=e207]
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - generic [ref=e211]: Sensor na Cidade de Encantado
+                - generic [ref=e213]:
+                  - strong [ref=e214]:
+                    - generic [ref=e215]: "6"
+                    - generic [ref=e216]: ","
+                    - generic [ref=e217]: "0"
+                    - generic [ref=e218]: "4"
+                  - generic [ref=e219]: m
+                - generic [ref=e220]:
+                  - generic [ref=e224]: Baixando
+                  - generic [ref=e225]: −22 cm última hora
+                - time [ref=e226]: 23/09, 10:00 · SACE/SGB
+              - generic "Evolução do nível no Sensor na Cidade de Encantado, Encantado, nas últimas 3 horas" [ref=e229]
+      - generic [ref=e230]:
+        - heading "Barragens" [level=2] [ref=e233]
+        - generic [ref=e234]:
+          - article [ref=e235]:
+            - heading "UHE Castro Alves Nova Pádua" [level=3] [ref=e236]:
+              - generic [ref=e237]: UHE Castro Alves
+              - generic [ref=e238]: Nova Pádua
+            - generic [ref=e239]:
+              - generic [ref=e240]: Vazão defluente
+              - strong [ref=e241]: 945,96 m³/s
+              - generic [ref=e242]:
+                - generic [ref=e246]: Baixando
+                - generic [ref=e247]: −39,95 m³/s última hora
+              - time [ref=e248]: 23/09, 10:00
+            - generic "Evolução da vazão defluente da UHE Castro Alves" [ref=e250]
+          - article [ref=e251]:
+            - heading "UHE Monte Claro Veranópolis" [level=3] [ref=e252]:
+              - generic [ref=e253]: UHE Monte Claro
+              - generic [ref=e254]: Veranópolis
+            - generic [ref=e255]:
+              - generic [ref=e256]: Vazão defluente
+              - strong [ref=e257]: 1.664,87 m³/s
+              - generic [ref=e258]:
+                - generic [ref=e262]: Baixando
+                - generic [ref=e263]: −47,05 m³/s última hora
+              - time [ref=e264]: 23/09, 10:00
+            - generic "Evolução da vazão defluente da UHE Monte Claro" [ref=e266]
+          - article [ref=e267]:
+            - heading "UHE 14 de Julho Cotiporã" [level=3] [ref=e268]:
+              - generic [ref=e269]: UHE 14 de Julho
+              - generic [ref=e270]: Cotiporã
+            - generic [ref=e271]:
+              - generic [ref=e272]: Vazão defluente
+              - strong [ref=e273]: 1.743,95 m³/s
+              - generic [ref=e274]:
+                - generic [ref=e278]: Subindo
+                - generic [ref=e279]: +19,23 m³/s última hora
+              - time [ref=e280]: 23/09, 10:00
+            - generic "Evolução da vazão defluente da UHE 14 de Julho" [ref=e282]
+      - region [ref=e283]:
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - text: PREVISÃO DE ATÉ 6 HORAS
+            - heading "Previsão de Muçum" [level=2] [ref=e286]
+          - generic [ref=e290]: Experimental
+        - generic "Previsão de Muçum" [ref=e291]:
+          - status [ref=e292]: "Aguardando dados completos da mesma hora para uma nova previsão. Última verificação registrada: 23/09 às 10:19 (Brasília)."
+          - paragraph [ref=e293]: "Última previsão pública: 22/09/2026 às 21:31. Os horários previstos já venceram."
+          - status [ref=e294]: Sem previsão atualizada para as próximas horas.
+          - group [ref=e295]:
+            - generic "Como funciona o modelo de previsão" [ref=e296] [cursor=pointer]
+      - region [ref=e297]:
+        - heading "Câmeras ao vivo" [level=2] [ref=e300]
+        - generic [ref=e301]:
+          - article [ref=e302]:
+            - iframe [ref=e304]:
+              - generic [ref=f1e1]:
+                - generic "Player de vídeo do YouTube" [ref=f1e3]
+                - generic [ref=f1e5]:
+                  - generic:
+                    - generic:
+                      - button "Assistir vídeo" [ref=f1e10] [cursor=pointer]
+                      - button "Ocultar controles do player" [ref=f1e14] [cursor=pointer]
+                      - generic [ref=f1e16]:
+                        - generic [ref=f1e21]:
+                          - generic [ref=f1e22]:
+                            - link "#18 INÍCIO DO RIO TAQUARI, NO ENCONTRO DO CARREIRO E ANTAS" [ref=f1e23] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=kn1qx5Sin20
+                            - link "Projeto Vale Vivo" [ref=f1e24] [cursor=pointer]:
+                              - /url: /channel/UCVT44GDQePOsKk-EZKeO1DQ
+                          - generic [ref=f1e26]:
+                            - button [ref=f1e27] [cursor=pointer]:
+                              - img "thumbnail-image" [ref=f1e28]
+                            - generic [ref=f1e30]:
+                              - generic: Projeto Vale Vivo
+                              - generic: 4,96 mil inscritos
+                        - generic [ref=f1e31]:
+                          - button "Compartilhar" [ref=f1e34] [cursor=pointer]
+                          - link "Assistir no YouTube" [ref=f1e45] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=kn1qx5Sin20
+                            - generic [ref=f1e46]: Assista no
+            - generic [ref=e305]:
+              - generic [ref=e306]:
+                - heading "Início do Rio Taquari" [level=3] [ref=e307]
+                - paragraph [ref=e308]: Encontro dos rios Carreiro e Antas
+              - link "Abrir câmera Início do Rio Taquari no YouTube (nova aba)" [ref=e309] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=kn1qx5Sin20
+                - text: YouTube
+          - article [ref=e314]:
+            - iframe [ref=e316]:
+              - generic [ref=f2e1]:
+                - generic "Player de vídeo do YouTube" [ref=f2e3]
+                - generic [ref=f2e5]:
+                  - generic:
+                    - generic:
+                      - button "Assistir vídeo" [ref=f2e10] [cursor=pointer]
+                      - button "Ocultar controles do player" [ref=f2e14] [cursor=pointer]
+                      - generic [ref=f2e16]:
+                        - generic [ref=f2e21]:
+                          - generic [ref=f2e22]:
+                            - link "#3 PONTE DA ERS-129, ENTRE ENCANTADO E MUÇUM" [ref=f2e23] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=K7IAHQftZMk
+                            - link "A Hora TV" [ref=f2e24] [cursor=pointer]:
+                              - /url: /channel/UCbauUKiZFs0HwCfPee68pQw
+                          - generic [ref=f2e26]:
+                            - button [ref=f2e27] [cursor=pointer]:
+                              - img "thumbnail-image" [ref=f2e28]
+                            - generic [ref=f2e30]:
+                              - generic: A Hora TV
+                              - generic: 15,2 mil inscritos
+                        - generic [ref=f2e31]:
+                          - button "Compartilhar" [ref=f2e34] [cursor=pointer]
+                          - link "Assistir no YouTube" [ref=f2e45] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=K7IAHQftZMk
+                            - generic [ref=f2e46]: Assista no
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - heading "Ponte entre Muçum e Encantado" [level=3] [ref=e319]
+                - paragraph [ref=e320]: Barra do Guaporé
+              - link "Abrir câmera Ponte entre Muçum e Encantado no YouTube (nova aba)" [ref=e321] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=K7IAHQftZMk
+                - text: YouTube
+      - generic [ref=e326]:
+        - generic [ref=e327]:
+          - heading "Radar Porto Alegre" [level=2] [ref=e330]
+          - button "Ampliar Radar Porto Alegre" [ref=e331]:
+            - img "Radar meteorológico em 23/09, 09:25" [ref=e332]
+            - img "Área contribuinte de referência a montante de Muçum":
+              - generic "Muçum"
+              - generic "Guaporé"
+              - generic "Ibiraiaras"
+              - generic "Vacaria"
+              - generic "Passo Tainhas"
+              - generic "Santa Tereza"
+          - time [ref=e333]: 23/09, 09:25
+        - generic [ref=e334]:
+          - heading "Radar Concórdia" [level=2] [ref=e337]
+          - button "Ampliar Radar Concórdia" [ref=e338]:
+            - img "Radar meteorológico de Concórdia em 23/09, 09:24" [ref=e339]
+            - img "Área contribuinte de referência a montante de Muçum":
+              - generic "Muçum"
+              - generic "Guaporé"
+              - generic "Ibiraiaras"
+              - generic "Vacaria"
+              - generic "Passo Tainhas"
+              - generic "Santa Tereza"
+          - time [ref=e340]: 23/09, 09:24
+        - generic [ref=e341]:
+          - heading "Satélite" [level=2] [ref=e344]
+          - button "Ampliar Satélite" [ref=e345]:
+            - img "Satélite GOES sobre a região Sul em 23/09, 09:30" [ref=e346]
+          - time [ref=e347]: 23/09, 09:30 · NOAA/GOES
+      - article [ref=e349]:
+        - generic [ref=e350]:
+          - heading "Chuva acumulada" [level=2] [ref=e352]
+          - group "Janela de chuva acumulada" [ref=e353]:
+            - button "1h" [ref=e354] [cursor=pointer]
+            - button "3h" [ref=e355] [cursor=pointer]
+            - button "6h" [ref=e356] [cursor=pointer]
+            - button "8h" [ref=e357] [cursor=pointer]
+            - button "12h" [ref=e358] [cursor=pointer]
+            - button "24h" [pressed] [ref=e359] [cursor=pointer]
+            - button "48h" [ref=e360] [cursor=pointer]
+        - generic [ref=e361]:
+          - generic "Mapa de chuva acumulada na Bacia do Taquari" [ref=e362]:
+            - generic:
+              - generic:
+                - button "0 mm" [ref=e363] [cursor=pointer]:
+                  - generic [ref=e364]:
+                    - generic [ref=e365]: "0"
+                    - generic [ref=e366]: mm
+                - button "0 mm" [ref=e367] [cursor=pointer]:
+                  - generic [ref=e368]:
+                    - generic [ref=e369]: "0"
+                    - generic [ref=e370]: mm
+                - button "0 mm" [ref=e371] [cursor=pointer]:
+                  - generic [ref=e372]:
+                    - generic [ref=e373]: "0"
+                    - generic [ref=e374]: mm
+                - button "0 mm" [ref=e375] [cursor=pointer]:
+                  - generic [ref=e376]:
+                    - generic [ref=e377]: "0"
+                    - generic [ref=e378]: mm
+                - button "0 mm" [ref=e379] [cursor=pointer]:
+                  - generic [ref=e380]:
+                    - generic [ref=e381]: "0"
+                    - generic [ref=e382]: mm
+                - button "10 mm" [ref=e383] [cursor=pointer]:
+                  - generic [ref=e384]:
+                    - generic [ref=e385]: "10"
+                    - generic [ref=e386]: mm
+                - button "1 mm" [ref=e387] [cursor=pointer]:
+                  - generic [ref=e388]:
+                    - generic [ref=e389]: "1"
+                    - generic [ref=e390]: mm
+                - button "0 mm" [ref=e391] [cursor=pointer]:
+                  - generic [ref=e392]:
+                    - generic [ref=e393]: "0"
+                    - generic [ref=e394]: mm
+                - button "0 mm" [ref=e395] [cursor=pointer]:
+                  - generic [ref=e396]:
+                    - generic [ref=e397]: "0"
+                    - generic [ref=e398]: mm
+                - button "0 mm" [ref=e399] [cursor=pointer]:
+                  - generic [ref=e400]:
+                    - generic [ref=e401]: "0"
+                    - generic [ref=e402]: mm
+                - button "0 mm" [ref=e403] [cursor=pointer]:
+                  - generic [ref=e404]:
+                    - generic [ref=e405]: "0"
+                    - generic [ref=e406]: mm
+                - button "0 mm" [ref=e407] [cursor=pointer]:
+                  - generic [ref=e408]:
+                    - generic [ref=e409]: "0"
+                    - generic [ref=e410]: mm
+                - button "1 mm" [ref=e411] [cursor=pointer]:
+                  - generic [ref=e412]:
+                    - generic [ref=e413]: "1"
+                    - generic [ref=e414]: mm
+                - button "0 mm" [ref=e415] [cursor=pointer]:
+                  - generic [ref=e416]:
+                    - generic [ref=e417]: "0"
+                    - generic [ref=e418]: mm
+                - button "0 mm" [ref=e419] [cursor=pointer]:
+                  - generic [ref=e420]:
+                    - generic [ref=e421]: "0"
+                    - generic [ref=e422]: mm
+                - button "0 mm" [ref=e423] [cursor=pointer]:
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: "0"
+                    - generic [ref=e426]: mm
+                - button "0 mm" [ref=e427] [cursor=pointer]:
+                  - generic [ref=e428]:
+                    - generic [ref=e429]: "0"
+                    - generic [ref=e430]: mm
+                - button "0 mm" [ref=e431] [cursor=pointer]:
+                  - generic [ref=e432]:
+                    - generic [ref=e433]: "0"
+                    - generic [ref=e434]: mm
+                - button "0 mm" [ref=e435] [cursor=pointer]:
+                  - generic [ref=e436]:
+                    - generic [ref=e437]: "0"
+                    - generic [ref=e438]: mm
+                - button "0 mm" [ref=e439] [cursor=pointer]:
+                  - generic [ref=e440]:
+                    - generic [ref=e441]: "0"
+                    - generic [ref=e442]: mm
+                - button "0 mm" [ref=e443] [cursor=pointer]:
+                  - generic [ref=e444]:
+                    - generic [ref=e445]: "0"
+                    - generic [ref=e446]: mm
+                - button "0 mm" [ref=e447] [cursor=pointer]:
+                  - generic [ref=e448]:
+                    - generic [ref=e449]: "0"
+                    - generic [ref=e450]: mm
+            - generic:
+              - generic [ref=e451]:
+                - button "Zoom in" [ref=e452] [cursor=pointer]: +
+                - button "Zoom out" [ref=e453] [cursor=pointer]: −
+              - generic [ref=e454]:
+                - link "Leaflet" [ref=e455] [cursor=pointer]:
+                  - /url: https://leafletjs.com
+                - text: "| © OpenStreetMap © CARTO"
+          - button "Ampliar mapa de chuva acumulada" [ref=e460] [cursor=pointer]
+        - generic [ref=e466]:
+          - generic [ref=e467]: Fraca < 50 mm
+          - generic [ref=e469]: Atenção 50–80 mm
+          - generic [ref=e471]: Crítica > 80 mm
+      - region [ref=e473]:
+        - heading "Informação clara também protege." [level=2] [ref=e475]
+        - generic [ref=e476]:
+          - paragraph [ref=e477]: Em momentos de risco, informações importantes ficam espalhadas entre diferentes sites e redes sociais. Conteúdos antigos também podem reaparecer como se fossem atuais, gerando dúvida e preocupação.
+          - paragraph [ref=e478]: Este sistema reúne, em um só lugar, dados atualizados sobre rios, chuva, barragens, alertas, radar e satélite. As informações vêm da ANA/SNIRH, SACE/SGB, Defesa Civil do RS, CERAN, INMET, CPTEC/INPE, Climatempo e Epagri/Ciram.
+          - paragraph [ref=e479]: É uma ferramenta de apoio para facilitar o acesso à informação. Em uma emergência, siga sempre as orientações oficiais.
+        - paragraph [ref=e480]: Bruno Zilio
+  - alert [ref=e481]

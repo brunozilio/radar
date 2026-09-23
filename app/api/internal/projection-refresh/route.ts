@@ -13,9 +13,10 @@ export async function POST(request: Request) {
     return Response.json({ message: "Não autorizado" }, { status: 401 });
   }
   try {
-    const projection = await refreshProjection();
-    return Response.json({ generatedAt: projection.generatedAt });
-  } catch {
+    const result = await refreshProjection();
+    return Response.json(result);
+  } catch (error) {
+    console.error("[projection] refresh failed", error instanceof Error ? error.message : "Unknown refresh error");
     return Response.json({ message: "Falha no cálculo; última projeção preservada" }, { status: 503 });
   }
 }

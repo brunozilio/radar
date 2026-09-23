@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "candidate": "radar-short-term-shadow-v1",
+  "registered_before_execution": true,
+  "scope": "Muçum only; shadow artifact and offline diagnostics, never a published forecast",
+  "formula": {
+    "slope": "(anchor_m - exact_level_at_anchor_minus_1h) / 1h",
+    "trend": "anchor_m + slope * (target_time - anchor_time) / 3600",
+    "real_lead": "(target_time - issued_at) / 3600",
+    "alpha": "0.5 for 0 < real_lead <= 1; 0.25 * (3 - real_lead) for 1 < real_lead < 3; 0 for real_lead >= 3",
+    "correction": "clip(alpha * (trend - baseline), -0.50m, +0.50m)",
+    "candidate_level": "baseline + correction",
+    "direction": "rising if known slope > +0.05m/h, falling if < -0.05m/h, stable otherwise"
+  },
+  "rationale": "A fixed conservative blend limits extrapolation to the two short real-lead bands suggested by the preceding exploratory diagnostic. The 0.50m cap uses the goal's existing absolute-error tolerance, not a search over this episode. No parameter fitting or alternate coefficients will be selected using the results.",
+  "input_requirements": [
+    "Timezone-aware reference, issue, anchor, past and target timestamps.",
+    "Reference is an exact hour; anchor timestamp equals reference; 0 <= issue - reference < 1h.",
+    "Anchor and exact anchor-minus-1h levels are finite, nonnegative and belong to station 86510000.",
+    "Both observations have explicit received_at <= issued_at and received_at >= observation timestamp, source evidence identifiers and approved quality.",
+    "No interpolation, stale fallback, missing-value imputation, future receipt or conflicting duplicate at the required timestamp.",
+    "Every baseline point is finite, nonnegative, unique and strictly future at issue; unavailable inputs yield no candidate points."
+  ],
+  "historical_exception": "Offline evaluator alone may set allow_legacy_unverified=true to inspect preserved D1 values with created_at. These lack immutable version/QC proof and are labelled legacy_unverified; they cannot count as prospective goal evidence.",
+  "evaluation": {
+    "frozen_source": "outputs/comparacao-producao-20260922T203322",
+    "secondary_existing_cases": "outputs/diagnostico-melhoria-20260922T211450/baselines-causais.json",
+    "groups": ["real lead [0,1), [1,2), [2,3), [3,4), [4,5), [5,6)", "direction known at issue", "exact same latest eligible issue at each minimum real lead used by preceding audit"],
+    "metrics": ["availability and exclusion reasons", "MAE", "bias", "maximum absolute error", "count and rate within +/-0.50m", "paired improved/worse/unchanged counts"],
+    "selection": "All preserved Muçum issue/target pairs; availability determined without targets; report exact observed targets separately from future/missing targets.",
+    "limitations": "One episode already inspected, not an independent holdout. Correlated emissions and horizons are not independent events. No fitting, model loading, network, publication or promotion."
+  },
+  "promotion_requirements": [
+    "Never promote automatically from this replay or from headline aggregate improvement.",
+    "Freeze version and formula before evaluation on whole independent flood events reserved from all development, with immutable observations as received.",
+    "Demonstrate improved MAE and +/-0.50m hit rate at each affected real horizon, including rising, falling, peak transitions and floods, without increased maximum error or absolute bias in any sufficiently supported group.",
+    "Report blocked/missing forecasts with the complete scheduled-opportunity denominator; no improvement obtained by quietly dropping failures.",
+    "Unaffected leads >=3h must remain bit-for-bit equal to the frozen baseline.",
+    "Run prospective shadow validation before any separately reviewed model release.",
+    "The >=98% goal still requires its established >=1000 verifiable prospective pairs per horizon and >=10 independent certified flood events; this diagnostic supplies neither."
+  ],
+  "promoted": false,
+  "goal_achieved": false
+}

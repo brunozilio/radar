@@ -28,7 +28,7 @@ def merge_arrays(before,updates,fields):
     if not len(ts):raise ValueError('No historical rows')
     return {'times':ts,**{k:a[:,i] for i,k in enumerate(fields)}}
 
-def ana_rows(path,code,received):
+def ana_rows(path,code,received,strict_quality=False):
     result={};future=0
     for el in ET.parse(path).getroot().iter():
         if el.tag.split('}')[-1]!='DadosHidrometereologicos':continue
@@ -38,7 +38,8 @@ def ana_rows(path,code,received):
         if t>received:future+=1;continue
         values=[]
         for field in ['NivelFinal','VazaoFinal','ChuvaFinal','ChuvaAcumAdotada']:
-            values.append(number(row.get(field)) if row.get('CQ_'+field) in [None,'Dado aprovado'] else np.nan)
+            accepted=['Dado aprovado'] if strict_quality else [None,'Dado aprovado']
+            values.append(number(row.get(field)) if row.get('CQ_'+field) in accepted else np.nan)
         values[0]/=100
         if values[2]>150:values[2]=np.nan
         if t in result and not np.allclose(result[t],values,equal_nan=True):raise ValueError('Conflicting ANA duplicate')
@@ -89,7 +90,7 @@ def read_current(root):
     verify(directory)
     return directory
 
-def build(out,root,baseline,weather_transition=None):
+def build(out,root,baseline,weather_transition=None,allow_missing_rain=False):
     """Caller holds the hourly lock. Publish pointer only after all files verify."""
     root.mkdir(parents=True,exist_ok=True)
     previous=read_current(root);parent=verify(previous) if previous else None
@@ -97,26 +98,65 @@ def build(out,root,baseline,weather_transition=None):
     folder=out/'history';folder.mkdir(exist_ok=False)
     clocks=dict(parent['latest_collection_by_source']) if parent else {};audits=[]
     transition=json.loads(weather_transition.read_text()) if weather_transition else {}
+    optional_reference = optional_checked = None
+    required_level_stations = {'86510000', '86472000', '86472600', '86500000'}
+    if allow_missing_rain:
+        readiness = json.loads((out/'input-readiness.json').read_text())
+        if readiness.get('status') != 'ready':
+            raise ValueError('Optional rain transport requires a ready same-hour input gate')
+        optional_reference = stamp(readiness['referenceAt'])
+        optional_checked = stamp(readiness['checkedAt'])
+        if optional_reference % 3600 or optional_reference > optional_checked:
+            raise ValueError('Invalid reference for optional rain source handling')
     old=dict(np.load(baseline/'telemetria.npz'))
     # Scope matches the stations explicitly requested in this collection.
     requested={r['file'] for r in items if r['source']=='ANA'}
     stations={f'ana-{p.stem.split("-")[1]}-fresh.xml' for p in (baseline/'raw').glob('normalized-*.npz')}
-    if not stations or requested!=stations:raise ValueError('Incomplete or changed ANA station set')
-    expected=requested|{f'ceran-{s}-fresh.html' for s in ['julho','monte','castro']}|{f'weather-{s}.json' for s in ['gfs_seamless','ecmwf_ifs025','icon_global']}
+    optional_sources = {name for name in stations if name.split('-')[1] not in required_level_stations} if allow_missing_rain else set()
+    if not stations or requested-stations or (stations-requested)-optional_sources:raise ValueError('Incomplete or changed ANA station set')
+    expected=stations|{f'ceran-{s}-fresh.html' for s in ['julho','monte','castro']}|{f'weather-{s}.json' for s in ['gfs_seamless','ecmwf_ifs025','icon_global']}
     selected={r['file']:r for r in items if r['file'] in expected}
-    if set(selected)!=expected:raise ValueError('Incomplete history source set')
+    if expected-set(selected)-optional_sources:raise ValueError('Incomplete history source set')
     if parent and set(clocks)!=expected:raise ValueError('History source set changed')
-    for name,item in selected.items():
-        if 'error' in item:raise ValueError('Failed source cannot replace history')
+    for name in sorted(expected):
+        item = selected.get(name)
         path=out/'raw'/name
+        if item and path.is_file() and sha(path)!=item.get('sha256'):
+            raise ValueError('Raw source hash mismatch')
+        unavailable = None
+        if item is None:
+            unavailable = 'source_manifest_missing'
+        elif 'error' in item:
+            unavailable = 'collection_failed'
+        elif not path.is_file():
+            unavailable = 'collection_file_missing'
+        elif name in optional_sources and not 0 <= optional_checked-stamp(item['collected_at']) <= 3600:
+            unavailable = 'collection_stale_or_future'
+        if unavailable and name in optional_sources:
+            code=name.split('-')[1];filename=f'ana-{code}.npz'
+            seed=previous/filename if previous else baseline/'raw'/f'normalized-{code}.npz'
+            before=dict(np.load(seed))
+            # Keep known observations intact. prepare_current masks a COPY for
+            # this issue's coverage using input-readiness.unavailableRainSources.
+            np.savez_compressed(folder/filename,**before)
+            clocks.setdefault(name,None)
+            audits.append({'source':name,'kind':'unavailable_rain_source',
+                'reason':unavailable,'received_new_data':False,'incoming_rows':0,
+                'retained_rows':len(before['times']),
+                'current_hour_feature_rain':'Excluded by unavailableRainSources; historical observations preserved',
+                'latest_successful_collection':clocks[name],
+                'reference_at':readiness['referenceAt']})
+            continue
+        if item is None:raise ValueError('Incomplete history source set')
+        if 'error' in item:raise ValueError('Failed source cannot replace history')
         if sha(path)!=item['sha256']:raise ValueError('Raw source hash mismatch')
         received=stamp(item['collected_at'])
-        if name in clocks and received<stamp(clocks[name]):raise ValueError('Older receipt cannot replace newer history')
+        if clocks.get(name) is not None and received<stamp(clocks[name]):raise ValueError('Older receipt cannot replace newer history')
         clocks[name]=item['collected_at']
         if name.startswith('ana-'):
             code=name.split('-')[1];filename=f'ana-{code}.npz'
             seed=previous/filename if previous else baseline/'raw'/f'normalized-{code}.npz'
-            before=dict(np.load(seed));updates,future=ana_rows(path,code,received)
+            before=dict(np.load(seed));updates,future=ana_rows(path,code,received,strict_quality=os.environ.get('HYDRO_REQUIRE_COMPLETE')=='1')
             merged=merge_arrays(before,updates,FIELDS);np.savez_compressed(folder/filename,**merged)
         elif name.startswith('ceran-'):
             plant=name.split('-')[1];filename=f'ceran-{plant}.npz'
@@ -137,6 +177,8 @@ def build(out,root,baseline,weather_transition=None):
         audits.append({'source':name,'retained_rows':len(merged['times']),'incoming_rows':len(updates),'future_observations_excluded':future})
     files={p.name:sha(p) for p in sorted(folder.iterdir())}
     metadata={'schema':1,'parent_directory':str(previous) if previous else None,'parent_manifest_sha256':sha(previous/'manifest.json') if previous else None,'collection_manifest':str(manifest_path.resolve()),'collection_manifest_sha256':sha(manifest_path),'latest_collection_by_source':clocks,'files':files,'audit':audits,'limitations':['Baseline CERAN input is an existing 15-minute as-of grid; new receipts retain actual source timestamps.','Model weather is not observed rain; unknown precipitation remains unknown.','Snapshot records information available by collection; it does not establish historical availability of the baseline.']}
+    if allow_missing_rain:
+        metadata['optional_rain_policy'] = 'Only non-level rain gauges may lack a current receipt after the regional gate passed. Historical observations remain intact; the current feature view excludes their rain in (H-1h,H], with no new receipt clock.'
     if weather_transition:
         metadata['explicit_weather_transition']={'path':str(weather_transition.resolve()),'sha256':sha(weather_transition),'policy':transition}
     dump(folder/'manifest.json',metadata);verify(folder)

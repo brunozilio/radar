@@ -1,0 +1,21 @@
+{
+  "url": "https://radar.brunozilio.com",
+  "workerVersion": "2985726d-15b4-40d7-b692-907f6726fbc8",
+  "imageDigest": "sha256:57122428ee49041423c660a860994b0053e1f8d07c8f3a7aadbcd6b32d081fc6",
+  "runtimeVersion": "forecast-6h-v1-complete-hour-v3-mucum-only",
+  "nodeTests": 69,
+  "pythonTests": 28,
+  "lint": "passed",
+  "dockerBuild": "passed",
+  "api": {
+    "mucum": 200,
+    "encantado": 400,
+    "santa-tereza": 400
+  },
+  "ui": {
+    "title": "Previsão de Muçum",
+    "stationSelector": false,
+    "pendingDetails": false
+  },
+  "note": "Deploy isolado com os 197 arquivos do runtime previamente validado; trabalho paralelo de propagation shadow preservado no workspace e excluído desta publicação. API aguarda dados completos; não foi forçado um novo cálculo."
+}

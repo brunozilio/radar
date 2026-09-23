@@ -1,0 +1,119 @@
+[
+  {
+    "status": "waiting_for_data",
+    "referenceAt": "2026-09-23T08:00:00-03:00",
+    "checkedAt": "2026-09-23T08:44:15.527864-03:00",
+    "missing": [
+      "86472600: approved river level missing at 2026-09-23T08:00:00-03:00",
+      "Carreiro: same-hour rain coverage 8.7% below 50%",
+      "Alto Antas: same-hour rain coverage 12.1% below 50%",
+      "Tainhas: same-hour rain coverage 0.0% below 50%",
+      "weather-gfs_seamless.json: source unavailable"
+    ],
+    "levels": {
+      "86472000": 8.8,
+      "86472600": null,
+      "86500000": 2.609,
+      "86510000": 8.38
+    },
+    "flows": {
+      "julho": [
+        1724.72,
+        1676.39
+      ],
+      "monte": [
+        1743.89,
+        1760.56
+      ],
+      "castro": [
+        1018.55,
+        974.13
+      ]
+    },
+    "rainCoverage": {
+      "Baixo Antas": 0.653179190751445,
+      "Carreiro": 0.0873634945397816,
+      "Prata-Turvo": 0.5724946695095949,
+      "Alto Antas": 0.12144102266124346,
+      "Tainhas": 0.0
+    },
+    "unavailableRainSources": {},
+    "rainPolicy": "Five regions, each >=50% measured coverage in (H-1h,H], ending at H; zero is valid rain. Unavailable non-level rain gauges contribute zero coverage."
+  },
+  {
+    "status": "waiting_for_data",
+    "referenceAt": "2026-09-23T07:00:00-03:00",
+    "checkedAt": "2026-09-23T08:44:15.527864-03:00",
+    "missing": [
+      "Alto Antas: same-hour rain coverage 47.2% below 50%",
+      "weather-gfs_seamless.json: source unavailable"
+    ],
+    "levels": {
+      "86472000": 9.14,
+      "86472600": 7.68,
+      "86500000": 2.627,
+      "86510000": 8.58
+    },
+    "flows": {
+      "julho": [
+        2041.57,
+        2170.46
+      ],
+      "monte": [
+        1851.12,
+        1867.79
+      ],
+      "castro": [
+        1042.36,
+        997.94
+      ]
+    },
+    "rainCoverage": {
+      "Baixo Antas": 1.0,
+      "Carreiro": 0.8892355694227769,
+      "Prata-Turvo": 0.7878464818763327,
+      "Alto Antas": 0.47181871005229514,
+      "Tainhas": 0.6202185792349727
+    },
+    "unavailableRainSources": {},
+    "rainPolicy": "Five regions, each >=50% measured coverage in (H-1h,H], ending at H; zero is valid rain. Unavailable non-level rain gauges contribute zero coverage."
+  },
+  {
+    "status": "waiting_for_data",
+    "referenceAt": "2026-09-23T06:00:00-03:00",
+    "checkedAt": "2026-09-23T08:44:15.527864-03:00",
+    "missing": [
+      "Alto Antas: same-hour rain coverage 47.2% below 50%",
+      "weather-gfs_seamless.json: source unavailable"
+    ],
+    "levels": {
+      "86472000": 9.33,
+      "86472600": 7.93,
+      "86500000": 2.661,
+      "86510000": 8.74
+    },
+    "flows": {
+      "julho": [
+        1994.94,
+        1962.72
+      ],
+      "monte": [
+        1851.83,
+        1881.0
+      ],
+      "castro": [
+        1066.85,
+        1022.43
+      ]
+    },
+    "rainCoverage": {
+      "Baixo Antas": 1.0,
+      "Carreiro": 0.8892355694227769,
+      "Prata-Turvo": 0.7878464818763327,
+      "Alto Antas": 0.47181871005229514,
+      "Tainhas": 0.6202185792349727
+    },
+    "unavailableRainSources": {},
+    "rainPolicy": "Five regions, each >=50% measured coverage in (H-1h,H], ending at H; zero is valid rain. Unavailable non-level rain gauges contribute zero coverage."
+  }
+]
