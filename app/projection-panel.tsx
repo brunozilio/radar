@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TrendingUp } from "lucide-react";
-import { HYDROMETRIC_MODEL_ID, validProjection, type ProjectionRefreshState, type StationProjection } from "@/lib/projection";
+import { HYDROMETRIC_MODEL_ID, projectionIsStale, validProjection, type ProjectionRefreshState, type StationProjection } from "@/lib/projection";
 
 const time = (value: string) => new Date(value).toLocaleTimeString("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" });
 const dateTime = (value: string) => `${new Date(value).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" })} às ${time(value)}`;
@@ -48,7 +48,7 @@ export default function ProjectionPanel() {
 
 function ProjectionContent() {
   const city = "Muçum";
-  const [data, setData] = useState<{ projection: StationProjection | null; refresh: ProjectionRefreshState | null; failed: boolean; loading: boolean; now: number }>({ projection: null, refresh: null, failed: false, loading: true, now: 0 });
+  const [data, setData] = useState<{ projection: StationProjection | null; refresh: ProjectionRefreshState | null; failed: boolean; stale: boolean; loading: boolean; now: number }>({ projection: null, refresh: null, failed: false, stale: false, loading: true, now: 0 });
   useEffect(() => {
     const controller = new AbortController();
     let pending = false;
@@ -61,7 +61,7 @@ function ProjectionContent() {
         const payload = await response.json();
         if (payload.projection && !validProjection(payload.projection, "mucum")) throw new Error("invalid forecast");
         if (!controller.signal.aborted) {
-          setData(previous => ({ projection: payload.projection ?? previous.projection, refresh: readRefreshState(payload.refresh), failed: Boolean(payload.failed), loading: false, now: Date.now() }));
+          setData(previous => ({ projection: payload.projection ?? previous.projection, refresh: readRefreshState(payload.refresh), failed: Boolean(payload.failed), stale: Boolean(payload.stale), loading: false, now: Date.now() }));
         }
       } catch {
         if (!controller.signal.aborted) setData(previous => ({ ...previous, failed: true, loading: false, now: Date.now() }));
@@ -72,6 +72,7 @@ function ProjectionContent() {
     return () => { controller.abort(); clearInterval(timer); };
   }, []);
   const projection = data.projection;
+  const stale = projection && (data.stale || projectionIsStale(projection, data.now));
   const hydrometric = projection?.models[0].id === HYDROMETRIC_MODEL_ID;
   const points = projection?.models[0].points.filter(point => Date.parse(point.timestamp) > data.now).slice(0, 6) ?? [];
   const period = forecastPeriod(points);
@@ -86,6 +87,7 @@ function ProjectionContent() {
   return (
     <div aria-label={`Previsão de ${city}`} aria-busy={data.loading}>
       <ProjectionRefreshNotice refresh={data.refresh} failed={data.failed} />
+      {stale && !data.failed && <p className="projection-warning" role="status">Exibindo o último cálculo disponível, de {dateTime(projection.generatedAt)}. A previsão pode estar desatualizada.</p>}
       {!projection ? <p className="projection-empty" role="status">{data.loading ? "Carregando previsão…" : data.failed ? "Previsão temporariamente indisponível." : "Aguardando o primeiro cálculo."}</p> : (
         <>
           {points.length ? <>

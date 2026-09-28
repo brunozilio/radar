@@ -21,7 +21,6 @@ import {
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Chart as ChartInstance } from "chart.js";
 import ProjectionPanel from "./projection-panel";
-import LiveCameras from "./live-cameras";
 import { timeSeriesBounds } from "@/lib/charts";
 import type { LayerGroup, Map as LeafletMap } from "leaflet";
 import {
@@ -3345,7 +3344,6 @@ export default function Home() {
 
         <ProjectionPanel />
 
-        <LiveCameras />
 
         <WeatherPanels
           radarRefreshToken={liveVersions.radar}

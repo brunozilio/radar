@@ -66,6 +66,36 @@ class PropagationLiveTests(unittest.TestCase):
         self.assertEqual(len(result['points']), 6)
         self.assertTrue(all(p['realLeadHours'] > 0 for p in result['points']))
         self.assertFalse((self.out / 'forecast.json').exists())
+        self.assertEqual(json.loads((self.out / 'local-nowcast-shadow.json').read_text())['status'], 'unavailable')
+
+    def test_local_nowcast_uses_only_approved_received_readings_and_caps_change(self):
+        path = self.out / 'raw' / 'ana-86510000-fresh.xml'
+        newer = self.ref + timedelta(minutes=10)
+        extra = (f'<DadosHidrometereologicos><CodEstacao>86510000</CodEstacao>'
+                 f'<DataHora>{newer.isoformat()}</DataHora><NivelFinal>1290</NivelFinal>'
+                 '<CQ_NivelFinal>Dado aprovado</CQ_NivelFinal></DadosHidrometereologicos>')
+        future = (f'<DadosHidrometereologicos><CodEstacao>86510000</CodEstacao>'
+                  f'<DataHora>{(self.now+timedelta(minutes=15)).isoformat()}</DataHora>'
+                  '<NivelFinal>2000</NivelFinal><CQ_NivelFinal>Dado aprovado</CQ_NivelFinal>'
+                  '</DadosHidrometereologicos>')
+        path.write_text(path.read_text().replace('</root>', extra+future+'</root>'))
+        next(row for row in self.manifest if row['file'] == path.name)['sha256'] = sha(path)
+        self.write_manifest()
+        with patch.object(live, 'predict', side_effect=self.prediction):
+            original = live.run_shadow(self.out, self.root, self.ref, now=self.now)
+        candidate = json.loads((self.out / 'local-nowcast-shadow.json').read_text())
+        self.assertEqual(candidate['status'], 'calculated')
+        self.assertFalse(candidate['publishable'])
+        self.assertEqual(candidate['observation']['timestamp'], newer.isoformat())
+        self.assertEqual(candidate['correctionMetres'], .5)
+        self.assertEqual(candidate['points'][0]['candidateLevel'], 12.5)
+        self.assertEqual(original['points'][0]['level'], 12)
+        path.write_text(path.read_text().replace(extra, extra.replace('Dado aprovado', 'Dado bruto')))
+        next(row for row in self.manifest if row['file'] == path.name)['sha256'] = sha(path)
+        self.write_manifest()
+        with patch.object(live, 'predict', side_effect=self.prediction):
+            live.run_shadow(self.out, self.root, self.ref, now=self.now)
+        self.assertEqual(json.loads((self.out / 'local-nowcast-shadow.json').read_text())['status'], 'unavailable')
 
     def test_stale_future_and_failed_receipts_never_run_inference(self):
         for age in (-1, 3601):

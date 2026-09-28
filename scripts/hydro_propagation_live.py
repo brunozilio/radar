@@ -6,6 +6,7 @@ receipts remain in the caller's immutable attempt archive.
 from datetime import datetime, timedelta
 import hashlib
 import json
+import math
 from pathlib import Path
 
 import numpy as np
@@ -16,6 +17,58 @@ LEVELS = ('86510000', '86472000', '86472600', '86500000')
 PLANTS = ('julho', 'monte', 'castro')
 MODEL_PATH = Path('model-artifacts/mucum-propagation-v1/model.json')
 MAX_AGE_SECONDS = 10800
+NOWCAST_VERSION = 'mucum-local-nowcast-shadow-v1'
+
+
+def run_local_nowcast_shadow(out, public_source):
+    """Evaluate a receipt-backed local-level recentering without publishing it."""
+    result = dict(schema='radar-local-nowcast-shadow/v1', mode='shadow', publishable=False,
+                  modelVersion=NOWCAST_VERSION, sourceModelSha256=public_source.get('modelSha256'),
+                  status='unavailable', points=[],
+                  recipe='docs/nowcast-shadow-2026-09-28.md')
+    try:
+        if public_source.get('status') != 'calculated':
+            raise ValueError('Hydrometric source forecast unavailable')
+        reference = stamp(public_source['referenceAt'])
+        issued = stamp(public_source['generatedAt'])
+        base = float(public_source['observation']['level'])
+        points = public_source['points']
+        first = points[0]
+        first_at = stamp(first['timestamp'])
+        if not reference < issued < first_at or not math.isfinite(base):
+            raise ValueError('Invalid forecast chronology or anchor')
+        source = next(row for row in public_source['sources'] if row['file'] == 'ana-86510000-fresh.xml')
+        path = out / 'raw' / source['file']
+        body_sha = hashlib.sha256(path.read_bytes()).hexdigest()
+        if body_sha != source['sha256']:
+            raise ValueError('Local observation receipt checksum mismatch')
+        received = stamp(source['availableAt'])
+        if not 0 <= issued - received <= 3600:
+            raise ValueError('Local observation receipt unavailable at issuance')
+        observations, _ = ana_rows(path, '86510000', received, strict_quality=True)
+        eligible = [(at, float(values[0])) for at, values in observations.items()
+                    if reference < at <= issued and issued-at <= 3600 and math.isfinite(values[0])]
+        if not eligible:
+            raise ValueError('No approved newer local reading available at issuance')
+        observed_at, observed_level = max(eligible)
+        expected = base + (float(first['level'])-base) * (observed_at-reference)/(first_at-reference)
+        correction = max(-.5, min(.5, observed_level-expected))
+        if not math.isfinite(expected) or not math.isfinite(correction):
+            raise ValueError('Nonfinite nowcast correction')
+        result.update(status='calculated', referenceAt=public_source['referenceAt'],
+                      generatedAt=public_source['generatedAt'],
+                      observation=dict(timestamp=datetime.fromtimestamp(observed_at, TZ).isoformat(),
+                                       level=observed_level, receiptSha256=body_sha,
+                                       receiptAt=source['availableAt'], quality='Dado aprovado'),
+                      modelExpectedAtObservation=expected, correctionMetres=correction,
+                      points=[dict(timestamp=point['timestamp'], nominalLeadHours=point['nominalLeadHours'],
+                                   originalLevel=float(point['level']), candidateLevel=float(point['level'])+correction)
+                              for point in points])
+    except Exception as exc:
+        # A candidate failure must never block the already validated public issue.
+        result['reason'] = f'{type(exc).__name__}: {exc}'
+    (out / 'local-nowcast-shadow.json').write_text(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2) + '\n')
+    return result
 
 
 def load_inputs(out, checked_reference, issued):
@@ -130,4 +183,5 @@ def run_shadow(out, root, checked_reference, *, now=None):
     except Exception as exc:
         result['reason'] = f'{type(exc).__name__}: {exc}'
     (out / 'propagation-shadow.json').write_text(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
+    run_local_nowcast_shadow(out, result)
     return result

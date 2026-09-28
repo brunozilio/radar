@@ -88,6 +88,7 @@ class ProjectionArchiveTests(unittest.TestCase):
             'feature-snapshot.json': b'{"features":[1,2],"receivedAt":"now"}',
             'short-term-shadow.json': b'{"mode":"shadow","publishable":false}',
             'propagation-shadow.json': b'{"mode":"shadow","rainRequired":false,"publishable":false}',
+            'local-nowcast-shadow.json': b'{"mode":"shadow","publishable":false}',
             'forecast.json': b'{"models":[{"id":"frozen","points":[1]}]}',
             'model-metadata.json': b'{"version":"frozen"}',
         }

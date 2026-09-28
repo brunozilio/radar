@@ -81,7 +81,8 @@ def enqueue_attempt(state, out, root, *, attempt_id, reference_at, status,
         objects.append(dict(key=key, sha256=sha, bytes=len(body), role=role))
     add(runtime_bundle(root), 'runtime')
     names = ['collection-manifest.json', 'input-readiness.json', 'reference-selection.json', 'model-metadata.json',
-             'feature-snapshot.json', 'short-term-shadow.json', 'propagation-shadow.json', 'forecast.json']
+             'feature-snapshot.json', 'short-term-shadow.json', 'propagation-shadow.json',
+             'local-nowcast-shadow.json', 'forecast.json']
     files = [Path(name) for name in names if (out / name).is_file()]
     files += [p.relative_to(out) for p in (out / 'raw').rglob('*') if p.is_file()]
     add(bundle(out, files), 'attempt')

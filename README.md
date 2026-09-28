@@ -1,6 +1,11 @@
 # Radar Taquari — projeto original recuperado
 
-## Modelo de previsão de Muçum
+**Estado atual (28/09/2026):** o site e `/api/projection` publicam somente a
+previsão hidrométrica experimental de Muçum. Encantado e Santa Tereza continuam
+em “Níveis do rio”, mas suas previsões foram retiradas da interface e da API.
+As seções de previsão abaixo documentam também versões anteriores do projeto.
+
+## Histórico: modelo de previsão anterior de Muçum
 
 O painel **Modelo de previsão** publica somente as próximas **6 horas** do modelo estatístico existente,
 identificado como **experimental**, com uma explicação acessível no próprio site.
@@ -76,7 +81,7 @@ npm run build
 npm start
 ```
 
-## Previsão de Encantado
+## Histórico: previsão de Encantado
 
 O painel de previsão permite alternar entre **Muçum** e **Encantado**. Encantado
 usa um modelo próprio (`encantado-6h-v1`), com seis alvos horários na régua ANA
@@ -120,7 +125,7 @@ npm run projection:package
 npm run build
 ```
 
-## Santa Tereza na previsão e Encantado nos níveis do rio
+## Histórico: previsão de Santa Tereza; Encantado nos níveis do rio
 
 O seletor de previsão também inclui **Santa Tereza**, com seis alvos horários
 na régua da cidade (`86472600`). A entrada a montante é a Linha José Júlio
