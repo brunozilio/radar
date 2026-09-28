@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TrendingUp } from "lucide-react";
-import { HYDROMETRIC_MODEL_ID, projectionContradictedByObservation, projectionIsStale, readCurrentMucumObservation, validProjection, type CurrentMucumObservation, type ProjectionRefreshState, type StationProjection } from "@/lib/projection";
+import { HYDROMETRIC_MODEL_ID, projectionContradictedByObservation, readCurrentMucumObservation, validProjection, type CurrentMucumObservation, type ProjectionRefreshState, type StationProjection } from "@/lib/projection";
 
 const time = (value: string) => new Date(value).toLocaleTimeString("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" });
 const dateTime = (value: string) => `${new Date(value).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" })} às ${time(value)}`;
@@ -48,7 +48,7 @@ export default function ProjectionPanel() {
 
 function ProjectionContent() {
   const city = "Muçum";
-  const [data, setData] = useState<{ projection: StationProjection | null; observation: CurrentMucumObservation | null; refresh: ProjectionRefreshState | null; failed: boolean; stale: boolean; loading: boolean; now: number }>({ projection: null, observation: null, refresh: null, failed: false, stale: false, loading: true, now: 0 });
+  const [data, setData] = useState<{ projection: StationProjection | null; observation: CurrentMucumObservation | null; refresh: ProjectionRefreshState | null; failed: boolean; loading: boolean; now: number }>({ projection: null, observation: null, refresh: null, failed: false, loading: true, now: 0 });
   useEffect(() => {
     const controller = new AbortController();
     let pending = false;
@@ -65,7 +65,7 @@ function ProjectionContent() {
         if (payload.projection && !validProjection(payload.projection, "mucum")) throw new Error("invalid forecast");
         const observation = await observationRequest;
         if (!controller.signal.aborted) {
-          setData(previous => ({ projection: payload.projection ?? previous.projection, observation, refresh: readRefreshState(payload.refresh), failed: Boolean(payload.failed), stale: Boolean(payload.stale), loading: false, now: Date.now() }));
+          setData(previous => ({ projection: payload.projection ?? previous.projection, observation, refresh: readRefreshState(payload.refresh), failed: Boolean(payload.failed), loading: false, now: Date.now() }));
         }
       } catch {
         if (!controller.signal.aborted) setData(previous => ({ ...previous, failed: true, loading: false, now: Date.now() }));
@@ -76,7 +76,6 @@ function ProjectionContent() {
     return () => { controller.abort(); clearInterval(timer); };
   }, []);
   const projection = data.projection;
-  const stale = projection && (data.stale || projectionIsStale(projection, data.now));
   const hydrometric = projection?.models[0].id === HYDROMETRIC_MODEL_ID;
   const points = projection?.models[0].points.filter(point => Date.parse(point.timestamp) > data.now).slice(0, 6) ?? [];
   const newerObservation = projection && data.observation && Date.parse(data.observation.timestamp) > Date.parse(projection.referenceAt) ? data.observation : null;
@@ -93,7 +92,6 @@ function ProjectionContent() {
   return (
     <div aria-label={`Previsão de ${city}`} aria-busy={data.loading}>
       <ProjectionRefreshNotice refresh={data.refresh} failed={data.failed} />
-      {stale && !data.failed && <p className="projection-warning" role="status">Último cálculo disponível: {dateTime(projection.generatedAt)}. Os dados desta rodada podem estar desatualizados; confira os níveis do rio acima.</p>}
       {!projection ? <p className="projection-empty" role="status">{data.loading ? "Carregando previsão…" : data.failed ? "Previsão temporariamente indisponível." : "Aguardando o primeiro cálculo."}</p> : (
         <>
           {!data.observation && !data.loading && <p className="projection-warning" role="status">Não foi possível conferir a previsão com a leitura mais recente da régua de Muçum.</p>}
