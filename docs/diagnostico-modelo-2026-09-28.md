@@ -35,7 +35,9 @@ O código da candidata passou 31 testes Python focados em isolamento da previsã
 
 ## Publicação
 
-Em 28/09/2026, a versão Cloudflare `129eab1d-b669-4006-b8da-4d6f6a662ae1` implantou a execução paralela, a remoção da seção de câmeras e as duas correções da auditoria geral. A página pública foi consultada após o contêiner ficar ativo: a seção de câmeras não apareceu e o painel de Muçum continuou presente. A API continuou identificando o mesmo modelo público e SHA-256. A existência de um primeiro arquivo *shadow* no armazenamento remoto após o agendamento ainda precisa de verificação.
+Em 28/09/2026, a versão Cloudflare `129eab1d-b669-4006-b8da-4d6f6a662ae1` implantou a execução paralela, a remoção da seção de câmeras e as duas correções da auditoria geral. A página pública foi consultada após o contêiner ficar ativo: a seção de câmeras não apareceu e o painel de Muçum continuou presente. A API continuou identificando o mesmo modelo público e SHA-256; `/api/defesa-civil?mode=current` e `/api/river-levels` mostraram a mesma leitura mais recente da Rede RS.
+
+O primeiro recibo remoto verificado foi `projection/receipts/2a303a2d-d5bb-4ca6-8f37-30bbb09adc9d.json`. Seu pacote `attempt` tem SHA-256 `4c8dd1b958fb25177fea6bd41612b95cdf98369341cdc10adc504071334d1a77` e contém `local-nowcast-shadow.json` calculado, correção de +0,111 m, com hash da leitura ANA igual ao da fonte arquivada. A tentativa ficou em `waiting_for_data` para publicação porque a hora completa ainda não avançou; isso não impediu o cálculo paralelo nem alterou a última previsão pública.
 
 ## Próxima avaliação
 
