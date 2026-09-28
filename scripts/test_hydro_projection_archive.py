@@ -89,6 +89,7 @@ class ProjectionArchiveTests(unittest.TestCase):
             'short-term-shadow.json': b'{"mode":"shadow","publishable":false}',
             'propagation-shadow.json': b'{"mode":"shadow","rainRequired":false,"publishable":false}',
             'local-nowcast-shadow.json': b'{"mode":"shadow","publishable":false}',
+            'rain-context-shadow.json': b'{"schema":"radar-rain-context-shadow/v1","shadowOnly":true}',
             'forecast.json': b'{"models":[{"id":"frozen","points":[1]}]}',
             'model-metadata.json': b'{"version":"frozen"}',
         }

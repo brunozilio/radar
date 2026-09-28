@@ -31,6 +31,7 @@ from hydro_short_term_candidate import build_shadow
 from hydro_projection_archive import enqueue_attempt
 from hydro_propagation_live import run_shadow as run_propagation_shadow
 from hydro_propagation_public import public_forecast, MODEL_VERSION, MODEL_ID, MODEL_SHA256
+from hydro_rain_context import normalize_rain_context
 
 LEGACY_MODEL_VERSION = 'forecast-6h-v1-complete-hour-v3-mucum-only'
 
@@ -146,7 +147,7 @@ def perform_attempt(args, out, checked_reference):
         shutil.copytree(args.source / 'raw', out / 'raw')
         shutil.copyfile(args.source / 'collection-manifest.json', out / 'collection-manifest.json')
     else:
-        collect(out, datetime.now(TZ), hydrometric_only=True)
+        collect(out, datetime.now(TZ), hydrometric_only=True, rain_context=True)
     shadow = run_propagation_shadow(out, ROOT, checked_reference)
     selection = dict(checkedReferenceAt=checked_reference.isoformat(),
                      modelVersion=MODEL_VERSION, rainRequired=False,
@@ -156,6 +157,19 @@ def perform_attempt(args, out, checked_reference):
         args.selected_reference = reference
         selection.update(referenceAt=reference.isoformat(),
                          referenceAgeSeconds=shadow['referenceAgeSeconds'])
+    else:
+        reference = checked_reference
+    issued_at = datetime.now(TZ)
+    try:
+        rain_context = normalize_rain_context(out, reference, issued_at)
+    except Exception as exc:
+        # Rain is evidence for a future candidate, never a gate for the
+        # currently published hydrometric forecast.
+        rain_context = dict(schema='radar-rain-context-shadow/v1', status='unavailable',
+                            referenceAt=reference.isoformat(), issuedAt=issued_at.isoformat(),
+                            shadowOnly=True, issues=[{'source':'rain-context-normalization',
+                                                       'reason':str(exc)}])
+    dump(out / 'rain-context-shadow.json', rain_context)
     dump(out / 'reference-selection.json', selection)
     try:
         payload = public_forecast(shadow, checked_reference=checked_reference,

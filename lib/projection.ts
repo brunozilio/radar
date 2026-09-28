@@ -145,3 +145,33 @@ export function projectionIsStale(projection: StationProjection, now = Date.now(
   return now - Date.parse(projection.generatedAt) > 30 * 60_000 ||
     now - Date.parse(projection.observation.timestamp) > 150 * 60_000;
 }
+
+export type CurrentMucumObservation = { timestamp: string; level: number; source: string };
+
+export function readCurrentMucumObservation(value: unknown, now = Date.now()): CurrentMucumObservation | null {
+  if (!value || typeof value !== "object") return null;
+  const observation = value as Record<string, unknown>;
+  if (observation.code !== "86510000" || typeof observation.timestamp !== "string" ||
+      !/T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/.test(observation.timestamp) ||
+      !Number.isFinite(Date.parse(observation.timestamp)) || Date.parse(observation.timestamp) > now ||
+      typeof observation.level !== "number" || !Number.isFinite(observation.level) ||
+      typeof observation.source !== "string" || !observation.source) return null;
+  return { timestamp: observation.timestamp, level: observation.level, source: observation.source };
+}
+
+// Only flag a direct contradiction: a newer reading from the same gauge has
+// already exceeded the next future point of a forecast that predicted a rise.
+// Do not change any predicted level or extrapolate from the observed trend.
+export function projectionContradictedByObservation(
+  projection: StationProjection,
+  observation: CurrentMucumObservation | null,
+  now = Date.now(),
+): boolean {
+  if (!observation || Date.parse(observation.timestamp) <= Date.parse(projection.referenceAt)) return false;
+  const points = projection.models[0]?.points ?? [];
+  const nextIndex = points.findIndex(point => Date.parse(point.timestamp) > now);
+  const next = points[nextIndex];
+  const previousLevel = nextIndex > 0 ? points[nextIndex - 1].level : projection.observation.level;
+  return Boolean(next && Date.parse(observation.timestamp) < Date.parse(next.timestamp) &&
+    next.level > previousLevel && observation.level > next.level);
+}

@@ -134,6 +134,9 @@ class PublicHydrometryTests(unittest.TestCase):
         self.assertEqual(args.selected_reference,self.reference)
         self.assertEqual(json.loads((out/'forecast.json').read_text()),result)
         self.assertEqual(json.loads((out/'propagation-shadow.json').read_text()),self.shadow)
+        rain_context=json.loads((out/'rain-context-shadow.json').read_text())
+        self.assertEqual(rain_context['schema'],'radar-rain-context-shadow/v1')
+        self.assertTrue(rain_context['shadowOnly'])
         self.assertFalse((args.state/'history.tar.gz').exists())
         self.assertFalse((args.state/'audit.tar.gz').exists())
         self.assertFalse(result['inputReadiness']['rainRequired'])
@@ -162,8 +165,10 @@ class PublicHydrometryTests(unittest.TestCase):
         with tarfile.open(args.state/'archive'/'blobs'/f"{attempt['sha256']}.tar.gz",'r:gz') as tar:
             archived=json.load(tar.extractfile('forecast.json'))
             shadow=json.load(tar.extractfile('propagation-shadow.json'))
+            rain_context=json.load(tar.extractfile('rain-context-shadow.json'))
         self.assertEqual(archived,result)
         self.assertEqual(shadow,self.shadow)
+        self.assertTrue(rain_context['shadowOnly'])
 
     def test_failed_archive_cannot_save_public_result(self):
         args=self.setup_attempt()

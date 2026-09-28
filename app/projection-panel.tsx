@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TrendingUp } from "lucide-react";
-import { HYDROMETRIC_MODEL_ID, projectionIsStale, validProjection, type ProjectionRefreshState, type StationProjection } from "@/lib/projection";
+import { HYDROMETRIC_MODEL_ID, projectionContradictedByObservation, projectionIsStale, readCurrentMucumObservation, validProjection, type CurrentMucumObservation, type ProjectionRefreshState, type StationProjection } from "@/lib/projection";
 
 const time = (value: string) => new Date(value).toLocaleTimeString("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" });
 const dateTime = (value: string) => `${new Date(value).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" })} às ${time(value)}`;
@@ -48,7 +48,7 @@ export default function ProjectionPanel() {
 
 function ProjectionContent() {
   const city = "Muçum";
-  const [data, setData] = useState<{ projection: StationProjection | null; refresh: ProjectionRefreshState | null; failed: boolean; stale: boolean; loading: boolean; now: number }>({ projection: null, refresh: null, failed: false, stale: false, loading: true, now: 0 });
+  const [data, setData] = useState<{ projection: StationProjection | null; observation: CurrentMucumObservation | null; refresh: ProjectionRefreshState | null; failed: boolean; stale: boolean; loading: boolean; now: number }>({ projection: null, observation: null, refresh: null, failed: false, stale: false, loading: true, now: 0 });
   useEffect(() => {
     const controller = new AbortController();
     let pending = false;
@@ -56,12 +56,16 @@ function ProjectionContent() {
       if (pending) return;
       pending = true;
       try {
+        const observationRequest = fetch("/api/sace-mucum", { cache: "no-store", signal: AbortSignal.any([controller.signal, AbortSignal.timeout(15_000)]) })
+          .then(async response => response.ok ? readCurrentMucumObservation(await response.json()) : null)
+          .catch(() => null);
         const response = await fetch("/api/projection?station=mucum", { cache: "no-store", signal: AbortSignal.any([controller.signal, AbortSignal.timeout(15_000)]) });
         if (!response.ok) throw new Error("unavailable");
         const payload = await response.json();
         if (payload.projection && !validProjection(payload.projection, "mucum")) throw new Error("invalid forecast");
+        const observation = await observationRequest;
         if (!controller.signal.aborted) {
-          setData(previous => ({ projection: payload.projection ?? previous.projection, refresh: readRefreshState(payload.refresh), failed: Boolean(payload.failed), stale: Boolean(payload.stale), loading: false, now: Date.now() }));
+          setData(previous => ({ projection: payload.projection ?? previous.projection, observation, refresh: readRefreshState(payload.refresh), failed: Boolean(payload.failed), stale: Boolean(payload.stale), loading: false, now: Date.now() }));
         }
       } catch {
         if (!controller.signal.aborted) setData(previous => ({ ...previous, failed: true, loading: false, now: Date.now() }));
@@ -75,6 +79,8 @@ function ProjectionContent() {
   const stale = projection && (data.stale || projectionIsStale(projection, data.now));
   const hydrometric = projection?.models[0].id === HYDROMETRIC_MODEL_ID;
   const points = projection?.models[0].points.filter(point => Date.parse(point.timestamp) > data.now).slice(0, 6) ?? [];
+  const newerObservation = projection && data.observation && Date.parse(data.observation.timestamp) > Date.parse(projection.referenceAt) ? data.observation : null;
+  const contradicted = projection && projectionContradictedByObservation(projection, newerObservation, data.now);
   const period = forecastPeriod(points);
   const chart = projection ? [{ timestamp: projection.observation.timestamp, level: projection.observation.level }, ...points] : [];
   const min = Math.floor(Math.min(...chart.map(p => p.level)) * 2) / 2 - .25;
@@ -87,11 +93,14 @@ function ProjectionContent() {
   return (
     <div aria-label={`Previsão de ${city}`} aria-busy={data.loading}>
       <ProjectionRefreshNotice refresh={data.refresh} failed={data.failed} />
-      {stale && !data.failed && <p className="projection-warning" role="status">Exibindo o último cálculo disponível, de {dateTime(projection.generatedAt)}. A previsão pode estar desatualizada.</p>}
+      {stale && !data.failed && <p className="projection-warning" role="status">Último cálculo disponível: {dateTime(projection.generatedAt)}. Os dados desta rodada podem estar desatualizados; confira a medição mais recente abaixo.</p>}
       {!projection ? <p className="projection-empty" role="status">{data.loading ? "Carregando previsão…" : data.failed ? "Previsão temporariamente indisponível." : "Aguardando o primeiro cálculo."}</p> : (
         <>
           {hydrometric && <p className="projection-warning" role="status">Atenção: esta previsão ainda não usa a chuva. Se choveu forte a montante, o nível pode subir antes de essa água aparecer nas vazões das barragens e nos níveis medidos. Nesse caso, o gráfico pode subestimar a subida. Consulte também o <a href="#chuva-acumulada">mapa de chuva</a> e os alertas oficiais.</p>}
-          {points.length ? <>
+          {newerObservation && <p className="projection-warning" role="status">Última leitura consultada da régua de Muçum ({newerObservation.source}): <strong>{level(newerObservation.level)} m em {dateTime(newerObservation.timestamp)}</strong>. {newerObservation.level > projection.observation.level ? `Subiu ${level(newerObservation.level - projection.observation.level)} m` : newerObservation.level < projection.observation.level ? `Baixou ${level(projection.observation.level - newerObservation.level)} m` : "Sem mudança"} desde os dados de {dateTime(projection.referenceAt)} usados neste cálculo. Esta leitura ainda não entrou na rodada exibida.</p>}
+          {!data.observation && !data.loading && <p className="projection-warning" role="status">Não foi possível conferir a previsão com a leitura mais recente da régua de Muçum.</p>}
+          {contradicted && <p className="projection-warning" role="alert">A leitura mais recente já está acima do valor previsto para {dateTime(points[0].timestamp)}. A curva desta rodada foi suspensa porque não representa a subida já medida. Consulte o cálculo original abaixo e acompanhe as medições e alertas oficiais.</p>}
+          {points.length && !contradicted ? <>
             <p className="projection-details">Calculada em {dateTime(projection.generatedAt)}. Dados de {dateTime(projection.referenceAt)}. Previsão {period}.</p>
             <svg className="projection-chart" viewBox="0 0 770 205" role="img" aria-label={`Nível observado em ${city} seguido da previsão de nível ${period}, em metros. Valores disponíveis na tabela abaixo.`}>
               {[min, (min + max) / 2, max].map(v => <g key={v}><line x1="45" x2="745" y1={y(v)} y2={y(v)} stroke="currentColor" opacity=".1" /><text x="35" y={y(v) + 4} textAnchor="end">{v.toFixed(1)}</text></g>)}
@@ -100,7 +109,7 @@ function ProjectionContent() {
               {points.filter((_, i) => i % 3 === 0 || i === points.length - 1).map(p => <text key={p.timestamp} x={x(p.timestamp)} y="196" textAnchor="middle">{time(p.timestamp)}</text>)}
             </svg>
             <div className="projection-table-wrap" tabIndex={0} role="region" aria-label="Previsão horária; role horizontalmente para consultar os horários"><table className="projection-table"><caption className="sr-only">Previsão do nível do rio em {city}, {period}, horário de Brasília</caption><thead><tr>{points.map(p => <th key={p.timestamp} scope="col">{time(p.timestamp)}</th>)}</tr></thead><tbody><tr>{points.map(p => <td key={p.timestamp}>{level(p.level)} <span>m</span></td>)}</tr></tbody></table></div>
-          </> : <p className="projection-empty" role="status">Sem previsão atualizada para as próximas horas.</p>}
+          </> : contradicted ? <details className="projection-details"><summary>Ver valores da rodada anterior, sem validação pela leitura atual</summary><p>Calculada em {dateTime(projection.generatedAt)}, com dados de {dateTime(projection.referenceAt)}. Previsão original {period}.</p><div className="projection-table-wrap" tabIndex={0} role="region" aria-label="Valores da rodada anterior"><table className="projection-table"><caption className="sr-only">Valores originais da previsão de {city}, {period}, horário de Brasília</caption><thead><tr>{points.map(p => <th key={p.timestamp} scope="col">{time(p.timestamp)}</th>)}</tr></thead><tbody><tr>{points.map(p => <td key={p.timestamp}>{level(p.level)} <span>m</span></td>)}</tr></tbody></table></div></details> : <p className="projection-empty" role="status">Sem previsão atualizada para as próximas horas.</p>}
           <ProjectionExplanation hydrometric={hydrometric} />
         </>
       )}
