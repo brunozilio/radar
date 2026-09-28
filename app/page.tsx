@@ -262,6 +262,8 @@ type Station = {
   severity: "normal" | "attention" | "alert" | "flood" | "unavailable";
   quality: string;
   samples: number;
+  expectedSamples: number;
+  coverage: number;
 };
 
 type Bulletin = {
@@ -1492,6 +1494,7 @@ function useLeafletMap(
 
   useEffect(() => {
     let active = true;
+    let resizeTimer: number | undefined;
     (async () => {
       if (!containerRef.current || mapRef.current) return;
       const L = await import("leaflet");
@@ -1500,22 +1503,30 @@ function useLeafletMap(
         center: [centerLatitude, centerLongitude],
         zoom,
         zoomControl: true,
+        scrollWheelZoom: false,
         attributionControl: true,
       });
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         {
           maxZoom: 19,
-          attribution: "&copy; OpenStreetMap &copy; CARTO",
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
         },
       ).addTo(map);
       mapRef.current = map;
       layerRef.current = L.layerGroup().addTo(map);
       setReady(true);
-      window.setTimeout(() => map.invalidateSize(), 0);
+      resizeTimer = window.setTimeout(() => {
+        map.invalidateSize();
+        map.fitBounds(
+          L.latLngBounds([[-29.25, -52.45], [-28.3, -50.0]]),
+          { padding: [24, 24], maxZoom: 8 },
+        );
+      }, 0);
     })();
     return () => {
       active = false;
+      window.clearTimeout(resizeTimer);
       mapRef.current?.remove();
       mapRef.current = null;
       layerRef.current = null;
@@ -1524,6 +1535,20 @@ function useLeafletMap(
   }, [centerLatitude, centerLongitude, containerRef, zoom]);
 
   return { mapRef, layerRef, ready };
+}
+
+function escapeMapHtml(value: string) {
+  return value.replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  })[character]!);
+}
+
+function rainColor(rain: number) {
+  return rain < 50 ? "#3b9cff" : rain <= 80 ? "#facc15" : "#f05252";
 }
 
 function RainMap({
@@ -1538,38 +1563,91 @@ function RainMap({
 
   useEffect(() => {
     let active = true;
+    let cleanupMap: (() => void) | undefined;
     (async () => {
       if (!mapRef.current || !layerRef.current) return;
       const L = await import("leaflet");
-      if (!active || !layerRef.current) return;
-      layerRef.current.clearLayers();
-      const colorForRain = (rain: number) =>
-        rain < 50 ? "#3b9cff" : rain <= 80 ? "#facc15" : "#f05252";
+      if (!active || !mapRef.current || !layerRef.current) return;
+      const map = mapRef.current;
+      const layer = layerRef.current;
       const readableStations = stations.filter(
         (station): station is Station & { rain: number } =>
-          station.rain !== null,
+          station.rain !== null && Number.isFinite(station.rain) &&
+          Number.isFinite(station.latitude) && Number.isFinite(station.longitude),
       );
-      readableStations.forEach((station) => {
-        const color = colorForRain(station.rain);
-        const icon = L.divIcon({
-          className: "leaflet-custom-icon",
-          html: `<span class="rain-marker" style="--marker:${color}"><b>${Math.round(station.rain)}</b><small>mm</small></span>`,
-          iconSize: [48, 48],
-          iconAnchor: [24, 24],
+      const renderMarkers = () => {
+        layer.clearLayers();
+        const points = readableStations.map((station) => ({
+          station,
+          point: map.latLngToContainerPoint([station.latitude, station.longitude]),
+        }));
+        const groups = points.map((point) => [point]);
+        const clusterCenter = (group: typeof points) => ({
+          x: group.reduce((sum, item) => sum + item.point.x, 0) / group.length,
+          y: group.reduce((sum, item) => sum + item.point.y, 0) / group.length,
         });
-        L.marker([station.latitude, station.longitude], { icon })
-          .bindPopup(
-            `<div class="map-popup"><strong>${station.city}</strong><span>${station.name}</span><dl><dt>Chuva ${hours}h</dt><dd>${formatNumber(station.rain, 1)} mm</dd><dt>Amostras</dt><dd>${station.samples}</dd><dt>Atualização</dt><dd>${formatDate(station.timestamp)}</dd></dl></div>`,
-          )
-          .addTo(layerRef.current!);
-      });
+        let merged = true;
+        while (merged) {
+          merged = false;
+          for (let index = 0; index < groups.length; index += 1) {
+            for (let other = index + 1; other < groups.length;) {
+              const first = clusterCenter(groups[index]);
+              const second = clusterCenter(groups[other]);
+              const close = Math.hypot(first.x - second.x, first.y - second.y) < 52;
+              if (close) {
+                groups[index].push(...groups.splice(other, 1)[0]);
+                merged = true;
+              } else other += 1;
+            }
+          }
+        }
+        for (const group of groups) {
+          const members = group.map(({ station }) => station);
+          const cluster = members.length > 1;
+          const latitude = members.reduce((sum, station) => sum + station.latitude, 0) / members.length;
+          const longitude = members.reduce((sum, station) => sum + station.longitude, 0) / members.length;
+          const station = members[0];
+          const partial = station.coverage < 0.75;
+          const icon = L.divIcon({
+            className: "leaflet-custom-icon",
+            html: cluster
+              ? `<span class="rain-marker rain-marker--cluster"><b>${members.length}</b><small>postos</small></span>`
+              : `<span class="rain-marker${partial ? " rain-marker--partial" : ""}" style="--marker:${rainColor(station.rain)}"><b>${Math.round(station.rain)}</b><small>mm</small></span>`,
+            iconSize: [48, 48],
+            iconAnchor: [24, 24],
+          });
+          const stationDetails = (item: Station & { rain: number }) =>
+            `<div class="map-popup-station"><strong>${escapeMapHtml(item.city)}</strong><span>${escapeMapHtml(item.name)}</span><b>${formatNumber(item.rain, 1)} mm</b><small>${item.samples} de ~${item.expectedSamples} amostras${item.coverage < 0.75 ? " · dados parciais" : ""} · ${escapeMapHtml(formatDate(item.timestamp))}</small></div>`;
+          const marker = L.marker([latitude, longitude], { icon });
+          if (cluster && map.getZoom() < 15) {
+            marker.bindTooltip(`${members.length} estações próximas · clique para ver a localização de cada uma`);
+            marker.on("click", () => {
+              map.fitBounds(
+                L.latLngBounds(members.map((item) => [item.latitude, item.longitude])),
+                { padding: [80, 80], maxZoom: Math.min(15, map.getZoom() + 3) },
+              );
+            });
+          } else {
+            marker.bindPopup(
+              cluster
+                ? `<div class="map-popup map-popup--cluster"><strong>${members.length} estações muito próximas · chuva ${hours}h</strong>${members.map(stationDetails).join("")}</div>`
+                : `<div class="map-popup"><strong>${escapeMapHtml(station.city)}</strong><span>${escapeMapHtml(station.name)}</span><dl><dt>Chuva ${hours}h</dt><dd>${formatNumber(station.rain, 1)} mm${partial ? " · parcial" : ""}</dd><dt>Amostras</dt><dd>${station.samples} de ~${station.expectedSamples}</dd><dt>Atualização</dt><dd>${escapeMapHtml(formatDate(station.timestamp))}</dd><dt>Estação</dt><dd>${escapeMapHtml(station.code)}</dd></dl></div>`,
+            );
+          }
+          marker.addTo(layer);
+        }
+      };
+      renderMarkers();
+      map.on("zoomend", renderMarkers);
+      cleanupMap = () => map.off("zoomend", renderMarkers);
     })();
     return () => {
       active = false;
+      cleanupMap?.();
     };
   }, [hours, layerRef, mapRef, ready, stations]);
 
-  return <div ref={containerRef} className="leaflet-map" aria-label="Mapa de chuva acumulada na Bacia do Taquari" />;
+  return <div ref={containerRef} className="leaflet-map" aria-label="Mapa de chuva acumulada a montante de Muçum" />;
 }
 
 function ExpandableRainMap({
@@ -1631,7 +1709,7 @@ function ExpandableRainMap({
             <header>
               <div>
                 <h2 id={titleId}>Chuva acumulada</h2>
-                <time>Últimas {hours}h</time>
+                <time>Últimas {hours}h · a montante de Muçum</time>
               </div>
               <button
                 ref={closeButtonRef}
@@ -1663,7 +1741,12 @@ export default function Home() {
   const [history, setHistory] = useState<HistoryPoint[]>([]);
   const [riverSensors, setRiverSensors] = useState<RiverSensor[]>([]);
   const [rainHours, setRainHours] = useState<WindowHours>(24);
-  const [stations, setStations] = useState<Station[]>([]);
+  const [rainData, setRainData] = useState<{
+    hours: WindowHours;
+    stations: Station[];
+    generatedAt: string;
+  } | null>(null);
+  const [rainErrorHours, setRainErrorHours] = useState<WindowHours | null>(null);
   const [alerts, setAlerts] = useState<ActiveAlert[]>([]);
   const [alertsLoadState, setAlertsLoadState] =
     useState<AlertsLoadState>("loading");
@@ -2413,13 +2496,26 @@ export default function Home() {
     const refreshStations = () => {
       fetch(`/api/stations?hours=${rainHours}`, { cache: "no-store" })
         .then(async (response) => {
-        const payload = await response.json();
-        if (!response.ok) throw new Error(payload.message || "Fonte indisponível");
-        if (active) setStations(payload.stations || []);
-      })
-      .catch(() => {
-        // Mantém a última leitura durante falhas transitórias.
-      });
+          const payload = await response.json();
+          if (!response.ok) throw new Error(payload.message || "Fonte indisponível");
+          if (active) {
+            const nextData = {
+              hours: rainHours,
+              stations: Array.isArray(payload.stations) ? payload.stations : [],
+              generatedAt: payload.generatedAt,
+            };
+            setRainData((previous) =>
+              previous?.hours === rainHours &&
+              JSON.stringify(previous.stations) === JSON.stringify(nextData.stations)
+                ? { ...previous, generatedAt: nextData.generatedAt }
+                : nextData,
+            );
+            setRainErrorHours(null);
+          }
+        })
+        .catch(() => {
+          if (active) setRainErrorHours(rainHours);
+        });
     };
     refreshStations();
     const poller = window.setInterval(refreshStations, 60_000);
@@ -2648,6 +2744,12 @@ export default function Home() {
       return sensor ? [sensor] : [];
     }),
   }));
+  const displayedRainData = rainData?.hours === rainHours ? rainData : null;
+  const displayedRainStations = displayedRainData?.stations ?? [];
+  const rainAvailableCount = displayedRainStations.filter((station) => station.rain !== null).length;
+  const rainPartialCount = displayedRainStations.filter(
+    (station) => station.rain !== null && station.coverage < 0.75,
+  ).length;
   return (
     <main>
       {installAvailable && !appInstalled && (
@@ -3368,12 +3470,23 @@ export default function Home() {
                 />
               }
             />
-            <ExpandableRainMap stations={stations} hours={rainHours} />
+            <ExpandableRainMap
+              stations={displayedRainStations}
+              hours={rainHours}
+            />
             <div className="map-legend">
               <span><i className="rain-low" /> Fraca &lt; 50 mm</span>
               <span><i className="rain-watch" /> Atenção 50–80 mm</span>
               <span><i className="rain-critical" /> Crítica &gt; 80 mm</span>
+              <span><i className="rain-partial" /> Dados parciais</span>
             </div>
+            <p className="map-status" role="status">
+              {displayedRainData
+                ? `${rainAvailableCount}/${displayedRainStations.length} estações a montante de Muçum com dados; ${rainPartialCount} com cobertura parcial estimada. Soma das amostras disponíveis, sem preencher lacunas. Consulta: ${formatDate(displayedRainData.generatedAt)}.${rainErrorHours === rainHours ? " Falha na atualização; exibindo a última consulta." : ""}`
+                : rainErrorHours === rainHours
+                  ? "Não foi possível carregar as leituras para esta janela."
+                  : "Carregando leituras de chuva…"}
+            </p>
           </article>
         </section>
 

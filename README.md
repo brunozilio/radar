@@ -233,3 +233,19 @@ O satélite também consulta o setor sul da América do Sul da NOAA/GOES-19,
 canal infravermelho 13. A API escolhe a sequência do provedor mais recente,
 sem misturar projeções. Imagens NOAA mostram a identificação da fonte e não
 recebem a sobreposição geográfica calibrada para INMET/CPTEC.
+
+## Mapa de chuva
+
+O mapa mostra as estações selecionadas a montante de Muçum e usa tiles do
+OpenStreetMap com atribuição visível. O mapa embutido não
+captura a roda do mouse; o zoom continua disponível pelos botões. Estações
+próximas são agrupadas conforme o zoom. Selecionar um grupo aproxima o mapa
+até revelar as posições individuais; pontos ainda coincidentes em zoom alto
+mostram uma lista no popup.
+
+O acumulado soma apenas as amostras válidas dentro da janela selecionada. A
+API informa a quantidade de amostras e uma cobertura aproximada, estimada pela
+frequência recente da própria estação (entre 15 e 60 minutos). Contorno
+tracejado indica cobertura inferior a 75%; lacunas não são preenchidas com
+zero. A tela mostra a quantidade de estações com dados e sinaliza falhas de
+atualização ou troca de janela.
