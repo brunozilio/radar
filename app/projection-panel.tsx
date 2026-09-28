@@ -93,11 +93,9 @@ function ProjectionContent() {
   return (
     <div aria-label={`Previsão de ${city}`} aria-busy={data.loading}>
       <ProjectionRefreshNotice refresh={data.refresh} failed={data.failed} />
-      {stale && !data.failed && <p className="projection-warning" role="status">Último cálculo disponível: {dateTime(projection.generatedAt)}. Os dados desta rodada podem estar desatualizados; confira a medição mais recente abaixo.</p>}
+      {stale && !data.failed && <p className="projection-warning" role="status">Último cálculo disponível: {dateTime(projection.generatedAt)}. Os dados desta rodada podem estar desatualizados; confira os níveis do rio acima.</p>}
       {!projection ? <p className="projection-empty" role="status">{data.loading ? "Carregando previsão…" : data.failed ? "Previsão temporariamente indisponível." : "Aguardando o primeiro cálculo."}</p> : (
         <>
-          {hydrometric && <p className="projection-warning" role="status">Atenção: esta previsão ainda não usa a chuva. Se choveu forte a montante, o nível pode subir antes de essa água aparecer nas vazões das barragens e nos níveis medidos. Nesse caso, o gráfico pode subestimar a subida. Consulte também o <a href="#chuva-acumulada">mapa de chuva</a> e os alertas oficiais.</p>}
-          {newerObservation && <p className="projection-warning" role="status">Última leitura consultada da régua de Muçum ({newerObservation.source}): <strong>{level(newerObservation.level)} m em {dateTime(newerObservation.timestamp)}</strong>. {newerObservation.level > projection.observation.level ? `Subiu ${level(newerObservation.level - projection.observation.level)} m` : newerObservation.level < projection.observation.level ? `Baixou ${level(projection.observation.level - newerObservation.level)} m` : "Sem mudança"} desde os dados de {dateTime(projection.referenceAt)} usados neste cálculo. Esta leitura ainda não entrou na rodada exibida.</p>}
           {!data.observation && !data.loading && <p className="projection-warning" role="status">Não foi possível conferir a previsão com a leitura mais recente da régua de Muçum.</p>}
           {contradicted && <p className="projection-warning" role="alert">A leitura mais recente já está acima do valor previsto para {dateTime(points[0].timestamp)}. A curva desta rodada foi suspensa porque não representa a subida já medida. Consulte o cálculo original abaixo e acompanhe as medições e alertas oficiais.</p>}
           {points.length && !contradicted ? <>
