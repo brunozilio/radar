@@ -8,6 +8,10 @@ Atualização às 14h23: a versão `129eab1d-b669-4006-b8da-4d6f6a662ae1`
 foi implantada. A página pública deixou de renderizar a seção de câmeras;
 as correções da leitura atual da Rede RS e do aviso de previsão desatualizada
 foram incluídas. As observações abaixo descrevem a auditoria anterior à publicação.
+Uma checagem responsiva posterior no navegador em tamanho de celular mostrou
+alertas, níveis, barragens, previsão, radares, satélite e chuva acessíveis,
+sem rolagem horizontal da página e sem a seção de câmeras. A tabela da previsão
+mantém sua própria região de rolagem horizontal.
 
 Alterações locais do mapa de chuva apareceram no workspace durante a auditoria.
 Elas foram preservadas e entraram no build final, mas os testes de interface no
@@ -81,7 +85,7 @@ de uma publicação posterior para recebê-las.
   bloqueio é geral ou restrito ao ambiente da auditoria.
 - Não foi feita inscrição em notificações push nem disparo de alerta de teste;
   entrega real, permissões do navegador e instalação da PWA permanecem sem
-  verificação completa. Não houve teste de tela móvel nesta sessão.
+  verificação completa.
 
 ## Checagem retrospectiva da previsão
 
