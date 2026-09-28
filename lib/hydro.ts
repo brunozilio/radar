@@ -143,7 +143,7 @@ export const SACE_STATIONS: HydroStation[] = [
   },
   {
     code: "86117000",
-    city: "Vila Maria",
+    city: "Bom Jesus",
     name: "PCH Serra dos Cavalinhos I",
     latitude: -28.79,
     longitude: -50.6789,

@@ -31,7 +31,10 @@ export async function GET(request: Request) {
       FROM rain_readings
       WHERE station = ?
       ORDER BY timestamp DESC
+      LIMIT 600
     `);
+    const referenceMs = Date.now();
+    const cutoff = referenceMs - hours * 60 * 60 * 1000;
     const stations = MUCUM_UPSTREAM_RAIN_STATIONS.map((station) => {
       const records = (statement.all(station.code) as Array<{
         timestamp: string;
@@ -48,8 +51,25 @@ export async function GET(request: Request) {
         quality: row.quality,
       }));
       const latest = records[0] || null;
-      const referenceMs = Date.now();
-      const cutoff = referenceMs - hours * 60 * 60 * 1000;
+      const validRecords = records.filter(
+        (row) => row.rain !== null && Number.isFinite(row.rain) && row.rain >= 0,
+      );
+      const windowRecords = validRecords.filter((row) => {
+        const time = Date.parse(row.timestamp);
+        return time >= cutoff && time <= referenceMs;
+      });
+      const recentTimes = validRecords
+        .map((row) => Date.parse(row.timestamp))
+        .filter((time) => Number.isFinite(time) && time >= referenceMs - 48 * 60 * 60 * 1000 && time <= referenceMs)
+        .sort((a, b) => a - b);
+      const intervals = recentTimes.slice(1).map((time, index) =>
+        (time - recentTimes[index]) / 60_000,
+      ).filter((minutes) => minutes >= 5 && minutes <= 90).sort((a, b) => a - b);
+      const cadenceMinutes = Math.max(
+        15,
+        Math.min(60, intervals.length ? intervals[Math.floor(intervals.length / 2)] : 60),
+      );
+      const expectedSamples = Math.max(1, Math.round((hours * 60) / cadenceMinutes));
       const rain = accumulatedRain(records, hours, referenceMs);
       const level =
         latest?.levelCm === null || latest?.levelCm === undefined
@@ -60,16 +80,16 @@ export async function GET(request: Request) {
         level,
         rain,
         discharge: latest?.discharge ?? null,
-        timestamp: latest?.timestamp ?? null,
-        quality: latest?.quality ?? "missing",
+        timestamp: windowRecords[0]?.timestamp ?? null,
+        quality: windowRecords[0]?.quality ?? "missing",
         severity: station.thresholds
           ? severityFor(level, station.thresholds)
           : "unavailable",
-        samples: records.filter(
-          (row) => Date.parse(row.timestamp) >= cutoff,
-        ).length,
+        samples: windowRecords.length,
+        expectedSamples,
+        coverage: Math.min(1, Number((windowRecords.length / expectedSamples).toFixed(2))),
       };
-    }).filter((station) => station.rain !== null);
+    });
 
     return NextResponse.json(
       { hours, generatedAt: new Date().toISOString(), stations },
