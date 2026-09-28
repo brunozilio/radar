@@ -1,0 +1,48 @@
+{
+  "mode": "local workerd/Miniflare with isolated R2 binding",
+  "remoteRequests": false,
+  "checkedAt": "2026-09-23T11:46:31.038Z",
+  "results": [
+    {
+      "attempt": 1,
+      "status": 201,
+      "body": {
+        "stored": true,
+        "key": "projection/blobs/c87615fd94a7dc339533b705cd496ee6e1f8c67cddd30a7bc856007477292fc7.tar.gz"
+      }
+    },
+    {
+      "attempt": 2,
+      "status": 412,
+      "body": {
+        "message": "Object already exists"
+      }
+    }
+  ],
+  "head": {
+    "status": 200,
+    "sha256": "c87615fd94a7dc339533b705cd496ee6e1f8c67cddd30a7bc856007477292fc7"
+  },
+  "largeRuntime": {
+    "bytes": 8831591,
+    "requests": [
+      {
+        "method": "HEAD",
+        "status": 404,
+        "bytesSent": 0
+      },
+      {
+        "method": "PUT",
+        "status": 201,
+        "bytesSent": 8831591
+      },
+      {
+        "method": "HEAD",
+        "status": 200,
+        "bytesSent": 0
+      }
+    ],
+    "rawDuplicateStatus": 412
+  },
+  "conclusion": "Local conditional duplicates (small and 8.8 MB) return 412. The patched real client uploads the large body once and validates repeats by HEAD only. Production ContainerProxy streaming behavior is not simulated."
+}

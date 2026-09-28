@@ -2,9 +2,11 @@ import {
   existsSync,
   mkdirSync,
   rmSync,
+  readFileSync,
   writeFileSync,
 } from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 const OBJECT_STORAGE_URL = (
   process.env.OBJECT_STORAGE_URL || ""
@@ -88,6 +90,50 @@ export async function putStoredObject({
     signal: AbortSignal.timeout(30_000),
   });
   await assertRemoteResponse(response, `R2 PUT ${key}`);
+  return storedObjectReference(key);
+}
+
+/** Create once; an identical retry is accepted, a conflicting body never is. */
+export async function putImmutableStoredObject({ key, bytes, mimeType, localPath }: {
+  key: string; bytes: Buffer; mimeType: string; localPath: string;
+}) {
+  const sha256 = createHash("sha256").update(bytes).digest("hex");
+  if (!OBJECT_STORAGE_URL) {
+    mkdirSync(path.dirname(localPath), { recursive: true });
+    try { writeFileSync(localPath, bytes, { flag: "wx" }); }
+    catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
+      if (!readFileSync(localPath).equals(bytes)) throw new Error(`Immutable object conflict: ${key}`);
+    }
+    return localPath;
+  }
+  const existingMatches = async () => {
+    const previous = await fetch(remoteUrl(key), {
+      method: "HEAD", signal: AbortSignal.timeout(10_000),
+    });
+    if (previous.status === 404) return false;
+    await assertRemoteResponse(previous, `R2 immutable HEAD ${key}`);
+    if (previous.headers.get("x-content-sha256") !== sha256) {
+      throw new Error(`Immutable object conflict: ${key}`);
+    }
+    return true;
+  };
+  // Runtime archives are shared by every attempt. Confirm their checksum before
+  // transferring the same multi-megabyte body again, including after a lost ACK.
+  if (await existingMatches()) return storedObjectReference(key);
+  const response = await fetch(remoteUrl(key), {
+    method: "PUT", headers: { "content-type": mimeType, "if-none-match": "*",
+      "x-monitora-metadata": Buffer.from(JSON.stringify({ sha256 })).toString("base64url") },
+    body: Uint8Array.from(bytes), signal: AbortSignal.timeout(60_000),
+  });
+  if (response.status === 412) {
+    // Another publisher may win after our HEAD. Conditional creation still
+    // prevents overwrites, and its winner must contain exactly the same bytes.
+    await response.body?.cancel();
+    if (await existingMatches()) return storedObjectReference(key);
+    throw new Error(`Immutable object conflict: ${key}`);
+  }
+  await assertRemoteResponse(response, `R2 immutable PUT ${key}`);
   return storedObjectReference(key);
 }
 

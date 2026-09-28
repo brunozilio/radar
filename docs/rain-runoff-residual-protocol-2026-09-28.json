@@ -1,0 +1,13 @@
+{
+  "id": "rain-runoff-residual-v1",
+  "frozenBeforeEvaluation": "2026-09-28",
+  "status": "retrospective exploratory; no public promotion",
+  "question": "Can age-specific observed rain improve the six-hour Muçum level forecast before hydrometry responds, without the large false rises of direct linear rain addition?",
+  "data": "Exact-hour observed level and flow dataset plus five area-weighted rainfall regions on a quarter-hour grid. Rain windows end at t-1h. Every 3, 6, 12, 24h regional window must have at least 50% coverage. Missing rain excludes the same origin from both paired arms; it is never zero-filled.",
+  "causalInputs": "At origin t, hydrometric inputs are observed at or before t; rainfall inputs contain only measurements at or before t-1h. No future observed rain, weather hindsight, target level, or future dam flow enters predictors.",
+  "arms": "Fixed public hydrometric feature family, lags, and ridge alpha are refitted on common support. Candidate adds a second stage fitted only to the hydrometric residual: nonnegative ridge on each region's rainfall during 0-3h, 3-6h, 6-12h, and 12-24h before t-1h. Each age-bin amount is clipped to [0,40] mm and divided by 100. No intercept; regularization alpha=10; nonnegative coefficients; resulting uplift clipped to [0,0.35] m. Candidate may be inadequate for large floods and flags input above the clipped support.",
+  "splits": "Same historical cutoffs and 33h embargo as rain-leading-signal-v1: train targets before 2025-10-01T00:00:00-03:00; validation origins after embargo and targets before 2026-07-01T00:00:00-03:00; test origins after embargo and targets before 2026-09-21T00:00:00-03:00; later September is separate stress. Validation uses train-only fit. Test/stress use train+validation refit. No tuning based on validation, test, or stress results.",
+  "assessment": "Paired MAE and within-0.50m for every horizon and phase; all, >=7m, >=1m rapid rise, 6h regional rainfall >=20/50/100mm, quiet hydrometry plus rain, and false rise counts. Record input-cap frequencies and availability counts. The test/stress periods have already been examined in earlier research and are not independent untouched confirmation.",
+  "operation": "Artifact is a research candidate only. Historical rain arrival/receipt timing is not verified; t-1h is a conservative assumed margin, not proof of availability. Model cannot react to future rain unless a separately archived issued forecast is integrated and evaluated. No public promotion without prospective issued predictions and independent flood events.",
+  "promotionEligible": false
+}

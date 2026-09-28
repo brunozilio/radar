@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "protocol_id": "mucum-level-flow-propagation-v1",
+  "registered_on": "2026-09-23",
+  "registration_stage": "Before fitting the candidate introduced by this protocol; existing historical periods and related models have already been inspected in earlier development.",
+  "scope": "Muçum station 86510000 only. Build and evaluate an independent short-term candidate using observed river levels and dam flows, without rainfall or weather forecasts as model inputs. Prospective shadow execution is permitted after engineering checks. Public fallback remains disabled until a separate per-horizon release decision meets the promotion gates below.",
+  "not_claimed": [
+    "An implementation of MGB-IPH, a copy of an SGB operational model, or physically measured water travel times.",
+    "Historical out-of-sample scores from previously inspected periods are independent prospective evidence.",
+    "Successful fitting, more forecast availability, or a high R-squared proves 98% accuracy."
+  ],
+  "primary_sources": [
+    {
+      "title": "SGB — Bacia do Rio Taquari, apresentação",
+      "url": "https://www.sgb.gov.br/sace/taquari_apresentacao.php",
+      "accessed_on": "2026-09-23",
+      "supports": "SGB describes a statistical forecast using monitored stages and approximately four hours of anticipation for Muçum and Encantado. This motivates a stage-based comparator, not adoption of undisclosed coefficients or an assumption that six hours are validated."
+    },
+    {
+      "title": "Mendes, Marcuzzo e Buffon — Aplicação de rede neural linear para modelos autorregressivos em estações fluviométricas da bacia do rio Taquari no Rio Grande do Sul",
+      "url": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/162ce310-cb58-4f3d-ae86-e677203c5d1d/content",
+      "accessed_on": "2026-09-23",
+      "supports": "Primary SGB research evaluates interpretable autoregressive stage models at two, three and four hours. Page 4 states that all data were used for calibration; its reported fit metrics are not an independent holdout benchmark for this candidate."
+    },
+    {
+      "title": "Pontes et al. — Modelagem hidrológica e hidráulica de grande escala com propagação inercial de vazões",
+      "url": "https://revistas.abrhidro.org.br/article.php?Article=5115",
+      "accessed_on": "2026-09-23",
+      "supports": "Primary MGB-IPH research distinguishes rainfall-runoff processes from routing through the river network and evaluates attenuation with inertial routing versus Muskingum-Cunge. Those processes motivate lag and peak diagnostics here; a statistical lag does not reproduce that hydraulic model."
+    }
+  ],
+  "data_contract": {
+    "target": {"station": "86510000", "variable": "H", "unit": "m"},
+    "level_stations": ["86510000", "86472000", "86472600", "86500000"],
+    "dam_plants": ["castro", "monte", "julho"],
+    "dam_variables": ["Q", "I"],
+    "rain_used_as_predictor": false,
+    "weather_forecast_used_as_predictor": false,
+    "required_observations": [
+      "Exact hourly timestamps with an explicit timezone, approved source quality and finite values for every declared current and lagged feature.",
+      "No interpolation, forward filling, shifted late rainfall, or substitution of absent readings by zero. An exact approved measured zero is a value, not an absence.",
+      "Keep station identity, level datum, units, dam identity and flow direction. Do not merge nearby stations into the same series.",
+      "Preserve raw source bytes, source identifiers, hashes, source publication or first receipt time where available, observation time and revisions. Conflicting duplicates are unavailable unless resolved by a documented source-version rule.",
+      "Historical ANA/ONS or retrospectively downloaded data without original receipt evidence are labelled retrospective_availability_unverified. Do not pretend their collection timestamp proves operational availability at the historical forecast issue."
+    ],
+    "cascade_rule": "Keep the three dams as separate predictors. Never sum Castro Alves, Monte Claro and 14 de Julho releases and call the result an independent total entering Muçum: serial reaches can measure the same water at different times. Regression coefficients are statistical associations, not tributary water-balance shares. A later physical routing model requires a verified directed drainage network and incremental contributions.",
+    "no_rain_mode": "The absence of a rain input is part of a distinct model contract, not permission to remove inputs from the current 180-feature rainfall model. The original complete-input model retains its rainfall gate. Candidate readiness depends on all declared levels, flows and historical lags."
+  },
+  "timing_contract": {
+    "reference_at": "Exact hour of the newest common complete observation set.",
+    "issued_at": "Actual completion/issuance time, never backdated to reference_at.",
+    "nominal_leads_hours": [1, 2, 3, 4, 5, 6],
+    "target_at": "reference_at + nominal_lead_hours",
+    "real_lead_hours": "(target_at - issued_at) / 3600",
+    "expiry": "Do not issue points with target_at <= issued_at. A delayed reference produces only its still-future suffix; it does not manufacture six further hours.",
+    "telemetry_delay": "received_at - observation_at; report by source separately from statistical lag. Prospective features require observation_at <= reference_at and received_at <= issued_at.",
+    "propagation_lag": "A lag selected from training relationships between source changes and Muçum changes. Call it a statistical response lag; it can mix routing, reservoir operations, unmeasured tributaries and shared forcing, and is not a parcel-of-water travel time.",
+    "horizon_reporting": "Report nominal horizons 1..6 and exact real leads separately. For the existing accuracy goal use its minimum real-lead bands [h,h+1); a point with 40 minutes remaining cannot establish one-hour performance, and nominal six hours generally cannot establish six real hours after a delayed issue. Sub-hour points have a separate diagnostic group."
+  },
+  "candidate_space": {
+    "families": ["ridge_contemporaneous", "ridge_train_selected_lags"],
+    "comparators": ["exact_local_level_persistence", "exact_local_two_hour_linear_trend"],
+    "ridge_alpha_grid": [1, 10, 100, 1000],
+    "response": "Direct level change from the exact Muçum reference observation, separately for each nominal horizon; add the unchanged reference level back to obtain forecast level.",
+    "lag_search_hours": {"minimum": 0, "maximum": 24, "step": 1},
+    "lag_selection": "Use positive correlations of first differences in the training partition only, with exact observation pairs. Freeze selected lags before validation. Save pair counts and all candidate-lag scores, including undefined correlations; do not maximize cross-correlation of raw strongly autocorrelated levels across the full dataset.",
+    "no_positive_supported_lag": "Record an explicit unsupported diagnostic and use only the declared contemporaneous configuration. Do not invent a positive physical lag from an undefined or negative correlation.",
+    "lag_identification_limit": "A broad correlation plateau, unstable lag across training subperiods, or strongly collinear dam series prevents a precise physical-delay claim even when the forecast candidate can be evaluated.",
+    "preprocessing": "Fit centering and scaling only on the rows available to that fit. No imputation or target-dependent row weighting. Preserve the ordered feature contract and feature/source hashes.",
+    "selection": "Select alpha using validation only and the frozen score: overall MAE + 0.5 * MAE where observed target minus reference level >= 1.0 m + 0.5 * MAE where observed target level >= 9.0 m. These are retrospective validation labels, never predictor or live-eligibility inputs. The two thresholds follow the existing hydro_forecast selection recipe and do not replace the goal's >= 7.0 m high-water evaluation.",
+    "selection_missing_group": "An absent validation subgroup contributes zero to the selection score, as an explicitly declared omitted penalty; store its zero count, the omitted term, and null group metrics. This is not zero error, evidence of performance, or permission to pass that regime's release gate. Compare alternatives on identical membership so absence is shared.",
+    "refit": "After selecting alpha, a test model may refit on training plus validation with preprocessing recomputed on those rows. The lag selection remains frozen from the original training partition. No choice uses test or current stress-period outcomes.",
+    "search_budget": "Two ridge families times four alpha values times six nominal horizons for validation, then one selected fit per family and horizon for test. No alternate lag grid, thresholds, weights, clipping or hyperparameters chosen after inspecting test errors under this protocol.",
+    "paired_comparisons": "All family comparisons use the identical complete-origin and exact-target intersection for that horizon. Separately report each method's natural availability so stricter feature requirements cannot hide difficult cases."
+  },
+  "retrospective_partitions": {
+    "timezone": "America/Sao_Paulo (UTC-03 for the specified dates)",
+    "training_targets_before": "2025-10-01T00:00:00-03:00",
+    "validation_start": "2025-10-01T00:00:00-03:00",
+    "validation_targets_before": "2026-07-01T00:00:00-03:00",
+    "test_start": "2026-07-01T00:00:00-03:00",
+    "test_targets_before": "2026-09-21T00:00:00-03:00",
+    "stress_current_start": "2026-09-21T00:00:00-03:00",
+    "stress_current_end": "End of the frozen source snapshot, recorded exactly in the execution manifest.",
+    "maximum_feature_lookback_hours": 27,
+    "embargo_hours_after_each_validation_or_test_start": 33,
+    "boundary_rule": "Require each training/validation label before its upper boundary; exclude validation and test origins during the first 33 hours after their lower boundary, covering the maximum 27-hour predictor history and six-hour target horizon. Save all exclusion masks. The separately named current stress period starts on September 21 without an additional embargo because the fitted model ends before the July validation boundary; it is a fully disclosed development diagnostic, not an independent split from the adjacent test event.",
+    "event_audit": "Identify events only for evaluation and split auditing; never feed their future-defined phase into the forecast or use it for live eligibility. Mark any hydrological episode crossing a partition boundary and exclude it from claims of event-independent performance. A timestamp split and embargo alone do not prove event independence.",
+    "prior_exposure": "These date ranges overlap previous Radar development and diagnostics. Name this a chronological retrospective experiment; reserve entirely unseen whole events for independent validation and use prospective shadow for as-received evidence."
+  },
+  "diagnostic_groups": {
+    "issue_phase": "Use only exact observed history available at issue to label rising, stable or falling under the frozen implementation threshold; save its numeric threshold and slope interval in the run manifest before fitting.",
+    "high_water": "Exact observed target level >= 7 m, the existing project's analytic threshold rather than an official alert elevation. Future level is an evaluation label only.",
+    "event_phase": "For held-out event diagnostics label pre-peak rise, a peak transition window within +/-3 hours of the observed event maximum, and recession; multi-peak episodes remain one event unless a pre-registered event catalogue separates them. No event or phase is selected because a candidate performed well there.",
+    "event_separation": "For the prospective catalogue, use independent hydrological episodes reviewed without candidate errors; retain the whole rising limb, peak and recession together. Administrative day changes and consecutive issues are not independent events. Record station outages and uncertain event boundaries.",
+    "rain_coverage": "Report rain-complete versus rain-unavailable opportunities from the original rainfall gate using evidence available at the actual issue. Separate a genuine source outage from measured zero rainfall. Retrospective missing rain without historical receipts cannot certify the live outage stratum.",
+    "unobserved_extremes": "Explicitly list the event magnitudes, dam-operation regimes and stage ranges absent from training or validation. Do not generalize ordinary recession performance to unseen large floods."
+  },
+  "evaluation": {
+    "opportunity_denominator": "One opportunity per distinct candidate reference hour and nominal target horizon, whether a forecast is produced or blocked. Retry checks of the same reference do not create independent opportunities. Preserve reasons: missing level, missing flow, missing lag, conflicting source, expired target, unsupported model domain, inference failure, or missing target truth.",
+    "metrics_per_horizon_and_group": [
+      "Scheduled opportunities, input-ready opportunities, emitted forecasts, exact known targets and verified pairs",
+      "MAE, signed bias, P90 and P98 absolute error, maximum absolute error",
+      "Hits and hit rate within +/-0.50 m; no forecast or no exact truth is not a hit",
+      "Paired candidate-minus-comparator error, improved/worse/unchanged counts and performance by complete event",
+      "Peak level error and peak-time error where the forecast window actually contains an observed event peak",
+      "Coverage of forecasts and, if an uncertainty interval is later introduced, both interval width and empirical coverage"
+    ],
+    "uncertainty": "Use event-block resampling for independent-event comparisons and disclose the number of independent events. Consecutive hourly rows, overlapping target horizons and multiple revisions of the same issue are not independent samples. With too few events report descriptive values and insufficient evidence, not a narrow row-wise confidence interval.",
+    "anti_leakage_checks": [
+      "No target timestamp at or after a fit partition's upper boundary contributes to that fit.",
+      "No observation or source receipt later than issue contributes to a prospective feature vector.",
+      "Correlation lags, alpha, scaling and eligibility rules are selected before accessing their reserved evaluation outcomes.",
+      "Prediction records are immutable and hashed before scoring; verify exact station/time matches rather than interpolated truth.",
+      "Training targets, validation selections, test masks and source-version hashes are exported so another process can reproduce membership and predictions."
+    ]
+  },
+  "release_stages": {
+    "local_experiment": "Allowed now under this protocol; save all outcomes including failure and regressions. Passing retrospective checks permits only the next stage.",
+    "prospective_shadow": "Allowed once source, time, missing-data and inference tests pass. Keep a distinct model version and immutable as-received inputs; run even when rainfall coverage is inadequate if every candidate level/flow/lag input is valid. Do not replace the public rainfall model or alter its readiness gate.",
+    "public_fallback": "Disabled by default. Release only an explicitly validated horizon and source-age range after review of independent whole events and prospective as-received cases, including real rainfall outages, rise, peak and recession. No public promotion solely from one current falling episode or retrospective average gain."
+  },
+  "promotion_gates": [
+    "Freeze candidate code, parameters, ordered features, lag choices, source-age bounds and supported horizons before independent validation.",
+    "At every proposed public horizon, demonstrate lower paired MAE than persistence and the two-hour trend on independent events, with a positive event-block uncertainty assessment. The direct rainfall model must also be compared where both are available, without counting an old expired prediction as a fresh forecast.",
+    "Require no reduction in the +/-0.50 m hit rate and no increase in P98 absolute error, maximum absolute error or absolute bias in supported high-water, rising, peak and recession groups. A group with insufficient independent cases blocks release for that group; it is not evidence of no regression.",
+    "Show actual coverage gain during prospective rainfall-unavailable opportunities while preserving complete level/flow inputs. Publish the full opportunity denominator and exclusions.",
+    "Confirm no source is outside the validated stage, flow, operational or age range. A fallback may support fewer than six horizons; unsupported leads remain unavailable.",
+    "Keep a rollback path and the original rainfall model/version. Select the fallback by predeclared input availability and validated scope, never by seeing which model later matched the truth."
+  ],
+  "accuracy_goal": {
+    "definition_source": "docs/forecast-accuracy-goal.md",
+    "absolute_error_tolerance_m": 0.5,
+    "target_hit_rate": 0.98,
+    "minimum_verifiable_prospective_pairs_per_real_horizon": 1000,
+    "minimum_independent_certified_flood_events": 10,
+    "scope_note": "Retain the existing overall and high-water requirements separately per real horizon; this six-nominal-hour candidate does not satisfy or redefine the project's one-to-twelve-real-hour goal. These minima alone do not prove statistical certainty or future performance.",
+    "shadow_requires_98_percent": false,
+    "achieved": false
+  },
+  "promoted": false
+}

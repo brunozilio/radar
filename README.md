@@ -1,6 +1,11 @@
 # Radar Taquari — projeto original recuperado
 
-## Modelo de previsão de Muçum
+**Estado atual (28/09/2026):** o site e `/api/projection` publicam somente a
+previsão hidrométrica experimental de Muçum. Encantado e Santa Tereza continuam
+em “Níveis do rio”, mas suas previsões foram retiradas da interface e da API.
+As seções de previsão abaixo documentam também versões anteriores do projeto.
+
+## Histórico: modelo de previsão anterior de Muçum
 
 O painel **Modelo de previsão** publica somente as próximas **6 horas** do modelo estatístico existente,
 identificado como **experimental**, com uma explicação acessível no próprio site.
@@ -76,7 +81,7 @@ npm run build
 npm start
 ```
 
-## Previsão de Encantado
+## Histórico: previsão de Encantado
 
 O painel de previsão permite alternar entre **Muçum** e **Encantado**. Encantado
 usa um modelo próprio (`encantado-6h-v1`), com seis alvos horários na régua ANA
@@ -120,7 +125,7 @@ npm run projection:package
 npm run build
 ```
 
-## Santa Tereza na previsão e Encantado nos níveis do rio
+## Histórico: previsão de Santa Tereza; Encantado nos níveis do rio
 
 O seletor de previsão também inclui **Santa Tereza**, com seis alvos horários
 na régua da cidade (`86472600`). A entrada a montante é a Linha José Júlio
@@ -228,3 +233,19 @@ O satélite também consulta o setor sul da América do Sul da NOAA/GOES-19,
 canal infravermelho 13. A API escolhe a sequência do provedor mais recente,
 sem misturar projeções. Imagens NOAA mostram a identificação da fonte e não
 recebem a sobreposição geográfica calibrada para INMET/CPTEC.
+
+## Mapa de chuva
+
+O mapa mostra as estações selecionadas a montante de Muçum e usa tiles do
+OpenStreetMap com atribuição visível. O mapa embutido não
+captura a roda do mouse; o zoom continua disponível pelos botões. Estações
+próximas são agrupadas conforme o zoom. Selecionar um grupo aproxima o mapa
+até revelar as posições individuais; pontos ainda coincidentes em zoom alto
+mostram uma lista no popup.
+
+O acumulado soma apenas as amostras válidas dentro da janela selecionada. A
+API informa a quantidade de amostras e uma cobertura aproximada, estimada pela
+frequência recente da própria estação (entre 15 e 60 minutos). Contorno
+tracejado indica cobertura inferior a 75%; lacunas não são preenchidas com
+zero. A tela mostra a quantidade de estações com dados e sinaliza falhas de
+atualização ou troca de janela.

@@ -28,8 +28,7 @@ def build():
     selected.add(ROOT / 'scripts/hydro-hourly-requirements.txt')
     patterns = {
         'model-artifacts/forecast-6h-v1': ['*.joblib', 'model.json'],
-        'model-artifacts/encantado-6h-v1': ['*.joblib', 'model.json'],
-        'model-artifacts/santa-tereza-6h-v1': ['*.joblib', 'model.json'],
+        'model-artifacts/mucum-propagation-v1': ['model.json', 'metadata.json'],
         'outputs/mucum-propagacao-2026-09-21': ['telemetria.npz', 'chuva-pesos.json', 'grafo-drenagem.json', 'estacoes-conectividade.csv', 'raw/normalized-*.npz', 'raw/chuva-prevista-query.json', 'raw/chuva-previsao-historica-*.json'],
         'outputs/mucum-atualizacao-15h-2026-09-21': ['previsao-atualizada.csv', 'previsao-vazoes-montante.csv', 'roteamento-vazao-pesos.csv', 'conferencia-balanco.json', 'nwp-historical-icon.json', 'raw/ana-*-fresh.xml', 'raw/sigma-*.txt'],
         'outputs/mucum-bacia-2026-09-21': ['raw/upstream-basins.geojson', 'producao-estacoes.json'],

@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-23T00:42:28.552Z",
+  "worker": {
+    "id": "627ad6e8-4417-4309-9b71-c9db7cd3bca4",
+    "createdAt": "2026-09-23T00:39:48.737375Z",
+    "versions": [
+      {
+        "version_id": "2393eaec-c662-4ab3-9637-11a9282f47ec",
+        "percentage": 100
+      }
+    ]
+  },
+  "application": {
+    "id": "a039a738-b702-4f15-b273-7e22b92be8d8",
+    "name": "sofik-monitoramento-taquari-monitoramentocontainer",
+    "image": "registry.cloudflare.com/f695d3055326e4346d3954d5cf1c0a17/sofik-monitoramento-taquari-monitoramentocontainer@sha256:6b6a6c2726f9fb2d3f65c4e51a58cc3efdf86117061db740fc2d7da45a9e6c6a",
+    "maxInstances": 1,
+    "version": 63
+  },
+  "instances": [
+    {
+      "id": "aa18abdb8e20468fb4cbc44e234dc30ae71ca2a4bc75f08a3e8275c79b7cd71f",
+      "name": "rio-taquari",
+      "state": "running",
+      "location": "ewr12",
+      "version": 63,
+      "created": "2026-09-23T00:40:23.982000128Z"
+    }
+  ],
+  "latest": {
+    "referenceAt": "2026-09-22T21:00:00-03:00",
+    "generatedAt": "2026-09-22T21:31:54.903151-03:00",
+    "modelVersion": "forecast-6h-v1",
+    "sha256": "f2ccd10bbed900e65e2e21ed265a0e31b55c1ced9c42f42ecbc7657538a103f4"
+  },
+  "archiveReceipts": [],
+  "localRuntimeManifestSha256": "907a6321a985fc934bdb52a59b5922da87b2555b836e7127be913a3d9a1fc0b0"
+}

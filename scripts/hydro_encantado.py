@@ -36,7 +36,7 @@ def feature_names(stations):
 
 
 def read_levels(path, code, received):
-    rows, _ = ana_rows(path, code, received)
+    rows, _ = ana_rows(path, code, received, strict_quality=True)
     times = np.array(sorted(rows))
     levels = np.array([rows[t][0] for t in times])
     return {'times': times, 'level': levels}
@@ -83,6 +83,12 @@ def predict(series, reference, model_dir=None, station='encantado'):
     if (spec['id'] != config['version'] or spec['station'] != stations[0] or
             spec['features'] != feature_names(stations) or not spec['validationPassed']):
         raise ValueError('Invalid station model specification')
+    for code in stations:
+        if code not in series:
+            raise ValueError(f'{code}: missing station series')
+        exact = series[code]['level'][series[code]['times'] == reference.timestamp()]
+        if len(exact) != 1 or not np.isfinite(exact[0]):
+            raise ValueError(f'{code}: stale or missing exact reference-hour level')
     X, anchor = features(series, np.array([reference.timestamp()]), stations=stations)
     if not np.isfinite(X).all():
         raise ValueError('Station observations missing, stale or incomplete')
@@ -107,16 +113,33 @@ def predict(series, reference, model_dir=None, station='encantado'):
             'models': [{'id': config['model_id'], 'label': f'Modelo de previsão de {config["label"]}', 'points': points}]}
 
 
-def calculate(out, reference, station='encantado'):
+def remaining_targets(result, reference, allow_delayed):
+    generated = stamp(result['generatedAt'])
+    age = generated-reference.timestamp()
+    if allow_delayed:
+        if not 0 <= age <= 3*3600:
+            raise ValueError('Station reference exceeds the three-hour age limit')
+        points = [point for point in result['models'][0]['points'] if stamp(point['timestamp']) > generated]
+        first = int(age//3600)+1
+        expected = [reference.timestamp()+lead*3600 for lead in range(first,7)]
+        if [stamp(point['timestamp']) for point in points] != expected:
+            raise ValueError('Station must preserve the original future H+1 through H+6 suffix')
+        result['models'][0]['points'] = points
+        result['forecastStartLeadHours'] = first
+        result['referenceAgeSeconds'] = age
+    elif stamp(result['models'][0]['points'][0]['timestamp']) <= generated:
+        raise ValueError('Station target elapsed during calculation')
+    return result
+
+
+def calculate(out, reference, station='encantado', allow_delayed=False):
     if station == 'santa-tereza':
         # Both sources already belong to the required, receipt-checked collection.
         received = datetime.now(TZ).timestamp()
         series = {code: read_levels(out / 'raw' / f'ana-{code}-fresh.xml', code, received)
                   for code in MODEL_CONFIGS[station]['codes']}
         result = predict(series, reference, station=station)
-        if stamp(result['models'][0]['points'][0]['timestamp']) <= stamp(result['generatedAt']):
-            raise ValueError('Santa Tereza target elapsed during calculation')
-        return result
+        return remaining_targets(result, reference, allow_delayed)
     if station != 'encantado':
         raise ValueError('Unknown station')
     now = datetime.now(TZ)
@@ -136,6 +159,4 @@ def calculate(out, reference, station='encantado'):
     series = {code: read_levels(out / 'raw' / f'ana-{code}-fresh.xml', code, received.timestamp())
               for code in STATIONS}
     result = predict(series, reference)
-    if stamp(result['models'][0]['points'][0]['timestamp']) <= stamp(result['generatedAt']):
-        raise ValueError('Encantado target elapsed during calculation')
-    return result
+    return remaining_targets(result, reference, allow_delayed)

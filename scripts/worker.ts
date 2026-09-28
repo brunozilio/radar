@@ -47,6 +47,13 @@ import {
 } from "../lib/hydro.ts";
 import { collectMediaItems, recentMediaItems } from "../lib/media-collection.ts";
 import { collectLevelReadings, readLevelHistory } from "../lib/river-levels.ts";
+import {
+  acknowledgeHydrologySync,
+  hydrologyCacheCutoff,
+  hydrologySyncCommands,
+  initializeHydrologySync,
+  readHydrologySyncBatch,
+} from "../lib/hydrology-retention.ts";
 import type {
   AlertRainWindow,
   AlertRuleKind,
@@ -66,6 +73,7 @@ import {
 } from "../lib/sources.ts";
 
 const database = openWriterDatabase();
+initializeHydrologySync(database);
 const livePort = Number(process.env.LIVE_WS_PORT || 3001);
 const liveServer = new WebSocketServer({ port: livePort });
 const timers: NodeJS.Timeout[] = [];
@@ -123,7 +131,7 @@ const DCRS_CLIENT = "casa-militar-defesa-civil-rs";
 const DCRS_OFFSET = -32.7;
 const DATABASE_STORAGE_URL =
   process.env.DATABASE_STORAGE_URL || "";
-const PERSISTENCE_SCHEMA_VERSION = "d1-r2-v1";
+const PERSISTENCE_SCHEMA_VERSION = "d1-r2-hydrology-long-term-v2";
 const HYDRO_PERSIST_URL = process.env.HYDRO_PERSIST_URL || "";
 const PUSH_DISPATCH_URL = process.env.PUSH_DISPATCH_URL || "";
 const PUSH_INTERNAL_SECRET = process.env.PUSH_INTERNAL_SECRET || "";
@@ -365,6 +373,10 @@ async function persistRiverReadings(readings: PersistentRiverReading[]) {
   if (!response.ok) {
     throw new Error(`Persistência DCRS: HTTP ${response.status}`);
   }
+  const confirmation = await response.json() as { accepted?: number };
+  if (confirmation.accepted !== readings.length) {
+    throw new Error("Persistência DCRS: lote não confirmado integralmente");
+  }
 }
 
 async function synchronizePersistentRiverHistory() {
@@ -399,40 +411,25 @@ async function synchronizePersistentRiverHistory() {
       );
     }
 
-    const local = database
-      .prepare(`
-        SELECT station, timestamp, level, raw_level, trend_value, trend, source,
-               created_at
-        FROM river_readings
-        WHERE station = ?
-          AND level IS NOT NULL
-          AND julianday(timestamp) >= julianday(?, '-48 hours')
-        ORDER BY julianday(timestamp) ASC
-      `)
-      .all(DCRS_STATION, nowIso()) as Array<{
-      station: string;
-      timestamp: string;
-      level: number;
-      raw_level: number | null;
-      trend_value: number | null;
-      trend: PersistentRiverReading["trend"];
-      source: string;
-      created_at: string;
-    }>;
-    for (let index = 0; index < local.length; index += 500) {
-      await persistRiverReadings(
-        local.slice(index, index + 500).map((reading) => ({
-          station: reading.station,
-          timestamp: reading.timestamp,
-          level: reading.level,
-          rawLevel: reading.raw_level,
-          trendValue: reading.trend_value,
-          trend: reading.trend,
-          source: reading.source,
-          createdAt: reading.created_at,
-        })),
-      );
+    // Send a bounded part of the entire local backlog, including old backfills.
+    // This cursor is independent of the generic monitoring D1 destination.
+    const batch = readHydrologySyncBatch(database, "dcrs");
+    const local = batch.readings.filter(({ reading }) => reading.level !== null);
+    if (local.length) {
+      await persistRiverReadings(local.map(({ reading }) => ({
+        station: reading.station as string,
+        timestamp: reading.timestamp as string,
+        level: reading.level as number,
+        rawLevel: reading.raw_level as number | null,
+        trendValue: reading.trend_value as number | null,
+        trend: reading.trend as PersistentRiverReading["trend"],
+        source: reading.source as string,
+        createdAt: reading.created_at as string,
+      })));
     }
+    // Null levels are preserved in the generic archive, but this legacy endpoint
+    // intentionally accepts only actual DCRS level observations.
+    acknowledgeHydrologySync(database, batch, batch.readings.map(() => ({ success: true })));
     console.log(
       `[worker] DCRS-00091: ${restored} leitura(s) restaurada(s) do armazenamento persistente`,
     );
@@ -1007,7 +1004,6 @@ function seedDcrsHistory() {
   }
 
   const now = Date.now();
-  const retentionCutoff = now - 48 * 60 * 60 * 1000;
   const futureTolerance = now + 5 * 60 * 1000;
   let insertedRows = 0;
 
@@ -1017,7 +1013,6 @@ function seedDcrsHistory() {
       const readingTime = Date.parse(reading.timestamp);
       if (
         !Number.isFinite(readingTime) ||
-        readingTime < retentionCutoff ||
         readingTime > futureTolerance ||
         !Number.isFinite(reading.level)
       ) {
@@ -1158,32 +1153,10 @@ async function reconcileSourceAlerts(
   });
 }
 
-type PersistentTableName =
-  | "river_readings"
-  | "sace_readings"
-  | "rain_readings"
-  | "ceran_readings";
-
-const d1SyncWatermarks: Record<PersistentTableName, string> = {
-  river_readings: new Date(
-    Date.now() - 48 * 60 * 60 * 1000,
-  ).toISOString(),
-  sace_readings: new Date(
-    Date.now() - 48 * 60 * 60 * 1000,
-  ).toISOString(),
-  rain_readings: new Date(
-    Date.now() - 48 * 60 * 60 * 1000,
-  ).toISOString(),
-  ceran_readings: new Date(
-    Date.now() - 48 * 60 * 60 * 1000,
-  ).toISOString(),
-};
-
 async function restorePersistentDatabase() {
   if (!DATABASE_STORAGE_URL) return;
-  const dataCutoff = new Date(
-    Date.now() - 48 * 60 * 60 * 1000,
-  ).toISOString();
+  // Startup restores only the operational cache; older measurements remain in D1.
+  const dataCutoff = hydrologyCacheCutoff();
   const now = nowIso();
   const results = await runD1Batch([
     {
@@ -1334,60 +1307,14 @@ async function restorePersistentDatabase() {
   );
 }
 
-function rowsCreatedSince<T extends Record<string, unknown>>(
-  table: PersistentTableName,
-) {
-  return database
-    .prepare(`
-      SELECT *
-      FROM ${table}
-      WHERE julianday(created_at) > julianday(?)
-      ORDER BY julianday(created_at) ASC
-    `)
-    .all(d1SyncWatermarks[table]) as T[];
-}
-
 async function synchronizePersistentDatabaseUnlocked() {
   if (!DATABASE_STORAGE_URL) return;
-  const riverRows = rowsCreatedSince<{
-    station: string;
-    timestamp: string;
-    level: number | null;
-    raw_level: number | null;
-    trend_value: number | null;
-    trend: string;
-    source: string;
-    created_at: string;
-  }>("river_readings");
-  const saceRows = rowsCreatedSince<{
-    station: string;
-    timestamp: string;
-    level: number;
-    level_cm: number;
-    created_at: string;
-  }>("sace_readings");
-  const rainRows = rowsCreatedSince<{
-    station: string;
-    timestamp: string;
-    rain: number | null;
-    level_cm: number | null;
-    discharge: number | null;
-    quality: string;
-    created_at: string;
-  }>("rain_readings");
-  const ceranRows = rowsCreatedSince<{
-    plant_id: string;
-    timestamp: string;
-    upstream_level: number;
-    downstream_level: number;
-    inflow: number;
-    turbined: number;
-    spilled: number;
-    residual: number;
-    outflow: number;
-    status: string;
-    created_at: string;
-  }>("ceran_readings");
+  const hydrologyBatch = readHydrologySyncBatch(database, "d1");
+  const hydrologyCommands = hydrologySyncCommands(hydrologyBatch);
+  if (hydrologyCommands.length) {
+    const acknowledgements = await runD1Commands(hydrologyCommands);
+    acknowledgeHydrologySync(database, hydrologyBatch, acknowledgements);
+  }
   const bulletinRows = database
     .prepare("SELECT * FROM bulletins")
     .all() as Array<{
@@ -1412,75 +1339,6 @@ async function synchronizePersistentDatabaseUnlocked() {
   }>;
 
   const commands: D1Command[] = [
-    ...riverRows.map((row) => ({
-      sql: `
-        INSERT OR REPLACE INTO river_readings
-          (station, timestamp, level, raw_level, trend_value, trend, source,
-           created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-      `,
-      params: [
-        row.station,
-        row.timestamp,
-        row.level,
-        row.raw_level,
-        row.trend_value,
-        row.trend,
-        row.source,
-        row.created_at,
-      ],
-    })),
-    ...saceRows.map((row) => ({
-      sql: `
-        INSERT OR REPLACE INTO sace_readings
-          (station, timestamp, level, level_cm, created_at)
-        VALUES (?, ?, ?, ?, ?)
-      `,
-      params: [
-        row.station,
-        row.timestamp,
-        row.level,
-        row.level_cm,
-        row.created_at,
-      ],
-    })),
-    ...rainRows.map((row) => ({
-      sql: `
-        INSERT OR REPLACE INTO rain_readings
-          (station, timestamp, rain, level_cm, discharge, quality, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
-      `,
-      params: [
-        row.station,
-        row.timestamp,
-        row.rain,
-        row.level_cm,
-        row.discharge,
-        row.quality,
-        row.created_at,
-      ],
-    })),
-    ...ceranRows.map((row) => ({
-      sql: `
-        INSERT OR REPLACE INTO ceran_readings
-          (plant_id, timestamp, upstream_level, downstream_level, inflow,
-           turbined, spilled, residual, outflow, status, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-      `,
-      params: [
-        row.plant_id,
-        row.timestamp,
-        row.upstream_level,
-        row.downstream_level,
-        row.inflow,
-        row.turbined,
-        row.spilled,
-        row.residual,
-        row.outflow,
-        row.status,
-        row.created_at,
-      ],
-    })),
     ...bulletinRows.map((row) => ({
       sql: `
         INSERT OR REPLACE INTO bulletins
@@ -1520,15 +1378,6 @@ async function synchronizePersistentDatabaseUnlocked() {
     Date.now() - 48 * 60 * 60 * 1000,
   ).toISOString();
   commands.push(
-    ...([
-      "river_readings",
-      "sace_readings",
-      "rain_readings",
-      "ceran_readings",
-    ] as const).map((table) => ({
-      sql: `DELETE FROM ${table} WHERE timestamp < ?`,
-      params: [dataCutoff],
-    })),
     {
       sql: `
         DELETE FROM bulletins
@@ -1543,23 +1392,11 @@ async function synchronizePersistentDatabaseUnlocked() {
   );
 
   const results = await runD1Commands(commands);
-  if (results.some((result) => !result.success)) {
+  if (results.length !== commands.length || results.some((result) => !result.success)) {
     throw new Error("sincronização D1 retornou falha");
   }
-  for (const [table, rows] of Object.entries({
-    river_readings: riverRows,
-    sace_readings: saceRows,
-    rain_readings: rainRows,
-    ceran_readings: ceranRows,
-  }) as Array<[PersistentTableName, Array<{ created_at: string }>]>) {
-    const latest = rows.at(-1)?.created_at;
-    if (latest) d1SyncWatermarks[table] = latest;
-  }
   const synchronized =
-    riverRows.length +
-    saceRows.length +
-    rainRows.length +
-    ceranRows.length +
+    hydrologyBatch.readings.length +
     bulletinRows.length +
     alertRows.length;
   if (synchronized) {
@@ -2906,18 +2743,7 @@ async function cleanup() {
       "DELETE FROM media_frames WHERE julianday(captured_at) < julianday(?)",
     )
     .run(mediaCutoff);
-  for (const table of [
-    "river_readings",
-    "sace_readings",
-    "rain_readings",
-    "ceran_readings",
-  ]) {
-    database
-      .prepare(
-        `DELETE FROM ${table} WHERE julianday(timestamp) < julianday(?)`,
-      )
-      .run(dataCutoff);
-  }
+  // Hydrological measurements are retained without a time-based expiry.
   database
     .prepare(
       "DELETE FROM bulletins WHERE published_at IS NULL OR julianday(published_at) < julianday(?)",

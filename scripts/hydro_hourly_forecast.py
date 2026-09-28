@@ -15,6 +15,7 @@ from threadpoolctl import threadpool_limits
 import hydro_prospective_ledger as ledger
 from hydro_hourly_collect import collect, ROOT, BASE, TZ, dump
 import hydro_history
+from hydro_input_readiness import InputsNotReady, require_ready, require_features
 
 PREV=ROOT/'outputs/mucum-propagacao-2026-09-21'
 CUTOFF='2026-09-21T00:00:00-03:00'
@@ -56,7 +57,7 @@ def weather_features(times,out):
                 a[-1]=weather_values(out/'raw'/f'weather-{model}.json',loc,future[-1],'precipitation')
                 columns.append(a.sum(axis=1))
     result=np.column_stack(columns)
-    if not np.isfinite(result[-1]).all(): raise ValueError('Missing live weather window')
+    if not np.isfinite(result[-1]).all(): raise InputsNotReady({'status':'waiting_for_data','missing':['Missing live weather window']})
     return result
 
 def ridge_fit(X,y,train,alpha,weights):
@@ -72,7 +73,14 @@ def ridge_predict(state,x):
     return float((v-state['mean'])/state['scale'] @ state['beta']+state['intercept'])
 
 def calculate(out,root,reference,receipts,cycle_id=None,revision=None):
-    os.environ.update(HYDRO_OUTPUT_DIR=str(out),HYDRO_ORIGIN=reference.isoformat(),HYDRO_HORIZON='13')
+    # This legacy runner reconstructs previous-day NWP predictors, which are
+    # not the current-forecast receipts now collected by the site. Never refit
+    # and present that mixture as an improved live model. Build a validated
+    # dataset with hydro_snapshot_dataset.py before implementing its successor.
+    from hydro_feature_contract import require_training_contract
+    require_training_contract('legacy-mixed-nwp-unverified')
+    require_ready(out,reference,PREV/'chuva-pesos.json')
+    os.environ.update(HYDRO_OUTPUT_DIR=str(out),HYDRO_ORIGIN=reference.isoformat(),HYDRO_HORIZON='13',HYDRO_REQUIRE_COMPLETE='1')
     from hydro_latency_forecast import prepare_current,telemetry_features
     from hydro_routing_fit import shift
     t,raw,delayed,ages=prepare_current()
@@ -80,6 +88,7 @@ def calculate(out,root,reference,receipts,cycle_id=None,revision=None):
     if times[-1]!=reference.timestamp(): raise ValueError('Feature origin mismatch')
     if not np.isfinite(H[-1]): raise ValueError('No current Muçum level')
     W=weather_features(times,out);features=np.column_stack([X,W])
+    require_features(features[-1])
     np.savez_compressed(out/'radar-features.npz',times=times,features=features,base=H,truth=truth[phase])
     for name in ['telemetria-latencia.npz','radar-features.npz']:
         receipts.append(receive(root,out/name))
@@ -100,7 +109,7 @@ def calculate(out,root,reference,receipts,cycle_id=None,revision=None):
     print('Radar trained and calculated with frozen pre-event cutoff',flush=True)
     last=next(a for a in ages if a['source']=='86510000')
     artifacts=[{'path':str(p.resolve()),'sha256':sha(p)} for p in sorted(modeldir.iterdir())]
-    code=[Path(__file__),*[ROOT/'scripts'/name for name in ['hydro_latency_forecast.py','hydro_rain_windows.py','hydro_routing_data.py','hydro_model.py','hydro_routing_fit.py','hydro_history.py','hydro-hourly-requirements.txt']]]
+    code=[Path(__file__),*[ROOT/'scripts'/name for name in ['hydro_input_readiness.py','hydro_latency_forecast.py','hydro_rain_windows.py','hydro_routing_data.py','hydro_model.py','hydro_routing_fit.py','hydro_history.py','hydro-hourly-requirements.txt']]]
     artifacts.extend({'path':str(p.resolve()),'sha256':sha(p)} for p in code)
     for artifact in artifacts:
         artifact['blob'],digest=ledger.store_blob(root,Path(artifact['path']).read_bytes(),Path(artifact['path']).suffix.lstrip('.'))
@@ -145,8 +154,12 @@ def run():
         print('Radar forecast for this reference hour already registered; not duplicating evidence.');return
     cycle=ledger.append(args.ledger,'cycle_started',{'requested_reference':current_reference,'manual_revision':args.revision})
     args.cycle_sha256=cycle['sha256']
+    args.reference=datetime.fromisoformat(current_reference)
     try:
         execute(args)
+    except InputsNotReady as exc:
+        ledger.append(args.ledger,'cycle_waiting_for_data',{'cycle_sha256':cycle['sha256'],**exc.report})
+        print(json.dumps(exc.report,ensure_ascii=False),flush=True)
     except Exception as exc:
         ledger.append(args.ledger,'cycle_failed',{'cycle_sha256':cycle['sha256'],'error':type(exc).__name__+': '+str(exc)})
         raise
@@ -166,6 +179,9 @@ def execute(args):
         observations=ledger.parse_ana((out/'raw/ana-86510000-fresh.xml').read_bytes(),'86510000','ANA:86510000:reference-unverified')
         if required_at>now.timestamp() or not any(epoch(o['valid_at'])==required_at and o['quality']=='Dado aprovado' and o['level_m'] is not None for o in observations):
             raise ValueError('Required exact approved Muçum observation unavailable')
+    reference=getattr(args,'reference',now.replace(minute=0,second=0,microsecond=0))
+    require_ready(out,reference,PREV/'chuva-pesos.json')
+    os.environ['HYDRO_REQUIRE_COMPLETE']='1'
     required=[r for r in manifest if r['source'] in ['ANA','CERAN','Open-Meteo']]
     if any('error' in r for r in required): raise ValueError('Required public source failed; no cached fallback')
     if any((now-datetime.fromisoformat(r['collected_at'])).total_seconds()>3600 for r in required): raise ValueError('Collection is stale')
@@ -185,7 +201,6 @@ def execute(args):
     history=hydro_history.build(out,args.ledger/'history-index',PREV,args.weather_transition)
     for p in sorted(history.iterdir()):receipts.append(receive(args.ledger,p))
     os.environ['HYDRO_HISTORY_DIR']=str(history.resolve())
-    reference=datetime.now(TZ).replace(minute=0,second=0,microsecond=0)
     if args.revision and reference.isoformat()!=args.revision['reference_at']:
         raise ValueError('Revision crossed its reference hour; use the normal hourly runner')
     print(f'Calculating origin {reference.isoformat()} in {out}',flush=True)

@@ -1,0 +1,11 @@
+{
+  "id": "rain-leading-signal-v1",
+  "status": "retrospective development experiment; no public model change",
+  "question": "Does already observed upstream rain improve the frozen hydrometric model before reservoir discharge or river stage responds?",
+  "inputs": "Use exact-hour level/flow dataset and audited regional rain windows. A rain feature at origin t ends at t-1h; never use future observed rain. Require at least 50% regional coverage for every 3, 6, 12 and 24h window in all five regions. Missing rain excludes a row from both paired arms, never becomes zero.",
+  "pairedArms": "Keep the public model's selected hydrometric feature family and per-horizon ridge alpha. Refit the hydrometric arm and a second arm with 20 extra observed rain features on exactly the same rows. No model or alpha selection from validation or test in this experiment.",
+  "splits": "Training targets before 2025-10-01 00:00 BRT; validation origins after 33h embargo with targets before 2026-07-01 00:00 BRT. Refit on training plus validation, then evaluate test origins after 33h embargo with targets before 2026-09-21 00:00 BRT. The previously inspected September flood is a separate stress set.",
+  "rainFeatures": "For each of Baixo Antas, Carreiro, Prata-Turvo, Alto Antas and Tainhas: area weighted observed rain in 3, 6, 12 and 24h, divided by 100mm. All windows end one hour before origin.",
+  "assessment": "Report paired MAE and fraction within 0.50m for each 1-6h horizon, high water >=7m, rapid rise >=1m relative to origin, and rain strata >=20, >=50, >=100mm regional 6h maximum. Report a quiet-hydrometry plus rain stratum and false alarms. Do not claim independent generalization, calibrated flood risk or operational availability from retrospective data.",
+  "promotionEligible": false
+}

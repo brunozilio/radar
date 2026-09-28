@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-22T04:01:34.885015-03:00",
+  "referenceAt": "2026-09-22T04:00:00-03:00",
+  "experimental": true,
+  "intervalMinutes": 15,
+  "modelVersion": "forecast-6h-v1",
+  "horizonHours": 6,
+  "observation": {
+    "timestamp": "2026-09-22T03:30:00-03:00",
+    "level": 18.73
+  },
+  "models": [
+    {
+      "id": "radar_arvores_live_candidate",
+      "label": "Modelo de previsão",
+      "points": [
+        {
+          "timestamp": "2026-09-22T05:00:00-03:00",
+          "level": 18.672640116591964
+        },
+        {
+          "timestamp": "2026-09-22T06:00:00-03:00",
+          "level": 18.579833660365892
+        },
+        {
+          "timestamp": "2026-09-22T07:00:00-03:00",
+          "level": 18.28473675170601
+        },
+        {
+          "timestamp": "2026-09-22T08:00:00-03:00",
+          "level": 18.093112083789567
+        },
+        {
+          "timestamp": "2026-09-22T09:00:00-03:00",
+          "level": 18.215487988192095
+        },
+        {
+          "timestamp": "2026-09-22T10:00:00-03:00",
+          "level": 18.169392308299994
+        }
+      ]
+    }
+  ]
+}

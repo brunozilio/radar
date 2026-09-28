@@ -1,0 +1,548 @@
+{
+  "schema": 1,
+  "contract": "mucum-exact-hour-level-flow-retrospective/v1",
+  "created_at": "2026-09-23T12:44:26.923001+00:00",
+  "time_basis": "UTC epoch seconds, exact source timestamps only; naive source clocks interpreted as America/Sao_Paulo",
+  "keys": [
+    "86510000:H",
+    "86472000:H",
+    "86472600:H",
+    "86500000:H",
+    "julho:Q",
+    "julho:I",
+    "monte:Q",
+    "monte:I",
+    "castro:Q",
+    "castro:I"
+  ],
+  "units": {
+    "86510000:H": "m",
+    "86472000:H": "m",
+    "86472600:H": "m",
+    "86500000:H": "m",
+    "julho:Q": "m3/s",
+    "julho:I": "m3/s",
+    "monte:Q": "m3/s",
+    "monte:I": "m3/s",
+    "castro:Q": "m3/s",
+    "castro:I": "m3/s"
+  },
+  "sources": [
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86510000-2025.xml",
+      "sha256": "ba770327e99f61acbd7ecc7dccc00d2b96ff2142efcac9f166b92494da61b0fb",
+      "provider": "ANA",
+      "identity": "86510000",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=01%2F04%2F2025&dataFim=31%2F12%2F2025",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-2025-manifest.json",
+      "received_at": "2026-09-21T16:18:31.343581+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 19762,
+        "level_quality_rejected": 26
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86510000.xml",
+      "sha256": "c5585911731933fe232f7809f57659688dd66ce9fcc3532e5fe6f22f256c2c45",
+      "provider": "ANA",
+      "identity": "86510000",
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-expanded-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 18901,
+        "level_quality_rejected": 18
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86472000-2025.xml",
+      "sha256": "f6d783d43570bfaf76fccfb5f6810d20c37ebdc5e6e3818511b43bb1a566bfd1",
+      "provider": "ANA",
+      "identity": "86472000",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=01%2F04%2F2025&dataFim=31%2F12%2F2025",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-2025-manifest.json",
+      "received_at": "2026-09-21T16:18:28.548792+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 19785,
+        "level_quality_rejected": 8
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86472000.xml",
+      "sha256": "974c13ea856b832d080a2881e3689b1f3f6d9f4e100d9a9761d2d38a1928a1ac",
+      "provider": "ANA",
+      "identity": "86472000",
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-expanded-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 18914,
+        "level_quality_rejected": 76
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86472600-2025.xml",
+      "sha256": "718e268c91bf08d458e35795736153b3e97f3b85f1e8f5e5720e44c2037b3d96",
+      "provider": "ANA",
+      "identity": "86472600",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=01%2F04%2F2025&dataFim=31%2F12%2F2025",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-2025-manifest.json",
+      "received_at": "2026-09-21T16:18:25.328509+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 18745,
+        "level_quality_rejected": 40
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86472600.xml",
+      "sha256": "e0ed809b9acb27c498cde4570cf7ca97e77824071eda986f5a37acedb6848816",
+      "provider": "ANA",
+      "identity": "86472600",
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-expanded-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 18856,
+        "level_quality_rejected": 10
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86500000-2025.xml",
+      "sha256": "e1f72368ab14a8623238252b5b3071435b357a9c533d7e7c1611fb4e35b35dfe",
+      "provider": "ANA",
+      "identity": "86500000",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=01%2F04%2F2025&dataFim=31%2F12%2F2025",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-2025-manifest.json",
+      "received_at": "2026-09-21T16:18:29.402915+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 19779,
+        "level_quality_rejected": 8
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-86500000.xml",
+      "sha256": "831a9b929103163c725d27f5419cba5e3064feb2b9a9bfd24f075a1242fded61",
+      "provider": "ANA",
+      "identity": "86500000",
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ana-expanded-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 17491,
+        "level_quality_rejected": 302
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_04-ceran.csv",
+      "sha256": "a4c6389ac84da29b21c4afc0ed09c729b3698b3e38872f464d2eaf3956dbfe43",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_04.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:20.630281+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 90
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_05-ceran.csv",
+      "sha256": "1ed89e1b5a97dfc5536bfe5981fd4b30d7e9ad17b0531e2589d4bafdcc9ea964",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_05.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:19.624452+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_06-ceran.csv",
+      "sha256": "95dde05eb28e3f624cdf27b6c64ce59fd6adc1166a6003765c5559c84db21d3b",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_06.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:19.450600+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 90
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_07-ceran.csv",
+      "sha256": "913cbbe42b7ceb12b06876af6f58438aae3b46f593b429f8795b8bea4cda6017",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_07.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:25.580735+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_08-ceran.csv",
+      "sha256": "0419ed00e88c897b3cab91b64c369d1378dc6dff52923f9803d8e6df3008203c",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_08.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:23.957294+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_09-ceran.csv",
+      "sha256": "4642659305ef395a6eec9cf40f5d65235576315b2cd1e0db9be6022d4c7ea012",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_09.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:24.976470+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 90
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_10-ceran.csv",
+      "sha256": "b1f3e40570ca0eb5c62b18da94167e4875c7d823403f7e5f6e27ea0cc2e90149",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_10.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:28.574282+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_11-ceran.csv",
+      "sha256": "b937d219a46fe0c4bcf5a6277f9e08f589e7ccec9492cb5f09a8a85a9038dc16",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_11.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:30.153891+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 90
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2025_12-ceran.csv",
+      "sha256": "96f53649c2709870eb052dd706936a7d52c46c15b77ff614617706b8a20b9859",
+      "provider": "ONS",
+      "identity": null,
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/dados_hidrologicos_ho/DADOS_HIDROLOGICOS_HO_2025_12.csv",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": "2026-09-21T16:18:31.786920+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_01-ceran.csv",
+      "sha256": "013f09c7a6dedc040109fbf94669265debbe1eeaf471c0e3a2ed7c547bf67e56",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_02-ceran.csv",
+      "sha256": "4839ced9c1c934b7385566ee7be1e3056578250b334c85ad7dace89dfe3e02f1",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 84
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_03-ceran.csv",
+      "sha256": "67346e269772c3fa3955d647167ce96d59b3803d35774941f326f8b1f86b1618",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_04-ceran.csv",
+      "sha256": "dc1c1e6f31913936a7bcec1464402002ac6349b8a52d3e2658ca2db6a7cef02f",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 90
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_05-ceran.csv",
+      "sha256": "113a5bf0b8ee5ba637119a1d04cc8f7aebd3e37d0b2553678d8bb4d0aba33539",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_06-ceran.csv",
+      "sha256": "700a8d05b3bdbf881fa622e232dabb4e37f1b0ce92723a67bac9a49ecbaaac43",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 90
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_07-ceran.csv",
+      "sha256": "746cb5b5d5b1d5772f99efa0c21daadf861546fb80c2e0fb3a63073f1690698a",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 93,
+        "monte:zero_flow_positive_components_rejected": 3
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_08-ceran.csv",
+      "sha256": "24c6607e34622f1259e0f1e45809280679a303fab85112d321a5a2d4710f7862",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 93
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/DADOS_HIDROLOGICOS_HO_2026_09-ceran.csv",
+      "sha256": "c2ab2b5857f040077584b2747dbce7a9affae9356c4ad3dd87d2125a7005b5d1",
+      "provider": "ONS",
+      "identity": null,
+      "url": null,
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-propagacao-2026-09-21/raw/ons-manifest.json",
+      "received_at": null,
+      "original_hash_verified": false,
+      "flags": {
+        "non_hourly_records_omitted": 60
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ana-86472600-fresh.xml",
+      "sha256": "d1048ec2db8b45276209ed59a0a901cccf139537ae139086f4d90a33d3996b7d",
+      "provider": "ANA",
+      "identity": "86472600",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472600&dataInicio=16%2F09%2F2026&dataFim=23%2F09%2F2026",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:15.094312+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 528
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ana-86472000-fresh.xml",
+      "sha256": "7adc82cf6f7dc1104237194f346f35254857bec1b0dbcf593db66981da2509e8",
+      "provider": "ANA",
+      "identity": "86472000",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86472000&dataInicio=16%2F09%2F2026&dataFim=23%2F09%2F2026",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:15.139022+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 530
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ana-86500000-fresh.xml",
+      "sha256": "33061de6288cfdfc1cd9196fa9fe534aff8a089d213c5ba6cdf469def11e5ad3",
+      "provider": "ANA",
+      "identity": "86500000",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86500000&dataInicio=16%2F09%2F2026&dataFim=23%2F09%2F2026",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:15.954362+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 530
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ana-86510000-fresh.xml",
+      "sha256": "d1f87778fd3954e84a7622a65b647ef524654ac7f3b9f05c5fc804bc7e577c5a",
+      "provider": "ANA",
+      "identity": "86510000",
+      "url": "https://www.ana.gov.br/telemetria1ws/ServiceANA.asmx/DadosHidrometeorologicosGerais?codEstacao=86510000&dataInicio=16%2F09%2F2026&dataFim=23%2F09%2F2026",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:16.632466+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "non_hourly_records_omitted": 529
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ceran-monte-fresh.html",
+      "sha256": "47103277858139ee22f2bd0705c4a8a71df5e26362af811e0959c942b5819a84",
+      "provider": "CERAN",
+      "identity": "monte",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHMC.php",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:16.733126+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "revised_or_cross_provider_values": 6
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ceran-julho-fresh.html",
+      "sha256": "1d78cebf5dc477600012588c8c83d3bf79549b39361efd0a9ded229fac491fb4",
+      "provider": "CERAN",
+      "identity": "julho",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHQJ.php",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:16.736318+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "revised_or_cross_provider_values": 6
+      }
+    },
+    {
+      "path": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/raw/ceran-castro-fresh.html",
+      "sha256": "d56dfd4226a0c51e68e82590fc048eebcf22f4aa7524526e186fd6a1cbcfd86c",
+      "provider": "CERAN",
+      "identity": "castro",
+      "url": "https://ceran.com.br/dados_hidrologicos/dados_hidrologicos_UHCA.php",
+      "receipt_manifest": "/Users/brunozilio/Documents/radar/outputs/mucum-hourly-20260923T084211-0300/collection-manifest.json",
+      "received_at": "2026-09-23T11:42:17.169957+00:00",
+      "original_hash_verified": true,
+      "flags": {
+        "revised_or_cross_provider_values": 6
+      }
+    }
+  ],
+  "coverage": {
+    "86510000:H": {
+      "valid_hours": 12893,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T11:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "86472000:H": {
+      "valid_hours": 12860,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T03:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "86472600:H": {
+      "valid_hours": 12527,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T03:00:00+00:00",
+      "last_valid": "2026-09-23T10:00:00+00:00"
+    },
+    "86500000:H": {
+      "valid_hours": 12199,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T03:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "julho:Q": {
+      "valid_hours": 12429,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T04:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "julho:I": {
+      "valid_hours": 12429,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T04:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "monte:Q": {
+      "valid_hours": 12425,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T04:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "monte:I": {
+      "valid_hours": 12428,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T04:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "castro:Q": {
+      "valid_hours": 12428,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T04:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    },
+    "castro:I": {
+      "valid_hours": 12428,
+      "total_hours": 12969,
+      "first_valid": "2025-04-01T04:00:00+00:00",
+      "last_valid": "2026-09-23T11:00:00+00:00"
+    }
+  },
+  "start": "2025-04-01T03:00:00+00:00",
+  "end": "2026-09-23T11:00:00+00:00",
+  "hours": 12969,
+  "complete_current_hours": 11236,
+  "limitations": [
+    "Historical files are retrospective and can include later revisions. This does not certify operational causal availability.",
+    "received_at is the actual local file receipt when known, not observation time or initial source publication time.",
+    "ANA values retain station-specific gauge references; datum stability is not independently certified.",
+    "ONS clock denotes hourly interval end; CERAN recent readings may be instantaneous. Cross-provider equivalence is not certified.",
+    "Rain, NWP, interpolation, carry-forward and synthetic replacements are absent.",
+    "A zero ONS defluence contradicted by positive components is rejected, never replaced with component sum."
+  ],
+  "trained": false,
+  "promoted": false,
+  "dataset_sha256": "018b369e40dec3ba774b6b255aaec41479e4ea29087d7ebf9bf76f7404ed49dd",
+  "script_sha256": "6aeb313ec7e260e4fb2a421c1ba56d0537e4fc9c2431929c8f84fd2e8584ae02"
+}

@@ -83,4 +83,70 @@ class HistoryTests(unittest.TestCase):
             with self.assertRaises(ValueError):h.build(third,root/'index',baseline,policy)
             self.assertEqual(h.read_current(root/'index'),two)
 
+    def optional_fixture(self, root, name, day, failed=True):
+        out = self.fixture(root, name, day)
+        path = out/'collection-manifest.json'
+        manifest = json.loads(path.read_text())
+        item = {'file':'ana-99999999-fresh.xml','source':'ANA',
+                'collected_at':f'2026-01-{day:02d}T12:00:00-03:00'}
+        if failed:
+            item['error'] = 'fixture transport unavailable'
+        else:
+            source = out/'raw'/item['file']
+            source.write_text('<root>'+self.xml(f'2026-01-{day:02d}T10:00',station='99999999')+'</root>')
+            item['sha256'] = h.sha(source)
+        manifest.append(item)
+        h.dump(path, manifest)
+        h.dump(out/'input-readiness.json', {'status':'ready',
+            'referenceAt':f'2026-01-{day:02d}T10:00:00-03:00',
+            'checkedAt':item['collected_at'],
+            'unavailableRainSources':{item['file']:'source unavailable'} if failed else {}})
+        return out
+
+    def optional_baseline(self, root):
+        baseline = root/'baseline';(baseline/'raw').mkdir(parents=True)
+        t=np.array([h.stamp('2026-01-01T10:00')])
+        np.savez(baseline/'raw/normalized-86510000.npz',times=t,
+                 **{k:np.array([1.]) for k in h.FIELDS})
+        recent=np.array([h.stamp('2026-01-10T09:00'),h.stamp('2026-01-10T10:00')])
+        np.savez(baseline/'raw/normalized-99999999.npz',times=recent,
+                 **{k:np.array([50.,100.]) for k in h.FIELDS})
+        np.savez(baseline/'telemetria.npz',times=t,
+                 **{f'{p}:{k}':np.array([50.]) for p in ['julho','monte','castro'] for k in ['Q','I']})
+        return baseline
+
+    def test_optional_transport_preserves_history_and_last_successful_clock(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);baseline=self.optional_baseline(root)
+            first=self.optional_fixture(root,'first',10)
+            one=h.build(first,root/'index',baseline,allow_missing_rain=True)
+            for field, values in dict(np.load(baseline/'raw/normalized-99999999.npz')).items():
+                np.testing.assert_array_equal(np.load(one/'ana-99999999.npz')[field],values)
+            initial=h.verify(one)
+            self.assertIsNone(initial['latest_collection_by_source']['ana-99999999-fresh.xml'])
+            failure=next(a for a in initial['audit'] if a['source']=='ana-99999999-fresh.xml')
+            self.assertFalse(failure['received_new_data'])
+            self.assertEqual(failure['incoming_rows'],0)
+            good=self.optional_fixture(root,'good',11,failed=False)
+            two=h.build(good,root/'index',baseline,allow_missing_rain=True)
+            good_clock=h.verify(two)['latest_collection_by_source']['ana-99999999-fresh.xml']
+            self.assertEqual(good_clock,'2026-01-11T12:00:00-03:00')
+            third=self.optional_fixture(root,'third',12)
+            three=h.build(third,root/'index',baseline,allow_missing_rain=True)
+            self.assertEqual(h.verify(three)['latest_collection_by_source']['ana-99999999-fresh.xml'],good_clock)
+            for field, values in dict(np.load(two/'ana-99999999.npz')).items():
+                np.testing.assert_array_equal(np.load(three/'ana-99999999.npz')[field],values)
+
+    def test_optional_transport_is_explicit_and_never_bypasses_integrity(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);baseline=self.optional_baseline(root)
+            out=self.optional_fixture(root,'strict',10)
+            with self.assertRaisesRegex(ValueError,'Failed source'):
+                h.build(out,root/'index',baseline)
+            out=self.optional_fixture(root,'tampered',10)
+            (out/'raw/ana-99999999-fresh.xml').write_text('unexpected body without matching receipt')
+            with self.assertRaisesRegex(ValueError,'hash mismatch'):
+                h.build(out,root/'index',baseline,allow_missing_rain=True)
+            self.assertIsNone(h.read_current(root/'index'))
+
 if __name__=='__main__':unittest.main()

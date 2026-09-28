@@ -1,16 +1,8 @@
 import { NextResponse } from "next/server";
 import { openReaderDatabase } from "@/lib/database";
+import { readLatestDcrsReading } from "@/lib/dcrs-history";
 
 export const dynamic = "force-dynamic";
-
-type RiverRow = {
-  station: string;
-  timestamp: string;
-  level: number | null;
-  raw_level: number | null;
-  trend_value: number | null;
-  trend: "rising" | "falling" | "stable";
-};
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
@@ -23,15 +15,7 @@ export async function GET(request: Request) {
     );
   }
   try {
-    const latest = database
-      .prepare(`
-        SELECT station, timestamp, level, raw_level, trend_value, trend
-        FROM river_readings
-        WHERE station = 'DCRS-00091'
-        ORDER BY timestamp DESC
-        LIMIT 1
-      `)
-      .get() as RiverRow | undefined;
+    const latest = readLatestDcrsReading(database);
 
     if (mode === "history") {
       const requested = Number(url.searchParams.get("hours") || 24);

@@ -1,0 +1,71 @@
+{
+  "phase_coverage": {
+    "initial_train": {
+      "hours": 4392,
+      "complete_current": 3830,
+      "complete_all_lags_0_to_24": 0,
+      "complete_all_lags_and_six_targets_inside_phase": 0
+    },
+    "selection": {
+      "hours": 6552,
+      "complete_current": 5962,
+      "complete_all_lags_0_to_24": 0,
+      "complete_all_lags_and_six_targets_inside_phase": 0
+    },
+    "historical_holdout": {
+      "hours": 1968,
+      "complete_current": 1389,
+      "complete_all_lags_0_to_24": 0,
+      "complete_all_lags_and_six_targets_inside_phase": 0
+    },
+    "current_episode_unseen_by_fit": {
+      "hours": 57,
+      "complete_current": 55,
+      "complete_all_lags_0_to_24": 31,
+      "complete_all_lags_and_six_targets_inside_phase": 26
+    }
+  },
+  "all_flags": {
+    "non_hourly_records_omitted": 155964,
+    "level_quality_rejected": 488,
+    "monte:zero_flow_positive_components_rejected": 3,
+    "revised_or_cross_provider_values": 18
+  },
+  "raw_sources": 33,
+  "source_with_known_actual_receipt": 20,
+  "source_with_original_hash_verified": 20,
+  "latest_complete_current_origin": "2026-09-23T10:00:00+00:00",
+  "last_hour_covariates": {
+    "86510000:H": {
+      "value": 8.38
+    },
+    "86472000:H": {
+      "value": 8.8
+    },
+    "86472600:H": {
+      "value": null
+    },
+    "86500000:H": {
+      "value": 2.609
+    },
+    "julho:Q": {
+      "value": 1724.72
+    },
+    "julho:I": {
+      "value": 1676.39
+    },
+    "monte:Q": {
+      "value": 1743.89
+    },
+    "monte:I": {
+      "value": 1760.56
+    },
+    "castro:Q": {
+      "value": 1018.55
+    },
+    "castro:I": {
+      "value": 974.13
+    }
+  },
+  "phase_note": "Suggested chronology only. Cutoffs must be frozen before model selection; previously inspected historical holdout is not a pristine independent test."
+}

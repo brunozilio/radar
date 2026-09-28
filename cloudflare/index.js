@@ -9724,7 +9724,7 @@ async function handleContainerObjectStorage(request, env) {
   const url = new URL(request.url);
   if (request.method === "GET" && url.pathname === "/") {
     const prefix = url.searchParams.get("prefix") || "";
-    if (!["media/", "assets/", "projection/rounds/"].includes(prefix)) {
+    if (!["media/", "assets/", "projection/rounds/", "projection/issues/", "projection/receipts/", "projection/blobs/"].includes(prefix)) {
       return json({ message: "Prefixo inv\xE1lido" }, 400);
     }
     const listed = await env.MEDIA_BUCKET.list({
@@ -9752,19 +9752,28 @@ async function handleContainerObjectStorage(request, env) {
     if (!metadata || !request.body) {
       return json({ message: "Objeto ou metadados inv\xE1lidos" }, 400);
     }
-    await env.MEDIA_BUCKET.put(key, request.body, {
+    const immutable = isImmutableProjectionObjectKey(key);
+    if (immutable && (!/^[a-f0-9]{64}$/.test(metadata.sha256 || "") || request.headers.get("if-none-match") !== "*")) {
+      return json({ message: "Immutable evidence requires checksum and conditional creation" }, 400);
+    }
+    if (key.startsWith("projection/blobs/") && key !== `projection/blobs/${metadata.sha256}.tar.gz`) {
+      return json({ message: "Blob key does not match checksum" }, 400);
+    }
+    const stored = await env.MEDIA_BUCKET.put(key, request.body, {
+      ...(immutable ? { onlyIf: new Headers({ "If-None-Match": "*" }), sha256: metadata.sha256 } : {}),
       httpMetadata: {
         contentType: request.headers.get("content-type") || "application/octet-stream"
       },
       customMetadata: metadata
     });
+    if (!stored) return json({ message: "Object already exists" }, 412);
     return json({ stored: true, key }, 201);
   }
   if (request.method === "HEAD") {
     const object = await env.MEDIA_BUCKET.head(key);
     return new Response(null, {
       status: object ? 200 : 404,
-      headers: object ? { etag: object.httpEtag } : void 0
+      headers: object ? { etag: object.httpEtag, "x-content-sha256": object.customMetadata?.sha256 || "" } : void 0
     });
   }
   if (request.method === "GET") {
@@ -9776,6 +9785,7 @@ async function handleContainerObjectStorage(request, env) {
     return new Response(object.body, { headers });
   }
   if (request.method === "DELETE") {
+    if (isImmutableProjectionObjectKey(key)) return json({ message: "Archived evidence cannot be deleted through this bridge" }, 405);
     await env.MEDIA_BUCKET.delete(key);
     return json({ deleted: true, key });
   }
@@ -10435,9 +10445,7 @@ async function handleRiverPersistenceRequest(request, env) {
   }
   if (request.method === "GET") {
     const cutoff = new Date(Date.now() - 48 * 60 * 60 * 1e3).toISOString();
-    await env.PUSH_DB.prepare(
-      "DELETE FROM dcrs_river_readings WHERE julianday(timestamp) < julianday(?)"
-    ).bind(cutoff).run();
+    // Bound the operational cache response without expiring historical readings.
     const rows = await env.PUSH_DB.prepare(`
       SELECT station, timestamp, level, raw_level, trend_value, trend, source,
              created_at
@@ -10461,7 +10469,7 @@ async function handleRiverPersistenceRequest(request, env) {
   }
   if (request.method === "POST") {
     const body = await request.json().catch(() => null);
-    const candidates = Array.isArray(body?.readings) ? body.readings.slice(0, 500) : [];
+    const candidates = Array.isArray(body?.readings) && body.readings.length <= 500 ? body.readings : [];
     const readings = candidates.map(parsePersistentRiverReading).filter(
       (reading) => Boolean(reading)
     );
@@ -10486,7 +10494,11 @@ async function handleRiverPersistenceRequest(request, env) {
       )
     );
     const results = await env.PUSH_DB.batch(statements);
+    if (results.length !== statements.length || results.some((result) => !result.success)) {
+      return json({ message: "Persistencia hidrologica incompleta" }, 503);
+    }
     return json({
+      accepted: readings.length,
       inserted: results.reduce(
         (total, result) => total + (result.meta.changes || 0),
         0
@@ -10522,7 +10534,7 @@ MonitoramentoContainer.outboundByHost = {
   "monitora-r2": handleContainerObjectStorage
 };
 import { runProjectionSchedule } from "./projection-schedule.js";
-import { isProjectionObjectKey } from "./projection-storage.js";
+import { isProjectionObjectKey, isImmutableProjectionObjectKey } from "./projection-storage.js";
 var worker = {
   async scheduled(_event, env) {
     await runProjectionSchedule(env, getContainer);

@@ -1,0 +1,312 @@
+{
+  "checkedAt": "2026-09-23T13:47:51.481Z",
+  "worker": {
+    "id": "76ea5deb-7e93-4bcf-94df-8939981cf359",
+    "createdAt": "2026-09-23T13:45:06.328439Z",
+    "versions": [
+      {
+        "version_id": "f14f0427-2d9d-417b-87f8-f8b258abfdbf",
+        "percentage": 100
+      }
+    ]
+  },
+  "application": {
+    "id": "a039a738-b702-4f15-b273-7e22b92be8d8",
+    "name": "sofik-monitoramento-taquari-monitoramentocontainer",
+    "image": "registry.cloudflare.com/f695d3055326e4346d3954d5cf1c0a17/sofik-monitoramento-taquari-monitoramentocontainer@sha256:5232e75ea2fa5f28cad73c3bea47a573f52d38e732cdba7ab109b8df0249e273",
+    "maxInstances": 1,
+    "version": 68
+  },
+  "instances": [
+    {
+      "id": "aa18abdb8e20468fb4cbc44e234dc30ae71ca2a4bc75f08a3e8275c79b7cd71f",
+      "name": "rio-taquari",
+      "state": "running",
+      "location": "ewr12",
+      "version": 68,
+      "created": "2026-09-23T13:34:43.708999936Z"
+    }
+  ],
+  "latest": {
+    "referenceAt": "2026-09-23T09:00:00-03:00",
+    "generatedAt": "2026-09-23T10:31:52.424067-03:00",
+    "modelVersion": "mucum-hydrometry-public-v1",
+    "archiveReceiptKey": "projection/receipts/3ff483aa-1a3e-43cf-8ccd-2adc285165c4.json",
+    "sha256": "6c1b3ab6efb1edb88155651b6cf4ca6756c4393ec6ae3068085041e302d59990"
+  },
+  "publicState": {
+    "projection": {
+      "schema": 1,
+      "station": "mucum",
+      "generatedAt": "2026-09-23T10:31:52.424067-03:00",
+      "referenceAt": "2026-09-23T09:00:00-03:00",
+      "experimental": true,
+      "intervalMinutes": 15,
+      "modelVersion": "mucum-hydrometry-public-v1",
+      "sourceModelVersion": "mucum-hydrometry-shadow-v1",
+      "modelSha256": "8adc838b20fba1ec3edd63db53e4575b0b8df59c22a777ada434ed773fb58c97",
+      "featureContract": "radar-hydrometry-propagation/v1",
+      "rainRequired": false,
+      "horizonHours": 6,
+      "forecastStartLeadHours": 2,
+      "referenceAgeSeconds": 5512.424067,
+      "checkedReferenceAt": "2026-09-23T10:00:00-03:00",
+      "archiveReceiptKey": "projection/receipts/3ff483aa-1a3e-43cf-8ccd-2adc285165c4.json",
+      "observation": {
+        "timestamp": "2026-09-23T12:00:00+00:00",
+        "level": 8.15
+      },
+      "models": [
+        {
+          "id": "radar_mucum_hydrometry_v1",
+          "label": "Modelo hidrométrico",
+          "points": [
+            {
+              "timestamp": "2026-09-23T14:00:00+00:00",
+              "level": 7.65638191060874,
+              "nominalLeadHours": 2,
+              "realLeadHours": 0.46877109250000004,
+              "lower": 7.561605240622828,
+              "upper": 7.742161587592577
+            },
+            {
+              "timestamp": "2026-09-23T15:00:00+00:00",
+              "level": 7.393473338103489,
+              "nominalLeadHours": 3,
+              "realLeadHours": 1.4687710925,
+              "lower": 7.25555641394894,
+              "upper": 7.5101543196770315
+            },
+            {
+              "timestamp": "2026-09-23T16:00:00+00:00",
+              "level": 7.138819698821168,
+              "nominalLeadHours": 4,
+              "realLeadHours": 2.4687710925,
+              "lower": 6.9446845768402214,
+              "upper": 7.251649294640431
+            },
+            {
+              "timestamp": "2026-09-23T17:00:00+00:00",
+              "level": 6.937747878891645,
+              "nominalLeadHours": 5,
+              "realLeadHours": 3.4687710925,
+              "lower": 6.667305107294593,
+              "upper": 7.048553176404725
+            },
+            {
+              "timestamp": "2026-09-23T18:00:00+00:00",
+              "level": 6.766118271117085,
+              "nominalLeadHours": 6,
+              "realLeadHours": 4.4687710925,
+              "lower": 6.437660194447327,
+              "upper": 6.941545873979846
+            }
+          ]
+        }
+      ],
+      "extrapolatedFeatures": [],
+      "uncertainty": "Empirical validation residual envelope; no nominal coverage or safety bound.",
+      "accuracy": {
+        "goalPercent": 98,
+        "demonstrated": false,
+        "status": "experimental"
+      },
+      "referenceSelection": {
+        "checkedReferenceAt": "2026-09-23T10:00:00-03:00",
+        "modelVersion": "mucum-hydrometry-public-v1",
+        "rainRequired": false,
+        "candidates": [
+          {
+            "referenceAt": "2026-09-23T10:00:00-03:00",
+            "reason": "Missing reference-hour hydrometry: 86510000:H, 86472000:H, 86472600:H, 86500000:H"
+          }
+        ],
+        "referenceAt": "2026-09-23T09:00:00-03:00",
+        "referenceAgeSeconds": 5512.424067
+      },
+      "inputReadiness": {
+        "status": "ready",
+        "modelVersion": "mucum-hydrometry-public-v1",
+        "rainRequired": false,
+        "referenceAt": "2026-09-23T09:00:00-03:00",
+        "missing": [],
+        "sources": [
+          {
+            "file": "ana-86510000-fresh.xml",
+            "source": "86510000",
+            "availableAt": "2026-09-23T10:18:44.734838-03:00",
+            "sha256": "c09dff8ef2fb54824aaaafdfa5f7463a6126481fc5872b6bc0274b26dfd606ed",
+            "quality": "Dado aprovado",
+            "keys": [
+              "86510000:H"
+            ]
+          },
+          {
+            "file": "ana-86472000-fresh.xml",
+            "source": "86472000",
+            "availableAt": "2026-09-23T10:18:39.497799-03:00",
+            "sha256": "69bee6276ec5afd67d45ea9c818ca8b165cd89eb8fbafde2998f0b826a6adb3d",
+            "quality": "Dado aprovado",
+            "keys": [
+              "86472000:H"
+            ]
+          },
+          {
+            "file": "ana-86472600-fresh.xml",
+            "source": "86472600",
+            "availableAt": "2026-09-23T10:18:41.194147-03:00",
+            "sha256": "98fb78c795c5a15e31ae0cd1e6aba8205c1868d65717b94453b2f831e50c3f0b",
+            "quality": "Dado aprovado",
+            "keys": [
+              "86472600:H"
+            ]
+          },
+          {
+            "file": "ana-86500000-fresh.xml",
+            "source": "86500000",
+            "availableAt": "2026-09-23T10:18:42.891300-03:00",
+            "sha256": "4fba48e37a665653d5a522173aa6a9fc4e31a4757fe8d598c9444206d844686a",
+            "quality": "Dado aprovado",
+            "keys": [
+              "86500000:H"
+            ]
+          },
+          {
+            "file": "ceran-julho-fresh.html",
+            "source": "julho",
+            "availableAt": "2026-09-23T10:18:44.254834-03:00",
+            "sha256": "22dfa7688f204f8ec2e2d836fda49bd05c96e4d30218c3a203e9331ac8977b69",
+            "quality": "CERAN as reported; no independent instrument certification",
+            "keys": [
+              "julho:Q",
+              "julho:I"
+            ]
+          },
+          {
+            "file": "ceran-monte-fresh.html",
+            "source": "monte",
+            "availableAt": "2026-09-23T10:18:44.429773-03:00",
+            "sha256": "07b56cf806c1774df6bdda83b7039543d7ffedeb795dfb8fb63b3995f8451d58",
+            "quality": "CERAN as reported; no independent instrument certification",
+            "keys": [
+              "monte:Q",
+              "monte:I"
+            ]
+          },
+          {
+            "file": "ceran-castro-fresh.html",
+            "source": "castro",
+            "availableAt": "2026-09-23T10:18:44.492535-03:00",
+            "sha256": "045adde836f3f05f08907d4d6f3ee271f70c3918f684996e4cac20b52564e351",
+            "quality": "CERAN as reported; no independent instrument certification",
+            "keys": [
+              "castro:Q",
+              "castro:I"
+            ]
+          }
+        ]
+      }
+    },
+    "rounds": [
+      "2026-09-23T12:00:00.000Z",
+      "2026-09-23T00:00:00.000Z",
+      "2026-09-22T23:00:00.000Z",
+      "2026-09-22T22:00:00.000Z",
+      "2026-09-22T21:00:00.000Z",
+      "2026-09-22T20:00:00.000Z",
+      "2026-09-22T19:00:00.000Z",
+      "2026-09-22T18:00:00.000Z",
+      "2026-09-22T17:00:00.000Z",
+      "2026-09-22T16:00:00.000Z",
+      "2026-09-22T15:00:00.000Z",
+      "2026-09-22T14:00:00.000Z",
+      "2026-09-22T13:00:00.000Z",
+      "2026-09-22T12:00:00.000Z",
+      "2026-09-22T11:00:00.000Z",
+      "2026-09-22T10:00:00.000Z",
+      "2026-09-22T09:00:00.000Z",
+      "2026-09-22T08:00:00.000Z",
+      "2026-09-22T07:00:00.000Z",
+      "2026-09-22T06:00:00.000Z",
+      "2026-09-22T05:00:00.000Z",
+      "2026-09-22T04:00:00.000Z",
+      "2026-09-22T03:00:00.000Z",
+      "2026-09-22T02:00:00.000Z",
+      "2026-09-22T01:00:00.000Z",
+      "2026-09-22T00:00:00.000Z"
+    ],
+    "refresh": {
+      "status": "waiting_for_data",
+      "referenceAt": "2026-09-23T13:00:00+00:00",
+      "checkedReferenceAt": "2026-09-23T13:00:00.000Z",
+      "generatedAt": "2026-09-22T21:31:54.903151-03:00",
+      "missing": [
+        "ValueError: ana-86510000-fresh.xml: source unavailable; ana-86472000-fresh.xml: source unavailable; ana-86472600-fresh.xml: source unavailable; ana-86500000-fresh.xml: source unavailable"
+      ],
+      "checkedAt": "2026-09-23T13:38:47.821Z",
+      "shadow": {
+        "status": "unavailable",
+        "generatedAt": "2026-09-23T10:38:35.410198-03:00",
+        "archiveReceiptKey": "projection/receipts/fbaccf2a-52b5-4ebe-bff6-690cce3c7d08.json",
+        "modelVersion": "mucum-hydrometry-shadow-v1"
+      }
+    },
+    "failed": false,
+    "stale": false
+  },
+  "archiveReceipts": [
+    {
+      "key": "projection/receipts/2c321ea1-8afb-4221-888a-c552fde69cb7.json",
+      "lastModified": "2026-09-23T11:49:56.425Z"
+    },
+    {
+      "key": "projection/receipts/2ee34b8d-34e3-4074-805e-d2cf56b65ed2.json",
+      "lastModified": "2026-09-23T12:15:57.046Z"
+    },
+    {
+      "key": "projection/receipts/34c5583a-570f-4579-8177-298f68d90136.json",
+      "lastModified": "2026-09-23T13:02:29.414Z"
+    },
+    {
+      "key": "projection/receipts/3ff483aa-1a3e-43cf-8ccd-2adc285165c4.json",
+      "lastModified": "2026-09-23T13:47:27.598Z"
+    },
+    {
+      "key": "projection/receipts/4bd594c5-4244-4e16-9689-e50f8c26363c.json",
+      "lastModified": "2026-09-23T12:30:58.913Z"
+    },
+    {
+      "key": "projection/receipts/50fbcd75-5cdf-4175-ad1d-497a16cc6555.json",
+      "lastModified": "2026-09-23T12:01:01.829Z"
+    },
+    {
+      "key": "projection/receipts/9cefe4c2-8d5a-4388-b253-e277dd3a14ab.json",
+      "lastModified": "2026-09-23T13:15:59.504Z"
+    },
+    {
+      "key": "projection/receipts/b75b9e0f-e457-4c21-bcf8-b7120acd0b0b.json",
+      "lastModified": "2026-09-23T13:00:56.173Z"
+    },
+    {
+      "key": "projection/receipts/bd42383f-ff5d-472f-80f2-63bb276d5ed6.json",
+      "lastModified": "2026-09-23T13:19:16.294Z"
+    },
+    {
+      "key": "projection/receipts/e4b3995d-a83e-49dc-b2de-082008a8a184.json",
+      "lastModified": "2026-09-23T01:00:57.755Z"
+    },
+    {
+      "key": "projection/receipts/fbaccf2a-52b5-4ebe-bff6-690cce3c7d08.json",
+      "lastModified": "2026-09-23T13:38:47.816Z"
+    },
+    {
+      "key": "projection/receipts/fbae349f-5102-45d4-b243-5140f57f5786.json",
+      "lastModified": "2026-09-23T12:45:59.611Z"
+    },
+    {
+      "key": "projection/receipts/fbe1255e-ff33-437c-8215-45f404fa32f0.json",
+      "lastModified": "2026-09-23T12:50:38.672Z"
+    }
+  ],
+  "localRuntimeManifestSha256": "34049c7f61e92e2d626b3d617e716d3792934d69cd67b897a19c494cbf131089"
+}

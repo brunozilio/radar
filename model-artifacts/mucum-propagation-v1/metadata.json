@@ -1,0 +1,16 @@
+{
+  "schema": "radar-propagation-release/v1",
+  "mode": "experimental_public",
+  "public_fallback_enabled": false,
+  "reason": "User explicitly authorized publishing the generated hydrometric forecast and removing the shadow-only validation block. This is an experimental primary model; historical performance and prospective accuracy remain uncertified.",
+  "model_sha256": "8adc838b20fba1ec3edd63db53e4575b0b8df59c22a777ada434ed773fb58c97",
+  "experiment": "outputs/propagacao-modelo-20260923",
+  "protocol_sha256": "73617007ac00546ce3ea1da9c6317c45f791d477cc4dd94df40bc51b2424c4e2",
+  "predictions_sha256": "12659095e6b0d166abf0723c8f4bc591ea93c047d9af89be2d1fa0e7c94ce9c6",
+  "goal_98_percent_demonstrated": false,
+  "training_data_availability": "Historical source receipts are not contemporaneous operational availability evidence.",
+  "public_primary_enabled": true,
+  "public_model_id": "radar_mucum_hydrometry_v1",
+  "public_model_version": "mucum-hydrometry-public-v1",
+  "rain_required": false
+}

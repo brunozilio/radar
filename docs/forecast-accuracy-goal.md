@@ -2,6 +2,8 @@
 
 Criada em 21/09/2026. Estado: **ativa; 98% ainda não demonstrados**.
 
+Atualização de autorização em 23/09/2026: o usuário solicitou publicar a previsão hidrométrica experimental no produto e retirar a trava que a mantinha apenas em avaliação. A publicação está autorizada em `radar.brunozilio.com` e segue [este contrato](mucum-hydrometry-public.md), sem dependência de chuva. Os registros abaixo descrevem etapas anteriores; suas restrições antigas de implantação não substituem essa autorização. A publicação experimental não constitui demonstração da meta de 98%.
+
 ## Objetivo e medida
 
 Alcançar pelo menos **98% de previsões com erro absoluto de até 0,50 m**,
@@ -4274,3 +4276,30 @@ ainda mostra18,73m às03h45. Corpo/cadeia3.015registros verificados;
 relatório `20260922T071035496254Z` permanece86pareados,13semobservação
 exata,108futuros,zero elegíveis. Não houve interpolação para criar04h.
 Meta permanece ativa, sem98% ou promoção demonstrados.
+
+
+### 22/09/2026 — correção imediata solicitada: aguardar dados completos
+
+Usuário confirmou chuva com cobertura válida nas cinco regiões e pediu execução agora, sem criar tarefa. Implementada trava compartilhada antes da inferência/treino: níveis exatos aprovados, Q/I exatos das três usinas, cobertura espacial mínima de 50% em cada região com intervalos medidos completos da hora, e vetor atual completo. Site passa a verificar disponibilidade e preservar a emissão anterior quando faltar dado; uma publicação por hora, com recibo da tentativa e reutilização em retentativa de publicação. Chuva atrasada não é deslocada para a hora corrente.
+
+Evidência em `outputs/verificacao-dados-completos-20260922T192913-0300/`: nova coleta de 19h29 bloqueou referência 19h apesar de Muçum e usinas presentes; níveis de montante e cobertura de chuva insuficientes. Comparação exploratória de 42 pares exatos de três emissões da pesquisa constatou MAEs 1,7426/2,2502/1,8027 m, sem certificação prospectiva. Nenhuma nova inferência, treino, promoção ou publicação foi realizada neste diagnóstico. A meta permanece ativa e não atingida.
+
+### 22/09/2026 — retenção longa e implementação das correções
+
+Atualização do escopo vigente: o usuário autorizou implementar as correções no
+Radar e retirou o limite de 48 horas para o histórico. HGE permanece fora do
+produto. A tarefa agendada do Codex foi removida; não criar outra. As descrições
+anteriores de dois métodos e automação horária são registros históricos, não
+instruções operacionais atuais.
+
+Medições passam a não expirar por tempo; sincronização usa fila persistente e
+confirmação integral. Cada tentativa preserva entradas e runtime em arquivo
+imutável, inclusive se o cálculo aguarda dados. Previsão nova depende do arquivo
+concluído e da trava de dados completos. Detalhes: `hydrology-long-term-history.md`.
+
+O vetor contemporâneo passa a ter contrato comum e construtor causal de dataset.
+O retreinamento legado com NWP de produtos incompatíveis fica bloqueado. A correção
+curta é somente shadow: melhora em parte da recessão analisada, mas há regressão em
+subida/estabilidade. Evidência: `outputs/avaliacao-correcao-curta-shadow-20260922T213000/`.
+Nenhum candidato foi promovido e 98% permanecem não demonstrados. Conservar dados
+é condição para medir e treinar melhor, não prova automática de aumento da precisão.

@@ -1,0 +1,73 @@
+{
+  "frozenBeforeFitAt": "2026-09-23T12:51:03.220306+00:00",
+  "files": {
+    "scripts/hydro_propagation_model.py": "78fc8b21ab0f06c3390d4c2a8732161dd522eb7a1674378c6eafdf25591cdbad",
+    "scripts/test_hydro_propagation_model.py": "fb3a06b08deef41f92bb8f284d451a750cdb076f955112ce307b451ba1db1494",
+    "docs/mucum-propagation-validation-protocol.json": "73617007ac00546ce3ea1da9c6317c45f791d477cc4dd94df40bc51b2424c4e2",
+    "outputs/propagacao-dados-20260923/exact-hour-level-flow.npz": "018b369e40dec3ba774b6b255aaec41479e4ea29087d7ebf9bf76f7404ed49dd",
+    "outputs/propagacao-dados-20260923/manifest.json": "4de1bef55a0fa5ae50ae7a3c47d905d32d39ed97079bea0feeb2adfb0fdc73e0"
+  },
+  "args": [
+    "/private/tmp/radar-hge-venv/bin/python",
+    "scripts/hydro_propagation_model.py",
+    "train",
+    "--dataset",
+    "outputs/propagacao-dados-20260923/exact-hour-level-flow.npz",
+    "--dataset-metadata",
+    "outputs/propagacao-dados-20260923/manifest.json",
+    "--output",
+    "outputs/propagacao-modelo-20260923",
+    "--train-end",
+    "2025-10-01T00:00:00-03:00",
+    "--validation-end",
+    "2026-07-01T00:00:00-03:00",
+    "--test-end",
+    "2026-09-21T00:00:00-03:00"
+  ],
+  "alphaGrid": [
+    1,
+    10,
+    100,
+    1000
+  ],
+  "lagGridHours": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "lagCalibration": "training only first differences positive correlation",
+  "families": [
+    "contemporaneous",
+    "lagged"
+  ],
+  "score": "MAE+0.5*MAE(target-base>=1m)+0.5*MAE(target>=9m); absent subgroup penalty omitted with null subgroup metrics",
+  "embargoHours": 33,
+  "originPhaseSlopeHours": 2,
+  "originPhaseThresholdMetresPerHour": 0.05,
+  "datasetStart": "2025-04-01T03:00:00+00:00",
+  "datasetEnd": "2026-09-23T11:00:00+00:00",
+  "mode": "shadow",
+  "publicPromotion": false
+}

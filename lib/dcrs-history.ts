@@ -1,3 +1,5 @@
+import type { DatabaseSync } from "node:sqlite";
+
 export type DcrsHistoricReading = {
   timestamp: string;
   rawLevel: number;
@@ -5,6 +7,25 @@ export type DcrsHistoricReading = {
   trendValue: number | null;
   trend: "rising" | "falling" | "stable";
 };
+
+export type DcrsCurrentReading = {
+  station: string;
+  timestamp: string;
+  level: number | null;
+  raw_level: number | null;
+  trend_value: number | null;
+  trend: "rising" | "falling" | "stable";
+};
+
+export function readLatestDcrsReading(database: DatabaseSync, now = Date.now()) {
+  return database.prepare(`
+    SELECT station, timestamp, level, raw_level, trend_value, trend
+    FROM river_readings
+    WHERE station = 'DCRS-00091' AND julianday(timestamp) <= julianday(?)
+    ORDER BY julianday(timestamp) DESC, julianday(created_at) DESC
+    LIMIT 1
+  `).get(new Date(now).toISOString()) as DcrsCurrentReading | undefined;
+}
 
 export function graphqlUtcDate(date: Date) {
   return date.toISOString().slice(0, 19).replace("T", " ");

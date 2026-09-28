@@ -1,0 +1,166 @@
+{
+  "schema": "radar-propagation-shadow/v1",
+  "mode": "shadow",
+  "publishable": false,
+  "station": "86510000",
+  "checkedReferenceAt": "2026-09-23T09:00:00-03:00",
+  "generatedAt": "2026-09-23T09:58:13.642892-03:00",
+  "status": "calculated",
+  "points": [
+    {
+      "leadHours": 2,
+      "nominalLeadHours": 2,
+      "realLeadHours": 0.029543641143374974,
+      "time": "2026-09-23T13:00:00+00:00",
+      "timestamp": "2026-09-23T13:00:00+00:00",
+      "level": 7.918035272246856,
+      "lower": 7.823258602260943,
+      "upper": 8.003814949230692,
+      "family": "lagged"
+    },
+    {
+      "leadHours": 3,
+      "nominalLeadHours": 3,
+      "realLeadHours": 1.029543641143375,
+      "time": "2026-09-23T14:00:00+00:00",
+      "timestamp": "2026-09-23T14:00:00+00:00",
+      "level": 7.721219201244547,
+      "lower": 7.583302277089998,
+      "upper": 7.837900182818089,
+      "family": "lagged"
+    },
+    {
+      "leadHours": 4,
+      "nominalLeadHours": 4,
+      "realLeadHours": 2.029543641143375,
+      "time": "2026-09-23T15:00:00+00:00",
+      "timestamp": "2026-09-23T15:00:00+00:00",
+      "level": 7.51437494542251,
+      "lower": 7.320239823441564,
+      "upper": 7.627204541241773,
+      "family": "lagged"
+    },
+    {
+      "leadHours": 5,
+      "nominalLeadHours": 5,
+      "realLeadHours": 3.029543641143375,
+      "time": "2026-09-23T16:00:00+00:00",
+      "timestamp": "2026-09-23T16:00:00+00:00",
+      "level": 7.292626683492222,
+      "lower": 7.02218391189517,
+      "upper": 7.403431981005302,
+      "family": "lagged"
+    },
+    {
+      "leadHours": 6,
+      "nominalLeadHours": 6,
+      "realLeadHours": 4.029543641143375,
+      "time": "2026-09-23T17:00:00+00:00",
+      "timestamp": "2026-09-23T17:00:00+00:00",
+      "level": 7.04039891652781,
+      "lower": 6.711940839858052,
+      "upper": 7.215826519390571,
+      "family": "lagged"
+    }
+  ],
+  "candidates": [
+    {
+      "referenceAt": "2026-09-23T09:00:00-03:00",
+      "reason": "Missing reference-hour hydrometry: 86472600:H"
+    }
+  ],
+  "limitations": [
+    "Statistical response lags are not physical water travel times.",
+    "Historical fit does not certify historical availability or prospective accuracy.",
+    "No public substitution before independent and prospective validation."
+  ],
+  "modelSha256": "8adc838b20fba1ec3edd63db53e4575b0b8df59c22a777ada434ed773fb58c97",
+  "sources": [
+    {
+      "file": "ana-86510000-fresh.xml",
+      "source": "86510000",
+      "availableAt": "2026-09-23T09:53:52.251411-03:00",
+      "sha256": "206f5ddbfebf862f0379eb372c83f9989a36d0eb2763aae33f57606bdbd1b246",
+      "quality": "Dado aprovado",
+      "keys": [
+        "86510000:H"
+      ]
+    },
+    {
+      "file": "ana-86472000-fresh.xml",
+      "source": "86472000",
+      "availableAt": "2026-09-23T09:53:48.370234-03:00",
+      "sha256": "69bee6276ec5afd67d45ea9c818ca8b165cd89eb8fbafde2998f0b826a6adb3d",
+      "quality": "Dado aprovado",
+      "keys": [
+        "86472000:H"
+      ]
+    },
+    {
+      "file": "ana-86472600-fresh.xml",
+      "source": "86472600",
+      "availableAt": "2026-09-23T09:53:48.893332-03:00",
+      "sha256": "23d4756690b9e32f8dca8798ef3f1dfcdeeb877cda5e57f3e8e0721467d2a563",
+      "quality": "Dado aprovado",
+      "keys": [
+        "86472600:H"
+      ]
+    },
+    {
+      "file": "ana-86500000-fresh.xml",
+      "source": "86500000",
+      "availableAt": "2026-09-23T09:53:50.961746-03:00",
+      "sha256": "4fba48e37a665653d5a522173aa6a9fc4e31a4757fe8d598c9444206d844686a",
+      "quality": "Dado aprovado",
+      "keys": [
+        "86500000:H"
+      ]
+    },
+    {
+      "file": "ceran-julho-fresh.html",
+      "source": "julho",
+      "availableAt": "2026-09-23T09:53:52.824776-03:00",
+      "sha256": "5ea17872ca889c8aa14cf3f6b44b17b4f229dfa48d8f5c9d44691a2b255df903",
+      "quality": "CERAN as reported; no independent instrument certification",
+      "keys": [
+        "julho:Q",
+        "julho:I"
+      ]
+    },
+    {
+      "file": "ceran-monte-fresh.html",
+      "source": "monte",
+      "availableAt": "2026-09-23T09:53:53.372992-03:00",
+      "sha256": "ac6a03a9967acd34706108345a6249469857b3f8a2802c127549a3a37797e9fa",
+      "quality": "CERAN as reported; no independent instrument certification",
+      "keys": [
+        "monte:Q",
+        "monte:I"
+      ]
+    },
+    {
+      "file": "ceran-castro-fresh.html",
+      "source": "castro",
+      "availableAt": "2026-09-23T09:53:53.915150-03:00",
+      "sha256": "1cd2dd6bef7ce3d658c7519efc6df8fd580a1470a9eb2a9709a62c983e2d0bb5",
+      "quality": "CERAN as reported; no independent instrument certification",
+      "keys": [
+        "castro:Q",
+        "castro:I"
+      ]
+    }
+  ],
+  "referenceAt": "2026-09-23T08:00:00-03:00",
+  "observation": {
+    "timestamp": "2026-09-23T11:00:00+00:00",
+    "level": 8.38
+  },
+  "modelVersion": "mucum-hydrometry-shadow-v1",
+  "contract": "radar-hydrometry-propagation/v1",
+  "rainRequired": false,
+  "horizonHours": 6,
+  "forecastStartLeadHours": 2,
+  "extrapolatedFeatures": [],
+  "uncertainty": "Empirical validation residual envelope; no nominal coverage or safety bound.",
+  "referenceAgeSeconds": 7093.642892
+}
