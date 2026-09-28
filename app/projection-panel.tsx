@@ -90,6 +90,7 @@ function ProjectionContent() {
       {stale && !data.failed && <p className="projection-warning" role="status">Exibindo o último cálculo disponível, de {dateTime(projection.generatedAt)}. A previsão pode estar desatualizada.</p>}
       {!projection ? <p className="projection-empty" role="status">{data.loading ? "Carregando previsão…" : data.failed ? "Previsão temporariamente indisponível." : "Aguardando o primeiro cálculo."}</p> : (
         <>
+          {hydrometric && <p className="projection-warning" role="status">Atenção: esta previsão ainda não usa a chuva. Se choveu forte a montante, o nível pode subir antes de essa água aparecer nas vazões das barragens e nos níveis medidos. Nesse caso, o gráfico pode subestimar a subida. Consulte também o <a href="#chuva-acumulada">mapa de chuva</a> e os alertas oficiais.</p>}
           {points.length ? <>
             <p className="projection-details">Calculada em {dateTime(projection.generatedAt)}. Dados de {dateTime(projection.referenceAt)}. Previsão {period}.</p>
             <svg className="projection-chart" viewBox="0 0 770 205" role="img" aria-label={`Nível observado em ${city} seguido da previsão de nível ${period}, em metros. Valores disponíveis na tabela abaixo.`}>
@@ -110,7 +111,7 @@ function ProjectionContent() {
 function ProjectionExplanation({ hydrometric }: { hydrometric: boolean }) {
   return <details className="projection-details"><summary>Como funciona o modelo de previsão</summary>
     <p>{hydrometric
-      ? "O gráfico usa o modelo hidrométrico experimental de Muçum. Ele considera níveis do rio e vazões das hidrelétricas, incluindo suas mudanças nas horas anteriores, para estimar a água que ainda está chegando. Esse modelo não depende de medições de chuva."
+      ? "O gráfico usa o modelo hidrométrico experimental de Muçum. Ele considera níveis do rio e vazões das hidrelétricas, incluindo suas mudanças nas horas anteriores. Chuva que ainda não alterou esses níveis e vazões não entra na previsão."
       : "Esta previsão foi gerada pelo modelo anterior, que usa níveis, vazões e chuva. As próximas atualizações usam o modelo hidrométrico de Muçum."}</p>
     <p>Uma nova previsão é calculada quando os níveis e vazões necessários estão completos para a hora de referência e para o histórico usado pelo modelo. O alcance é de até 6 horas após essa referência. O gráfico mostra somente horários que ainda não passaram. Os horários são de Brasília.</p>
     <p>Este modelo é experimental: pode errar, principalmente em mudanças rápidas e situações pouco representadas no histórico. Os resultados ainda estão em validação. Não substitui alertas e orientações da Defesa Civil.</p>

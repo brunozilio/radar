@@ -1,0 +1,1479 @@
+{
+  "schema": "rain-leading-signal-v1",
+  "sourceSha256": {
+    "/Users/brunozilio/.codex/worktrees/radar-camera-nowcast/radar/outputs/propagacao-dados-20260923/exact-hour-level-flow.npz": "018b369e40dec3ba774b6b255aaec41479e4ea29087d7ebf9bf76f7404ed49dd",
+    "/Users/brunozilio/.codex/worktrees/radar-camera-nowcast/radar/outputs/mucum-auditoria-2026-09-21/telemetria-corrigida.npz": "0f6d3f91f60e63d640b30686db76420c392ad576898dc231ca1a52c403e43d14",
+    "/Users/brunozilio/.codex/worktrees/radar-camera-nowcast/radar/model-artifacts/mucum-propagation-v1/model.json": "8adc838b20fba1ec3edd63db53e4575b0b8df59c22a777ada434ed773fb58c97",
+    "/Users/brunozilio/.codex/worktrees/radar-camera-nowcast/radar/docs/rain-leading-signal-protocol.json": "d64f77228c1e4026f671a5fa546005ad75a4fff6ab04145d08b68f2e989d8136",
+    "/Users/brunozilio/.codex/worktrees/radar-camera-nowcast/radar/scripts/hydro_rain_leading_experiment.py": "f7e9d03b54a6516bf77f8ba2d291b6c6a32d3d4d15615ca41b215a0ffbdc894e"
+  },
+  "rainFeatureNames": [
+    "Baixo Antas:observed_P3_ending_t_minus_1h/100mm",
+    "Baixo Antas:observed_P6_ending_t_minus_1h/100mm",
+    "Baixo Antas:observed_P12_ending_t_minus_1h/100mm",
+    "Baixo Antas:observed_P24_ending_t_minus_1h/100mm",
+    "Carreiro:observed_P3_ending_t_minus_1h/100mm",
+    "Carreiro:observed_P6_ending_t_minus_1h/100mm",
+    "Carreiro:observed_P12_ending_t_minus_1h/100mm",
+    "Carreiro:observed_P24_ending_t_minus_1h/100mm",
+    "Prata-Turvo:observed_P3_ending_t_minus_1h/100mm",
+    "Prata-Turvo:observed_P6_ending_t_minus_1h/100mm",
+    "Prata-Turvo:observed_P12_ending_t_minus_1h/100mm",
+    "Prata-Turvo:observed_P24_ending_t_minus_1h/100mm",
+    "Alto Antas:observed_P3_ending_t_minus_1h/100mm",
+    "Alto Antas:observed_P6_ending_t_minus_1h/100mm",
+    "Alto Antas:observed_P12_ending_t_minus_1h/100mm",
+    "Alto Antas:observed_P24_ending_t_minus_1h/100mm",
+    "Tainhas:observed_P3_ending_t_minus_1h/100mm",
+    "Tainhas:observed_P6_ending_t_minus_1h/100mm",
+    "Tainhas:observed_P12_ending_t_minus_1h/100mm",
+    "Tainhas:observed_P24_ending_t_minus_1h/100mm"
+  ],
+  "limitations": [
+    "Historical rainfall arrival time is not reconstructed; t-1h is an assumed availability margin.",
+    "The test dates and September flood were previously inspected during model development.",
+    "The sample does not include the major 2024 floods or prove live forecast accuracy."
+  ],
+  "reports": [
+    {
+      "h": 1,
+      "phase": "validation",
+      "trainingRows": 2113,
+      "evaluationRows": 3114,
+      "strata": {
+        "all": {
+          "n": 3114,
+          "hydrometric_mae_m": 0.018372804178057357,
+          "rain_mae_m": 0.019034882313702234,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 14,
+          "hydrometric_mae_m": 0.03221706467066302,
+          "rain_mae_m": 0.0328530094813555,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 114,
+          "hydrometric_mae_m": 0.02374986031342308,
+          "rain_mae_m": 0.032885632878627,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 69,
+          "hydrometric_mae_m": 0.017527019559029484,
+          "rain_mae_m": 0.027678970907828428,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 8,
+          "hydrometric_mae_m": 0.010900894473814843,
+          "rain_mae_m": 0.028702365211103503,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 25,
+          "hydrometric_mae_m": 0.00935369479678338,
+          "rain_mae_m": 0.018386346785201416,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 18,
+          "hydrometric_mae_m": 0.01047899520611738,
+          "rain_mae_m": 0.01815043569843111,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 1,
+      "phase": "test",
+      "trainingRows": 5227,
+      "evaluationRows": 771,
+      "strata": {
+        "all": {
+          "n": 771,
+          "hydrometric_mae_m": 0.03195477679138161,
+          "rain_mae_m": 0.03157066474253928,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 83,
+          "hydrometric_mae_m": 0.042380951875676406,
+          "rain_mae_m": 0.04134420889343616,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 2,
+          "hydrometric_mae_m": 0.168185285133287,
+          "rain_mae_m": 0.16852953449472263,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 33,
+          "hydrometric_mae_m": 0.054462010778461634,
+          "rain_mae_m": 0.05629254253437329,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 1,
+          "hydrometric_mae_m": 0.1264843917988756,
+          "rain_mae_m": 0.12684110370030321,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.013255831127223061,
+          "rain_mae_m": 0.010644267749349456,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 1,
+      "phase": "stress_current",
+      "trainingRows": 5227,
+      "evaluationRows": 4,
+      "strata": {
+        "all": {
+          "n": 4,
+          "hydrometric_mae_m": 0.11362650647710992,
+          "rain_mae_m": 0.11470173807303563,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 2,
+          "hydrometric_mae_m": 0.22026989863042923,
+          "rain_mae_m": 0.22160562823961838,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.22026989863042923,
+          "rain_mae_m": 0.22160562823961838,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.22026989863042923,
+          "rain_mae_m": 0.22160562823961838,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.22026989863042923,
+          "rain_mae_m": 0.22160562823961838,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 2,
+      "phase": "validation",
+      "trainingRows": 2113,
+      "evaluationRows": 3112,
+      "strata": {
+        "all": {
+          "n": 3112,
+          "hydrometric_mae_m": 0.04247929291542248,
+          "rain_mae_m": 0.04501511000872304,
+          "hydrometric_within_50cm_rate": 0.9996786632390745,
+          "rain_within_50cm_rate": 0.9996786632390745,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 14,
+          "hydrometric_mae_m": 0.0558039257471152,
+          "rain_mae_m": 0.06033668401278179,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 10,
+          "hydrometric_mae_m": 0.30156276760158696,
+          "rain_mae_m": 0.3117711466094597,
+          "hydrometric_within_50cm_rate": 0.9,
+          "rain_within_50cm_rate": 0.9,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 114,
+          "hydrometric_mae_m": 0.06044902499932065,
+          "rain_mae_m": 0.0870432303694519,
+          "hydrometric_within_50cm_rate": 0.9912280701754386,
+          "rain_within_50cm_rate": 0.9912280701754386,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 69,
+          "hydrometric_mae_m": 0.04558336653618967,
+          "rain_mae_m": 0.07281304388847289,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 8,
+          "hydrometric_mae_m": 0.02613264772534593,
+          "rain_mae_m": 0.025528295150461067,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 25,
+          "hydrometric_mae_m": 0.02273155818756721,
+          "rain_mae_m": 0.07295732870099801,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 18,
+          "hydrometric_mae_m": 0.02342362560051474,
+          "rain_mae_m": 0.07681102035853314,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 2,
+      "phase": "test",
+      "trainingRows": 5225,
+      "evaluationRows": 770,
+      "strata": {
+        "all": {
+          "n": 770,
+          "hydrometric_mae_m": 0.0707387122448484,
+          "rain_mae_m": 0.06930396197721937,
+          "hydrometric_within_50cm_rate": 0.9987012987012988,
+          "rain_within_50cm_rate": 0.9987012987012988,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 81,
+          "hydrometric_mae_m": 0.10408180310167907,
+          "rain_mae_m": 0.09846244225977908,
+          "hydrometric_within_50cm_rate": 0.9876543209876543,
+          "rain_within_50cm_rate": 0.9876543209876543,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 23,
+          "hydrometric_mae_m": 0.2827952174877222,
+          "rain_mae_m": 0.27761667283480196,
+          "hydrometric_within_50cm_rate": 0.9565217391304348,
+          "rain_within_50cm_rate": 0.9565217391304348,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 33,
+          "hydrometric_mae_m": 0.13712862136202109,
+          "rain_mae_m": 0.1373252230289491,
+          "hydrometric_within_50cm_rate": 0.9696969696969697,
+          "rain_within_50cm_rate": 0.9696969696969697,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 1,
+          "hydrometric_mae_m": 0.17217720789507496,
+          "rain_mae_m": 0.17431130203904477,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.05882912854973266,
+          "rain_mae_m": 0.025192869008964003,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 2,
+      "phase": "stress_current",
+      "trainingRows": 5225,
+      "evaluationRows": 4,
+      "strata": {
+        "all": {
+          "n": 4,
+          "hydrometric_mae_m": 0.3782731376278474,
+          "rain_mae_m": 0.3866664323864457,
+          "hydrometric_within_50cm_rate": 0.5,
+          "rain_within_50cm_rate": 0.5,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 2,
+          "hydrometric_mae_m": 0.6975092291348295,
+          "rain_mae_m": 0.7116699337438765,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 2,
+          "hydrometric_mae_m": 0.6975092291348295,
+          "rain_mae_m": 0.7116699337438765,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.6975092291348295,
+          "rain_mae_m": 0.7116699337438765,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.6975092291348295,
+          "rain_mae_m": 0.7116699337438765,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.6975092291348295,
+          "rain_mae_m": 0.7116699337438765,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 3,
+      "phase": "validation",
+      "trainingRows": 2112,
+      "evaluationRows": 3107,
+      "strata": {
+        "all": {
+          "n": 3107,
+          "hydrometric_mae_m": 0.05939220622881659,
+          "rain_mae_m": 0.06824834792682284,
+          "hydrometric_within_50cm_rate": 0.9977470228516253,
+          "rain_within_50cm_rate": 0.9951721918249115,
+          "rain_false_rise_n": 1,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 15,
+          "hydrometric_mae_m": 0.11559818014452722,
+          "rain_mae_m": 0.12513706055677645,
+          "hydrometric_within_50cm_rate": 0.9333333333333333,
+          "rain_within_50cm_rate": 0.9333333333333333,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 44,
+          "hydrometric_mae_m": 0.2131814419269644,
+          "rain_mae_m": 0.21389945935590743,
+          "hydrometric_within_50cm_rate": 0.9545454545454546,
+          "rain_within_50cm_rate": 0.9318181818181818,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 114,
+          "hydrometric_mae_m": 0.09616676276768447,
+          "rain_mae_m": 0.23495020766551486,
+          "hydrometric_within_50cm_rate": 0.9649122807017544,
+          "rain_within_50cm_rate": 0.9298245614035088,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 69,
+          "hydrometric_mae_m": 0.06470860962250355,
+          "rain_mae_m": 0.26156068036251384,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.9710144927536232,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 8,
+          "hydrometric_mae_m": 0.03734034869837384,
+          "rain_mae_m": 0.19585602850724843,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 25,
+          "hydrometric_mae_m": 0.04082835396868046,
+          "rain_mae_m": 0.22465030442432243,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 18,
+          "hydrometric_mae_m": 0.0395131780503379,
+          "rain_mae_m": 0.2679975480795782,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 3,
+      "phase": "test",
+      "trainingRows": 5219,
+      "evaluationRows": 769,
+      "strata": {
+        "all": {
+          "n": 769,
+          "hydrometric_mae_m": 0.1049929779840458,
+          "rain_mae_m": 0.10134489669207332,
+          "hydrometric_within_50cm_rate": 0.9869960988296489,
+          "rain_within_50cm_rate": 0.9895968790637191,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 80,
+          "hydrometric_mae_m": 0.19040261318998258,
+          "rain_mae_m": 0.17912060798111348,
+          "hydrometric_within_50cm_rate": 0.9,
+          "rain_within_50cm_rate": 0.925,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 58,
+          "hydrometric_mae_m": 0.21718842453744747,
+          "rain_mae_m": 0.2055273160718365,
+          "hydrometric_within_50cm_rate": 0.9310344827586207,
+          "rain_within_50cm_rate": 0.9482758620689655,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 33,
+          "hydrometric_mae_m": 0.2392152032599357,
+          "rain_mae_m": 0.24296418921712465,
+          "hydrometric_within_50cm_rate": 0.8787878787878788,
+          "rain_within_50cm_rate": 0.9090909090909091,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 1,
+          "hydrometric_mae_m": 0.36307651298546073,
+          "rain_mae_m": 0.3459596375539711,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.11942056853505134,
+          "rain_mae_m": 0.06035803681280183,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 3,
+      "phase": "stress_current",
+      "trainingRows": 5219,
+      "evaluationRows": 4,
+      "strata": {
+        "all": {
+          "n": 4,
+          "hydrometric_mae_m": 0.5173166542631099,
+          "rain_mae_m": 0.518140604128658,
+          "hydrometric_within_50cm_rate": 0.75,
+          "rain_within_50cm_rate": 0.75,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 2,
+          "hydrometric_mae_m": 0.8346706494709046,
+          "rain_mae_m": 0.8310585066279987,
+          "hydrometric_within_50cm_rate": 0.5,
+          "rain_within_50cm_rate": 0.5,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 2,
+          "hydrometric_mae_m": 0.8346706494709046,
+          "rain_mae_m": 0.8310585066279987,
+          "hydrometric_within_50cm_rate": 0.5,
+          "rain_within_50cm_rate": 0.5,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.8346706494709046,
+          "rain_mae_m": 0.8310585066279987,
+          "hydrometric_within_50cm_rate": 0.5,
+          "rain_within_50cm_rate": 0.5,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.8346706494709046,
+          "rain_mae_m": 0.8310585066279987,
+          "hydrometric_within_50cm_rate": 0.5,
+          "rain_within_50cm_rate": 0.5,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.8346706494709046,
+          "rain_mae_m": 0.8310585066279987,
+          "hydrometric_within_50cm_rate": 0.5,
+          "rain_within_50cm_rate": 0.5,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 4,
+      "phase": "validation",
+      "trainingRows": 2109,
+      "evaluationRows": 3109,
+      "strata": {
+        "all": {
+          "n": 3109,
+          "hydrometric_mae_m": 0.07801635232095225,
+          "rain_mae_m": 0.0951808364820726,
+          "hydrometric_within_50cm_rate": 0.9954969443550981,
+          "rain_within_50cm_rate": 0.9745899002894821,
+          "rain_false_rise_n": 9,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 15,
+          "hydrometric_mae_m": 0.17313641859593734,
+          "rain_mae_m": 0.19239293738118615,
+          "hydrometric_within_50cm_rate": 0.9333333333333333,
+          "rain_within_50cm_rate": 0.9333333333333333,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 72,
+          "hydrometric_mae_m": 0.1993346702246622,
+          "rain_mae_m": 0.20225021775108776,
+          "hydrometric_within_50cm_rate": 0.9027777777777778,
+          "rain_within_50cm_rate": 0.9305555555555556,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 114,
+          "hydrometric_mae_m": 0.12681910947821579,
+          "rain_mae_m": 0.4880606307020257,
+          "hydrometric_within_50cm_rate": 0.9298245614035088,
+          "rain_within_50cm_rate": 0.37719298245614036,
+          "rain_false_rise_n": 5,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 69,
+          "hydrometric_mae_m": 0.07491285053998736,
+          "rain_mae_m": 0.6311199408737842,
+          "hydrometric_within_50cm_rate": 0.9855072463768116,
+          "rain_within_50cm_rate": 0.08695652173913043,
+          "rain_false_rise_n": 3,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 8,
+          "hydrometric_mae_m": 0.027923606790563646,
+          "rain_mae_m": 0.5881394025042452,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 25,
+          "hydrometric_mae_m": 0.058260151458744344,
+          "rain_mae_m": 0.5142133726251431,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.24,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 18,
+          "hydrometric_mae_m": 0.052305713843723886,
+          "rain_mae_m": 0.6498954046631271,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 4,
+      "phase": "test",
+      "trainingRows": 5218,
+      "evaluationRows": 769,
+      "strata": {
+        "all": {
+          "n": 769,
+          "hydrometric_mae_m": 0.1395315674960479,
+          "rain_mae_m": 0.13542775068825072,
+          "hydrometric_within_50cm_rate": 0.9752925877763329,
+          "rain_within_50cm_rate": 0.9778933680104032,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 81,
+          "hydrometric_mae_m": 0.30252854829089737,
+          "rain_mae_m": 0.2887084615647918,
+          "hydrometric_within_50cm_rate": 0.8024691358024691,
+          "rain_within_50cm_rate": 0.8148148148148148,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 95,
+          "hydrometric_mae_m": 0.3015218543428044,
+          "rain_mae_m": 0.2850243476246034,
+          "hydrometric_within_50cm_rate": 0.8526315789473684,
+          "rain_within_50cm_rate": 0.8526315789473684,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 33,
+          "hydrometric_mae_m": 0.3449527096857391,
+          "rain_mae_m": 0.3474416407379298,
+          "hydrometric_within_50cm_rate": 0.7575757575757576,
+          "rain_within_50cm_rate": 0.7575757575757576,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 1,
+          "hydrometric_mae_m": 0.8016846073401247,
+          "rain_mae_m": 0.7300125107472297,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.14547984716758044,
+          "rain_mae_m": 0.0656225787301028,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 4,
+      "phase": "stress_current",
+      "trainingRows": 5218,
+      "evaluationRows": 4,
+      "strata": {
+        "all": {
+          "n": 4,
+          "hydrometric_mae_m": 1.034580702529127,
+          "rain_mae_m": 0.927293046451752,
+          "hydrometric_within_50cm_rate": 0.25,
+          "rain_within_50cm_rate": 0.25,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 2,
+          "hydrometric_mae_m": 1.4480679913316097,
+          "rain_mae_m": 1.2241776177930284,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 2,
+          "hydrometric_mae_m": 1.4480679913316097,
+          "rain_mae_m": 1.2241776177930284,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.4480679913316097,
+          "rain_mae_m": 1.2241776177930284,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.4480679913316097,
+          "rain_mae_m": 1.2241776177930284,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.4480679913316097,
+          "rain_mae_m": 1.2241776177930284,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 5,
+      "phase": "validation",
+      "trainingRows": 2106,
+      "evaluationRows": 3105,
+      "strata": {
+        "all": {
+          "n": 3105,
+          "hydrometric_mae_m": 0.11605113043101896,
+          "rain_mae_m": 0.14180584753349007,
+          "hydrometric_within_50cm_rate": 0.9938808373590983,
+          "rain_within_50cm_rate": 0.9687600644122383,
+          "rain_false_rise_n": 47,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 15,
+          "hydrometric_mae_m": 0.20149996133210588,
+          "rain_mae_m": 0.2287392365862272,
+          "hydrometric_within_50cm_rate": 0.9333333333333333,
+          "rain_within_50cm_rate": 0.9333333333333333,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 105,
+          "hydrometric_mae_m": 0.21171235406009523,
+          "rain_mae_m": 0.20947333790933387,
+          "hydrometric_within_50cm_rate": 0.9142857142857143,
+          "rain_within_50cm_rate": 0.8952380952380953,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 113,
+          "hydrometric_mae_m": 0.15505030773520387,
+          "rain_mae_m": 0.8096353939188112,
+          "hydrometric_within_50cm_rate": 0.9292035398230089,
+          "rain_within_50cm_rate": 0.3185840707964602,
+          "rain_false_rise_n": 43,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 69,
+          "hydrometric_mae_m": 0.09282935623617274,
+          "rain_mae_m": 1.0957084581729941,
+          "hydrometric_within_50cm_rate": 0.9710144927536232,
+          "rain_within_50cm_rate": 0.028985507246376812,
+          "rain_false_rise_n": 41,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 8,
+          "hydrometric_mae_m": 0.03943383327881253,
+          "rain_mae_m": 1.0646646555137331,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 8,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 25,
+          "hydrometric_mae_m": 0.08582327857190578,
+          "rain_mae_m": 0.8819938722724692,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.24,
+          "rain_false_rise_n": 16,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 18,
+          "hydrometric_mae_m": 0.07417636586942676,
+          "rain_mae_m": 1.1301201419749658,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 16,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 5,
+      "phase": "test",
+      "trainingRows": 5211,
+      "evaluationRows": 769,
+      "strata": {
+        "all": {
+          "n": 769,
+          "hydrometric_mae_m": 0.16849312060372162,
+          "rain_mae_m": 0.1654224328569974,
+          "hydrometric_within_50cm_rate": 0.9479843953185956,
+          "rain_within_50cm_rate": 0.9505851755526658,
+          "rain_false_rise_n": 1,
+          "hydrometric_false_rise_n": 1
+        },
+        "high_water_7m": {
+          "n": 79,
+          "hydrometric_mae_m": 0.415751651002046,
+          "rain_mae_m": 0.402600719546386,
+          "hydrometric_within_50cm_rate": 0.7088607594936709,
+          "rain_within_50cm_rate": 0.7088607594936709,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 126,
+          "hydrometric_mae_m": 0.35858497909398457,
+          "rain_mae_m": 0.3431034678882963,
+          "hydrometric_within_50cm_rate": 0.8015873015873016,
+          "rain_within_50cm_rate": 0.8015873015873016,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 33,
+          "hydrometric_mae_m": 0.45519344209964896,
+          "rain_mae_m": 0.4531083771427542,
+          "hydrometric_within_50cm_rate": 0.6363636363636364,
+          "rain_within_50cm_rate": 0.6060606060606061,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 1,
+          "hydrometric_mae_m": 1.2109022504454234,
+          "rain_mae_m": 1.0501628797896512,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.12239505963358699,
+          "rain_mae_m": 0.08434962296115711,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 5,
+      "phase": "stress_current",
+      "trainingRows": 5211,
+      "evaluationRows": 4,
+      "strata": {
+        "all": {
+          "n": 4,
+          "hydrometric_mae_m": 1.4137267162393656,
+          "rain_mae_m": 1.2904778942447988,
+          "hydrometric_within_50cm_rate": 0.25,
+          "rain_within_50cm_rate": 0.25,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 2,
+          "hydrometric_mae_m": 1.6795589826986763,
+          "rain_mae_m": 1.4195186401551556,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 3,
+          "hydrometric_mae_m": 1.8310913816478955,
+          "rain_mae_m": 1.6638994971257102,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.6795589826986763,
+          "rain_mae_m": 1.4195186401551556,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.6795589826986763,
+          "rain_mae_m": 1.4195186401551556,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.6795589826986763,
+          "rain_mae_m": 1.4195186401551556,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 6,
+      "phase": "validation",
+      "trainingRows": 2105,
+      "evaluationRows": 3104,
+      "strata": {
+        "all": {
+          "n": 3104,
+          "hydrometric_mae_m": 0.13082883425523287,
+          "rain_mae_m": 0.1966736338153328,
+          "hydrometric_within_50cm_rate": 0.9832474226804123,
+          "rain_within_50cm_rate": 0.9568298969072165,
+          "rain_false_rise_n": 68,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 16,
+          "hydrometric_mae_m": 0.22211744938585137,
+          "rain_mae_m": 0.24752214961881774,
+          "hydrometric_within_50cm_rate": 0.875,
+          "rain_within_50cm_rate": 0.8125,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 147,
+          "hydrometric_mae_m": 0.2456905410402888,
+          "rain_mae_m": 0.23758871763892778,
+          "hydrometric_within_50cm_rate": 0.891156462585034,
+          "rain_within_50cm_rate": 0.8979591836734694,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 113,
+          "hydrometric_mae_m": 0.18450225245864926,
+          "rain_mae_m": 1.7253651656972697,
+          "hydrometric_within_50cm_rate": 0.9292035398230089,
+          "rain_within_50cm_rate": 0.3274336283185841,
+          "rain_false_rise_n": 63,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 69,
+          "hydrometric_mae_m": 0.1144263025837373,
+          "rain_mae_m": 2.4943477276582704,
+          "hydrometric_within_50cm_rate": 0.9710144927536232,
+          "rain_within_50cm_rate": 0.014492753623188406,
+          "rain_false_rise_n": 61,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 8,
+          "hydrometric_mae_m": 0.03573844973761503,
+          "rain_mae_m": 2.6461349072067675,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 8,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 25,
+          "hydrometric_mae_m": 0.07758577859783623,
+          "rain_mae_m": 1.894334809800681,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.24,
+          "rain_false_rise_n": 17,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 18,
+          "hydrometric_mae_m": 0.06926981482507281,
+          "rain_mae_m": 2.522452509043701,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 17,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 6,
+      "phase": "test",
+      "trainingRows": 5209,
+      "evaluationRows": 768,
+      "strata": {
+        "all": {
+          "n": 768,
+          "hydrometric_mae_m": 0.2115425008320261,
+          "rain_mae_m": 0.21001942805724594,
+          "hydrometric_within_50cm_rate": 0.8997395833333334,
+          "rain_within_50cm_rate": 0.8971354166666666,
+          "rain_false_rise_n": 2,
+          "hydrometric_false_rise_n": 3
+        },
+        "high_water_7m": {
+          "n": 77,
+          "hydrometric_mae_m": 0.5330949072781341,
+          "rain_mae_m": 0.5125122029806586,
+          "hydrometric_within_50cm_rate": 0.5844155844155844,
+          "rain_within_50cm_rate": 0.5974025974025974,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 1
+        },
+        "rapid_rise_1m": {
+          "n": 147,
+          "hydrometric_mae_m": 0.38805173887682554,
+          "rain_mae_m": 0.3822352892055742,
+          "hydrometric_within_50cm_rate": 0.7482993197278912,
+          "rain_within_50cm_rate": 0.7482993197278912,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 33,
+          "hydrometric_mae_m": 0.5750057348843091,
+          "rain_mae_m": 0.5609349133450926,
+          "hydrometric_within_50cm_rate": 0.5757575757575758,
+          "rain_within_50cm_rate": 0.5454545454545454,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 1,
+          "hydrometric_mae_m": 1.5574499795570809,
+          "rain_mae_m": 1.312006141609551,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 0.12400736899622933,
+          "rain_mae_m": 0.11596549670798773,
+          "hydrometric_within_50cm_rate": 1.0,
+          "rain_within_50cm_rate": 1.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    },
+    {
+      "h": 6,
+      "phase": "stress_current",
+      "trainingRows": 5209,
+      "evaluationRows": 4,
+      "strata": {
+        "all": {
+          "n": 4,
+          "hydrometric_mae_m": 1.6326398176310875,
+          "rain_mae_m": 1.4998761519379742,
+          "hydrometric_within_50cm_rate": 0.25,
+          "rain_within_50cm_rate": 0.25,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "high_water_7m": {
+          "n": 2,
+          "hydrometric_mae_m": 1.5919153916456397,
+          "rain_mae_m": 1.3150308874255447,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rapid_rise_1m": {
+          "n": 3,
+          "hydrometric_mae_m": 2.020441085195134,
+          "rain_mae_m": 1.8432962750294355,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_20mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.5919153916456397,
+          "rain_mae_m": 1.3150308874255447,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_50mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.5919153916456397,
+          "rain_mae_m": 1.3150308874255447,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "rain6_at_least_100mm": {
+          "n": 2,
+          "hydrometric_mae_m": 1.5919153916456397,
+          "rain_mae_m": 1.3150308874255447,
+          "hydrometric_within_50cm_rate": 0.0,
+          "rain_within_50cm_rate": 0.0,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_20mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        },
+        "quiet_hydrometry_rain6_at_least_50mm": {
+          "n": 0,
+          "hydrometric_mae_m": null,
+          "rain_mae_m": null,
+          "hydrometric_within_50cm_rate": null,
+          "rain_within_50cm_rate": null,
+          "rain_false_rise_n": 0,
+          "hydrometric_false_rise_n": 0
+        }
+      }
+    }
+  ]
+}
