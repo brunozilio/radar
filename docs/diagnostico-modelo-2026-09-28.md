@@ -4,6 +4,8 @@
 
 O modelo público continua `mucum-hydrometry-public-v1`, SHA-256 `8adc838b20fba1ec3edd63db53e4575b0b8df59c22a777ada434ed773fb58c97`. Não foi retreinado nem substituído. A meta de 98% dentro de ±0,50 m por horizonte, inclusive em cheias, permanece não demonstrada.
 
+Os arquivos brutos e os pares da avaliação estão em `outputs/diagnostico-modelo-20260928-evidencias.tar.gz` (SHA-256 `8cc628d6dacea5a80985f3aca7e72e30264e4b7ff984060f6246fed31437ce51`).
+
 Foram capturadas 125 rodadas da API pública e o CSV de nível de Muçum do SGB em `outputs/auditoria-modelo-publico-20260928/`. Dessas, 100 usam o modelo hidrométrico atual. A API expõe chaves de recibo, mas esta captura não verificou a existência dos recibos remotos. O CSV atual não comprova quando cada leitura estava publicada nem se houve revisão ou aprovação ANA na hora da previsão. Os resultados abaixo são diagnóstico retrospectivo, com horas e alvos sobrepostos.
 
 | Horizonte nominal | Pares exatos | MAE | Acertos ±0,50 m | Maior erro |
@@ -30,6 +32,10 @@ H+1 não aparece nas rodadas públicas atuais porque o cálculo costuma sair cer
 Uma coleta local em 28/09 às 14h14 BRT (`outputs/nowcast-live-sample-20260928/`) recebeu as sete fontes exigidas, calculou o modelo e encontrou leitura ANA aprovada de 13h45, nível 5,39 m. A candidata aplicou +0,061 m. Esse ensaio prova a viabilidade técnica e o contrato de recibo nessa tentativa; não mede o erro futuro.
 
 O código da candidata passou 31 testes Python focados em isolamento da previsão pública, qualidade/tempo da leitura, limite de ajuste, empacotamento e contrato de publicação. O radar passou 74 testes Node, lint e build; o build mantém o aviso anterior de rastreamento amplo de arquivos em `lib/projection-server.ts`.
+
+## Publicação
+
+Em 28/09/2026, a versão Cloudflare `129eab1d-b669-4006-b8da-4d6f6a662ae1` implantou a execução paralela, a remoção da seção de câmeras e as duas correções da auditoria geral. A página pública foi consultada após o contêiner ficar ativo: a seção de câmeras não apareceu e o painel de Muçum continuou presente. A API continuou identificando o mesmo modelo público e SHA-256. A existência de um primeiro arquivo *shadow* no armazenamento remoto após o agendamento ainda precisa de verificação.
 
 ## Próxima avaliação
 

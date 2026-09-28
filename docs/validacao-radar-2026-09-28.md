@@ -4,6 +4,11 @@ Verificação feita entre 13h20 e 13h45 (horário de Brasília) no código local
 `https://radar.brunozilio.com`. Os valores ao vivo abaixo são um retrato desse
 período, não um estado permanente.
 
+Atualização às 14h23: a versão `129eab1d-b669-4006-b8da-4d6f6a662ae1`
+foi implantada. A página pública deixou de renderizar a seção de câmeras;
+as correções da leitura atual da Rede RS e do aviso de previsão desatualizada
+foram incluídas. As observações abaixo descrevem a auditoria anterior à publicação.
+
 Alterações locais do mapa de chuva apareceram no workspace durante a auditoria.
 Elas foram preservadas e entraram no build final, mas os testes de interface no
 site em produção não verificam esses ajustes ainda não publicados.
